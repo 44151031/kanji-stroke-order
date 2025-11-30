@@ -51,7 +51,7 @@ export function animateSvgStrokes(svgString: string, size: number = 200): string
   // 既存のstyle要素を取得または作成
   let styleElement = svg.querySelector("style");
   if (!styleElement) {
-    styleElement = doc.createElementNS("http://www.w3.org/2000/svg", "style");
+    styleElement = doc.createElementNS("http://www.w3.org/2000/svg", "style") as SVGStyleElement;
     svg.insertBefore(styleElement, svg.firstChild);
   }
   
