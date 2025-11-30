@@ -49,10 +49,14 @@ export function animateSvgStrokes(svgString: string, size: number = 200): string
   });
 
   // 既存のstyle要素を取得または作成
-  let styleElement = svg.querySelector("style");
+  let styleElement = svg.querySelector("style") as SVGStyleElement | null;
   if (!styleElement) {
     styleElement = doc.createElementNS("http://www.w3.org/2000/svg", "style") as SVGStyleElement;
-    svg.insertBefore(styleElement, svg.firstChild);
+    if (svg.firstChild) {
+      svg.insertBefore(styleElement, svg.firstChild);
+    } else {
+      svg.appendChild(styleElement);
+    }
   }
   
   // アニメーションCSSを追加
@@ -98,10 +102,9 @@ export function resetSvgAnimation(container: HTMLElement): void {
     path.setAttribute("style", style.replace(/animation:[^;]+;?/g, ""));
     
     // 強制的にリフローを発生させる
-    void (path as HTMLElement).offsetWidth;
+    void (path as unknown as HTMLElement).offsetWidth;
     
     // アニメーションを再適用
     path.setAttribute("style", style);
   });
 }
-
