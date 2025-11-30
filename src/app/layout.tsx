@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-H99ZWGWW4E";
 
 export const metadata: Metadata = {
   title: "漢字書き順 | Kanji Stroke Order",
@@ -13,6 +16,9 @@ export const metadata: Metadata = {
     apple: [
       { url: "/favicon-180.png", sizes: "180x180", type: "image/png" },
     ],
+  },
+  verification: {
+    google: "NC8DjqOLbBXSoyi9iUj2-pzDWqdmEGvoNxoRzehSVBM",
   },
   openGraph: {
     title: "漢字書き順 | Kanji Stroke Order",
@@ -29,6 +35,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        {/* Google Analytics 4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+      </head>
       <body className="min-h-screen antialiased">
         <main className="mx-auto max-w-[1200px] px-6 py-8">
           {children}
