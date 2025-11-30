@@ -25,3 +25,4 @@ export default async function KanjiDetailPage({ params }: Props) {
   return <KanjiDetailClient character={character} />;
 }
 
+

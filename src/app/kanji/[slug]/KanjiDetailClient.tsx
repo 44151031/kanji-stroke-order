@@ -144,3 +144,4 @@ function getKatakanaRow(char: string): string[] | null {
   return rows[char] || null;
 }
 
+

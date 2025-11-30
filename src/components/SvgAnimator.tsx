@@ -82,3 +82,4 @@ export default function SvgAnimator({ character, size = 200, autoPlay = true }: 
   );
 }
 
+
