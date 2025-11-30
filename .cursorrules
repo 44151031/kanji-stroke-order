@@ -1,0 +1,78 @@
+# ============================================
+# kanji-stroke-order.com (MVP) 開発ルール
+# ============================================
+
+project: "Kanji Stroke Order MVP"
+
+description: |
+  漢字・書き順・筆文字生成サイトをMVPとして構築する。
+  ユーザーが検索した文字をSVGアニメーションで表示し、
+  将来的には筆文字画像生成、ランキング、学年別漢字などを展開する。
+
+stack:
+  frontend: "Next.js (App Router, TypeScript)"
+  ui: "Tailwind CSS + shadcn/ui"
+  backend: "Supabase (DB + Storage)"
+  deploy: "Vercel"
+  code_editor: "Cursor"
+
+principles:
+  - コードはTypeScriptで記述する。
+  - ディレクトリ構成は `src/` ベース。
+  - UIはシンプルで白ベースのミニマルデザイン。
+  - SEOを意識したルーティング・メタデータ設計。
+  - MVPでは最小限の機能を最速で動かす。
+  - 必要なAPIは Next.js の /api/ に置く。
+
+goals:
+  - トップページ `/`：検索＋プレビュー
+  - `/hiragana`：ひらがな書き順アニメ（仮）
+  - `/kanji/[slug]`：指定文字のSVG書き順アニメ表示
+  - SVG生成API：KanjiVGから取得しアニメ化
+  - Supabase連携はあとで履歴保存・ランキングに拡張
+  - 最終的にVercel + 独自ドメインで公開
+
+architecture:
+  directories:
+    app/: ページルーティング
+    components/: UI・機能別コンポーネント
+    lib/: 汎用ロジック（SVG処理・Supabase・APIなど）
+    public/: 画像・アイコン
+  files:
+    - src/lib/kanjivg.ts
+    - src/lib/svgUtils.ts
+    - src/app/api/generate-svg/route.ts
+    - src/components/SvgAnimator.tsx
+
+style:
+  tailwind:
+    colors:
+      background: "#f8f7f2"
+      text: "#111"
+    font: "Noto Sans JP"
+  ui_components: "shadcn/ui"
+  layout:
+    - max-width: "1200px"
+    - padding: "1.5rem"
+    - rounded: "2xl"
+
+development:
+  ai_assist: true
+  rules:
+    - コード提案時は必ず動作可能な完全ファイルを生成。
+    - 不明点は仮の値で構わない（MVP重視）。
+    - ファイルを複数に分ける場合、パスを明記する。
+    - 確認後、`一括実装してください` コマンドで生成を実行。
+
+future_expansion:
+  - Supabase履歴保存
+  - 人気ランキングページ
+  - 学年別漢字ページ
+  - KanaVG統合（ひらがな・カタカナ）
+  - 筆文字フォント生成機能
+  - Programmatic SEO対応
+  - 多言語化（英語対応から開始）
+
+author:
+  name: "kanji-stroke-order運営事務局"
+  mindset: "教育とアートの両面から、日本語の美しさを世界へ広げる"
