@@ -1,0 +1,12818 @@
+[
+  {
+    "kanji": "一",
+    "ucsHex": "04e00",
+    "grade": 1,
+    "strokes": 1
+  },
+  {
+    "kanji": "九",
+    "ucsHex": "04e5d",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "七",
+    "ucsHex": "04e03",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "十",
+    "ucsHex": "05341",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "人",
+    "ucsHex": "04eba",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "二",
+    "ucsHex": "04e8c",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "入",
+    "ucsHex": "05165",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "八",
+    "ucsHex": "0516b",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "力",
+    "ucsHex": "0529b",
+    "grade": 1,
+    "strokes": 2
+  },
+  {
+    "kanji": "下",
+    "ucsHex": "04e0b",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "口",
+    "ucsHex": "053e3",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "三",
+    "ucsHex": "04e09",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "山",
+    "ucsHex": "05c71",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "子",
+    "ucsHex": "05b50",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "女",
+    "ucsHex": "05973",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "小",
+    "ucsHex": "05c0f",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "上",
+    "ucsHex": "04e0a",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "千",
+    "ucsHex": "05343",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "川",
+    "ucsHex": "05ddd",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "大",
+    "ucsHex": "05927",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "土",
+    "ucsHex": "0571f",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "夕",
+    "ucsHex": "05915",
+    "grade": 1,
+    "strokes": 3
+  },
+  {
+    "kanji": "円",
+    "ucsHex": "05186",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "王",
+    "ucsHex": "0738b",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "火",
+    "ucsHex": "0706b",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "月",
+    "ucsHex": "06708",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "犬",
+    "ucsHex": "072ac",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "五",
+    "ucsHex": "04e94",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "手",
+    "ucsHex": "0624b",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "水",
+    "ucsHex": "06c34",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "中",
+    "ucsHex": "04e2d",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "天",
+    "ucsHex": "05929",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "日",
+    "ucsHex": "065e5",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "文",
+    "ucsHex": "06587",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "木",
+    "ucsHex": "06728",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "六",
+    "ucsHex": "0516d",
+    "grade": 1,
+    "strokes": 4
+  },
+  {
+    "kanji": "右",
+    "ucsHex": "053f3",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "玉",
+    "ucsHex": "07389",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "左",
+    "ucsHex": "05de6",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "四",
+    "ucsHex": "056db",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "出",
+    "ucsHex": "051fa",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "正",
+    "ucsHex": "06b63",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "生",
+    "ucsHex": "0751f",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "石",
+    "ucsHex": "077f3",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "田",
+    "ucsHex": "07530",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "白",
+    "ucsHex": "0767d",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "本",
+    "ucsHex": "0672c",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "目",
+    "ucsHex": "076ee",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "立",
+    "ucsHex": "07acb",
+    "grade": 1,
+    "strokes": 5
+  },
+  {
+    "kanji": "気",
+    "ucsHex": "06c17",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "休",
+    "ucsHex": "04f11",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "糸",
+    "ucsHex": "07cf8",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "字",
+    "ucsHex": "05b57",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "耳",
+    "ucsHex": "08033",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "先",
+    "ucsHex": "05148",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "早",
+    "ucsHex": "065e9",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "竹",
+    "ucsHex": "07af9",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "虫",
+    "ucsHex": "0866b",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "年",
+    "ucsHex": "05e74",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "百",
+    "ucsHex": "0767e",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "名",
+    "ucsHex": "0540d",
+    "grade": 1,
+    "strokes": 6
+  },
+  {
+    "kanji": "花",
+    "ucsHex": "082b1",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "貝",
+    "ucsHex": "08c9d",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "見",
+    "ucsHex": "0898b",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "車",
+    "ucsHex": "08eca",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "赤",
+    "ucsHex": "08d64",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "足",
+    "ucsHex": "08db3",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "村",
+    "ucsHex": "06751",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "男",
+    "ucsHex": "07537",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "町",
+    "ucsHex": "0753a",
+    "grade": 1,
+    "strokes": 7
+  },
+  {
+    "kanji": "雨",
+    "ucsHex": "096e8",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "学",
+    "ucsHex": "05b66",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "金",
+    "ucsHex": "091d1",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "空",
+    "ucsHex": "07a7a",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "青",
+    "ucsHex": "09752",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "林",
+    "ucsHex": "06797",
+    "grade": 1,
+    "strokes": 8
+  },
+  {
+    "kanji": "音",
+    "ucsHex": "097f3",
+    "grade": 1,
+    "strokes": 9
+  },
+  {
+    "kanji": "草",
+    "ucsHex": "08349",
+    "grade": 1,
+    "strokes": 9
+  },
+  {
+    "kanji": "校",
+    "ucsHex": "06821",
+    "grade": 1,
+    "strokes": 10
+  },
+  {
+    "kanji": "森",
+    "ucsHex": "068ee",
+    "grade": 1,
+    "strokes": 12
+  },
+  {
+    "kanji": "刀",
+    "ucsHex": "05200",
+    "grade": 2,
+    "strokes": 2
+  },
+  {
+    "kanji": "丸",
+    "ucsHex": "04e38",
+    "grade": 2,
+    "strokes": 3
+  },
+  {
+    "kanji": "弓",
+    "ucsHex": "05f13",
+    "grade": 2,
+    "strokes": 3
+  },
+  {
+    "kanji": "工",
+    "ucsHex": "05de5",
+    "grade": 2,
+    "strokes": 3
+  },
+  {
+    "kanji": "才",
+    "ucsHex": "0624d",
+    "grade": 2,
+    "strokes": 3
+  },
+  {
+    "kanji": "万",
+    "ucsHex": "04e07",
+    "grade": 2,
+    "strokes": 3
+  },
+  {
+    "kanji": "引",
+    "ucsHex": "05f15",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "牛",
+    "ucsHex": "0725b",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "元",
+    "ucsHex": "05143",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "戸",
+    "ucsHex": "06238",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "午",
+    "ucsHex": "05348",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "公",
+    "ucsHex": "0516c",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "今",
+    "ucsHex": "04eca",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "止",
+    "ucsHex": "06b62",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "少",
+    "ucsHex": "05c11",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "心",
+    "ucsHex": "05fc3",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "切",
+    "ucsHex": "05207",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "太",
+    "ucsHex": "0592a",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "内",
+    "ucsHex": "05185",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "父",
+    "ucsHex": "07236",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "分",
+    "ucsHex": "05206",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "方",
+    "ucsHex": "065b9",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "毛",
+    "ucsHex": "06bdb",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "友",
+    "ucsHex": "053cb",
+    "grade": 2,
+    "strokes": 4
+  },
+  {
+    "kanji": "外",
+    "ucsHex": "05916",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "兄",
+    "ucsHex": "05144",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "古",
+    "ucsHex": "053e4",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "広",
+    "ucsHex": "05e83",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "市",
+    "ucsHex": "05e02",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "台",
+    "ucsHex": "053f0",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "冬",
+    "ucsHex": "051ac",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "半",
+    "ucsHex": "0534a",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "母",
+    "ucsHex": "06bcd",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "北",
+    "ucsHex": "05317",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "矢",
+    "ucsHex": "077e2",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "用",
+    "ucsHex": "07528",
+    "grade": 2,
+    "strokes": 5
+  },
+  {
+    "kanji": "羽",
+    "ucsHex": "07fbd",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "会",
+    "ucsHex": "04f1a",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "回",
+    "ucsHex": "056de",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "交",
+    "ucsHex": "04ea4",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "光",
+    "ucsHex": "05149",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "考",
+    "ucsHex": "08003",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "行",
+    "ucsHex": "0884c",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "合",
+    "ucsHex": "05408",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "寺",
+    "ucsHex": "05bfa",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "自",
+    "ucsHex": "081ea",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "色",
+    "ucsHex": "08272",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "西",
+    "ucsHex": "0897f",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "多",
+    "ucsHex": "0591a",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "地",
+    "ucsHex": "05730",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "池",
+    "ucsHex": "06c60",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "当",
+    "ucsHex": "05f53",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "同",
+    "ucsHex": "0540c",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "肉",
+    "ucsHex": "08089",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "米",
+    "ucsHex": "07c73",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "毎",
+    "ucsHex": "06bce",
+    "grade": 2,
+    "strokes": 6
+  },
+  {
+    "kanji": "何",
+    "ucsHex": "04f55",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "角",
+    "ucsHex": "089d2",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "汽",
+    "ucsHex": "06c7d",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "近",
+    "ucsHex": "08fd1",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "形",
+    "ucsHex": "05f62",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "言",
+    "ucsHex": "08a00",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "作",
+    "ucsHex": "04f5c",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "社",
+    "ucsHex": "0793e",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "図",
+    "ucsHex": "056f3",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "声",
+    "ucsHex": "058f0",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "走",
+    "ucsHex": "08d70",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "体",
+    "ucsHex": "04f53",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "谷",
+    "ucsHex": "08c37",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "弟",
+    "ucsHex": "05f1f",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "売",
+    "ucsHex": "058f2",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "麦",
+    "ucsHex": "09ea6",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "来",
+    "ucsHex": "06765",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "里",
+    "ucsHex": "091cc",
+    "grade": 2,
+    "strokes": 7
+  },
+  {
+    "kanji": "画",
+    "ucsHex": "0753b",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "岩",
+    "ucsHex": "05ca9",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "京",
+    "ucsHex": "04eac",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "国",
+    "ucsHex": "056fd",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "姉",
+    "ucsHex": "059c9",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "知",
+    "ucsHex": "077e5",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "長",
+    "ucsHex": "09577",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "直",
+    "ucsHex": "076f4",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "店",
+    "ucsHex": "05e97",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "東",
+    "ucsHex": "06771",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "歩",
+    "ucsHex": "06b69",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "妹",
+    "ucsHex": "059b9",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "明",
+    "ucsHex": "0660e",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "門",
+    "ucsHex": "09580",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "夜",
+    "ucsHex": "0591c",
+    "grade": 2,
+    "strokes": 8
+  },
+  {
+    "kanji": "科",
+    "ucsHex": "079d1",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "海",
+    "ucsHex": "06d77",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "活",
+    "ucsHex": "06d3b",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "計",
+    "ucsHex": "08a08",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "後",
+    "ucsHex": "05f8c",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "思",
+    "ucsHex": "0601d",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "室",
+    "ucsHex": "05ba4",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "首",
+    "ucsHex": "09996",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "秋",
+    "ucsHex": "079cb",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "春",
+    "ucsHex": "06625",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "食",
+    "ucsHex": "098df",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "星",
+    "ucsHex": "0661f",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "前",
+    "ucsHex": "0524d",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "茶",
+    "ucsHex": "08336",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "昼",
+    "ucsHex": "0663c",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "点",
+    "ucsHex": "070b9",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "南",
+    "ucsHex": "05357",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "風",
+    "ucsHex": "098a8",
+    "grade": 2,
+    "strokes": 9
+  },
+  {
+    "kanji": "夏",
+    "ucsHex": "0590f",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "家",
+    "ucsHex": "05bb6",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "帰",
+    "ucsHex": "05e30",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "記",
+    "ucsHex": "08a18",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "原",
+    "ucsHex": "0539f",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "高",
+    "ucsHex": "09ad8",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "紙",
+    "ucsHex": "07d19",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "時",
+    "ucsHex": "06642",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "弱",
+    "ucsHex": "05f31",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "書",
+    "ucsHex": "066f8",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "通",
+    "ucsHex": "0901a",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "馬",
+    "ucsHex": "099ac",
+    "grade": 2,
+    "strokes": 10
+  },
+  {
+    "kanji": "黄",
+    "ucsHex": "09ec4",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "魚",
+    "ucsHex": "09b5a",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "強",
+    "ucsHex": "05f37",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "教",
+    "ucsHex": "06559",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "黒",
+    "ucsHex": "09ed2",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "細",
+    "ucsHex": "07d30",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "週",
+    "ucsHex": "09031",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "雪",
+    "ucsHex": "096ea",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "船",
+    "ucsHex": "08239",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "組",
+    "ucsHex": "07d44",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "鳥",
+    "ucsHex": "09ce5",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "野",
+    "ucsHex": "091ce",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "理",
+    "ucsHex": "07406",
+    "grade": 2,
+    "strokes": 11
+  },
+  {
+    "kanji": "雲",
+    "ucsHex": "096f2",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "絵",
+    "ucsHex": "07d75",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "間",
+    "ucsHex": "09593",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "場",
+    "ucsHex": "05834",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "晴",
+    "ucsHex": "06674",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "朝",
+    "ucsHex": "0671d",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "答",
+    "ucsHex": "07b54",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "道",
+    "ucsHex": "09053",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "買",
+    "ucsHex": "08cb7",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "番",
+    "ucsHex": "0756a",
+    "grade": 2,
+    "strokes": 12
+  },
+  {
+    "kanji": "園",
+    "ucsHex": "05712",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "遠",
+    "ucsHex": "09060",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "楽",
+    "ucsHex": "0697d",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "新",
+    "ucsHex": "065b0",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "数",
+    "ucsHex": "06570",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "電",
+    "ucsHex": "096fb",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "話",
+    "ucsHex": "08a71",
+    "grade": 2,
+    "strokes": 13
+  },
+  {
+    "kanji": "歌",
+    "ucsHex": "06b4c",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "語",
+    "ucsHex": "08a9e",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "算",
+    "ucsHex": "07b97",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "読",
+    "ucsHex": "08aad",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "聞",
+    "ucsHex": "0805e",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "鳴",
+    "ucsHex": "09cf4",
+    "grade": 2,
+    "strokes": 14
+  },
+  {
+    "kanji": "線",
+    "ucsHex": "07dda",
+    "grade": 2,
+    "strokes": 15
+  },
+  {
+    "kanji": "親",
+    "ucsHex": "089aa",
+    "grade": 2,
+    "strokes": 16
+  },
+  {
+    "kanji": "頭",
+    "ucsHex": "0982d",
+    "grade": 2,
+    "strokes": 16
+  },
+  {
+    "kanji": "顔",
+    "ucsHex": "09854",
+    "grade": 2,
+    "strokes": 18
+  },
+  {
+    "kanji": "曜",
+    "ucsHex": "066dc",
+    "grade": 2,
+    "strokes": 18
+  },
+  {
+    "kanji": "丁",
+    "ucsHex": "04e01",
+    "grade": 3,
+    "strokes": 2
+  },
+  {
+    "kanji": "化",
+    "ucsHex": "05316",
+    "grade": 3,
+    "strokes": 4
+  },
+  {
+    "kanji": "区",
+    "ucsHex": "0533a",
+    "grade": 3,
+    "strokes": 4
+  },
+  {
+    "kanji": "反",
+    "ucsHex": "053cd",
+    "grade": 3,
+    "strokes": 4
+  },
+  {
+    "kanji": "予",
+    "ucsHex": "04e88",
+    "grade": 3,
+    "strokes": 4
+  },
+  {
+    "kanji": "央",
+    "ucsHex": "0592e",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "去",
+    "ucsHex": "053bb",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "号",
+    "ucsHex": "053f7",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "皿",
+    "ucsHex": "076bf",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "仕",
+    "ucsHex": "04ed5",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "写",
+    "ucsHex": "05199",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "主",
+    "ucsHex": "04e3b",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "申",
+    "ucsHex": "07533",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "世",
+    "ucsHex": "04e16",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "他",
+    "ucsHex": "04ed6",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "打",
+    "ucsHex": "06253",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "代",
+    "ucsHex": "04ee3",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "皮",
+    "ucsHex": "076ae",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "氷",
+    "ucsHex": "06c37",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "平",
+    "ucsHex": "05e73",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "由",
+    "ucsHex": "07531",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "礼",
+    "ucsHex": "0793c",
+    "grade": 3,
+    "strokes": 5
+  },
+  {
+    "kanji": "安",
+    "ucsHex": "05b89",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "曲",
+    "ucsHex": "066f2",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "血",
+    "ucsHex": "08840",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "向",
+    "ucsHex": "05411",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "死",
+    "ucsHex": "06b7b",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "次",
+    "ucsHex": "06b21",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "式",
+    "ucsHex": "05f0f",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "守",
+    "ucsHex": "05b88",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "州",
+    "ucsHex": "05dde",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "全",
+    "ucsHex": "05168",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "有",
+    "ucsHex": "06709",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "羊",
+    "ucsHex": "07f8a",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "両",
+    "ucsHex": "04e21",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "列",
+    "ucsHex": "05217",
+    "grade": 3,
+    "strokes": 6
+  },
+  {
+    "kanji": "医",
+    "ucsHex": "0533b",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "究",
+    "ucsHex": "07a76",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "局",
+    "ucsHex": "05c40",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "君",
+    "ucsHex": "0541b",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "決",
+    "ucsHex": "06c7a",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "坂",
+    "ucsHex": "05742",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "住",
+    "ucsHex": "04f4f",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "助",
+    "ucsHex": "052a9",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "身",
+    "ucsHex": "08eab",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "対",
+    "ucsHex": "05bfe",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "投",
+    "ucsHex": "06295",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "豆",
+    "ucsHex": "08c46",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "返",
+    "ucsHex": "08fd4",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "役",
+    "ucsHex": "05f79",
+    "grade": 3,
+    "strokes": 7
+  },
+  {
+    "kanji": "委",
+    "ucsHex": "059d4",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "育",
+    "ucsHex": "080b2",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "泳",
+    "ucsHex": "06cf3",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "岸",
+    "ucsHex": "05cb8",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "苦",
+    "ucsHex": "082e6",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "具",
+    "ucsHex": "05177",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "幸",
+    "ucsHex": "05e78",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "使",
+    "ucsHex": "04f7f",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "始",
+    "ucsHex": "059cb",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "事",
+    "ucsHex": "04e8b",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "実",
+    "ucsHex": "05b9f",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "者",
+    "ucsHex": "08005",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "取",
+    "ucsHex": "053d6",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "受",
+    "ucsHex": "053d7",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "所",
+    "ucsHex": "06240",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "昔",
+    "ucsHex": "06614",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "注",
+    "ucsHex": "06ce8",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "定",
+    "ucsHex": "05b9a",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "波",
+    "ucsHex": "06ce2",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "板",
+    "ucsHex": "0677f",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "表",
+    "ucsHex": "08868",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "服",
+    "ucsHex": "0670d",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "物",
+    "ucsHex": "07269",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "放",
+    "ucsHex": "0653e",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "味",
+    "ucsHex": "05473",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "命",
+    "ucsHex": "0547d",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "油",
+    "ucsHex": "06cb9",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "和",
+    "ucsHex": "0548c",
+    "grade": 3,
+    "strokes": 8
+  },
+  {
+    "kanji": "屋",
+    "ucsHex": "05c4b",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "界",
+    "ucsHex": "0754c",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "客",
+    "ucsHex": "05ba2",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "急",
+    "ucsHex": "06025",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "級",
+    "ucsHex": "07d1a",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "係",
+    "ucsHex": "04fc2",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "研",
+    "ucsHex": "07814",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "県",
+    "ucsHex": "0770c",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "指",
+    "ucsHex": "06307",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "持",
+    "ucsHex": "06301",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "拾",
+    "ucsHex": "062fe",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "重",
+    "ucsHex": "091cd",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "昭",
+    "ucsHex": "0662d",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "乗",
+    "ucsHex": "04e57",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "神",
+    "ucsHex": "0795e",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "相",
+    "ucsHex": "076f8",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "送",
+    "ucsHex": "09001",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "待",
+    "ucsHex": "05f85",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "炭",
+    "ucsHex": "070ad",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "柱",
+    "ucsHex": "067f1",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "追",
+    "ucsHex": "08ffd",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "度",
+    "ucsHex": "05ea6",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "畑",
+    "ucsHex": "07551",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "発",
+    "ucsHex": "0767a",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "美",
+    "ucsHex": "07f8e",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "秒",
+    "ucsHex": "079d2",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "品",
+    "ucsHex": "054c1",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "負",
+    "ucsHex": "08ca0",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "面",
+    "ucsHex": "09762",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "洋",
+    "ucsHex": "06d0b",
+    "grade": 3,
+    "strokes": 9
+  },
+  {
+    "kanji": "員",
+    "ucsHex": "054e1",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "院",
+    "ucsHex": "09662",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "荷",
+    "ucsHex": "08377",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "起",
+    "ucsHex": "08d77",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "宮",
+    "ucsHex": "05bae",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "庫",
+    "ucsHex": "05eab",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "根",
+    "ucsHex": "06839",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "酒",
+    "ucsHex": "09152",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "消",
+    "ucsHex": "06d88",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "真",
+    "ucsHex": "0771f",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "息",
+    "ucsHex": "0606f",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "速",
+    "ucsHex": "0901f",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "庭",
+    "ucsHex": "05ead",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "島",
+    "ucsHex": "05cf6",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "配",
+    "ucsHex": "0914d",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "倍",
+    "ucsHex": "0500d",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "病",
+    "ucsHex": "075c5",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "勉",
+    "ucsHex": "052c9",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "流",
+    "ucsHex": "06d41",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "旅",
+    "ucsHex": "065c5",
+    "grade": 3,
+    "strokes": 10
+  },
+  {
+    "kanji": "悪",
+    "ucsHex": "060aa",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "球",
+    "ucsHex": "07403",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "祭",
+    "ucsHex": "0796d",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "終",
+    "ucsHex": "07d42",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "習",
+    "ucsHex": "07fd2",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "宿",
+    "ucsHex": "05bbf",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "商",
+    "ucsHex": "05546",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "章",
+    "ucsHex": "07ae0",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "深",
+    "ucsHex": "06df1",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "進",
+    "ucsHex": "09032",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "族",
+    "ucsHex": "065cf",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "第",
+    "ucsHex": "07b2c",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "帳",
+    "ucsHex": "05e33",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "笛",
+    "ucsHex": "07b1b",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "転",
+    "ucsHex": "08ee2",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "都",
+    "ucsHex": "090fd",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "動",
+    "ucsHex": "052d5",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "部",
+    "ucsHex": "090e8",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "問",
+    "ucsHex": "0554f",
+    "grade": 3,
+    "strokes": 11
+  },
+  {
+    "kanji": "飲",
+    "ucsHex": "098f2",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "運",
+    "ucsHex": "0904b",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "温",
+    "ucsHex": "06e29",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "開",
+    "ucsHex": "0958b",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "階",
+    "ucsHex": "0968e",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "寒",
+    "ucsHex": "05bd2",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "期",
+    "ucsHex": "0671f",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "軽",
+    "ucsHex": "08efd",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "湖",
+    "ucsHex": "06e56",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "港",
+    "ucsHex": "06e2f",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "歯",
+    "ucsHex": "06b6f",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "集",
+    "ucsHex": "096c6",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "暑",
+    "ucsHex": "06691",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "勝",
+    "ucsHex": "052dd",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "植",
+    "ucsHex": "0690d",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "短",
+    "ucsHex": "077ed",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "着",
+    "ucsHex": "07740",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "登",
+    "ucsHex": "0767b",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "湯",
+    "ucsHex": "06e6f",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "等",
+    "ucsHex": "07b49",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "童",
+    "ucsHex": "07ae5",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "悲",
+    "ucsHex": "060b2",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "筆",
+    "ucsHex": "07b46",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "遊",
+    "ucsHex": "0904a",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "葉",
+    "ucsHex": "08449",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "陽",
+    "ucsHex": "0967d",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "落",
+    "ucsHex": "0843d",
+    "grade": 3,
+    "strokes": 12
+  },
+  {
+    "kanji": "暗",
+    "ucsHex": "06697",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "意",
+    "ucsHex": "0610f",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "感",
+    "ucsHex": "0611f",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "漢",
+    "ucsHex": "06f22",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "業",
+    "ucsHex": "0696d",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "詩",
+    "ucsHex": "08a69",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "想",
+    "ucsHex": "060f3",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "鉄",
+    "ucsHex": "09244",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "農",
+    "ucsHex": "08fb2",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "福",
+    "ucsHex": "0798f",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "路",
+    "ucsHex": "08def",
+    "grade": 3,
+    "strokes": 13
+  },
+  {
+    "kanji": "駅",
+    "ucsHex": "099c5",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "銀",
+    "ucsHex": "09280",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "鼻",
+    "ucsHex": "09f3b",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "様",
+    "ucsHex": "069d8",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "緑",
+    "ucsHex": "07dd1",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "練",
+    "ucsHex": "07df4",
+    "grade": 3,
+    "strokes": 14
+  },
+  {
+    "kanji": "横",
+    "ucsHex": "06a2a",
+    "grade": 3,
+    "strokes": 15
+  },
+  {
+    "kanji": "談",
+    "ucsHex": "08ac7",
+    "grade": 3,
+    "strokes": 15
+  },
+  {
+    "kanji": "調",
+    "ucsHex": "08abf",
+    "grade": 3,
+    "strokes": 15
+  },
+  {
+    "kanji": "箱",
+    "ucsHex": "07bb1",
+    "grade": 3,
+    "strokes": 15
+  },
+  {
+    "kanji": "館",
+    "ucsHex": "09928",
+    "grade": 3,
+    "strokes": 16
+  },
+  {
+    "kanji": "橋",
+    "ucsHex": "06a4b",
+    "grade": 3,
+    "strokes": 16
+  },
+  {
+    "kanji": "整",
+    "ucsHex": "06574",
+    "grade": 3,
+    "strokes": 16
+  },
+  {
+    "kanji": "薬",
+    "ucsHex": "085ac",
+    "grade": 3,
+    "strokes": 16
+  },
+  {
+    "kanji": "題",
+    "ucsHex": "0984c",
+    "grade": 3,
+    "strokes": 18
+  },
+  {
+    "kanji": "士",
+    "ucsHex": "058eb",
+    "grade": 4,
+    "strokes": 3
+  },
+  {
+    "kanji": "欠",
+    "ucsHex": "06b20",
+    "grade": 4,
+    "strokes": 4
+  },
+  {
+    "kanji": "氏",
+    "ucsHex": "06c0f",
+    "grade": 4,
+    "strokes": 4
+  },
+  {
+    "kanji": "不",
+    "ucsHex": "04e0d",
+    "grade": 4,
+    "strokes": 4
+  },
+  {
+    "kanji": "夫",
+    "ucsHex": "0592b",
+    "grade": 4,
+    "strokes": 4
+  },
+  {
+    "kanji": "以",
+    "ucsHex": "04ee5",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "加",
+    "ucsHex": "052a0",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "功",
+    "ucsHex": "0529f",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "札",
+    "ucsHex": "0672d",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "司",
+    "ucsHex": "053f8",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "史",
+    "ucsHex": "053f2",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "失",
+    "ucsHex": "05931",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "必",
+    "ucsHex": "05fc5",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "付",
+    "ucsHex": "04ed8",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "辺",
+    "ucsHex": "08fba",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "包",
+    "ucsHex": "05305",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "末",
+    "ucsHex": "0672b",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "未",
+    "ucsHex": "0672a",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "民",
+    "ucsHex": "06c11",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "令",
+    "ucsHex": "04ee4",
+    "grade": 4,
+    "strokes": 5
+  },
+  {
+    "kanji": "衣",
+    "ucsHex": "08863",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "印",
+    "ucsHex": "05370",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "各",
+    "ucsHex": "05404",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "共",
+    "ucsHex": "05171",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "好",
+    "ucsHex": "0597d",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "成",
+    "ucsHex": "06210",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "争",
+    "ucsHex": "04e89",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "仲",
+    "ucsHex": "04ef2",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "兆",
+    "ucsHex": "05146",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "伝",
+    "ucsHex": "04f1d",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "灯",
+    "ucsHex": "0706f",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "老",
+    "ucsHex": "08001",
+    "grade": 4,
+    "strokes": 6
+  },
+  {
+    "kanji": "位",
+    "ucsHex": "04f4d",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "囲",
+    "ucsHex": "056f2",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "改",
+    "ucsHex": "06539",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "完",
+    "ucsHex": "05b8c",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "希",
+    "ucsHex": "05e0c",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "求",
+    "ucsHex": "06c42",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "芸",
+    "ucsHex": "082b8",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "告",
+    "ucsHex": "0544a",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "材",
+    "ucsHex": "06750",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "児",
+    "ucsHex": "05150",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "初",
+    "ucsHex": "0521d",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "臣",
+    "ucsHex": "081e3",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "折",
+    "ucsHex": "06298",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "束",
+    "ucsHex": "0675f",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "低",
+    "ucsHex": "04f4e",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "努",
+    "ucsHex": "052aa",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "兵",
+    "ucsHex": "05175",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "別",
+    "ucsHex": "05225",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "利",
+    "ucsHex": "05229",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "良",
+    "ucsHex": "0826f",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "冷",
+    "ucsHex": "051b7",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "労",
+    "ucsHex": "052b4",
+    "grade": 4,
+    "strokes": 7
+  },
+  {
+    "kanji": "英",
+    "ucsHex": "082f1",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "果",
+    "ucsHex": "0679c",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "芽",
+    "ucsHex": "082bd",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "官",
+    "ucsHex": "05b98",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "季",
+    "ucsHex": "05b63",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "泣",
+    "ucsHex": "06ce3",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "協",
+    "ucsHex": "05354",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "径",
+    "ucsHex": "05f84",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "固",
+    "ucsHex": "056fa",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "刷",
+    "ucsHex": "05237",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "参",
+    "ucsHex": "053c2",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "治",
+    "ucsHex": "06cbb",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "周",
+    "ucsHex": "05468",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "松",
+    "ucsHex": "0677e",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "卒",
+    "ucsHex": "05352",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "底",
+    "ucsHex": "05e95",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "的",
+    "ucsHex": "07684",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "典",
+    "ucsHex": "05178",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "毒",
+    "ucsHex": "06bd2",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "念",
+    "ucsHex": "05ff5",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "府",
+    "ucsHex": "05e9c",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "法",
+    "ucsHex": "06cd5",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "牧",
+    "ucsHex": "07267",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "例",
+    "ucsHex": "04f8b",
+    "grade": 4,
+    "strokes": 8
+  },
+  {
+    "kanji": "胃",
+    "ucsHex": "080c3",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "栄",
+    "ucsHex": "06804",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "紀",
+    "ucsHex": "07d00",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "軍",
+    "ucsHex": "08ecd",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "型",
+    "ucsHex": "0578b",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "建",
+    "ucsHex": "05efa",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "昨",
+    "ucsHex": "06628",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "祝",
+    "ucsHex": "0795d",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "省",
+    "ucsHex": "07701",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "信",
+    "ucsHex": "04fe1",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "浅",
+    "ucsHex": "06d45",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "単",
+    "ucsHex": "05358",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "飛",
+    "ucsHex": "098db",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "変",
+    "ucsHex": "05909",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "便",
+    "ucsHex": "04fbf",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "約",
+    "ucsHex": "07d04",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "勇",
+    "ucsHex": "052c7",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "要",
+    "ucsHex": "08981",
+    "grade": 4,
+    "strokes": 9
+  },
+  {
+    "kanji": "案",
+    "ucsHex": "06848",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "害",
+    "ucsHex": "05bb3",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "挙",
+    "ucsHex": "06319",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "訓",
+    "ucsHex": "08a13",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "郡",
+    "ucsHex": "090e1",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "候",
+    "ucsHex": "05019",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "航",
+    "ucsHex": "0822a",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "差",
+    "ucsHex": "05dee",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "殺",
+    "ucsHex": "06bba",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "残",
+    "ucsHex": "06b8b",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "借",
+    "ucsHex": "0501f",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "笑",
+    "ucsHex": "07b11",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "席",
+    "ucsHex": "05e2d",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "倉",
+    "ucsHex": "05009",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "孫",
+    "ucsHex": "05b6b",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "帯",
+    "ucsHex": "05e2f",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "徒",
+    "ucsHex": "05f92",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "特",
+    "ucsHex": "07279",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "梅",
+    "ucsHex": "06885",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "粉",
+    "ucsHex": "07c89",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "脈",
+    "ucsHex": "08108",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "浴",
+    "ucsHex": "06d74",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "料",
+    "ucsHex": "06599",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "連",
+    "ucsHex": "09023",
+    "grade": 4,
+    "strokes": 10
+  },
+  {
+    "kanji": "貨",
+    "ucsHex": "08ca8",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "械",
+    "ucsHex": "068b0",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "救",
+    "ucsHex": "06551",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "健",
+    "ucsHex": "05065",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "康",
+    "ucsHex": "05eb7",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "菜",
+    "ucsHex": "083dc",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "産",
+    "ucsHex": "07523",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "唱",
+    "ucsHex": "05531",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "清",
+    "ucsHex": "06e05",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "巣",
+    "ucsHex": "05de3",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "側",
+    "ucsHex": "05074",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "停",
+    "ucsHex": "0505c",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "堂",
+    "ucsHex": "05802",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "得",
+    "ucsHex": "05f97",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "敗",
+    "ucsHex": "06557",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "票",
+    "ucsHex": "07968",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "副",
+    "ucsHex": "0526f",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "望",
+    "ucsHex": "0671b",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "陸",
+    "ucsHex": "09678",
+    "grade": 4,
+    "strokes": 11
+  },
+  {
+    "kanji": "街",
+    "ucsHex": "08857",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "覚",
+    "ucsHex": "0899a",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "喜",
+    "ucsHex": "0559c",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "給",
+    "ucsHex": "07d66",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "極",
+    "ucsHex": "06975",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "景",
+    "ucsHex": "0666f",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "結",
+    "ucsHex": "07d50",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "最",
+    "ucsHex": "06700",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "散",
+    "ucsHex": "06563",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "順",
+    "ucsHex": "09806",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "焼",
+    "ucsHex": "0713c",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "象",
+    "ucsHex": "08c61",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "然",
+    "ucsHex": "07136",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "隊",
+    "ucsHex": "0968a",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "達",
+    "ucsHex": "09054",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "貯",
+    "ucsHex": "08caf",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "博",
+    "ucsHex": "0535a",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "飯",
+    "ucsHex": "098ef",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "費",
+    "ucsHex": "08cbb",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "満",
+    "ucsHex": "06e80",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "無",
+    "ucsHex": "07121",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "量",
+    "ucsHex": "091cf",
+    "grade": 4,
+    "strokes": 12
+  },
+  {
+    "kanji": "愛",
+    "ucsHex": "0611b",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "塩",
+    "ucsHex": "05869",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "試",
+    "ucsHex": "08a66",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "辞",
+    "ucsHex": "08f9e",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "照",
+    "ucsHex": "07167",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "節",
+    "ucsHex": "07bc0",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "戦",
+    "ucsHex": "06226",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "続",
+    "ucsHex": "07d9a",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "置",
+    "ucsHex": "07f6e",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "腸",
+    "ucsHex": "08178",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "働",
+    "ucsHex": "050cd",
+    "grade": 4,
+    "strokes": 13
+  },
+  {
+    "kanji": "管",
+    "ucsHex": "07ba1",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "関",
+    "ucsHex": "095a2",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "旗",
+    "ucsHex": "065d7",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "漁",
+    "ucsHex": "06f01",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "察",
+    "ucsHex": "05bdf",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "種",
+    "ucsHex": "07a2e",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "静",
+    "ucsHex": "09759",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "説",
+    "ucsHex": "08aac",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "歴",
+    "ucsHex": "06b74",
+    "grade": 4,
+    "strokes": 14
+  },
+  {
+    "kanji": "億",
+    "ucsHex": "05104",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "課",
+    "ucsHex": "08ab2",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "器",
+    "ucsHex": "05668",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "賞",
+    "ucsHex": "08cde",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "選",
+    "ucsHex": "09078",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "熱",
+    "ucsHex": "071b1",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "標",
+    "ucsHex": "06a19",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "養",
+    "ucsHex": "0990a",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "輪",
+    "ucsHex": "08f2a",
+    "grade": 4,
+    "strokes": 15
+  },
+  {
+    "kanji": "機",
+    "ucsHex": "06a5f",
+    "grade": 4,
+    "strokes": 16
+  },
+  {
+    "kanji": "積",
+    "ucsHex": "07a4d",
+    "grade": 4,
+    "strokes": 16
+  },
+  {
+    "kanji": "録",
+    "ucsHex": "09332",
+    "grade": 4,
+    "strokes": 16
+  },
+  {
+    "kanji": "観",
+    "ucsHex": "089b3",
+    "grade": 4,
+    "strokes": 18
+  },
+  {
+    "kanji": "験",
+    "ucsHex": "09a13",
+    "grade": 4,
+    "strokes": 18
+  },
+  {
+    "kanji": "類",
+    "ucsHex": "0985e",
+    "grade": 4,
+    "strokes": 18
+  },
+  {
+    "kanji": "願",
+    "ucsHex": "09858",
+    "grade": 4,
+    "strokes": 19
+  },
+  {
+    "kanji": "鏡",
+    "ucsHex": "093e1",
+    "grade": 4,
+    "strokes": 19
+  },
+  {
+    "kanji": "議",
+    "ucsHex": "08b70",
+    "grade": 4,
+    "strokes": 20
+  },
+  {
+    "kanji": "競",
+    "ucsHex": "07af6",
+    "grade": 4,
+    "strokes": 20
+  },
+  {
+    "kanji": "久",
+    "ucsHex": "04e45",
+    "grade": 5,
+    "strokes": 3
+  },
+  {
+    "kanji": "支",
+    "ucsHex": "0652f",
+    "grade": 5,
+    "strokes": 4
+  },
+  {
+    "kanji": "比",
+    "ucsHex": "06bd4",
+    "grade": 5,
+    "strokes": 4
+  },
+  {
+    "kanji": "仏",
+    "ucsHex": "04ecf",
+    "grade": 5,
+    "strokes": 4
+  },
+  {
+    "kanji": "圧",
+    "ucsHex": "05727",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "永",
+    "ucsHex": "06c38",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "可",
+    "ucsHex": "053ef",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "刊",
+    "ucsHex": "0520a",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "旧",
+    "ucsHex": "065e7",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "句",
+    "ucsHex": "053e5",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "示",
+    "ucsHex": "0793a",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "犯",
+    "ucsHex": "072af",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "布",
+    "ucsHex": "05e03",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "弁",
+    "ucsHex": "05f01",
+    "grade": 5,
+    "strokes": 5
+  },
+  {
+    "kanji": "因",
+    "ucsHex": "056e0",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "仮",
+    "ucsHex": "04eee",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "件",
+    "ucsHex": "04ef6",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "再",
+    "ucsHex": "0518d",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "在",
+    "ucsHex": "05728",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "舌",
+    "ucsHex": "0820c",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "団",
+    "ucsHex": "056e3",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "任",
+    "ucsHex": "04efb",
+    "grade": 5,
+    "strokes": 6
+  },
+  {
+    "kanji": "応",
+    "ucsHex": "05fdc",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "快",
+    "ucsHex": "05feb",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "技",
+    "ucsHex": "06280",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "均",
+    "ucsHex": "05747",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "災",
+    "ucsHex": "0707d",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "志",
+    "ucsHex": "05fd7",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "似",
+    "ucsHex": "04f3c",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "序",
+    "ucsHex": "05e8f",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "条",
+    "ucsHex": "06761",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "状",
+    "ucsHex": "072b6",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "判",
+    "ucsHex": "05224",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "防",
+    "ucsHex": "09632",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "余",
+    "ucsHex": "04f59",
+    "grade": 5,
+    "strokes": 7
+  },
+  {
+    "kanji": "易",
+    "ucsHex": "06613",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "往",
+    "ucsHex": "05f80",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "価",
+    "ucsHex": "04fa1",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "河",
+    "ucsHex": "06cb3",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "居",
+    "ucsHex": "05c45",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "券",
+    "ucsHex": "05238",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "効",
+    "ucsHex": "052b9",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "妻",
+    "ucsHex": "059bb",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "枝",
+    "ucsHex": "0679d",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "舎",
+    "ucsHex": "0820e",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "述",
+    "ucsHex": "08ff0",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "承",
+    "ucsHex": "0627f",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "招",
+    "ucsHex": "062db",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "制",
+    "ucsHex": "05236",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "性",
+    "ucsHex": "06027",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "版",
+    "ucsHex": "07248",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "肥",
+    "ucsHex": "080a5",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "非",
+    "ucsHex": "0975e",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "武",
+    "ucsHex": "06b66",
+    "grade": 5,
+    "strokes": 8
+  },
+  {
+    "kanji": "逆",
+    "ucsHex": "09006",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "限",
+    "ucsHex": "09650",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "故",
+    "ucsHex": "06545",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "厚",
+    "ucsHex": "0539a",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "査",
+    "ucsHex": "067fb",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "政",
+    "ucsHex": "0653f",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "祖",
+    "ucsHex": "07956",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "則",
+    "ucsHex": "05247",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "退",
+    "ucsHex": "09000",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "独",
+    "ucsHex": "072ec",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "保",
+    "ucsHex": "04fdd",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "迷",
+    "ucsHex": "08ff7",
+    "grade": 5,
+    "strokes": 9
+  },
+  {
+    "kanji": "益",
+    "ucsHex": "076ca",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "恩",
+    "ucsHex": "06069",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "格",
+    "ucsHex": "0683c",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "個",
+    "ucsHex": "0500b",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "耕",
+    "ucsHex": "08015",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "財",
+    "ucsHex": "08ca1",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "桜",
+    "ucsHex": "0685c",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "師",
+    "ucsHex": "05e2b",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "修",
+    "ucsHex": "04fee",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "素",
+    "ucsHex": "07d20",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "造",
+    "ucsHex": "09020",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "能",
+    "ucsHex": "080fd",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "破",
+    "ucsHex": "07834",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "俵",
+    "ucsHex": "04ff5",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "容",
+    "ucsHex": "05bb9",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "留",
+    "ucsHex": "07559",
+    "grade": 5,
+    "strokes": 10
+  },
+  {
+    "kanji": "移",
+    "ucsHex": "079fb",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "液",
+    "ucsHex": "06db2",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "眼",
+    "ucsHex": "0773c",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "基",
+    "ucsHex": "057fa",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "寄",
+    "ucsHex": "05bc4",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "規",
+    "ucsHex": "0898f",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "許",
+    "ucsHex": "08a31",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "経",
+    "ucsHex": "07d4c",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "険",
+    "ucsHex": "0967a",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "現",
+    "ucsHex": "073fe",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "混",
+    "ucsHex": "06df7",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "採",
+    "ucsHex": "063a1",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "授",
+    "ucsHex": "06388",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "術",
+    "ucsHex": "08853",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "常",
+    "ucsHex": "05e38",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "情",
+    "ucsHex": "060c5",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "責",
+    "ucsHex": "08cac",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "接",
+    "ucsHex": "063a5",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "設",
+    "ucsHex": "08a2d",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "断",
+    "ucsHex": "065ad",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "張",
+    "ucsHex": "05f35",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "貧",
+    "ucsHex": "08ca7",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "婦",
+    "ucsHex": "05a66",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "務",
+    "ucsHex": "052d9",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "率",
+    "ucsHex": "07387",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "略",
+    "ucsHex": "07565",
+    "grade": 5,
+    "strokes": 11
+  },
+  {
+    "kanji": "営",
+    "ucsHex": "055b6",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "過",
+    "ucsHex": "0904e",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "賀",
+    "ucsHex": "08cc0",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "検",
+    "ucsHex": "0691c",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "減",
+    "ucsHex": "06e1b",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "証",
+    "ucsHex": "08a3c",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "税",
+    "ucsHex": "07a0e",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "絶",
+    "ucsHex": "07d76",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "測",
+    "ucsHex": "06e2c",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "属",
+    "ucsHex": "05c5e",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "貸",
+    "ucsHex": "08cb8",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "提",
+    "ucsHex": "063d0",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "程",
+    "ucsHex": "07a0b",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "統",
+    "ucsHex": "07d71",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "備",
+    "ucsHex": "05099",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "評",
+    "ucsHex": "08a55",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "富",
+    "ucsHex": "05bcc",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "復",
+    "ucsHex": "05fa9",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "報",
+    "ucsHex": "05831",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "貿",
+    "ucsHex": "08cbf",
+    "grade": 5,
+    "strokes": 12
+  },
+  {
+    "kanji": "解",
+    "ucsHex": "089e3",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "幹",
+    "ucsHex": "05e79",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "義",
+    "ucsHex": "07fa9",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "禁",
+    "ucsHex": "07981",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "群",
+    "ucsHex": "07fa4",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "鉱",
+    "ucsHex": "09271",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "罪",
+    "ucsHex": "07f6a",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "資",
+    "ucsHex": "08cc7",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "飼",
+    "ucsHex": "098fc",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "準",
+    "ucsHex": "06e96",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "勢",
+    "ucsHex": "052e2",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "損",
+    "ucsHex": "0640d",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "墓",
+    "ucsHex": "05893",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "豊",
+    "ucsHex": "08c4a",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "夢",
+    "ucsHex": "05922",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "預",
+    "ucsHex": "09810",
+    "grade": 5,
+    "strokes": 13
+  },
+  {
+    "kanji": "演",
+    "ucsHex": "06f14",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "慣",
+    "ucsHex": "06163",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "境",
+    "ucsHex": "05883",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "構",
+    "ucsHex": "069cb",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "際",
+    "ucsHex": "0969b",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "雑",
+    "ucsHex": "096d1",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "酸",
+    "ucsHex": "09178",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "精",
+    "ucsHex": "07cbe",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "製",
+    "ucsHex": "088fd",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "銭",
+    "ucsHex": "092ad",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "総",
+    "ucsHex": "07dcf",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "像",
+    "ucsHex": "050cf",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "増",
+    "ucsHex": "05897",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "態",
+    "ucsHex": "0614b",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "適",
+    "ucsHex": "09069",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "銅",
+    "ucsHex": "09285",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "徳",
+    "ucsHex": "05fb3",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "複",
+    "ucsHex": "08907",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "綿",
+    "ucsHex": "07dbf",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "領",
+    "ucsHex": "09818",
+    "grade": 5,
+    "strokes": 14
+  },
+  {
+    "kanji": "確",
+    "ucsHex": "078ba",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "潔",
+    "ucsHex": "06f54",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "賛",
+    "ucsHex": "08cdb",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "質",
+    "ucsHex": "08cea",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "敵",
+    "ucsHex": "06575",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "導",
+    "ucsHex": "05c0e",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "編",
+    "ucsHex": "07de8",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "暴",
+    "ucsHex": "066b4",
+    "grade": 5,
+    "strokes": 15
+  },
+  {
+    "kanji": "衛",
+    "ucsHex": "0885b",
+    "grade": 5,
+    "strokes": 16
+  },
+  {
+    "kanji": "興",
+    "ucsHex": "08208",
+    "grade": 5,
+    "strokes": 16
+  },
+  {
+    "kanji": "築",
+    "ucsHex": "07bc9",
+    "grade": 5,
+    "strokes": 16
+  },
+  {
+    "kanji": "燃",
+    "ucsHex": "071c3",
+    "grade": 5,
+    "strokes": 16
+  },
+  {
+    "kanji": "輸",
+    "ucsHex": "08f38",
+    "grade": 5,
+    "strokes": 16
+  },
+  {
+    "kanji": "講",
+    "ucsHex": "08b1b",
+    "grade": 5,
+    "strokes": 17
+  },
+  {
+    "kanji": "謝",
+    "ucsHex": "08b1d",
+    "grade": 5,
+    "strokes": 17
+  },
+  {
+    "kanji": "績",
+    "ucsHex": "07e3e",
+    "grade": 5,
+    "strokes": 17
+  },
+  {
+    "kanji": "額",
+    "ucsHex": "0984d",
+    "grade": 5,
+    "strokes": 18
+  },
+  {
+    "kanji": "織",
+    "ucsHex": "07e54",
+    "grade": 5,
+    "strokes": 18
+  },
+  {
+    "kanji": "職",
+    "ucsHex": "08077",
+    "grade": 5,
+    "strokes": 18
+  },
+  {
+    "kanji": "識",
+    "ucsHex": "08b58",
+    "grade": 5,
+    "strokes": 19
+  },
+  {
+    "kanji": "護",
+    "ucsHex": "08b77",
+    "grade": 5,
+    "strokes": 20
+  },
+  {
+    "kanji": "干",
+    "ucsHex": "05e72",
+    "grade": 6,
+    "strokes": 3
+  },
+  {
+    "kanji": "己",
+    "ucsHex": "05df1",
+    "grade": 6,
+    "strokes": 3
+  },
+  {
+    "kanji": "寸",
+    "ucsHex": "05bf8",
+    "grade": 6,
+    "strokes": 3
+  },
+  {
+    "kanji": "亡",
+    "ucsHex": "04ea1",
+    "grade": 6,
+    "strokes": 3
+  },
+  {
+    "kanji": "尺",
+    "ucsHex": "05c3a",
+    "grade": 6,
+    "strokes": 4
+  },
+  {
+    "kanji": "収",
+    "ucsHex": "053ce",
+    "grade": 6,
+    "strokes": 4
+  },
+  {
+    "kanji": "仁",
+    "ucsHex": "04ec1",
+    "grade": 6,
+    "strokes": 4
+  },
+  {
+    "kanji": "片",
+    "ucsHex": "07247",
+    "grade": 6,
+    "strokes": 4
+  },
+  {
+    "kanji": "穴",
+    "ucsHex": "07a74",
+    "grade": 6,
+    "strokes": 5
+  },
+  {
+    "kanji": "冊",
+    "ucsHex": "0518a",
+    "grade": 6,
+    "strokes": 5
+  },
+  {
+    "kanji": "処",
+    "ucsHex": "051e6",
+    "grade": 6,
+    "strokes": 5
+  },
+  {
+    "kanji": "庁",
+    "ucsHex": "05e81",
+    "grade": 6,
+    "strokes": 5
+  },
+  {
+    "kanji": "幼",
+    "ucsHex": "05e7c",
+    "grade": 6,
+    "strokes": 5
+  },
+  {
+    "kanji": "宇",
+    "ucsHex": "05b87",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "灰",
+    "ucsHex": "07070",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "危",
+    "ucsHex": "05371",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "机",
+    "ucsHex": "0673a",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "吸",
+    "ucsHex": "05438",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "后",
+    "ucsHex": "0540e",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "至",
+    "ucsHex": "081f3",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "存",
+    "ucsHex": "05b58",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "宅",
+    "ucsHex": "05b85",
+    "grade": 6,
+    "strokes": 6
+  },
+  {
+    "kanji": "我",
+    "ucsHex": "06211",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "系",
+    "ucsHex": "07cfb",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "孝",
+    "ucsHex": "05b5d",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "困",
+    "ucsHex": "056f0",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "私",
+    "ucsHex": "079c1",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "否",
+    "ucsHex": "05426",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "批",
+    "ucsHex": "06279",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "忘",
+    "ucsHex": "05fd8",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "乱",
+    "ucsHex": "04e71",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "卵",
+    "ucsHex": "05375",
+    "grade": 6,
+    "strokes": 7
+  },
+  {
+    "kanji": "延",
+    "ucsHex": "05ef6",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "沿",
+    "ucsHex": "06cbf",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "拡",
+    "ucsHex": "062e1",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "供",
+    "ucsHex": "04f9b",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "呼",
+    "ucsHex": "0547c",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "刻",
+    "ucsHex": "0523b",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "若",
+    "ucsHex": "082e5",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "宗",
+    "ucsHex": "05b97",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "垂",
+    "ucsHex": "05782",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "担",
+    "ucsHex": "062c5",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "宙",
+    "ucsHex": "05b99",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "忠",
+    "ucsHex": "05fe0",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "届",
+    "ucsHex": "05c4a",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "乳",
+    "ucsHex": "04e73",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "拝",
+    "ucsHex": "062dd",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "並",
+    "ucsHex": "04e26",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "宝",
+    "ucsHex": "05b9d",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "枚",
+    "ucsHex": "0679a",
+    "grade": 6,
+    "strokes": 8
+  },
+  {
+    "kanji": "映",
+    "ucsHex": "06620",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "革",
+    "ucsHex": "09769",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "巻",
+    "ucsHex": "05dfb",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "看",
+    "ucsHex": "0770b",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "皇",
+    "ucsHex": "07687",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "紅",
+    "ucsHex": "07d05",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "砂",
+    "ucsHex": "07802",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "姿",
+    "ucsHex": "059ff",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "城",
+    "ucsHex": "057ce",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "宣",
+    "ucsHex": "05ba3",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "専",
+    "ucsHex": "05c02",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "泉",
+    "ucsHex": "06cc9",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "洗",
+    "ucsHex": "06d17",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "染",
+    "ucsHex": "067d3",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "奏",
+    "ucsHex": "0594f",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "段",
+    "ucsHex": "06bb5",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "派",
+    "ucsHex": "06d3e",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "背",
+    "ucsHex": "080cc",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "肺",
+    "ucsHex": "080ba",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "律",
+    "ucsHex": "05f8b",
+    "grade": 6,
+    "strokes": 9
+  },
+  {
+    "kanji": "株",
+    "ucsHex": "0682a",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "胸",
+    "ucsHex": "080f8",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "降",
+    "ucsHex": "0964d",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "骨",
+    "ucsHex": "09aa8",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "座",
+    "ucsHex": "05ea7",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "蚕",
+    "ucsHex": "08695",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "射",
+    "ucsHex": "05c04",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "従",
+    "ucsHex": "05f93",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "純",
+    "ucsHex": "07d14",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "除",
+    "ucsHex": "09664",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "将",
+    "ucsHex": "05c06",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "針",
+    "ucsHex": "091dd",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "値",
+    "ucsHex": "05024",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "展",
+    "ucsHex": "05c55",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "党",
+    "ucsHex": "0515a",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "討",
+    "ucsHex": "08a0e",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "納",
+    "ucsHex": "07d0d",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "俳",
+    "ucsHex": "04ff3",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "班",
+    "ucsHex": "073ed",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "秘",
+    "ucsHex": "079d8",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "陛",
+    "ucsHex": "0965b",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "朗",
+    "ucsHex": "06717",
+    "grade": 6,
+    "strokes": 10
+  },
+  {
+    "kanji": "異",
+    "ucsHex": "07570",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "域",
+    "ucsHex": "057df",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "郷",
+    "ucsHex": "090f7",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "済",
+    "ucsHex": "06e08",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "視",
+    "ucsHex": "08996",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "捨",
+    "ucsHex": "06368",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "推",
+    "ucsHex": "063a8",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "盛",
+    "ucsHex": "076db",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "窓",
+    "ucsHex": "07a93",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "探",
+    "ucsHex": "063a2",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "著",
+    "ucsHex": "08457",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "頂",
+    "ucsHex": "09802",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "脳",
+    "ucsHex": "08133",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "閉",
+    "ucsHex": "09589",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "訪",
+    "ucsHex": "08a2a",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "密",
+    "ucsHex": "05bc6",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "訳",
+    "ucsHex": "08a33",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "郵",
+    "ucsHex": "090f5",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "欲",
+    "ucsHex": "06b32",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "翌",
+    "ucsHex": "07fcc",
+    "grade": 6,
+    "strokes": 11
+  },
+  {
+    "kanji": "割",
+    "ucsHex": "05272",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "揮",
+    "ucsHex": "063ee",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "貴",
+    "ucsHex": "08cb4",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "勤",
+    "ucsHex": "052e4",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "筋",
+    "ucsHex": "07b4b",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "敬",
+    "ucsHex": "0656c",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "裁",
+    "ucsHex": "088c1",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "策",
+    "ucsHex": "07b56",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "詞",
+    "ucsHex": "08a5e",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "就",
+    "ucsHex": "05c31",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "衆",
+    "ucsHex": "08846",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "善",
+    "ucsHex": "05584",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "創",
+    "ucsHex": "05275",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "装",
+    "ucsHex": "088c5",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "尊",
+    "ucsHex": "05c0a",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "痛",
+    "ucsHex": "075db",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "晩",
+    "ucsHex": "06669",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "補",
+    "ucsHex": "088dc",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "棒",
+    "ucsHex": "068d2",
+    "grade": 6,
+    "strokes": 12
+  },
+  {
+    "kanji": "絹",
+    "ucsHex": "07d79",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "源",
+    "ucsHex": "06e90",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "署",
+    "ucsHex": "07f72",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "傷",
+    "ucsHex": "050b7",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "蒸",
+    "ucsHex": "084b8",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "聖",
+    "ucsHex": "08056",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "誠",
+    "ucsHex": "08aa0",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "暖",
+    "ucsHex": "06696",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "賃",
+    "ucsHex": "08cc3",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "腹",
+    "ucsHex": "08179",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "幕",
+    "ucsHex": "05e55",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "盟",
+    "ucsHex": "076df",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "裏",
+    "ucsHex": "088cf",
+    "grade": 6,
+    "strokes": 13
+  },
+  {
+    "kanji": "閣",
+    "ucsHex": "095a3",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "疑",
+    "ucsHex": "07591",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "誤",
+    "ucsHex": "08aa4",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "穀",
+    "ucsHex": "07a40",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "誌",
+    "ucsHex": "08a8c",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "磁",
+    "ucsHex": "078c1",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "障",
+    "ucsHex": "0969c",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "層",
+    "ucsHex": "05c64",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "認",
+    "ucsHex": "08a8d",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "暮",
+    "ucsHex": "066ae",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "模",
+    "ucsHex": "06a21",
+    "grade": 6,
+    "strokes": 14
+  },
+  {
+    "kanji": "遺",
+    "ucsHex": "0907a",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "劇",
+    "ucsHex": "05287",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "権",
+    "ucsHex": "06a29",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "熟",
+    "ucsHex": "0719f",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "諸",
+    "ucsHex": "08af8",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "蔵",
+    "ucsHex": "08535",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "誕",
+    "ucsHex": "08a95",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "潮",
+    "ucsHex": "06f6e",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "論",
+    "ucsHex": "08ad6",
+    "grade": 6,
+    "strokes": 15
+  },
+  {
+    "kanji": "激",
+    "ucsHex": "06fc0",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "憲",
+    "ucsHex": "061b2",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "鋼",
+    "ucsHex": "092fc",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "樹",
+    "ucsHex": "06a39",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "縦",
+    "ucsHex": "07e26",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "操",
+    "ucsHex": "064cd",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "糖",
+    "ucsHex": "07cd6",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "奮",
+    "ucsHex": "0596e",
+    "grade": 6,
+    "strokes": 16
+  },
+  {
+    "kanji": "厳",
+    "ucsHex": "053b3",
+    "grade": 6,
+    "strokes": 17
+  },
+  {
+    "kanji": "縮",
+    "ucsHex": "07e2e",
+    "grade": 6,
+    "strokes": 17
+  },
+  {
+    "kanji": "優",
+    "ucsHex": "0512a",
+    "grade": 6,
+    "strokes": 17
+  },
+  {
+    "kanji": "覧",
+    "ucsHex": "089a7",
+    "grade": 6,
+    "strokes": 17
+  },
+  {
+    "kanji": "簡",
+    "ucsHex": "07c21",
+    "grade": 6,
+    "strokes": 18
+  },
+  {
+    "kanji": "難",
+    "ucsHex": "096e3",
+    "grade": 6,
+    "strokes": 18
+  },
+  {
+    "kanji": "臨",
+    "ucsHex": "081e8",
+    "grade": 6,
+    "strokes": 18
+  },
+  {
+    "kanji": "警",
+    "ucsHex": "08b66",
+    "grade": 6,
+    "strokes": 19
+  },
+  {
+    "kanji": "臓",
+    "ucsHex": "081d3",
+    "grade": 6,
+    "strokes": 19
+  },
+  {
+    "kanji": "乙",
+    "ucsHex": "04e59",
+    "grade": 8,
+    "strokes": 1
+  },
+  {
+    "kanji": "又",
+    "ucsHex": "053c8",
+    "grade": 8,
+    "strokes": 2
+  },
+  {
+    "kanji": "了",
+    "ucsHex": "04e86",
+    "grade": 8,
+    "strokes": 2
+  },
+  {
+    "kanji": "及",
+    "ucsHex": "053ca",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "巾",
+    "ucsHex": "05dfe",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "乞",
+    "ucsHex": "04e5e",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "丈",
+    "ucsHex": "04e08",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "刃",
+    "ucsHex": "05203",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "凡",
+    "ucsHex": "051e1",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "与",
+    "ucsHex": "04e0e",
+    "grade": 8,
+    "strokes": 3
+  },
+  {
+    "kanji": "井",
+    "ucsHex": "04e95",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "介",
+    "ucsHex": "04ecb",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "刈",
+    "ucsHex": "05208",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "凶",
+    "ucsHex": "051f6",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "斤",
+    "ucsHex": "065a4",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "幻",
+    "ucsHex": "05e7b",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "互",
+    "ucsHex": "04e92",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "勾",
+    "ucsHex": "052fe",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "孔",
+    "ucsHex": "05b54",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "升",
+    "ucsHex": "05347",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "冗",
+    "ucsHex": "05197",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "双",
+    "ucsHex": "053cc",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "丹",
+    "ucsHex": "04e39",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "弔",
+    "ucsHex": "05f14",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "爪",
+    "ucsHex": "0722a",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "斗",
+    "ucsHex": "06597",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "屯",
+    "ucsHex": "05c6f",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "匂",
+    "ucsHex": "05302",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "匹",
+    "ucsHex": "05339",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "乏",
+    "ucsHex": "04e4f",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "厄",
+    "ucsHex": "05384",
+    "grade": 8,
+    "strokes": 4
+  },
+  {
+    "kanji": "凹",
+    "ucsHex": "051f9",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "牙",
+    "ucsHex": "07259",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "且",
+    "ucsHex": "04e14",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "瓦",
+    "ucsHex": "074e6",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "甘",
+    "ucsHex": "07518",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "丘",
+    "ucsHex": "04e18",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "巨",
+    "ucsHex": "05de8",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "玄",
+    "ucsHex": "07384",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "巧",
+    "ucsHex": "05de7",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "甲",
+    "ucsHex": "07532",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "込",
+    "ucsHex": "08fbc",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "叱",
+    "ucsHex": "053f1",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "囚",
+    "ucsHex": "056da",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "汁",
+    "ucsHex": "06c41",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "召",
+    "ucsHex": "053ec",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "尻",
+    "ucsHex": "05c3b",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "斥",
+    "ucsHex": "065a5",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "仙",
+    "ucsHex": "04ed9",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "占",
+    "ucsHex": "05360",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "旦",
+    "ucsHex": "065e6",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "奴",
+    "ucsHex": "05974",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "凸",
+    "ucsHex": "051f8",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "尼",
+    "ucsHex": "05c3c",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "氾",
+    "ucsHex": "06c3e",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "払",
+    "ucsHex": "06255",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "丙",
+    "ucsHex": "04e19",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "矛",
+    "ucsHex": "077db",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "丼",
+    "ucsHex": "04e3c",
+    "grade": 8,
+    "strokes": 5
+  },
+  {
+    "kanji": "扱",
+    "ucsHex": "06271",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "芋",
+    "ucsHex": "0828b",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "臼",
+    "ucsHex": "081fc",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "汚",
+    "ucsHex": "06c5a",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "汗",
+    "ucsHex": "06c57",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "缶",
+    "ucsHex": "07f36",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "企",
+    "ucsHex": "04f01",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "伎",
+    "ucsHex": "04f0e",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "吉",
+    "ucsHex": "05409",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "朽",
+    "ucsHex": "0673d",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "叫",
+    "ucsHex": "053eb",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "仰",
+    "ucsHex": "04ef0",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "刑",
+    "ucsHex": "05211",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "江",
+    "ucsHex": "06c5f",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "旨",
+    "ucsHex": "065e8",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "芝",
+    "ucsHex": "0829d",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "朱",
+    "ucsHex": "06731",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "舟",
+    "ucsHex": "0821f",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "充",
+    "ucsHex": "05145",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "旬",
+    "ucsHex": "065ec",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "巡",
+    "ucsHex": "05de1",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "匠",
+    "ucsHex": "05320",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "尽",
+    "ucsHex": "05c3d",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "迅",
+    "ucsHex": "08fc5",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "壮",
+    "ucsHex": "058ee",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "吐",
+    "ucsHex": "05410",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "弐",
+    "ucsHex": "05f10",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "如",
+    "ucsHex": "05982",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "肌",
+    "ucsHex": "0808c",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "伐",
+    "ucsHex": "04f10",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "帆",
+    "ucsHex": "05e06",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "汎",
+    "ucsHex": "06c4e",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "妃",
+    "ucsHex": "05983",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "伏",
+    "ucsHex": "04f0f",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "忙",
+    "ucsHex": "05fd9",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "朴",
+    "ucsHex": "06734",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "妄",
+    "ucsHex": "05984",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "吏",
+    "ucsHex": "0540f",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "劣",
+    "ucsHex": "052a3",
+    "grade": 8,
+    "strokes": 6
+  },
+  {
+    "kanji": "亜",
+    "ucsHex": "04e9c",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "壱",
+    "ucsHex": "058f1",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "沖",
+    "ucsHex": "06c96",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "戒",
+    "ucsHex": "06212",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "肝",
+    "ucsHex": "0809d",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "含",
+    "ucsHex": "0542b",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "岐",
+    "ucsHex": "05c90",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "忌",
+    "ucsHex": "05fcc",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "却",
+    "ucsHex": "05374",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "狂",
+    "ucsHex": "072c2",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "吟",
+    "ucsHex": "0541f",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "串",
+    "ucsHex": "04e32",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "迎",
+    "ucsHex": "08fce",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "呉",
+    "ucsHex": "05449",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "坑",
+    "ucsHex": "05751",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "抗",
+    "ucsHex": "06297",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "攻",
+    "ucsHex": "0653b",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "更",
+    "ucsHex": "066f4",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "克",
+    "ucsHex": "0514b",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "佐",
+    "ucsHex": "04f50",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "沙",
+    "ucsHex": "06c99",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "阪",
+    "ucsHex": "0962a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "伺",
+    "ucsHex": "04f3a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "寿",
+    "ucsHex": "05bff",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "秀",
+    "ucsHex": "079c0",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "床",
+    "ucsHex": "05e8a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "抄",
+    "ucsHex": "06284",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "肖",
+    "ucsHex": "08096",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "伸",
+    "ucsHex": "04f38",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "芯",
+    "ucsHex": "082af",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "辛",
+    "ucsHex": "08f9b",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "吹",
+    "ucsHex": "05439",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "杉",
+    "ucsHex": "06749",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "即",
+    "ucsHex": "05373",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "汰",
+    "ucsHex": "06c70",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "妥",
+    "ucsHex": "059a5",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "択",
+    "ucsHex": "0629e",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "沢",
+    "ucsHex": "06ca2",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "但",
+    "ucsHex": "04f46",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "沈",
+    "ucsHex": "06c88",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "呈",
+    "ucsHex": "05448",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "廷",
+    "ucsHex": "05ef7",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "那",
+    "ucsHex": "090a3",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "尿",
+    "ucsHex": "05c3f",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "妊",
+    "ucsHex": "0598a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "忍",
+    "ucsHex": "05fcd",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "把",
+    "ucsHex": "0628a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "伯",
+    "ucsHex": "04f2f",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "抜",
+    "ucsHex": "0629c",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "伴",
+    "ucsHex": "04f34",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "尾",
+    "ucsHex": "05c3e",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "肘",
+    "ucsHex": "08098",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "扶",
+    "ucsHex": "06276",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "芳",
+    "ucsHex": "082b3",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "邦",
+    "ucsHex": "090a6",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "坊",
+    "ucsHex": "0574a",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "妨",
+    "ucsHex": "059a8",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "没",
+    "ucsHex": "06ca1",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "妙",
+    "ucsHex": "05999",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "戻",
+    "ucsHex": "0623b",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "冶",
+    "ucsHex": "051b6",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "妖",
+    "ucsHex": "05996",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "抑",
+    "ucsHex": "06291",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "沃",
+    "ucsHex": "06c83",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "励",
+    "ucsHex": "052b1",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "呂",
+    "ucsHex": "05442",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "弄",
+    "ucsHex": "05f04",
+    "grade": 8,
+    "strokes": 7
+  },
+  {
+    "kanji": "宛",
+    "ucsHex": "05b9b",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "依",
+    "ucsHex": "04f9d",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "炎",
+    "ucsHex": "0708e",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "押",
+    "ucsHex": "062bc",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "旺",
+    "ucsHex": "065fa",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "欧",
+    "ucsHex": "06b27",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "殴",
+    "ucsHex": "06bb4",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "岡",
+    "ucsHex": "05ca1",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "佳",
+    "ucsHex": "04f73",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "苛",
+    "ucsHex": "082db",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "怪",
+    "ucsHex": "0602a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拐",
+    "ucsHex": "062d0",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "劾",
+    "ucsHex": "052be",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "岳",
+    "ucsHex": "05cb3",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "玩",
+    "ucsHex": "073a9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "奇",
+    "ucsHex": "05947",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "祈",
+    "ucsHex": "07948",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "宜",
+    "ucsHex": "05b9c",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拒",
+    "ucsHex": "062d2",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拠",
+    "ucsHex": "062e0",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "享",
+    "ucsHex": "04eab",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "況",
+    "ucsHex": "06cc1",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "屈",
+    "ucsHex": "05c48",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "茎",
+    "ucsHex": "0830e",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "肩",
+    "ucsHex": "080a9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "弦",
+    "ucsHex": "05f26",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "股",
+    "ucsHex": "080a1",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "虎",
+    "ucsHex": "0864e",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拘",
+    "ucsHex": "062d8",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "肯",
+    "ucsHex": "080af",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "昆",
+    "ucsHex": "06606",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "采",
+    "ucsHex": "091c7",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "刺",
+    "ucsHex": "0523a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "祉",
+    "ucsHex": "07949",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "肢",
+    "ucsHex": "080a2",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "侍",
+    "ucsHex": "04f8d",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "邪",
+    "ucsHex": "090aa",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "呪",
+    "ucsHex": "0546a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "叔",
+    "ucsHex": "053d4",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "尚",
+    "ucsHex": "05c1a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "昇",
+    "ucsHex": "06607",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "沼",
+    "ucsHex": "06cbc",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "炊",
+    "ucsHex": "0708a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "枢",
+    "ucsHex": "067a2",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "姓",
+    "ucsHex": "059d3",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "征",
+    "ucsHex": "05f81",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "斉",
+    "ucsHex": "06589",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "析",
+    "ucsHex": "06790",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拙",
+    "ucsHex": "062d9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "狙",
+    "ucsHex": "072d9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "阻",
+    "ucsHex": "0963b",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "卓",
+    "ucsHex": "05353",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拓",
+    "ucsHex": "062d3",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "抽",
+    "ucsHex": "062bd",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "坪",
+    "ucsHex": "0576a",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "抵",
+    "ucsHex": "062b5",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "邸",
+    "ucsHex": "090b8",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "泥",
+    "ucsHex": "06ce5",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "迭",
+    "ucsHex": "08fed",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "妬",
+    "ucsHex": "059ac",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "到",
+    "ucsHex": "05230",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "突",
+    "ucsHex": "07a81",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "奈",
+    "ucsHex": "05948",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "杯",
+    "ucsHex": "0676f",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拍",
+    "ucsHex": "062cd",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "泊",
+    "ucsHex": "06cca",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "迫",
+    "ucsHex": "08feb",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "彼",
+    "ucsHex": "05f7c",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "披",
+    "ucsHex": "062ab",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "泌",
+    "ucsHex": "06ccc",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "苗",
+    "ucsHex": "082d7",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "怖",
+    "ucsHex": "06016",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "阜",
+    "ucsHex": "0961c",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "附",
+    "ucsHex": "09644",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "侮",
+    "ucsHex": "04fae",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "沸",
+    "ucsHex": "06cb8",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "併",
+    "ucsHex": "04f75",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "奉",
+    "ucsHex": "05949",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "抱",
+    "ucsHex": "062b1",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "泡",
+    "ucsHex": "06ce1",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "房",
+    "ucsHex": "0623f",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "肪",
+    "ucsHex": "080aa",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "奔",
+    "ucsHex": "05954",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "枕",
+    "ucsHex": "06795",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "抹",
+    "ucsHex": "062b9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "岬",
+    "ucsHex": "05cac",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "免",
+    "ucsHex": "0514d",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "茂",
+    "ucsHex": "08302",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "盲",
+    "ucsHex": "076f2",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "弥",
+    "ucsHex": "05f25",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "炉",
+    "ucsHex": "07089",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "枠",
+    "ucsHex": "067a0",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "刹",
+    "ucsHex": "05239",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "拉",
+    "ucsHex": "062c9",
+    "grade": 8,
+    "strokes": 8
+  },
+  {
+    "kanji": "哀",
+    "ucsHex": "054c0",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "威",
+    "ucsHex": "05a01",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "為",
+    "ucsHex": "070ba",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "畏",
+    "ucsHex": "0754f",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "茨",
+    "ucsHex": "08328",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "咽",
+    "ucsHex": "054bd",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "姻",
+    "ucsHex": "059fb",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "疫",
+    "ucsHex": "075ab",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "怨",
+    "ucsHex": "06028",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "卸",
+    "ucsHex": "05378",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "架",
+    "ucsHex": "067b6",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "悔",
+    "ucsHex": "06094",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "皆",
+    "ucsHex": "07686",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "垣",
+    "ucsHex": "057a3",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "柿",
+    "ucsHex": "067ff",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "括",
+    "ucsHex": "062ec",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "冠",
+    "ucsHex": "051a0",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "軌",
+    "ucsHex": "08ecc",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "虐",
+    "ucsHex": "08650",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "糾",
+    "ucsHex": "07cfe",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "峡",
+    "ucsHex": "05ce1",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "挟",
+    "ucsHex": "0631f",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "狭",
+    "ucsHex": "072ed",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "契",
+    "ucsHex": "05951",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "孤",
+    "ucsHex": "05b64",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "弧",
+    "ucsHex": "05f27",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "枯",
+    "ucsHex": "067af",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "侯",
+    "ucsHex": "04faf",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "恒",
+    "ucsHex": "06052",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "洪",
+    "ucsHex": "06d2a",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "荒",
+    "ucsHex": "08352",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "郊",
+    "ucsHex": "090ca",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "香",
+    "ucsHex": "09999",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "拷",
+    "ucsHex": "062f7",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "恨",
+    "ucsHex": "06068",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "砕",
+    "ucsHex": "07815",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "咲",
+    "ucsHex": "054b2",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "削",
+    "ucsHex": "0524a",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "柵",
+    "ucsHex": "067f5",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "拶",
+    "ucsHex": "062f6",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "施",
+    "ucsHex": "065bd",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "狩",
+    "ucsHex": "072e9",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "臭",
+    "ucsHex": "081ed",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "柔",
+    "ucsHex": "067d4",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "俊",
+    "ucsHex": "04fca",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "盾",
+    "ucsHex": "076fe",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "叙",
+    "ucsHex": "053d9",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "浄",
+    "ucsHex": "06d44",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "拭",
+    "ucsHex": "062ed",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "侵",
+    "ucsHex": "04fb5",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "甚",
+    "ucsHex": "0751a",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "帥",
+    "ucsHex": "05e25",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "是",
+    "ucsHex": "0662f",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "牲",
+    "ucsHex": "07272",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "窃",
+    "ucsHex": "07a83",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "荘",
+    "ucsHex": "08358",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "促",
+    "ucsHex": "04fc3",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "俗",
+    "ucsHex": "04fd7",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "耐",
+    "ucsHex": "08010",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "怠",
+    "ucsHex": "06020",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "胎",
+    "ucsHex": "080ce",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "胆",
+    "ucsHex": "080c6",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "挑",
+    "ucsHex": "06311",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "勅",
+    "ucsHex": "052c5",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "珍",
+    "ucsHex": "073cd",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "津",
+    "ucsHex": "06d25",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "亭",
+    "ucsHex": "04ead",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "貞",
+    "ucsHex": "08c9e",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "帝",
+    "ucsHex": "05e1d",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "訂",
+    "ucsHex": "08a02",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "怒",
+    "ucsHex": "06012",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "逃",
+    "ucsHex": "09003",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "洞",
+    "ucsHex": "06d1e",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "峠",
+    "ucsHex": "05ce0",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "栃",
+    "ucsHex": "06803",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "虹",
+    "ucsHex": "08679",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "卑",
+    "ucsHex": "05351",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "眉",
+    "ucsHex": "07709",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "赴",
+    "ucsHex": "08d74",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "封",
+    "ucsHex": "05c01",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "柄",
+    "ucsHex": "067c4",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "胞",
+    "ucsHex": "080de",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "某",
+    "ucsHex": "067d0",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "冒",
+    "ucsHex": "05192",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "勃",
+    "ucsHex": "052c3",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "盆",
+    "ucsHex": "076c6",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "昧",
+    "ucsHex": "06627",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "柳",
+    "ucsHex": "067f3",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "幽",
+    "ucsHex": "05e7d",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "侶",
+    "ucsHex": "04fb6",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "厘",
+    "ucsHex": "05398",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "郎",
+    "ucsHex": "090ce",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "訃",
+    "ucsHex": "08a03",
+    "grade": 8,
+    "strokes": 9
+  },
+  {
+    "kanji": "挨",
+    "ucsHex": "06328",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "唄",
+    "ucsHex": "05504",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "浦",
+    "ucsHex": "06d66",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "悦",
+    "ucsHex": "060a6",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "宴",
+    "ucsHex": "05bb4",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "翁",
+    "ucsHex": "07fc1",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "俺",
+    "ucsHex": "04ffa",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "華",
+    "ucsHex": "083ef",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "蚊",
+    "ucsHex": "0868a",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "核",
+    "ucsHex": "06838",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "釜",
+    "ucsHex": "091dc",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "陥",
+    "ucsHex": "09665",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "既",
+    "ucsHex": "065e2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "飢",
+    "ucsHex": "098e2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "鬼",
+    "ucsHex": "09b3c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恐",
+    "ucsHex": "06050",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恭",
+    "ucsHex": "0606d",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "脅",
+    "ucsHex": "08105",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "桑",
+    "ucsHex": "06851",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恵",
+    "ucsHex": "06075",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "桁",
+    "ucsHex": "06841",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "倹",
+    "ucsHex": "05039",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "兼",
+    "ucsHex": "0517c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "剣",
+    "ucsHex": "05263",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "拳",
+    "ucsHex": "062f3",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "軒",
+    "ucsHex": "08ed2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "娯",
+    "ucsHex": "05a2f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "悟",
+    "ucsHex": "0609f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "貢",
+    "ucsHex": "08ca2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "剛",
+    "ucsHex": "0525b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "唆",
+    "ucsHex": "05506",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "挫",
+    "ucsHex": "0632b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "宰",
+    "ucsHex": "05bb0",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "栽",
+    "ucsHex": "0683d",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "剤",
+    "ucsHex": "05264",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "索",
+    "ucsHex": "07d22",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "桟",
+    "ucsHex": "0685f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "脂",
+    "ucsHex": "08102",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "疾",
+    "ucsHex": "075be",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "酌",
+    "ucsHex": "0914c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "殊",
+    "ucsHex": "06b8a",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "珠",
+    "ucsHex": "073e0",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "准",
+    "ucsHex": "051c6",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "殉",
+    "ucsHex": "06b89",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "徐",
+    "ucsHex": "05f90",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "宵",
+    "ucsHex": "05bb5",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "症",
+    "ucsHex": "075c7",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "祥",
+    "ucsHex": "07965",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "称",
+    "ucsHex": "079f0",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "辱",
+    "ucsHex": "08fb1",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "唇",
+    "ucsHex": "05507",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "娠",
+    "ucsHex": "05a20",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "振",
+    "ucsHex": "0632f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "浸",
+    "ucsHex": "06d78",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "陣",
+    "ucsHex": "09663",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "粋",
+    "ucsHex": "07c8b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "衰",
+    "ucsHex": "08870",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "畝",
+    "ucsHex": "0755d",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "凄",
+    "ucsHex": "051c4",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "逝",
+    "ucsHex": "0901d",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "隻",
+    "ucsHex": "096bb",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "脊",
+    "ucsHex": "0810a",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "扇",
+    "ucsHex": "06247",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "栓",
+    "ucsHex": "06813",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "租",
+    "ucsHex": "079df",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "捜",
+    "ucsHex": "0635c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "挿",
+    "ucsHex": "0633f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "捉",
+    "ucsHex": "06349",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "袖",
+    "ucsHex": "08896",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "泰",
+    "ucsHex": "06cf0",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "託",
+    "ucsHex": "08a17",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恥",
+    "ucsHex": "06065",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "致",
+    "ucsHex": "081f4",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "畜",
+    "ucsHex": "0755c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "逐",
+    "ucsHex": "09010",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "秩",
+    "ucsHex": "079e9",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "衷",
+    "ucsHex": "08877",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "酎",
+    "ucsHex": "0914e",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "捗",
+    "ucsHex": "06357",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "朕",
+    "ucsHex": "06715",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "逓",
+    "ucsHex": "09013",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "哲",
+    "ucsHex": "054f2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "途",
+    "ucsHex": "09014",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "倒",
+    "ucsHex": "05012",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "凍",
+    "ucsHex": "051cd",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "唐",
+    "ucsHex": "05510",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "桃",
+    "ucsHex": "06843",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "透",
+    "ucsHex": "0900f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "胴",
+    "ucsHex": "080f4",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "匿",
+    "ucsHex": "0533f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "悩",
+    "ucsHex": "060a9",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "剥",
+    "ucsHex": "05265",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "畔",
+    "ucsHex": "07554",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "般",
+    "ucsHex": "0822c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "疲",
+    "ucsHex": "075b2",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "被",
+    "ucsHex": "088ab",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "姫",
+    "ucsHex": "059eb",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "浜",
+    "ucsHex": "06d5c",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "敏",
+    "ucsHex": "0654f",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "浮",
+    "ucsHex": "06d6e",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "紛",
+    "ucsHex": "07d1b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "捕",
+    "ucsHex": "06355",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "倣",
+    "ucsHex": "05023",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "俸",
+    "ucsHex": "04ff8",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "峰",
+    "ucsHex": "05cf0",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "砲",
+    "ucsHex": "07832",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "剖",
+    "ucsHex": "05256",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "紡",
+    "ucsHex": "07d21",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "埋",
+    "ucsHex": "057cb",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "眠",
+    "ucsHex": "07720",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "娘",
+    "ucsHex": "05a18",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "冥",
+    "ucsHex": "051a5",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "耗",
+    "ucsHex": "08017",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "紋",
+    "ucsHex": "07d0b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "竜",
+    "ucsHex": "07adc",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "倫",
+    "ucsHex": "0502b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "涙",
+    "ucsHex": "06d99",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "烈",
+    "ucsHex": "070c8",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恋",
+    "ucsHex": "0604b",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "浪",
+    "ucsHex": "06d6a",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "脇",
+    "ucsHex": "08107",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "哺",
+    "ucsHex": "054fa",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "恣",
+    "ucsHex": "06063",
+    "grade": 8,
+    "strokes": 10
+  },
+  {
+    "kanji": "尉",
+    "ucsHex": "05c09",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "萎",
+    "ucsHex": "0840e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "逸",
+    "ucsHex": "09038",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "淫",
+    "ucsHex": "06deb",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "陰",
+    "ucsHex": "09670",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "菓",
+    "ucsHex": "083d3",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "崖",
+    "ucsHex": "05d16",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "涯",
+    "ucsHex": "06daf",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "殻",
+    "ucsHex": "06bbb",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "郭",
+    "ucsHex": "090ed",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "掛",
+    "ucsHex": "0639b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "喝",
+    "ucsHex": "0559d",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "渇",
+    "ucsHex": "06e07",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "葛",
+    "ucsHex": "0845b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "乾",
+    "ucsHex": "04e7e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "勘",
+    "ucsHex": "052d8",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "患",
+    "ucsHex": "060a3",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "貫",
+    "ucsHex": "08cab",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "亀",
+    "ucsHex": "04e80",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "偽",
+    "ucsHex": "0507d",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "菊",
+    "ucsHex": "083ca",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "脚",
+    "ucsHex": "0811a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "虚",
+    "ucsHex": "0865a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "菌",
+    "ucsHex": "083cc",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "偶",
+    "ucsHex": "05076",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "掘",
+    "ucsHex": "06398",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "啓",
+    "ucsHex": "05553",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "掲",
+    "ucsHex": "063b2",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "渓",
+    "ucsHex": "06e13",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "蛍",
+    "ucsHex": "086cd",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "舷",
+    "ucsHex": "08237",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "控",
+    "ucsHex": "063a7",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "梗",
+    "ucsHex": "06897",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "頃",
+    "ucsHex": "09803",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "婚",
+    "ucsHex": "05a5a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "痕",
+    "ucsHex": "075d5",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "紺",
+    "ucsHex": "07d3a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "彩",
+    "ucsHex": "05f69",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "斎",
+    "ucsHex": "0658e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "崎",
+    "ucsHex": "05d0e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "埼",
+    "ucsHex": "057fc",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "惨",
+    "ucsHex": "060e8",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "斬",
+    "ucsHex": "065ac",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "鹿",
+    "ucsHex": "09e7f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "執",
+    "ucsHex": "057f7",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "赦",
+    "ucsHex": "08d66",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "斜",
+    "ucsHex": "0659c",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "蛇",
+    "ucsHex": "086c7",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "釈",
+    "ucsHex": "091c8",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "寂",
+    "ucsHex": "05bc2",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "渋",
+    "ucsHex": "06e0b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "淑",
+    "ucsHex": "06dd1",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "粛",
+    "ucsHex": "07c9b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "庶",
+    "ucsHex": "05eb6",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "渉",
+    "ucsHex": "06e09",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "紹",
+    "ucsHex": "07d39",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "訟",
+    "ucsHex": "08a1f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "剰",
+    "ucsHex": "05270",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "紳",
+    "ucsHex": "07d33",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "酔",
+    "ucsHex": "09154",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "崇",
+    "ucsHex": "05d07",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "据",
+    "ucsHex": "0636e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "惜",
+    "ucsHex": "060dc",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "戚",
+    "ucsHex": "0621a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "旋",
+    "ucsHex": "065cb",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "措",
+    "ucsHex": "063aa",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "曽",
+    "ucsHex": "066fd",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "粗",
+    "ucsHex": "07c97",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "爽",
+    "ucsHex": "0723d",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "掃",
+    "ucsHex": "06383",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "曹",
+    "ucsHex": "066f9",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "唾",
+    "ucsHex": "0553e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "堆",
+    "ucsHex": "05806",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "袋",
+    "ucsHex": "0888b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "逮",
+    "ucsHex": "0902e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "脱",
+    "ucsHex": "08131",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "淡",
+    "ucsHex": "06de1",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "窒",
+    "ucsHex": "07a92",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "彫",
+    "ucsHex": "05f6b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "眺",
+    "ucsHex": "0773a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "陳",
+    "ucsHex": "09673",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "釣",
+    "ucsHex": "091e3",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "偵",
+    "ucsHex": "05075",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "添",
+    "ucsHex": "06dfb",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "悼",
+    "ucsHex": "060bc",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "盗",
+    "ucsHex": "076d7",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "陶",
+    "ucsHex": "09676",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "豚",
+    "ucsHex": "08c5a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "軟",
+    "ucsHex": "08edf",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "猫",
+    "ucsHex": "0732b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "捻",
+    "ucsHex": "0637b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "粘",
+    "ucsHex": "07c98",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "婆",
+    "ucsHex": "05a46",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "排",
+    "ucsHex": "06392",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "培",
+    "ucsHex": "057f9",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "陪",
+    "ucsHex": "0966a",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "舶",
+    "ucsHex": "08236",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "販",
+    "ucsHex": "08ca9",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "描",
+    "ucsHex": "063cf",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "瓶",
+    "ucsHex": "074f6",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "符",
+    "ucsHex": "07b26",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "偏",
+    "ucsHex": "0504f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "崩",
+    "ucsHex": "05d29",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "堀",
+    "ucsHex": "05800",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "麻",
+    "ucsHex": "09ebb",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "猛",
+    "ucsHex": "0731b",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "唯",
+    "ucsHex": "0552f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "悠",
+    "ucsHex": "060a0",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "庸",
+    "ucsHex": "05eb8",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "梨",
+    "ucsHex": "068a8",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "粒",
+    "ucsHex": "07c92",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "隆",
+    "ucsHex": "09686",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "涼",
+    "ucsHex": "06dbc",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "猟",
+    "ucsHex": "0731f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "陵",
+    "ucsHex": "09675",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "累",
+    "ucsHex": "07d2f",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "惧",
+    "ucsHex": "060e7",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "羞",
+    "ucsHex": "07f9e",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "貪",
+    "ucsHex": "08caa",
+    "grade": 8,
+    "strokes": 11
+  },
+  {
+    "kanji": "握",
+    "ucsHex": "063e1",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "偉",
+    "ucsHex": "05049",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "椅",
+    "ucsHex": "06905",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "渦",
+    "ucsHex": "06e26",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "詠",
+    "ucsHex": "08a60",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "越",
+    "ucsHex": "08d8a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "援",
+    "ucsHex": "063f4",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "奥",
+    "ucsHex": "05965",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "喚",
+    "ucsHex": "0559a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "堪",
+    "ucsHex": "0582a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "換",
+    "ucsHex": "063db",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "敢",
+    "ucsHex": "06562",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "棺",
+    "ucsHex": "068fa",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "款",
+    "ucsHex": "06b3e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "閑",
+    "ucsHex": "09591",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "幾",
+    "ucsHex": "05e7e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "棋",
+    "ucsHex": "068cb",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "欺",
+    "ucsHex": "06b3a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "喫",
+    "ucsHex": "055ab",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "距",
+    "ucsHex": "08ddd",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "暁",
+    "ucsHex": "06681",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "僅",
+    "ucsHex": "050c5",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "琴",
+    "ucsHex": "07434",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "遇",
+    "ucsHex": "09047",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "隅",
+    "ucsHex": "09685",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "圏",
+    "ucsHex": "0570f",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "堅",
+    "ucsHex": "05805",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "雇",
+    "ucsHex": "096c7",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "御",
+    "ucsHex": "05fa1",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "喉",
+    "ucsHex": "05589",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "慌",
+    "ucsHex": "0614c",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "硬",
+    "ucsHex": "0786c",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "絞",
+    "ucsHex": "07d5e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "項",
+    "ucsHex": "09805",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "詐",
+    "ucsHex": "08a50",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "傘",
+    "ucsHex": "05098",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "紫",
+    "ucsHex": "07d2b",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "滋",
+    "ucsHex": "06ecb",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "軸",
+    "ucsHex": "08ef8",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "湿",
+    "ucsHex": "06e7f",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "煮",
+    "ucsHex": "0716e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "循",
+    "ucsHex": "05faa",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "掌",
+    "ucsHex": "0638c",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "晶",
+    "ucsHex": "06676",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "焦",
+    "ucsHex": "07126",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "硝",
+    "ucsHex": "0785d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "粧",
+    "ucsHex": "07ca7",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "詔",
+    "ucsHex": "08a54",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "畳",
+    "ucsHex": "07573",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "殖",
+    "ucsHex": "06b96",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "診",
+    "ucsHex": "08a3a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "尋",
+    "ucsHex": "05c0b",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "須",
+    "ucsHex": "09808",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "酢",
+    "ucsHex": "09162",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "遂",
+    "ucsHex": "09042",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "随",
+    "ucsHex": "0968f",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "疎",
+    "ucsHex": "0758e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "訴",
+    "ucsHex": "08a34",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "喪",
+    "ucsHex": "055aa",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "痩",
+    "ucsHex": "075e9",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "葬",
+    "ucsHex": "0846c",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "堕",
+    "ucsHex": "05815",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "惰",
+    "ucsHex": "060f0",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "替",
+    "ucsHex": "066ff",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "棚",
+    "ucsHex": "068da",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "弾",
+    "ucsHex": "05f3e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "遅",
+    "ucsHex": "09045",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "超",
+    "ucsHex": "08d85",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "椎",
+    "ucsHex": "0690e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "塚",
+    "ucsHex": "0585a",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "堤",
+    "ucsHex": "05824",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "貼",
+    "ucsHex": "08cbc",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "渡",
+    "ucsHex": "06e21",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "塔",
+    "ucsHex": "05854",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "搭",
+    "ucsHex": "0642d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "棟",
+    "ucsHex": "068df",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "痘",
+    "ucsHex": "075d8",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "筒",
+    "ucsHex": "07b52",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "鈍",
+    "ucsHex": "0920d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "廃",
+    "ucsHex": "05ec3",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "媒",
+    "ucsHex": "05a92",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "斑",
+    "ucsHex": "06591",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "蛮",
+    "ucsHex": "086ee",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "扉",
+    "ucsHex": "06249",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "媛",
+    "ucsHex": "05a9b",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "普",
+    "ucsHex": "0666e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "幅",
+    "ucsHex": "05e45",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "雰",
+    "ucsHex": "096f0",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "塀",
+    "ucsHex": "05840",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "遍",
+    "ucsHex": "0904d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "募",
+    "ucsHex": "052df",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "傍",
+    "ucsHex": "0508d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "帽",
+    "ucsHex": "05e3d",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "婿",
+    "ucsHex": "05a7f",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "愉",
+    "ucsHex": "06109",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "湧",
+    "ucsHex": "06e67",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "猶",
+    "ucsHex": "07336",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "裕",
+    "ucsHex": "088d5",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "雄",
+    "ucsHex": "096c4",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "揚",
+    "ucsHex": "063da",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "揺",
+    "ucsHex": "063fa",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "絡",
+    "ucsHex": "07d61",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "嵐",
+    "ucsHex": "05d50",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "痢",
+    "ucsHex": "075e2",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "硫",
+    "ucsHex": "0786b",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "塁",
+    "ucsHex": "05841",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "裂",
+    "ucsHex": "088c2",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "廊",
+    "ucsHex": "05eca",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "惑",
+    "ucsHex": "060d1",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "湾",
+    "ucsHex": "06e7e",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "腕",
+    "ucsHex": "08155",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "喩",
+    "ucsHex": "055a9",
+    "grade": 8,
+    "strokes": 12
+  },
+  {
+    "kanji": "違",
+    "ucsHex": "09055",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "煙",
+    "ucsHex": "07159",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "猿",
+    "ucsHex": "0733f",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "鉛",
+    "ucsHex": "0925b",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嫁",
+    "ucsHex": "05ac1",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "暇",
+    "ucsHex": "06687",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "禍",
+    "ucsHex": "0798d",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "雅",
+    "ucsHex": "096c5",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "塊",
+    "ucsHex": "0584a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "慨",
+    "ucsHex": "06168",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "蓋",
+    "ucsHex": "084cb",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "該",
+    "ucsHex": "08a72",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "較",
+    "ucsHex": "08f03",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "隔",
+    "ucsHex": "09694",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "滑",
+    "ucsHex": "06ed1",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "褐",
+    "ucsHex": "08910",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "勧",
+    "ucsHex": "052e7",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "寛",
+    "ucsHex": "05bdb",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "頑",
+    "ucsHex": "09811",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "棄",
+    "ucsHex": "068c4",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "詰",
+    "ucsHex": "08a70",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "愚",
+    "ucsHex": "0611a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "虞",
+    "ucsHex": "0865e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "窟",
+    "ucsHex": "07a9f",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "靴",
+    "ucsHex": "09774",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "傾",
+    "ucsHex": "050be",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "携",
+    "ucsHex": "0643a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "継",
+    "ucsHex": "07d99",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "詣",
+    "ucsHex": "08a63",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "隙",
+    "ucsHex": "09699",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "傑",
+    "ucsHex": "05091",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嫌",
+    "ucsHex": "05acc",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "献",
+    "ucsHex": "0732e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "遣",
+    "ucsHex": "09063",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "誇",
+    "ucsHex": "08a87",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "鼓",
+    "ucsHex": "09f13",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "碁",
+    "ucsHex": "07881",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "溝",
+    "ucsHex": "06e9d",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "腰",
+    "ucsHex": "08170",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "債",
+    "ucsHex": "050b5",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "催",
+    "ucsHex": "050ac",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "塞",
+    "ucsHex": "0585e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "歳",
+    "ucsHex": "06b73",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "載",
+    "ucsHex": "08f09",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "搾",
+    "ucsHex": "0643e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嗣",
+    "ucsHex": "055e3",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "慈",
+    "ucsHex": "06148",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嫉",
+    "ucsHex": "05ac9",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "腫",
+    "ucsHex": "0816b",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "愁",
+    "ucsHex": "06101",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "酬",
+    "ucsHex": "0916c",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "奨",
+    "ucsHex": "05968",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "詳",
+    "ucsHex": "08a73",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "飾",
+    "ucsHex": "098fe",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "触",
+    "ucsHex": "089e6",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "寝",
+    "ucsHex": "05bdd",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "慎",
+    "ucsHex": "0614e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "腎",
+    "ucsHex": "0814e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "睡",
+    "ucsHex": "07761",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "裾",
+    "ucsHex": "088fe",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "跡",
+    "ucsHex": "08de1",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "摂",
+    "ucsHex": "06442",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "煎",
+    "ucsHex": "0714e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "羨",
+    "ucsHex": "07fa8",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "腺",
+    "ucsHex": "0817a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "詮",
+    "ucsHex": "08a6e",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "践",
+    "ucsHex": "08df5",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "禅",
+    "ucsHex": "07985",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "塑",
+    "ucsHex": "05851",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "遡",
+    "ucsHex": "09061",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "僧",
+    "ucsHex": "050e7",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "賊",
+    "ucsHex": "08cca",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "遜",
+    "ucsHex": "0905c",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "滞",
+    "ucsHex": "06ede",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "滝",
+    "ucsHex": "06edd",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嘆",
+    "ucsHex": "05606",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "痴",
+    "ucsHex": "075f4",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "稚",
+    "ucsHex": "07a1a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "蓄",
+    "ucsHex": "084c4",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "跳",
+    "ucsHex": "08df3",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "艇",
+    "ucsHex": "08247",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "溺",
+    "ucsHex": "06eba",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "殿",
+    "ucsHex": "06bbf",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "塗",
+    "ucsHex": "05857",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "督",
+    "ucsHex": "07763",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "頓",
+    "ucsHex": "09813",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "漠",
+    "ucsHex": "06f20",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "鉢",
+    "ucsHex": "09262",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "搬",
+    "ucsHex": "0642c",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "煩",
+    "ucsHex": "07169",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "頒",
+    "ucsHex": "09812",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "微",
+    "ucsHex": "05fae",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "蜂",
+    "ucsHex": "08702",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "飽",
+    "ucsHex": "098fd",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "睦",
+    "ucsHex": "07766",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "滅",
+    "ucsHex": "06ec5",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "誉",
+    "ucsHex": "08a89",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "溶",
+    "ucsHex": "06eb6",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "裸",
+    "ucsHex": "088f8",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "雷",
+    "ucsHex": "096f7",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "酪",
+    "ucsHex": "0916a",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "虜",
+    "ucsHex": "0865c",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "鈴",
+    "ucsHex": "09234",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "零",
+    "ucsHex": "096f6",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "廉",
+    "ucsHex": "05ec9",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "賂",
+    "ucsHex": "08cc2",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "楼",
+    "ucsHex": "0697c",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "賄",
+    "ucsHex": "08cc4",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "傲",
+    "ucsHex": "050b2",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "嗅",
+    "ucsHex": "055c5",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "毀",
+    "ucsHex": "06bc0",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "彙",
+    "ucsHex": "05f59",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "慄",
+    "ucsHex": "06144",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "楷",
+    "ucsHex": "06977",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "塡",
+    "ucsHex": "05861",
+    "grade": 8,
+    "strokes": 13
+  },
+  {
+    "kanji": "維",
+    "ucsHex": "07dad",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "稲",
+    "ucsHex": "07a32",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "隠",
+    "ucsHex": "096a0",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "餌",
+    "ucsHex": "0990c",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "寡",
+    "ucsHex": "05be1",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "箇",
+    "ucsHex": "07b87",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "概",
+    "ucsHex": "06982",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "駆",
+    "ucsHex": "099c6",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "熊",
+    "ucsHex": "0718a",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "綱",
+    "ucsHex": "07db1",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "酵",
+    "ucsHex": "09175",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "豪",
+    "ucsHex": "08c6a",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "酷",
+    "ucsHex": "09177",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "獄",
+    "ucsHex": "07344",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "魂",
+    "ucsHex": "09b42",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "雌",
+    "ucsHex": "096cc",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漆",
+    "ucsHex": "06f06",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "遮",
+    "ucsHex": "0906e",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "需",
+    "ucsHex": "09700",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "銃",
+    "ucsHex": "09283",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "塾",
+    "ucsHex": "0587e",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "緒",
+    "ucsHex": "07dd2",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "彰",
+    "ucsHex": "05f70",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "誓",
+    "ucsHex": "08a93",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漸",
+    "ucsHex": "06f38",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "遭",
+    "ucsHex": "0906d",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "憎",
+    "ucsHex": "0618e",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "駄",
+    "ucsHex": "099c4",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "奪",
+    "ucsHex": "0596a",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "端",
+    "ucsHex": "07aef",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "綻",
+    "ucsHex": "07dbb",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "嫡",
+    "ucsHex": "05ae1",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "徴",
+    "ucsHex": "05fb4",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漬",
+    "ucsHex": "06f2c",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "摘",
+    "ucsHex": "06458",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "滴",
+    "ucsHex": "06ef4",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "寧",
+    "ucsHex": "05be7",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "髪",
+    "ucsHex": "09aea",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "罰",
+    "ucsHex": "07f70",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "閥",
+    "ucsHex": "095a5",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "碑",
+    "ucsHex": "07891",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漂",
+    "ucsHex": "06f02",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "腐",
+    "ucsHex": "08150",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "蔑",
+    "ucsHex": "08511",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "慕",
+    "ucsHex": "06155",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "貌",
+    "ucsHex": "08c8c",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "僕",
+    "ucsHex": "050d5",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "墨",
+    "ucsHex": "058a8",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "膜",
+    "ucsHex": "0819c",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "慢",
+    "ucsHex": "06162",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漫",
+    "ucsHex": "06f2b",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "蜜",
+    "ucsHex": "0871c",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "銘",
+    "ucsHex": "09298",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "網",
+    "ucsHex": "07db2",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "餅",
+    "ucsHex": "09905",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "誘",
+    "ucsHex": "08a98",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "踊",
+    "ucsHex": "08e0a",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "僚",
+    "ucsHex": "050da",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "瑠",
+    "ucsHex": "07460",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "暦",
+    "ucsHex": "066a6",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "漏",
+    "ucsHex": "06f0f",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "瘍",
+    "ucsHex": "0760d",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "箋",
+    "ucsHex": "07b8b",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "辣",
+    "ucsHex": "08fa3",
+    "grade": 8,
+    "strokes": 14
+  },
+  {
+    "kanji": "慰",
+    "ucsHex": "06170",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "影",
+    "ucsHex": "05f71",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "鋭",
+    "ucsHex": "092ed",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "謁",
+    "ucsHex": "08b01",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "閲",
+    "ucsHex": "095b2",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "縁",
+    "ucsHex": "07e01",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "稼",
+    "ucsHex": "07a3c",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "餓",
+    "ucsHex": "09913",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "潟",
+    "ucsHex": "06f5f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "歓",
+    "ucsHex": "06b53",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "監",
+    "ucsHex": "076e3",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "緩",
+    "ucsHex": "07de9",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "畿",
+    "ucsHex": "0757f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "輝",
+    "ucsHex": "08f1d",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "儀",
+    "ucsHex": "05100",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "戯",
+    "ucsHex": "0622f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "窮",
+    "ucsHex": "07aae",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "緊",
+    "ucsHex": "07dca",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "駒",
+    "ucsHex": "099d2",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "勲",
+    "ucsHex": "052f2",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "慶",
+    "ucsHex": "06176",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "撃",
+    "ucsHex": "06483",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "稿",
+    "ucsHex": "07a3f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "撮",
+    "ucsHex": "064ae",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "暫",
+    "ucsHex": "066ab",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "賜",
+    "ucsHex": "08cdc",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "趣",
+    "ucsHex": "08da3",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "潤",
+    "ucsHex": "06f64",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "遵",
+    "ucsHex": "09075",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "衝",
+    "ucsHex": "0885d",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "嘱",
+    "ucsHex": "05631",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "審",
+    "ucsHex": "05be9",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "震",
+    "ucsHex": "09707",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "澄",
+    "ucsHex": "06f84",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "請",
+    "ucsHex": "08acb",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "潜",
+    "ucsHex": "06f5c",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "遷",
+    "ucsHex": "09077",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "槽",
+    "ucsHex": "069fd",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "諾",
+    "ucsHex": "08afe",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "誰",
+    "ucsHex": "08ab0",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "鋳",
+    "ucsHex": "092f3",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "駐",
+    "ucsHex": "099d0",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "墜",
+    "ucsHex": "0589c",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "潰",
+    "ucsHex": "06f70",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "締",
+    "ucsHex": "07de0",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "徹",
+    "ucsHex": "05fb9",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "撤",
+    "ucsHex": "064a4",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "賭",
+    "ucsHex": "08ced",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "踏",
+    "ucsHex": "08e0f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "憧",
+    "ucsHex": "061a7",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "縄",
+    "ucsHex": "07e04",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "罵",
+    "ucsHex": "07f75",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "輩",
+    "ucsHex": "08f29",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "賠",
+    "ucsHex": "08ce0",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "箸",
+    "ucsHex": "07bb8",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "範",
+    "ucsHex": "07bc4",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "盤",
+    "ucsHex": "076e4",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "罷",
+    "ucsHex": "07f77",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "膝",
+    "ucsHex": "0819d",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "賓",
+    "ucsHex": "08cd3",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "敷",
+    "ucsHex": "06577",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "膚",
+    "ucsHex": "0819a",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "賦",
+    "ucsHex": "08ce6",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "舞",
+    "ucsHex": "0821e",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "噴",
+    "ucsHex": "05674",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "墳",
+    "ucsHex": "058b3",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "憤",
+    "ucsHex": "061a4",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "幣",
+    "ucsHex": "05e63",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "弊",
+    "ucsHex": "05f0a",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "蔽",
+    "ucsHex": "0853d",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "舗",
+    "ucsHex": "08217",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "穂",
+    "ucsHex": "07a42",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "褒",
+    "ucsHex": "08912",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "撲",
+    "ucsHex": "064b2",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "摩",
+    "ucsHex": "06469",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "魅",
+    "ucsHex": "09b45",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "黙",
+    "ucsHex": "09ed9",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "憂",
+    "ucsHex": "06182",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "窯",
+    "ucsHex": "07aaf",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "履",
+    "ucsHex": "05c65",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "璃",
+    "ucsHex": "07483",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "慮",
+    "ucsHex": "0616e",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "寮",
+    "ucsHex": "05bee",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "霊",
+    "ucsHex": "0970a",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "嘲",
+    "ucsHex": "05632",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "憬",
+    "ucsHex": "061ac",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "摯",
+    "ucsHex": "0646f",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "踪",
+    "ucsHex": "08e2a",
+    "grade": 8,
+    "strokes": 15
+  },
+  {
+    "kanji": "緯",
+    "ucsHex": "07def",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "憶",
+    "ucsHex": "061b6",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "穏",
+    "ucsHex": "07a4f",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "壊",
+    "ucsHex": "058ca",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "懐",
+    "ucsHex": "061d0",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "骸",
+    "ucsHex": "09ab8",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "獲",
+    "ucsHex": "07372",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "憾",
+    "ucsHex": "061be",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "還",
+    "ucsHex": "09084",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "凝",
+    "ucsHex": "051dd",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "錦",
+    "ucsHex": "09326",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "薫",
+    "ucsHex": "085ab",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "憩",
+    "ucsHex": "061a9",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "稽",
+    "ucsHex": "07a3d",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "賢",
+    "ucsHex": "08ce2",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "衡",
+    "ucsHex": "08861",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "墾",
+    "ucsHex": "058be",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "錯",
+    "ucsHex": "0932f",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "諮",
+    "ucsHex": "08aee",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "儒",
+    "ucsHex": "05112",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "獣",
+    "ucsHex": "07363",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "壌",
+    "ucsHex": "058cc",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "嬢",
+    "ucsHex": "05b22",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "錠",
+    "ucsHex": "09320",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "薪",
+    "ucsHex": "085aa",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "醒",
+    "ucsHex": "09192",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "薦",
+    "ucsHex": "085a6",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "膳",
+    "ucsHex": "081b3",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "濁",
+    "ucsHex": "06fc1",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "壇",
+    "ucsHex": "058c7",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "諦",
+    "ucsHex": "08ae6",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "篤",
+    "ucsHex": "07be4",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "曇",
+    "ucsHex": "066c7",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "謎",
+    "ucsHex": "08b0e",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "濃",
+    "ucsHex": "06fc3",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "薄",
+    "ucsHex": "08584",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "縛",
+    "ucsHex": "07e1b",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "繁",
+    "ucsHex": "07e41",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "避",
+    "ucsHex": "0907f",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "壁",
+    "ucsHex": "058c1",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "縫",
+    "ucsHex": "07e2b",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "膨",
+    "ucsHex": "081a8",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "謀",
+    "ucsHex": "08b00",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "磨",
+    "ucsHex": "078e8",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "麺",
+    "ucsHex": "09eba",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "諭",
+    "ucsHex": "08aed",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "融",
+    "ucsHex": "0878d",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "擁",
+    "ucsHex": "064c1",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "謡",
+    "ucsHex": "08b21",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "頼",
+    "ucsHex": "0983c",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "隣",
+    "ucsHex": "096a3",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "隷",
+    "ucsHex": "096b7",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "錬",
+    "ucsHex": "0932c",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "緻",
+    "ucsHex": "07dfb",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "諧",
+    "ucsHex": "08ae7",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "錮",
+    "ucsHex": "0932e",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "頰",
+    "ucsHex": "09830",
+    "grade": 8,
+    "strokes": 16
+  },
+  {
+    "kanji": "闇",
+    "ucsHex": "095c7",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "臆",
+    "ucsHex": "081c6",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "嚇",
+    "ucsHex": "05687",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "轄",
+    "ucsHex": "08f44",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "環",
+    "ucsHex": "074b0",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "擬",
+    "ucsHex": "064ec",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "犠",
+    "ucsHex": "072a0",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "矯",
+    "ucsHex": "077ef",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "謹",
+    "ucsHex": "08b39",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "謙",
+    "ucsHex": "08b19",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "鍵",
+    "ucsHex": "09375",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "購",
+    "ucsHex": "08cfc",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "懇",
+    "ucsHex": "061c7",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "擦",
+    "ucsHex": "064e6",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "爵",
+    "ucsHex": "07235",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "醜",
+    "ucsHex": "0919c",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "償",
+    "ucsHex": "0511f",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "礁",
+    "ucsHex": "07901",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "繊",
+    "ucsHex": "07e4a",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "鮮",
+    "ucsHex": "09bae",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "燥",
+    "ucsHex": "071e5",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "霜",
+    "ucsHex": "0971c",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "戴",
+    "ucsHex": "06234",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "濯",
+    "ucsHex": "06fef",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "鍛",
+    "ucsHex": "0935b",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "聴",
+    "ucsHex": "08074",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "謄",
+    "ucsHex": "08b04",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "瞳",
+    "ucsHex": "077b3",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "鍋",
+    "ucsHex": "0934b",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "頻",
+    "ucsHex": "0983b",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "翼",
+    "ucsHex": "07ffc",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "療",
+    "ucsHex": "07642",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "瞭",
+    "ucsHex": "077ad",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "齢",
+    "ucsHex": "09f62",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "曖",
+    "ucsHex": "066d6",
+    "grade": 8,
+    "strokes": 17
+  },
+  {
+    "kanji": "穫",
+    "ucsHex": "07a6b",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "顎",
+    "ucsHex": "0984e",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "鎌",
+    "ucsHex": "0938c",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "韓",
+    "ucsHex": "097d3",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "騎",
+    "ucsHex": "09a0e",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "襟",
+    "ucsHex": "0895f",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "顕",
+    "ucsHex": "09855",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "鎖",
+    "ucsHex": "09396",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "瞬",
+    "ucsHex": "077ac",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "繕",
+    "ucsHex": "07e55",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "礎",
+    "ucsHex": "0790e",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "騒",
+    "ucsHex": "09a12",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "贈",
+    "ucsHex": "08d08",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "懲",
+    "ucsHex": "061f2",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "鎮",
+    "ucsHex": "093ae",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "藤",
+    "ucsHex": "085e4",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "闘",
+    "ucsHex": "095d8",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "藩",
+    "ucsHex": "085e9",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "覆",
+    "ucsHex": "08986",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "癖",
+    "ucsHex": "07656",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "翻",
+    "ucsHex": "07ffb",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "繭",
+    "ucsHex": "07e6d",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "癒",
+    "ucsHex": "07652",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "濫",
+    "ucsHex": "06feb",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "藍",
+    "ucsHex": "085cd",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "糧",
+    "ucsHex": "07ce7",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "璧",
+    "ucsHex": "074a7",
+    "grade": 8,
+    "strokes": 18
+  },
+  {
+    "kanji": "韻",
+    "ucsHex": "097fb",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "艶",
+    "ucsHex": "08276",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "繰",
+    "ucsHex": "07e70",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "鶏",
+    "ucsHex": "09d8f",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "鯨",
+    "ucsHex": "09be8",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "璽",
+    "ucsHex": "074bd",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "蹴",
+    "ucsHex": "08e74",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "髄",
+    "ucsHex": "09ac4",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "瀬",
+    "ucsHex": "0702c",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "藻",
+    "ucsHex": "085fb",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "覇",
+    "ucsHex": "08987",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "爆",
+    "ucsHex": "07206",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "譜",
+    "ucsHex": "08b5c",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "簿",
+    "ucsHex": "07c3f",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "霧",
+    "ucsHex": "09727",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "羅",
+    "ucsHex": "07f85",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "離",
+    "ucsHex": "096e2",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "麗",
+    "ucsHex": "09e97",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "麓",
+    "ucsHex": "09e93",
+    "grade": 8,
+    "strokes": 19
+  },
+  {
+    "kanji": "響",
+    "ucsHex": "097ff",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "懸",
+    "ucsHex": "061f8",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "鐘",
+    "ucsHex": "09418",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "譲",
+    "ucsHex": "08b72",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "醸",
+    "ucsHex": "091b8",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "籍",
+    "ucsHex": "07c4d",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "騰",
+    "ucsHex": "09a30",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "欄",
+    "ucsHex": "06b04",
+    "grade": 8,
+    "strokes": 20
+  },
+  {
+    "kanji": "艦",
+    "ucsHex": "08266",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "顧",
+    "ucsHex": "09867",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "鶴",
+    "ucsHex": "09db4",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "魔",
+    "ucsHex": "09b54",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "躍",
+    "ucsHex": "08e8d",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "露",
+    "ucsHex": "09732",
+    "grade": 8,
+    "strokes": 21
+  },
+  {
+    "kanji": "驚",
+    "ucsHex": "09a5a",
+    "grade": 8,
+    "strokes": 22
+  },
+  {
+    "kanji": "襲",
+    "ucsHex": "08972",
+    "grade": 8,
+    "strokes": 22
+  },
+  {
+    "kanji": "籠",
+    "ucsHex": "07c60",
+    "grade": 8,
+    "strokes": 22
+  },
+  {
+    "kanji": "鑑",
+    "ucsHex": "09451",
+    "grade": 8,
+    "strokes": 23
+  },
+  {
+    "kanji": "鬱",
+    "ucsHex": "09b31",
+    "grade": 8,
+    "strokes": 29
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "kanji": "殺",
+  "on": [
+    "さつ",
+    "さい",
+    "せつ"
+  ],
+  "kun": [
+    "ころ.す",
+    "-ごろ.し",
+    "そ.ぐ"
+  ],
+  "meaning": [
+    "Kill",
+    "Murder",
+    "Butcher",
+    "Slice Off",
+    "Split",
+    "Diminish",
+    "Reduce",
+    "Spoil"
+  ],
+  "jlpt": "N3",
+  "strokes": 10,
+  "grade": 4,
+  "ucsHex": "06bba",
+  "freq": 581,
+  "radicals": [
+    "Treasure",
+    "Tree",
+    "Weapon"
+  ]
+}

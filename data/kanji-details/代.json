@@ -1,0 +1,40 @@
+{
+  "kanji": "代",
+  "on": [
+    "だい",
+    "たい"
+  ],
+  "kun": [
+    "か.わる",
+    "かわ.る",
+    "かわ.り",
+    "か.わり",
+    "-がわ.り",
+    "-が.わり",
+    "か.える",
+    "よ",
+    "しろ"
+  ],
+  "meaning": [
+    "Substitute",
+    "Change",
+    "Convert",
+    "Replace",
+    "Period",
+    "Age",
+    "Counter For Decades Of Ages, Eras, Etc.",
+    "Generation",
+    "Charge",
+    "Rate",
+    "Fee"
+  ],
+  "jlpt": "N4",
+  "strokes": 5,
+  "grade": 3,
+  "ucsHex": "04ee3",
+  "freq": 66,
+  "radicals": [
+    "Leader",
+    "Ceremony"
+  ]
+}

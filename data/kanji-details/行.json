@@ -1,0 +1,36 @@
+{
+  "kanji": "行",
+  "on": [
+    "こう",
+    "ぎょう",
+    "あん"
+  ],
+  "kun": [
+    "い.く",
+    "ゆ.く",
+    "-ゆ.き",
+    "-ゆき",
+    "-い.き",
+    "-いき",
+    "おこな.う",
+    "おこ.なう"
+  ],
+  "meaning": [
+    "Going",
+    "Journey",
+    "Carry Out",
+    "Conduct",
+    "Act",
+    "Line",
+    "Row",
+    "Bank"
+  ],
+  "jlpt": "N5",
+  "strokes": 6,
+  "grade": 2,
+  "ucsHex": "0884c",
+  "freq": 20,
+  "radicals": [
+    "Go"
+  ]
+}

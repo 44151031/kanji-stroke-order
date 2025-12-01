@@ -1,0 +1,33 @@
+{
+  "kanji": "空",
+  "on": [
+    "くう"
+  ],
+  "kun": [
+    "そら",
+    "あ.く",
+    "あ.き",
+    "あ.ける",
+    "から",
+    "す.く",
+    "す.かす",
+    "むな.しい"
+  ],
+  "meaning": [
+    "Empty",
+    "Sky",
+    "Void",
+    "Vacant",
+    "Vacuum"
+  ],
+  "jlpt": "N4",
+  "strokes": 8,
+  "grade": 1,
+  "ucsHex": "07a7a",
+  "freq": 304,
+  "radicals": [
+    "Roof",
+    "Legs",
+    "Construction"
+  ]
+}

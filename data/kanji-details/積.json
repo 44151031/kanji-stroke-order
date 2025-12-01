@@ -1,0 +1,31 @@
+{
+  "kanji": "積",
+  "on": [
+    "せき"
+  ],
+  "kun": [
+    "つ.む",
+    "-づ.み",
+    "つ.もる",
+    "つ.もり"
+  ],
+  "meaning": [
+    "Volume",
+    "Product (x*y)",
+    "Acreage",
+    "Contents",
+    "Pile Up",
+    "Stack",
+    "Load",
+    "Amass"
+  ],
+  "jlpt": "N3",
+  "strokes": 16,
+  "grade": 4,
+  "ucsHex": "07a4d",
+  "freq": 541,
+  "radicals": [
+    "Grain",
+    "Blame"
+  ]
+}

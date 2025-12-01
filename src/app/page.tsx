@@ -2,10 +2,31 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SvgAnimator from "@/components/SvgAnimator";
+
+// 人気の漢字
+const POPULAR_KANJI = ["山", "川", "日", "月", "火", "水", "木", "金", "土", "人", "大", "小"];
+
+// 学年別リンク
+const GRADE_LINKS = [
+  { grade: 1, label: "小学1年", count: 80 },
+  { grade: 2, label: "小学2年", count: 160 },
+  { grade: 3, label: "小学3年", count: 200 },
+  { grade: 4, label: "小学4年", count: 200 },
+  { grade: 5, label: "小学5年", count: 185 },
+  { grade: 6, label: "小学6年", count: 181 },
+  { grade: 8, label: "中学校", count: 1130 },
+];
+
+// 主な画数
+const STROKE_LINKS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+// 人気の部首
+const BUSHU_LINKS = ["Water", "Person", "Tree", "Hand", "Heart", "Sun", "Mouth", "Earth", "Fire", "Gold"];
 
 export default function Home() {
   const [searchText, setSearchText] = useState("");
@@ -39,20 +60,20 @@ export default function Home() {
           漢字書き順
         </h1>
         <p className="text-muted-foreground text-lg">
-          漢字・ひらがな・カタカナの書き順をアニメーションで学ぼう
+          常用漢字2136字の書き順をアニメーションで学ぼう
         </p>
       </header>
 
       {/* 検索エリア */}
       <Card className="w-full max-w-md rounded-2xl shadow-sm border-border/50">
         <CardHeader className="pb-4">
-          <CardTitle className="text-lg font-medium">文字を検索</CardTitle>
+          <CardTitle className="text-lg font-medium">漢字を検索</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex gap-3">
             <Input
               type="text"
-              placeholder="漢字・ひらがな・カタカナを入力"
+              placeholder="漢字を入力..."
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
               onKeyDown={handleKeyDown}
@@ -89,46 +110,105 @@ export default function Home() {
         </Card>
       )}
 
-      {/* クイックリンク */}
-      <nav className="flex gap-4 flex-wrap justify-center pt-4">
-        <Button 
-          variant="ghost" 
-          onClick={() => router.push("/hiragana")}
-          className="text-base"
-        >
-          ひらがな一覧
-        </Button>
-        <Button 
-          variant="ghost" 
-          onClick={() => router.push("/katakana")}
-          className="text-base"
-        >
-          カタカナ一覧
-        </Button>
-      </nav>
-
-      {/* 人気の漢字 */}
-      <section className="w-full max-w-2xl">
+      {/* 人気の漢字（直接リンク） */}
+      <section className="w-full max-w-3xl">
         <h2 className="text-xl font-medium mb-4 text-center">人気の漢字</h2>
         <div className="flex flex-wrap justify-center gap-3">
-          {["山", "川", "日", "月", "火", "水", "木", "金", "土", "人", "大", "小"].map((char) => (
-            <button
+          {POPULAR_KANJI.map((char) => (
+            <Link
               key={char}
-              onClick={() => {
-                setSearchText(char);
-                setPreviewChar(char);
-              }}
+              href={`/kanji/${encodeURIComponent(char)}`}
               className="char-button w-14 h-14 flex items-center justify-center text-2xl font-medium border border-border rounded-xl bg-card hover:bg-secondary transition-colors"
             >
               {char}
-            </button>
+            </Link>
           ))}
         </div>
       </section>
 
+      {/* 学年別リンク */}
+      <section className="w-full max-w-3xl">
+        <h2 className="text-xl font-medium mb-4 text-center">📚 学年別で探す</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {GRADE_LINKS.map(({ grade, label, count }) => (
+            <Link
+              key={grade}
+              href={`/grade/${grade}`}
+              className="flex flex-col items-center p-4 border border-border rounded-xl bg-card hover:bg-secondary transition-colors"
+            >
+              <span className="font-medium">{label}</span>
+              <span className="text-sm text-muted-foreground">{count}字</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* 画数別リンク */}
+      <section className="w-full max-w-3xl">
+        <h2 className="text-xl font-medium mb-4 text-center">✏️ 画数別で探す</h2>
+        <div className="flex flex-wrap justify-center gap-2">
+          {STROKE_LINKS.map((n) => (
+            <Link
+              key={n}
+              href={`/strokes/${n}`}
+              className="w-10 h-10 flex items-center justify-center border border-border rounded-lg hover:bg-secondary transition-colors font-medium"
+            >
+              {n}
+            </Link>
+          ))}
+          <Link
+            href="/strokes/16"
+            className="px-3 h-10 flex items-center justify-center border border-border rounded-lg hover:bg-secondary transition-colors text-sm"
+          >
+            16画以上 →
+          </Link>
+        </div>
+      </section>
+
+      {/* 部首別リンク */}
+      <section className="w-full max-w-3xl">
+        <h2 className="text-xl font-medium mb-4 text-center">🔤 部首別で探す</h2>
+        <div className="flex flex-wrap justify-center gap-2">
+          {BUSHU_LINKS.map((bushu) => (
+            <Link
+              key={bushu}
+              href={`/bushu/${encodeURIComponent(bushu)}`}
+              className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
+            >
+              {bushu}
+            </Link>
+          ))}
+          <Link
+            href="/bushu"
+            className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors text-muted-foreground"
+          >
+            すべての部首 →
+          </Link>
+        </div>
+      </section>
+
+      {/* クイックリンク */}
+      <nav className="flex gap-6 flex-wrap justify-center text-sm">
+        <Link href="/hiragana" className="text-muted-foreground hover:text-foreground transition-colors">
+          ひらがな一覧
+        </Link>
+        <Link href="/katakana" className="text-muted-foreground hover:text-foreground transition-colors">
+          カタカナ一覧
+        </Link>
+        <Link href="/search" className="text-muted-foreground hover:text-foreground transition-colors">
+          漢字検索
+        </Link>
+        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground transition-colors">
+          学年別一覧
+        </Link>
+        <Link href="/bushu" className="text-muted-foreground hover:text-foreground transition-colors">
+          部首別一覧
+        </Link>
+      </nav>
+
       {/* フッター */}
-      <footer className="text-center text-sm text-muted-foreground pt-12 pb-8">
-        <p>書き順データは KanjiVG プロジェクトを使用しています</p>
+      <footer className="text-center text-sm text-muted-foreground pt-8 pb-8">
+        <p>常用漢字2136字の書き順データ：KanjiVG (CC BY-SA 3.0)</p>
       </footer>
     </div>
   );

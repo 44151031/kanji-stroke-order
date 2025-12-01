@@ -1,0 +1,30 @@
+{
+  "kanji": "画",
+  "on": [
+    "が",
+    "かく",
+    "え",
+    "かい"
+  ],
+  "kun": [
+    "えが.く",
+    "かく.する",
+    "かぎ.る",
+    "はかりごと",
+    "はか.る"
+  ],
+  "meaning": [
+    "Brush-stroke",
+    "Picture"
+  ],
+  "jlpt": "N4",
+  "strokes": 8,
+  "grade": 2,
+  "ucsHex": "0753b",
+  "freq": 199,
+  "radicals": [
+    "Leaf",
+    "Rice Paddy",
+    "Box"
+  ]
+}

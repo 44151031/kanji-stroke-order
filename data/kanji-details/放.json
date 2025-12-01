@@ -1,0 +1,32 @@
+{
+  "kanji": "放",
+  "on": [
+    "ほう"
+  ],
+  "kun": [
+    "はな.す",
+    "-っぱな.し",
+    "はな.つ",
+    "はな.れる",
+    "こ.く",
+    "ほう.る"
+  ],
+  "meaning": [
+    "Set Free",
+    "Release",
+    "Fire",
+    "Shoot",
+    "Emit",
+    "Banish",
+    "Liberate"
+  ],
+  "jlpt": "N3",
+  "strokes": 8,
+  "grade": 3,
+  "ucsHex": "0653e",
+  "freq": 288,
+  "radicals": [
+    "Direction",
+    "Winter"
+  ]
+}

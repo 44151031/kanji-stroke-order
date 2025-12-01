@@ -1,0 +1,35 @@
+{
+  "kanji": "悪",
+  "on": [
+    "あく",
+    "お"
+  ],
+  "kun": [
+    "わる.い",
+    "わる-",
+    "あ.し",
+    "にく.い",
+    "-にく.い",
+    "ああ",
+    "いずくに",
+    "いずくんぞ",
+    "にく.む"
+  ],
+  "meaning": [
+    "Bad",
+    "Vice",
+    "Rascal",
+    "False",
+    "Evil",
+    "Wrong"
+  ],
+  "jlpt": "N4",
+  "strokes": 11,
+  "grade": 3,
+  "ucsHex": "060aa",
+  "freq": 530,
+  "radicals": [
+    "Asia",
+    "Heart"
+  ]
+}

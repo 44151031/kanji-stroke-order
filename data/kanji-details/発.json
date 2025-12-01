@@ -1,0 +1,32 @@
+{
+  "kanji": "発",
+  "on": [
+    "はつ",
+    "ほつ"
+  ],
+  "kun": [
+    "た.つ",
+    "あば.く",
+    "おこ.る",
+    "つか.わす",
+    "はな.つ"
+  ],
+  "meaning": [
+    "Departure",
+    "Discharge",
+    "Publish",
+    "Emit",
+    "Start From",
+    "Disclose",
+    "Counter For Gunshots"
+  ],
+  "jlpt": "N4",
+  "strokes": 9,
+  "grade": 3,
+  "ucsHex": "0767a",
+  "freq": 32,
+  "radicals": [
+    "Tent",
+    "Lantern"
+  ]
+}

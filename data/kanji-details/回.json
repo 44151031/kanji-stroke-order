@@ -1,0 +1,33 @@
+{
+  "kanji": "回",
+  "on": [
+    "かい",
+    "え"
+  ],
+  "kun": [
+    "まわ.る",
+    "-まわ.る",
+    "-まわ.り",
+    "まわ.す",
+    "-まわ.す",
+    "まわ.し-",
+    "-まわ.し",
+    "もとお.る",
+    "か.える"
+  ],
+  "meaning": [
+    "-times",
+    "Round",
+    "Game",
+    "Revolve",
+    "Counter For Occurrences"
+  ],
+  "jlpt": "N3",
+  "strokes": 6,
+  "grade": 2,
+  "ucsHex": "056de",
+  "freq": 50,
+  "radicals": [
+    "Mouth"
+  ]
+}

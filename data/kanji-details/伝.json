@@ -1,0 +1,34 @@
+{
+  "kanji": "伝",
+  "on": [
+    "でん",
+    "てん"
+  ],
+  "kun": [
+    "つた.わる",
+    "つた.える",
+    "つた.う",
+    "つだ.う",
+    "-づた.い",
+    "つて"
+  ],
+  "meaning": [
+    "Transmit",
+    "Go Along",
+    "Walk Along",
+    "Follow",
+    "Report",
+    "Communicate",
+    "Legend",
+    "Tradition"
+  ],
+  "jlpt": "N3",
+  "strokes": 6,
+  "grade": 4,
+  "ucsHex": "04f1d",
+  "freq": 416,
+  "radicals": [
+    "Leader",
+    "Cloud"
+  ]
+}
