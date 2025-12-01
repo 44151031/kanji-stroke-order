@@ -5,7 +5,7 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import KanjiSvgViewer from "@/components/KanjiSvgViewer";
-import WordsListPaginated from "@/components/WordsListPaginated";
+import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
 
@@ -350,7 +350,7 @@ export default async function KanjiPage({ params }: Props) {
               <CardTitle className="text-lg">「{decodedKanji}」を含む言葉</CardTitle>
             </CardHeader>
             <CardContent>
-              <WordsListPaginated words={words} kanji={decodedKanji} />
+              <KanjiWordList words={words} kanji={decodedKanji} />
             </CardContent>
           </Card>
         )}
