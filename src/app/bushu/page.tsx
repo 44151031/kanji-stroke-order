@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BushuByPositionSection from "@/components/sections/BushuByPositionSection";
 
 interface KanjiDetail {
   kanji: string;
@@ -16,6 +17,7 @@ interface RadicalBilingual {
   radical_name_ja: string;
   description_en: string;
   description_ja: string;
+  position?: string;
 }
 
 function loadKanjiDictionary(): KanjiDetail[] {
@@ -123,6 +125,12 @@ export default function BushuIndexPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* 配置別部首一覧 */}
+      <BushuByPositionSection 
+        radicals={radicalsBilingual} 
+        radicalCounts={radicalCounts} 
+      />
 
       {/* その他の部首（5〜19字） */}
       {minorRadicals.length > 0 && (

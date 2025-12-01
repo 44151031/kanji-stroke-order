@@ -5,7 +5,8 @@
     "radical_name_en": "Ability",
     "radical_name_ja": "のうりょく",
     "description_en": "Radical for ability-related kanji",
-    "description_ja": "能力に関連する漢字の部首"
+    "description_ja": "能力に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "radical_name_en": "Above",
     "radical_name_ja": "うえ",
     "description_en": "Radical for above-related kanji",
-    "description_ja": "上に関連する漢字の部首"
+    "description_ja": "上に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "radical_name_en": "Accept",
     "radical_name_ja": "うけいれる",
     "description_en": "Radical for accept-related kanji",
-    "description_ja": "受け入れに関連する漢字の部首"
+    "description_ja": "受け入れに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "radical_name_en": "Again",
     "radical_name_ja": "また",
     "description_en": "Radical for again-related kanji",
-    "description_ja": "再びに関連する漢字の部首"
+    "description_ja": "再びに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "radical_name_en": "Alcohol",
     "radical_name_ja": "さけへん",
     "description_en": "Radical for alcohol-related kanji",
-    "description_ja": "酒に関連する漢字の部首"
+    "description_ja": "酒に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "radical_name_en": "Alligator",
     "radical_name_ja": "Alligator",
     "description_en": "Radical related to alligator kanji",
-    "description_ja": "Alligatorに関連する漢字の部首"
+    "description_ja": "Alligatorに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "radical_name_en": "Allocate",
     "radical_name_ja": "Allocate",
     "description_en": "Radical related to allocate kanji",
-    "description_ja": "Allocateに関連する漢字の部首"
+    "description_ja": "Allocateに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "radical_name_en": "Angel",
     "radical_name_ja": "てんし",
     "description_en": "Radical for angel-related kanji",
-    "description_ja": "天使に関連する漢字の部首"
+    "description_ja": "天使に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "radical_name_en": "Angle",
     "radical_name_ja": "かど",
     "description_en": "Radical for angle-related kanji",
-    "description_ja": "角度に関連する漢字の部首"
+    "description_ja": "角度に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "radical_name_en": "Animal",
     "radical_name_ja": "どうぶつ",
     "description_en": "Radical for animal-related kanji",
-    "description_ja": "動物に関連する漢字の部首"
+    "description_ja": "動物に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "radical_name_en": "Announce",
     "radical_name_ja": "しらせる",
     "description_en": "Radical for announce-related kanji",
-    "description_ja": "告知に関連する漢字の部首"
+    "description_ja": "告知に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "radical_name_en": "Anti",
     "radical_name_ja": "はんたい",
     "description_en": "Radical for anti-related kanji",
-    "description_ja": "反対に関連する漢字の部首"
+    "description_ja": "反対に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "radical_name_en": "Arrow",
     "radical_name_ja": "やへん",
     "description_en": "Radical for arrow-related kanji",
-    "description_ja": "矢に関連する漢字の部首"
+    "description_ja": "矢に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "radical_name_en": "Asia",
     "radical_name_ja": "Asia",
     "description_en": "Radical related to asia kanji",
-    "description_ja": "Asiaに関連する漢字の部首"
+    "description_ja": "Asiaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "radical_name_en": "Attach",
     "radical_name_ja": "Attach",
     "description_en": "Radical related to attach kanji",
-    "description_ja": "Attachに関連する漢字の部首"
+    "description_ja": "Attachに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "radical_name_en": "Axe",
     "radical_name_ja": "おの",
     "description_en": "Radical for axe-related kanji",
-    "description_ja": "斧に関連する漢字の部首"
+    "description_ja": "斧に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "radical_name_en": "Badger",
     "radical_name_ja": "Badger",
     "description_en": "Radical related to badger kanji",
-    "description_ja": "Badgerに関連する漢字の部首"
+    "description_ja": "Badgerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "radical_name_en": "Bamboo",
     "radical_name_ja": "たけかんむり",
     "description_en": "Radical for bamboo-related kanji",
-    "description_ja": "竹に関連する漢字の部首"
+    "description_ja": "竹に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "radical_name_en": "Bar",
     "radical_name_ja": "ぼう",
     "description_en": "Radical for bar-related kanji",
-    "description_ja": "棒に関連する漢字の部首"
+    "description_ja": "棒に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "radical_name_en": "Barb",
     "radical_name_ja": "とげ",
     "description_en": "Radical for barb-related kanji",
-    "description_ja": "とげに関連する漢字の部首"
+    "description_ja": "とげに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "radical_name_en": "Barracks",
     "radical_name_ja": "Barracks",
     "description_en": "Radical related to barracks kanji",
-    "description_ja": "Barracksに関連する漢字の部首"
+    "description_ja": "Barracksに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "radical_name_en": "Bathtub",
     "radical_name_ja": "Bathtub",
     "description_en": "Radical related to bathtub kanji",
-    "description_ja": "Bathtubに関連する漢字の部首"
+    "description_ja": "Bathtubに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "radical_name_en": "Beans",
     "radical_name_ja": "まめ",
     "description_en": "Radical for beans-related kanji",
-    "description_ja": "豆に関連する漢字の部首"
+    "description_ja": "豆に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "radical_name_en": "Bear",
     "radical_name_ja": "Bear",
     "description_en": "Radical related to bear kanji",
-    "description_ja": "Bearに関連する漢字の部首"
+    "description_ja": "Bearに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "radical_name_en": "Become",
     "radical_name_ja": "なる",
     "description_en": "Radical for become-related kanji",
-    "description_ja": "成ることに関連する漢字の部首"
+    "description_ja": "成ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "radical_name_en": "Bed",
     "radical_name_ja": "Bed",
     "description_en": "Radical related to bed kanji",
-    "description_ja": "Bedに関連する漢字の部首"
+    "description_ja": "Bedに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "radical_name_en": "Beforehand",
     "radical_name_ja": "Beforehand",
     "description_en": "Radical related to beforehand kanji",
-    "description_ja": "Beforehandに関連する漢字の部首"
+    "description_ja": "Beforehandに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "radical_name_en": "Beggar",
     "radical_name_ja": "Beggar",
     "description_en": "Radical related to beggar kanji",
-    "description_ja": "Beggarに関連する漢字の部首"
+    "description_ja": "Beggarに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "radical_name_en": "Below",
     "radical_name_ja": "した",
     "description_en": "Radical for below-related kanji",
-    "description_ja": "下に関連する漢字の部首"
+    "description_ja": "下に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "radical_name_en": "Belt",
     "radical_name_ja": "おび",
     "description_en": "Radical for belt-related kanji",
-    "description_ja": "帯に関連する漢字の部首"
+    "description_ja": "帯に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "radical_name_en": "Big",
     "radical_name_ja": "だい",
     "description_en": "Radical for big/large-related kanji",
-    "description_ja": "大きさに関連する漢字の部首"
+    "description_ja": "大きさに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "radical_name_en": "Bird",
     "radical_name_ja": "とりへん",
     "description_en": "Radical for bird-related kanji",
-    "description_ja": "鳥に関連する漢字の部首"
+    "description_ja": "鳥に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "radical_name_en": "Black",
     "radical_name_ja": "くろ",
     "description_en": "Radical for black-related kanji",
-    "description_ja": "黒に関連する漢字の部首"
+    "description_ja": "黒に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "radical_name_en": "Black Hole",
     "radical_name_ja": "Black Hole",
     "description_en": "Radical related to black hole kanji",
-    "description_ja": "Black Holeに関連する漢字の部首"
+    "description_ja": "Black Holeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "radical_name_en": "Blackjack",
     "radical_name_ja": "Blackjack",
     "description_en": "Radical related to blackjack kanji",
-    "description_ja": "Blackjackに関連する漢字の部首"
+    "description_ja": "Blackjackに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "radical_name_en": "Blade",
     "radical_name_ja": "Blade",
     "description_en": "Radical related to blade kanji",
-    "description_ja": "Bladeに関連する漢字の部首"
+    "description_ja": "Bladeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "radical_name_en": "Blame",
     "radical_name_ja": "Blame",
     "description_en": "Radical related to blame kanji",
-    "description_ja": "Blameに関連する漢字の部首"
+    "description_ja": "Blameに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@
     "radical_name_en": "Blood",
     "radical_name_ja": "Blood",
     "description_en": "Radical related to blood kanji",
-    "description_ja": "Bloodに関連する漢字の部首"
+    "description_ja": "Bloodに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@
     "radical_name_en": "Blue",
     "radical_name_ja": "あお",
     "description_en": "Radical for blue-related kanji",
-    "description_ja": "青に関連する漢字の部首"
+    "description_ja": "青に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@
     "radical_name_en": "Boat",
     "radical_name_ja": "ふねへん",
     "description_en": "Radical for boat-related kanji",
-    "description_ja": "船に関連する漢字の部首"
+    "description_ja": "船に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@
     "radical_name_en": "Body",
     "radical_name_ja": "にくづき",
     "description_en": "Radical for body-related kanji",
-    "description_ja": "体に関連する漢字の部首"
+    "description_ja": "体に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@
     "radical_name_en": "Boil",
     "radical_name_ja": "Boil",
     "description_en": "Radical related to boil kanji",
-    "description_ja": "Boilに関連する漢字の部首"
+    "description_ja": "Boilに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@
     "radical_name_en": "Bone",
     "radical_name_ja": "ほねへん",
     "description_en": "Radical for bone-related kanji",
-    "description_ja": "骨に関連する漢字の部首"
+    "description_ja": "骨に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@
     "radical_name_en": "Book",
     "radical_name_ja": "ほん",
     "description_en": "Radical for book-related kanji",
-    "description_ja": "本に関連する漢字の部首"
+    "description_ja": "本に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@
     "radical_name_en": "Bookshelf",
     "radical_name_ja": "Bookshelf",
     "description_en": "Radical related to bookshelf kanji",
-    "description_ja": "Bookshelfに関連する漢字の部首"
+    "description_ja": "Bookshelfに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@
     "radical_name_en": "Boot",
     "radical_name_ja": "Boot",
     "description_en": "Radical related to boot kanji",
-    "description_ja": "Bootに関連する漢字の部首"
+    "description_ja": "Bootに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@
     "radical_name_en": "Both",
     "radical_name_ja": "Both",
     "description_en": "Radical related to both kanji",
-    "description_ja": "Bothに関連する漢字の部首"
+    "description_ja": "Bothに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@
     "radical_name_en": "Bow",
     "radical_name_ja": "ゆみへん",
     "description_en": "Radical for bow-related kanji",
-    "description_ja": "弓に関連する漢字の部首"
+    "description_ja": "弓に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@
     "radical_name_en": "Box",
     "radical_name_ja": "はこ",
     "description_en": "Radical for box-related kanji",
-    "description_ja": "箱に関連する漢字の部首"
+    "description_ja": "箱に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 50,
@@ -397,7 +446,8 @@
     "radical_name_en": "Branch",
     "radical_name_ja": "Branch",
     "description_en": "Radical related to branch kanji",
-    "description_ja": "Branchに関連する漢字の部首"
+    "description_ja": "Branchに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 51,
@@ -405,7 +455,8 @@
     "radical_name_en": "Bright",
     "radical_name_ja": "あかるい",
     "description_en": "Radical for bright-related kanji",
-    "description_ja": "明るさに関連する漢字の部首"
+    "description_ja": "明るさに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 52,
@@ -413,7 +464,8 @@
     "radical_name_en": "Brush",
     "radical_name_ja": "ふで",
     "description_en": "Radical for brush-related kanji",
-    "description_ja": "筆に関連する漢字の部首"
+    "description_ja": "筆に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 53,
@@ -421,7 +473,8 @@
     "radical_name_en": "Buddy",
     "radical_name_ja": "Buddy",
     "description_en": "Radical related to buddy kanji",
-    "description_ja": "Buddyに関連する漢字の部首"
+    "description_ja": "Buddyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 54,
@@ -429,7 +482,8 @@
     "radical_name_en": "Building",
     "radical_name_ja": "Building",
     "description_en": "Radical related to building kanji",
-    "description_ja": "Buildingに関連する漢字の部首"
+    "description_ja": "Buildingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 55,
@@ -437,7 +491,8 @@
     "radical_name_en": "Bully",
     "radical_name_ja": "Bully",
     "description_en": "Radical related to bully kanji",
-    "description_ja": "Bullyに関連する漢字の部首"
+    "description_ja": "Bullyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 56,
@@ -445,7 +500,8 @@
     "radical_name_en": "Bundle",
     "radical_name_ja": "Bundle",
     "description_en": "Radical related to bundle kanji",
-    "description_ja": "Bundleに関連する漢字の部首"
+    "description_ja": "Bundleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 57,
@@ -453,7 +509,8 @@
     "radical_name_en": "Business",
     "radical_name_ja": "Business",
     "description_en": "Radical related to business kanji",
-    "description_ja": "Businessに関連する漢字の部首"
+    "description_ja": "Businessに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 58,
@@ -461,7 +518,8 @@
     "radical_name_en": "Cage",
     "radical_name_ja": "Cage",
     "description_en": "Radical related to cage kanji",
-    "description_ja": "Cageに関連する漢字の部首"
+    "description_ja": "Cageに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 59,
@@ -469,7 +527,8 @@
     "radical_name_en": "Call",
     "radical_name_ja": "Call",
     "description_en": "Radical related to call kanji",
-    "description_ja": "Callに関連する漢字の部首"
+    "description_ja": "Callに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 60,
@@ -477,7 +536,8 @@
     "radical_name_en": "Can",
     "radical_name_ja": "Can",
     "description_en": "Radical related to can kanji",
-    "description_ja": "Canに関連する漢字の部首"
+    "description_ja": "Canに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 61,
@@ -485,7 +545,8 @@
     "radical_name_en": "Canopy",
     "radical_name_ja": "Canopy",
     "description_en": "Radical related to canopy kanji",
-    "description_ja": "Canopyに関連する漢字の部首"
+    "description_ja": "Canopyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 62,
@@ -493,7 +554,8 @@
     "radical_name_en": "Cape",
     "radical_name_ja": "Cape",
     "description_en": "Radical related to cape kanji",
-    "description_ja": "Capeに関連する漢字の部首"
+    "description_ja": "Capeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 63,
@@ -501,7 +563,8 @@
     "radical_name_en": "Capital",
     "radical_name_ja": "Capital",
     "description_en": "Radical related to capital kanji",
-    "description_ja": "Capitalに関連する漢字の部首"
+    "description_ja": "Capitalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 64,
@@ -509,7 +572,8 @@
     "radical_name_en": "Car",
     "radical_name_ja": "くるまへん",
     "description_en": "Radical for car/vehicle-related kanji",
-    "description_ja": "車に関連する漢字の部首"
+    "description_ja": "車に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 65,
@@ -517,7 +581,8 @@
     "radical_name_en": "Cat Pirate",
     "radical_name_ja": "Cat Pirate",
     "description_en": "Radical related to cat pirate kanji",
-    "description_ja": "Cat Pirateに関連する漢字の部首"
+    "description_ja": "Cat Pirateに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 66,
@@ -525,7 +590,8 @@
     "radical_name_en": "Catapult",
     "radical_name_ja": "Catapult",
     "description_en": "Radical related to catapult kanji",
-    "description_ja": "Catapultに関連する漢字の部首"
+    "description_ja": "Catapultに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 67,
@@ -533,7 +599,8 @@
     "radical_name_en": "Center",
     "radical_name_ja": "Center",
     "description_en": "Radical related to center kanji",
-    "description_ja": "Centerに関連する漢字の部首"
+    "description_ja": "Centerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 68,
@@ -541,7 +608,8 @@
     "radical_name_en": "Ceremony",
     "radical_name_ja": "Ceremony",
     "description_en": "Radical related to ceremony kanji",
-    "description_ja": "Ceremonyに関連する漢字の部首"
+    "description_ja": "Ceremonyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 69,
@@ -549,7 +617,8 @@
     "radical_name_en": "Certain",
     "radical_name_ja": "Certain",
     "description_en": "Radical related to certain kanji",
-    "description_ja": "Certainに関連する漢字の部首"
+    "description_ja": "Certainに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 70,
@@ -557,7 +626,8 @@
     "radical_name_en": "Change",
     "radical_name_ja": "かわる",
     "description_en": "Radical for change-related kanji",
-    "description_ja": "変わることに関連する漢字の部首"
+    "description_ja": "変わることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 71,
@@ -565,7 +635,8 @@
     "radical_name_en": "Chapter",
     "radical_name_ja": "Chapter",
     "description_en": "Radical related to chapter kanji",
-    "description_ja": "Chapterに関連する漢字の部首"
+    "description_ja": "Chapterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 72,
@@ -573,7 +644,8 @@
     "radical_name_en": "Charcoal",
     "radical_name_ja": "Charcoal",
     "description_en": "Radical related to charcoal kanji",
-    "description_ja": "Charcoalに関連する漢字の部首"
+    "description_ja": "Charcoalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 73,
@@ -581,7 +653,8 @@
     "radical_name_en": "Cheap",
     "radical_name_ja": "Cheap",
     "description_en": "Radical related to cheap kanji",
-    "description_ja": "Cheapに関連する漢字の部首"
+    "description_ja": "Cheapに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 74,
@@ -589,7 +662,8 @@
     "radical_name_en": "Child",
     "radical_name_ja": "こへん",
     "description_en": "Radical for child-related kanji",
-    "description_ja": "子供に関連する漢字の部首"
+    "description_ja": "子供に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 75,
@@ -597,7 +671,8 @@
     "radical_name_en": "Chinese",
     "radical_name_ja": "Chinese",
     "description_en": "Radical related to chinese kanji",
-    "description_ja": "Chineseに関連する漢字の部首"
+    "description_ja": "Chineseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 76,
@@ -605,7 +680,8 @@
     "radical_name_en": "Circle",
     "radical_name_ja": "まる",
     "description_en": "Radical for circle-related kanji",
-    "description_ja": "円に関連する漢字の部首"
+    "description_ja": "円に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 77,
@@ -613,7 +689,8 @@
     "radical_name_en": "Circumference",
     "radical_name_ja": "Circumference",
     "description_en": "Radical related to circumference kanji",
-    "description_ja": "Circumferenceに関連する漢字の部首"
+    "description_ja": "Circumferenceに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 78,
@@ -621,7 +698,8 @@
     "radical_name_en": "City",
     "radical_name_ja": "まち",
     "description_en": "Radical for city-related kanji",
-    "description_ja": "市に関連する漢字の部首"
+    "description_ja": "市に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 79,
@@ -629,7 +707,8 @@
     "radical_name_en": "Clan",
     "radical_name_ja": "Clan",
     "description_en": "Radical related to clan kanji",
-    "description_ja": "Clanに関連する漢字の部首"
+    "description_ja": "Clanに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 80,
@@ -637,7 +716,8 @@
     "radical_name_en": "Claw",
     "radical_name_ja": "つめ",
     "description_en": "Radical for claw-related kanji",
-    "description_ja": "爪に関連する漢字の部首"
+    "description_ja": "爪に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 81,
@@ -645,7 +725,8 @@
     "radical_name_en": "Cleat",
     "radical_name_ja": "Cleat",
     "description_en": "Radical related to cleat kanji",
-    "description_ja": "Cleatに関連する漢字の部首"
+    "description_ja": "Cleatに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 82,
@@ -653,7 +734,8 @@
     "radical_name_en": "Cliff",
     "radical_name_ja": "がけ",
     "description_en": "Radical for cliff-related kanji",
-    "description_ja": "崖に関連する漢字の部首"
+    "description_ja": "崖に関連する漢字の部首",
+    "position": "たれ"
   },
   {
     "id": 83,
@@ -661,7 +743,8 @@
     "radical_name_en": "Clothes",
     "radical_name_ja": "ころもへん",
     "description_en": "Radical for clothes-related kanji",
-    "description_ja": "衣服に関連する漢字の部首"
+    "description_ja": "衣服に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 84,
@@ -669,7 +752,8 @@
     "radical_name_en": "Cloud",
     "radical_name_ja": "くも",
     "description_en": "Radical for cloud-related kanji",
-    "description_ja": "雲に関連する漢字の部首"
+    "description_ja": "雲に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 85,
@@ -677,7 +761,8 @@
     "radical_name_en": "Clown",
     "radical_name_ja": "Clown",
     "description_en": "Radical related to clown kanji",
-    "description_ja": "Clownに関連する漢字の部首"
+    "description_ja": "Clownに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 86,
@@ -685,7 +770,8 @@
     "radical_name_en": "Coat Rack",
     "radical_name_ja": "Coat Rack",
     "description_en": "Radical related to coat rack kanji",
-    "description_ja": "Coat Rackに関連する漢字の部首"
+    "description_ja": "Coat Rackに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 87,
@@ -693,7 +779,8 @@
     "radical_name_en": "Coffin",
     "radical_name_ja": "Coffin",
     "description_en": "Radical related to coffin kanji",
-    "description_ja": "Coffinに関連する漢字の部首"
+    "description_ja": "Coffinに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 88,
@@ -701,7 +788,8 @@
     "radical_name_en": "Color",
     "radical_name_ja": "いろへん",
     "description_en": "Radical for color-related kanji",
-    "description_ja": "色に関連する漢字の部首"
+    "description_ja": "色に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 89,
@@ -709,7 +797,8 @@
     "radical_name_en": "Comb",
     "radical_name_ja": "Comb",
     "description_en": "Radical related to comb kanji",
-    "description_ja": "Combに関連する漢字の部首"
+    "description_ja": "Combに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 90,
@@ -717,7 +806,8 @@
     "radical_name_en": "Comfort",
     "radical_name_ja": "Comfort",
     "description_en": "Radical related to comfort kanji",
-    "description_ja": "Comfortに関連する漢字の部首"
+    "description_ja": "Comfortに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 91,
@@ -725,7 +815,8 @@
     "radical_name_en": "Commander",
     "radical_name_ja": "Commander",
     "description_en": "Radical related to commander kanji",
-    "description_ja": "Commanderに関連する漢字の部首"
+    "description_ja": "Commanderに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 92,
@@ -733,7 +824,8 @@
     "radical_name_en": "Compare",
     "radical_name_ja": "くらべる",
     "description_en": "Radical for compare-related kanji",
-    "description_ja": "比較に関連する漢字の部首"
+    "description_ja": "比較に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 93,
@@ -741,7 +833,8 @@
     "radical_name_en": "Concave",
     "radical_name_ja": "Concave",
     "description_en": "Radical related to concave kanji",
-    "description_ja": "Concaveに関連する漢字の部首"
+    "description_ja": "Concaveに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 94,
@@ -749,7 +842,8 @@
     "radical_name_en": "Conflict",
     "radical_name_ja": "Conflict",
     "description_en": "Radical related to conflict kanji",
-    "description_ja": "Conflictに関連する漢字の部首"
+    "description_ja": "Conflictに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 95,
@@ -757,7 +851,8 @@
     "radical_name_en": "Construction",
     "radical_name_ja": "Construction",
     "description_en": "Radical related to construction kanji",
-    "description_ja": "Constructionに関連する漢字の部首"
+    "description_ja": "Constructionに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 96,
@@ -765,7 +860,8 @@
     "radical_name_en": "Control",
     "radical_name_ja": "Control",
     "description_en": "Radical related to control kanji",
-    "description_ja": "Controlに関連する漢字の部首"
+    "description_ja": "Controlに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 97,
@@ -773,7 +869,8 @@
     "radical_name_en": "Convex",
     "radical_name_ja": "Convex",
     "description_en": "Radical related to convex kanji",
-    "description_ja": "Convexに関連する漢字の部首"
+    "description_ja": "Convexに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 98,
@@ -781,7 +878,8 @@
     "radical_name_en": "Coral",
     "radical_name_ja": "さんご",
     "description_en": "Radical for coral-related kanji",
-    "description_ja": "サンゴに関連する漢字の部首"
+    "description_ja": "サンゴに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 99,
@@ -789,7 +887,8 @@
     "radical_name_en": "Correct",
     "radical_name_ja": "Correct",
     "description_en": "Radical related to correct kanji",
-    "description_ja": "Correctに関連する漢字の部首"
+    "description_ja": "Correctに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 100,
@@ -797,7 +896,8 @@
     "radical_name_en": "Cottage",
     "radical_name_ja": "Cottage",
     "description_en": "Radical related to cottage kanji",
-    "description_ja": "Cottageに関連する漢字の部首"
+    "description_ja": "Cottageに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 101,
@@ -805,7 +905,8 @@
     "radical_name_en": "Courage",
     "radical_name_ja": "Courage",
     "description_en": "Radical related to courage kanji",
-    "description_ja": "Courageに関連する漢字の部首"
+    "description_ja": "Courageに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 102,
@@ -813,7 +914,8 @@
     "radical_name_en": "Cow",
     "radical_name_ja": "うしへん",
     "description_en": "Radical for cow-related kanji",
-    "description_ja": "牛に関連する漢字の部首"
+    "description_ja": "牛に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 103,
@@ -821,7 +923,8 @@
     "radical_name_en": "Crab",
     "radical_name_ja": "Crab",
     "description_en": "Radical related to crab kanji",
-    "description_ja": "Crabに関連する漢字の部首"
+    "description_ja": "Crabに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 104,
@@ -829,7 +932,8 @@
     "radical_name_en": "Crab Trap",
     "radical_name_ja": "Crab Trap",
     "description_en": "Radical related to crab trap kanji",
-    "description_ja": "Crab Trapに関連する漢字の部首"
+    "description_ja": "Crab Trapに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 105,
@@ -837,7 +941,8 @@
     "radical_name_en": "Creeper",
     "radical_name_ja": "Creeper",
     "description_en": "Radical related to creeper kanji",
-    "description_ja": "Creeperに関連する漢字の部首"
+    "description_ja": "Creeperに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 106,
@@ -845,7 +950,8 @@
     "radical_name_en": "Criminal",
     "radical_name_ja": "Criminal",
     "description_en": "Radical related to criminal kanji",
-    "description_ja": "Criminalに関連する漢字の部首"
+    "description_ja": "Criminalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 107,
@@ -853,7 +959,8 @@
     "radical_name_en": "Cross",
     "radical_name_ja": "Cross",
     "description_en": "Radical related to cross kanji",
-    "description_ja": "Crossに関連する漢字の部首"
+    "description_ja": "Crossに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 108,
@@ -861,7 +968,8 @@
     "radical_name_en": "Dance",
     "radical_name_ja": "おどる",
     "description_en": "Radical for dance-related kanji",
-    "description_ja": "舞に関連する漢字の部首"
+    "description_ja": "舞に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 109,
@@ -869,7 +977,8 @@
     "radical_name_en": "Dawn",
     "radical_name_ja": "Dawn",
     "description_en": "Radical related to dawn kanji",
-    "description_ja": "Dawnに関連する漢字の部首"
+    "description_ja": "Dawnに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 110,
@@ -877,7 +986,8 @@
     "radical_name_en": "Death",
     "radical_name_ja": "がつ",
     "description_en": "Radical for death-related kanji",
-    "description_ja": "死に関連する漢字の部首"
+    "description_ja": "死に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 111,
@@ -885,7 +995,8 @@
     "radical_name_en": "Death Star",
     "radical_name_ja": "Death Star",
     "description_en": "Radical related to death star kanji",
-    "description_ja": "Death Starに関連する漢字の部首"
+    "description_ja": "Death Starに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 112,
@@ -893,7 +1004,8 @@
     "radical_name_en": "Demon",
     "radical_name_ja": "Demon",
     "description_en": "Radical related to demon kanji",
-    "description_ja": "Demonに関連する漢字の部首"
+    "description_ja": "Demonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 113,
@@ -901,7 +1013,8 @@
     "radical_name_en": "Departure",
     "radical_name_ja": "Departure",
     "description_en": "Radical related to departure kanji",
-    "description_ja": "Departureに関連する漢字の部首"
+    "description_ja": "Departureに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 114,
@@ -909,7 +1022,8 @@
     "radical_name_en": "Direction",
     "radical_name_ja": "Direction",
     "description_en": "Radical related to direction kanji",
-    "description_ja": "Directionに関連する漢字の部首"
+    "description_ja": "Directionに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 115,
@@ -917,7 +1031,8 @@
     "radical_name_en": "Director",
     "radical_name_ja": "Director",
     "description_en": "Radical related to director kanji",
-    "description_ja": "Directorに関連する漢字の部首"
+    "description_ja": "Directorに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 116,
@@ -925,7 +1040,8 @@
     "radical_name_en": "Dirt",
     "radical_name_ja": "Dirt",
     "description_en": "Radical related to dirt kanji",
-    "description_ja": "Dirtに関連する漢字の部首"
+    "description_ja": "Dirtに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 117,
@@ -933,7 +1049,8 @@
     "radical_name_en": "District",
     "radical_name_ja": "District",
     "description_en": "Radical related to district kanji",
-    "description_ja": "Districtに関連する漢字の部首"
+    "description_ja": "Districtに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 118,
@@ -941,7 +1058,8 @@
     "radical_name_en": "Dog",
     "radical_name_ja": "けものへん",
     "description_en": "Radical for dog-related kanji",
-    "description_ja": "犬や動物に関連する漢字の部首"
+    "description_ja": "犬や動物に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 119,
@@ -949,7 +1067,8 @@
     "radical_name_en": "Dollar",
     "radical_name_ja": "Dollar",
     "description_en": "Radical related to dollar kanji",
-    "description_ja": "Dollarに関連する漢字の部首"
+    "description_ja": "Dollarに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 120,
@@ -957,7 +1076,8 @@
     "radical_name_en": "Door",
     "radical_name_ja": "もんがまえ",
     "description_en": "Radical for door/gate-related kanji",
-    "description_ja": "門や扉に関連する漢字の部首"
+    "description_ja": "門や扉に関連する漢字の部首",
+    "position": "かまえ"
   },
   {
     "id": 121,
@@ -965,7 +1085,8 @@
     "radical_name_en": "Doubt",
     "radical_name_ja": "Doubt",
     "description_en": "Radical related to doubt kanji",
-    "description_ja": "Doubtに関連する漢字の部首"
+    "description_ja": "Doubtに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 122,
@@ -973,7 +1094,8 @@
     "radical_name_en": "Dragon",
     "radical_name_ja": "Dragon",
     "description_en": "Radical related to dragon kanji",
-    "description_ja": "Dragonに関連する漢字の部首"
+    "description_ja": "Dragonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 123,
@@ -981,7 +1103,8 @@
     "radical_name_en": "Drop",
     "radical_name_ja": "しずく",
     "description_en": "Radical for drop-related kanji",
-    "description_ja": "滴に関連する漢字の部首"
+    "description_ja": "滴に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 124,
@@ -989,7 +1112,8 @@
     "radical_name_en": "Drum",
     "radical_name_ja": "たいこ",
     "description_en": "Radical for drum-related kanji",
-    "description_ja": "太鼓に関連する漢字の部首"
+    "description_ja": "太鼓に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 125,
@@ -997,7 +1121,8 @@
     "radical_name_en": "Drunkard",
     "radical_name_ja": "Drunkard",
     "description_en": "Radical related to drunkard kanji",
-    "description_ja": "Drunkardに関連する漢字の部首"
+    "description_ja": "Drunkardに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 126,
@@ -1005,7 +1130,8 @@
     "radical_name_en": "Dry",
     "radical_name_ja": "Dry",
     "description_en": "Radical related to dry kanji",
-    "description_ja": "Dryに関連する漢字の部首"
+    "description_ja": "Dryに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 127,
@@ -1013,7 +1139,8 @@
     "radical_name_en": "Dynamite",
     "radical_name_ja": "Dynamite",
     "description_en": "Radical related to dynamite kanji",
-    "description_ja": "Dynamiteに関連する漢字の部首"
+    "description_ja": "Dynamiteに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 128,
@@ -1021,7 +1148,8 @@
     "radical_name_en": "Ear",
     "radical_name_ja": "みみ",
     "description_en": "Radical for ear-related kanji",
-    "description_ja": "耳に関連する漢字の部首"
+    "description_ja": "耳に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 129,
@@ -1029,7 +1157,8 @@
     "radical_name_en": "Early",
     "radical_name_ja": "Early",
     "description_en": "Radical related to early kanji",
-    "description_ja": "Earlyに関連する漢字の部首"
+    "description_ja": "Earlyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 130,
@@ -1037,7 +1166,8 @@
     "radical_name_en": "East",
     "radical_name_ja": "ひがし",
     "description_en": "Radical for east-related kanji",
-    "description_ja": "東に関連する漢字の部首"
+    "description_ja": "東に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 131,
@@ -1045,7 +1175,8 @@
     "radical_name_en": "Easy",
     "radical_name_ja": "Easy",
     "description_en": "Radical related to easy kanji",
-    "description_ja": "Easyに関連する漢字の部首"
+    "description_ja": "Easyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 132,
@@ -1053,7 +1184,8 @@
     "radical_name_en": "Eat",
     "radical_name_ja": "たべる",
     "description_en": "Radical for eat-related kanji",
-    "description_ja": "食べることに関連する漢字の部首"
+    "description_ja": "食べることに関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 133,
@@ -1061,7 +1193,8 @@
     "radical_name_en": "Ego",
     "radical_name_ja": "Ego",
     "description_en": "Radical related to ego kanji",
-    "description_ja": "Egoに関連する漢字の部首"
+    "description_ja": "Egoに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 134,
@@ -1069,7 +1202,8 @@
     "radical_name_en": "Elephant",
     "radical_name_ja": "Elephant",
     "description_en": "Radical related to elephant kanji",
-    "description_ja": "Elephantに関連する漢字の部首"
+    "description_ja": "Elephantに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 135,
@@ -1077,7 +1211,8 @@
     "radical_name_en": "Elf",
     "radical_name_ja": "Elf",
     "description_en": "Radical related to elf kanji",
-    "description_ja": "Elfに関連する漢字の部首"
+    "description_ja": "Elfに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 136,
@@ -1085,7 +1220,8 @@
     "radical_name_en": "Employ",
     "radical_name_ja": "Employ",
     "description_en": "Radical related to employ kanji",
-    "description_ja": "Employに関連する漢字の部首"
+    "description_ja": "Employに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 137,
@@ -1093,7 +1229,8 @@
     "radical_name_en": "Energy",
     "radical_name_ja": "Energy",
     "description_en": "Radical related to energy kanji",
-    "description_ja": "Energyに関連する漢字の部首"
+    "description_ja": "Energyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 138,
@@ -1101,7 +1238,8 @@
     "radical_name_en": "Enter",
     "radical_name_ja": "いる",
     "description_en": "Radical for enter-related kanji",
-    "description_ja": "入ることに関連する漢字の部首"
+    "description_ja": "入ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 139,
@@ -1109,7 +1247,8 @@
     "radical_name_en": "Escalator",
     "radical_name_ja": "Escalator",
     "description_en": "Radical related to escalator kanji",
-    "description_ja": "Escalatorに関連する漢字の部首"
+    "description_ja": "Escalatorに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 140,
@@ -1117,7 +1256,8 @@
     "radical_name_en": "Eternity",
     "radical_name_ja": "Eternity",
     "description_en": "Radical related to eternity kanji",
-    "description_ja": "Eternityに関連する漢字の部首"
+    "description_ja": "Eternityに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 141,
@@ -1125,7 +1265,8 @@
     "radical_name_en": "Evening",
     "radical_name_ja": "Evening",
     "description_en": "Radical related to evening kanji",
-    "description_ja": "Eveningに関連する漢字の部首"
+    "description_ja": "Eveningに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 142,
@@ -1133,7 +1274,8 @@
     "radical_name_en": "Every",
     "radical_name_ja": "Every",
     "description_en": "Radical related to every kanji",
-    "description_ja": "Everyに関連する漢字の部首"
+    "description_ja": "Everyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 143,
@@ -1141,7 +1283,8 @@
     "radical_name_en": "Excuse",
     "radical_name_ja": "Excuse",
     "description_en": "Radical related to excuse kanji",
-    "description_ja": "Excuseに関連する漢字の部首"
+    "description_ja": "Excuseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 144,
@@ -1149,7 +1292,8 @@
     "radical_name_en": "Exit",
     "radical_name_ja": "でる",
     "description_en": "Radical for exit-related kanji",
-    "description_ja": "出ることに関連する漢字の部首"
+    "description_ja": "出ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 145,
@@ -1157,7 +1301,8 @@
     "radical_name_en": "Explosion",
     "radical_name_ja": "Explosion",
     "description_en": "Radical related to explosion kanji",
-    "description_ja": "Explosionに関連する漢字の部首"
+    "description_ja": "Explosionに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 146,
@@ -1165,7 +1310,8 @@
     "radical_name_en": "Eye",
     "radical_name_ja": "めへん",
     "description_en": "Radical for eye-related kanji",
-    "description_ja": "目に関連する漢字の部首"
+    "description_ja": "目に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 147,
@@ -1173,7 +1319,8 @@
     "radical_name_en": "Face",
     "radical_name_ja": "かお",
     "description_en": "Radical for face-related kanji",
-    "description_ja": "顔に関連する漢字の部首"
+    "description_ja": "顔に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 148,
@@ -1181,7 +1328,8 @@
     "radical_name_en": "Fang",
     "radical_name_ja": "Fang",
     "description_en": "Radical related to fang kanji",
-    "description_ja": "Fangに関連する漢字の部首"
+    "description_ja": "Fangに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 149,
@@ -1189,7 +1337,8 @@
     "radical_name_en": "Farming",
     "radical_name_ja": "Farming",
     "description_en": "Radical related to farming kanji",
-    "description_ja": "Farmingに関連する漢字の部首"
+    "description_ja": "Farmingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 150,
@@ -1197,7 +1346,8 @@
     "radical_name_en": "Fat",
     "radical_name_ja": "Fat",
     "description_en": "Radical related to fat kanji",
-    "description_ja": "Fatに関連する漢字の部首"
+    "description_ja": "Fatに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 151,
@@ -1205,7 +1355,8 @@
     "radical_name_en": "Father",
     "radical_name_ja": "ちち",
     "description_en": "Radical for father-related kanji",
-    "description_ja": "父に関連する漢字の部首"
+    "description_ja": "父に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 152,
@@ -1213,7 +1364,8 @@
     "radical_name_en": "Fault",
     "radical_name_ja": "Fault",
     "description_en": "Radical related to fault kanji",
-    "description_ja": "Faultに関連する漢字の部首"
+    "description_ja": "Faultに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 153,
@@ -1221,7 +1373,8 @@
     "radical_name_en": "Favor",
     "radical_name_ja": "Favor",
     "description_en": "Radical related to favor kanji",
-    "description_ja": "Favorに関連する漢字の部首"
+    "description_ja": "Favorに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 154,
@@ -1229,7 +1382,8 @@
     "radical_name_en": "Feathers",
     "radical_name_ja": "Feathers",
     "description_en": "Radical related to feathers kanji",
-    "description_ja": "Feathersに関連する漢字の部首"
+    "description_ja": "Feathersに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 155,
@@ -1237,7 +1391,8 @@
     "radical_name_en": "Feeling",
     "radical_name_ja": "Feeling",
     "description_en": "Radical related to feeling kanji",
-    "description_ja": "Feelingに関連する漢字の部首"
+    "description_ja": "Feelingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 156,
@@ -1245,7 +1400,8 @@
     "radical_name_en": "Festival",
     "radical_name_ja": "Festival",
     "description_en": "Radical related to festival kanji",
-    "description_ja": "Festivalに関連する漢字の部首"
+    "description_ja": "Festivalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 157,
@@ -1253,7 +1409,8 @@
     "radical_name_en": "Few",
     "radical_name_ja": "Few",
     "description_en": "Radical related to few kanji",
-    "description_ja": "Fewに関連する漢字の部首"
+    "description_ja": "Fewに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 158,
@@ -1261,7 +1418,8 @@
     "radical_name_en": "Fingers",
     "radical_name_ja": "Fingers",
     "description_en": "Radical related to fingers kanji",
-    "description_ja": "Fingersに関連する漢字の部首"
+    "description_ja": "Fingersに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 159,
@@ -1269,7 +1427,8 @@
     "radical_name_en": "Fins",
     "radical_name_ja": "Fins",
     "description_en": "Radical related to fins kanji",
-    "description_ja": "Finsに関連する漢字の部首"
+    "description_ja": "Finsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 160,
@@ -1277,7 +1436,8 @@
     "radical_name_en": "Fire",
     "radical_name_ja": "ひへん・れっか",
     "description_en": "Radical for fire-related kanji",
-    "description_ja": "火に関連する漢字の部首"
+    "description_ja": "火に関連する漢字の部首",
+    "position": "あし"
   },
   {
     "id": 161,
@@ -1285,7 +1445,8 @@
     "radical_name_en": "Fish",
     "radical_name_ja": "うおへん",
     "description_en": "Radical for fish-related kanji",
-    "description_ja": "魚に関連する漢字の部首"
+    "description_ja": "魚に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 162,
@@ -1293,7 +1454,8 @@
     "radical_name_en": "Five",
     "radical_name_ja": "Five",
     "description_en": "Radical related to five kanji",
-    "description_ja": "Fiveに関連する漢字の部首"
+    "description_ja": "Fiveに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 163,
@@ -1301,7 +1463,8 @@
     "radical_name_en": "Fix",
     "radical_name_ja": "Fix",
     "description_en": "Radical related to fix kanji",
-    "description_ja": "Fixに関連する漢字の部首"
+    "description_ja": "Fixに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 164,
@@ -1309,7 +1472,8 @@
     "radical_name_en": "Flag",
     "radical_name_ja": "はた",
     "description_en": "Radical for flag-related kanji",
-    "description_ja": "旗に関連する漢字の部首"
+    "description_ja": "旗に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 165,
@@ -1317,7 +1481,8 @@
     "radical_name_en": "Flood",
     "radical_name_ja": "Flood",
     "description_en": "Radical related to flood kanji",
-    "description_ja": "Floodに関連する漢字の部首"
+    "description_ja": "Floodに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 166,
@@ -1325,7 +1490,8 @@
     "radical_name_en": "Flowers",
     "radical_name_ja": "Flowers",
     "description_en": "Radical related to flowers kanji",
-    "description_ja": "Flowersに関連する漢字の部首"
+    "description_ja": "Flowersに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 167,
@@ -1333,7 +1499,8 @@
     "radical_name_en": "Fly",
     "radical_name_ja": "とぶ",
     "description_en": "Radical for fly-related kanji",
-    "description_ja": "飛ぶことに関連する漢字の部首"
+    "description_ja": "飛ぶことに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 168,
@@ -1341,7 +1508,8 @@
     "radical_name_en": "Foot",
     "radical_name_ja": "あしへん",
     "description_en": "Radical for foot-related kanji",
-    "description_ja": "足に関連する漢字の部首"
+    "description_ja": "足に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 169,
@@ -1349,7 +1517,8 @@
     "radical_name_en": "Football",
     "radical_name_ja": "Football",
     "description_en": "Radical related to football kanji",
-    "description_ja": "Footballに関連する漢字の部首"
+    "description_ja": "Footballに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 170,
@@ -1357,7 +1526,8 @@
     "radical_name_en": "Forehead",
     "radical_name_ja": "Forehead",
     "description_en": "Radical related to forehead kanji",
-    "description_ja": "Foreheadに関連する漢字の部首"
+    "description_ja": "Foreheadに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 171,
@@ -1365,7 +1535,8 @@
     "radical_name_en": "Form",
     "radical_name_ja": "Form",
     "description_en": "Radical related to form kanji",
-    "description_ja": "Formに関連する漢字の部首"
+    "description_ja": "Formに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 172,
@@ -1373,7 +1544,8 @@
     "radical_name_en": "Former",
     "radical_name_ja": "Former",
     "description_en": "Radical related to former kanji",
-    "description_ja": "Formerに関連する漢字の部首"
+    "description_ja": "Formerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 173,
@@ -1381,7 +1553,8 @@
     "radical_name_en": "Fortune",
     "radical_name_ja": "Fortune",
     "description_en": "Radical related to fortune kanji",
-    "description_ja": "Fortuneに関連する漢字の部首"
+    "description_ja": "Fortuneに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 174,
@@ -1389,7 +1562,8 @@
     "radical_name_en": "Friend",
     "radical_name_ja": "とも",
     "description_en": "Radical for friend-related kanji",
-    "description_ja": "友達に関連する漢字の部首"
+    "description_ja": "友達に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 175,
@@ -1397,7 +1571,8 @@
     "radical_name_en": "Frostbite",
     "radical_name_ja": "Frostbite",
     "description_en": "Radical related to frostbite kanji",
-    "description_ja": "Frostbiteに関連する漢字の部首"
+    "description_ja": "Frostbiteに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 176,
@@ -1405,7 +1580,8 @@
     "radical_name_en": "Fruit",
     "radical_name_ja": "くだもの",
     "description_en": "Radical for fruit-related kanji",
-    "description_ja": "果物に関連する漢字の部首"
+    "description_ja": "果物に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 177,
@@ -1413,7 +1589,8 @@
     "radical_name_en": "Fur",
     "radical_name_ja": "けがわ",
     "description_en": "Radical for fur-related kanji",
-    "description_ja": "毛に関連する漢字の部首"
+    "description_ja": "毛に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 178,
@@ -1421,7 +1598,8 @@
     "radical_name_en": "Gambler",
     "radical_name_ja": "Gambler",
     "description_en": "Radical related to gambler kanji",
-    "description_ja": "Gamblerに関連する漢字の部首"
+    "description_ja": "Gamblerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 179,
@@ -1429,7 +1607,8 @@
     "radical_name_en": "Gate",
     "radical_name_ja": "もんがまえ",
     "description_en": "Radical for gate-related kanji",
-    "description_ja": "門に関連する漢字の部首"
+    "description_ja": "門に関連する漢字の部首",
+    "position": "かまえ"
   },
   {
     "id": 180,
@@ -1437,7 +1616,8 @@
     "radical_name_en": "Genius",
     "radical_name_ja": "Genius",
     "description_en": "Radical related to genius kanji",
-    "description_ja": "Geniusに関連する漢字の部首"
+    "description_ja": "Geniusに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 181,
@@ -1445,7 +1625,8 @@
     "radical_name_en": "Geoduck",
     "radical_name_ja": "Geoduck",
     "description_en": "Radical related to geoduck kanji",
-    "description_ja": "Geoduckに関連する漢字の部首"
+    "description_ja": "Geoduckに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 182,
@@ -1453,7 +1634,8 @@
     "radical_name_en": "Giant",
     "radical_name_ja": "Giant",
     "description_en": "Radical related to giant kanji",
-    "description_ja": "Giantに関連する漢字の部首"
+    "description_ja": "Giantに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 183,
@@ -1461,7 +1643,8 @@
     "radical_name_en": "Gladiator",
     "radical_name_ja": "Gladiator",
     "description_en": "Radical related to gladiator kanji",
-    "description_ja": "Gladiatorに関連する漢字の部首"
+    "description_ja": "Gladiatorに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 184,
@@ -1469,7 +1652,8 @@
     "radical_name_en": "Go",
     "radical_name_ja": "Go",
     "description_en": "Radical related to go kanji",
-    "description_ja": "Goに関連する漢字の部首"
+    "description_ja": "Goに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 185,
@@ -1477,7 +1661,8 @@
     "radical_name_en": "Gold",
     "radical_name_ja": "かねへん",
     "description_en": "Radical for metal-related kanji",
-    "description_ja": "金属に関連する漢字の部首"
+    "description_ja": "金属に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 186,
@@ -1485,7 +1670,8 @@
     "radical_name_en": "Good",
     "radical_name_ja": "よい",
     "description_en": "Radical for good-related kanji",
-    "description_ja": "良いことに関連する漢字の部首"
+    "description_ja": "良いことに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 187,
@@ -1493,7 +1679,8 @@
     "radical_name_en": "Good Luck",
     "radical_name_ja": "Good Luck",
     "description_en": "Radical related to good luck kanji",
-    "description_ja": "Good Luckに関連する漢字の部首"
+    "description_ja": "Good Luckに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 188,
@@ -1501,7 +1688,8 @@
     "radical_name_en": "Grain",
     "radical_name_ja": "つぶ",
     "description_en": "Radical for grain-related kanji",
-    "description_ja": "粒に関連する漢字の部首"
+    "description_ja": "粒に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 189,
@@ -1509,7 +1697,8 @@
     "radical_name_en": "Grass",
     "radical_name_ja": "くさかんむり",
     "description_en": "Radical for grass/plant-related kanji",
-    "description_ja": "植物に関連する漢字の部首"
+    "description_ja": "植物に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 190,
@@ -1517,7 +1706,8 @@
     "radical_name_en": "Greenhouse",
     "radical_name_ja": "Greenhouse",
     "description_en": "Radical related to greenhouse kanji",
-    "description_ja": "Greenhouseに関連する漢字の部首"
+    "description_ja": "Greenhouseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 191,
@@ -1525,7 +1715,8 @@
     "radical_name_en": "Ground",
     "radical_name_ja": "じめん",
     "description_en": "Radical for ground-related kanji",
-    "description_ja": "地面に関連する漢字の部首"
+    "description_ja": "地面に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 192,
@@ -1533,7 +1724,8 @@
     "radical_name_en": "Guard",
     "radical_name_ja": "Guard",
     "description_en": "Radical related to guard kanji",
-    "description_ja": "Guardに関連する漢字の部首"
+    "description_ja": "Guardに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 193,
@@ -1541,7 +1733,8 @@
     "radical_name_en": "Guest",
     "radical_name_ja": "Guest",
     "description_en": "Radical related to guest kanji",
-    "description_ja": "Guestに関連する漢字の部首"
+    "description_ja": "Guestに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 194,
@@ -1549,7 +1742,8 @@
     "radical_name_en": "Gun",
     "radical_name_ja": "てっぽう",
     "description_en": "Radical for gun-related kanji",
-    "description_ja": "銃に関連する漢字の部首"
+    "description_ja": "銃に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 195,
@@ -1557,7 +1751,8 @@
     "radical_name_en": "Guy",
     "radical_name_ja": "Guy",
     "description_en": "Radical related to guy kanji",
-    "description_ja": "Guyに関連する漢字の部首"
+    "description_ja": "Guyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 196,
@@ -1565,7 +1760,8 @@
     "radical_name_en": "Hair",
     "radical_name_ja": "かみ",
     "description_en": "Radical for hair-related kanji",
-    "description_ja": "髪に関連する漢字の部首"
+    "description_ja": "髪に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 197,
@@ -1573,7 +1769,8 @@
     "radical_name_en": "Half",
     "radical_name_ja": "Half",
     "description_en": "Radical related to half kanji",
-    "description_ja": "Halfに関連する漢字の部首"
+    "description_ja": "Halfに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 198,
@@ -1581,7 +1778,8 @@
     "radical_name_en": "Hand",
     "radical_name_ja": "てへん",
     "description_en": "Radical for hand-related kanji",
-    "description_ja": "手に関連する漢字の部首"
+    "description_ja": "手に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 199,
@@ -1589,7 +1787,8 @@
     "radical_name_en": "Happiness",
     "radical_name_ja": "Happiness",
     "description_en": "Radical related to happiness kanji",
-    "description_ja": "Happinessに関連する漢字の部首"
+    "description_ja": "Happinessに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 200,
@@ -1597,7 +1796,8 @@
     "radical_name_en": "Hat",
     "radical_name_ja": "ぼうし",
     "description_en": "Radical for hat-related kanji",
-    "description_ja": "帽子に関連する漢字の部首"
+    "description_ja": "帽子に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 201,
@@ -1605,7 +1805,8 @@
     "radical_name_en": "Have",
     "radical_name_ja": "Have",
     "description_en": "Radical related to have kanji",
-    "description_ja": "Haveに関連する漢字の部首"
+    "description_ja": "Haveに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 202,
@@ -1613,7 +1814,8 @@
     "radical_name_en": "Head",
     "radical_name_ja": "あたま",
     "description_en": "Radical for head-related kanji",
-    "description_ja": "頭に関連する漢字の部首"
+    "description_ja": "頭に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 203,
@@ -1621,7 +1823,8 @@
     "radical_name_en": "Heart",
     "radical_name_ja": "こころ・りっしんべん",
     "description_en": "Radical for heart/emotion-related kanji",
-    "description_ja": "心や感情に関連する漢字の部首"
+    "description_ja": "心や感情に関連する漢字の部首",
+    "position": "あし"
   },
   {
     "id": 204,
@@ -1629,7 +1832,8 @@
     "radical_name_en": "Heaven",
     "radical_name_ja": "てん",
     "description_en": "Radical for heaven-related kanji",
-    "description_ja": "天に関連する漢字の部首"
+    "description_ja": "天に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 205,
@@ -1637,7 +1841,8 @@
     "radical_name_en": "Heavy",
     "radical_name_ja": "おもい",
     "description_en": "Radical for heavy-related kanji",
-    "description_ja": "重さに関連する漢字の部首"
+    "description_ja": "重さに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 206,
@@ -1645,7 +1850,8 @@
     "radical_name_en": "Height",
     "radical_name_ja": "Height",
     "description_en": "Radical related to height kanji",
-    "description_ja": "Heightに関連する漢字の部首"
+    "description_ja": "Heightに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 207,
@@ -1653,7 +1859,8 @@
     "radical_name_en": "Helicopter",
     "radical_name_ja": "Helicopter",
     "description_en": "Radical related to helicopter kanji",
-    "description_ja": "Helicopterに関連する漢字の部首"
+    "description_ja": "Helicopterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 208,
@@ -1661,7 +1868,8 @@
     "radical_name_en": "Hill",
     "radical_name_ja": "Hill",
     "description_en": "Radical related to hill kanji",
-    "description_ja": "Hillに関連する漢字の部首"
+    "description_ja": "Hillに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 209,
@@ -1669,7 +1877,8 @@
     "radical_name_en": "Hills",
     "radical_name_ja": "Hills",
     "description_en": "Radical related to hills kanji",
-    "description_ja": "Hillsに関連する漢字の部首"
+    "description_ja": "Hillsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 210,
@@ -1677,7 +1886,8 @@
     "radical_name_en": "History",
     "radical_name_ja": "History",
     "description_en": "Radical related to history kanji",
-    "description_ja": "Historyに関連する漢字の部首"
+    "description_ja": "Historyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 211,
@@ -1685,7 +1895,8 @@
     "radical_name_en": "Hole",
     "radical_name_ja": "Hole",
     "description_en": "Radical related to hole kanji",
-    "description_ja": "Holeに関連する漢字の部首"
+    "description_ja": "Holeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 212,
@@ -1693,7 +1904,8 @@
     "radical_name_en": "Hook",
     "radical_name_ja": "Hook",
     "description_en": "Radical related to hook kanji",
-    "description_ja": "Hookに関連する漢字の部首"
+    "description_ja": "Hookに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 213,
@@ -1701,7 +1913,8 @@
     "radical_name_en": "Horns",
     "radical_name_ja": "Horns",
     "description_en": "Radical related to horns kanji",
-    "description_ja": "Hornsに関連する漢字の部首"
+    "description_ja": "Hornsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 214,
@@ -1709,7 +1922,8 @@
     "radical_name_en": "Horse",
     "radical_name_ja": "うまへん",
     "description_en": "Radical for horse-related kanji",
-    "description_ja": "馬に関連する漢字の部首"
+    "description_ja": "馬に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 215,
@@ -1717,7 +1931,8 @@
     "radical_name_en": "Hot Pepper",
     "radical_name_ja": "Hot Pepper",
     "description_en": "Radical related to hot pepper kanji",
-    "description_ja": "Hot Pepperに関連する漢字の部首"
+    "description_ja": "Hot Pepperに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 216,
@@ -1725,7 +1940,8 @@
     "radical_name_en": "House",
     "radical_name_ja": "うかんむり",
     "description_en": "Radical for house-related kanji",
-    "description_ja": "家に関連する漢字の部首"
+    "description_ja": "家に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 217,
@@ -1733,7 +1949,8 @@
     "radical_name_en": "Humble",
     "radical_name_ja": "Humble",
     "description_en": "Radical related to humble kanji",
-    "description_ja": "Humbleに関連する漢字の部首"
+    "description_ja": "Humbleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 218,
@@ -1741,7 +1958,8 @@
     "radical_name_en": "Hundred",
     "radical_name_ja": "ひゃく",
     "description_en": "Radical for hundred-related kanji",
-    "description_ja": "数字の百に関連する漢字の部首"
+    "description_ja": "数字の百に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 219,
@@ -1749,7 +1967,8 @@
     "radical_name_en": "Husband",
     "radical_name_ja": "おっと",
     "description_en": "Radical for husband-related kanji",
-    "description_ja": "夫に関連する漢字の部首"
+    "description_ja": "夫に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 220,
@@ -1757,7 +1976,8 @@
     "radical_name_en": "Ice",
     "radical_name_ja": "こおり",
     "description_en": "Radical for ice-related kanji",
-    "description_ja": "氷に関連する漢字の部首"
+    "description_ja": "氷に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 221,
@@ -1765,7 +1985,8 @@
     "radical_name_en": "Icicle",
     "radical_name_ja": "Icicle",
     "description_en": "Radical related to icicle kanji",
-    "description_ja": "Icicleに関連する漢字の部首"
+    "description_ja": "Icicleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 222,
@@ -1773,7 +1994,8 @@
     "radical_name_en": "Idea",
     "radical_name_ja": "Idea",
     "description_en": "Radical related to idea kanji",
-    "description_ja": "Ideaに関連する漢字の部首"
+    "description_ja": "Ideaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 223,
@@ -1781,7 +2003,8 @@
     "radical_name_en": "Imperial",
     "radical_name_ja": "Imperial",
     "description_en": "Radical related to imperial kanji",
-    "description_ja": "Imperialに関連する漢字の部首"
+    "description_ja": "Imperialに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 224,
@@ -1789,7 +2012,8 @@
     "radical_name_en": "Insect",
     "radical_name_ja": "むしへん",
     "description_en": "Radical for insect-related kanji",
-    "description_ja": "虫に関連する漢字の部首"
+    "description_ja": "虫に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 225,
@@ -1797,7 +2021,8 @@
     "radical_name_en": "Inside",
     "radical_name_ja": "なか",
     "description_en": "Radical for inside-related kanji",
-    "description_ja": "内側に関連する漢字の部首"
+    "description_ja": "内側に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 226,
@@ -1805,7 +2030,8 @@
     "radical_name_en": "Interval",
     "radical_name_ja": "Interval",
     "description_en": "Radical related to interval kanji",
-    "description_ja": "Intervalに関連する漢字の部首"
+    "description_ja": "Intervalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 227,
@@ -1813,7 +2039,8 @@
     "radical_name_en": "Jackhammer",
     "radical_name_ja": "Jackhammer",
     "description_en": "Radical related to jackhammer kanji",
-    "description_ja": "Jackhammerに関連する漢字の部首"
+    "description_ja": "Jackhammerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 228,
@@ -1821,7 +2048,8 @@
     "radical_name_en": "Jammed In",
     "radical_name_ja": "Jammed In",
     "description_en": "Radical related to jammed in kanji",
-    "description_ja": "Jammed Inに関連する漢字の部首"
+    "description_ja": "Jammed Inに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 229,
@@ -1829,7 +2057,8 @@
     "radical_name_en": "Jet",
     "radical_name_ja": "Jet",
     "description_en": "Radical related to jet kanji",
-    "description_ja": "Jetに関連する漢字の部首"
+    "description_ja": "Jetに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 230,
@@ -1837,7 +2066,8 @@
     "radical_name_en": "Key",
     "radical_name_ja": "かぎ",
     "description_en": "Radical for key-related kanji",
-    "description_ja": "鍵に関連する漢字の部首"
+    "description_ja": "鍵に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 231,
@@ -1845,7 +2075,8 @@
     "radical_name_en": "Kick",
     "radical_name_ja": "Kick",
     "description_en": "Radical related to kick kanji",
-    "description_ja": "Kickに関連する漢字の部首"
+    "description_ja": "Kickに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 232,
@@ -1853,7 +2084,8 @@
     "radical_name_en": "King",
     "radical_name_ja": "おう",
     "description_en": "Radical for king-related kanji",
-    "description_ja": "王に関連する漢字の部首"
+    "description_ja": "王に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 233,
@@ -1861,7 +2093,8 @@
     "radical_name_en": "Kiss",
     "radical_name_ja": "Kiss",
     "description_en": "Radical related to kiss kanji",
-    "description_ja": "Kissに関連する漢字の部首"
+    "description_ja": "Kissに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 234,
@@ -1869,7 +2102,8 @@
     "radical_name_en": "Knife",
     "radical_name_ja": "りっとう",
     "description_en": "Radical for knife-related kanji",
-    "description_ja": "刃物に関連する漢字の部首"
+    "description_ja": "刃物に関連する漢字の部首",
+    "position": "つくり"
   },
   {
     "id": 235,
@@ -1877,7 +2111,8 @@
     "radical_name_en": "Korea",
     "radical_name_ja": "Korea",
     "description_en": "Radical related to korea kanji",
-    "description_ja": "Koreaに関連する漢字の部首"
+    "description_ja": "Koreaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 236,
@@ -1885,7 +2120,8 @@
     "radical_name_en": "Lack",
     "radical_name_ja": "Lack",
     "description_en": "Radical related to lack kanji",
-    "description_ja": "Lackに関連する漢字の部首"
+    "description_ja": "Lackに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 237,
@@ -1893,7 +2129,8 @@
     "radical_name_en": "Ladle",
     "radical_name_ja": "Ladle",
     "description_en": "Radical related to ladle kanji",
-    "description_ja": "Ladleに関連する漢字の部首"
+    "description_ja": "Ladleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 238,
@@ -1901,7 +2138,8 @@
     "radical_name_en": "Landslide",
     "radical_name_ja": "Landslide",
     "description_en": "Radical related to landslide kanji",
-    "description_ja": "Landslideに関連する漢字の部首"
+    "description_ja": "Landslideに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 239,
@@ -1909,7 +2147,8 @@
     "radical_name_en": "Lantern",
     "radical_name_ja": "Lantern",
     "description_en": "Radical related to lantern kanji",
-    "description_ja": "Lanternに関連する漢字の部首"
+    "description_ja": "Lanternに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 240,
@@ -1917,7 +2156,8 @@
     "radical_name_en": "Leader",
     "radical_name_ja": "Leader",
     "description_en": "Radical related to leader kanji",
-    "description_ja": "Leaderに関連する漢字の部首"
+    "description_ja": "Leaderに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 241,
@@ -1925,7 +2165,8 @@
     "radical_name_en": "Leaf",
     "radical_name_ja": "は",
     "description_en": "Radical for leaf-related kanji",
-    "description_ja": "葉に関連する漢字の部首"
+    "description_ja": "葉に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 242,
@@ -1933,7 +2174,8 @@
     "radical_name_en": "Leather",
     "radical_name_ja": "かわへん",
     "description_en": "Radical for leather-related kanji",
-    "description_ja": "革に関連する漢字の部首"
+    "description_ja": "革に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 243,
@@ -1941,7 +2183,8 @@
     "radical_name_en": "Legs",
     "radical_name_ja": "Legs",
     "description_en": "Radical related to legs kanji",
-    "description_ja": "Legsに関連する漢字の部首"
+    "description_ja": "Legsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 244,
@@ -1949,7 +2192,8 @@
     "radical_name_en": "Library",
     "radical_name_ja": "Library",
     "description_en": "Radical related to library kanji",
-    "description_ja": "Libraryに関連する漢字の部首"
+    "description_ja": "Libraryに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 245,
@@ -1957,7 +2201,8 @@
     "radical_name_en": "Lid",
     "radical_name_ja": "ふた",
     "description_en": "Radical for lid-related kanji",
-    "description_ja": "蓋に関連する漢字の部首"
+    "description_ja": "蓋に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 246,
@@ -1965,7 +2210,8 @@
     "radical_name_en": "Life",
     "radical_name_ja": "いのち",
     "description_en": "Radical for life-related kanji",
-    "description_ja": "生命に関連する漢字の部首"
+    "description_ja": "生命に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 247,
@@ -1973,7 +2219,8 @@
     "radical_name_en": "Lifeguard",
     "radical_name_ja": "Lifeguard",
     "description_en": "Radical related to lifeguard kanji",
-    "description_ja": "Lifeguardに関連する漢字の部首"
+    "description_ja": "Lifeguardに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 248,
@@ -1981,7 +2228,8 @@
     "radical_name_en": "Line Up",
     "radical_name_ja": "Line Up",
     "description_en": "Radical related to line up kanji",
-    "description_ja": "Line Upに関連する漢字の部首"
+    "description_ja": "Line Upに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 249,
@@ -1989,7 +2237,8 @@
     "radical_name_en": "Lineage",
     "radical_name_ja": "Lineage",
     "description_en": "Radical related to lineage kanji",
-    "description_ja": "Lineageに関連する漢字の部首"
+    "description_ja": "Lineageに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 250,
@@ -1997,7 +2246,8 @@
     "radical_name_en": "Lion",
     "radical_name_ja": "Lion",
     "description_en": "Radical related to lion kanji",
-    "description_ja": "Lionに関連する漢字の部首"
+    "description_ja": "Lionに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 251,
@@ -2005,7 +2255,8 @@
     "radical_name_en": "Lip Ring",
     "radical_name_ja": "Lip Ring",
     "description_en": "Radical related to lip ring kanji",
-    "description_ja": "Lip Ringに関連する漢字の部首"
+    "description_ja": "Lip Ringに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 252,
@@ -2013,7 +2264,8 @@
     "radical_name_en": "Loiter",
     "radical_name_ja": "Loiter",
     "description_en": "Radical related to loiter kanji",
-    "description_ja": "Loiterに関連する漢字の部首"
+    "description_ja": "Loiterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 253,
@@ -2021,7 +2273,8 @@
     "radical_name_en": "Long",
     "radical_name_ja": "ながい",
     "description_en": "Radical for long-related kanji",
-    "description_ja": "長さに関連する漢字の部首"
+    "description_ja": "長さに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 254,
@@ -2029,7 +2282,8 @@
     "radical_name_en": "Long Ago",
     "radical_name_ja": "Long Ago",
     "description_en": "Radical related to long ago kanji",
-    "description_ja": "Long Agoに関連する漢字の部首"
+    "description_ja": "Long Agoに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 255,
@@ -2037,7 +2291,8 @@
     "radical_name_en": "Lovely",
     "radical_name_ja": "Lovely",
     "description_en": "Radical related to lovely kanji",
-    "description_ja": "Lovelyに関連する漢字の部首"
+    "description_ja": "Lovelyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 256,
@@ -2045,7 +2300,8 @@
     "radical_name_en": "Machine",
     "radical_name_ja": "きかい",
     "description_en": "Radical for machine-related kanji",
-    "description_ja": "機械に関連する漢字の部首"
+    "description_ja": "機械に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 257,
@@ -2053,7 +2309,8 @@
     "radical_name_en": "Mama",
     "radical_name_ja": "Mama",
     "description_en": "Radical related to mama kanji",
-    "description_ja": "Mamaに関連する漢字の部首"
+    "description_ja": "Mamaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 258,
@@ -2061,7 +2318,8 @@
     "radical_name_en": "Man",
     "radical_name_ja": "Man",
     "description_en": "Radical related to man kanji",
-    "description_ja": "Manに関連する漢字の部首"
+    "description_ja": "Manに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 259,
@@ -2069,7 +2327,8 @@
     "radical_name_en": "Mantis",
     "radical_name_ja": "Mantis",
     "description_en": "Radical related to mantis kanji",
-    "description_ja": "Mantisに関連する漢字の部首"
+    "description_ja": "Mantisに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 260,
@@ -2077,7 +2336,8 @@
     "radical_name_en": "Mask",
     "radical_name_ja": "Mask",
     "description_en": "Radical related to mask kanji",
-    "description_ja": "Maskに関連する漢字の部首"
+    "description_ja": "Maskに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 261,
@@ -2085,7 +2345,8 @@
     "radical_name_en": "Master",
     "radical_name_ja": "Master",
     "description_en": "Radical related to master kanji",
-    "description_ja": "Masterに関連する漢字の部首"
+    "description_ja": "Masterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 262,
@@ -2093,7 +2354,8 @@
     "radical_name_en": "Measurement",
     "radical_name_ja": "Measurement",
     "description_en": "Radical related to measurement kanji",
-    "description_ja": "Measurementに関連する漢字の部首"
+    "description_ja": "Measurementに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 263,
@@ -2101,7 +2363,8 @@
     "radical_name_en": "Meat",
     "radical_name_ja": "にく",
     "description_en": "Radical for meat-related kanji",
-    "description_ja": "肉に関連する漢字の部首"
+    "description_ja": "肉に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 264,
@@ -2109,7 +2372,8 @@
     "radical_name_en": "Meet",
     "radical_name_ja": "Meet",
     "description_en": "Radical related to meet kanji",
-    "description_ja": "Meetに関連する漢字の部首"
+    "description_ja": "Meetに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 265,
@@ -2117,7 +2381,8 @@
     "radical_name_en": "Melon",
     "radical_name_ja": "Melon",
     "description_en": "Radical related to melon kanji",
-    "description_ja": "Melonに関連する漢字の部首"
+    "description_ja": "Melonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 266,
@@ -2125,7 +2390,8 @@
     "radical_name_en": "Member",
     "radical_name_ja": "Member",
     "description_en": "Radical related to member kanji",
-    "description_ja": "Memberに関連する漢字の部首"
+    "description_ja": "Memberに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 267,
@@ -2133,7 +2399,8 @@
     "radical_name_en": "Middle",
     "radical_name_ja": "Middle",
     "description_en": "Radical related to middle kanji",
-    "description_ja": "Middleに関連する漢字の部首"
+    "description_ja": "Middleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 268,
@@ -2141,7 +2408,8 @@
     "radical_name_en": "Mix",
     "radical_name_ja": "Mix",
     "description_en": "Radical related to mix kanji",
-    "description_ja": "Mixに関連する漢字の部首"
+    "description_ja": "Mixに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 269,
@@ -2149,7 +2417,8 @@
     "radical_name_en": "Mohawk",
     "radical_name_ja": "Mohawk",
     "description_en": "Radical related to mohawk kanji",
-    "description_ja": "Mohawkに関連する漢字の部首"
+    "description_ja": "Mohawkに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 270,
@@ -2157,7 +2426,8 @@
     "radical_name_en": "Mole",
     "radical_name_ja": "Mole",
     "description_en": "Radical related to mole kanji",
-    "description_ja": "Moleに関連する漢字の部首"
+    "description_ja": "Moleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 271,
@@ -2165,7 +2435,8 @@
     "radical_name_en": "Mona Lisa",
     "radical_name_ja": "Mona Lisa",
     "description_en": "Radical related to mona lisa kanji",
-    "description_ja": "Mona Lisaに関連する漢字の部首"
+    "description_ja": "Mona Lisaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 272,
@@ -2173,7 +2444,8 @@
     "radical_name_en": "Moon",
     "radical_name_ja": "つきへん",
     "description_en": "Radical for moon/flesh-related kanji",
-    "description_ja": "月や肉に関連する漢字の部首"
+    "description_ja": "月や肉に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 273,
@@ -2181,7 +2453,8 @@
     "radical_name_en": "Morning",
     "radical_name_ja": "あさ",
     "description_en": "Radical for morning-related kanji",
-    "description_ja": "朝に関連する漢字の部首"
+    "description_ja": "朝に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 274,
@@ -2189,7 +2462,8 @@
     "radical_name_en": "Mountain",
     "radical_name_ja": "やまへん",
     "description_en": "Radical for mountain-related kanji",
-    "description_ja": "山に関連する漢字の部首"
+    "description_ja": "山に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 275,
@@ -2197,7 +2471,8 @@
     "radical_name_en": "Mouth",
     "radical_name_ja": "くちへん",
     "description_en": "Radical for mouth-related kanji",
-    "description_ja": "口に関連する漢字の部首"
+    "description_ja": "口に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 276,
@@ -2205,7 +2480,8 @@
     "radical_name_en": "Music",
     "radical_name_ja": "おとへん",
     "description_en": "Radical for music-related kanji",
-    "description_ja": "音楽に関連する漢字の部首"
+    "description_ja": "音楽に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 277,
@@ -2213,7 +2489,8 @@
     "radical_name_en": "Mustache",
     "radical_name_ja": "Mustache",
     "description_en": "Radical related to mustache kanji",
-    "description_ja": "Mustacheに関連する漢字の部首"
+    "description_ja": "Mustacheに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 278,
@@ -2221,7 +2498,8 @@
     "radical_name_en": "Mysterious",
     "radical_name_ja": "Mysterious",
     "description_en": "Radical related to mysterious kanji",
-    "description_ja": "Mysteriousに関連する漢字の部首"
+    "description_ja": "Mysteriousに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 279,
@@ -2229,7 +2507,8 @@
     "radical_name_en": "Name",
     "radical_name_ja": "Name",
     "description_en": "Radical related to name kanji",
-    "description_ja": "Nameに関連する漢字の部首"
+    "description_ja": "Nameに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 280,
@@ -2237,7 +2516,8 @@
     "radical_name_en": "Narwhal",
     "radical_name_ja": "Narwhal",
     "description_en": "Radical related to narwhal kanji",
-    "description_ja": "Narwhalに関連する漢字の部首"
+    "description_ja": "Narwhalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 281,
@@ -2245,7 +2525,8 @@
     "radical_name_en": "Nature",
     "radical_name_ja": "Nature",
     "description_en": "Radical related to nature kanji",
-    "description_ja": "Natureに関連する漢字の部首"
+    "description_ja": "Natureに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 282,
@@ -2253,7 +2534,8 @@
     "radical_name_en": "Neck",
     "radical_name_ja": "くび",
     "description_en": "Radical for neck-related kanji",
-    "description_ja": "首に関連する漢字の部首"
+    "description_ja": "首に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 283,
@@ -2261,7 +2543,8 @@
     "radical_name_en": "Net",
     "radical_name_ja": "あみ",
     "description_en": "Radical for net-related kanji",
-    "description_ja": "網に関連する漢字の部首"
+    "description_ja": "網に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 284,
@@ -2269,7 +2552,8 @@
     "radical_name_en": "Next",
     "radical_name_ja": "Next",
     "description_en": "Radical related to next kanji",
-    "description_ja": "Nextに関連する漢字の部首"
+    "description_ja": "Nextに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 285,
@@ -2277,7 +2561,8 @@
     "radical_name_en": "Night",
     "radical_name_ja": "よる",
     "description_en": "Radical for night-related kanji",
-    "description_ja": "夜に関連する漢字の部首"
+    "description_ja": "夜に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 286,
@@ -2285,7 +2570,8 @@
     "radical_name_en": "Nine",
     "radical_name_ja": "Nine",
     "description_en": "Radical related to nine kanji",
-    "description_ja": "Nineに関連する漢字の部首"
+    "description_ja": "Nineに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 287,
@@ -2293,7 +2579,8 @@
     "radical_name_en": "Noon",
     "radical_name_ja": "Noon",
     "description_en": "Radical related to noon kanji",
-    "description_ja": "Noonに関連する漢字の部首"
+    "description_ja": "Noonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 288,
@@ -2301,7 +2588,8 @@
     "radical_name_en": "North",
     "radical_name_ja": "きた",
     "description_en": "Radical for north-related kanji",
-    "description_ja": "北に関連する漢字の部首"
+    "description_ja": "北に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 289,
@@ -2309,7 +2597,8 @@
     "radical_name_en": "Nose",
     "radical_name_ja": "はな",
     "description_en": "Radical for nose-related kanji",
-    "description_ja": "鼻に関連する漢字の部首"
+    "description_ja": "鼻に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 290,
@@ -2317,7 +2606,8 @@
     "radical_name_en": "Not",
     "radical_name_ja": "Not",
     "description_en": "Radical related to not kanji",
-    "description_ja": "Notに関連する漢字の部首"
+    "description_ja": "Notに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 291,
@@ -2325,7 +2615,8 @@
     "radical_name_en": "Nothing",
     "radical_name_ja": "Nothing",
     "description_en": "Radical related to nothing kanji",
-    "description_ja": "Nothingに関連する漢字の部首"
+    "description_ja": "Nothingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 292,
@@ -2333,7 +2624,8 @@
     "radical_name_en": "Now",
     "radical_name_ja": "Now",
     "description_en": "Radical related to now kanji",
-    "description_ja": "Nowに関連する漢字の部首"
+    "description_ja": "Nowに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 293,
@@ -2341,7 +2633,8 @@
     "radical_name_en": "Number",
     "radical_name_ja": "Number",
     "description_en": "Radical related to number kanji",
-    "description_ja": "Numberに関連する漢字の部首"
+    "description_ja": "Numberに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 294,
@@ -2349,7 +2642,8 @@
     "radical_name_en": "Nurse",
     "radical_name_ja": "Nurse",
     "description_en": "Radical related to nurse kanji",
-    "description_ja": "Nurseに関連する漢字の部首"
+    "description_ja": "Nurseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 295,
@@ -2357,7 +2651,8 @@
     "radical_name_en": "Odd",
     "radical_name_ja": "Odd",
     "description_en": "Radical related to odd kanji",
-    "description_ja": "Oddに関連する漢字の部首"
+    "description_ja": "Oddに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 296,
@@ -2365,7 +2660,8 @@
     "radical_name_en": "Old",
     "radical_name_ja": "ふるい",
     "description_en": "Radical for old-related kanji",
-    "description_ja": "古いことに関連する漢字の部首"
+    "description_ja": "古いことに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 297,
@@ -2373,7 +2669,8 @@
     "radical_name_en": "Older Brother",
     "radical_name_ja": "Older Brother",
     "description_en": "Radical related to older brother kanji",
-    "description_ja": "Older Brotherに関連する漢字の部首"
+    "description_ja": "Older Brotherに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 298,
@@ -2381,7 +2678,8 @@
     "radical_name_en": "Omen",
     "radical_name_ja": "Omen",
     "description_en": "Radical related to omen kanji",
-    "description_ja": "Omenに関連する漢字の部首"
+    "description_ja": "Omenに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 299,
@@ -2389,7 +2687,8 @@
     "radical_name_en": "One Sided",
     "radical_name_ja": "One Sided",
     "description_en": "Radical related to one sided kanji",
-    "description_ja": "One Sidedに関連する漢字の部首"
+    "description_ja": "One Sidedに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 300,
@@ -2397,7 +2696,8 @@
     "radical_name_en": "Oneself",
     "radical_name_ja": "Oneself",
     "description_en": "Radical related to oneself kanji",
-    "description_ja": "Oneselfに関連する漢字の部首"
+    "description_ja": "Oneselfに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 301,
@@ -2405,7 +2705,8 @@
     "radical_name_en": "Orders",
     "radical_name_ja": "Orders",
     "description_en": "Radical related to orders kanji",
-    "description_ja": "Ordersに関連する漢字の部首"
+    "description_ja": "Ordersに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 302,
@@ -2413,7 +2714,8 @@
     "radical_name_en": "Origin",
     "radical_name_ja": "Origin",
     "description_en": "Radical related to origin kanji",
-    "description_ja": "Originに関連する漢字の部首"
+    "description_ja": "Originに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 303,
@@ -2421,7 +2723,8 @@
     "radical_name_en": "Original",
     "radical_name_ja": "Original",
     "description_en": "Radical related to original kanji",
-    "description_ja": "Originalに関連する漢字の部首"
+    "description_ja": "Originalに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 304,
@@ -2429,7 +2732,8 @@
     "radical_name_en": "Oversee",
     "radical_name_ja": "Oversee",
     "description_en": "Radical related to oversee kanji",
-    "description_ja": "Overseeに関連する漢字の部首"
+    "description_ja": "Overseeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 305,
@@ -2437,7 +2741,8 @@
     "radical_name_en": "Paragraph",
     "radical_name_ja": "Paragraph",
     "description_en": "Radical related to paragraph kanji",
-    "description_ja": "Paragraphに関連する漢字の部首"
+    "description_ja": "Paragraphに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 306,
@@ -2445,7 +2750,8 @@
     "radical_name_en": "Part",
     "radical_name_ja": "Part",
     "description_en": "Radical related to part kanji",
-    "description_ja": "Partに関連する漢字の部首"
+    "description_ja": "Partに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 307,
@@ -2453,7 +2759,8 @@
     "radical_name_en": "Past",
     "radical_name_ja": "Past",
     "description_en": "Radical related to past kanji",
-    "description_ja": "Pastに関連する漢字の部首"
+    "description_ja": "Pastに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 308,
@@ -2461,7 +2768,8 @@
     "radical_name_en": "Peace",
     "radical_name_ja": "へいわ",
     "description_en": "Radical for peace-related kanji",
-    "description_ja": "平和に関連する漢字の部首"
+    "description_ja": "平和に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 309,
@@ -2469,7 +2777,8 @@
     "radical_name_en": "Penguin",
     "radical_name_ja": "Penguin",
     "description_en": "Radical related to penguin kanji",
-    "description_ja": "Penguinに関連する漢字の部首"
+    "description_ja": "Penguinに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 310,
@@ -2477,7 +2786,8 @@
     "radical_name_en": "Peoples",
     "radical_name_ja": "Peoples",
     "description_en": "Radical related to peoples kanji",
-    "description_ja": "Peoplesに関連する漢字の部首"
+    "description_ja": "Peoplesに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 311,
@@ -2485,7 +2795,8 @@
     "radical_name_en": "Person",
     "radical_name_ja": "にんべん",
     "description_en": "Radical for person-related kanji",
-    "description_ja": "人に関連する漢字の部首"
+    "description_ja": "人に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 312,
@@ -2493,7 +2804,8 @@
     "radical_name_en": "Pi",
     "radical_name_ja": "Pi",
     "description_en": "Radical related to pi kanji",
-    "description_ja": "Piに関連する漢字の部首"
+    "description_ja": "Piに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 313,
@@ -2501,7 +2813,8 @@
     "radical_name_en": "Pig",
     "radical_name_ja": "ぶた",
     "description_en": "Radical for pig-related kanji",
-    "description_ja": "豚に関連する漢字の部首"
+    "description_ja": "豚に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 314,
@@ -2509,7 +2822,8 @@
     "radical_name_en": "Pirate",
     "radical_name_ja": "Pirate",
     "description_en": "Radical related to pirate kanji",
-    "description_ja": "Pirateに関連する漢字の部首"
+    "description_ja": "Pirateに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 315,
@@ -2517,7 +2831,8 @@
     "radical_name_en": "Plate",
     "radical_name_ja": "Plate",
     "description_en": "Radical related to plate kanji",
-    "description_ja": "Plateに関連する漢字の部首"
+    "description_ja": "Plateに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 316,
@@ -2525,7 +2840,8 @@
     "radical_name_en": "Plow",
     "radical_name_ja": "Plow",
     "description_en": "Radical related to plow kanji",
-    "description_ja": "Plowに関連する漢字の部首"
+    "description_ja": "Plowに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 317,
@@ -2533,7 +2849,8 @@
     "radical_name_en": "Poem",
     "radical_name_ja": "Poem",
     "description_en": "Radical related to poem kanji",
-    "description_ja": "Poemに関連する漢字の部首"
+    "description_ja": "Poemに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 318,
@@ -2541,7 +2858,8 @@
     "radical_name_en": "Pool",
     "radical_name_ja": "Pool",
     "description_en": "Radical related to pool kanji",
-    "description_ja": "Poolに関連する漢字の部首"
+    "description_ja": "Poolに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 319,
@@ -2549,7 +2867,8 @@
     "radical_name_en": "Poop",
     "radical_name_ja": "Poop",
     "description_en": "Radical related to poop kanji",
-    "description_ja": "Poopに関連する漢字の部首"
+    "description_ja": "Poopに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 320,
@@ -2557,7 +2876,8 @@
     "radical_name_en": "Pope",
     "radical_name_ja": "Pope",
     "description_en": "Radical related to pope kanji",
-    "description_ja": "Popeに関連する漢字の部首"
+    "description_ja": "Popeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 321,
@@ -2565,7 +2885,8 @@
     "radical_name_en": "Power",
     "radical_name_ja": "ちからへん",
     "description_en": "Radical for power-related kanji",
-    "description_ja": "力に関連する漢字の部首"
+    "description_ja": "力に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 322,
@@ -2573,7 +2894,8 @@
     "radical_name_en": "Prefecture",
     "radical_name_ja": "Prefecture",
     "description_en": "Radical related to prefecture kanji",
-    "description_ja": "Prefectureに関連する漢字の部首"
+    "description_ja": "Prefectureに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 323,
@@ -2581,7 +2903,8 @@
     "radical_name_en": "Preserve",
     "radical_name_ja": "Preserve",
     "description_en": "Radical related to preserve kanji",
-    "description_ja": "Preserveに関連する漢字の部首"
+    "description_ja": "Preserveに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 324,
@@ -2589,7 +2912,8 @@
     "radical_name_en": "Previous",
     "radical_name_ja": "Previous",
     "description_en": "Radical related to previous kanji",
-    "description_ja": "Previousに関連する漢字の部首"
+    "description_ja": "Previousに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 325,
@@ -2597,7 +2921,8 @@
     "radical_name_en": "Prison",
     "radical_name_ja": "Prison",
     "description_en": "Radical related to prison kanji",
-    "description_ja": "Prisonに関連する漢字の部首"
+    "description_ja": "Prisonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 326,
@@ -2605,7 +2930,8 @@
     "radical_name_en": "Private",
     "radical_name_ja": "Private",
     "description_en": "Radical related to private kanji",
-    "description_ja": "Privateに関連する漢字の部首"
+    "description_ja": "Privateに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 327,
@@ -2613,7 +2939,8 @@
     "radical_name_en": "Prize",
     "radical_name_ja": "Prize",
     "description_en": "Radical related to prize kanji",
-    "description_ja": "Prizeに関連する漢字の部首"
+    "description_ja": "Prizeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 328,
@@ -2621,7 +2948,8 @@
     "radical_name_en": "Products",
     "radical_name_ja": "Products",
     "description_en": "Radical related to products kanji",
-    "description_ja": "Productsに関連する漢字の部首"
+    "description_ja": "Productsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 329,
@@ -2629,7 +2957,8 @@
     "radical_name_en": "Protect",
     "radical_name_ja": "Protect",
     "description_en": "Radical related to protect kanji",
-    "description_ja": "Protectに関連する漢字の部首"
+    "description_ja": "Protectに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 330,
@@ -2637,7 +2966,8 @@
     "radical_name_en": "Psychopath",
     "radical_name_ja": "Psychopath",
     "description_en": "Radical related to psychopath kanji",
-    "description_ja": "Psychopathに関連する漢字の部首"
+    "description_ja": "Psychopathに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 331,
@@ -2645,7 +2975,8 @@
     "radical_name_en": "Public",
     "radical_name_ja": "Public",
     "description_en": "Radical related to public kanji",
-    "description_ja": "Publicに関連する漢字の部首"
+    "description_ja": "Publicに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 332,
@@ -2653,7 +2984,8 @@
     "radical_name_en": "Rain",
     "radical_name_ja": "あめかんむり",
     "description_en": "Radical for rain-related kanji",
-    "description_ja": "雨や天気に関連する漢字の部首"
+    "description_ja": "雨や天気に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 333,
@@ -2661,7 +2993,8 @@
     "radical_name_en": "Rake",
     "radical_name_ja": "Rake",
     "description_en": "Radical related to rake kanji",
-    "description_ja": "Rakeに関連する漢字の部首"
+    "description_ja": "Rakeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 334,
@@ -2669,7 +3002,8 @@
     "radical_name_en": "Reality",
     "radical_name_ja": "Reality",
     "description_en": "Radical related to reality kanji",
-    "description_ja": "Realityに関連する漢字の部首"
+    "description_ja": "Realityに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 335,
@@ -2677,7 +3011,8 @@
     "radical_name_en": "Reason",
     "radical_name_ja": "Reason",
     "description_en": "Radical related to reason kanji",
-    "description_ja": "Reasonに関連する漢字の部首"
+    "description_ja": "Reasonに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 336,
@@ -2685,7 +3020,8 @@
     "radical_name_en": "Red",
     "radical_name_ja": "あか",
     "description_en": "Radical for red-related kanji",
-    "description_ja": "赤に関連する漢字の部首"
+    "description_ja": "赤に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 337,
@@ -2693,7 +3029,8 @@
     "radical_name_en": "Request",
     "radical_name_ja": "Request",
     "description_en": "Radical related to request kanji",
-    "description_ja": "Requestに関連する漢字の部首"
+    "description_ja": "Requestに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 338,
@@ -2701,7 +3038,8 @@
     "radical_name_en": "Restaurant",
     "radical_name_ja": "Restaurant",
     "description_en": "Radical related to restaurant kanji",
-    "description_ja": "Restaurantに関連する漢字の部首"
+    "description_ja": "Restaurantに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 339,
@@ -2709,7 +3047,8 @@
     "radical_name_en": "Rice",
     "radical_name_ja": "こめへん",
     "description_en": "Radical for rice-related kanji",
-    "description_ja": "米に関連する漢字の部首"
+    "description_ja": "米に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 340,
@@ -2717,7 +3056,8 @@
     "radical_name_en": "Rice Paddy",
     "radical_name_ja": "たへん",
     "description_en": "Radical for rice paddy-related kanji",
-    "description_ja": "田んぼに関連する漢字の部首"
+    "description_ja": "田んぼに関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 341,
@@ -2725,7 +3065,8 @@
     "radical_name_en": "Right",
     "radical_name_ja": "みぎ",
     "description_en": "Radical for right-related kanji",
-    "description_ja": "右に関連する漢字の部首"
+    "description_ja": "右に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 342,
@@ -2733,7 +3074,8 @@
     "radical_name_en": "Righteousness",
     "radical_name_ja": "Righteousness",
     "description_en": "Radical related to righteousness kanji",
-    "description_ja": "Righteousnessに関連する漢字の部首"
+    "description_ja": "Righteousnessに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 343,
@@ -2741,7 +3083,8 @@
     "radical_name_en": "River",
     "radical_name_ja": "さんずい",
     "description_en": "Radical for river-related kanji",
-    "description_ja": "川に関連する漢字の部首"
+    "description_ja": "川に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 344,
@@ -2749,7 +3092,8 @@
     "radical_name_en": "Road",
     "radical_name_ja": "しんにょう",
     "description_en": "Radical for road-related kanji",
-    "description_ja": "道に関連する漢字の部首"
+    "description_ja": "道に関連する漢字の部首",
+    "position": "にょう"
   },
   {
     "id": 345,
@@ -2757,7 +3101,8 @@
     "radical_name_en": "Rocket",
     "radical_name_ja": "Rocket",
     "description_en": "Radical related to rocket kanji",
-    "description_ja": "Rocketに関連する漢字の部首"
+    "description_ja": "Rocketに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 346,
@@ -2765,7 +3110,8 @@
     "radical_name_en": "Roof",
     "radical_name_ja": "うかんむり",
     "description_en": "Radical for roof/building-related kanji",
-    "description_ja": "屋根や建物に関連する漢字の部首"
+    "description_ja": "屋根や建物に関連する漢字の部首",
+    "position": "かんむり"
   },
   {
     "id": 347,
@@ -2773,7 +3119,8 @@
     "radical_name_en": "Root",
     "radical_name_ja": "ね",
     "description_en": "Radical for root-related kanji",
-    "description_ja": "根に関連する漢字の部首"
+    "description_ja": "根に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 348,
@@ -2781,7 +3128,8 @@
     "radical_name_en": "Run",
     "radical_name_ja": "はしる",
     "description_en": "Radical for run-related kanji",
-    "description_ja": "走ることに関連する漢字の部首"
+    "description_ja": "走ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 349,
@@ -2789,7 +3137,8 @@
     "radical_name_en": "Sake",
     "radical_name_ja": "さけへん",
     "description_en": "Radical for sake-related kanji",
-    "description_ja": "酒に関連する漢字の部首"
+    "description_ja": "酒に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 350,
@@ -2797,7 +3146,8 @@
     "radical_name_en": "Same",
     "radical_name_ja": "おなじ",
     "description_en": "Radical for same-related kanji",
-    "description_ja": "同じことに関連する漢字の部首"
+    "description_ja": "同じことに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 351,
@@ -2805,7 +3155,8 @@
     "radical_name_en": "Samurai",
     "radical_name_ja": "Samurai",
     "description_en": "Radical related to samurai kanji",
-    "description_ja": "Samuraiに関連する漢字の部首"
+    "description_ja": "Samuraiに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 352,
@@ -2813,7 +3164,8 @@
     "radical_name_en": "Satellite",
     "radical_name_ja": "Satellite",
     "description_en": "Radical related to satellite kanji",
-    "description_ja": "Satelliteに関連する漢字の部首"
+    "description_ja": "Satelliteに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 353,
@@ -2821,7 +3173,8 @@
     "radical_name_en": "Saw",
     "radical_name_ja": "のこぎり",
     "description_en": "Radical for saw-related kanji",
-    "description_ja": "鋸に関連する漢字の部首"
+    "description_ja": "鋸に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 354,
@@ -2829,7 +3182,8 @@
     "radical_name_en": "Say",
     "radical_name_ja": "ごんべん",
     "description_en": "Radical for speech-related kanji",
-    "description_ja": "言葉や話すことに関連する漢字の部首"
+    "description_ja": "言葉や話すことに関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 355,
@@ -2837,7 +3191,8 @@
     "radical_name_en": "Scarecrow",
     "radical_name_ja": "Scarecrow",
     "description_en": "Radical related to scarecrow kanji",
-    "description_ja": "Scarecrowに関連する漢字の部首"
+    "description_ja": "Scarecrowに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 356,
@@ -2845,7 +3200,8 @@
     "radical_name_en": "Scooter",
     "radical_name_ja": "Scooter",
     "description_en": "Radical related to scooter kanji",
-    "description_ja": "Scooterに関連する漢字の部首"
+    "description_ja": "Scooterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 357,
@@ -2853,7 +3209,8 @@
     "radical_name_en": "Scroll",
     "radical_name_ja": "Scroll",
     "description_en": "Radical related to scroll kanji",
-    "description_ja": "Scrollに関連する漢字の部首"
+    "description_ja": "Scrollに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 358,
@@ -2861,7 +3218,8 @@
     "radical_name_en": "See",
     "radical_name_ja": "みる",
     "description_en": "Radical for see-related kanji",
-    "description_ja": "見ることに関連する漢字の部首"
+    "description_ja": "見ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 359,
@@ -2869,7 +3227,8 @@
     "radical_name_en": "Self",
     "radical_name_ja": "Self",
     "description_en": "Radical related to self kanji",
-    "description_ja": "Selfに関連する漢字の部首"
+    "description_ja": "Selfに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 360,
@@ -2877,7 +3236,8 @@
     "radical_name_en": "Sell",
     "radical_name_ja": "うる",
     "description_en": "Radical for sell-related kanji",
-    "description_ja": "売ることに関連する漢字の部首"
+    "description_ja": "売ることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 361,
@@ -2885,7 +3245,8 @@
     "radical_name_en": "Servant",
     "radical_name_ja": "Servant",
     "description_en": "Radical related to servant kanji",
-    "description_ja": "Servantに関連する漢字の部首"
+    "description_ja": "Servantに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 362,
@@ -2893,7 +3254,8 @@
     "radical_name_en": "Seven",
     "radical_name_ja": "Seven",
     "description_en": "Radical related to seven kanji",
-    "description_ja": "Sevenに関連する漢字の部首"
+    "description_ja": "Sevenに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 363,
@@ -2901,7 +3263,8 @@
     "radical_name_en": "Sheep",
     "radical_name_ja": "ひつじへん",
     "description_en": "Radical for sheep-related kanji",
-    "description_ja": "羊に関連する漢字の部首"
+    "description_ja": "羊に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 364,
@@ -2909,7 +3272,8 @@
     "radical_name_en": "Shellfish",
     "radical_name_ja": "Shellfish",
     "description_en": "Radical related to shellfish kanji",
-    "description_ja": "Shellfishに関連する漢字の部首"
+    "description_ja": "Shellfishに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 365,
@@ -2917,7 +3281,8 @@
     "radical_name_en": "Shop",
     "radical_name_ja": "Shop",
     "description_en": "Radical related to shop kanji",
-    "description_ja": "Shopに関連する漢字の部首"
+    "description_ja": "Shopに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 366,
@@ -2925,7 +3290,8 @@
     "radical_name_en": "Shrimp",
     "radical_name_ja": "Shrimp",
     "description_en": "Radical related to shrimp kanji",
-    "description_ja": "Shrimpに関連する漢字の部首"
+    "description_ja": "Shrimpに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 367,
@@ -2933,7 +3299,8 @@
     "radical_name_en": "Shuriken",
     "radical_name_ja": "Shuriken",
     "description_en": "Radical related to shuriken kanji",
-    "description_ja": "Shurikenに関連する漢字の部首"
+    "description_ja": "Shurikenに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 368,
@@ -2941,7 +3308,8 @@
     "radical_name_en": "Sick",
     "radical_name_ja": "Sick",
     "description_en": "Radical related to sick kanji",
-    "description_ja": "Sickに関連する漢字の部首"
+    "description_ja": "Sickに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 369,
@@ -2949,7 +3317,8 @@
     "radical_name_en": "Sickle",
     "radical_name_ja": "Sickle",
     "description_en": "Radical related to sickle kanji",
-    "description_ja": "Sickleに関連する漢字の部首"
+    "description_ja": "Sickleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 370,
@@ -2957,7 +3326,8 @@
     "radical_name_en": "Signpost",
     "radical_name_ja": "Signpost",
     "description_en": "Radical related to signpost kanji",
-    "description_ja": "Signpostに関連する漢字の部首"
+    "description_ja": "Signpostに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 371,
@@ -2965,7 +3335,8 @@
     "radical_name_en": "Simple",
     "radical_name_ja": "Simple",
     "description_en": "Radical related to simple kanji",
-    "description_ja": "Simpleに関連する漢字の部首"
+    "description_ja": "Simpleに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 372,
@@ -2973,7 +3344,8 @@
     "radical_name_en": "Simultaneous",
     "radical_name_ja": "Simultaneous",
     "description_en": "Radical related to simultaneous kanji",
-    "description_ja": "Simultaneousに関連する漢字の部首"
+    "description_ja": "Simultaneousに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 373,
@@ -2981,7 +3353,8 @@
     "radical_name_en": "Skewer",
     "radical_name_ja": "Skewer",
     "description_en": "Radical related to skewer kanji",
-    "description_ja": "Skewerに関連する漢字の部首"
+    "description_ja": "Skewerに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 374,
@@ -2989,7 +3362,8 @@
     "radical_name_en": "Skin",
     "radical_name_ja": "かわへん",
     "description_en": "Radical for skin-related kanji",
-    "description_ja": "皮膚に関連する漢字の部首"
+    "description_ja": "皮膚に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 375,
@@ -2997,7 +3371,8 @@
     "radical_name_en": "Sky",
     "radical_name_ja": "そら",
     "description_en": "Radical for sky-related kanji",
-    "description_ja": "空に関連する漢字の部首"
+    "description_ja": "空に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 376,
@@ -3005,7 +3380,8 @@
     "radical_name_en": "Slice",
     "radical_name_ja": "Slice",
     "description_en": "Radical related to slice kanji",
-    "description_ja": "Sliceに関連する漢字の部首"
+    "description_ja": "Sliceに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 377,
@@ -3013,7 +3389,8 @@
     "radical_name_en": "Slide",
     "radical_name_ja": "Slide",
     "description_en": "Radical related to slide kanji",
-    "description_ja": "Slideに関連する漢字の部首"
+    "description_ja": "Slideに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 378,
@@ -3021,7 +3398,8 @@
     "radical_name_en": "Small",
     "radical_name_ja": "しょう",
     "description_en": "Radical for small-related kanji",
-    "description_ja": "小ささに関連する漢字の部首"
+    "description_ja": "小ささに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 379,
@@ -3029,7 +3407,8 @@
     "radical_name_en": "Snake",
     "radical_name_ja": "へびへん",
     "description_en": "Radical for snake-related kanji",
-    "description_ja": "蛇に関連する漢字の部首"
+    "description_ja": "蛇に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 380,
@@ -3037,7 +3416,8 @@
     "radical_name_en": "Sock",
     "radical_name_ja": "Sock",
     "description_en": "Radical related to sock kanji",
-    "description_ja": "Sockに関連する漢字の部首"
+    "description_ja": "Sockに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 381,
@@ -3045,7 +3425,8 @@
     "radical_name_en": "Someone",
     "radical_name_ja": "Someone",
     "description_en": "Radical related to someone kanji",
-    "description_ja": "Someoneに関連する漢字の部首"
+    "description_ja": "Someoneに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 382,
@@ -3053,7 +3434,8 @@
     "radical_name_en": "Soul",
     "radical_name_ja": "Soul",
     "description_en": "Radical related to soul kanji",
-    "description_ja": "Soulに関連する漢字の部首"
+    "description_ja": "Soulに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 383,
@@ -3061,7 +3443,8 @@
     "radical_name_en": "Sound",
     "radical_name_ja": "おとへん",
     "description_en": "Radical for sound-related kanji",
-    "description_ja": "音に関連する漢字の部首"
+    "description_ja": "音に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 384,
@@ -3069,7 +3452,8 @@
     "radical_name_en": "South",
     "radical_name_ja": "みなみ",
     "description_en": "Radical for south-related kanji",
-    "description_ja": "南に関連する漢字の部首"
+    "description_ja": "南に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 385,
@@ -3077,7 +3461,8 @@
     "radical_name_en": "Spear",
     "radical_name_ja": "Spear",
     "description_en": "Radical related to spear kanji",
-    "description_ja": "Spearに関連する漢字の部首"
+    "description_ja": "Spearに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 386,
@@ -3085,7 +3470,8 @@
     "radical_name_en": "Specialty",
     "radical_name_ja": "Specialty",
     "description_en": "Radical related to specialty kanji",
-    "description_ja": "Specialtyに関連する漢字の部首"
+    "description_ja": "Specialtyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 387,
@@ -3093,7 +3479,8 @@
     "radical_name_en": "Spicy",
     "radical_name_ja": "Spicy",
     "description_en": "Radical related to spicy kanji",
-    "description_ja": "Spicyに関連する漢字の部首"
+    "description_ja": "Spicyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 388,
@@ -3101,7 +3488,8 @@
     "radical_name_en": "Spider",
     "radical_name_ja": "Spider",
     "description_en": "Radical related to spider kanji",
-    "description_ja": "Spiderに関連する漢字の部首"
+    "description_ja": "Spiderに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 389,
@@ -3109,7 +3497,8 @@
     "radical_name_en": "Spikes",
     "radical_name_ja": "Spikes",
     "description_en": "Radical related to spikes kanji",
-    "description_ja": "Spikesに関連する漢字の部首"
+    "description_ja": "Spikesに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 390,
@@ -3117,7 +3506,8 @@
     "radical_name_en": "Spirit",
     "radical_name_ja": "しめすへん",
     "description_en": "Radical for spirit/ritual-related kanji",
-    "description_ja": "神や祭りに関連する漢字の部首"
+    "description_ja": "神や祭りに関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 391,
@@ -3125,7 +3515,8 @@
     "radical_name_en": "Splinter",
     "radical_name_ja": "Splinter",
     "description_en": "Radical related to splinter kanji",
-    "description_ja": "Splinterに関連する漢字の部首"
+    "description_ja": "Splinterに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 392,
@@ -3133,7 +3524,8 @@
     "radical_name_en": "Spoon",
     "radical_name_ja": "さじ",
     "description_en": "Radical for spoon-related kanji",
-    "description_ja": "匙に関連する漢字の部首"
+    "description_ja": "匙に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 393,
@@ -3141,7 +3533,8 @@
     "radical_name_en": "Spring",
     "radical_name_ja": "はる",
     "description_en": "Radical for spring-related kanji",
-    "description_ja": "春に関連する漢字の部首"
+    "description_ja": "春に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 394,
@@ -3149,7 +3542,8 @@
     "radical_name_en": "Squid",
     "radical_name_ja": "Squid",
     "description_en": "Radical related to squid kanji",
-    "description_ja": "Squidに関連する漢字の部首"
+    "description_ja": "Squidに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 395,
@@ -3157,7 +3551,8 @@
     "radical_name_en": "Stairs",
     "radical_name_ja": "かいだん",
     "description_en": "Radical for stairs-related kanji",
-    "description_ja": "階段に関連する漢字の部首"
+    "description_ja": "階段に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 396,
@@ -3165,7 +3560,8 @@
     "radical_name_en": "Stamp",
     "radical_name_ja": "Stamp",
     "description_en": "Radical related to stamp kanji",
-    "description_ja": "Stampに関連する漢字の部首"
+    "description_ja": "Stampに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 397,
@@ -3173,7 +3569,8 @@
     "radical_name_en": "Stand",
     "radical_name_ja": "たつ",
     "description_en": "Radical for stand-related kanji",
-    "description_ja": "立つことに関連する漢字の部首"
+    "description_ja": "立つことに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 398,
@@ -3181,7 +3578,8 @@
     "radical_name_en": "Stick",
     "radical_name_ja": "Stick",
     "description_en": "Radical related to stick kanji",
-    "description_ja": "Stickに関連する漢字の部首"
+    "description_ja": "Stickに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 399,
@@ -3189,7 +3587,8 @@
     "radical_name_en": "Stomach",
     "radical_name_ja": "Stomach",
     "description_en": "Radical related to stomach kanji",
-    "description_ja": "Stomachに関連する漢字の部首"
+    "description_ja": "Stomachに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 400,
@@ -3197,7 +3596,8 @@
     "radical_name_en": "Stone",
     "radical_name_ja": "いしへん",
     "description_en": "Radical for stone-related kanji",
-    "description_ja": "石に関連する漢字の部首"
+    "description_ja": "石に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 401,
@@ -3205,7 +3605,8 @@
     "radical_name_en": "Stool",
     "radical_name_ja": "いす",
     "description_en": "Radical for stool-related kanji",
-    "description_ja": "椅子に関連する漢字の部首"
+    "description_ja": "椅子に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 402,
@@ -3213,7 +3614,8 @@
     "radical_name_en": "Stop",
     "radical_name_ja": "とめる",
     "description_en": "Radical for stop-related kanji",
-    "description_ja": "止まることに関連する漢字の部首"
+    "description_ja": "止まることに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 403,
@@ -3221,7 +3623,8 @@
     "radical_name_en": "Storehouse",
     "radical_name_ja": "Storehouse",
     "description_en": "Radical related to storehouse kanji",
-    "description_ja": "Storehouseに関連する漢字の部首"
+    "description_ja": "Storehouseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 404,
@@ -3229,7 +3632,8 @@
     "radical_name_en": "Street",
     "radical_name_ja": "Street",
     "description_en": "Radical related to street kanji",
-    "description_ja": "Streetに関連する漢字の部首"
+    "description_ja": "Streetに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 405,
@@ -3237,7 +3641,8 @@
     "radical_name_en": "Substitute",
     "radical_name_ja": "Substitute",
     "description_en": "Radical related to substitute kanji",
-    "description_ja": "Substituteに関連する漢字の部首"
+    "description_ja": "Substituteに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 406,
@@ -3245,7 +3650,8 @@
     "radical_name_en": "Suit",
     "radical_name_ja": "Suit",
     "description_en": "Radical related to suit kanji",
-    "description_ja": "Suitに関連する漢字の部首"
+    "description_ja": "Suitに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 407,
@@ -3253,7 +3659,8 @@
     "radical_name_en": "Sun",
     "radical_name_ja": "ひへん・にちへん",
     "description_en": "Radical for sun/time-related kanji",
-    "description_ja": "太陽や時間に関連する漢字の部首"
+    "description_ja": "太陽や時間に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 408,
@@ -3261,7 +3668,8 @@
     "radical_name_en": "Sunlight",
     "radical_name_ja": "Sunlight",
     "description_en": "Radical related to sunlight kanji",
-    "description_ja": "Sunlightに関連する漢字の部首"
+    "description_ja": "Sunlightに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 409,
@@ -3269,7 +3677,8 @@
     "radical_name_en": "Surplus",
     "radical_name_ja": "Surplus",
     "description_en": "Radical related to surplus kanji",
-    "description_ja": "Surplusに関連する漢字の部首"
+    "description_ja": "Surplusに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 410,
@@ -3277,7 +3686,8 @@
     "radical_name_en": "Sweet",
     "radical_name_ja": "Sweet",
     "description_en": "Radical related to sweet kanji",
-    "description_ja": "Sweetに関連する漢字の部首"
+    "description_ja": "Sweetに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 411,
@@ -3285,7 +3695,8 @@
     "radical_name_en": "Sword",
     "radical_name_ja": "りっとう",
     "description_en": "Radical for sword-related kanji",
-    "description_ja": "刀に関連する漢字の部首"
+    "description_ja": "刀に関連する漢字の部首",
+    "position": "つくり"
   },
   {
     "id": 412,
@@ -3293,7 +3704,8 @@
     "radical_name_en": "Syrup",
     "radical_name_ja": "Syrup",
     "description_en": "Radical related to syrup kanji",
-    "description_ja": "Syrupに関連する漢字の部首"
+    "description_ja": "Syrupに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 413,
@@ -3301,7 +3713,8 @@
     "radical_name_en": "Table",
     "radical_name_ja": "つくえ",
     "description_en": "Radical for table-related kanji",
-    "description_ja": "机に関連する漢字の部首"
+    "description_ja": "机に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 414,
@@ -3309,7 +3722,8 @@
     "radical_name_en": "Tall",
     "radical_name_ja": "Tall",
     "description_en": "Radical related to tall kanji",
-    "description_ja": "Tallに関連する漢字の部首"
+    "description_ja": "Tallに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 415,
@@ -3317,7 +3731,8 @@
     "radical_name_en": "Task",
     "radical_name_ja": "Task",
     "description_en": "Radical related to task kanji",
-    "description_ja": "Taskに関連する漢字の部首"
+    "description_ja": "Taskに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 416,
@@ -3325,7 +3740,8 @@
     "radical_name_en": "Teacher",
     "radical_name_ja": "Teacher",
     "description_en": "Radical related to teacher kanji",
-    "description_ja": "Teacherに関連する漢字の部首"
+    "description_ja": "Teacherに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 417,
@@ -3333,7 +3749,8 @@
     "radical_name_en": "Temple",
     "radical_name_ja": "てら",
     "description_en": "Radical for temple-related kanji",
-    "description_ja": "寺に関連する漢字の部首"
+    "description_ja": "寺に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 418,
@@ -3341,7 +3758,8 @@
     "radical_name_en": "Ten Thousand",
     "radical_name_ja": "Ten Thousand",
     "description_en": "Radical related to ten thousand kanji",
-    "description_ja": "Ten Thousandに関連する漢字の部首"
+    "description_ja": "Ten Thousandに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 419,
@@ -3349,7 +3767,8 @@
     "radical_name_en": "Tent",
     "radical_name_ja": "テント",
     "description_en": "Radical for tent-related kanji",
-    "description_ja": "テントに関連する漢字の部首"
+    "description_ja": "テントに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 420,
@@ -3357,7 +3776,8 @@
     "radical_name_en": "Think",
     "radical_name_ja": "おもう",
     "description_en": "Radical for think-related kanji",
-    "description_ja": "思考に関連する漢字の部首"
+    "description_ja": "思考に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 421,
@@ -3365,7 +3785,8 @@
     "radical_name_en": "Thousand",
     "radical_name_ja": "せん",
     "description_en": "Radical for thousand-related kanji",
-    "description_ja": "数字の千に関連する漢字の部首"
+    "description_ja": "数字の千に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 422,
@@ -3373,7 +3794,8 @@
     "radical_name_en": "Thread",
     "radical_name_ja": "いとへん",
     "description_en": "Radical for thread-related kanji",
-    "description_ja": "糸や繊維に関連する漢字の部首"
+    "description_ja": "糸や繊維に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 423,
@@ -3381,7 +3803,8 @@
     "radical_name_en": "Three",
     "radical_name_ja": "さん",
     "description_en": "Radical for three-related kanji",
-    "description_ja": "数字の三に関連する漢字の部首"
+    "description_ja": "数字の三に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 424,
@@ -3389,7 +3812,8 @@
     "radical_name_en": "Tiger",
     "radical_name_ja": "とらへん",
     "description_en": "Radical for tiger-related kanji",
-    "description_ja": "虎に関連する漢字の部首"
+    "description_ja": "虎に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 425,
@@ -3397,7 +3821,8 @@
     "radical_name_en": "Times",
     "radical_name_ja": "Times",
     "description_en": "Radical related to times kanji",
-    "description_ja": "Timesに関連する漢字の部首"
+    "description_ja": "Timesに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 426,
@@ -3405,7 +3830,8 @@
     "radical_name_en": "Toe",
     "radical_name_ja": "Toe",
     "description_en": "Radical related to toe kanji",
-    "description_ja": "Toeに関連する漢字の部首"
+    "description_ja": "Toeに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 427,
@@ -3413,7 +3839,8 @@
     "radical_name_en": "Tofu",
     "radical_name_ja": "Tofu",
     "description_en": "Radical related to tofu kanji",
-    "description_ja": "Tofuに関連する漢字の部首"
+    "description_ja": "Tofuに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 428,
@@ -3421,7 +3848,8 @@
     "radical_name_en": "Together",
     "radical_name_ja": "いっしょ",
     "description_en": "Radical for together-related kanji",
-    "description_ja": "一緒に関連する漢字の部首"
+    "description_ja": "一緒に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 429,
@@ -3429,7 +3857,8 @@
     "radical_name_en": "Tombstone",
     "radical_name_ja": "Tombstone",
     "description_en": "Radical related to tombstone kanji",
-    "description_ja": "Tombstoneに関連する漢字の部首"
+    "description_ja": "Tombstoneに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 430,
@@ -3437,7 +3866,8 @@
     "radical_name_en": "Tongue",
     "radical_name_ja": "した",
     "description_en": "Radical for tongue-related kanji",
-    "description_ja": "舌に関連する漢字の部首"
+    "description_ja": "舌に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 431,
@@ -3445,7 +3875,8 @@
     "radical_name_en": "Tooth",
     "radical_name_ja": "は",
     "description_en": "Radical for tooth-related kanji",
-    "description_ja": "歯に関連する漢字の部首"
+    "description_ja": "歯に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 432,
@@ -3453,7 +3884,8 @@
     "radical_name_en": "Top Hat",
     "radical_name_ja": "Top Hat",
     "description_en": "Radical related to top hat kanji",
-    "description_ja": "Top Hatに関連する漢字の部首"
+    "description_ja": "Top Hatに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 433,
@@ -3461,7 +3893,8 @@
     "radical_name_en": "Towel",
     "radical_name_ja": "タオル",
     "description_en": "Radical for towel-related kanji",
-    "description_ja": "タオルに関連する漢字の部首"
+    "description_ja": "タオルに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 434,
@@ -3469,7 +3902,8 @@
     "radical_name_en": "Trash",
     "radical_name_ja": "Trash",
     "description_en": "Radical related to trash kanji",
-    "description_ja": "Trashに関連する漢字の部首"
+    "description_ja": "Trashに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 435,
@@ -3477,7 +3911,8 @@
     "radical_name_en": "Treasure",
     "radical_name_ja": "たから",
     "description_en": "Radical for treasure-related kanji",
-    "description_ja": "宝に関連する漢字の部首"
+    "description_ja": "宝に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 436,
@@ -3485,7 +3920,8 @@
     "radical_name_en": "Treasure Chest",
     "radical_name_ja": "Treasure Chest",
     "description_en": "Radical related to treasure chest kanji",
-    "description_ja": "Treasure Chestに関連する漢字の部首"
+    "description_ja": "Treasure Chestに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 437,
@@ -3493,7 +3929,8 @@
     "radical_name_en": "Tree",
     "radical_name_ja": "きへん",
     "description_en": "Radical for tree-related kanji",
-    "description_ja": "木に関連する漢字の部首"
+    "description_ja": "木に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 438,
@@ -3501,7 +3938,8 @@
     "radical_name_en": "Triceratops",
     "radical_name_ja": "Triceratops",
     "description_en": "Radical related to triceratops kanji",
-    "description_ja": "Triceratopsに関連する漢字の部首"
+    "description_ja": "Triceratopsに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 439,
@@ -3509,7 +3947,8 @@
     "radical_name_en": "Tsunami",
     "radical_name_ja": "Tsunami",
     "description_en": "Radical related to tsunami kanji",
-    "description_ja": "Tsunamiに関連する漢字の部首"
+    "description_ja": "Tsunamiに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 440,
@@ -3517,7 +3956,8 @@
     "radical_name_en": "Turkey",
     "radical_name_ja": "Turkey",
     "description_en": "Radical related to turkey kanji",
-    "description_ja": "Turkeyに関連する漢字の部首"
+    "description_ja": "Turkeyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 441,
@@ -3525,7 +3965,8 @@
     "radical_name_en": "Turtle",
     "radical_name_ja": "かめ",
     "description_en": "Radical for turtle-related kanji",
-    "description_ja": "亀に関連する漢字の部首"
+    "description_ja": "亀に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 442,
@@ -3533,7 +3974,8 @@
     "radical_name_en": "Turtle Shell",
     "radical_name_ja": "Turtle Shell",
     "description_en": "Radical related to turtle shell kanji",
-    "description_ja": "Turtle Shellに関連する漢字の部首"
+    "description_ja": "Turtle Shellに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 443,
@@ -3541,7 +3983,8 @@
     "radical_name_en": "Twenty",
     "radical_name_ja": "Twenty",
     "description_en": "Radical related to twenty kanji",
-    "description_ja": "Twentyに関連する漢字の部首"
+    "description_ja": "Twentyに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 444,
@@ -3549,7 +3992,8 @@
     "radical_name_en": "Two",
     "radical_name_ja": "に",
     "description_en": "Radical for two-related kanji",
-    "description_ja": "数字の二に関連する漢字の部首"
+    "description_ja": "数字の二に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 445,
@@ -3557,7 +4001,8 @@
     "radical_name_en": "Umbrella",
     "radical_name_ja": "かさ",
     "description_en": "Radical for umbrella-related kanji",
-    "description_ja": "傘に関連する漢字の部首"
+    "description_ja": "傘に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 446,
@@ -3565,7 +4010,8 @@
     "radical_name_en": "Valley",
     "radical_name_ja": "たに",
     "description_en": "Radical for valley-related kanji",
-    "description_ja": "谷に関連する漢字の部首"
+    "description_ja": "谷に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 447,
@@ -3573,7 +4019,8 @@
     "radical_name_en": "Valuable",
     "radical_name_ja": "Valuable",
     "description_en": "Radical related to valuable kanji",
-    "description_ja": "Valuableに関連する漢字の部首"
+    "description_ja": "Valuableに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 448,
@@ -3581,7 +4028,8 @@
     "radical_name_en": "Viking",
     "radical_name_ja": "Viking",
     "description_en": "Radical related to viking kanji",
-    "description_ja": "Vikingに関連する漢字の部首"
+    "description_ja": "Vikingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 449,
@@ -3589,7 +4037,8 @@
     "radical_name_en": "Village",
     "radical_name_ja": "むら",
     "description_en": "Radical for village-related kanji",
-    "description_ja": "村に関連する漢字の部首"
+    "description_ja": "村に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 450,
@@ -3597,7 +4046,8 @@
     "radical_name_en": "Vines",
     "radical_name_ja": "Vines",
     "description_en": "Radical related to vines kanji",
-    "description_ja": "Vinesに関連する漢字の部首"
+    "description_ja": "Vinesに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 451,
@@ -3605,7 +4055,8 @@
     "radical_name_en": "Violence",
     "radical_name_ja": "Violence",
     "description_en": "Radical related to violence kanji",
-    "description_ja": "Violenceに関連する漢字の部首"
+    "description_ja": "Violenceに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 452,
@@ -3613,7 +4064,8 @@
     "radical_name_en": "Walk",
     "radical_name_ja": "しんにょう",
     "description_en": "Radical for walking/road-related kanji",
-    "description_ja": "歩くことや道に関連する漢字の部首"
+    "description_ja": "歩くことや道に関連する漢字の部首",
+    "position": "にょう"
   },
   {
     "id": 453,
@@ -3621,7 +4073,8 @@
     "radical_name_en": "Warehouse",
     "radical_name_ja": "Warehouse",
     "description_en": "Radical related to warehouse kanji",
-    "description_ja": "Warehouseに関連する漢字の部首"
+    "description_ja": "Warehouseに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 454,
@@ -3629,7 +4082,8 @@
     "radical_name_en": "Water",
     "radical_name_ja": "さんずい",
     "description_en": "Radical for water-related kanji",
-    "description_ja": "水に関連する漢字の部首"
+    "description_ja": "水に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 455,
@@ -3637,7 +4091,8 @@
     "radical_name_en": "Wave",
     "radical_name_ja": "Wave",
     "description_en": "Radical related to wave kanji",
-    "description_ja": "Waveに関連する漢字の部首"
+    "description_ja": "Waveに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 456,
@@ -3645,7 +4100,8 @@
     "radical_name_en": "Weapon",
     "radical_name_ja": "ほこづくり",
     "description_en": "Radical for weapon-related kanji",
-    "description_ja": "武器に関連する漢字の部首"
+    "description_ja": "武器に関連する漢字の部首",
+    "position": "つくり"
   },
   {
     "id": 457,
@@ -3653,7 +4109,8 @@
     "radical_name_en": "Wedding",
     "radical_name_ja": "Wedding",
     "description_en": "Radical related to wedding kanji",
-    "description_ja": "Weddingに関連する漢字の部首"
+    "description_ja": "Weddingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 458,
@@ -3661,7 +4118,8 @@
     "radical_name_en": "Well",
     "radical_name_ja": "Well",
     "description_en": "Radical related to well kanji",
-    "description_ja": "Wellに関連する漢字の部首"
+    "description_ja": "Wellに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 459,
@@ -3669,7 +4127,8 @@
     "radical_name_en": "West",
     "radical_name_ja": "にし",
     "description_en": "Radical for west-related kanji",
-    "description_ja": "西に関連する漢字の部首"
+    "description_ja": "西に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 460,
@@ -3677,7 +4136,8 @@
     "radical_name_en": "White",
     "radical_name_ja": "しろ",
     "description_en": "Radical for white-related kanji",
-    "description_ja": "白に関連する漢字の部首"
+    "description_ja": "白に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 461,
@@ -3685,7 +4145,8 @@
     "radical_name_en": "Wide",
     "radical_name_ja": "ひろい",
     "description_en": "Radical for wide-related kanji",
-    "description_ja": "広さに関連する漢字の部首"
+    "description_ja": "広さに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 462,
@@ -3693,7 +4154,8 @@
     "radical_name_en": "Wind",
     "radical_name_ja": "かぜへん",
     "description_en": "Radical for wind-related kanji",
-    "description_ja": "風に関連する漢字の部首"
+    "description_ja": "風に関連する漢字の部首",
+    "position": "かまえ"
   },
   {
     "id": 463,
@@ -3701,7 +4163,8 @@
     "radical_name_en": "Window",
     "radical_name_ja": "まど",
     "description_en": "Radical for window-related kanji",
-    "description_ja": "窓に関連する漢字の部首"
+    "description_ja": "窓に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 464,
@@ -3709,7 +4172,8 @@
     "radical_name_en": "Wing",
     "radical_name_ja": "はね",
     "description_en": "Radical for wing-related kanji",
-    "description_ja": "羽に関連する漢字の部首"
+    "description_ja": "羽に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 465,
@@ -3717,7 +4181,8 @@
     "radical_name_en": "Winter",
     "radical_name_ja": "ふゆ",
     "description_en": "Radical for winter-related kanji",
-    "description_ja": "冬に関連する漢字の部首"
+    "description_ja": "冬に関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 466,
@@ -3725,7 +4190,8 @@
     "radical_name_en": "Wolverine",
     "radical_name_ja": "Wolverine",
     "description_en": "Radical related to wolverine kanji",
-    "description_ja": "Wolverineに関連する漢字の部首"
+    "description_ja": "Wolverineに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 467,
@@ -3733,7 +4199,8 @@
     "radical_name_en": "Woman",
     "radical_name_ja": "おんなへん",
     "description_en": "Radical for woman-related kanji",
-    "description_ja": "女性に関連する漢字の部首"
+    "description_ja": "女性に関連する漢字の部首",
+    "position": "へん"
   },
   {
     "id": 468,
@@ -3741,7 +4208,8 @@
     "radical_name_en": "Womb",
     "radical_name_ja": "Womb",
     "description_en": "Radical related to womb kanji",
-    "description_ja": "Wombに関連する漢字の部首"
+    "description_ja": "Wombに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 469,
@@ -3749,7 +4217,8 @@
     "radical_name_en": "World",
     "radical_name_ja": "World",
     "description_en": "Radical related to world kanji",
-    "description_ja": "Worldに関連する漢字の部首"
+    "description_ja": "Worldに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 470,
@@ -3757,7 +4226,8 @@
     "radical_name_en": "Wrap",
     "radical_name_ja": "Wrap",
     "description_en": "Radical related to wrap kanji",
-    "description_ja": "Wrapに関連する漢字の部首"
+    "description_ja": "Wrapに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 471,
@@ -3765,7 +4235,8 @@
     "radical_name_en": "Writing",
     "radical_name_ja": "Writing",
     "description_en": "Radical related to writing kanji",
-    "description_ja": "Writingに関連する漢字の部首"
+    "description_ja": "Writingに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 472,
@@ -3773,7 +4244,8 @@
     "radical_name_en": "Yakuza",
     "radical_name_ja": "Yakuza",
     "description_en": "Radical related to yakuza kanji",
-    "description_ja": "Yakuzaに関連する漢字の部首"
+    "description_ja": "Yakuzaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 473,
@@ -3781,7 +4253,8 @@
     "radical_name_en": "Yellow",
     "radical_name_ja": "Yellow",
     "description_en": "Radical related to yellow kanji",
-    "description_ja": "Yellowに関連する漢字の部首"
+    "description_ja": "Yellowに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 474,
@@ -3789,7 +4262,8 @@
     "radical_name_en": "Yoga",
     "radical_name_ja": "Yoga",
     "description_en": "Radical related to yoga kanji",
-    "description_ja": "Yogaに関連する漢字の部首"
+    "description_ja": "Yogaに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 475,
@@ -3797,7 +4271,8 @@
     "radical_name_en": "Younger Brother",
     "radical_name_ja": "Younger Brother",
     "description_en": "Radical related to younger brother kanji",
-    "description_ja": "Younger Brotherに関連する漢字の部首"
+    "description_ja": "Younger Brotherに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 476,
@@ -3805,7 +4280,8 @@
     "radical_name_en": "Yurt",
     "radical_name_ja": "Yurt",
     "description_en": "Radical related to yurt kanji",
-    "description_ja": "Yurtに関連する漢字の部首"
+    "description_ja": "Yurtに関連する漢字の部首",
+    "position": "その他"
   },
   {
     "id": 477,
@@ -3813,6 +4289,7 @@
     "radical_name_en": "Zombie",
     "radical_name_ja": "Zombie",
     "description_en": "Radical related to zombie kanji",
-    "description_ja": "Zombieに関連する漢字の部首"
+    "description_ja": "Zombieに関連する漢字の部首",
+    "position": "その他"
   }
 ]
