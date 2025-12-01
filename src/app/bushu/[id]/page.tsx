@@ -18,10 +18,29 @@ interface KanjiDetail {
   radicals: string[];
 }
 
+interface RadicalBilingual {
+  id: number;
+  root: string;
+  radical_name_en: string;
+  radical_name_ja: string;
+  description_en: string;
+  description_ja: string;
+}
+
 function loadKanjiDictionary(): KanjiDetail[] {
   const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
   if (!fs.existsSync(dictPath)) return [];
   return JSON.parse(fs.readFileSync(dictPath, "utf-8"));
+}
+
+function loadRadicalsBilingual(): RadicalBilingual[] {
+  const radPath = path.join(process.cwd(), "data", "radicals_bilingual.json");
+  if (!fs.existsSync(radPath)) return [];
+  return JSON.parse(fs.readFileSync(radPath, "utf-8"));
+}
+
+function getRadicalInfo(radicalEn: string, radicals: RadicalBilingual[]): RadicalBilingual | null {
+  return radicals.find((r) => r.radical_name_en === radicalEn) || null;
 }
 
 // 存在する部首のみ生成
@@ -37,9 +56,14 @@ type Props = { params: Promise<{ id: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const radical = decodeURIComponent(id);
+  const radicals = loadRadicalsBilingual();
+  const info = getRadicalInfo(radical, radicals);
   
-  const title = `部首「${radical}」の漢字一覧｜書き順・筆順`;
-  const description = `部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`;
+  const jaName = info?.radical_name_ja || radical;
+  const title = `部首「${radical}」（${jaName}）の漢字一覧｜書き順・筆順`;
+  const description = info 
+    ? `${info.description_ja}。${info.description_en}。部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`
+    : `部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`;
 
   return {
     title,
@@ -53,6 +77,8 @@ export default async function BushuPage({ params }: Props) {
   const radical = decodeURIComponent(id);
   
   const dictionary = loadKanjiDictionary();
+  const radicals = loadRadicalsBilingual();
+  const radicalInfo = getRadicalInfo(radical, radicals);
   const radicalKanji = dictionary.filter((k) => k.radicals.includes(radical));
   
   if (radicalKanji.length === 0) {
@@ -94,10 +120,40 @@ export default async function BushuPage({ params }: Props) {
         </ol>
       </nav>
 
+      {/* ヘッダー（バイリンガル表示） */}
       <header className="text-center">
-        <h1 className="text-4xl font-bold mb-2">部首「{radical}」の漢字</h1>
-        <p className="text-muted-foreground">{radicalKanji.length}字</p>
+        <div className="flex items-center justify-center gap-3 mb-4">
+          {radicalInfo && (
+            <span className="text-6xl">{radicalInfo.root}</span>
+          )}
+        </div>
+        <h1 className="text-4xl font-bold mb-2">
+          {radical} Radical
+          {radicalInfo && radicalInfo.radical_name_ja !== radical && (
+            <span className="text-2xl font-normal text-muted-foreground ml-2">
+              （{radicalInfo.radical_name_ja}）
+            </span>
+          )}
+        </h1>
+        {radicalInfo && (
+          <p className="text-muted-foreground">
+            Root: {radicalInfo.root} / 部首番号: {radicalInfo.id}
+          </p>
+        )}
+        <p className="text-lg mt-2">{radicalKanji.length}字</p>
       </header>
+
+      {/* 説明（日英両方） */}
+      {radicalInfo && (
+        <Card className="w-full max-w-2xl rounded-2xl shadow-sm bg-secondary/30">
+          <CardContent className="pt-6">
+            <div className="space-y-2 text-center">
+              <p className="text-base">{radicalInfo.description_ja}</p>
+              <p className="text-sm text-muted-foreground">{radicalInfo.description_en}</p>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* 漢字一覧（学年順） */}
       <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
@@ -147,26 +203,31 @@ export default async function BushuPage({ params }: Props) {
       {topRelated.length > 0 && (
         <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
           <CardHeader>
-            <CardTitle className="text-lg">関連する部首</CardTitle>
+            <CardTitle className="text-lg">関連する部首 / Related Radicals</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2 justify-center">
-              {topRelated.map(([r, count]) => (
-                <Link
-                  key={r}
-                  href={`/bushu/${encodeURIComponent(r)}`}
-                  className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
-                >
-                  {r}（{count}）
-                </Link>
-              ))}
+              {topRelated.map(([r, count]) => {
+                const relInfo = getRadicalInfo(r, radicals);
+                return (
+                  <Link
+                    key={r}
+                    href={`/bushu/${encodeURIComponent(r)}`}
+                    className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
+                    title={relInfo ? `${r} (${relInfo.radical_name_ja})` : r}
+                  >
+                    {relInfo?.root && <span className="mr-1">{relInfo.root}</span>}
+                    {r}（{count}）
+                  </Link>
+                );
+              })}
             </div>
           </CardContent>
         </Card>
       )}
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm">
+      <div className="flex gap-4 text-sm flex-wrap justify-center">
         <Link href="/bushu" className="text-muted-foreground hover:text-foreground">
           ← 部首一覧に戻る
         </Link>
@@ -180,4 +241,3 @@ export default async function BushuPage({ params }: Props) {
     </div>
   );
 }
-
