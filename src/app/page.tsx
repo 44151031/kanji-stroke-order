@@ -112,7 +112,15 @@ export default function Home() {
 
       {/* 人気の漢字（直接リンク） */}
       <section className="w-full max-w-3xl">
-        <h2 className="text-xl font-medium mb-4 text-center">人気の漢字</h2>
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <h2 className="text-xl font-medium">🏆 人気の漢字</h2>
+          <Link
+            href="/ranking"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            ランキングを見る →
+          </Link>
+        </div>
         <div className="flex flex-wrap justify-center gap-3">
           {POPULAR_KANJI.map((char) => (
             <Link

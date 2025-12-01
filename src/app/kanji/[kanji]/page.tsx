@@ -5,6 +5,9 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import KanjiSvgViewer from "@/components/KanjiSvgViewer";
+import WordsListPaginated from "@/components/WordsListPaginated";
+import NextKanjiSection from "@/components/NextKanjiSection";
+import KanjiViewTracker from "@/components/KanjiViewTracker";
 
 // データ型定義
 interface KanjiJoyo {
@@ -24,6 +27,7 @@ interface KanjiDetail {
   grade: number;
   ucsHex: string;
   freq?: number;
+  radicals?: string[];
 }
 
 interface WordEntry {
@@ -255,6 +259,9 @@ export default async function KanjiPage({ params }: Props) {
 
   return (
     <>
+      {/* アクセス記録（Supabase） */}
+      <KanjiViewTracker kanji={decodedKanji} />
+      
       {/* 構造化データ（JSON-LD） */}
       <script
         type="application/ld+json"
@@ -336,30 +343,25 @@ export default async function KanjiPage({ params }: Props) {
           </CardContent>
         </Card>
 
-        {/* この漢字を含む言葉（10件、内部リンク） */}
+        {/* この漢字を含む言葉（ページネーション対応） */}
         {words.length > 0 && (
           <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg">「{decodedKanji}」を含む言葉</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
-                {words.slice(0, 10).map((w, i) => (
-                  <li key={i} className="flex justify-between items-center border-b border-border/50 pb-2 last:border-0">
-                    <Link 
-                      href={`/search?q=${encodeURIComponent(w.word)}`} 
-                      className="hover:text-primary transition-colors"
-                    >
-                      <span className="font-medium text-base md:text-lg">{w.word}</span>
-                      <span className="text-muted-foreground ml-2 text-sm">({w.reading})</span>
-                    </Link>
-                    <span className="text-sm text-muted-foreground hidden md:inline">{w.meaning}</span>
-                  </li>
-                ))}
-              </ul>
+              <WordsListPaginated words={words} kanji={decodedKanji} />
             </CardContent>
           </Card>
         )}
+
+        {/* 次に見る漢字（部首または画数±1からランダム選択） */}
+        <NextKanjiSection
+          currentKanji={decodedKanji}
+          strokes={detail.strokes}
+          radicals={detail.radicals || []}
+          allKanji={dictionary}
+        />
 
         {/* 関連漢字（同一学年・同一画数） */}
         {relatedKanji.length > 0 && (

@@ -65,6 +65,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    // ランキング
+    {
+      url: `${baseUrl}/ranking`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
     // 部首一覧トップ
     {
       url: `${baseUrl}/bushu`,
