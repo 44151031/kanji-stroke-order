@@ -34,7 +34,7 @@ function loadRadicalsBilingual(): RadicalBilingual[] {
 
 export const metadata: Metadata = {
   title: "部首別漢字一覧｜書き順・筆順",
-  description: "部首別に漢字を探せます。各部首の漢字の書き順をアニメーションで学習できます。",
+  description: "部首別に漢字を探せます。各部首の漢字の書き順をアニメーションで学習できます。偏・旁・冠・脚・垂・構・繞の配置別に分類。",
 };
 
 export default function BushuIndexPage() {
@@ -59,25 +59,11 @@ export default function BushuIndexPage() {
   const sortedRadicals = Object.entries(radicalCounts)
     .sort((a, b) => b[1] - a[1]);
 
-  // 多い部首（20字以上）
-  const majorRadicals = sortedRadicals.filter(([, count]) => count >= 20);
-  // その他
-  const minorRadicals = sortedRadicals.filter(([, count]) => count < 20 && count >= 5);
-
-  // 部首の表示名を取得（日本語名（英語名）形式）
-  const getDisplayName = (radicalEn: string): string => {
-    const info = radicalInfoMap.get(radicalEn);
-    if (info && info.radical_name_ja !== radicalEn) {
-      return `${info.radical_name_ja}（${radicalEn}）`;
-    }
-    return radicalEn;
-  };
-
-  // 部首のルーツ文字を取得
-  const getRootChar = (radicalEn: string): string | null => {
-    const info = radicalInfoMap.get(radicalEn);
-    return info?.root || null;
-  };
+  // その他の部首（5字以上で配置が「その他」のもの）
+  const otherRadicals = sortedRadicals.filter(([radical, count]) => {
+    const info = radicalInfoMap.get(radical);
+    return count >= 5 && (!info?.position || info.position === "その他");
+  });
 
   return (
     <div className="flex flex-col items-center gap-8">
@@ -93,54 +79,27 @@ export default function BushuIndexPage() {
       <header className="text-center">
         <h1 className="text-4xl font-bold mb-2">部首別漢字一覧</h1>
         <p className="text-muted-foreground">{sortedRadicals.length}種類の部首 / {sortedRadicals.length} Radicals</p>
+        <p className="text-sm text-muted-foreground mt-2">
+          偏・旁・冠・脚・垂・構・繞の配置別に分類
+        </p>
       </header>
 
-      {/* 主要な部首（20字以上） */}
-      <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
-        <CardHeader>
-          <CardTitle className="text-lg">主要な部首（20字以上）/ Major Radicals</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {majorRadicals.map(([radical, count]) => {
-              const root = getRootChar(radical);
-              return (
-                <Link
-                  key={radical}
-                  href={`/bushu/${encodeURIComponent(radical)}`}
-                  className="flex items-center gap-3 p-3 border border-border rounded-xl hover:bg-secondary hover:shadow-md transition-all"
-                >
-                  {root && (
-                    <span className="text-2xl w-10 h-10 flex items-center justify-center bg-secondary rounded-lg">
-                      {root}
-                    </span>
-                  )}
-                  <div className="flex-1 min-w-0">
-                    <span className="font-medium block truncate">{getDisplayName(radical)}</span>
-                  </div>
-                  <span className="text-sm text-muted-foreground whitespace-nowrap">{count}字</span>
-                </Link>
-              );
-            })}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* 配置別部首一覧 */}
+      {/* 配置別部首一覧（メインセクション） */}
       <BushuByPositionSection 
         radicals={radicalsBilingual} 
         radicalCounts={radicalCounts} 
       />
 
-      {/* その他の部首（5〜19字） */}
-      {minorRadicals.length > 0 && (
+      {/* その他の部首 */}
+      {otherRadicals.length > 0 && (
         <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
           <CardHeader>
-            <CardTitle className="text-lg">その他の部首（5〜19字）/ Other Radicals</CardTitle>
+            <CardTitle className="text-lg">その他の部首 / Other Radicals</CardTitle>
+            <p className="text-sm text-muted-foreground">配置が分類されていない部首</p>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              {minorRadicals.map(([radical, count]) => {
+              {otherRadicals.map(([radical, count]) => {
                 const info = radicalInfoMap.get(radical);
                 const jaName = info?.radical_name_ja;
                 return (
