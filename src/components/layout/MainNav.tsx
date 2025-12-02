@@ -44,7 +44,7 @@ export default function MainNav() {
           className="font-bold text-lg flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
           <span className="text-2xl">✍️</span>
-          <span>漢字書き順</span>
+          <span>漢字書き順ナビ</span>
         </Link>
 
         {/* デスクトップナビ */}
