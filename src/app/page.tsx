@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SvgAnimator from "@/components/SvgAnimator";
 import { getKanjiLink } from "@/lib/linkUtils";
-import MultiCharAnimation from "@/components/kanji/MultiCharAnimation";
 
 // 人気の漢字
 const POPULAR_KANJI = ["山", "川", "日", "月", "火", "水", "木", "金", "土", "人", "大", "小"];
@@ -46,8 +45,6 @@ const BUSHU_LINKS = [
 export default function Home() {
   const [searchText, setSearchText] = useState("");
   const [previewChar, setPreviewChar] = useState<string | null>(null);
-  const [multiText, setMultiText] = useState("");
-  const [showMulti, setShowMulti] = useState(false);
   const router = useRouter();
 
   const handleSearch = () => {
@@ -103,8 +100,8 @@ export default function Home() {
         </CardContent>
       </Card>
 
-      {/* プレビューエリア（1文字） */}
-      {previewChar && !showMulti && (
+      {/* プレビューエリア */}
+      {previewChar && (
         <Card className="w-full max-w-md rounded-2xl shadow-sm border-border/50 animate-in fade-in slide-in-from-bottom-4 duration-300">
           <CardHeader className="pb-4">
             <CardTitle className="text-lg font-medium flex items-center gap-2">
@@ -126,43 +123,6 @@ export default function Home() {
           </CardContent>
         </Card>
       )}
-
-      {/* 複数文字アニメーション */}
-      <Card className="w-full max-w-lg rounded-2xl shadow-sm border-border/50">
-        <CardHeader className="pb-4">
-          <CardTitle className="text-lg font-medium flex items-center gap-2">
-            <span>✨</span>
-            <span>複数文字アニメーション</span>
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-4">
-          <div className="flex gap-2">
-            <Input
-              type="text"
-              placeholder="例：日本語・あいうえお・アイウエオ"
-              value={multiText}
-              onChange={(e) => setMultiText(e.target.value)}
-              className="flex-1 text-lg text-center"
-            />
-            <Button
-              onClick={() => setShowMulti(true)}
-              disabled={!multiText.trim()}
-            >
-              再生
-            </Button>
-          </div>
-          {showMulti && multiText && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
-              <MultiCharAnimation text={multiText} size={260} />
-            </div>
-          )}
-          {!showMulti && (
-            <p className="text-center text-sm text-muted-foreground">
-              漢字・ひらがな・カタカナを入力して、連続で書き順アニメーションを再生できます
-            </p>
-          )}
-        </CardContent>
-      </Card>
 
       {/* 人気の漢字（直接リンク） */}
       <section className="w-full max-w-3xl">
