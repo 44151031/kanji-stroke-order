@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 const navItems = [
   { href: "/", label: "ホーム", emoji: "🏠" },
@@ -17,7 +18,17 @@ const navItems = [
 
 export default function MainNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+    const char = searchQuery.trim()[0];
+    router.push(getKanjiLink(char));
+    setSearchQuery("");
+  };
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -53,6 +64,24 @@ export default function MainNav() {
             </Link>
           ))}
         </nav>
+
+        {/* 検索フォーム */}
+        <form onSubmit={handleSearch} className="hidden sm:flex items-center">
+          <input
+            type="text"
+            maxLength={1}
+            placeholder="漢字1文字"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-20 text-center border border-border rounded-l-lg px-2 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/20"
+          />
+          <button
+            type="submit"
+            className="px-3 py-1.5 bg-primary text-primary-foreground rounded-r-lg text-sm hover:bg-primary/90 transition-colors"
+          >
+            検索
+          </button>
+        </form>
 
         {/* モバイルハンバーガー */}
         <button
