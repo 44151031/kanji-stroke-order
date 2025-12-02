@@ -196,6 +196,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 特集ページ */}
+      <section className="w-full max-w-3xl">
+        <h2 className="text-xl font-medium mb-4 text-center">📚 特集で探す</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link
+            href="/exam-kanji"
+            className="flex flex-col items-center p-5 bg-blue-50 border border-blue-200 rounded-xl hover:bg-blue-100 hover:border-blue-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">🎓</span>
+            <span className="font-medium text-blue-700">入試頻出漢字</span>
+            <span className="text-xs text-blue-600/70 mt-1">受験対策に最適</span>
+          </Link>
+          <Link
+            href="/mistake-kanji"
+            className="flex flex-col items-center p-5 bg-amber-50 border border-amber-200 rounded-xl hover:bg-amber-100 hover:border-amber-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">⚠️</span>
+            <span className="font-medium text-amber-700">間違えやすい漢字</span>
+            <span className="text-xs text-amber-600/70 mt-1">同音異義語の確認</span>
+          </Link>
+          <Link
+            href="/confused-kanji"
+            className="flex flex-col items-center p-5 bg-purple-50 border border-purple-200 rounded-xl hover:bg-purple-100 hover:border-purple-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">🔄</span>
+            <span className="font-medium text-purple-700">似ている漢字</span>
+            <span className="text-xs text-purple-600/70 mt-1">形の違いを比較</span>
+          </Link>
+        </div>
+      </section>
+
       {/* クイックリンク */}
       <nav className="flex gap-6 flex-wrap justify-center text-sm">
         <Link href="/hiragana" className="text-muted-foreground hover:text-foreground transition-colors">

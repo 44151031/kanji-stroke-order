@@ -80,6 +80,9 @@ async function main() {
     { path: "/lists/exam", priority: 0.8, freq: "weekly" },
     { path: "/lists/mistake", priority: 0.8, freq: "weekly" },
     { path: "/lists/confused", priority: 0.8, freq: "weekly" },
+    { path: "/exam-kanji", priority: 0.9, freq: "weekly" },
+    { path: "/mistake-kanji", priority: 0.9, freq: "weekly" },
+    { path: "/confused-kanji", priority: 0.9, freq: "weekly" },
   ];
   
   staticPages.forEach(({ path, priority, freq }) => {
