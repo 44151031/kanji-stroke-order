@@ -87,3 +87,4 @@ export const ALL_JOYO_KANJI = `
 届届届届届届届届届届届届届届届
 `.replace(/\s/g, '').split('');
 
+

@@ -126,3 +126,4 @@ export const JOYO_DATA: Array<{ kanji: string; grade: number; strokes: number }>
 
 main();
 
+

@@ -56,3 +56,4 @@ export default function KanjiViewTracker({ kanji }: Props) {
   return null;
 }
 
+
