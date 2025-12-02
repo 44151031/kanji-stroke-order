@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import MainNav from "@/components/layout/MainNav";
 
 const GA_MEASUREMENT_ID = "G-H99ZWGWW4E";
 const SITE_URL = "https://kanji-stroke-order.com";
@@ -99,7 +100,8 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen antialiased bg-[#f8f7f2]">
+        <MainNav />
         <main className="mx-auto max-w-[1200px] px-6 py-8">
           {children}
         </main>
