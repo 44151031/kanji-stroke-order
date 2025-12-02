@@ -28,26 +28,50 @@ export function MultiCharAnimation({ text, size = 280 }: MultiCharAnimationProps
   const chars = text.split("");
   const currentChar = chars[charIndex] || "";
 
-  // 文字からSVGパスを取得
-  const getHexCode = (char: string) => {
+  // 文字からSVGパスを取得（4桁と5桁の両方に対応）
+  const getHexCodes = (char: string) => {
     const code = char.codePointAt(0);
-    return code ? code.toString(16).padStart(5, "0") : "00000";
+    if (!code) return [];
+    const hex = code.toString(16).toLowerCase();
+    // 4桁と5桁の両方を返す
+    return [
+      hex.padStart(5, "0"),  // 5桁（KanjiVG形式）
+      hex.padStart(4, "0"),  // 4桁（animCJK形式）
+      hex,                    // そのまま
+    ];
   };
 
-  // SVGを読み込み
+  // SVGを読み込み（複数パスでフォールバック）
   const loadSvg = useCallback(async (char: string) => {
     setLoaded(false);
     setError(false);
     setStrokeIdx(0);
     strokeIdxRef.current = 0;
     
-    const hexCode = getHexCode(char);
+    const hexCodes = getHexCodes(char);
+    
+    // 試行するパス一覧
+    const pathsToTry = [
+      ...hexCodes.map(hex => `/svg/u${hex}.svg`),      // /svg/ (animCJK)
+      ...hexCodes.map(hex => `/kanjivg/${hex}.svg`),   // /kanjivg/ (KanjiVG)
+    ];
+    
+    let svgText: string | null = null;
+    
+    for (const path of pathsToTry) {
+      try {
+        const res = await fetch(path);
+        if (res.ok) {
+          svgText = await res.text();
+          break;
+        }
+      } catch {
+        // 次のパスを試行
+      }
+    }
     
     try {
-      const res = await fetch(`/kanjivg/${hexCode}.svg`);
-      if (!res.ok) throw new Error("SVG not found");
-      
-      const svgText = await res.text();
+      if (!svgText) throw new Error("SVG not found");
       
       if (containerRef.current) {
         containerRef.current.innerHTML = svgText;

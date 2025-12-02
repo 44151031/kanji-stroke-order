@@ -23,7 +23,7 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
   const playingRef = useRef(false);
   const currentIdxRef = useRef(0);
 
-  // SVGを読み込み
+  // SVGを読み込み（複数パスでフォールバック）
   useEffect(() => {
     let cancelled = false;
     
@@ -34,13 +34,37 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
       setCurrentIdx(0);
       currentIdxRef.current = 0;
       
-      const hexCode = id.startsWith("u") ? id.slice(1).padStart(5, "0") : id;
+      // IDから16進数コードを取得（4桁と5桁の両方に対応）
+      const rawHex = id.startsWith("u") ? id.slice(1) : id;
+      const hexCodes = [
+        rawHex.padStart(5, "0"),  // 5桁
+        rawHex.padStart(4, "0"),  // 4桁
+        rawHex,                    // そのまま
+      ];
+      
+      // 試行するパス一覧
+      const pathsToTry = [
+        ...hexCodes.map(hex => `/svg/u${hex}.svg`),      // /svg/ (animCJK)
+        ...hexCodes.map(hex => `/kanjivg/${hex}.svg`),   // /kanjivg/ (KanjiVG)
+      ];
+      
+      let svgText: string | null = null;
+      
+      for (const path of pathsToTry) {
+        if (cancelled) return;
+        try {
+          const res = await fetch(path);
+          if (res.ok) {
+            svgText = await res.text();
+            break;
+          }
+        } catch {
+          // 次のパスを試行
+        }
+      }
       
       try {
-        const res = await fetch(`/kanjivg/${hexCode}.svg`);
-        if (!res.ok) throw new Error("SVG not found");
-        
-        const svgText = await res.text();
+        if (!svgText) throw new Error("SVG not found");
         if (cancelled) return;
         
         if (containerRef.current) {
