@@ -58,7 +58,7 @@ export default function BushuByPositionSection({ radicals, radicalCounts }: Prop
         if (!items || items.length === 0) return null;
         
         return (
-          <Card key={key} className="rounded-2xl shadow-sm">
+          <Card key={key} id={key} className="rounded-2xl shadow-sm scroll-mt-8">
             <CardHeader className="pb-3">
               <CardTitle className="text-lg flex items-center gap-2">
                 <span>{icon}</span>

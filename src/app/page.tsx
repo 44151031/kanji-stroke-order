@@ -27,20 +27,15 @@ const GRADE_LINKS = [
 // 主な画数
 const STROKE_LINKS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-// 人気の部首（日本語名 + 英語名 + 絵文字）
-const BUSHU_LINKS = [
-  { jp: "水部", en: "Water", emoji: "💧", root: "氵" },
-  { jp: "人部", en: "Person", emoji: "👤", root: "亻" },
-  { jp: "木部", en: "Tree", emoji: "🌳", root: "木" },
-  { jp: "手部", en: "Hand", emoji: "✋", root: "扌" },
-  { jp: "心部", en: "Heart", emoji: "❤️", root: "忄" },
-  { jp: "日部", en: "Sun", emoji: "☀️", root: "日" },
-  { jp: "口部", en: "Mouth", emoji: "👄", root: "口" },
-  { jp: "土部", en: "Earth", emoji: "🌏", root: "土" },
-  { jp: "火部", en: "Fire", emoji: "🔥", root: "火" },
-  { jp: "金部", en: "Gold", emoji: "💰", root: "金" },
-  { jp: "言部", en: "Speech", emoji: "💬", root: "言" },
-  { jp: "糸部", en: "Thread", emoji: "🧵", root: "糸" },
+// 部首の配置カテゴリー（7種類）
+const BUSHU_POSITION_LINKS = [
+  { key: "へん", label: "偏（へん）", icon: "⬅️", desc: "左側" },
+  { key: "つくり", label: "旁（つくり）", icon: "➡️", desc: "右側" },
+  { key: "かんむり", label: "冠（かんむり）", icon: "⬆️", desc: "上部" },
+  { key: "あし", label: "脚（あし）", icon: "⬇️", desc: "下部" },
+  { key: "たれ", label: "垂（たれ）", icon: "↙️", desc: "上から左" },
+  { key: "かまえ", label: "構（かまえ）", icon: "⬜", desc: "囲む" },
+  { key: "にょう", label: "繞（にょう）", icon: "↪️", desc: "左から下" },
 ];
 
 export default function Home() {
@@ -188,24 +183,23 @@ export default function Home() {
       {/* 部首別リンク */}
       <section className="w-full max-w-3xl">
         <h2 className="text-xl font-medium mb-4 text-center">📘 部首別で探す</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          {BUSHU_LINKS.map((bushu) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {BUSHU_POSITION_LINKS.map((pos, index) => (
             <Link
-              key={bushu.en}
-              href={`/bushu/${encodeURIComponent(bushu.en)}`}
-              className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-sm group"
-              title={bushu.en}
+              key={pos.key}
+              href={index === 0 ? "/bushu" : `/bushu#${pos.key}`}
+              className="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors"
             >
-              <span className="text-xl group-hover:scale-110 transition-transform">{bushu.emoji}</span>
+              <span className="text-2xl">{pos.icon}</span>
               <div className="flex flex-col">
-                <span className="font-medium text-foreground">{bushu.jp}</span>
-                <span className="text-xs text-muted-foreground">{bushu.root}</span>
+                <span className="font-medium text-sm">{pos.label}</span>
+                <span className="text-xs text-muted-foreground">{pos.desc}</span>
               </div>
             </Link>
           ))}
           <Link
             href="/bushu"
-            className="flex items-center justify-center px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-sm text-muted-foreground"
+            className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-muted-foreground"
           >
             すべての部首 →
           </Link>
