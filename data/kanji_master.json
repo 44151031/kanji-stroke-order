@@ -26,7 +26,22 @@
     ],
     "examples": [
       "哀愁(あいしゅう)"
-    ]
+    ],
+    "id": "u54c0",
+    "readings": {
+      "on": [
+        "あい"
+      ],
+      "kun": [
+        "あわ.れ",
+        "あわ.れむ",
+        "かな.しい"
+      ]
+    },
+    "radical": {
+      "name": "Lid",
+      "meaning": "Lid radical"
+    }
   },
   {
     "kanji": "依",
@@ -57,7 +72,21 @@
     ],
     "confusedWith": [
       "衣"
-    ]
+    ],
+    "id": "u4f9d",
+    "readings": {
+      "on": [
+        "い",
+        "え"
+      ],
+      "kun": [
+        "よ.る"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "威",
@@ -89,7 +118,22 @@
     ],
     "examples": [
       "威力/意力(誤)"
-    ]
+    ],
+    "id": "u5a01",
+    "readings": {
+      "on": [
+        "い"
+      ],
+      "kun": [
+        "おど.す",
+        "おど.し",
+        "おど.かす"
+      ]
+    },
+    "radical": {
+      "name": "Slide",
+      "meaning": "Slide radical"
+    }
   },
   {
     "kanji": "意",
@@ -113,7 +157,18 @@
     ],
     "examples": [
       "意義/異議"
-    ]
+    ],
+    "id": "u610f",
+    "readings": {
+      "on": [
+        "い"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Sound",
+      "meaning": "Sound radical"
+    }
   },
   {
     "kanji": "異",
@@ -141,7 +196,22 @@
     ],
     "examples": [
       "異常/以上"
-    ]
+    ],
+    "id": "u7570",
+    "readings": {
+      "on": [
+        "い"
+      ],
+      "kun": [
+        "こと",
+        "こと.なる",
+        "け"
+      ]
+    },
+    "radical": {
+      "name": "Rice Paddy",
+      "meaning": "Rice Paddy radical"
+    }
   },
   {
     "kanji": "移",
@@ -168,7 +238,21 @@
     ],
     "examples": [
       "移動/異動"
-    ]
+    ],
+    "id": "u79fb",
+    "readings": {
+      "on": [
+        "い"
+      ],
+      "kun": [
+        "うつ.る",
+        "うつ.す"
+      ]
+    },
+    "radical": {
+      "name": "Grain",
+      "meaning": "Grain radical"
+    }
   },
   {
     "kanji": "維",
@@ -192,7 +276,18 @@
     ],
     "examples": [
       "維持/意地"
-    ]
+    ],
+    "id": "u7dad",
+    "readings": {
+      "on": [
+        "い"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "衣",
@@ -224,7 +319,23 @@
     ],
     "confusedWith": [
       "依"
-    ]
+    ],
+    "id": "u8863",
+    "readings": {
+      "on": [
+        "い",
+        "え"
+      ],
+      "kun": [
+        "ころも",
+        "きぬ",
+        "-ぎ"
+      ]
+    },
+    "radical": {
+      "name": "Clothes",
+      "meaning": "Clothes radical"
+    }
   },
   {
     "kanji": "員",
@@ -252,7 +363,18 @@
     ],
     "confusedWith": [
       "損"
-    ]
+    ],
+    "id": "u54e1",
+    "readings": {
+      "on": [
+        "いん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "右",
@@ -279,7 +401,21 @@
     ],
     "examples": [
       "右(みぎ)"
-    ]
+    ],
+    "id": "u53f3",
+    "readings": {
+      "on": [
+        "う",
+        "ゆう"
+      ],
+      "kun": [
+        "みぎ"
+      ]
+    },
+    "radical": {
+      "name": "Narwhal",
+      "meaning": "Narwhal radical"
+    }
   },
   {
     "kanji": "衛",
@@ -301,7 +437,19 @@
     "radicals": [
       "Go",
       "Korea"
-    ]
+    ],
+    "id": "u885b",
+    "readings": {
+      "on": [
+        "えい",
+        "え"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Go",
+      "meaning": "Go radical"
+    }
   },
   {
     "kanji": "往",
@@ -334,7 +482,23 @@
     ],
     "confusedWith": [
       "住"
-    ]
+    ],
+    "id": "u5f80",
+    "readings": {
+      "on": [
+        "おう"
+      ],
+      "kun": [
+        "い.く",
+        "いにしえ",
+        "さき.に",
+        "ゆ.く"
+      ]
+    },
+    "radical": {
+      "name": "Loiter",
+      "meaning": "Loiter radical"
+    }
   },
   {
     "kanji": "王",
@@ -362,7 +526,19 @@
     ],
     "confusedWith": [
       "玉"
-    ]
+    ],
+    "id": "u738b",
+    "readings": {
+      "on": [
+        "おう",
+        "-のう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "King",
+      "meaning": "King radical"
+    }
   },
   {
     "kanji": "恩",
@@ -384,7 +560,18 @@
       "Mouth",
       "Big",
       "Heart"
-    ]
+    ],
+    "id": "u6069",
+    "readings": {
+      "on": [
+        "おん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "穏",
@@ -409,7 +596,20 @@
       "Cleat",
       "Wolverine",
       "Heart"
-    ]
+    ],
+    "id": "u7a4f",
+    "readings": {
+      "on": [
+        "おん"
+      ],
+      "kun": [
+        "おだ.やか"
+      ]
+    },
+    "radical": {
+      "name": "Grain",
+      "meaning": "Grain radical"
+    }
   },
   {
     "kanji": "下",
@@ -447,7 +647,32 @@
     ],
     "examples": [
       "下(か/げ/した/さ/くだ/お)"
-    ]
+    ],
+    "id": "u4e0b",
+    "readings": {
+      "on": [
+        "か",
+        "げ"
+      ],
+      "kun": [
+        "した",
+        "しも",
+        "もと",
+        "さ.げる",
+        "さ.がる",
+        "くだ.る",
+        "くだ.り",
+        "くだ.す",
+        "-くだ.す",
+        "くだ.さる",
+        "お.ろす",
+        "お.りる"
+      ]
+    },
+    "radical": {
+      "name": "Ground",
+      "meaning": "Ground radical"
+    }
   },
   {
     "kanji": "暇",
@@ -480,7 +705,21 @@
     ],
     "confusedWith": [
       "遐"
-    ]
+    ],
+    "id": "u6687",
+    "readings": {
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "ひま",
+        "いとま"
+      ]
+    },
+    "radical": {
+      "name": "Sun",
+      "meaning": "Sun radical"
+    }
   },
   {
     "kanji": "貨",
@@ -510,7 +749,20 @@
     ],
     "confusedWith": [
       "貸"
-    ]
+    ],
+    "id": "u8ca8",
+    "readings": {
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "たから"
+      ]
+    },
+    "radical": {
+      "name": "Change",
+      "meaning": "Change radical"
+    }
   },
   {
     "kanji": "雅",
@@ -540,7 +792,20 @@
     ],
     "confusedWith": [
       "雑"
-    ]
+    ],
+    "id": "u96c5",
+    "readings": {
+      "on": [
+        "が"
+      ],
+      "kun": [
+        "みや.び"
+      ]
+    },
+    "radical": {
+      "name": "Fang",
+      "meaning": "Fang radical"
+    }
   },
   {
     "kanji": "会",
@@ -568,7 +833,23 @@
     ],
     "examples": [
       "会←會"
-    ]
+    ],
+    "id": "u4f1a",
+    "readings": {
+      "on": [
+        "かい",
+        "え"
+      ],
+      "kun": [
+        "あ.う",
+        "あ.わせる",
+        "あつ.まる"
+      ]
+    },
+    "radical": {
+      "name": "Meet",
+      "meaning": "Meet radical"
+    }
   },
   {
     "kanji": "塊",
@@ -600,7 +881,22 @@
     ],
     "confusedWith": [
       "怪"
-    ]
+    ],
+    "id": "u584a",
+    "readings": {
+      "on": [
+        "かい",
+        "け"
+      ],
+      "kun": [
+        "かたまり",
+        "つちくれ"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "快",
@@ -631,7 +927,20 @@
     ],
     "confusedWith": [
       "決"
-    ]
+    ],
+    "id": "u5feb",
+    "readings": {
+      "on": [
+        "かい"
+      ],
+      "kun": [
+        "こころよ.い"
+      ]
+    },
+    "radical": {
+      "name": "Soul",
+      "meaning": "Soul radical"
+    }
   },
   {
     "kanji": "怪",
@@ -663,7 +972,22 @@
     ],
     "confusedWith": [
       "塊"
-    ]
+    ],
+    "id": "u602a",
+    "readings": {
+      "on": [
+        "かい",
+        "け"
+      ],
+      "kun": [
+        "あや.しい",
+        "あや.しむ"
+      ]
+    },
+    "radical": {
+      "name": "Soul",
+      "meaning": "Soul radical"
+    }
   },
   {
     "kanji": "悔",
@@ -697,7 +1021,22 @@
     ],
     "confusedWith": [
       "梅"
-    ]
+    ],
+    "id": "u6094",
+    "readings": {
+      "on": [
+        "かい"
+      ],
+      "kun": [
+        "く.いる",
+        "く.やむ",
+        "くや.しい"
+      ]
+    },
+    "radical": {
+      "name": "Soul",
+      "meaning": "Soul radical"
+    }
   },
   {
     "kanji": "拐",
@@ -726,7 +1065,18 @@
     ],
     "confusedWith": [
       "枯"
-    ]
+    ],
+    "id": "u62d0",
+    "readings": {
+      "on": [
+        "かい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "海",
@@ -757,7 +1107,20 @@
     ],
     "confusedWith": [
       "毎"
-    ]
+    ],
+    "id": "u6d77",
+    "readings": {
+      "on": [
+        "かい"
+      ],
+      "kun": [
+        "うみ"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "学",
@@ -783,7 +1146,20 @@
     ],
     "examples": [
       "学←學"
-    ]
+    ],
+    "id": "u5b66",
+    "readings": {
+      "on": [
+        "がく"
+      ],
+      "kun": [
+        "まな.ぶ"
+      ]
+    },
+    "radical": {
+      "name": "Viking",
+      "meaning": "Viking radical"
+    }
   },
   {
     "kanji": "勧",
@@ -817,7 +1193,21 @@
     ],
     "confusedWith": [
       "歓"
-    ]
+    ],
+    "id": "u52e7",
+    "readings": {
+      "on": [
+        "かん",
+        "けん"
+      ],
+      "kun": [
+        "すす.める"
+      ]
+    },
+    "radical": {
+      "name": "Arrow",
+      "meaning": "Arrow radical"
+    }
   },
   {
     "kanji": "喚",
@@ -849,7 +1239,20 @@
     ],
     "confusedWith": [
       "換"
-    ]
+    ],
+    "id": "u559a",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "わめ.く"
+      ]
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "寛",
@@ -875,7 +1278,22 @@
       "Roof",
       "Flowers",
       "See"
-    ]
+    ],
+    "id": "u5bdb",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "くつろ.ぐ",
+        "ひろ.い",
+        "ゆる.やか"
+      ]
+    },
+    "radical": {
+      "name": "Roof",
+      "meaning": "Roof radical"
+    }
   },
   {
     "kanji": "干",
@@ -907,7 +1325,23 @@
     ],
     "confusedWith": [
       "千"
-    ]
+    ],
+    "id": "u5e72",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "ほ.す",
+        "ほ.し-",
+        "-ぼ.し",
+        "ひ.る"
+      ]
+    },
+    "radical": {
+      "name": "Dry",
+      "meaning": "Dry radical"
+    }
   },
   {
     "kanji": "換",
@@ -945,7 +1379,22 @@
     ],
     "confusedWith": [
       "喚"
-    ]
+    ],
+    "id": "u63db",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "か.える",
+        "-か.える",
+        "か.わる"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "歓",
@@ -976,7 +1425,20 @@
     ],
     "confusedWith": [
       "勧"
-    ]
+    ],
+    "id": "u6b53",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "よろこ.ぶ"
+      ]
+    },
+    "radical": {
+      "name": "Arrow",
+      "meaning": "Arrow radical"
+    }
   },
   {
     "kanji": "緩",
@@ -1002,7 +1464,23 @@
     "radicals": [
       "Thread",
       "Football"
-    ]
+    ],
+    "id": "u7de9",
+    "readings": {
+      "on": [
+        "かん"
+      ],
+      "kun": [
+        "ゆる.い",
+        "ゆる.やか",
+        "ゆる.む",
+        "ゆる.める"
+      ]
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "頑",
@@ -1025,7 +1503,20 @@
     "radicals": [
       "Origin",
       "Geoduck"
-    ]
+    ],
+    "id": "u9811",
+    "readings": {
+      "on": [
+        "がん"
+      ],
+      "kun": [
+        "かたく"
+      ]
+    },
+    "radical": {
+      "name": "Origin",
+      "meaning": "Origin radical"
+    }
   },
   {
     "kanji": "器",
@@ -1051,7 +1542,20 @@
     ],
     "examples": [
       "器官(きかん)"
-    ]
+    ],
+    "id": "u5668",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "うつわ"
+      ]
+    },
+    "radical": {
+      "name": "Big",
+      "meaning": "Big radical"
+    }
   },
   {
     "kanji": "基",
@@ -1080,7 +1584,21 @@
     "examples": [
       "基準(きじゅん)",
       "基(もと)/基づく(もとづく)"
-    ]
+    ],
+    "id": "u57fa",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "もと",
+        "もとい"
+      ]
+    },
+    "radical": {
+      "name": "Crab",
+      "meaning": "Crab radical"
+    }
   },
   {
     "kanji": "希",
@@ -1108,7 +1626,21 @@
     ],
     "examples": [
       "希望(きぼう)"
-    ]
+    ],
+    "id": "u5e0c",
+    "readings": {
+      "on": [
+        "き",
+        "け"
+      ],
+      "kun": [
+        "まれ"
+      ]
+    },
+    "radical": {
+      "name": "Treasure",
+      "meaning": "Treasure radical"
+    }
   },
   {
     "kanji": "機",
@@ -1136,7 +1668,20 @@
     ],
     "examples": [
       "機会(きかい)"
-    ]
+    ],
+    "id": "u6a5f",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "はた"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "帰",
@@ -1167,7 +1712,23 @@
     ],
     "examples": [
       "帰還(きかん)"
-    ]
+    ],
+    "id": "u5e30",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "かえ.る",
+        "かえ.す",
+        "おく.る",
+        "とつ.ぐ"
+      ]
+    },
+    "radical": {
+      "name": "Knife",
+      "meaning": "Knife radical"
+    }
   },
   {
     "kanji": "貴",
@@ -1197,7 +1758,23 @@
     ],
     "examples": [
       "貴重(きちょう)"
-    ]
+    ],
+    "id": "u8cb4",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "たっと.い",
+        "とうと.い",
+        "たっと.ぶ",
+        "とうと.ぶ"
+      ]
+    },
+    "radical": {
+      "name": "Middle",
+      "meaning": "Middle radical"
+    }
   },
   {
     "kanji": "偽",
@@ -1223,7 +1800,23 @@
     "radicals": [
       "Leader",
       "Sake"
-    ]
+    ],
+    "id": "u507d",
+    "readings": {
+      "on": [
+        "ぎ",
+        "か"
+      ],
+      "kun": [
+        "いつわ.る",
+        "にせ",
+        "いつわ.り"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "儀",
@@ -1244,7 +1837,18 @@
     "radicals": [
       "Leader",
       "Righteousness"
-    ]
+    ],
+    "id": "u5100",
+    "readings": {
+      "on": [
+        "ぎ"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "欺",
@@ -1267,7 +1871,20 @@
     "radicals": [
       "Crab",
       "Lack"
-    ]
+    ],
+    "id": "u6b3a",
+    "readings": {
+      "on": [
+        "ぎ"
+      ],
+      "kun": [
+        "あざむ.く"
+      ]
+    },
+    "radical": {
+      "name": "Crab",
+      "meaning": "Crab radical"
+    }
   },
   {
     "kanji": "犠",
@@ -1291,7 +1908,21 @@
     "radicals": [
       "Cow",
       "Righteousness"
-    ]
+    ],
+    "id": "u72a0",
+    "readings": {
+      "on": [
+        "ぎ",
+        "き"
+      ],
+      "kun": [
+        "いけにえ"
+      ]
+    },
+    "radical": {
+      "name": "Cow",
+      "meaning": "Cow radical"
+    }
   },
   {
     "kanji": "疑",
@@ -1316,7 +1947,20 @@
       "Mama",
       "Arrow",
       "Coat Rack"
-    ]
+    ],
+    "id": "u7591",
+    "readings": {
+      "on": [
+        "ぎ"
+      ],
+      "kun": [
+        "うたが.う"
+      ]
+    },
+    "radical": {
+      "name": "Spoon",
+      "meaning": "Spoon radical"
+    }
   },
   {
     "kanji": "牛",
@@ -1345,7 +1989,20 @@
     ],
     "confusedWith": [
       "午"
-    ]
+    ],
+    "id": "u725b",
+    "readings": {
+      "on": [
+        "ぎゅう"
+      ],
+      "kun": [
+        "うし"
+      ]
+    },
+    "radical": {
+      "name": "Cow",
+      "meaning": "Cow radical"
+    }
   },
   {
     "kanji": "虚",
@@ -1370,7 +2027,22 @@
     "radicals": [
       "Tiger",
       "Spikes"
-    ]
+    ],
+    "id": "u865a",
+    "readings": {
+      "on": [
+        "きょ",
+        "こ"
+      ],
+      "kun": [
+        "むな.しい",
+        "うつ.ろ"
+      ]
+    },
+    "radical": {
+      "name": "Tiger",
+      "meaning": "Tiger radical"
+    }
   },
   {
     "kanji": "恐",
@@ -1400,7 +2072,24 @@
     ],
     "examples": [
       "恐れ入る(おそれいる)"
-    ]
+    ],
+    "id": "u6050",
+    "readings": {
+      "on": [
+        "きょう"
+      ],
+      "kun": [
+        "おそ.れる",
+        "おそ.る",
+        "おそ.ろしい",
+        "こわ.い",
+        "こわ.がる"
+      ]
+    },
+    "radical": {
+      "name": "Saw",
+      "meaning": "Saw radical"
+    }
   },
   {
     "kanji": "興",
@@ -1427,7 +2116,22 @@
       "Same",
       "Ground",
       "Fins"
-    ]
+    ],
+    "id": "u8208",
+    "readings": {
+      "on": [
+        "こう",
+        "きょう"
+      ],
+      "kun": [
+        "おこ.る",
+        "おこ.す"
+      ]
+    },
+    "radical": {
+      "name": "Comb",
+      "meaning": "Comb radical"
+    }
   },
   {
     "kanji": "玉",
@@ -1459,7 +2163,22 @@
     ],
     "confusedWith": [
       "王"
-    ]
+    ],
+    "id": "u7389",
+    "readings": {
+      "on": [
+        "ぎょく"
+      ],
+      "kun": [
+        "たま",
+        "たま-",
+        "-だま"
+      ]
+    },
+    "radical": {
+      "name": "King",
+      "meaning": "King radical"
+    }
   },
   {
     "kanji": "勤",
@@ -1489,7 +2208,24 @@
     ],
     "examples": [
       "勤める(つとめる)"
-    ]
+    ],
+    "id": "u52e4",
+    "readings": {
+      "on": [
+        "きん",
+        "ごん"
+      ],
+      "kun": [
+        "つと.める",
+        "-づと.め",
+        "つと.まる",
+        "いそ.しむ"
+      ]
+    },
+    "radical": {
+      "name": "Boot",
+      "meaning": "Boot radical"
+    }
   },
   {
     "kanji": "遇",
@@ -1519,7 +2255,20 @@
     ],
     "confusedWith": [
       "週"
-    ]
+    ],
+    "id": "u9047",
+    "readings": {
+      "on": [
+        "ぐう"
+      ],
+      "kun": [
+        "あ.う"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "計",
@@ -1546,7 +2295,21 @@
     ],
     "examples": [
       "計る(時間・量)"
-    ]
+    ],
+    "id": "u8a08",
+    "readings": {
+      "on": [
+        "けい"
+      ],
+      "kun": [
+        "はか.る",
+        "はか.らう"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "決",
@@ -1580,7 +2343,23 @@
     ],
     "confusedWith": [
       "快"
-    ]
+    ],
+    "id": "u6c7a",
+    "readings": {
+      "on": [
+        "けつ"
+      ],
+      "kun": [
+        "き.める",
+        "-ぎ.め",
+        "き.まる",
+        "さ.く"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "堅",
@@ -1608,7 +2387,21 @@
     ],
     "examples": [
       "堅い(かたい)"
-    ]
+    ],
+    "id": "u5805",
+    "readings": {
+      "on": [
+        "けん"
+      ],
+      "kun": [
+        "かた.い",
+        "-がた.い"
+      ]
+    },
+    "radical": {
+      "name": "Servant",
+      "meaning": "Servant radical"
+    }
   },
   {
     "kanji": "権",
@@ -1635,7 +2428,23 @@
       "Tree",
       "Arrow",
       "Turkey"
-    ]
+    ],
+    "id": "u6a29",
+    "readings": {
+      "on": [
+        "けん",
+        "ごん"
+      ],
+      "kun": [
+        "おもり",
+        "かり",
+        "はか.る"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "犬",
@@ -1665,7 +2474,21 @@
     ],
     "confusedWith": [
       "太"
-    ]
+    ],
+    "id": "u72ac",
+    "readings": {
+      "on": [
+        "けん"
+      ],
+      "kun": [
+        "いぬ",
+        "いぬ-"
+      ]
+    },
+    "radical": {
+      "name": "Dog",
+      "meaning": "Dog radical"
+    }
   },
   {
     "kanji": "謙",
@@ -1688,7 +2511,20 @@
     "radicals": [
       "Say",
       "Mona Lisa"
-    ]
+    ],
+    "id": "u8b19",
+    "readings": {
+      "on": [
+        "けん"
+      ],
+      "kun": [
+        "へりくだ.る"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "元",
@@ -1714,7 +2550,21 @@
     ],
     "examples": [
       "元(もと)/元々(もともと)"
-    ]
+    ],
+    "id": "u5143",
+    "readings": {
+      "on": [
+        "げん",
+        "がん"
+      ],
+      "kun": [
+        "もと"
+      ]
+    },
+    "radical": {
+      "name": "Origin",
+      "meaning": "Origin radical"
+    }
   },
   {
     "kanji": "厳",
@@ -1743,7 +2593,24 @@
       "Cliff",
       "Elf",
       "Winter"
-    ]
+    ],
+    "id": "u53b3",
+    "readings": {
+      "on": [
+        "げん",
+        "ごん"
+      ],
+      "kun": [
+        "おごそ.か",
+        "きび.しい",
+        "いか.めしい",
+        "いつくし"
+      ]
+    },
+    "radical": {
+      "name": "Grass",
+      "meaning": "Grass radical"
+    }
   },
   {
     "kanji": "現",
@@ -1772,7 +2639,23 @@
     ],
     "examples": [
       "現れる/現わる(古)"
-    ]
+    ],
+    "id": "u73fe",
+    "readings": {
+      "on": [
+        "げん"
+      ],
+      "kun": [
+        "あらわ.れる",
+        "あらわ.す",
+        "うつつ",
+        "うつ.つ"
+      ]
+    },
+    "radical": {
+      "name": "King",
+      "meaning": "King radical"
+    }
   },
   {
     "kanji": "固",
@@ -1801,7 +2684,23 @@
     ],
     "examples": [
       "固い(かたい)"
-    ]
+    ],
+    "id": "u56fa",
+    "readings": {
+      "on": [
+        "こ"
+      ],
+      "kun": [
+        "かた.める",
+        "かた.まる",
+        "かた.まり",
+        "かた.い"
+      ]
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "己",
@@ -1838,7 +2737,23 @@
     ],
     "confusedWith": [
       "已"
-    ]
+    ],
+    "id": "u5df1",
+    "readings": {
+      "on": [
+        "こ",
+        "き"
+      ],
+      "kun": [
+        "おのれ",
+        "つちのと",
+        "な"
+      ]
+    },
+    "radical": {
+      "name": "Oneself",
+      "meaning": "Oneself radical"
+    }
   },
   {
     "kanji": "枯",
@@ -1869,7 +2784,21 @@
     ],
     "confusedWith": [
       "拐"
-    ]
+    ],
+    "id": "u67af",
+    "readings": {
+      "on": [
+        "こ"
+      ],
+      "kun": [
+        "か.れる",
+        "か.らす"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "午",
@@ -1899,7 +2828,20 @@
     ],
     "confusedWith": [
       "牛"
-    ]
+    ],
+    "id": "u5348",
+    "readings": {
+      "on": [
+        "ご"
+      ],
+      "kun": [
+        "うま"
+      ]
+    },
+    "radical": {
+      "name": "Slide",
+      "meaning": "Slide radical"
+    }
   },
   {
     "kanji": "御",
@@ -1930,7 +2872,23 @@
     ],
     "examples": [
       "御(お/ご/おん/み)"
-    ]
+    ],
+    "id": "u5fa1",
+    "readings": {
+      "on": [
+        "ぎょ",
+        "ご"
+      ],
+      "kun": [
+        "おん-",
+        "お-",
+        "み-"
+      ]
+    },
+    "radical": {
+      "name": "Loiter",
+      "meaning": "Loiter radical"
+    }
   },
   {
     "kanji": "厚",
@@ -1958,7 +2916,21 @@
     ],
     "examples": [
       "厚い(あつい)"
-    ]
+    ],
+    "id": "u539a",
+    "readings": {
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "あつ.い",
+        "あか"
+      ]
+    },
+    "radical": {
+      "name": "Cliff",
+      "meaning": "Cliff radical"
+    }
   },
   {
     "kanji": "広",
@@ -1988,7 +2960,24 @@
     ],
     "examples": [
       "広←廣"
-    ]
+    ],
+    "id": "u5e83",
+    "readings": {
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "ひろ.い",
+        "ひろ.まる",
+        "ひろ.める",
+        "ひろ.がる",
+        "ひろ.げる"
+      ]
+    },
+    "radical": {
+      "name": "Canopy",
+      "meaning": "Canopy radical"
+    }
   },
   {
     "kanji": "校",
@@ -2018,7 +3007,19 @@
     ],
     "confusedWith": [
       "絞"
-    ]
+    ],
+    "id": "u6821",
+    "readings": {
+      "on": [
+        "こう",
+        "きょう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "硬",
@@ -2044,7 +3045,20 @@
     ],
     "examples": [
       "硬い(かたい)"
-    ]
+    ],
+    "id": "u786c",
+    "readings": {
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "かた.い"
+      ]
+    },
+    "radical": {
+      "name": "Stone",
+      "meaning": "Stone radical"
+    }
   },
   {
     "kanji": "絞",
@@ -2076,7 +3090,22 @@
     ],
     "confusedWith": [
       "校"
-    ]
+    ],
+    "id": "u7d5e",
+    "readings": {
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "しぼ.る",
+        "し.める",
+        "し.まる"
+      ]
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "行",
@@ -2111,7 +3140,29 @@
     "examples": [
       "行う/行なう",
       "行(こう/ぎょう/あん/い/ゆ)"
-    ]
+    ],
+    "id": "u884c",
+    "readings": {
+      "on": [
+        "こう",
+        "ぎょう",
+        "あん"
+      ],
+      "kun": [
+        "い.く",
+        "ゆ.く",
+        "-ゆ.き",
+        "-ゆき",
+        "-い.き",
+        "-いき",
+        "おこな.う",
+        "おこ.なう"
+      ]
+    },
+    "radical": {
+      "name": "Go",
+      "meaning": "Go radical"
+    }
   },
   {
     "kanji": "国",
@@ -2138,7 +3189,20 @@
     ],
     "examples": [
       "国←國"
-    ]
+    ],
+    "id": "u56fd",
+    "readings": {
+      "on": [
+        "こく"
+      ],
+      "kun": [
+        "くに"
+      ]
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "狛",
@@ -2155,7 +3219,16 @@
     ],
     "confusedWith": [
       "珀"
-    ]
+    ],
+    "id": "u72db",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "左",
@@ -2182,7 +3255,21 @@
     ],
     "examples": [
       "左(ひだり)"
-    ]
+    ],
+    "id": "u5de6",
+    "readings": {
+      "on": [
+        "さ",
+        "しゃ"
+      ],
+      "kun": [
+        "ひだり"
+      ]
+    },
+    "radical": {
+      "name": "Narwhal",
+      "meaning": "Narwhal radical"
+    }
   },
   {
     "kanji": "査",
@@ -2210,7 +3297,18 @@
     ],
     "confusedWith": [
       "染"
-    ]
+    ],
+    "id": "u67fb",
+    "readings": {
+      "on": [
+        "さ"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "崎",
@@ -2243,7 +3341,22 @@
     ],
     "confusedWith": [
       "埼"
-    ]
+    ],
+    "id": "u5d0e",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "さき",
+        "さい",
+        "みさき"
+      ]
+    },
+    "radical": {
+      "name": "Mountain",
+      "meaning": "Mountain radical"
+    }
   },
   {
     "kanji": "埼",
@@ -2275,7 +3388,22 @@
     ],
     "confusedWith": [
       "崎"
-    ]
+    ],
+    "id": "u57fc",
+    "readings": {
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "さき",
+        "さい",
+        "みさき"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "雑",
@@ -2308,7 +3436,22 @@
     ],
     "confusedWith": [
       "雅"
-    ]
+    ],
+    "id": "u96d1",
+    "readings": {
+      "on": [
+        "ざつ",
+        "ぞう"
+      ],
+      "kun": [
+        "まじ.える",
+        "まじ.る"
+      ]
+    },
+    "radical": {
+      "name": "Nine",
+      "meaning": "Nine radical"
+    }
   },
   {
     "kanji": "参",
@@ -2339,7 +3482,24 @@
     ],
     "examples": [
       "参る(まいる)"
-    ]
+    ],
+    "id": "u53c2",
+    "readings": {
+      "on": [
+        "さん",
+        "しん"
+      ],
+      "kun": [
+        "まい.る",
+        "まい-",
+        "まじわる",
+        "みつ"
+      ]
+    },
+    "radical": {
+      "name": "Private",
+      "meaning": "Private radical"
+    }
   },
   {
     "kanji": "刺",
@@ -2367,7 +3527,24 @@
       "Tree",
       "Head",
       "Knife"
-    ]
+    ],
+    "id": "u523a",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "さ.す",
+        "さ.さる",
+        "さ.し",
+        "さし",
+        "とげ"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "嗣",
@@ -2385,7 +3562,18 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": "N1",
-    "radicals": []
+    "radicals": [],
+    "id": "u55e3",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "士",
@@ -2414,7 +3602,20 @@
     ],
     "confusedWith": [
       "土"
-    ]
+    ],
+    "id": "u58eb",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "さむらい"
+      ]
+    },
+    "radical": {
+      "name": "Samurai",
+      "meaning": "Samurai radical"
+    }
   },
   {
     "kanji": "始",
@@ -2442,7 +3643,22 @@
     ],
     "examples": [
       "始め(はじめ)/始まる(はじまる)"
-    ]
+    ],
+    "id": "u59cb",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "はじ.める",
+        "-はじ.める",
+        "はじ.まる"
+      ]
+    },
+    "radical": {
+      "name": "Woman",
+      "meaning": "Woman radical"
+    }
   },
   {
     "kanji": "市",
@@ -2472,7 +3688,20 @@
     ],
     "confusedWith": [
       "沛"
-    ]
+    ],
+    "id": "u5e02",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "いち"
+      ]
+    },
+    "radical": {
+      "name": "Lid",
+      "meaning": "Lid radical"
+    }
   },
   {
     "kanji": "施",
@@ -2497,7 +3726,21 @@
       "Direction",
       "Gun",
       "Alligator"
-    ]
+    ],
+    "id": "u65bd",
+    "readings": {
+      "on": [
+        "し",
+        "せ"
+      ],
+      "kun": [
+        "ほどこ.す"
+      ]
+    },
+    "radical": {
+      "name": "Direction",
+      "meaning": "Direction radical"
+    }
   },
   {
     "kanji": "旨",
@@ -2521,7 +3764,21 @@
     "radicals": [
       "Spoon",
       "Sun"
-    ]
+    ],
+    "id": "u65e8",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "むね",
+        "うま.い"
+      ]
+    },
+    "radical": {
+      "name": "Spoon",
+      "meaning": "Spoon radical"
+    }
   },
   {
     "kanji": "祉",
@@ -2542,7 +3799,18 @@
     "radicals": [
       "Spirit",
       "Stop"
-    ]
+    ],
+    "id": "u7949",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Spirit",
+      "meaning": "Spirit radical"
+    }
   },
   {
     "kanji": "紫",
@@ -2566,7 +3834,20 @@
       "Stop",
       "Spoon",
       "Thread"
-    ]
+    ],
+    "id": "u7d2b",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "むらさき"
+      ]
+    },
+    "radical": {
+      "name": "Stop",
+      "meaning": "Stop radical"
+    }
   },
   {
     "kanji": "肢",
@@ -2584,7 +3865,18 @@
     "grade": 8,
     "strokes": 8,
     "jlpt": "N1",
-    "radicals": []
+    "radicals": [],
+    "id": "u80a2",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "脂",
@@ -2608,7 +3900,20 @@
       "Moon",
       "Spoon",
       "Sun"
-    ]
+    ],
+    "id": "u8102",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "あぶら"
+      ]
+    },
+    "radical": {
+      "name": "Moon",
+      "meaning": "Moon radical"
+    }
   },
   {
     "kanji": "詞",
@@ -2631,7 +3936,20 @@
     "radicals": [
       "Say",
       "Director"
-    ]
+    ],
+    "id": "u8a5e",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "ことば"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "諮",
@@ -2658,7 +3976,20 @@
     ],
     "examples": [
       "諮る(意見を聞く)"
-    ]
+    ],
+    "id": "u8aee",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "はか.る"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "賜",
@@ -2685,7 +4016,22 @@
     "radicals": [],
     "examples": [
       "賜る(たまわる)"
-    ]
+    ],
+    "id": "u8cdc",
+    "readings": {
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "たまわ.る",
+        "たま.う",
+        "たも.う"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "持",
@@ -2717,7 +4063,22 @@
     ],
     "confusedWith": [
       "待"
-    ]
+    ],
+    "id": "u6301",
+    "readings": {
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "も.つ",
+        "-も.ち",
+        "も.てる"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "治",
@@ -2747,7 +4108,24 @@
     ],
     "examples": [
       "治める(おさめる)"
-    ]
+    ],
+    "id": "u6cbb",
+    "readings": {
+      "on": [
+        "じ",
+        "ち"
+      ],
+      "kun": [
+        "おさ.める",
+        "おさ.まる",
+        "なお.る",
+        "なお.す"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "酒",
@@ -2778,7 +4156,21 @@
     ],
     "confusedWith": [
       "配"
-    ]
+    ],
+    "id": "u9152",
+    "readings": {
+      "on": [
+        "しゅ"
+      ],
+      "kun": [
+        "さけ",
+        "さか-"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "収",
@@ -2805,7 +4197,21 @@
     ],
     "examples": [
       "収める(おさめる)"
-    ]
+    ],
+    "id": "u53ce",
+    "readings": {
+      "on": [
+        "しゅう"
+      ],
+      "kun": [
+        "おさ.める",
+        "おさ.まる"
+      ]
+    },
+    "radical": {
+      "name": "Vines",
+      "meaning": "Vines radical"
+    }
   },
   {
     "kanji": "就",
@@ -2830,7 +4236,22 @@
     "radicals": [
       "Capital",
       "Dog"
-    ]
+    ],
+    "id": "u5c31",
+    "readings": {
+      "on": [
+        "しゅう",
+        "じゅ"
+      ],
+      "kun": [
+        "つ.く",
+        "つ.ける"
+      ]
+    },
+    "radical": {
+      "name": "Capital",
+      "meaning": "Capital radical"
+    }
   },
   {
     "kanji": "修",
@@ -2860,7 +4281,22 @@
     ],
     "examples": [
       "修める(おさめる)"
-    ]
+    ],
+    "id": "u4fee",
+    "readings": {
+      "on": [
+        "しゅう",
+        "しゅ"
+      ],
+      "kun": [
+        "おさ.める",
+        "おさ.まる"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "週",
@@ -2890,7 +4326,18 @@
     ],
     "confusedWith": [
       "週"
-    ]
+    ],
+    "id": "u9031",
+    "readings": {
+      "on": [
+        "しゅう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "住",
@@ -2924,7 +4371,24 @@
     ],
     "confusedWith": [
       "往"
-    ]
+    ],
+    "id": "u4f4f",
+    "readings": {
+      "on": [
+        "じゅう",
+        "ぢゅう",
+        "ちゅう"
+      ],
+      "kun": [
+        "す.む",
+        "す.まう",
+        "-ず.まい"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "粛",
@@ -2950,7 +4414,21 @@
       "Stick",
       "Legs",
       "Rice"
-    ]
+    ],
+    "id": "u7c9b",
+    "readings": {
+      "on": [
+        "しゅく",
+        "すく"
+      ],
+      "kun": [
+        "つつし.む"
+      ]
+    },
+    "radical": {
+      "name": "Wolverine",
+      "meaning": "Wolverine radical"
+    }
   },
   {
     "kanji": "初",
@@ -2982,7 +4460,26 @@
     ],
     "examples": [
       "初め(はじめ)/初めて(はじめて)"
-    ]
+    ],
+    "id": "u521d",
+    "readings": {
+      "on": [
+        "しょ"
+      ],
+      "kun": [
+        "はじ.め",
+        "はじ.めて",
+        "はつ",
+        "はつ-",
+        "うい-",
+        "-そ.める",
+        "-ぞ.め"
+      ]
+    },
+    "radical": {
+      "name": "Spirit",
+      "meaning": "Spirit radical"
+    }
   },
   {
     "kanji": "暑",
@@ -3008,7 +4505,20 @@
     ],
     "examples": [
       "暑い(あつい)"
-    ]
+    ],
+    "id": "u6691",
+    "readings": {
+      "on": [
+        "しょ"
+      ],
+      "kun": [
+        "あつ.い"
+      ]
+    },
+    "radical": {
+      "name": "Sun",
+      "meaning": "Sun radical"
+    }
   },
   {
     "kanji": "薯",
@@ -3025,7 +4535,16 @@
     ],
     "confusedWith": [
       "著"
-    ]
+    ],
+    "id": "u85af",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "償",
@@ -3057,7 +4576,20 @@
     ],
     "confusedWith": [
       "賞"
-    ]
+    ],
+    "id": "u511f",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "つぐな.う"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "召",
@@ -3089,7 +4621,20 @@
     ],
     "confusedWith": [
       "招"
-    ]
+    ],
+    "id": "u53ec",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "め.す"
+      ]
+    },
+    "radical": {
+      "name": "Call",
+      "meaning": "Call radical"
+    }
   },
   {
     "kanji": "奨",
@@ -3113,7 +4658,21 @@
     "radicals": [
       "Commander",
       "Big"
-    ]
+    ],
+    "id": "u5968",
+    "readings": {
+      "on": [
+        "しょう",
+        "そう"
+      ],
+      "kun": [
+        "すす.める"
+      ]
+    },
+    "radical": {
+      "name": "Commander",
+      "meaning": "Commander radical"
+    }
   },
   {
     "kanji": "招",
@@ -3143,7 +4702,20 @@
     ],
     "confusedWith": [
       "召"
-    ]
+    ],
+    "id": "u62db",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "まね.く"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "症",
@@ -3164,7 +4736,18 @@
     "radicals": [
       "Sick",
       "Correct"
-    ]
+    ],
+    "id": "u75c7",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Sick",
+      "meaning": "Sick radical"
+    }
   },
   {
     "kanji": "称",
@@ -3194,7 +4777,26 @@
       "Grain",
       "Gun",
       "Small"
-    ]
+    ],
+    "id": "u79f0",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "たた.える",
+        "とな.える",
+        "あ.げる",
+        "かな.う",
+        "はか.り",
+        "はか.る",
+        "ほめ.る"
+      ]
+    },
+    "radical": {
+      "name": "Grain",
+      "meaning": "Grain radical"
+    }
   },
   {
     "kanji": "衝",
@@ -3217,7 +4819,20 @@
     "radicals": [
       "Go",
       "Heavy"
-    ]
+    ],
+    "id": "u885d",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "つ.く"
+      ]
+    },
+    "radical": {
+      "name": "Go",
+      "meaning": "Go radical"
+    }
   },
   {
     "kanji": "裳",
@@ -3234,7 +4849,16 @@
     ],
     "confusedWith": [
       "常"
-    ]
+    ],
+    "id": "u88f3",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "詳",
@@ -3258,7 +4882,21 @@
     "radicals": [
       "Say",
       "Sheep"
-    ]
+    ],
+    "id": "u8a73",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "くわ.しい",
+        "つまび.らか"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "象",
@@ -3281,7 +4919,21 @@
     "jlpt": "N2",
     "radicals": [
       "Elephant"
-    ]
+    ],
+    "id": "u8c61",
+    "readings": {
+      "on": [
+        "しょう",
+        "ぞう"
+      ],
+      "kun": [
+        "かたど.る"
+      ]
+    },
+    "radical": {
+      "name": "Elephant",
+      "meaning": "Elephant radical"
+    }
   },
   {
     "kanji": "賞",
@@ -3314,7 +4966,20 @@
     ],
     "confusedWith": [
       "費"
-    ]
+    ],
+    "id": "u8cde",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "ほ.める"
+      ]
+    },
+    "radical": {
+      "name": "Viking",
+      "meaning": "Viking radical"
+    }
   },
   {
     "kanji": "障",
@@ -3337,7 +5002,20 @@
     "radicals": [
       "Building",
       "Chapter"
-    ]
+    ],
+    "id": "u969c",
+    "readings": {
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "さわ.る"
+      ]
+    },
+    "radical": {
+      "name": "Building",
+      "meaning": "Building radical"
+    }
   },
   {
     "kanji": "壌",
@@ -3367,7 +5045,20 @@
     ],
     "confusedWith": [
       "譲"
-    ]
+    ],
+    "id": "u58cc",
+    "readings": {
+      "on": [
+        "じょう"
+      ],
+      "kun": [
+        "つち"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "常",
@@ -3399,7 +5090,21 @@
     ],
     "confusedWith": [
       "裳"
-    ]
+    ],
+    "id": "u5e38",
+    "readings": {
+      "on": [
+        "じょう"
+      ],
+      "kun": [
+        "つね",
+        "とこ-"
+      ]
+    },
+    "radical": {
+      "name": "Viking",
+      "meaning": "Viking radical"
+    }
   },
   {
     "kanji": "情",
@@ -3430,7 +5135,21 @@
     ],
     "confusedWith": [
       "請"
-    ]
+    ],
+    "id": "u60c5",
+    "readings": {
+      "on": [
+        "じょう",
+        "せい"
+      ],
+      "kun": [
+        "なさ.け"
+      ]
+    },
+    "radical": {
+      "name": "Soul",
+      "meaning": "Soul radical"
+    }
   },
   {
     "kanji": "譲",
@@ -3460,7 +5179,20 @@
     ],
     "confusedWith": [
       "壌"
-    ]
+    ],
+    "id": "u8b72",
+    "readings": {
+      "on": [
+        "じょう"
+      ],
+      "kun": [
+        "ゆず.る"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "申",
@@ -3488,7 +5220,22 @@
     ],
     "examples": [
       "申す(もうす)"
-    ]
+    ],
+    "id": "u7533",
+    "readings": {
+      "on": [
+        "しん"
+      ],
+      "kun": [
+        "もう.す",
+        "もう.し-",
+        "さる"
+      ]
+    },
+    "radical": {
+      "name": "Cross",
+      "meaning": "Cross radical"
+    }
   },
   {
     "kanji": "図",
@@ -3517,7 +5264,22 @@
     ],
     "examples": [
       "図る(企てる)"
-    ]
+    ],
+    "id": "u56f3",
+    "readings": {
+      "on": [
+        "ず",
+        "と"
+      ],
+      "kun": [
+        "え",
+        "はか.る"
+      ]
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "衰",
@@ -3544,7 +5306,20 @@
     ],
     "examples": [
       "衰退(すいたい)"
-    ]
+    ],
+    "id": "u8870",
+    "readings": {
+      "on": [
+        "すい"
+      ],
+      "kun": [
+        "おとろ.える"
+      ]
+    },
+    "radical": {
+      "name": "Lid",
+      "meaning": "Lid radical"
+    }
   },
   {
     "kanji": "遂",
@@ -3569,7 +5344,21 @@
       "Scooter",
       "Horns",
       "Pig"
-    ]
+    ],
+    "id": "u9042",
+    "readings": {
+      "on": [
+        "すい"
+      ],
+      "kun": [
+        "と.げる",
+        "つい.に"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "随",
@@ -3594,7 +5383,21 @@
       "Building",
       "Have",
       "Scooter"
-    ]
+    ],
+    "id": "u968f",
+    "readings": {
+      "on": [
+        "ずい"
+      ],
+      "kun": [
+        "まにま.に",
+        "したが.う"
+      ]
+    },
+    "radical": {
+      "name": "Building",
+      "meaning": "Building radical"
+    }
   },
   {
     "kanji": "髄",
@@ -3616,7 +5419,18 @@
       "Bone",
       "Have",
       "Scooter"
-    ]
+    ],
+    "id": "u9ac4",
+    "readings": {
+      "on": [
+        "ずい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Bone",
+      "meaning": "Bone radical"
+    }
   },
   {
     "kanji": "崇",
@@ -3640,7 +5454,20 @@
       "Mountain",
       "Roof",
       "Jackhammer"
-    ]
+    ],
+    "id": "u5d07",
+    "readings": {
+      "on": [
+        "すう"
+      ],
+      "kun": [
+        "あが.める"
+      ]
+    },
+    "radical": {
+      "name": "Mountain",
+      "meaning": "Mountain radical"
+    }
   },
   {
     "kanji": "枢",
@@ -3665,7 +5492,22 @@
     "radicals": [
       "Tree",
       "District"
-    ]
+    ],
+    "id": "u67a2",
+    "readings": {
+      "on": [
+        "すう",
+        "しゅ"
+      ],
+      "kun": [
+        "とぼそ",
+        "からくり"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "据",
@@ -3690,7 +5532,21 @@
       "Fingers",
       "Flag",
       "Old"
-    ]
+    ],
+    "id": "u636e",
+    "readings": {
+      "on": [
+        "きょ"
+      ],
+      "kun": [
+        "す.える",
+        "す.わる"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "杉",
@@ -3713,7 +5569,20 @@
     "radicals": [
       "Tree",
       "Hair"
-    ]
+    ],
+    "id": "u6749",
+    "readings": {
+      "on": [
+        "さん"
+      ],
+      "kun": [
+        "すぎ"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "澄",
@@ -3739,7 +5608,22 @@
       "Tsunami",
       "Tent",
       "Beans"
-    ]
+    ],
+    "id": "u6f84",
+    "readings": {
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "す.む",
+        "す.ます",
+        "-す.ます"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "瀬",
@@ -3763,7 +5647,20 @@
       "Tsunami",
       "Bundle",
       "Geoduck"
-    ]
+    ],
+    "id": "u702c",
+    "readings": {
+      "on": [
+        "らい"
+      ],
+      "kun": [
+        "せ"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "晴",
@@ -3797,7 +5694,24 @@
     ],
     "confusedWith": [
       "清"
-    ]
+    ],
+    "id": "u6674",
+    "readings": {
+      "on": [
+        "せい"
+      ],
+      "kun": [
+        "は.れる",
+        "は.れ",
+        "は.れ-",
+        "-ば.れ",
+        "は.らす"
+      ]
+    },
+    "radical": {
+      "name": "Sun",
+      "meaning": "Sun radical"
+    }
   },
   {
     "kanji": "清",
@@ -3833,7 +5747,24 @@
     ],
     "confusedWith": [
       "精"
-    ]
+    ],
+    "id": "u6e05",
+    "readings": {
+      "on": [
+        "せい",
+        "しょう",
+        "しん"
+      ],
+      "kun": [
+        "きよ.い",
+        "きよ.まる",
+        "きよ.める"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "生",
@@ -3876,7 +5807,38 @@
     ],
     "examples": [
       "生(せい/しょう/なま/い)"
-    ]
+    ],
+    "id": "u751f",
+    "readings": {
+      "on": [
+        "せい",
+        "しょう"
+      ],
+      "kun": [
+        "い.きる",
+        "い.かす",
+        "い.ける",
+        "う.まれる",
+        "うま.れる",
+        "う.まれ",
+        "うまれ",
+        "う.む",
+        "お.う",
+        "は.える",
+        "は.やす",
+        "き",
+        "なま",
+        "なま-",
+        "な.る",
+        "な.す",
+        "む.す",
+        "-う"
+      ]
+    },
+    "radical": {
+      "name": "Life",
+      "meaning": "Life radical"
+    }
   },
   {
     "kanji": "精",
@@ -3908,7 +5870,22 @@
     ],
     "confusedWith": [
       "清"
-    ]
+    ],
+    "id": "u7cbe",
+    "readings": {
+      "on": [
+        "せい",
+        "しょう"
+      ],
+      "kun": [
+        "しら.げる",
+        "くわ.しい"
+      ]
+    },
+    "radical": {
+      "name": "Rice",
+      "meaning": "Rice radical"
+    }
   },
   {
     "kanji": "請",
@@ -3941,7 +5918,23 @@
     ],
     "confusedWith": [
       "情"
-    ]
+    ],
+    "id": "u8acb",
+    "readings": {
+      "on": [
+        "せい",
+        "しん",
+        "しょう"
+      ],
+      "kun": [
+        "こ.う",
+        "う.ける"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "摂",
@@ -3968,7 +5961,23 @@
       "Fingers",
       "Ear",
       "Explosion"
-    ]
+    ],
+    "id": "u6442",
+    "readings": {
+      "on": [
+        "せつ",
+        "しょう"
+      ],
+      "kun": [
+        "おさ.める",
+        "かね.る",
+        "と.る"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "窃",
@@ -3993,7 +6002,21 @@
       "Hole",
       "Seven",
       "Sword"
-    ]
+    ],
+    "id": "u7a83",
+    "readings": {
+      "on": [
+        "せつ"
+      ],
+      "kun": [
+        "ぬす.む",
+        "ひそ.か"
+      ]
+    },
+    "radical": {
+      "name": "Hole",
+      "meaning": "Hole radical"
+    }
   },
   {
     "kanji": "仙",
@@ -4015,7 +6038,19 @@
     "radicals": [
       "Leader",
       "Mountain"
-    ]
+    ],
+    "id": "u4ed9",
+    "readings": {
+      "on": [
+        "せん",
+        "せんと"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "千",
@@ -4044,7 +6079,20 @@
     ],
     "confusedWith": [
       "干"
-    ]
+    ],
+    "id": "u5343",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "ち"
+      ]
+    },
+    "radical": {
+      "name": "Thousand",
+      "meaning": "Thousand radical"
+    }
   },
   {
     "kanji": "占",
@@ -4067,7 +6115,21 @@
     "jlpt": "N2",
     "radicals": [
       "Fortune"
-    ]
+    ],
+    "id": "u5360",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "し.める",
+        "うらな.う"
+      ]
+    },
+    "radical": {
+      "name": "Fortune",
+      "meaning": "Fortune radical"
+    }
   },
   {
     "kanji": "専",
@@ -4101,7 +6163,20 @@
     ],
     "confusedWith": [
       "博"
-    ]
+    ],
+    "id": "u5c02",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "もっぱ.ら"
+      ]
+    },
+    "radical": {
+      "name": "Cross",
+      "meaning": "Cross radical"
+    }
   },
   {
     "kanji": "扇",
@@ -4124,7 +6199,20 @@
     "radicals": [
       "Door",
       "Feathers"
-    ]
+    ],
+    "id": "u6247",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "おうぎ"
+      ]
+    },
+    "radical": {
+      "name": "Door",
+      "meaning": "Door radical"
+    }
   },
   {
     "kanji": "栓",
@@ -4146,7 +6234,18 @@
       "Tree",
       "Hat",
       "King"
-    ]
+    ],
+    "id": "u6813",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "泉",
@@ -4169,7 +6268,20 @@
     "radicals": [
       "White",
       "Water"
-    ]
+    ],
+    "id": "u6cc9",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "いずみ"
+      ]
+    },
+    "radical": {
+      "name": "White",
+      "meaning": "White radical"
+    }
   },
   {
     "kanji": "浅",
@@ -4192,7 +6304,20 @@
     "radicals": [
       "Tsunami",
       "Bar"
-    ]
+    ],
+    "id": "u6d45",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "あさ.い"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "洗",
@@ -4215,7 +6340,20 @@
     "radicals": [
       "Tsunami",
       "Previous"
-    ]
+    ],
+    "id": "u6d17",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "あら.う"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "染",
@@ -4255,7 +6393,27 @@
     ],
     "confusedWith": [
       "査"
-    ]
+    ],
+    "id": "u67d3",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "そ.める",
+        "-ぞ.め",
+        "-ぞめ",
+        "そ.まる",
+        "し.みる",
+        "-じ.みる",
+        "し.み",
+        "-し.める"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "繊",
@@ -4278,7 +6436,18 @@
       "Cross",
       "Spikes",
       "Drunkard"
-    ]
+    ],
+    "id": "u7e4a",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "羨",
@@ -4300,7 +6469,22 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u7fa8",
+    "readings": {
+      "on": [
+        "せん",
+        "えん"
+      ],
+      "kun": [
+        "うらや.む",
+        "あまり"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "腺",
@@ -4318,7 +6502,18 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u817a",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "詮",
@@ -4340,7 +6535,22 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u8a6e",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "せん.ずる",
+        "かい",
+        "あき.らか"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "践",
@@ -4363,7 +6573,20 @@
     "radicals": [
       "Foot",
       "Bar"
-    ]
+    ],
+    "id": "u8df5",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "ふ.む"
+      ]
+    },
+    "radical": {
+      "name": "Foot",
+      "meaning": "Foot radical"
+    }
   },
   {
     "kanji": "遷",
@@ -4390,7 +6613,22 @@
       "Helicopter",
       "Big",
       "Oneself"
-    ]
+    ],
+    "id": "u9077",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "うつ.る",
+        "うつ.す",
+        "みやこがえ"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "鮮",
@@ -4413,7 +6651,20 @@
     "radicals": [
       "Sheep",
       "Fish"
-    ]
+    ],
+    "id": "u9bae",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "あざ.やか"
+      ]
+    },
+    "radical": {
+      "name": "Sheep",
+      "meaning": "Sheep radical"
+    }
   },
   {
     "kanji": "漸",
@@ -4440,7 +6691,23 @@
       "Tsunami",
       "Car",
       "Axe"
-    ]
+    ],
+    "id": "u6f38",
+    "readings": {
+      "on": [
+        "ぜん"
+      ],
+      "kun": [
+        "ようや.く",
+        "やや",
+        "ようよ.う",
+        "すす.む"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "禅",
@@ -4465,7 +6732,22 @@
     "radicals": [
       "Spirit",
       "Simple"
-    ]
+    ],
+    "id": "u7985",
+    "readings": {
+      "on": [
+        "ぜん",
+        "せん"
+      ],
+      "kun": [
+        "しずか",
+        "ゆず.る"
+      ]
+    },
+    "radical": {
+      "name": "Spirit",
+      "meaning": "Spirit radical"
+    }
   },
   {
     "kanji": "繕",
@@ -4485,7 +6767,20 @@
     "grade": 8,
     "strokes": 18,
     "jlpt": "N1",
-    "radicals": []
+    "radicals": [],
+    "id": "u7e55",
+    "readings": {
+      "on": [
+        "ぜん"
+      ],
+      "kun": [
+        "つくろ.う"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "膳",
@@ -4508,7 +6803,23 @@
     "grade": 8,
     "strokes": 16,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u81b3",
+    "readings": {
+      "on": [
+        "ぜん",
+        "せん"
+      ],
+      "kun": [
+        "かしわ",
+        "すす.める",
+        "そな.える"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "塑",
@@ -4528,7 +6839,20 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": "N1",
-    "radicals": []
+    "radicals": [],
+    "id": "u5851",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "でく"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "措",
@@ -4551,7 +6875,20 @@
     "radicals": [
       "Fingers",
       "Long Ago"
-    ]
+    ],
+    "id": "u63aa",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "お.く"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "疎",
@@ -4577,7 +6914,23 @@
     "radicals": [
       "Coat Rack",
       "Bundle"
-    ]
+    ],
+    "id": "u758e",
+    "readings": {
+      "on": [
+        "そ",
+        "しょ"
+      ],
+      "kun": [
+        "うと.い",
+        "うと.む",
+        "まば.ら"
+      ]
+    },
+    "radical": {
+      "name": "Coat Rack",
+      "meaning": "Coat Rack radical"
+    }
   },
   {
     "kanji": "礎",
@@ -4601,7 +6954,20 @@
       "Stone",
       "Tree",
       "Coat Rack"
-    ]
+    ],
+    "id": "u790e",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "いしずえ"
+      ]
+    },
+    "radical": {
+      "name": "Stone",
+      "meaning": "Stone radical"
+    }
   },
   {
     "kanji": "租",
@@ -4622,7 +6988,18 @@
     "radicals": [
       "Grain",
       "Top Hat"
-    ]
+    ],
+    "id": "u79df",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Grain",
+      "meaning": "Grain radical"
+    }
   },
   {
     "kanji": "粗",
@@ -4646,7 +7023,21 @@
     "radicals": [
       "Rice",
       "Top Hat"
-    ]
+    ],
+    "id": "u7c97",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "あら.い",
+        "あら-"
+      ]
+    },
+    "radical": {
+      "name": "Rice",
+      "meaning": "Rice radical"
+    }
   },
   {
     "kanji": "訴",
@@ -4670,7 +7061,20 @@
       "Say",
       "Axe",
       "Drop"
-    ]
+    ],
+    "id": "u8a34",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "うった.える"
+      ]
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "阻",
@@ -4693,7 +7097,20 @@
     "radicals": [
       "Building",
       "Top Hat"
-    ]
+    ],
+    "id": "u963b",
+    "readings": {
+      "on": [
+        "そ"
+      ],
+      "kun": [
+        "はば.む"
+      ]
+    },
+    "radical": {
+      "name": "Building",
+      "meaning": "Building radical"
+    }
   },
   {
     "kanji": "遡",
@@ -4714,7 +7131,21 @@
     "grade": 8,
     "strokes": 13,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u9061",
+    "readings": {
+      "on": [
+        "そ",
+        "さく"
+      ],
+      "kun": [
+        "さかのぼ.る"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "双",
@@ -4739,7 +7170,23 @@
     "jlpt": "N2",
     "radicals": [
       "Stool"
-    ]
+    ],
+    "id": "u53cc",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "ふた",
+        "たぐい",
+        "ならぶ",
+        "ふたつ"
+      ]
+    },
+    "radical": {
+      "name": "Stool",
+      "meaning": "Stool radical"
+    }
   },
   {
     "kanji": "壮",
@@ -4762,7 +7209,20 @@
     "radicals": [
       "Icicle",
       "Samurai"
-    ]
+    ],
+    "id": "u58ee",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "さかん"
+      ]
+    },
+    "radical": {
+      "name": "Icicle",
+      "meaning": "Icicle radical"
+    }
   },
   {
     "kanji": "奏",
@@ -4785,7 +7245,20 @@
     "radicals": [
       "Spring",
       "Heaven"
-    ]
+    ],
+    "id": "u594f",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "かな.でる"
+      ]
+    },
+    "radical": {
+      "name": "Spring",
+      "meaning": "Spring radical"
+    }
   },
   {
     "kanji": "爽",
@@ -4810,7 +7283,22 @@
     "radicals": [
       "Big",
       "Treasure"
-    ]
+    ],
+    "id": "u723d",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "あき.らか",
+        "さわ.やか",
+        "たがう"
+      ]
+    },
+    "radical": {
+      "name": "Big",
+      "meaning": "Big radical"
+    }
   },
   {
     "kanji": "宋",
@@ -4820,7 +7308,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u5b8b",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "層",
@@ -4841,7 +7338,18 @@
     "radicals": [
       "Flag",
       "Mask"
-    ]
+    ],
+    "id": "u5c64",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Flag",
+      "meaning": "Flag radical"
+    }
   },
   {
     "kanji": "匝",
@@ -4851,7 +7359,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u531d",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "惣",
@@ -4861,7 +7378,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u60e3",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "想",
@@ -4886,7 +7412,21 @@
       "Tree",
       "Eye",
       "Heart"
-    ]
+    ],
+    "id": "u60f3",
+    "readings": {
+      "on": [
+        "そう",
+        "そ"
+      ],
+      "kun": [
+        "おも.う"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "捜",
@@ -4912,7 +7452,22 @@
       "Fingers",
       "Humble",
       "Stool"
-    ]
+    ],
+    "id": "u635c",
+    "readings": {
+      "on": [
+        "そう",
+        "しゅ",
+        "しゅう"
+      ],
+      "kun": [
+        "さが.す"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "掃",
@@ -4938,7 +7493,21 @@
       "Wolverine",
       "Forehead",
       "Towel"
-    ]
+    ],
+    "id": "u6383",
+    "readings": {
+      "on": [
+        "そう",
+        "しゅ"
+      ],
+      "kun": [
+        "は.く"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "挿",
@@ -4963,7 +7532,21 @@
       "Fingers",
       "Thousand",
       "Sun"
-    ]
+    ],
+    "id": "u633f",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "さ.す",
+        "はさ.む"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "操",
@@ -4988,7 +7571,22 @@
     "radicals": [
       "Fingers",
       "Syrup"
-    ]
+    ],
+    "id": "u64cd",
+    "readings": {
+      "on": [
+        "そう",
+        "さん"
+      ],
+      "kun": [
+        "みさお",
+        "あやつ.る"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "早",
@@ -5017,7 +7615,26 @@
     "radicals": [
       "Sun",
       "Cross"
-    ]
+    ],
+    "id": "u65e9",
+    "readings": {
+      "on": [
+        "そう",
+        "さっ"
+      ],
+      "kun": [
+        "はや.い",
+        "はや",
+        "はや-",
+        "はや.まる",
+        "はや.める",
+        "さ-"
+      ]
+    },
+    "radical": {
+      "name": "Sun",
+      "meaning": "Sun radical"
+    }
   },
   {
     "kanji": "曹",
@@ -5040,7 +7657,19 @@
       "Ground",
       "Music",
       "Sun"
-    ]
+    ],
+    "id": "u66f9",
+    "readings": {
+      "on": [
+        "そう",
+        "ぞう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Ground",
+      "meaning": "Ground radical"
+    }
   },
   {
     "kanji": "槽",
@@ -5065,7 +7694,20 @@
       "Ground",
       "Music",
       "Sun"
-    ]
+    ],
+    "id": "u69fd",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "ふね"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "燥",
@@ -5088,7 +7730,20 @@
     "radicals": [
       "Fire",
       "Syrup"
-    ]
+    ],
+    "id": "u71e5",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "はしゃ.ぐ"
+      ]
+    },
+    "radical": {
+      "name": "Fire",
+      "meaning": "Fire radical"
+    }
   },
   {
     "kanji": "争",
@@ -5113,7 +7768,21 @@
       "Prison",
       "Wolverine",
       "Barb"
-    ]
+    ],
+    "id": "u4e89",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "あらそ.う",
+        "いか.でか"
+      ]
+    },
+    "radical": {
+      "name": "Prison",
+      "meaning": "Prison radical"
+    }
   },
   {
     "kanji": "痩",
@@ -5136,7 +7805,23 @@
     "grade": 8,
     "strokes": 12,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u75e9",
+    "readings": {
+      "on": [
+        "そう",
+        "ちゅう",
+        "しゅう",
+        "しゅ"
+      ],
+      "kun": [
+        "や.せる"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "相",
@@ -5160,7 +7845,21 @@
     "radicals": [
       "Tree",
       "Eye"
-    ]
+    ],
+    "id": "u76f8",
+    "readings": {
+      "on": [
+        "そう",
+        "しょう"
+      ],
+      "kun": [
+        "あい-"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "窓",
@@ -5187,7 +7886,23 @@
       "Hole",
       "Private",
       "Heart"
-    ]
+    ],
+    "id": "u7a93",
+    "readings": {
+      "on": [
+        "そう",
+        "す"
+      ],
+      "kun": [
+        "まど",
+        "てんまど",
+        "けむだし"
+      ]
+    },
+    "radical": {
+      "name": "Hole",
+      "meaning": "Hole radical"
+    }
   },
   {
     "kanji": "糟",
@@ -5197,7 +7912,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u7cdf",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "総",
@@ -5223,7 +7947,22 @@
       "Thread",
       "Public",
       "Heart"
-    ]
+    ],
+    "id": "u7dcf",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "す.べて",
+        "すべ.て",
+        "ふさ"
+      ]
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "綜",
@@ -5233,7 +7972,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u7d9c",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "聡",
@@ -5243,7 +7991,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u8061",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "草",
@@ -5269,7 +8026,22 @@
       "Flowers",
       "Sun",
       "Cross"
-    ]
+    ],
+    "id": "u8349",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "くさ",
+        "くさ-",
+        "-ぐさ"
+      ]
+    },
+    "radical": {
+      "name": "Flowers",
+      "meaning": "Flowers radical"
+    }
   },
   {
     "kanji": "荘",
@@ -5296,7 +8068,23 @@
       "Flowers",
       "Icicle",
       "Samurai"
-    ]
+    ],
+    "id": "u8358",
+    "readings": {
+      "on": [
+        "そう",
+        "しょう",
+        "ちゃん"
+      ],
+      "kun": [
+        "ほうき",
+        "おごそ.か"
+      ]
+    },
+    "radical": {
+      "name": "Flowers",
+      "meaning": "Flowers radical"
+    }
   },
   {
     "kanji": "葬",
@@ -5321,7 +8109,20 @@
       "Yakuza",
       "Spoon",
       "Twenty"
-    ]
+    ],
+    "id": "u846c",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "ほうむ.る"
+      ]
+    },
+    "radical": {
+      "name": "Flowers",
+      "meaning": "Flowers radical"
+    }
   },
   {
     "kanji": "蒼",
@@ -5331,7 +8132,16 @@
     ],
     "sources": [
       "bunka.go.jp"
-    ]
+    ],
+    "id": "u84bc",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "藻",
@@ -5355,7 +8165,20 @@
       "Flowers",
       "Tsunami",
       "Syrup"
-    ]
+    ],
+    "id": "u85fb",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "も"
+      ]
+    },
+    "radical": {
+      "name": "Flowers",
+      "meaning": "Flowers radical"
+    }
   },
   {
     "kanji": "装",
@@ -5381,7 +8204,22 @@
       "Icicle",
       "Samurai",
       "Clothes"
-    ]
+    ],
+    "id": "u88c5",
+    "readings": {
+      "on": [
+        "そう",
+        "しょう"
+      ],
+      "kun": [
+        "よそお.う",
+        "よそお.い"
+      ]
+    },
+    "radical": {
+      "name": "Icicle",
+      "meaning": "Icicle radical"
+    }
   },
   {
     "kanji": "走",
@@ -5403,7 +8241,20 @@
     "jlpt": "N4",
     "radicals": [
       "Run"
-    ]
+    ],
+    "id": "u8d70",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "はし.る"
+      ]
+    },
+    "radical": {
+      "name": "Run",
+      "meaning": "Run radical"
+    }
   },
   {
     "kanji": "送",
@@ -5427,7 +8278,20 @@
       "Scooter",
       "Horns",
       "Heaven"
-    ]
+    ],
+    "id": "u9001",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "おく.る"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "遭",
@@ -5453,7 +8317,21 @@
       "Ground",
       "Music",
       "Sun"
-    ]
+    ],
+    "id": "u906d",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "あ.う",
+        "あ.わせる"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "霜",
@@ -5477,7 +8355,20 @@
       "Rain",
       "Tree",
       "Eye"
-    ]
+    ],
+    "id": "u971c",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "しも"
+      ]
+    },
+    "radical": {
+      "name": "Rain",
+      "meaning": "Rain radical"
+    }
   },
   {
     "kanji": "騒",
@@ -5503,7 +8394,22 @@
       "Horse",
       "Stool",
       "Insect"
-    ]
+    ],
+    "id": "u9a12",
+    "readings": {
+      "on": [
+        "そう"
+      ],
+      "kun": [
+        "さわ.ぐ",
+        "うれい",
+        "さわ.がしい"
+      ]
+    },
+    "radical": {
+      "name": "Horse",
+      "meaning": "Horse radical"
+    }
   },
   {
     "kanji": "促",
@@ -5526,7 +8432,20 @@
     "radicals": [
       "Leader",
       "Foot"
-    ]
+    ],
+    "id": "u4fc3",
+    "readings": {
+      "on": [
+        "そく"
+      ],
+      "kun": [
+        "うなが.す"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "測",
@@ -5553,7 +8472,20 @@
     ],
     "examples": [
       "測る(長さ・深さ)"
-    ]
+    ],
+    "id": "u6e2c",
+    "readings": {
+      "on": [
+        "そく"
+      ],
+      "kun": [
+        "はか.る"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "存",
@@ -5584,7 +8516,24 @@
     ],
     "examples": [
       "存じる(ぞんじる)"
-    ]
+    ],
+    "id": "u5b58",
+    "readings": {
+      "on": [
+        "そん",
+        "ぞん"
+      ],
+      "kun": [
+        "ながら.える",
+        "あ.る",
+        "たも.つ",
+        "と.う"
+      ]
+    },
+    "radical": {
+      "name": "Narwhal",
+      "meaning": "Narwhal radical"
+    }
   },
   {
     "kanji": "損",
@@ -5618,7 +8567,24 @@
     ],
     "confusedWith": [
       "員"
-    ]
+    ],
+    "id": "u640d",
+    "readings": {
+      "on": [
+        "そん"
+      ],
+      "kun": [
+        "そこ.なう",
+        "そこな.う",
+        "-そこ.なう",
+        "そこ.ねる",
+        "-そこ.ねる"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "太",
@@ -5650,7 +8616,22 @@
     ],
     "confusedWith": [
       "犬"
-    ]
+    ],
+    "id": "u592a",
+    "readings": {
+      "on": [
+        "たい",
+        "た"
+      ],
+      "kun": [
+        "ふと.い",
+        "ふと.る"
+      ]
+    },
+    "radical": {
+      "name": "Big",
+      "meaning": "Big radical"
+    }
   },
   {
     "kanji": "体",
@@ -5685,7 +8666,22 @@
     ],
     "confusedWith": [
       "礼"
-    ]
+    ],
+    "id": "u4f53",
+    "readings": {
+      "on": [
+        "たい",
+        "てい"
+      ],
+      "kun": [
+        "からだ",
+        "かたち"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "待",
@@ -5716,7 +8712,21 @@
     ],
     "confusedWith": [
       "持"
-    ]
+    ],
+    "id": "u5f85",
+    "readings": {
+      "on": [
+        "たい"
+      ],
+      "kun": [
+        "ま.つ",
+        "-ま.ち"
+      ]
+    },
+    "radical": {
+      "name": "Loiter",
+      "meaning": "Loiter radical"
+    }
   },
   {
     "kanji": "替",
@@ -5744,7 +8754,22 @@
     ],
     "examples": [
       "替える(かえる)"
-    ]
+    ],
+    "id": "u66ff",
+    "readings": {
+      "on": [
+        "たい"
+      ],
+      "kun": [
+        "か.える",
+        "か.え-",
+        "か.わる"
+      ]
+    },
+    "radical": {
+      "name": "Husband",
+      "meaning": "Husband radical"
+    }
   },
   {
     "kanji": "袋",
@@ -5771,7 +8796,21 @@
     ],
     "examples": [
       "袋(ふくろ)"
-    ]
+    ],
+    "id": "u888b",
+    "readings": {
+      "on": [
+        "たい",
+        "だい"
+      ],
+      "kun": [
+        "ふくろ"
+      ]
+    },
+    "radical": {
+      "name": "Substitute",
+      "meaning": "Substitute radical"
+    }
   },
   {
     "kanji": "貸",
@@ -5803,7 +8842,22 @@
     ],
     "confusedWith": [
       "貨"
-    ]
+    ],
+    "id": "u8cb8",
+    "readings": {
+      "on": [
+        "たい"
+      ],
+      "kun": [
+        "か.す",
+        "か.し-",
+        "かし-"
+      ]
+    },
+    "radical": {
+      "name": "Substitute",
+      "meaning": "Substitute radical"
+    }
   },
   {
     "kanji": "退",
@@ -5838,7 +8892,25 @@
     ],
     "confusedWith": [
       "遅"
-    ]
+    ],
+    "id": "u9000",
+    "readings": {
+      "on": [
+        "たい"
+      ],
+      "kun": [
+        "しりぞ.く",
+        "しりぞ.ける",
+        "ひ.く",
+        "の.く",
+        "の.ける",
+        "ど.く"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "代",
@@ -5880,7 +8952,29 @@
     ],
     "confusedWith": [
       "伐"
-    ]
+    ],
+    "id": "u4ee3",
+    "readings": {
+      "on": [
+        "だい",
+        "たい"
+      ],
+      "kun": [
+        "か.わる",
+        "かわ.る",
+        "かわ.り",
+        "か.わり",
+        "-がわ.り",
+        "-が.わり",
+        "か.える",
+        "よ",
+        "しろ"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "諾",
@@ -5902,7 +8996,18 @@
       "Say",
       "Flowers",
       "Right"
-    ]
+    ],
+    "id": "u8afe",
+    "readings": {
+      "on": [
+        "だく"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Say",
+      "meaning": "Say radical"
+    }
   },
   {
     "kanji": "致",
@@ -5928,7 +9033,20 @@
     ],
     "examples": [
       "致す(いたす)"
-    ]
+    ],
+    "id": "u81f4",
+    "readings": {
+      "on": [
+        "ち"
+      ],
+      "kun": [
+        "いた.す"
+      ]
+    },
+    "radical": {
+      "name": "Mole",
+      "meaning": "Mole radical"
+    }
   },
   {
     "kanji": "遅",
@@ -5961,7 +9079,22 @@
     ],
     "confusedWith": [
       "退"
-    ]
+    ],
+    "id": "u9045",
+    "readings": {
+      "on": [
+        "ち"
+      ],
+      "kun": [
+        "おく.れる",
+        "おく.らす",
+        "おそ.い"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "衷",
@@ -5982,7 +9115,18 @@
     "radicals": [],
     "examples": [
       "衷心(ちゅうしん)"
-    ]
+    ],
+    "id": "u8877",
+    "readings": {
+      "on": [
+        "ちゅう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "著",
@@ -6018,7 +9162,22 @@
     ],
     "confusedWith": [
       "薯"
-    ]
+    ],
+    "id": "u8457",
+    "readings": {
+      "on": [
+        "ちょ",
+        "ちゃく"
+      ],
+      "kun": [
+        "あらわ.す",
+        "いちじる.しい"
+      ]
+    },
+    "radical": {
+      "name": "Flowers",
+      "meaning": "Flowers radical"
+    }
   },
   {
     "kanji": "頂",
@@ -6045,7 +9204,21 @@
     ],
     "examples": [
       "頂く(いただく)"
-    ]
+    ],
+    "id": "u9802",
+    "readings": {
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "いただ.く",
+        "いただき"
+      ]
+    },
+    "radical": {
+      "name": "Street",
+      "meaning": "Street radical"
+    }
   },
   {
     "kanji": "墜",
@@ -6071,7 +9244,21 @@
       "Horns",
       "Pig",
       "Dirt"
-    ]
+    ],
+    "id": "u589c",
+    "readings": {
+      "on": [
+        "つい"
+      ],
+      "kun": [
+        "お.ちる",
+        "お.つ"
+      ]
+    },
+    "radical": {
+      "name": "Building",
+      "meaning": "Building radical"
+    }
   },
   {
     "kanji": "低",
@@ -6100,7 +9287,22 @@
     ],
     "examples": [
       "低下(ていか)"
-    ]
+    ],
+    "id": "u4f4e",
+    "readings": {
+      "on": [
+        "てい"
+      ],
+      "kun": [
+        "ひく.い",
+        "ひく.める",
+        "ひく.まる"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "定",
@@ -6129,7 +9331,23 @@
     ],
     "examples": [
       "定める(さだめる)"
-    ]
+    ],
+    "id": "u5b9a",
+    "readings": {
+      "on": [
+        "てい",
+        "じょう"
+      ],
+      "kun": [
+        "さだ.める",
+        "さだ.まる",
+        "さだ.か"
+      ]
+    },
+    "radical": {
+      "name": "Roof",
+      "meaning": "Roof radical"
+    }
   },
   {
     "kanji": "底",
@@ -6156,7 +9374,20 @@
     ],
     "examples": [
       "底辺(ていへん)"
-    ]
+    ],
+    "id": "u5e95",
+    "readings": {
+      "on": [
+        "てい"
+      ],
+      "kun": [
+        "そこ"
+      ]
+    },
+    "radical": {
+      "name": "Canopy",
+      "meaning": "Canopy radical"
+    }
   },
   {
     "kanji": "抵",
@@ -6181,7 +9412,18 @@
     ],
     "examples": [
       "抵触(ていしょく)"
-    ]
+    ],
+    "id": "u62b5",
+    "readings": {
+      "on": [
+        "てい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "邸",
@@ -6208,7 +9450,20 @@
     ],
     "examples": [
       "邸宅(ていたく)"
-    ]
+    ],
+    "id": "u90b8",
+    "readings": {
+      "on": [
+        "てい"
+      ],
+      "kun": [
+        "やしき"
+      ]
+    },
+    "radical": {
+      "name": "Clan",
+      "meaning": "Clan radical"
+    }
   },
   {
     "kanji": "敵",
@@ -6240,7 +9495,22 @@
     ],
     "confusedWith": [
       "適"
-    ]
+    ],
+    "id": "u6575",
+    "readings": {
+      "on": [
+        "てき"
+      ],
+      "kun": [
+        "かたき",
+        "あだ",
+        "かな.う"
+      ]
+    },
+    "radical": {
+      "name": "Mohawk",
+      "meaning": "Mohawk radical"
+    }
   },
   {
     "kanji": "適",
@@ -6270,7 +9540,20 @@
     ],
     "confusedWith": [
       "敵"
-    ]
+    ],
+    "id": "u9069",
+    "readings": {
+      "on": [
+        "てき"
+      ],
+      "kun": [
+        "かな.う"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "努",
@@ -6297,7 +9580,20 @@
     ],
     "examples": [
       "努める(つとめる)"
-    ]
+    ],
+    "id": "u52aa",
+    "readings": {
+      "on": [
+        "ど"
+      ],
+      "kun": [
+        "つと.める"
+      ]
+    },
+    "radical": {
+      "name": "Woman",
+      "meaning": "Woman radical"
+    }
   },
   {
     "kanji": "土",
@@ -6327,7 +9623,21 @@
     ],
     "confusedWith": [
       "士"
-    ]
+    ],
+    "id": "u571f",
+    "readings": {
+      "on": [
+        "ど",
+        "と"
+      ],
+      "kun": [
+        "つち"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "党",
@@ -6358,7 +9668,21 @@
     ],
     "confusedWith": [
       "堂"
-    ]
+    ],
+    "id": "u515a",
+    "readings": {
+      "on": [
+        "とう"
+      ],
+      "kun": [
+        "なかま",
+        "むら"
+      ]
+    },
+    "radical": {
+      "name": "Viking",
+      "meaning": "Viking radical"
+    }
   },
   {
     "kanji": "堂",
@@ -6387,7 +9711,18 @@
     ],
     "confusedWith": [
       "党"
-    ]
+    ],
+    "id": "u5802",
+    "readings": {
+      "on": [
+        "どう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Viking",
+      "meaning": "Viking radical"
+    }
   },
   {
     "kanji": "熱",
@@ -6414,7 +9749,20 @@
     ],
     "examples": [
       "熱い(あつい)"
-    ]
+    ],
+    "id": "u71b1",
+    "readings": {
+      "on": [
+        "ねつ"
+      ],
+      "kun": [
+        "あつ.い"
+      ]
+    },
+    "radical": {
+      "name": "Womb",
+      "meaning": "Womb radical"
+    }
   },
   {
     "kanji": "納",
@@ -6446,7 +9794,26 @@
     ],
     "examples": [
       "納める(おさめる)"
-    ]
+    ],
+    "id": "u7d0d",
+    "readings": {
+      "on": [
+        "のう",
+        "なっ",
+        "な",
+        "なん",
+        "とう"
+      ],
+      "kun": [
+        "おさ.める",
+        "-おさ.める",
+        "おさ.まる"
+      ]
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "俳",
@@ -6474,7 +9841,18 @@
     ],
     "confusedWith": [
       "徘"
-    ]
+    ],
+    "id": "u4ff3",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "廃",
@@ -6507,7 +9885,21 @@
     ],
     "confusedWith": [
       "発"
-    ]
+    ],
+    "id": "u5ec3",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "すた.れる",
+        "すた.る"
+      ]
+    },
+    "radical": {
+      "name": "Canopy",
+      "meaning": "Canopy radical"
+    }
   },
   {
     "kanji": "拝",
@@ -6541,7 +9933,21 @@
     ],
     "confusedWith": [
       "排"
-    ]
+    ],
+    "id": "u62dd",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "おが.む",
+        "おろが.む"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "排",
@@ -6569,7 +9975,18 @@
     ],
     "confusedWith": [
       "拝"
-    ]
+    ],
+    "id": "u6392",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "敗",
@@ -6599,7 +10016,20 @@
     ],
     "confusedWith": [
       "販"
-    ]
+    ],
+    "id": "u6557",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "やぶ.れる"
+      ]
+    },
+    "radical": {
+      "name": "Shellfish",
+      "meaning": "Shellfish radical"
+    }
   },
   {
     "kanji": "杯",
@@ -6629,7 +10059,20 @@
     ],
     "confusedWith": [
       "坏"
-    ]
+    ],
+    "id": "u676f",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "さかずき"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "背",
@@ -6662,7 +10105,23 @@
     ],
     "confusedWith": [
       "輩"
-    ]
+    ],
+    "id": "u80cc",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "せ",
+        "せい",
+        "そむ.く",
+        "そむ.ける"
+      ]
+    },
+    "radical": {
+      "name": "North",
+      "meaning": "North radical"
+    }
   },
   {
     "kanji": "肺",
@@ -6690,7 +10149,18 @@
     ],
     "confusedWith": [
       "廃"
-    ]
+    ],
+    "id": "u80ba",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Moon",
+      "meaning": "Moon radical"
+    }
   },
   {
     "kanji": "輩",
@@ -6723,7 +10193,23 @@
     ],
     "confusedWith": [
       "背"
-    ]
+    ],
+    "id": "u8f29",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "-ばら",
+        "やから",
+        "やかい",
+        "ともがら"
+      ]
+    },
+    "radical": {
+      "name": "Criminal",
+      "meaning": "Criminal radical"
+    }
   },
   {
     "kanji": "配",
@@ -6753,7 +10239,20 @@
     ],
     "confusedWith": [
       "酒"
-    ]
+    ],
+    "id": "u914d",
+    "readings": {
+      "on": [
+        "はい"
+      ],
+      "kun": [
+        "くば.る"
+      ]
+    },
+    "radical": {
+      "name": "Alcohol",
+      "meaning": "Alcohol radical"
+    }
   },
   {
     "kanji": "倍",
@@ -6781,7 +10280,18 @@
     ],
     "confusedWith": [
       "賠"
-    ]
+    ],
+    "id": "u500d",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "培",
@@ -6811,7 +10321,20 @@
     ],
     "confusedWith": [
       "陪"
-    ]
+    ],
+    "id": "u57f9",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "つちか.う"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "媒",
@@ -6842,7 +10365,20 @@
     ],
     "confusedWith": [
       "煤"
-    ]
+    ],
+    "id": "u5a92",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "なこうど"
+      ]
+    },
+    "radical": {
+      "name": "Woman",
+      "meaning": "Woman radical"
+    }
   },
   {
     "kanji": "梅",
@@ -6873,7 +10409,20 @@
     ],
     "confusedWith": [
       "悔"
-    ]
+    ],
+    "id": "u6885",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "うめ"
+      ]
+    },
+    "radical": {
+      "name": "Tree",
+      "meaning": "Tree radical"
+    }
   },
   {
     "kanji": "煤",
@@ -6890,7 +10439,16 @@
     ],
     "confusedWith": [
       "媒"
-    ]
+    ],
+    "id": "u7164",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "賠",
@@ -6918,7 +10476,18 @@
     ],
     "confusedWith": [
       "倍"
-    ]
+    ],
+    "id": "u8ce0",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Shellfish",
+      "meaning": "Shellfish radical"
+    }
   },
   {
     "kanji": "陪",
@@ -6948,7 +10517,18 @@
     ],
     "confusedWith": [
       "部"
-    ]
+    ],
+    "id": "u966a",
+    "readings": {
+      "on": [
+        "ばい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Building",
+      "meaning": "Building radical"
+    }
   },
   {
     "kanji": "伯",
@@ -6976,7 +10556,18 @@
     ],
     "confusedWith": [
       "泊"
-    ]
+    ],
+    "id": "u4f2f",
+    "readings": {
+      "on": [
+        "はく"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "博",
@@ -7008,7 +10599,19 @@
     ],
     "confusedWith": [
       "専"
-    ]
+    ],
+    "id": "u535a",
+    "readings": {
+      "on": [
+        "はく",
+        "ばく"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Cross",
+      "meaning": "Cross radical"
+    }
   },
   {
     "kanji": "拍",
@@ -7037,7 +10640,19 @@
     ],
     "confusedWith": [
       "柏"
-    ]
+    ],
+    "id": "u62cd",
+    "readings": {
+      "on": [
+        "はく",
+        "ひょう"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "柏",
@@ -7054,7 +10669,16 @@
     ],
     "confusedWith": [
       "拍"
-    ]
+    ],
+    "id": "u67cf",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "泊",
@@ -7085,7 +10709,21 @@
     ],
     "confusedWith": [
       "伯"
-    ]
+    ],
+    "id": "u6cca",
+    "readings": {
+      "on": [
+        "はく"
+      ],
+      "kun": [
+        "と.まる",
+        "と.める"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "発",
@@ -7123,7 +10761,25 @@
     ],
     "confusedWith": [
       "廃"
-    ]
+    ],
+    "id": "u767a",
+    "readings": {
+      "on": [
+        "はつ",
+        "ほつ"
+      ],
+      "kun": [
+        "た.つ",
+        "あば.く",
+        "おこ.る",
+        "つか.わす",
+        "はな.つ"
+      ]
+    },
+    "radical": {
+      "name": "Tent",
+      "meaning": "Tent radical"
+    }
   },
   {
     "kanji": "伐",
@@ -7158,7 +10814,25 @@
     ],
     "confusedWith": [
       "代"
-    ]
+    ],
+    "id": "u4f10",
+    "readings": {
+      "on": [
+        "ばつ",
+        "はつ",
+        "か",
+        "ぼち"
+      ],
+      "kun": [
+        "き.る",
+        "そむ.く",
+        "う.つ"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "帆",
@@ -7185,7 +10859,20 @@
     ],
     "examples": [
       "帆船(はんせん/ほせん)"
-    ]
+    ],
+    "id": "u5e06",
+    "readings": {
+      "on": [
+        "はん"
+      ],
+      "kun": [
+        "ほ"
+      ]
+    },
+    "radical": {
+      "name": "Towel",
+      "meaning": "Towel radical"
+    }
   },
   {
     "kanji": "氾",
@@ -7215,7 +10902,20 @@
     ],
     "confusedWith": [
       "犯"
-    ]
+    ],
+    "id": "u6c3e",
+    "readings": {
+      "on": [
+        "はん"
+      ],
+      "kun": [
+        "ひろ.がる"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "汎",
@@ -7243,7 +10943,25 @@
     "radicals": [],
     "examples": [
       "汎用(はんよう)"
-    ]
+    ],
+    "id": "u6c4e",
+    "readings": {
+      "on": [
+        "はん",
+        "ぶ",
+        "ふう",
+        "ほう",
+        "ほん"
+      ],
+      "kun": [
+        "ただよ.う",
+        "ひろ.い"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "犯",
@@ -7274,7 +10992,21 @@
     ],
     "confusedWith": [
       "氾"
-    ]
+    ],
+    "id": "u72af",
+    "readings": {
+      "on": [
+        "はん",
+        "ぼん"
+      ],
+      "kun": [
+        "おか.す"
+      ]
+    },
+    "radical": {
+      "name": "Animal",
+      "meaning": "Animal radical"
+    }
   },
   {
     "kanji": "販",
@@ -7302,7 +11034,18 @@
     ],
     "confusedWith": [
       "敗"
-    ]
+    ],
+    "id": "u8ca9",
+    "readings": {
+      "on": [
+        "はん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Shellfish",
+      "meaning": "Shellfish radical"
+    }
   },
   {
     "kanji": "煩",
@@ -7332,7 +11075,24 @@
     ],
     "examples": [
       "煩雑(はんざつ)"
-    ]
+    ],
+    "id": "u7169",
+    "readings": {
+      "on": [
+        "はん",
+        "ぼん"
+      ],
+      "kun": [
+        "わずら.う",
+        "わずら.わす",
+        "うるさ.がる",
+        "うるさ.い"
+      ]
+    },
+    "radical": {
+      "name": "Fire",
+      "meaning": "Fire radical"
+    }
   },
   {
     "kanji": "費",
@@ -7363,7 +11123,21 @@
     ],
     "confusedWith": [
       "賞"
-    ]
+    ],
+    "id": "u8cbb",
+    "readings": {
+      "on": [
+        "ひ"
+      ],
+      "kun": [
+        "つい.やす",
+        "つい.える"
+      ]
+    },
+    "radical": {
+      "name": "Dollar",
+      "meaning": "Dollar radical"
+    }
   },
   {
     "kanji": "飛",
@@ -7390,7 +11164,22 @@
     ],
     "examples": [
       "飛ぶ(9画)"
-    ]
+    ],
+    "id": "u98db",
+    "readings": {
+      "on": [
+        "ひ"
+      ],
+      "kun": [
+        "と.ぶ",
+        "と.ばす",
+        "-と.ばす"
+      ]
+    },
+    "radical": {
+      "name": "Fly",
+      "meaning": "Fly radical"
+    }
   },
   {
     "kanji": "必",
@@ -7416,7 +11205,20 @@
     ],
     "examples": [
       "必ず(5画)"
-    ]
+    ],
+    "id": "u5fc5",
+    "readings": {
+      "on": [
+        "ひつ"
+      ],
+      "kun": [
+        "かなら.ず"
+      ]
+    },
+    "radical": {
+      "name": "Heart",
+      "meaning": "Heart radical"
+    }
   },
   {
     "kanji": "表",
@@ -7446,7 +11248,24 @@
     ],
     "examples": [
       "表す/表わす"
-    ]
+    ],
+    "id": "u8868",
+    "readings": {
+      "on": [
+        "ひょう"
+      ],
+      "kun": [
+        "おもて",
+        "-おもて",
+        "あらわ.す",
+        "あらわ.れる",
+        "あら.わす"
+      ]
+    },
+    "radical": {
+      "name": "Life",
+      "meaning": "Life radical"
+    }
   },
   {
     "kanji": "布",
@@ -7472,7 +11291,20 @@
     ],
     "examples": [
       "布(ぬの)"
-    ]
+    ],
+    "id": "u5e03",
+    "readings": {
+      "on": [
+        "ふ"
+      ],
+      "kun": [
+        "ぬの"
+      ]
+    },
+    "radical": {
+      "name": "Narwhal",
+      "meaning": "Narwhal radical"
+    }
   },
   {
     "kanji": "侮",
@@ -7503,7 +11335,21 @@
     ],
     "confusedWith": [
       "悔"
-    ]
+    ],
+    "id": "u4fae",
+    "readings": {
+      "on": [
+        "ぶ"
+      ],
+      "kun": [
+        "あなど.る",
+        "あなず.る"
+      ]
+    },
+    "radical": {
+      "name": "Leader",
+      "meaning": "Leader radical"
+    }
   },
   {
     "kanji": "部",
@@ -7533,7 +11379,20 @@
     ],
     "confusedWith": [
       "陪"
-    ]
+    ],
+    "id": "u90e8",
+    "readings": {
+      "on": [
+        "ぶ"
+      ],
+      "kun": [
+        "-べ"
+      ]
+    },
+    "radical": {
+      "name": "Clown",
+      "meaning": "Clown radical"
+    }
   },
   {
     "kanji": "幅",
@@ -7556,7 +11415,20 @@
     "radicals": [
       "Towel",
       "Scarecrow"
-    ]
+    ],
+    "id": "u5e45",
+    "readings": {
+      "on": [
+        "ふく"
+      ],
+      "kun": [
+        "はば"
+      ]
+    },
+    "radical": {
+      "name": "Towel",
+      "meaning": "Towel radical"
+    }
   },
   {
     "kanji": "腹",
@@ -7579,7 +11451,20 @@
     "radicals": [
       "Moon",
       "Black Hole"
-    ]
+    ],
+    "id": "u8179",
+    "readings": {
+      "on": [
+        "ふく"
+      ],
+      "kun": [
+        "はら"
+      ]
+    },
+    "radical": {
+      "name": "Moon",
+      "meaning": "Moon radical"
+    }
   },
   {
     "kanji": "複",
@@ -7600,7 +11485,18 @@
     "radicals": [
       "Spirit",
       "Black Hole"
-    ]
+    ],
+    "id": "u8907",
+    "readings": {
+      "on": [
+        "ふく"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Spirit",
+      "meaning": "Spirit radical"
+    }
   },
   {
     "kanji": "覆",
@@ -7626,7 +11522,22 @@
       "Helicopter",
       "Loiter",
       "Black Hole"
-    ]
+    ],
+    "id": "u8986",
+    "readings": {
+      "on": [
+        "ふく"
+      ],
+      "kun": [
+        "おお.う",
+        "くつがえ.す",
+        "くつがえ.る"
+      ]
+    },
+    "radical": {
+      "name": "Helicopter",
+      "meaning": "Helicopter radical"
+    }
   },
   {
     "kanji": "払",
@@ -7653,7 +11564,24 @@
     "radicals": [
       "Fingers",
       "Private"
-    ]
+    ],
+    "id": "u6255",
+    "readings": {
+      "on": [
+        "ふつ",
+        "ひつ",
+        "ほつ"
+      ],
+      "kun": [
+        "はら.う",
+        "-はら.い",
+        "-ばら.い"
+      ]
+    },
+    "radical": {
+      "name": "Fingers",
+      "meaning": "Fingers radical"
+    }
   },
   {
     "kanji": "沸",
@@ -7677,7 +11605,21 @@
     "radicals": [
       "Tsunami",
       "Dollar"
-    ]
+    ],
+    "id": "u6cb8",
+    "readings": {
+      "on": [
+        "ふつ"
+      ],
+      "kun": [
+        "わ.く",
+        "わ.かす"
+      ]
+    },
+    "radical": {
+      "name": "Tsunami",
+      "meaning": "Tsunami radical"
+    }
   },
   {
     "kanji": "分",
@@ -7709,7 +11651,26 @@
     ],
     "examples": [
       "分(ぶん/ふん/ぶ/わ)"
-    ]
+    ],
+    "id": "u5206",
+    "readings": {
+      "on": [
+        "ぶん",
+        "ふん",
+        "ぶ"
+      ],
+      "kun": [
+        "わ.ける",
+        "わ.け",
+        "わ.かれる",
+        "わ.かる",
+        "わ.かつ"
+      ]
+    },
+    "radical": {
+      "name": "Fins",
+      "meaning": "Fins radical"
+    }
   },
   {
     "kanji": "噴",
@@ -7734,7 +11695,20 @@
       "Cross",
       "Flowers",
       "Shellfish"
-    ]
+    ],
+    "id": "u5674",
+    "readings": {
+      "on": [
+        "ふん"
+      ],
+      "kun": [
+        "ふ.く"
+      ]
+    },
+    "radical": {
+      "name": "Mouth",
+      "meaning": "Mouth radical"
+    }
   },
   {
     "kanji": "墳",
@@ -7757,7 +11731,18 @@
       "Cross",
       "Flowers",
       "Shellfish"
-    ]
+    ],
+    "id": "u58b3",
+    "readings": {
+      "on": [
+        "ふん"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "憤",
@@ -7782,7 +11767,20 @@
       "Cross",
       "Flowers",
       "Shellfish"
-    ]
+    ],
+    "id": "u61a4",
+    "readings": {
+      "on": [
+        "ふん"
+      ],
+      "kun": [
+        "いきどお.る"
+      ]
+    },
+    "radical": {
+      "name": "Soul",
+      "meaning": "Soul radical"
+    }
   },
   {
     "kanji": "紛",
@@ -7809,7 +11807,24 @@
     "radicals": [
       "Thread",
       "Part"
-    ]
+    ],
+    "id": "u7d1b",
+    "readings": {
+      "on": [
+        "ふん"
+      ],
+      "kun": [
+        "まぎ.れる",
+        "-まぎ.れ",
+        "まぎ.らす",
+        "まぎ.らわす",
+        "まぎ.らわしい"
+      ]
+    },
+    "radical": {
+      "name": "Thread",
+      "meaning": "Thread radical"
+    }
   },
   {
     "kanji": "変",
@@ -7837,7 +11852,22 @@
     ],
     "examples": [
       "変える(かえる)"
-    ]
+    ],
+    "id": "u5909",
+    "readings": {
+      "on": [
+        "へん"
+      ],
+      "kun": [
+        "か.わる",
+        "か.わり",
+        "か.える"
+      ]
+    },
+    "radical": {
+      "name": "Red",
+      "meaning": "Red radical"
+    }
   },
   {
     "kanji": "辺",
@@ -7869,7 +11899,22 @@
     ],
     "confusedWith": [
       "返"
-    ]
+    ],
+    "id": "u8fba",
+    "readings": {
+      "on": [
+        "へん"
+      ],
+      "kun": [
+        "あた.り",
+        "ほと.り",
+        "-べ"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "返",
@@ -7905,7 +11950,23 @@
     ],
     "confusedWith": [
       "辺"
-    ]
+    ],
+    "id": "u8fd4",
+    "readings": {
+      "on": [
+        "へん"
+      ],
+      "kun": [
+        "かえ.す",
+        "-かえ.す",
+        "かえ.る",
+        "-かえ.る"
+      ]
+    },
+    "radical": {
+      "name": "Scooter",
+      "meaning": "Scooter radical"
+    }
   },
   {
     "kanji": "募",
@@ -7935,7 +11996,20 @@
     ],
     "confusedWith": [
       "慕"
-    ]
+    ],
+    "id": "u52df",
+    "readings": {
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "つの.る"
+      ]
+    },
+    "radical": {
+      "name": "Greenhouse",
+      "meaning": "Greenhouse radical"
+    }
   },
   {
     "kanji": "墓",
@@ -7965,7 +12039,20 @@
     ],
     "confusedWith": [
       "幕"
-    ]
+    ],
+    "id": "u5893",
+    "readings": {
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "はか"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "慕",
@@ -7996,7 +12083,20 @@
     ],
     "confusedWith": [
       "募"
-    ]
+    ],
+    "id": "u6155",
+    "readings": {
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "した.う"
+      ]
+    },
+    "radical": {
+      "name": "Greenhouse",
+      "meaning": "Greenhouse radical"
+    }
   },
   {
     "kanji": "暮",
@@ -8027,7 +12127,21 @@
     ],
     "confusedWith": [
       "幕"
-    ]
+    ],
+    "id": "u66ae",
+    "readings": {
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "く.れる",
+        "く.らす"
+      ]
+    },
+    "radical": {
+      "name": "Greenhouse",
+      "meaning": "Greenhouse radical"
+    }
   },
   {
     "kanji": "本",
@@ -8052,7 +12166,20 @@
     ],
     "examples": [
       "本(もと)/本来(ほんらい)"
-    ]
+    ],
+    "id": "u672c",
+    "readings": {
+      "on": [
+        "ほん"
+      ],
+      "kun": [
+        "もと"
+      ]
+    },
+    "radical": {
+      "name": "Book",
+      "meaning": "Book radical"
+    }
   },
   {
     "kanji": "凡",
@@ -8081,7 +12208,23 @@
     ],
     "examples": [
       "凡例(はんれい)"
-    ]
+    ],
+    "id": "u51e1",
+    "readings": {
+      "on": [
+        "ぼん",
+        "はん"
+      ],
+      "kun": [
+        "およ.そ",
+        "おうよ.そ",
+        "すべ.て"
+      ]
+    },
+    "radical": {
+      "name": "Table",
+      "meaning": "Table radical"
+    }
   },
   {
     "kanji": "埋",
@@ -8116,7 +12259,25 @@
     ],
     "confusedWith": [
       "理"
-    ]
+    ],
+    "id": "u57cb",
+    "readings": {
+      "on": [
+        "まい"
+      ],
+      "kun": [
+        "う.める",
+        "う.まる",
+        "う.もれる",
+        "うず.める",
+        "うず.まる",
+        "い.ける"
+      ]
+    },
+    "radical": {
+      "name": "Dirt",
+      "meaning": "Dirt radical"
+    }
   },
   {
     "kanji": "毎",
@@ -8147,7 +12308,21 @@
     ],
     "confusedWith": [
       "海"
-    ]
+    ],
+    "id": "u6bce",
+    "readings": {
+      "on": [
+        "まい"
+      ],
+      "kun": [
+        "ごと",
+        "-ごと.に"
+      ]
+    },
+    "radical": {
+      "name": "Gun",
+      "meaning": "Gun radical"
+    }
   },
   {
     "kanji": "幕",
@@ -8180,7 +12355,21 @@
     ],
     "confusedWith": [
       "暮"
-    ]
+    ],
+    "id": "u5e55",
+    "readings": {
+      "on": [
+        "まく",
+        "ばく"
+      ],
+      "kun": [
+        "とばり"
+      ]
+    },
+    "radical": {
+      "name": "Greenhouse",
+      "meaning": "Greenhouse radical"
+    }
   },
   {
     "kanji": "末",
@@ -8213,7 +12402,21 @@
     ],
     "confusedWith": [
       "未"
-    ]
+    ],
+    "id": "u672b",
+    "readings": {
+      "on": [
+        "まつ",
+        "ばつ"
+      ],
+      "kun": [
+        "すえ"
+      ]
+    },
+    "radical": {
+      "name": "Jet",
+      "meaning": "Jet radical"
+    }
   },
   {
     "kanji": "未",
@@ -8248,7 +12451,23 @@
     ],
     "confusedWith": [
       "末"
-    ]
+    ],
+    "id": "u672a",
+    "readings": {
+      "on": [
+        "み",
+        "び"
+      ],
+      "kun": [
+        "いま.だ",
+        "ま.だ",
+        "ひつじ"
+      ]
+    },
+    "radical": {
+      "name": "Jet",
+      "meaning": "Jet radical"
+    }
   },
   {
     "kanji": "巳",
@@ -8270,7 +12489,16 @@
     ],
     "confusedWith": [
       "已"
-    ]
+    ],
+    "id": "u5df3",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "務",
@@ -8297,7 +12525,20 @@
     ],
     "examples": [
       "務める(つとめる)"
-    ]
+    ],
+    "id": "u52d9",
+    "readings": {
+      "on": [
+        "む"
+      ],
+      "kun": [
+        "つと.める"
+      ]
+    },
+    "radical": {
+      "name": "Spear",
+      "meaning": "Spear radical"
+    }
   },
   {
     "kanji": "明",
@@ -8334,7 +12575,31 @@
     ],
     "examples": [
       "明(めい/みょう/あ/あか)"
-    ]
+    ],
+    "id": "u660e",
+    "readings": {
+      "on": [
+        "めい",
+        "みょう",
+        "みん"
+      ],
+      "kun": [
+        "あ.かり",
+        "あか.るい",
+        "あか.るむ",
+        "あか.らむ",
+        "あき.らか",
+        "あ.ける",
+        "-あ.け",
+        "あ.く",
+        "あ.くる",
+        "あ.かす"
+      ]
+    },
+    "radical": {
+      "name": "Sun",
+      "meaning": "Sun radical"
+    }
   },
   {
     "kanji": "戻",
@@ -8358,7 +12623,21 @@
     "radicals": [
       "Door",
       "Big"
-    ]
+    ],
+    "id": "u623b",
+    "readings": {
+      "on": [
+        "れい"
+      ],
+      "kun": [
+        "もど.す",
+        "もど.る"
+      ]
+    },
+    "radical": {
+      "name": "Door",
+      "meaning": "Door radical"
+    }
   },
   {
     "kanji": "有",
@@ -8385,7 +12664,21 @@
     ],
     "examples": [
       "有る(ある)"
-    ]
+    ],
+    "id": "u6709",
+    "readings": {
+      "on": [
+        "ゆう",
+        "う"
+      ],
+      "kun": [
+        "あ.る"
+      ]
+    },
+    "radical": {
+      "name": "Narwhal",
+      "meaning": "Narwhal radical"
+    }
   },
   {
     "kanji": "理",
@@ -8415,7 +12708,20 @@
     ],
     "confusedWith": [
       "埋"
-    ]
+    ],
+    "id": "u7406",
+    "readings": {
+      "on": [
+        "り"
+      ],
+      "kun": [
+        "ことわり"
+      ]
+    },
+    "radical": {
+      "name": "King",
+      "meaning": "King radical"
+    }
   },
   {
     "kanji": "璃",
@@ -8443,7 +12749,18 @@
     ],
     "confusedWith": [
       "離"
-    ]
+    ],
+    "id": "u7483",
+    "readings": {
+      "on": [
+        "り"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "King",
+      "meaning": "King radical"
+    }
   },
   {
     "kanji": "裏",
@@ -8477,7 +12794,20 @@
     ],
     "confusedWith": [
       "裹"
-    ]
+    ],
+    "id": "u88cf",
+    "readings": {
+      "on": [
+        "り"
+      ],
+      "kun": [
+        "うら"
+      ]
+    },
+    "radical": {
+      "name": "Lid",
+      "meaning": "Lid radical"
+    }
   },
   {
     "kanji": "離",
@@ -8508,7 +12838,21 @@
     ],
     "confusedWith": [
       "璃"
-    ]
+    ],
+    "id": "u96e2",
+    "readings": {
+      "on": [
+        "り"
+      ],
+      "kun": [
+        "はな.れる",
+        "はな.す"
+      ]
+    },
+    "radical": {
+      "name": "Rocket",
+      "meaning": "Rocket radical"
+    }
   },
   {
     "kanji": "量",
@@ -8534,7 +12878,20 @@
     ],
     "examples": [
       "量る(重さ)"
-    ]
+    ],
+    "id": "u91cf",
+    "readings": {
+      "on": [
+        "りょう"
+      ],
+      "kun": [
+        "はか.る"
+      ]
+    },
+    "radical": {
+      "name": "Dawn",
+      "meaning": "Dawn radical"
+    }
   },
   {
     "kanji": "励",
@@ -8559,7 +12916,21 @@
       "Cliff",
       "Ten Thousand",
       "Power"
-    ]
+    ],
+    "id": "u52b1",
+    "readings": {
+      "on": [
+        "れい"
+      ],
+      "kun": [
+        "はげ.む",
+        "はげ.ます"
+      ]
+    },
+    "radical": {
+      "name": "Cliff",
+      "meaning": "Cliff radical"
+    }
   },
   {
     "kanji": "礼",
@@ -8588,7 +12959,19 @@
     ],
     "confusedWith": [
       "体"
-    ]
+    ],
+    "id": "u793c",
+    "readings": {
+      "on": [
+        "れい",
+        "らい"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Spirit",
+      "meaning": "Spirit radical"
+    }
   },
   {
     "kanji": "隷",
@@ -8614,7 +12997,21 @@
       "Jackhammer",
       "Brush",
       "Water"
-    ]
+    ],
+    "id": "u96b7",
+    "readings": {
+      "on": [
+        "れい"
+      ],
+      "kun": [
+        "したが.う",
+        "しもべ"
+      ]
+    },
+    "radical": {
+      "name": "Samurai",
+      "meaning": "Samurai radical"
+    }
   },
   {
     "kanji": "霊",
@@ -8639,7 +13036,21 @@
       "Rain",
       "Two",
       "Spikes"
-    ]
+    ],
+    "id": "u970a",
+    "readings": {
+      "on": [
+        "れい",
+        "りょう"
+      ],
+      "kun": [
+        "たま"
+      ]
+    },
+    "radical": {
+      "name": "Rain",
+      "meaning": "Rain radical"
+    }
   },
   {
     "kanji": "麗",
@@ -8662,7 +13073,21 @@
     "jlpt": "N1",
     "radicals": [
       "Lovely"
-    ]
+    ],
+    "id": "u9e97",
+    "readings": {
+      "on": [
+        "れい"
+      ],
+      "kun": [
+        "うるわ.しい",
+        "うら.らか"
+      ]
+    },
+    "radical": {
+      "name": "Lovely",
+      "meaning": "Lovely radical"
+    }
   },
   {
     "kanji": "齢",
@@ -8686,7 +13111,21 @@
     "radicals": [
       "Tooth",
       "Orders"
-    ]
+    ],
+    "id": "u9f62",
+    "readings": {
+      "on": [
+        "れい"
+      ],
+      "kun": [
+        "よわい",
+        "とし"
+      ]
+    },
+    "radical": {
+      "name": "Tooth",
+      "meaning": "Tooth radical"
+    }
   },
   {
     "kanji": "暦",
@@ -8711,7 +13150,21 @@
       "Cliff",
       "Tree",
       "Sun"
-    ]
+    ],
+    "id": "u66a6",
+    "readings": {
+      "on": [
+        "れき",
+        "りゃく"
+      ],
+      "kun": [
+        "こよみ"
+      ]
+    },
+    "radical": {
+      "name": "Cliff",
+      "meaning": "Cliff radical"
+    }
   },
   {
     "kanji": "歴",
@@ -8734,7 +13187,19 @@
       "Cliff",
       "Tree",
       "Stop"
-    ]
+    ],
+    "id": "u6b74",
+    "readings": {
+      "on": [
+        "れき",
+        "れっき"
+      ],
+      "kun": []
+    },
+    "radical": {
+      "name": "Cliff",
+      "meaning": "Cliff radical"
+    }
   },
   {
     "kanji": "烈",
@@ -8767,7 +13232,20 @@
     ],
     "confusedWith": [
       "裂"
-    ]
+    ],
+    "id": "u70c8",
+    "readings": {
+      "on": [
+        "れつ"
+      ],
+      "kun": [
+        "はげ.しい"
+      ]
+    },
+    "radical": {
+      "name": "Yakuza",
+      "meaning": "Yakuza radical"
+    }
   },
   {
     "kanji": "裂",
@@ -8802,7 +13280,22 @@
     ],
     "confusedWith": [
       "烈"
-    ]
+    ],
+    "id": "u88c2",
+    "readings": {
+      "on": [
+        "れつ"
+      ],
+      "kun": [
+        "さ.く",
+        "さ.ける",
+        "-ぎ.れ"
+      ]
+    },
+    "radical": {
+      "name": "Yakuza",
+      "meaning": "Yakuza radical"
+    }
   },
   {
     "kanji": "坏",
@@ -8819,7 +13312,16 @@
     ],
     "confusedWith": [
       "杯"
-    ]
+    ],
+    "id": "u574f",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "已",
@@ -8841,7 +13343,16 @@
     ],
     "confusedWith": [
       "己"
-    ]
+    ],
+    "id": "u5df2",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "徘",
@@ -8858,7 +13369,16 @@
     ],
     "confusedWith": [
       "俳"
-    ]
+    ],
+    "id": "u5f98",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "沛",
@@ -8875,7 +13395,16 @@
     ],
     "confusedWith": [
       "市"
-    ]
+    ],
+    "id": "u6c9b",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "珀",
@@ -8892,7 +13421,16 @@
     ],
     "confusedWith": [
       "狛"
-    ]
+    ],
+    "id": "u73c0",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "箋",
@@ -8912,7 +13450,20 @@
     "grade": 8,
     "strokes": 14,
     "jlpt": null,
-    "radicals": []
+    "radicals": [],
+    "id": "u7b8b",
+    "readings": {
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "ふだ"
+      ]
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "胚",
@@ -8929,7 +13480,16 @@
     ],
     "confusedWith": [
       "呸"
-    ]
+    ],
+    "id": "u80da",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "裹",
@@ -8946,7 +13506,16 @@
     ],
     "confusedWith": [
       "裏"
-    ]
+    ],
+    "id": "u88f9",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "遐",
@@ -8963,7 +13532,16 @@
     ],
     "confusedWith": [
       "暇"
-    ]
+    ],
+    "id": "u9050",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   },
   {
     "kanji": "呸",
@@ -8980,6 +13558,15 @@
     ],
     "confusedWith": [
       "胚"
-    ]
+    ],
+    "id": "u5478",
+    "readings": {
+      "on": [],
+      "kun": []
+    },
+    "radical": {
+      "name": "",
+      "meaning": " radical"
+    }
   }
 ]

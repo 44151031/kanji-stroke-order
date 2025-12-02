@@ -39,8 +39,17 @@ interface WordEntry {
 
 interface MasterKanji {
   kanji: string;
+  id?: string;
   category: string[];
   confusedWith?: string[];
+  readings?: {
+    on: string[];
+    kun: string[];
+  };
+  radical?: {
+    name: string;
+    meaning: string;
+  };
 }
 
 // データ読み込みヘルパー
@@ -80,10 +89,50 @@ function loadKanjiMaster(): Map<string, MasterKanji> {
   return new Map(data.map((k) => [k.kanji, k]));
 }
 
-// SSG: 静的パラメータ生成（kanji-joyo.jsonから読み込み）
+// uXXXX形式のIDから漢字を解決
+function resolveKanjiFromId(idOrKanji: string): string {
+  // uXXXX形式かチェック
+  if (idOrKanji.match(/^u[0-9a-f]{4,5}$/i)) {
+    const codePoint = parseInt(idOrKanji.slice(1), 16);
+    return String.fromCodePoint(codePoint);
+  }
+  return idOrKanji;
+}
+
+// 漢字からuXXXX形式のIDを生成
+function kanjiToId(kanji: string): string {
+  const codePoint = kanji.codePointAt(0);
+  if (!codePoint) return "";
+  return `u${codePoint.toString(16).toLowerCase().padStart(4, "0")}`;
+}
+
+// SSG: 静的パラメータ生成（kanji-joyo.json + kanji_master.json）
 export async function generateStaticParams() {
   const joyoList = loadKanjiJoyo();
-  return joyoList.map((k) => ({ kanji: k.kanji }));
+  const masterData = loadKanjiMasterArray();
+  
+  // 常用漢字の文字ベースのパス
+  const kanjiParams = joyoList.map((k) => ({ kanji: k.kanji }));
+  
+  // マスターデータのuXXXX形式のID
+  const idParams = masterData
+    .filter((k) => k.id)
+    .map((k) => ({ kanji: k.id! }));
+  
+  // 重複を除去して結合
+  const allParams = [...kanjiParams, ...idParams];
+  const seen = new Set<string>();
+  return allParams.filter((p) => {
+    if (seen.has(p.kanji)) return false;
+    seen.add(p.kanji);
+    return true;
+  });
+}
+
+function loadKanjiMasterArray(): MasterKanji[] {
+  const masterPath = path.join(process.cwd(), "data", "kanji_master.json");
+  if (!fs.existsSync(masterPath)) return [];
+  return JSON.parse(fs.readFileSync(masterPath, "utf-8"));
 }
 
 // メタデータ生成（SEO最適化）
@@ -91,7 +140,8 @@ type Props = { params: Promise<{ kanji: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { kanji } = await params;
-  const decodedKanji = decodeURIComponent(kanji);
+  const decodedParam = decodeURIComponent(kanji);
+  const decodedKanji = resolveKanjiFromId(decodedParam);
   const detail = loadKanjiDetail(decodedKanji);
 
   const onYomi = detail?.on?.slice(0, 3).join("、") || "";
@@ -237,7 +287,9 @@ function getRelatedKanji(detail: KanjiDetail, dictionary: KanjiDetail[]): KanjiD
 
 export default async function KanjiPage({ params }: Props) {
   const { kanji } = await params;
-  const decodedKanji = decodeURIComponent(kanji);
+  const decodedParam = decodeURIComponent(kanji);
+  const decodedKanji = resolveKanjiFromId(decodedParam);
+  const kanjiId = kanjiToId(decodedKanji);
   
   // 漢字詳細を取得
   const detail = loadKanjiDetail(decodedKanji);
