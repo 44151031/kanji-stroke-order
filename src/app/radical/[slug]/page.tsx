@@ -5,7 +5,13 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
-import { getEnglishSlug, getPositionAnchor } from "@/lib/radicalList";
+import { 
+  getEnglishSlug, 
+  getPositionAnchor, 
+  capitalize,
+  getEnglishDisplayName,
+  formatRadicalName 
+} from "@/lib/radicalList";
 
 interface KanjiDetail {
   kanji: string;
@@ -46,6 +52,18 @@ function getRadicalInfo(radicalEn: string, radicals: RadicalBilingual[]): Radica
   return radicals.find((r) => r.radical_name_en === radicalEn) || null;
 }
 
+/**
+ * 英語名から表示用名称を抽出（大文字始まり）
+ */
+function getDisplayEnglish(enName: string): string {
+  // 既に大文字始まりならそのまま使用
+  if (enName.charAt(0) === enName.charAt(0).toUpperCase()) {
+    return enName;
+  }
+  // 小文字スラッグの場合はgetEnglishDisplayNameを使用
+  return getEnglishDisplayName(enName);
+}
+
 // 存在する部首のみ生成
 export async function generateStaticParams() {
   const dictionary = loadKanjiDictionary();
@@ -63,8 +81,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const info = getRadicalInfo(radical, radicals);
   
   const jaName = info?.radical_name_ja || radical;
-  const enSlug = getEnglishSlug(jaName);
-  const title = `${radical} Radical（${jaName}）の漢字一覧 | Kanji Stroke Order`;
+  const englishDisplay = getDisplayEnglish(radical);
+  // タイトル形式: 日本語名（English）
+  const title = `${jaName}（${englishDisplay}）の漢字一覧 | Kanji Stroke Order`;
   const description = info 
     ? `${info.description_en}. ${info.description_ja}。部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`
     : `Browse kanji with the ${radical} radical. 部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`;
@@ -91,7 +110,12 @@ export default async function RadicalPage({ params }: Props) {
 
   // 配置タイプの英語名を取得
   const positionEn = radicalInfo?.position ? getPositionAnchor(radicalInfo.position) : "independent-radical";
-  const enSlug = radicalInfo?.radical_name_ja ? getEnglishSlug(radicalInfo.radical_name_ja) : radical.toLowerCase() + "-radical";
+  
+  // 表示用の英語名（大文字始まり）
+  const englishDisplay = getDisplayEnglish(radical);
+  
+  // 日本語名
+  const jaName = radicalInfo?.radical_name_ja || radical;
 
   // 学年順にソート
   const byGrade = [...radicalKanji].sort((a, b) => {
@@ -124,7 +148,7 @@ export default async function RadicalPage({ params }: Props) {
           <li>/</li>
           <li><Link href="/radical" className="hover:text-foreground">Radicals</Link></li>
           <li>/</li>
-          <li className="text-foreground">{radical}</li>
+          <li className="text-foreground">{jaName}（{englishDisplay}）</li>
         </ol>
       </nav>
 
@@ -135,13 +159,9 @@ export default async function RadicalPage({ params }: Props) {
             <span className="text-6xl">{radicalInfo.root}</span>
           )}
         </div>
+        {/* タイトル形式: 日本語名（English） */}
         <h1 className="text-4xl font-bold mb-2">
-          {radical} Radical
-          {radicalInfo && radicalInfo.radical_name_ja !== radical && (
-            <span className="text-2xl font-normal text-muted-foreground ml-2">
-              （{radicalInfo.radical_name_ja}）
-            </span>
-          )}
+          {jaName}（{englishDisplay}）
         </h1>
         {radicalInfo && (
           <div className="text-muted-foreground space-y-1">
@@ -221,15 +241,18 @@ export default async function RadicalPage({ params }: Props) {
             <div className="flex flex-wrap gap-2 justify-center">
               {topRelated.map(([r, count]) => {
                 const relInfo = getRadicalInfo(r, radicals);
+                const relJaName = relInfo?.radical_name_ja || r;
+                const relEnDisplay = getDisplayEnglish(r);
                 return (
                   <Link
                     key={r}
                     href={`/radical/${encodeURIComponent(r)}`}
                     className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
-                    title={relInfo ? `${r} (${relInfo.radical_name_ja})` : r}
+                    title={relInfo?.description_en || r}
                   >
                     {relInfo?.root && <span className="mr-1">{relInfo.root}</span>}
-                    {r}（{count}）
+                    {relJaName}（{relEnDisplay}）
+                    <span className="text-muted-foreground ml-1">×{count}</span>
                   </Link>
                 );
               })}
@@ -253,4 +276,3 @@ export default async function RadicalPage({ params }: Props) {
     </div>
   );
 }
-

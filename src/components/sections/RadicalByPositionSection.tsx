@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { capitalize } from "@/lib/radicalList";
 
 interface RadicalBilingual {
   id: number;
@@ -26,6 +27,19 @@ const POSITION_ORDER = [
   { key: "かまえ", id: "enclosing-radical", label: "構（かまえ）", labelEn: "Enclosing Radical", desc: "漢字を囲む部首", desc_en: "Enclosing radical", icon: "⬜" },
   { key: "にょう", id: "wrapping-radical", label: "繞（にょう）", labelEn: "Wrapping Radical", desc: "左から下へ回り込む部首", desc_en: "Wrapping from left to bottom", icon: "↪️" },
 ];
+
+/**
+ * 英語名から表示用名称を抽出
+ * 例: "Speech" (既に大文字の場合) or capitalize処理
+ */
+function getDisplayEnglish(enName: string): string {
+  // 既に大文字始まりならそのまま使用
+  if (enName.charAt(0) === enName.charAt(0).toUpperCase()) {
+    return enName;
+  }
+  // 小文字スラッグの場合は先頭を大文字に
+  return capitalize(enName);
+}
 
 export default function RadicalByPositionSection({ radicals, radicalCounts }: Props) {
   // 配置ごとにグループ化
@@ -73,9 +87,11 @@ export default function RadicalByPositionSection({ radicals, radicalCounts }: Pr
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {items.map((r) => {
                   const count = radicalCounts[r.radical_name_en] || 0;
+                  const englishDisplay = getDisplayEnglish(r.radical_name_en);
+                  // 表示形式: 日本語名（English）
                   const displayName = r.radical_name_ja !== r.radical_name_en
-                    ? `${r.radical_name_ja}（${r.radical_name_en}）`
-                    : r.radical_name_en;
+                    ? `${r.radical_name_ja}（${englishDisplay}）`
+                    : englishDisplay;
                   
                   return (
                     <Link
@@ -102,4 +118,3 @@ export default function RadicalByPositionSection({ radicals, radicalCounts }: Pr
     </div>
   );
 }
-

@@ -4,6 +4,7 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import RadicalByPositionSection from "@/components/sections/RadicalByPositionSection";
+import { capitalize } from "@/lib/radicalList";
 
 interface KanjiDetail {
   kanji: string;
@@ -105,7 +106,11 @@ export default function RadicalIndexPage() {
             <div className="flex flex-wrap gap-2">
               {otherRadicals.map(([radical, count]) => {
                 const info = radicalInfoMap.get(radical);
-                const jaName = info?.radical_name_ja;
+                const jaName = info?.radical_name_ja || radical;
+                // 英語表示: 既に大文字始まりならそのまま、そうでなければcapitalize
+                const englishDisplay = radical.charAt(0) === radical.charAt(0).toUpperCase() 
+                  ? radical 
+                  : capitalize(radical);
                 return (
                   <Link
                     key={radical}
@@ -114,7 +119,7 @@ export default function RadicalIndexPage() {
                     title={info ? `${info.root} - ${info.description_ja}` : radical}
                   >
                     {info?.root && <span className="mr-1">{info.root}</span>}
-                    {jaName && jaName !== radical ? `${jaName}（${radical}）` : radical}
+                    {jaName}（{englishDisplay}）
                     <span className="text-muted-foreground ml-1">({count})</span>
                   </Link>
                 );
