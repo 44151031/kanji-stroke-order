@@ -13,7 +13,13 @@
     "generate:words": "tsx scripts/build_words_by_kanji.ts",
     "generate:svg": "tsx scripts/fetch_kanjivg.ts",
     "download:kanjidic": "tsx scripts/download_kanjidic.ts",
-    "generate:details": "tsx scripts/build_kanji_details.ts"
+    "generate:details": "tsx scripts/build_kanji_details.ts",
+    "scrape:exam": "tsx scripts/scrape_kanji_sources/scrape_exam_kanji.ts",
+    "scrape:mistake": "tsx scripts/scrape_kanji_sources/scrape_common_mistakes.ts",
+    "scrape:confused": "tsx scripts/scrape_kanji_sources/scrape_confused_kanji.ts",
+    "scrape:normalize": "tsx scripts/scrape_kanji_sources/normalize_kanji_data.ts",
+    "scrape:merge": "tsx scripts/scrape_kanji_sources/merge_kanji_lists.ts",
+    "scrape:all": "tsx scripts/scrape_kanji_sources/index.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
@@ -34,6 +40,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/xml2js": "^0.4.14",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
     "tailwindcss": "^4",

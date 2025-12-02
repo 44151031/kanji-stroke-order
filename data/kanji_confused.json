@@ -1,0 +1,1312 @@
+[
+  {
+    "kanji": "土",
+    "meaning": "earth",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 士",
+      "土は上が長い、士は下が長い"
+    ]
+  },
+  {
+    "kanji": "士",
+    "meaning": "samurai",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 土",
+      "土は上が長い、士は下が長い"
+    ]
+  },
+  {
+    "kanji": "末",
+    "meaning": "end",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 未",
+      "末は上が長い、未は上が短い"
+    ]
+  },
+  {
+    "kanji": "未",
+    "meaning": "not yet",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 末",
+      "末は上が長い、未は上が短い"
+    ]
+  },
+  {
+    "kanji": "犬",
+    "meaning": "dog",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 太",
+      "犬は点が右上、太は点が真ん中"
+    ]
+  },
+  {
+    "kanji": "太",
+    "meaning": "fat",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 犬",
+      "犬は点が右上、太は点が真ん中"
+    ]
+  },
+  {
+    "kanji": "牛",
+    "meaning": "cow",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 午",
+      "牛は縦線が突き抜ける"
+    ]
+  },
+  {
+    "kanji": "午",
+    "meaning": "noon",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 牛",
+      "牛は縦線が突き抜ける"
+    ]
+  },
+  {
+    "kanji": "干",
+    "meaning": "dry",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 千",
+      "千は撥ねがある"
+    ]
+  },
+  {
+    "kanji": "千",
+    "meaning": "thousand",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 干",
+      "千は撥ねがある"
+    ]
+  },
+  {
+    "kanji": "待",
+    "meaning": "wait",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 持",
+      "待はぎょうにんべん、持はてへん"
+    ]
+  },
+  {
+    "kanji": "持",
+    "meaning": "hold",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 待",
+      "待はぎょうにんべん、持はてへん"
+    ]
+  },
+  {
+    "kanji": "清",
+    "meaning": "clear",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 精",
+      "清はさんずい、精はこめへん",
+      "混同: 晴",
+      "晴はひへん、清はさんずい"
+    ]
+  },
+  {
+    "kanji": "精",
+    "meaning": "spirit",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 清",
+      "清はさんずい、精はこめへん"
+    ]
+  },
+  {
+    "kanji": "情",
+    "meaning": "emotion",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 請",
+      "情はりっしんべん、請はごんべん"
+    ]
+  },
+  {
+    "kanji": "請",
+    "meaning": "request",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 情",
+      "情はりっしんべん、請はごんべん"
+    ]
+  },
+  {
+    "kanji": "晴",
+    "meaning": "clear weather",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 清",
+      "晴はひへん、清はさんずい"
+    ]
+  },
+  {
+    "kanji": "招",
+    "meaning": "invite",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 召",
+      "招はてへんがある"
+    ]
+  },
+  {
+    "kanji": "召",
+    "meaning": "summon",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 招",
+      "招はてへんがある"
+    ]
+  },
+  {
+    "kanji": "校",
+    "meaning": "school",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 絞",
+      "校はきへん、絞はいとへん"
+    ]
+  },
+  {
+    "kanji": "絞",
+    "meaning": "strangle",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 校",
+      "校はきへん、絞はいとへん"
+    ]
+  },
+  {
+    "kanji": "住",
+    "meaning": "live",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 往",
+      "住は主、往は王が旁"
+    ]
+  },
+  {
+    "kanji": "往",
+    "meaning": "go",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 住",
+      "住は主、往は王が旁"
+    ]
+  },
+  {
+    "kanji": "週",
+    "meaning": "week",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 週",
+      "週は土を含む",
+      "混同: 遇",
+      "週は周、遇は禺"
+    ]
+  },
+  {
+    "kanji": "部",
+    "meaning": "section",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 陪",
+      "部は口、陪は立を含む"
+    ]
+  },
+  {
+    "kanji": "陪",
+    "meaning": "accompany",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 部",
+      "部は口、陪は立を含む",
+      "混同: 培",
+      "陪はこざとへん、培はつちへん"
+    ]
+  },
+  {
+    "kanji": "理",
+    "meaning": "reason",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 埋",
+      "理はたまへん、埋はつちへん"
+    ]
+  },
+  {
+    "kanji": "埋",
+    "meaning": "bury",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 理",
+      "理はたまへん、埋はつちへん"
+    ]
+  },
+  {
+    "kanji": "査",
+    "meaning": "investigate",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 染",
+      "査は且、染は木が下"
+    ]
+  },
+  {
+    "kanji": "染",
+    "meaning": "dye",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 査",
+      "査は且、染は木が下"
+    ]
+  },
+  {
+    "kanji": "暮",
+    "meaning": "evening",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 幕",
+      "暮は日が下、幕は巾が下"
+    ]
+  },
+  {
+    "kanji": "幕",
+    "meaning": "curtain",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 暮",
+      "暮は日が下、幕は巾が下",
+      "混同: 墓",
+      "墓は土、幕は巾が下"
+    ]
+  },
+  {
+    "kanji": "著",
+    "meaning": "author",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 薯",
+      "著は者、薯は諸が下"
+    ]
+  },
+  {
+    "kanji": "薯",
+    "meaning": "potato",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 著",
+      "著は者、薯は諸が下"
+    ]
+  },
+  {
+    "kanji": "墓",
+    "meaning": "grave",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 幕",
+      "墓は土、幕は巾が下"
+    ]
+  },
+  {
+    "kanji": "慕",
+    "meaning": "yearn",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 募",
+      "慕は心、募は力が下"
+    ]
+  },
+  {
+    "kanji": "募",
+    "meaning": "recruit",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 慕",
+      "慕は心、募は力が下"
+    ]
+  },
+  {
+    "kanji": "貨",
+    "meaning": "cargo",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 貸",
+      "貨は化、貸は代が上"
+    ]
+  },
+  {
+    "kanji": "貸",
+    "meaning": "lend",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 貨",
+      "貨は化、貸は代が上"
+    ]
+  },
+  {
+    "kanji": "費",
+    "meaning": "expense",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 賞",
+      "費は弗、賞は尚が上"
+    ]
+  },
+  {
+    "kanji": "賞",
+    "meaning": "prize",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 費",
+      "費は弗、賞は尚が上",
+      "混同: 償",
+      "償はにんべん、賞は貝"
+    ]
+  },
+  {
+    "kanji": "損",
+    "meaning": "loss",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 員",
+      "損はてへん、員は口が下"
+    ]
+  },
+  {
+    "kanji": "員",
+    "meaning": "member",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 損",
+      "損はてへん、員は口が下"
+    ]
+  },
+  {
+    "kanji": "堂",
+    "meaning": "hall",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 党",
+      "堂は土、党はつの字が下"
+    ]
+  },
+  {
+    "kanji": "党",
+    "meaning": "party",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 堂",
+      "堂は土、党はつの字が下"
+    ]
+  },
+  {
+    "kanji": "常",
+    "meaning": "usual",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 裳",
+      "常は巾、裳は衣が下"
+    ]
+  },
+  {
+    "kanji": "裳",
+    "meaning": "skirt",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 常",
+      "常は巾、裳は衣が下"
+    ]
+  },
+  {
+    "kanji": "己",
+    "meaning": "self",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 已",
+      "己は口が開く、已は中間",
+      "混同: 巳",
+      "己は開く、巳は閉じる"
+    ]
+  },
+  {
+    "kanji": "已",
+    "meaning": "already",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 己",
+      "己は口が開く、已は中間",
+      "混同: 巳",
+      "巳は口が閉じる"
+    ]
+  },
+  {
+    "kanji": "巳",
+    "meaning": "snake",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 已",
+      "巳は口が閉じる",
+      "混同: 己",
+      "己は開く、巳は閉じる"
+    ]
+  },
+  {
+    "kanji": "衣",
+    "meaning": "clothes",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 依",
+      "依はにんべんが追加"
+    ]
+  },
+  {
+    "kanji": "依",
+    "meaning": "depend",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 衣",
+      "依はにんべんが追加"
+    ]
+  },
+  {
+    "kanji": "裏",
+    "meaning": "back",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 裹",
+      "裏は里、裹は果"
+    ]
+  },
+  {
+    "kanji": "裹",
+    "meaning": "wrap",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 裏",
+      "裏は里、裹は果"
+    ]
+  },
+  {
+    "kanji": "専",
+    "meaning": "specialty",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 博",
+      "専は点がない、博は点がある"
+    ]
+  },
+  {
+    "kanji": "博",
+    "meaning": "extensive",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 専",
+      "専は点がない、博は点がある"
+    ]
+  },
+  {
+    "kanji": "雑",
+    "meaning": "miscellaneous",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 雅",
+      "雑は九、雅は牙"
+    ]
+  },
+  {
+    "kanji": "雅",
+    "meaning": "elegant",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 雑",
+      "雑は九、雅は牙"
+    ]
+  },
+  {
+    "kanji": "離",
+    "meaning": "separate",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 璃",
+      "離はふるとり、璃はたまへん"
+    ]
+  },
+  {
+    "kanji": "璃",
+    "meaning": "glass",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 離",
+      "離はふるとり、璃はたまへん"
+    ]
+  },
+  {
+    "kanji": "壌",
+    "meaning": "soil",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 譲",
+      "壌はつちへん、譲はごんべん"
+    ]
+  },
+  {
+    "kanji": "譲",
+    "meaning": "yield",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 壌",
+      "壌はつちへん、譲はごんべん"
+    ]
+  },
+  {
+    "kanji": "償",
+    "meaning": "compensate",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 賞",
+      "償はにんべん、賞は貝"
+    ]
+  },
+  {
+    "kanji": "代",
+    "meaning": "substitute",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 伐",
+      "伐は戈"
+    ]
+  },
+  {
+    "kanji": "伐",
+    "meaning": "cut down",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 代",
+      "伐は戈"
+    ]
+  },
+  {
+    "kanji": "玉",
+    "meaning": "ball",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 王",
+      "玉は点がある"
+    ]
+  },
+  {
+    "kanji": "王",
+    "meaning": "king",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 玉",
+      "玉は点がある"
+    ]
+  },
+  {
+    "kanji": "犯",
+    "meaning": "crime",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 氾",
+      "犯はけものへん、氾はさんずい"
+    ]
+  },
+  {
+    "kanji": "氾",
+    "meaning": "overflow",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 犯",
+      "犯はけものへん、氾はさんずい"
+    ]
+  },
+  {
+    "kanji": "泊",
+    "meaning": "stay",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 伯",
+      "泊はさんずい、伯はにんべん"
+    ]
+  },
+  {
+    "kanji": "伯",
+    "meaning": "count",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 泊",
+      "泊はさんずい、伯はにんべん"
+    ]
+  },
+  {
+    "kanji": "拍",
+    "meaning": "clap",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 柏",
+      "拍はてへん、柏はきへん"
+    ]
+  },
+  {
+    "kanji": "柏",
+    "meaning": "oak",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 拍",
+      "拍はてへん、柏はきへん"
+    ]
+  },
+  {
+    "kanji": "崎",
+    "meaning": "cape",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 埼",
+      "崎はやまへん、埼はつちへん"
+    ]
+  },
+  {
+    "kanji": "埼",
+    "meaning": "Saitama",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 崎",
+      "崎はやまへん、埼はつちへん"
+    ]
+  },
+  {
+    "kanji": "裂",
+    "meaning": "tear",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 烈",
+      "裂はころもへん、烈はれっか"
+    ]
+  },
+  {
+    "kanji": "烈",
+    "meaning": "fierce",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 裂",
+      "裂はころもへん、烈はれっか"
+    ]
+  },
+  {
+    "kanji": "暇",
+    "meaning": "leisure",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 遐",
+      "暇はひへん、遐はしんにょう"
+    ]
+  },
+  {
+    "kanji": "遐",
+    "meaning": "far",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 暇",
+      "暇はひへん、遐はしんにょう"
+    ]
+  },
+  {
+    "kanji": "喚",
+    "meaning": "call out",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 換",
+      "喚はくちへん、換はてへん"
+    ]
+  },
+  {
+    "kanji": "換",
+    "meaning": "exchange",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 喚",
+      "喚はくちへん、換はてへん"
+    ]
+  },
+  {
+    "kanji": "勧",
+    "meaning": "recommend",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 歓",
+      "勧はちから、歓は欠"
+    ]
+  },
+  {
+    "kanji": "歓",
+    "meaning": "joy",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 勧",
+      "勧はちから、歓は欠"
+    ]
+  },
+  {
+    "kanji": "体",
+    "meaning": "body",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 礼",
+      "体は骨、礼は乙"
+    ]
+  },
+  {
+    "kanji": "礼",
+    "meaning": "courtesy",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 体",
+      "体は骨、礼は乙"
+    ]
+  },
+  {
+    "kanji": "辺",
+    "meaning": "vicinity",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 返",
+      "辺はしんにょう、返も同様"
+    ]
+  },
+  {
+    "kanji": "返",
+    "meaning": "return",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 辺",
+      "辺はしんにょう、返も同様"
+    ]
+  },
+  {
+    "kanji": "遅",
+    "meaning": "late",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 退",
+      "遅は羊、退は艮"
+    ]
+  },
+  {
+    "kanji": "退",
+    "meaning": "retreat",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 遅",
+      "遅は羊、退は艮"
+    ]
+  },
+  {
+    "kanji": "適",
+    "meaning": "suitable",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 敵",
+      "適は啇、敵は攵"
+    ]
+  },
+  {
+    "kanji": "敵",
+    "meaning": "enemy",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 適",
+      "適は啇、敵は攵"
+    ]
+  },
+  {
+    "kanji": "遇",
+    "meaning": "encounter",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 週",
+      "週は周、遇は禺"
+    ]
+  },
+  {
+    "kanji": "培",
+    "meaning": "cultivate",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 陪",
+      "陪はこざとへん、培はつちへん"
+    ]
+  },
+  {
+    "kanji": "賠",
+    "meaning": "compensate",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 倍",
+      "賠はかいへん、倍はにんべん"
+    ]
+  },
+  {
+    "kanji": "倍",
+    "meaning": "double",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 賠",
+      "賠はかいへん、倍はにんべん"
+    ]
+  },
+  {
+    "kanji": "媒",
+    "meaning": "medium",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 煤",
+      "媒はおんなへん、煤はひへん"
+    ]
+  },
+  {
+    "kanji": "煤",
+    "meaning": "soot",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 媒",
+      "媒はおんなへん、煤はひへん"
+    ]
+  },
+  {
+    "kanji": "梅",
+    "meaning": "plum",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 悔",
+      "梅はきへん、悔はりっしんべん"
+    ]
+  },
+  {
+    "kanji": "悔",
+    "meaning": "regret",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 梅",
+      "梅はきへん、悔はりっしんべん",
+      "混同: 侮",
+      "侮はにんべん、悔はりっしんべん"
+    ]
+  },
+  {
+    "kanji": "海",
+    "meaning": "sea",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 毎",
+      "海はさんずい付き"
+    ]
+  },
+  {
+    "kanji": "毎",
+    "meaning": "every",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 海",
+      "海はさんずい付き"
+    ]
+  },
+  {
+    "kanji": "侮",
+    "meaning": "despise",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 悔",
+      "侮はにんべん、悔はりっしんべん"
+    ]
+  },
+  {
+    "kanji": "拐",
+    "meaning": "kidnap",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 枯",
+      "拐はてへん、枯はきへん"
+    ]
+  },
+  {
+    "kanji": "枯",
+    "meaning": "wither",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 拐",
+      "拐はてへん、枯はきへん"
+    ]
+  },
+  {
+    "kanji": "怪",
+    "meaning": "suspicious",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 塊",
+      "怪はりっしんべん、塊はつちへん"
+    ]
+  },
+  {
+    "kanji": "塊",
+    "meaning": "lump",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 怪",
+      "怪はりっしんべん、塊はつちへん"
+    ]
+  },
+  {
+    "kanji": "快",
+    "meaning": "pleasant",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 決",
+      "快はりっしんべん、決はさんずい"
+    ]
+  },
+  {
+    "kanji": "決",
+    "meaning": "decide",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 快",
+      "快はりっしんべん、決はさんずい"
+    ]
+  },
+  {
+    "kanji": "廃",
+    "meaning": "abolish",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 発",
+      "廃はまだれ",
+      "混同: 肺",
+      "肺はにくづき、廃はまだれ"
+    ]
+  },
+  {
+    "kanji": "発",
+    "meaning": "emit",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 廃",
+      "廃はまだれ"
+    ]
+  },
+  {
+    "kanji": "排",
+    "meaning": "exclude",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 拝",
+      "排はてへん、拝も同様"
+    ]
+  },
+  {
+    "kanji": "拝",
+    "meaning": "worship",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 排",
+      "排はてへん、拝も同様"
+    ]
+  },
+  {
+    "kanji": "俳",
+    "meaning": "haiku",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 徘",
+      "俳はにんべん、徘はぎょうにんべん"
+    ]
+  },
+  {
+    "kanji": "徘",
+    "meaning": "wander",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 俳",
+      "俳はにんべん、徘はぎょうにんべん"
+    ]
+  },
+  {
+    "kanji": "配",
+    "meaning": "distribute",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 酒",
+      "配は己、酒は酉"
+    ]
+  },
+  {
+    "kanji": "酒",
+    "meaning": "alcohol",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 配",
+      "配は己、酒は酉"
+    ]
+  },
+  {
+    "kanji": "肺",
+    "meaning": "lungs",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 廃",
+      "肺はにくづき、廃はまだれ"
+    ]
+  },
+  {
+    "kanji": "輩",
+    "meaning": "fellows",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 背",
+      "輩はくるまへん、背はにくづき"
+    ]
+  },
+  {
+    "kanji": "背",
+    "meaning": "back",
+    "source": "weblio.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 輩",
+      "輩はくるまへん、背はにくづき"
+    ]
+  },
+  {
+    "kanji": "杯",
+    "meaning": "cup",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 坏",
+      "杯はきへん、坏はつちへん"
+    ]
+  },
+  {
+    "kanji": "坏",
+    "meaning": "unglazed",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 杯",
+      "杯はきへん、坏はつちへん"
+    ]
+  },
+  {
+    "kanji": "胚",
+    "meaning": "embryo",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 呸",
+      "胚はにくづき、呸はくちへん"
+    ]
+  },
+  {
+    "kanji": "呸",
+    "meaning": "bah",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 胚",
+      "胚はにくづき、呸はくちへん"
+    ]
+  },
+  {
+    "kanji": "敗",
+    "meaning": "defeat",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 販",
+      "敗はぼくづくり、販はかいへん"
+    ]
+  },
+  {
+    "kanji": "販",
+    "meaning": "sell",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 敗",
+      "敗はぼくづくり、販はかいへん"
+    ]
+  },
+  {
+    "kanji": "沛",
+    "meaning": "torrential",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 市",
+      "沛はさんずい付き"
+    ]
+  },
+  {
+    "kanji": "市",
+    "meaning": "city",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 沛",
+      "沛はさんずい付き"
+    ]
+  },
+  {
+    "kanji": "狛",
+    "meaning": "Korean dog",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 珀",
+      "狛はけものへん、珀はたまへん"
+    ]
+  },
+  {
+    "kanji": "珀",
+    "meaning": "amber",
+    "source": "goo.ne.jp",
+    "category": "confused",
+    "examples": [
+      "混同: 狛",
+      "狛はけものへん、珀はたまへん"
+    ]
+  }
+]

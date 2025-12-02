@@ -1,0 +1,8985 @@
+[
+  {
+    "kanji": "哀",
+    "meaning": "sorrow",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "あい"
+    ],
+    "kun": [
+      "あわ.れ",
+      "あわ.れむ",
+      "かな.しい"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Lid",
+      "Mouth",
+      "Kick"
+    ],
+    "examples": [
+      "哀愁(あいしゅう)"
+    ]
+  },
+  {
+    "kanji": "依",
+    "meaning": "depend",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "い",
+      "え"
+    ],
+    "kun": [
+      "よ.る"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Leader",
+      "Clothes"
+    ],
+    "examples": [
+      "混同: 衣",
+      "依はにんべんが追加"
+    ],
+    "confusedWith": [
+      "衣"
+    ]
+  },
+  {
+    "kanji": "威",
+    "meaning": "authority, dignity",
+    "category": [
+      "exam",
+      "mistake"
+    ],
+    "sources": [
+      "education.jp",
+      "benesse.jp"
+    ],
+    "on": [
+      "い"
+    ],
+    "kun": [
+      "おど.す",
+      "おど.し",
+      "おど.かす"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Slide",
+      "Drunkard",
+      "Ground",
+      "Woman"
+    ],
+    "examples": [
+      "威力/意力(誤)"
+    ]
+  },
+  {
+    "kanji": "意",
+    "meaning": "intention, meaning",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "い"
+    ],
+    "kun": [],
+    "grade": 3,
+    "strokes": 13,
+    "jlpt": "N4",
+    "radicals": [
+      "Sound",
+      "Heart"
+    ],
+    "examples": [
+      "意義/異議"
+    ]
+  },
+  {
+    "kanji": "異",
+    "meaning": "different, unusual",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "い"
+    ],
+    "kun": [
+      "こと",
+      "こと.なる",
+      "け"
+    ],
+    "grade": 6,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Rice Paddy",
+      "Together"
+    ],
+    "examples": [
+      "異常/以上"
+    ]
+  },
+  {
+    "kanji": "移",
+    "meaning": "move, transfer",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "い"
+    ],
+    "kun": [
+      "うつ.る",
+      "うつ.す"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Grain",
+      "Evening"
+    ],
+    "examples": [
+      "移動/異動"
+    ]
+  },
+  {
+    "kanji": "維",
+    "meaning": "maintain",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "い"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Turkey"
+    ],
+    "examples": [
+      "維持/意地"
+    ]
+  },
+  {
+    "kanji": "衣",
+    "meaning": "clothes",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "い",
+      "え"
+    ],
+    "kun": [
+      "ころも",
+      "きぬ",
+      "-ぎ"
+    ],
+    "grade": 4,
+    "strokes": 6,
+    "jlpt": "N2",
+    "radicals": [
+      "Clothes"
+    ],
+    "examples": [
+      "混同: 依",
+      "依はにんべんが追加"
+    ],
+    "confusedWith": [
+      "依"
+    ]
+  },
+  {
+    "kanji": "員",
+    "meaning": "member",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "いん"
+    ],
+    "kun": [],
+    "grade": 3,
+    "strokes": 10,
+    "jlpt": "N4",
+    "radicals": [
+      "Mouth",
+      "Shellfish"
+    ],
+    "examples": [
+      "混同: 損",
+      "損はてへん、員は口が下"
+    ],
+    "confusedWith": [
+      "損"
+    ]
+  },
+  {
+    "kanji": "右",
+    "meaning": "right",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "う",
+      "ゆう"
+    ],
+    "kun": [
+      "みぎ"
+    ],
+    "grade": 1,
+    "strokes": 5,
+    "jlpt": "N5",
+    "radicals": [
+      "Narwhal",
+      "Mouth"
+    ],
+    "examples": [
+      "右(みぎ)"
+    ]
+  },
+  {
+    "kanji": "衛",
+    "meaning": "defense, protection",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "えい",
+      "え"
+    ],
+    "kun": [],
+    "grade": 5,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Go",
+      "Korea"
+    ]
+  },
+  {
+    "kanji": "往",
+    "meaning": "go",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "おう"
+    ],
+    "kun": [
+      "い.く",
+      "いにしえ",
+      "さき.に",
+      "ゆ.く"
+    ],
+    "grade": 5,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Loiter",
+      "Master"
+    ],
+    "examples": [
+      "混同: 住",
+      "住は主、往は王が旁"
+    ],
+    "confusedWith": [
+      "住"
+    ]
+  },
+  {
+    "kanji": "王",
+    "meaning": "king",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "おう",
+      "-のう"
+    ],
+    "kun": [],
+    "grade": 1,
+    "strokes": 4,
+    "jlpt": "N3",
+    "radicals": [
+      "King"
+    ],
+    "examples": [
+      "混同: 玉",
+      "玉は点がある"
+    ],
+    "confusedWith": [
+      "玉"
+    ]
+  },
+  {
+    "kanji": "恩",
+    "meaning": "grace, kindness",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "おん"
+    ],
+    "kun": [],
+    "grade": 5,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Mouth",
+      "Big",
+      "Heart"
+    ]
+  },
+  {
+    "kanji": "穏",
+    "meaning": "calm, quiet",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "おん"
+    ],
+    "kun": [
+      "おだ.やか"
+    ],
+    "grade": 8,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Grain",
+      "Cleat",
+      "Wolverine",
+      "Heart"
+    ]
+  },
+  {
+    "kanji": "下",
+    "meaning": "below, under",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "か",
+      "げ"
+    ],
+    "kun": [
+      "した",
+      "しも",
+      "もと",
+      "さ.げる",
+      "さ.がる",
+      "くだ.る",
+      "くだ.り",
+      "くだ.す",
+      "-くだ.す",
+      "くだ.さる",
+      "お.ろす",
+      "お.りる"
+    ],
+    "grade": 1,
+    "strokes": 3,
+    "jlpt": "N5",
+    "radicals": [
+      "Ground",
+      "Toe"
+    ],
+    "examples": [
+      "下(か/げ/した/さ/くだ/お)"
+    ]
+  },
+  {
+    "kanji": "暇",
+    "meaning": "leisure",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "か"
+    ],
+    "kun": [
+      "ひま",
+      "いとま"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Sun",
+      "Comb",
+      "Cage",
+      "Stool"
+    ],
+    "examples": [
+      "混同: 遐",
+      "暇はひへん、遐はしんにょう"
+    ],
+    "confusedWith": [
+      "遐"
+    ]
+  },
+  {
+    "kanji": "貨",
+    "meaning": "cargo",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "か"
+    ],
+    "kun": [
+      "たから"
+    ],
+    "grade": 4,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Change",
+      "Shellfish"
+    ],
+    "examples": [
+      "混同: 貸",
+      "貨は化、貸は代が上"
+    ],
+    "confusedWith": [
+      "貸"
+    ]
+  },
+  {
+    "kanji": "雅",
+    "meaning": "elegant",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "が"
+    ],
+    "kun": [
+      "みや.び"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Fang",
+      "Turkey"
+    ],
+    "examples": [
+      "混同: 雑",
+      "雑は九、雅は牙"
+    ],
+    "confusedWith": [
+      "雑"
+    ]
+  },
+  {
+    "kanji": "会",
+    "meaning": "meet, society",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "かい",
+      "え"
+    ],
+    "kun": [
+      "あ.う",
+      "あ.わせる",
+      "あつ.まる"
+    ],
+    "grade": 2,
+    "strokes": 6,
+    "jlpt": "N4",
+    "radicals": [
+      "Meet"
+    ],
+    "examples": [
+      "会←會"
+    ]
+  },
+  {
+    "kanji": "塊",
+    "meaning": "lump",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい",
+      "け"
+    ],
+    "kun": [
+      "かたまり",
+      "つちくれ"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Dirt",
+      "Demon"
+    ],
+    "examples": [
+      "混同: 怪",
+      "怪はりっしんべん、塊はつちへん"
+    ],
+    "confusedWith": [
+      "怪"
+    ]
+  },
+  {
+    "kanji": "快",
+    "meaning": "pleasant",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい"
+    ],
+    "kun": [
+      "こころよ.い"
+    ],
+    "grade": 5,
+    "strokes": 7,
+    "jlpt": "N2",
+    "radicals": [
+      "Soul",
+      "Person",
+      "Hook"
+    ],
+    "examples": [
+      "混同: 決",
+      "快はりっしんべん、決はさんずい"
+    ],
+    "confusedWith": [
+      "決"
+    ]
+  },
+  {
+    "kanji": "怪",
+    "meaning": "suspicious",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい",
+      "け"
+    ],
+    "kun": [
+      "あや.しい",
+      "あや.しむ"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Soul",
+      "Tombstone"
+    ],
+    "examples": [
+      "混同: 塊",
+      "怪はりっしんべん、塊はつちへん"
+    ],
+    "confusedWith": [
+      "塊"
+    ]
+  },
+  {
+    "kanji": "悔",
+    "meaning": "regret",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい"
+    ],
+    "kun": [
+      "く.いる",
+      "く.やむ",
+      "くや.しい"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Soul",
+      "Every"
+    ],
+    "examples": [
+      "混同: 梅",
+      "梅はきへん、悔はりっしんべん",
+      "混同: 侮",
+      "侮はにんべん、悔はりっしんべん"
+    ],
+    "confusedWith": [
+      "梅"
+    ]
+  },
+  {
+    "kanji": "拐",
+    "meaning": "kidnap",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Mouth",
+      "Sword"
+    ],
+    "examples": [
+      "混同: 枯",
+      "拐はてへん、枯はきへん"
+    ],
+    "confusedWith": [
+      "枯"
+    ]
+  },
+  {
+    "kanji": "海",
+    "meaning": "sea",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かい"
+    ],
+    "kun": [
+      "うみ"
+    ],
+    "grade": 2,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Tsunami",
+      "Gun",
+      "Window"
+    ],
+    "examples": [
+      "混同: 毎",
+      "海はさんずい付き"
+    ],
+    "confusedWith": [
+      "毎"
+    ]
+  },
+  {
+    "kanji": "学",
+    "meaning": "study",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "がく"
+    ],
+    "kun": [
+      "まな.ぶ"
+    ],
+    "grade": 1,
+    "strokes": 8,
+    "jlpt": "N5",
+    "radicals": [
+      "Viking",
+      "Child"
+    ],
+    "examples": [
+      "学←學"
+    ]
+  },
+  {
+    "kanji": "勧",
+    "meaning": "persuade, recommend",
+    "category": [
+      "exam",
+      "confused"
+    ],
+    "sources": [
+      "bunka.go.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かん",
+      "けん"
+    ],
+    "kun": [
+      "すす.める"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Arrow",
+      "Turkey",
+      "Power"
+    ],
+    "examples": [
+      "混同: 歓",
+      "勧はちから、歓は欠"
+    ],
+    "confusedWith": [
+      "歓"
+    ]
+  },
+  {
+    "kanji": "喚",
+    "meaning": "call out",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "わめ.く"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Mouth",
+      "Prison",
+      "Legs",
+      "Big"
+    ],
+    "examples": [
+      "混同: 換",
+      "喚はくちへん、換はてへん"
+    ],
+    "confusedWith": [
+      "換"
+    ]
+  },
+  {
+    "kanji": "寛",
+    "meaning": "tolerant, lenient",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "くつろ.ぐ",
+      "ひろ.い",
+      "ゆる.やか"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Roof",
+      "Flowers",
+      "See"
+    ]
+  },
+  {
+    "kanji": "干",
+    "meaning": "dry",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "ほ.す",
+      "ほ.し-",
+      "-ぼ.し",
+      "ひ.る"
+    ],
+    "grade": 6,
+    "strokes": 3,
+    "jlpt": "N2",
+    "radicals": [
+      "Dry"
+    ],
+    "examples": [
+      "混同: 千",
+      "千は撥ねがある"
+    ],
+    "confusedWith": [
+      "千"
+    ]
+  },
+  {
+    "kanji": "換",
+    "meaning": "exchange",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "education.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "か.える",
+      "-か.える",
+      "か.わる"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Fingers",
+      "Prison",
+      "Mouth",
+      "Legs",
+      "Big"
+    ],
+    "examples": [
+      "換える(かえる)",
+      "混同: 喚",
+      "喚はくちへん、換はてへん"
+    ],
+    "confusedWith": [
+      "喚"
+    ]
+  },
+  {
+    "kanji": "歓",
+    "meaning": "joy",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "よろこ.ぶ"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Arrow",
+      "Turkey",
+      "Lack"
+    ],
+    "examples": [
+      "混同: 勧",
+      "勧はちから、歓は欠"
+    ],
+    "confusedWith": [
+      "勧"
+    ]
+  },
+  {
+    "kanji": "緩",
+    "meaning": "loose, slow",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "かん"
+    ],
+    "kun": [
+      "ゆる.い",
+      "ゆる.やか",
+      "ゆる.む",
+      "ゆる.める"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Football"
+    ]
+  },
+  {
+    "kanji": "頑",
+    "meaning": "stubborn",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "がん"
+    ],
+    "kun": [
+      "かたく"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Origin",
+      "Geoduck"
+    ]
+  },
+  {
+    "kanji": "器",
+    "meaning": "vessel, talent",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "うつわ"
+    ],
+    "grade": 4,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Big",
+      "Products"
+    ],
+    "examples": [
+      "器官(きかん)"
+    ]
+  },
+  {
+    "kanji": "基",
+    "meaning": "foundation",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp",
+      "bunka.go.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "もと",
+      "もとい"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Crab",
+      "Dirt"
+    ],
+    "examples": [
+      "基準(きじゅん)",
+      "基(もと)/基づく(もとづく)"
+    ]
+  },
+  {
+    "kanji": "希",
+    "meaning": "hope, rare",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "き",
+      "け"
+    ],
+    "kun": [
+      "まれ"
+    ],
+    "grade": 4,
+    "strokes": 7,
+    "jlpt": "N2",
+    "radicals": [
+      "Treasure",
+      "Narwhal",
+      "Towel"
+    ],
+    "examples": [
+      "希望(きぼう)"
+    ]
+  },
+  {
+    "kanji": "機",
+    "meaning": "machine, opportunity",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "はた"
+    ],
+    "grade": 4,
+    "strokes": 16,
+    "jlpt": "N3",
+    "radicals": [
+      "Tree",
+      "Poop",
+      "Drunkard",
+      "Person"
+    ],
+    "examples": [
+      "機会(きかい)"
+    ]
+  },
+  {
+    "kanji": "帰",
+    "meaning": "return",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "かえ.る",
+      "かえ.す",
+      "おく.る",
+      "とつ.ぐ"
+    ],
+    "grade": 2,
+    "strokes": 10,
+    "jlpt": "N4",
+    "radicals": [
+      "Knife",
+      "Wolverine",
+      "Forehead",
+      "Towel"
+    ],
+    "examples": [
+      "帰還(きかん)"
+    ]
+  },
+  {
+    "kanji": "貴",
+    "meaning": "noble, precious",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "たっと.い",
+      "とうと.い",
+      "たっと.ぶ",
+      "とうと.ぶ"
+    ],
+    "grade": 6,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Middle",
+      "Ground",
+      "Shellfish"
+    ],
+    "examples": [
+      "貴重(きちょう)"
+    ]
+  },
+  {
+    "kanji": "偽",
+    "meaning": "false, fake",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ぎ",
+      "か"
+    ],
+    "kun": [
+      "いつわ.る",
+      "にせ",
+      "いつわ.り"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Sake"
+    ]
+  },
+  {
+    "kanji": "儀",
+    "meaning": "ceremony",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ぎ"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Righteousness"
+    ]
+  },
+  {
+    "kanji": "欺",
+    "meaning": "deceive",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ぎ"
+    ],
+    "kun": [
+      "あざむ.く"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Crab",
+      "Lack"
+    ]
+  },
+  {
+    "kanji": "犠",
+    "meaning": "sacrifice",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ぎ",
+      "き"
+    ],
+    "kun": [
+      "いけにえ"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Cow",
+      "Righteousness"
+    ]
+  },
+  {
+    "kanji": "疑",
+    "meaning": "doubt, suspect",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ぎ"
+    ],
+    "kun": [
+      "うたが.う"
+    ],
+    "grade": 6,
+    "strokes": 14,
+    "jlpt": "N3",
+    "radicals": [
+      "Spoon",
+      "Mama",
+      "Arrow",
+      "Coat Rack"
+    ]
+  },
+  {
+    "kanji": "牛",
+    "meaning": "cow",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ぎゅう"
+    ],
+    "kun": [
+      "うし"
+    ],
+    "grade": 2,
+    "strokes": 4,
+    "jlpt": "N4",
+    "radicals": [
+      "Cow"
+    ],
+    "examples": [
+      "混同: 午",
+      "牛は縦線が突き抜ける"
+    ],
+    "confusedWith": [
+      "午"
+    ]
+  },
+  {
+    "kanji": "虚",
+    "meaning": "empty, void",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "きょ",
+      "こ"
+    ],
+    "kun": [
+      "むな.しい",
+      "うつ.ろ"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Tiger",
+      "Spikes"
+    ]
+  },
+  {
+    "kanji": "恐",
+    "meaning": "fear, sorry",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "きょう"
+    ],
+    "kun": [
+      "おそ.れる",
+      "おそ.る",
+      "おそ.ろしい",
+      "こわ.い",
+      "こわ.がる"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N3",
+    "radicals": [
+      "Saw",
+      "Heart"
+    ],
+    "examples": [
+      "恐れ入る(おそれいる)"
+    ]
+  },
+  {
+    "kanji": "興",
+    "meaning": "entertain, revive",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "こう",
+      "きょう"
+    ],
+    "kun": [
+      "おこ.る",
+      "おこ.す"
+    ],
+    "grade": 5,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Comb",
+      "Same",
+      "Ground",
+      "Fins"
+    ]
+  },
+  {
+    "kanji": "玉",
+    "meaning": "ball",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ぎょく"
+    ],
+    "kun": [
+      "たま",
+      "たま-",
+      "-だま"
+    ],
+    "grade": 1,
+    "strokes": 5,
+    "jlpt": "N2",
+    "radicals": [
+      "King",
+      "Drop"
+    ],
+    "examples": [
+      "混同: 王",
+      "玉は点がある"
+    ],
+    "confusedWith": [
+      "王"
+    ]
+  },
+  {
+    "kanji": "勤",
+    "meaning": "work diligently",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "きん",
+      "ごん"
+    ],
+    "kun": [
+      "つと.める",
+      "-づと.め",
+      "つと.まる",
+      "いそ.しむ"
+    ],
+    "grade": 6,
+    "strokes": 12,
+    "jlpt": "N3",
+    "radicals": [
+      "Boot",
+      "Power"
+    ],
+    "examples": [
+      "勤める(つとめる)"
+    ]
+  },
+  {
+    "kanji": "遇",
+    "meaning": "encounter",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ぐう"
+    ],
+    "kun": [
+      "あ.う"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Scooter",
+      "Splinter"
+    ],
+    "examples": [
+      "混同: 週",
+      "週は周、遇は禺"
+    ],
+    "confusedWith": [
+      "週"
+    ]
+  },
+  {
+    "kanji": "計",
+    "meaning": "measure, plan",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "けい"
+    ],
+    "kun": [
+      "はか.る",
+      "はか.らう"
+    ],
+    "grade": 2,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Say",
+      "Cross"
+    ],
+    "examples": [
+      "計る(時間・量)"
+    ]
+  },
+  {
+    "kanji": "決",
+    "meaning": "decide",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "けつ"
+    ],
+    "kun": [
+      "き.める",
+      "-ぎ.め",
+      "き.まる",
+      "さ.く"
+    ],
+    "grade": 3,
+    "strokes": 7,
+    "jlpt": "N3",
+    "radicals": [
+      "Tsunami",
+      "Person",
+      "Hook"
+    ],
+    "examples": [
+      "混同: 快",
+      "快はりっしんべん、決はさんずい"
+    ],
+    "confusedWith": [
+      "快"
+    ]
+  },
+  {
+    "kanji": "堅",
+    "meaning": "firm, hard",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "けん"
+    ],
+    "kun": [
+      "かた.い",
+      "-がた.い"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Servant",
+      "Stool",
+      "Dirt"
+    ],
+    "examples": [
+      "堅い(かたい)"
+    ]
+  },
+  {
+    "kanji": "権",
+    "meaning": "authority, right",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "けん",
+      "ごん"
+    ],
+    "kun": [
+      "おもり",
+      "かり",
+      "はか.る"
+    ],
+    "grade": 6,
+    "strokes": 15,
+    "jlpt": "N3",
+    "radicals": [
+      "Tree",
+      "Arrow",
+      "Turkey"
+    ]
+  },
+  {
+    "kanji": "犬",
+    "meaning": "dog",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "けん"
+    ],
+    "kun": [
+      "いぬ",
+      "いぬ-"
+    ],
+    "grade": 1,
+    "strokes": 4,
+    "jlpt": "N4",
+    "radicals": [
+      "Dog"
+    ],
+    "examples": [
+      "混同: 太",
+      "犬は点が右上、太は点が真ん中"
+    ],
+    "confusedWith": [
+      "太"
+    ]
+  },
+  {
+    "kanji": "謙",
+    "meaning": "humble, modest",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "けん"
+    ],
+    "kun": [
+      "へりくだ.る"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Mona Lisa"
+    ]
+  },
+  {
+    "kanji": "元",
+    "meaning": "origin, former",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "げん",
+      "がん"
+    ],
+    "kun": [
+      "もと"
+    ],
+    "grade": 2,
+    "strokes": 4,
+    "jlpt": "N4",
+    "radicals": [
+      "Origin"
+    ],
+    "examples": [
+      "元(もと)/元々(もともと)"
+    ]
+  },
+  {
+    "kanji": "厳",
+    "meaning": "strict, severe",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "げん",
+      "ごん"
+    ],
+    "kun": [
+      "おごそ.か",
+      "きび.しい",
+      "いか.めしい",
+      "いつくし"
+    ],
+    "grade": 6,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Grass",
+      "Cliff",
+      "Elf",
+      "Winter"
+    ]
+  },
+  {
+    "kanji": "現",
+    "meaning": "appear",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "げん"
+    ],
+    "kun": [
+      "あらわ.れる",
+      "あらわ.す",
+      "うつつ",
+      "うつ.つ"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "King",
+      "See"
+    ],
+    "examples": [
+      "現れる/現わる(古)"
+    ]
+  },
+  {
+    "kanji": "固",
+    "meaning": "solid, firm",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "こ"
+    ],
+    "kun": [
+      "かた.める",
+      "かた.まる",
+      "かた.まり",
+      "かた.い"
+    ],
+    "grade": 4,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Mouth",
+      "Old"
+    ],
+    "examples": [
+      "固い(かたい)"
+    ]
+  },
+  {
+    "kanji": "己",
+    "meaning": "self",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "こ",
+      "き"
+    ],
+    "kun": [
+      "おのれ",
+      "つちのと",
+      "な"
+    ],
+    "grade": 6,
+    "strokes": 3,
+    "jlpt": "N1",
+    "radicals": [
+      "Oneself"
+    ],
+    "examples": [
+      "己(おのれ)",
+      "混同: 已",
+      "己は口が開く、已は中間",
+      "混同: 巳",
+      "己は開く、巳は閉じる"
+    ],
+    "confusedWith": [
+      "已"
+    ]
+  },
+  {
+    "kanji": "枯",
+    "meaning": "wither",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "こ"
+    ],
+    "kun": [
+      "か.れる",
+      "か.らす"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "Tree",
+      "Old"
+    ],
+    "examples": [
+      "混同: 拐",
+      "拐はてへん、枯はきへん"
+    ],
+    "confusedWith": [
+      "拐"
+    ]
+  },
+  {
+    "kanji": "午",
+    "meaning": "noon",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ご"
+    ],
+    "kun": [
+      "うま"
+    ],
+    "grade": 2,
+    "strokes": 4,
+    "jlpt": "N5",
+    "radicals": [
+      "Slide",
+      "Dry"
+    ],
+    "examples": [
+      "混同: 牛",
+      "牛は縦線が突き抜ける"
+    ],
+    "confusedWith": [
+      "牛"
+    ]
+  },
+  {
+    "kanji": "御",
+    "meaning": "honorific prefix",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ぎょ",
+      "ご"
+    ],
+    "kun": [
+      "おん-",
+      "お-",
+      "み-"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N3",
+    "radicals": [
+      "Loiter",
+      "Gun",
+      "Correct",
+      "Stamp"
+    ],
+    "examples": [
+      "御(お/ご/おん/み)"
+    ]
+  },
+  {
+    "kanji": "厚",
+    "meaning": "thick, kind",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "こう"
+    ],
+    "kun": [
+      "あつ.い",
+      "あか"
+    ],
+    "grade": 5,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "Cliff",
+      "Sun",
+      "Child"
+    ],
+    "examples": [
+      "厚い(あつい)"
+    ]
+  },
+  {
+    "kanji": "広",
+    "meaning": "wide",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "こう"
+    ],
+    "kun": [
+      "ひろ.い",
+      "ひろ.まる",
+      "ひろ.める",
+      "ひろ.がる",
+      "ひろ.げる"
+    ],
+    "grade": 2,
+    "strokes": 5,
+    "jlpt": "N4",
+    "radicals": [
+      "Canopy",
+      "Private"
+    ],
+    "examples": [
+      "広←廣"
+    ]
+  },
+  {
+    "kanji": "校",
+    "meaning": "school",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "こう",
+      "きょう"
+    ],
+    "kun": [],
+    "grade": 1,
+    "strokes": 10,
+    "jlpt": "N5",
+    "radicals": [
+      "Tree",
+      "Lid",
+      "Father"
+    ],
+    "examples": [
+      "混同: 絞",
+      "校はきへん、絞はいとへん"
+    ],
+    "confusedWith": [
+      "絞"
+    ]
+  },
+  {
+    "kanji": "硬",
+    "meaning": "hard, stiff",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "こう"
+    ],
+    "kun": [
+      "かた.い"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Stone",
+      "Again"
+    ],
+    "examples": [
+      "硬い(かたい)"
+    ]
+  },
+  {
+    "kanji": "絞",
+    "meaning": "strangle",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "こう"
+    ],
+    "kun": [
+      "しぼ.る",
+      "し.める",
+      "し.まる"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Mix"
+    ],
+    "examples": [
+      "混同: 校",
+      "校はきへん、絞はいとへん"
+    ],
+    "confusedWith": [
+      "校"
+    ]
+  },
+  {
+    "kanji": "行",
+    "meaning": "go, conduct",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "こう",
+      "ぎょう",
+      "あん"
+    ],
+    "kun": [
+      "い.く",
+      "ゆ.く",
+      "-ゆ.き",
+      "-ゆき",
+      "-い.き",
+      "-いき",
+      "おこな.う",
+      "おこ.なう"
+    ],
+    "grade": 2,
+    "strokes": 6,
+    "jlpt": "N5",
+    "radicals": [
+      "Go"
+    ],
+    "examples": [
+      "行う/行なう",
+      "行(こう/ぎょう/あん/い/ゆ)"
+    ]
+  },
+  {
+    "kanji": "国",
+    "meaning": "country",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "こく"
+    ],
+    "kun": [
+      "くに"
+    ],
+    "grade": 2,
+    "strokes": 8,
+    "jlpt": "N5",
+    "radicals": [
+      "Mouth",
+      "King",
+      "Drop"
+    ],
+    "examples": [
+      "国←國"
+    ]
+  },
+  {
+    "kanji": "狛",
+    "meaning": "Korean dog",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 珀",
+      "狛はけものへん、珀はたまへん"
+    ],
+    "confusedWith": [
+      "珀"
+    ]
+  },
+  {
+    "kanji": "左",
+    "meaning": "left",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "さ",
+      "しゃ"
+    ],
+    "kun": [
+      "ひだり"
+    ],
+    "grade": 1,
+    "strokes": 5,
+    "jlpt": "N5",
+    "radicals": [
+      "Narwhal",
+      "Construction"
+    ],
+    "examples": [
+      "左(ひだり)"
+    ]
+  },
+  {
+    "kanji": "査",
+    "meaning": "investigate",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "さ"
+    ],
+    "kun": [],
+    "grade": 5,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "Tree",
+      "Top Hat"
+    ],
+    "examples": [
+      "混同: 染",
+      "査は且、染は木が下"
+    ],
+    "confusedWith": [
+      "染"
+    ]
+  },
+  {
+    "kanji": "崎",
+    "meaning": "cape",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "さき",
+      "さい",
+      "みさき"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Mountain",
+      "Big",
+      "Lip Ring"
+    ],
+    "examples": [
+      "混同: 埼",
+      "崎はやまへん、埼はつちへん"
+    ],
+    "confusedWith": [
+      "埼"
+    ]
+  },
+  {
+    "kanji": "埼",
+    "meaning": "Saitama",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "き"
+    ],
+    "kun": [
+      "さき",
+      "さい",
+      "みさき"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": null,
+    "radicals": [
+      "Dirt",
+      "Odd"
+    ],
+    "examples": [
+      "混同: 崎",
+      "崎はやまへん、埼はつちへん"
+    ],
+    "confusedWith": [
+      "崎"
+    ]
+  },
+  {
+    "kanji": "雑",
+    "meaning": "miscellaneous",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ざつ",
+      "ぞう"
+    ],
+    "kun": [
+      "まじ.える",
+      "まじ.る"
+    ],
+    "grade": 5,
+    "strokes": 14,
+    "jlpt": "N3",
+    "radicals": [
+      "Nine",
+      "Tree",
+      "Turkey"
+    ],
+    "examples": [
+      "混同: 雅",
+      "雑は九、雅は牙"
+    ],
+    "confusedWith": [
+      "雅"
+    ]
+  },
+  {
+    "kanji": "参",
+    "meaning": "go, visit",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "さん",
+      "しん"
+    ],
+    "kun": [
+      "まい.る",
+      "まい-",
+      "まじわる",
+      "みつ"
+    ],
+    "grade": 4,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Private",
+      "Big",
+      "Hair"
+    ],
+    "examples": [
+      "参る(まいる)"
+    ]
+  },
+  {
+    "kanji": "刺",
+    "meaning": "stab, pierce",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "さ.す",
+      "さ.さる",
+      "さ.し",
+      "さし",
+      "とげ"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Tree",
+      "Head",
+      "Knife"
+    ]
+  },
+  {
+    "kanji": "嗣",
+    "meaning": "heir, succeed",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": []
+  },
+  {
+    "kanji": "士",
+    "meaning": "samurai",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "さむらい"
+    ],
+    "grade": 4,
+    "strokes": 3,
+    "jlpt": "N1",
+    "radicals": [
+      "Samurai"
+    ],
+    "examples": [
+      "混同: 土",
+      "土は上が長い、士は下が長い"
+    ],
+    "confusedWith": [
+      "土"
+    ]
+  },
+  {
+    "kanji": "始",
+    "meaning": "begin",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "はじ.める",
+      "-はじ.める",
+      "はじ.まる"
+    ],
+    "grade": 3,
+    "strokes": 8,
+    "jlpt": "N4",
+    "radicals": [
+      "Woman",
+      "Machine"
+    ],
+    "examples": [
+      "始め(はじめ)/始まる(はじまる)"
+    ]
+  },
+  {
+    "kanji": "市",
+    "meaning": "city",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "いち"
+    ],
+    "grade": 2,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Lid",
+      "Towel"
+    ],
+    "examples": [
+      "混同: 沛",
+      "沛はさんずい付き"
+    ],
+    "confusedWith": [
+      "沛"
+    ]
+  },
+  {
+    "kanji": "施",
+    "meaning": "implement, carry out",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し",
+      "せ"
+    ],
+    "kun": [
+      "ほどこ.す"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Direction",
+      "Gun",
+      "Alligator"
+    ]
+  },
+  {
+    "kanji": "旨",
+    "meaning": "purpose, gist",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "むね",
+      "うま.い"
+    ],
+    "grade": 8,
+    "strokes": 6,
+    "jlpt": "N1",
+    "radicals": [
+      "Spoon",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "祉",
+    "meaning": "welfare",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Spirit",
+      "Stop"
+    ]
+  },
+  {
+    "kanji": "紫",
+    "meaning": "purple",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "むらさき"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Stop",
+      "Spoon",
+      "Thread"
+    ]
+  },
+  {
+    "kanji": "肢",
+    "meaning": "limb",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": []
+  },
+  {
+    "kanji": "脂",
+    "meaning": "fat, grease",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "あぶら"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N2",
+    "radicals": [
+      "Moon",
+      "Spoon",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "詞",
+    "meaning": "words, parts of speech",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "ことば"
+    ],
+    "grade": 6,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Say",
+      "Director"
+    ]
+  },
+  {
+    "kanji": "諮",
+    "meaning": "consult",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "はか.る"
+    ],
+    "grade": 8,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Next",
+      "Mouth"
+    ],
+    "examples": [
+      "諮る(意見を聞く)"
+    ]
+  },
+  {
+    "kanji": "賜",
+    "meaning": "grant, bestow",
+    "category": [
+      "exam",
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp",
+      "surala.jp"
+    ],
+    "on": [
+      "し"
+    ],
+    "kun": [
+      "たまわ.る",
+      "たま.う",
+      "たも.う"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [],
+    "examples": [
+      "賜る(たまわる)"
+    ]
+  },
+  {
+    "kanji": "持",
+    "meaning": "hold",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "じ"
+    ],
+    "kun": [
+      "も.つ",
+      "-も.ち",
+      "も.てる"
+    ],
+    "grade": 3,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Fingers",
+      "Temple"
+    ],
+    "examples": [
+      "混同: 待",
+      "待はぎょうにんべん、持はてへん"
+    ],
+    "confusedWith": [
+      "待"
+    ]
+  },
+  {
+    "kanji": "治",
+    "meaning": "govern, cure",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "じ",
+      "ち"
+    ],
+    "kun": [
+      "おさ.める",
+      "おさ.まる",
+      "なお.る",
+      "なお.す"
+    ],
+    "grade": 4,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Tsunami",
+      "Machine"
+    ],
+    "examples": [
+      "治める(おさめる)"
+    ]
+  },
+  {
+    "kanji": "酒",
+    "meaning": "alcohol",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "しゅ"
+    ],
+    "kun": [
+      "さけ",
+      "さか-"
+    ],
+    "grade": 3,
+    "strokes": 10,
+    "jlpt": "N3",
+    "radicals": [
+      "Tsunami",
+      "Alcohol"
+    ],
+    "examples": [
+      "混同: 配",
+      "配は己、酒は酉"
+    ],
+    "confusedWith": [
+      "配"
+    ]
+  },
+  {
+    "kanji": "収",
+    "meaning": "collect",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "しゅう"
+    ],
+    "kun": [
+      "おさ.める",
+      "おさ.まる"
+    ],
+    "grade": 6,
+    "strokes": 4,
+    "jlpt": "N3",
+    "radicals": [
+      "Vines",
+      "Stool"
+    ],
+    "examples": [
+      "収める(おさめる)"
+    ]
+  },
+  {
+    "kanji": "就",
+    "meaning": "take position, concerning",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しゅう",
+      "じゅ"
+    ],
+    "kun": [
+      "つ.く",
+      "つ.ける"
+    ],
+    "grade": 6,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Capital",
+      "Dog"
+    ]
+  },
+  {
+    "kanji": "修",
+    "meaning": "repair, study",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "しゅう",
+      "しゅ"
+    ],
+    "kun": [
+      "おさ.める",
+      "おさ.まる"
+    ],
+    "grade": 5,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Stick",
+      "Winter",
+      "Hair"
+    ],
+    "examples": [
+      "修める(おさめる)"
+    ]
+  },
+  {
+    "kanji": "週",
+    "meaning": "week",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "しゅう"
+    ],
+    "kun": [],
+    "grade": 2,
+    "strokes": 11,
+    "jlpt": "N4",
+    "radicals": [
+      "Scooter",
+      "Circumference"
+    ],
+    "examples": [
+      "混同: 週",
+      "週は土を含む",
+      "混同: 遇",
+      "週は周、遇は禺"
+    ],
+    "confusedWith": [
+      "週"
+    ]
+  },
+  {
+    "kanji": "住",
+    "meaning": "live",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "じゅう",
+      "ぢゅう",
+      "ちゅう"
+    ],
+    "kun": [
+      "す.む",
+      "す.まう",
+      "-ず.まい"
+    ],
+    "grade": 3,
+    "strokes": 7,
+    "jlpt": "N4",
+    "radicals": [
+      "Leader",
+      "Master"
+    ],
+    "examples": [
+      "混同: 往",
+      "住は主、往は王が旁"
+    ],
+    "confusedWith": [
+      "往"
+    ]
+  },
+  {
+    "kanji": "粛",
+    "meaning": "solemn",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "しゅく",
+      "すく"
+    ],
+    "kun": [
+      "つつし.む"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Wolverine",
+      "Stick",
+      "Legs",
+      "Rice"
+    ]
+  },
+  {
+    "kanji": "初",
+    "meaning": "first, beginning",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "しょ"
+    ],
+    "kun": [
+      "はじ.め",
+      "はじ.めて",
+      "はつ",
+      "はつ-",
+      "うい-",
+      "-そ.める",
+      "-ぞ.め"
+    ],
+    "grade": 4,
+    "strokes": 7,
+    "jlpt": "N3",
+    "radicals": [
+      "Spirit",
+      "Sword"
+    ],
+    "examples": [
+      "初め(はじめ)/初めて(はじめて)"
+    ]
+  },
+  {
+    "kanji": "暑",
+    "meaning": "hot (weather)",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょ"
+    ],
+    "kun": [
+      "あつ.い"
+    ],
+    "grade": 3,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Sun",
+      "Someone"
+    ],
+    "examples": [
+      "暑い(あつい)"
+    ]
+  },
+  {
+    "kanji": "薯",
+    "meaning": "potato",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 著",
+      "著は者、薯は諸が下"
+    ],
+    "confusedWith": [
+      "著"
+    ]
+  },
+  {
+    "kanji": "償",
+    "meaning": "compensate",
+    "category": [
+      "exam",
+      "confused"
+    ],
+    "sources": [
+      "manabitimes.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "つぐな.う"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Prize"
+    ],
+    "examples": [
+      "混同: 賞",
+      "償はにんべん、賞は貝"
+    ],
+    "confusedWith": [
+      "賞"
+    ]
+  },
+  {
+    "kanji": "召",
+    "meaning": "call, summon",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "gakken.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "め.す"
+    ],
+    "grade": 8,
+    "strokes": 5,
+    "jlpt": "N2",
+    "radicals": [
+      "Call"
+    ],
+    "examples": [
+      "召す(めす)",
+      "混同: 招",
+      "招はてへんがある"
+    ],
+    "confusedWith": [
+      "招"
+    ]
+  },
+  {
+    "kanji": "奨",
+    "meaning": "encourage",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう",
+      "そう"
+    ],
+    "kun": [
+      "すす.める"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Commander",
+      "Big"
+    ]
+  },
+  {
+    "kanji": "招",
+    "meaning": "invite",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "まね.く"
+    ],
+    "grade": 5,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Fingers",
+      "Call"
+    ],
+    "examples": [
+      "混同: 召",
+      "招はてへんがある"
+    ],
+    "confusedWith": [
+      "召"
+    ]
+  },
+  {
+    "kanji": "症",
+    "meaning": "symptom",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Sick",
+      "Correct"
+    ]
+  },
+  {
+    "kanji": "称",
+    "meaning": "call, name",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "たた.える",
+      "とな.える",
+      "あ.げる",
+      "かな.う",
+      "はか.り",
+      "はか.る",
+      "ほめ.る"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Grain",
+      "Gun",
+      "Small"
+    ]
+  },
+  {
+    "kanji": "衝",
+    "meaning": "collide, impact",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "つ.く"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Go",
+      "Heavy"
+    ]
+  },
+  {
+    "kanji": "裳",
+    "meaning": "skirt",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "examples": [
+      "混同: 常",
+      "常は巾、裳は衣が下"
+    ],
+    "confusedWith": [
+      "常"
+    ]
+  },
+  {
+    "kanji": "詳",
+    "meaning": "detailed",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "くわ.しい",
+      "つまび.らか"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Sheep"
+    ]
+  },
+  {
+    "kanji": "象",
+    "meaning": "elephant, phenomenon",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう",
+      "ぞう"
+    ],
+    "kun": [
+      "かたど.る"
+    ],
+    "grade": 4,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Elephant"
+    ]
+  },
+  {
+    "kanji": "賞",
+    "meaning": "prize",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "ほ.める"
+    ],
+    "grade": 4,
+    "strokes": 15,
+    "jlpt": "N2",
+    "radicals": [
+      "Viking",
+      "Mouth",
+      "Shellfish"
+    ],
+    "examples": [
+      "混同: 費",
+      "費は弗、賞は尚が上",
+      "混同: 償",
+      "償はにんべん、賞は貝"
+    ],
+    "confusedWith": [
+      "費"
+    ]
+  },
+  {
+    "kanji": "障",
+    "meaning": "hinder, obstacle",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "しょう"
+    ],
+    "kun": [
+      "さわ.る"
+    ],
+    "grade": 6,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Building",
+      "Chapter"
+    ]
+  },
+  {
+    "kanji": "壌",
+    "meaning": "soil",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "じょう"
+    ],
+    "kun": [
+      "つち"
+    ],
+    "grade": 8,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Dirt",
+      "Nurse"
+    ],
+    "examples": [
+      "混同: 譲",
+      "壌はつちへん、譲はごんべん"
+    ],
+    "confusedWith": [
+      "譲"
+    ]
+  },
+  {
+    "kanji": "常",
+    "meaning": "usual",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "じょう"
+    ],
+    "kun": [
+      "つね",
+      "とこ-"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Viking",
+      "Mouth",
+      "Towel"
+    ],
+    "examples": [
+      "混同: 裳",
+      "常は巾、裳は衣が下"
+    ],
+    "confusedWith": [
+      "裳"
+    ]
+  },
+  {
+    "kanji": "情",
+    "meaning": "emotion",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "じょう",
+      "せい"
+    ],
+    "kun": [
+      "なさ.け"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Soul",
+      "Blue"
+    ],
+    "examples": [
+      "混同: 請",
+      "情はりっしんべん、請はごんべん"
+    ],
+    "confusedWith": [
+      "請"
+    ]
+  },
+  {
+    "kanji": "譲",
+    "meaning": "yield",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "じょう"
+    ],
+    "kun": [
+      "ゆず.る"
+    ],
+    "grade": 8,
+    "strokes": 20,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Nurse"
+    ],
+    "examples": [
+      "混同: 壌",
+      "壌はつちへん、譲はごんべん"
+    ],
+    "confusedWith": [
+      "壌"
+    ]
+  },
+  {
+    "kanji": "申",
+    "meaning": "say humbly",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "しん"
+    ],
+    "kun": [
+      "もう.す",
+      "もう.し-",
+      "さる"
+    ],
+    "grade": 3,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Cross",
+      "Mouth"
+    ],
+    "examples": [
+      "申す(もうす)"
+    ]
+  },
+  {
+    "kanji": "図",
+    "meaning": "plan, diagram",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ず",
+      "と"
+    ],
+    "kun": [
+      "え",
+      "はか.る"
+    ],
+    "grade": 2,
+    "strokes": 7,
+    "jlpt": "N4",
+    "radicals": [
+      "Mouth",
+      "Treasure",
+      "Ice"
+    ],
+    "examples": [
+      "図る(企てる)"
+    ]
+  },
+  {
+    "kanji": "衰",
+    "meaning": "decline",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "すい"
+    ],
+    "kun": [
+      "おとろ.える"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Lid",
+      "Sun",
+      "Kick"
+    ],
+    "examples": [
+      "衰退(すいたい)"
+    ]
+  },
+  {
+    "kanji": "遂",
+    "meaning": "accomplish",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "すい"
+    ],
+    "kun": [
+      "と.げる",
+      "つい.に"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Scooter",
+      "Horns",
+      "Pig"
+    ]
+  },
+  {
+    "kanji": "随",
+    "meaning": "follow",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ずい"
+    ],
+    "kun": [
+      "まにま.に",
+      "したが.う"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Building",
+      "Have",
+      "Scooter"
+    ]
+  },
+  {
+    "kanji": "髄",
+    "meaning": "marrow, pith",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ずい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 19,
+    "jlpt": "N1",
+    "radicals": [
+      "Bone",
+      "Have",
+      "Scooter"
+    ]
+  },
+  {
+    "kanji": "崇",
+    "meaning": "revere, adore",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "すう"
+    ],
+    "kun": [
+      "あが.める"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Mountain",
+      "Roof",
+      "Jackhammer"
+    ]
+  },
+  {
+    "kanji": "枢",
+    "meaning": "pivot, hinge",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "すう",
+      "しゅ"
+    ],
+    "kun": [
+      "とぼそ",
+      "からくり"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Tree",
+      "District"
+    ]
+  },
+  {
+    "kanji": "据",
+    "meaning": "set, place",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "きょ"
+    ],
+    "kun": [
+      "す.える",
+      "す.わる"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Flag",
+      "Old"
+    ]
+  },
+  {
+    "kanji": "杉",
+    "meaning": "cedar",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "さん"
+    ],
+    "kun": [
+      "すぎ"
+    ],
+    "grade": 8,
+    "strokes": 7,
+    "jlpt": "N1",
+    "radicals": [
+      "Tree",
+      "Hair"
+    ]
+  },
+  {
+    "kanji": "澄",
+    "meaning": "clear, lucid",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ちょう"
+    ],
+    "kun": [
+      "す.む",
+      "す.ます",
+      "-す.ます"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Tsunami",
+      "Tent",
+      "Beans"
+    ]
+  },
+  {
+    "kanji": "瀬",
+    "meaning": "rapids, shallows",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "らい"
+    ],
+    "kun": [
+      "せ"
+    ],
+    "grade": 8,
+    "strokes": 19,
+    "jlpt": "N1",
+    "radicals": [
+      "Tsunami",
+      "Bundle",
+      "Geoduck"
+    ]
+  },
+  {
+    "kanji": "晴",
+    "meaning": "clear weather",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せい"
+    ],
+    "kun": [
+      "は.れる",
+      "は.れ",
+      "は.れ-",
+      "-ば.れ",
+      "は.らす"
+    ],
+    "grade": 2,
+    "strokes": 12,
+    "jlpt": "N3",
+    "radicals": [
+      "Sun",
+      "Blue"
+    ],
+    "examples": [
+      "混同: 清",
+      "晴はひへん、清はさんずい"
+    ],
+    "confusedWith": [
+      "清"
+    ]
+  },
+  {
+    "kanji": "清",
+    "meaning": "clear",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せい",
+      "しょう",
+      "しん"
+    ],
+    "kun": [
+      "きよ.い",
+      "きよ.まる",
+      "きよ.める"
+    ],
+    "grade": 4,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Tsunami",
+      "Blue"
+    ],
+    "examples": [
+      "混同: 精",
+      "清はさんずい、精はこめへん",
+      "混同: 晴",
+      "晴はひへん、清はさんずい"
+    ],
+    "confusedWith": [
+      "精"
+    ]
+  },
+  {
+    "kanji": "生",
+    "meaning": "life, birth",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "せい",
+      "しょう"
+    ],
+    "kun": [
+      "い.きる",
+      "い.かす",
+      "い.ける",
+      "う.まれる",
+      "うま.れる",
+      "う.まれ",
+      "うまれ",
+      "う.む",
+      "お.う",
+      "は.える",
+      "は.やす",
+      "き",
+      "なま",
+      "なま-",
+      "な.る",
+      "な.す",
+      "む.す",
+      "-う"
+    ],
+    "grade": 1,
+    "strokes": 5,
+    "jlpt": "N5",
+    "radicals": [
+      "Life"
+    ],
+    "examples": [
+      "生(せい/しょう/なま/い)"
+    ]
+  },
+  {
+    "kanji": "精",
+    "meaning": "spirit",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せい",
+      "しょう"
+    ],
+    "kun": [
+      "しら.げる",
+      "くわ.しい"
+    ],
+    "grade": 5,
+    "strokes": 14,
+    "jlpt": "N3",
+    "radicals": [
+      "Rice",
+      "Blue"
+    ],
+    "examples": [
+      "混同: 清",
+      "清はさんずい、精はこめへん"
+    ],
+    "confusedWith": [
+      "清"
+    ]
+  },
+  {
+    "kanji": "請",
+    "meaning": "request",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せい",
+      "しん",
+      "しょう"
+    ],
+    "kun": [
+      "こ.う",
+      "う.ける"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Blue"
+    ],
+    "examples": [
+      "混同: 情",
+      "情はりっしんべん、請はごんべん"
+    ],
+    "confusedWith": [
+      "情"
+    ]
+  },
+  {
+    "kanji": "摂",
+    "meaning": "take in, absorb",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せつ",
+      "しょう"
+    ],
+    "kun": [
+      "おさ.める",
+      "かね.る",
+      "と.る"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Ear",
+      "Explosion"
+    ]
+  },
+  {
+    "kanji": "窃",
+    "meaning": "steal",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せつ"
+    ],
+    "kun": [
+      "ぬす.む",
+      "ひそ.か"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Hole",
+      "Seven",
+      "Sword"
+    ]
+  },
+  {
+    "kanji": "仙",
+    "meaning": "hermit, fairy",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん",
+      "せんと"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 5,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Mountain"
+    ]
+  },
+  {
+    "kanji": "千",
+    "meaning": "thousand",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "ち"
+    ],
+    "grade": 1,
+    "strokes": 3,
+    "jlpt": "N5",
+    "radicals": [
+      "Thousand"
+    ],
+    "examples": [
+      "混同: 干",
+      "千は撥ねがある"
+    ],
+    "confusedWith": [
+      "干"
+    ]
+  },
+  {
+    "kanji": "占",
+    "meaning": "divine, occupy",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "し.める",
+      "うらな.う"
+    ],
+    "grade": 8,
+    "strokes": 5,
+    "jlpt": "N2",
+    "radicals": [
+      "Fortune"
+    ]
+  },
+  {
+    "kanji": "専",
+    "meaning": "specialty",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "manabitimes.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "もっぱ.ら"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "Cross",
+      "Rice Paddy",
+      "Measurement"
+    ],
+    "examples": [
+      "専門(9画)",
+      "混同: 博",
+      "専は点がない、博は点がある"
+    ],
+    "confusedWith": [
+      "博"
+    ]
+  },
+  {
+    "kanji": "扇",
+    "meaning": "fan",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "おうぎ"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Door",
+      "Feathers"
+    ]
+  },
+  {
+    "kanji": "栓",
+    "meaning": "plug, stopper",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Tree",
+      "Hat",
+      "King"
+    ]
+  },
+  {
+    "kanji": "泉",
+    "meaning": "spring, fountain",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "いずみ"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "White",
+      "Water"
+    ]
+  },
+  {
+    "kanji": "浅",
+    "meaning": "shallow",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "あさ.い"
+    ],
+    "grade": 4,
+    "strokes": 9,
+    "jlpt": "N2",
+    "radicals": [
+      "Tsunami",
+      "Bar"
+    ]
+  },
+  {
+    "kanji": "洗",
+    "meaning": "wash",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "あら.う"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Tsunami",
+      "Previous"
+    ]
+  },
+  {
+    "kanji": "染",
+    "meaning": "dye, stain",
+    "category": [
+      "exam",
+      "confused"
+    ],
+    "sources": [
+      "manabitimes.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "そ.める",
+      "-ぞ.め",
+      "-ぞめ",
+      "そ.まる",
+      "し.みる",
+      "-じ.みる",
+      "し.み",
+      "-し.める"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Tsunami",
+      "Nine",
+      "Tree"
+    ],
+    "examples": [
+      "混同: 査",
+      "査は且、染は木が下"
+    ],
+    "confusedWith": [
+      "査"
+    ]
+  },
+  {
+    "kanji": "繊",
+    "meaning": "fine, delicate",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Cross",
+      "Spikes",
+      "Drunkard"
+    ]
+  },
+  {
+    "kanji": "羨",
+    "meaning": "envy",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん",
+      "えん"
+    ],
+    "kun": [
+      "うらや.む",
+      "あまり"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "腺",
+    "meaning": "gland",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "詮",
+    "meaning": "investigate, worth",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "せん.ずる",
+      "かい",
+      "あき.らか"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "践",
+    "meaning": "practice, tread",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "ふ.む"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Foot",
+      "Bar"
+    ]
+  },
+  {
+    "kanji": "遷",
+    "meaning": "transition, move",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "うつ.る",
+      "うつ.す",
+      "みやこがえ"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Scooter",
+      "Helicopter",
+      "Big",
+      "Oneself"
+    ]
+  },
+  {
+    "kanji": "鮮",
+    "meaning": "fresh, vivid",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "あざ.やか"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Sheep",
+      "Fish"
+    ]
+  },
+  {
+    "kanji": "漸",
+    "meaning": "gradually",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ぜん"
+    ],
+    "kun": [
+      "ようや.く",
+      "やや",
+      "ようよ.う",
+      "すす.む"
+    ],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Tsunami",
+      "Car",
+      "Axe"
+    ]
+  },
+  {
+    "kanji": "禅",
+    "meaning": "Zen",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ぜん",
+      "せん"
+    ],
+    "kun": [
+      "しずか",
+      "ゆず.る"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Spirit",
+      "Simple"
+    ]
+  },
+  {
+    "kanji": "繕",
+    "meaning": "repair, mend",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ぜん"
+    ],
+    "kun": [
+      "つくろ.う"
+    ],
+    "grade": 8,
+    "strokes": 18,
+    "jlpt": "N1",
+    "radicals": []
+  },
+  {
+    "kanji": "膳",
+    "meaning": "tray, meal",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ぜん",
+      "せん"
+    ],
+    "kun": [
+      "かしわ",
+      "すす.める",
+      "そな.える"
+    ],
+    "grade": 8,
+    "strokes": 16,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "塑",
+    "meaning": "model, mold",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "でく"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": []
+  },
+  {
+    "kanji": "措",
+    "meaning": "set aside, place",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "お.く"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Long Ago"
+    ]
+  },
+  {
+    "kanji": "疎",
+    "meaning": "sparse, alienated",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ",
+      "しょ"
+    ],
+    "kun": [
+      "うと.い",
+      "うと.む",
+      "まば.ら"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Coat Rack",
+      "Bundle"
+    ]
+  },
+  {
+    "kanji": "礎",
+    "meaning": "foundation",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "いしずえ"
+    ],
+    "grade": 8,
+    "strokes": 18,
+    "jlpt": "N1",
+    "radicals": [
+      "Stone",
+      "Tree",
+      "Coat Rack"
+    ]
+  },
+  {
+    "kanji": "租",
+    "meaning": "tax, tribute",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Grain",
+      "Top Hat"
+    ]
+  },
+  {
+    "kanji": "粗",
+    "meaning": "coarse, rough",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "あら.い",
+      "あら-"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Rice",
+      "Top Hat"
+    ]
+  },
+  {
+    "kanji": "訴",
+    "meaning": "sue, appeal",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "うった.える"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Axe",
+      "Drop"
+    ]
+  },
+  {
+    "kanji": "阻",
+    "meaning": "obstruct",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そ"
+    ],
+    "kun": [
+      "はば.む"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Building",
+      "Top Hat"
+    ]
+  },
+  {
+    "kanji": "遡",
+    "meaning": "go back",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そ",
+      "さく"
+    ],
+    "kun": [
+      "さかのぼ.る"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "双",
+    "meaning": "pair, both",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "ふた",
+      "たぐい",
+      "ならぶ",
+      "ふたつ"
+    ],
+    "grade": 8,
+    "strokes": 4,
+    "jlpt": "N2",
+    "radicals": [
+      "Stool"
+    ]
+  },
+  {
+    "kanji": "壮",
+    "meaning": "robust",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "さかん"
+    ],
+    "grade": 8,
+    "strokes": 6,
+    "jlpt": "N1",
+    "radicals": [
+      "Icicle",
+      "Samurai"
+    ]
+  },
+  {
+    "kanji": "奏",
+    "meaning": "play music",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "かな.でる"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Spring",
+      "Heaven"
+    ]
+  },
+  {
+    "kanji": "爽",
+    "meaning": "refreshing",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "あき.らか",
+      "さわ.やか",
+      "たがう"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Big",
+      "Treasure"
+    ]
+  },
+  {
+    "kanji": "宋",
+    "meaning": "Song dynasty",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "層",
+    "meaning": "layer, stratum",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [],
+    "grade": 6,
+    "strokes": 14,
+    "jlpt": "N2",
+    "radicals": [
+      "Flag",
+      "Mask"
+    ]
+  },
+  {
+    "kanji": "匝",
+    "meaning": "go around",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "惣",
+    "meaning": "all, general",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "想",
+    "meaning": "think, idea",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "そ"
+    ],
+    "kun": [
+      "おも.う"
+    ],
+    "grade": 3,
+    "strokes": 13,
+    "jlpt": "N3",
+    "radicals": [
+      "Tree",
+      "Eye",
+      "Heart"
+    ]
+  },
+  {
+    "kanji": "捜",
+    "meaning": "search",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "しゅ",
+      "しゅう"
+    ],
+    "kun": [
+      "さが.す"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N2",
+    "radicals": [
+      "Fingers",
+      "Humble",
+      "Stool"
+    ]
+  },
+  {
+    "kanji": "掃",
+    "meaning": "sweep",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "しゅ"
+    ],
+    "kun": [
+      "は.く"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Fingers",
+      "Wolverine",
+      "Forehead",
+      "Towel"
+    ]
+  },
+  {
+    "kanji": "挿",
+    "meaning": "insert",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "さ.す",
+      "はさ.む"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Thousand",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "操",
+    "meaning": "manipulate",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "さん"
+    ],
+    "kun": [
+      "みさお",
+      "あやつ.る"
+    ],
+    "grade": 6,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Syrup"
+    ]
+  },
+  {
+    "kanji": "早",
+    "meaning": "early",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "さっ"
+    ],
+    "kun": [
+      "はや.い",
+      "はや",
+      "はや-",
+      "はや.まる",
+      "はや.める",
+      "さ-"
+    ],
+    "grade": 1,
+    "strokes": 6,
+    "jlpt": "N4",
+    "radicals": [
+      "Sun",
+      "Cross"
+    ]
+  },
+  {
+    "kanji": "曹",
+    "meaning": "official",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "ぞう"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Ground",
+      "Music",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "槽",
+    "meaning": "tank, tub",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "ふね"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Tree",
+      "Ground",
+      "Music",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "燥",
+    "meaning": "dry",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "はしゃ.ぐ"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N2",
+    "radicals": [
+      "Fire",
+      "Syrup"
+    ]
+  },
+  {
+    "kanji": "争",
+    "meaning": "contend",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "あらそ.う",
+      "いか.でか"
+    ],
+    "grade": 4,
+    "strokes": 6,
+    "jlpt": "N3",
+    "radicals": [
+      "Prison",
+      "Wolverine",
+      "Barb"
+    ]
+  },
+  {
+    "kanji": "痩",
+    "meaning": "thin, skinny",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "ちゅう",
+      "しゅう",
+      "しゅ"
+    ],
+    "kun": [
+      "や.せる"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "相",
+    "meaning": "mutual",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "しょう"
+    ],
+    "kun": [
+      "あい-"
+    ],
+    "grade": 3,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Tree",
+      "Eye"
+    ]
+  },
+  {
+    "kanji": "窓",
+    "meaning": "window",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "す"
+    ],
+    "kun": [
+      "まど",
+      "てんまど",
+      "けむだし"
+    ],
+    "grade": 6,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Hole",
+      "Private",
+      "Heart"
+    ]
+  },
+  {
+    "kanji": "糟",
+    "meaning": "dregs",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "総",
+    "meaning": "total, general",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "す.べて",
+      "すべ.て",
+      "ふさ"
+    ],
+    "grade": 5,
+    "strokes": 14,
+    "jlpt": "N2",
+    "radicals": [
+      "Thread",
+      "Public",
+      "Heart"
+    ]
+  },
+  {
+    "kanji": "綜",
+    "meaning": "synthesize",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "聡",
+    "meaning": "wise, clever",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "草",
+    "meaning": "grass",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "くさ",
+      "くさ-",
+      "-ぐさ"
+    ],
+    "grade": 1,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Flowers",
+      "Sun",
+      "Cross"
+    ]
+  },
+  {
+    "kanji": "荘",
+    "meaning": "villa, solemn",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "しょう",
+      "ちゃん"
+    ],
+    "kun": [
+      "ほうき",
+      "おごそ.か"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Flowers",
+      "Icicle",
+      "Samurai"
+    ]
+  },
+  {
+    "kanji": "葬",
+    "meaning": "funeral",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "ほうむ.る"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Flowers",
+      "Yakuza",
+      "Spoon",
+      "Twenty"
+    ]
+  },
+  {
+    "kanji": "蒼",
+    "meaning": "blue, pale",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ]
+  },
+  {
+    "kanji": "藻",
+    "meaning": "seaweed",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "も"
+    ],
+    "grade": 8,
+    "strokes": 19,
+    "jlpt": "N1",
+    "radicals": [
+      "Flowers",
+      "Tsunami",
+      "Syrup"
+    ]
+  },
+  {
+    "kanji": "装",
+    "meaning": "attire, equip",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう",
+      "しょう"
+    ],
+    "kun": [
+      "よそお.う",
+      "よそお.い"
+    ],
+    "grade": 6,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Icicle",
+      "Samurai",
+      "Clothes"
+    ]
+  },
+  {
+    "kanji": "走",
+    "meaning": "run",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "はし.る"
+    ],
+    "grade": 2,
+    "strokes": 7,
+    "jlpt": "N4",
+    "radicals": [
+      "Run"
+    ]
+  },
+  {
+    "kanji": "送",
+    "meaning": "send",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "おく.る"
+    ],
+    "grade": 3,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Scooter",
+      "Horns",
+      "Heaven"
+    ]
+  },
+  {
+    "kanji": "遭",
+    "meaning": "encounter",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "あ.う",
+      "あ.わせる"
+    ],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Scooter",
+      "Ground",
+      "Music",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "霜",
+    "meaning": "frost",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "しも"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N1",
+    "radicals": [
+      "Rain",
+      "Tree",
+      "Eye"
+    ]
+  },
+  {
+    "kanji": "騒",
+    "meaning": "noisy",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "そう"
+    ],
+    "kun": [
+      "さわ.ぐ",
+      "うれい",
+      "さわ.がしい"
+    ],
+    "grade": 8,
+    "strokes": 18,
+    "jlpt": "N1",
+    "radicals": [
+      "Horse",
+      "Stool",
+      "Insect"
+    ]
+  },
+  {
+    "kanji": "促",
+    "meaning": "urge, promote",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "そく"
+    ],
+    "kun": [
+      "うなが.す"
+    ],
+    "grade": 8,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Foot"
+    ]
+  },
+  {
+    "kanji": "測",
+    "meaning": "measure",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "そく"
+    ],
+    "kun": [
+      "はか.る"
+    ],
+    "grade": 5,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Tsunami",
+      "Shellfish",
+      "Knife"
+    ],
+    "examples": [
+      "測る(長さ・深さ)"
+    ]
+  },
+  {
+    "kanji": "存",
+    "meaning": "exist, know",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "そん",
+      "ぞん"
+    ],
+    "kun": [
+      "ながら.える",
+      "あ.る",
+      "たも.つ",
+      "と.う"
+    ],
+    "grade": 6,
+    "strokes": 6,
+    "jlpt": "N3",
+    "radicals": [
+      "Narwhal",
+      "Stick",
+      "Child"
+    ],
+    "examples": [
+      "存じる(ぞんじる)"
+    ]
+  },
+  {
+    "kanji": "損",
+    "meaning": "loss",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "そん"
+    ],
+    "kun": [
+      "そこ.なう",
+      "そこな.う",
+      "-そこ.なう",
+      "そこ.ねる",
+      "-そこ.ねる"
+    ],
+    "grade": 5,
+    "strokes": 13,
+    "jlpt": "N2",
+    "radicals": [
+      "Fingers",
+      "Member"
+    ],
+    "examples": [
+      "混同: 員",
+      "損はてへん、員は口が下"
+    ],
+    "confusedWith": [
+      "員"
+    ]
+  },
+  {
+    "kanji": "太",
+    "meaning": "fat",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "たい",
+      "た"
+    ],
+    "kun": [
+      "ふと.い",
+      "ふと.る"
+    ],
+    "grade": 2,
+    "strokes": 4,
+    "jlpt": "N3",
+    "radicals": [
+      "Big",
+      "Drop"
+    ],
+    "examples": [
+      "混同: 犬",
+      "犬は点が右上、太は点が真ん中"
+    ],
+    "confusedWith": [
+      "犬"
+    ]
+  },
+  {
+    "kanji": "体",
+    "meaning": "body",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "たい",
+      "てい"
+    ],
+    "kun": [
+      "からだ",
+      "かたち"
+    ],
+    "grade": 2,
+    "strokes": 7,
+    "jlpt": "N4",
+    "radicals": [
+      "Leader",
+      "Book"
+    ],
+    "examples": [
+      "体←體",
+      "混同: 礼",
+      "体は骨、礼は乙"
+    ],
+    "confusedWith": [
+      "礼"
+    ]
+  },
+  {
+    "kanji": "待",
+    "meaning": "wait",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "たい"
+    ],
+    "kun": [
+      "ま.つ",
+      "-ま.ち"
+    ],
+    "grade": 3,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Loiter",
+      "Temple"
+    ],
+    "examples": [
+      "混同: 持",
+      "待はぎょうにんべん、持はてへん"
+    ],
+    "confusedWith": [
+      "持"
+    ]
+  },
+  {
+    "kanji": "替",
+    "meaning": "exchange",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "たい"
+    ],
+    "kun": [
+      "か.える",
+      "か.え-",
+      "か.わる"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Husband",
+      "Sun"
+    ],
+    "examples": [
+      "替える(かえる)"
+    ]
+  },
+  {
+    "kanji": "袋",
+    "meaning": "bag",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "たい",
+      "だい"
+    ],
+    "kun": [
+      "ふくろ"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Substitute",
+      "Clothes"
+    ],
+    "examples": [
+      "袋(ふくろ)"
+    ]
+  },
+  {
+    "kanji": "貸",
+    "meaning": "lend",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "たい"
+    ],
+    "kun": [
+      "か.す",
+      "か.し-",
+      "かし-"
+    ],
+    "grade": 5,
+    "strokes": 12,
+    "jlpt": "N4",
+    "radicals": [
+      "Substitute",
+      "Shellfish"
+    ],
+    "examples": [
+      "混同: 貨",
+      "貨は化、貸は代が上"
+    ],
+    "confusedWith": [
+      "貨"
+    ]
+  },
+  {
+    "kanji": "退",
+    "meaning": "retreat",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "たい"
+    ],
+    "kun": [
+      "しりぞ.く",
+      "しりぞ.ける",
+      "ひ.く",
+      "の.く",
+      "の.ける",
+      "ど.く"
+    ],
+    "grade": 5,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Scooter",
+      "Root"
+    ],
+    "examples": [
+      "混同: 遅",
+      "遅は羊、退は艮"
+    ],
+    "confusedWith": [
+      "遅"
+    ]
+  },
+  {
+    "kanji": "代",
+    "meaning": "substitute",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "education.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "だい",
+      "たい"
+    ],
+    "kun": [
+      "か.わる",
+      "かわ.る",
+      "かわ.り",
+      "か.わり",
+      "-がわ.り",
+      "-が.わり",
+      "か.える",
+      "よ",
+      "しろ"
+    ],
+    "grade": 3,
+    "strokes": 5,
+    "jlpt": "N4",
+    "radicals": [
+      "Leader",
+      "Ceremony"
+    ],
+    "examples": [
+      "代える(かえる)",
+      "混同: 伐",
+      "伐は戈"
+    ],
+    "confusedWith": [
+      "伐"
+    ]
+  },
+  {
+    "kanji": "諾",
+    "meaning": "consent, agree",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "だく"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Say",
+      "Flowers",
+      "Right"
+    ]
+  },
+  {
+    "kanji": "致",
+    "meaning": "do humbly",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "ち"
+    ],
+    "kun": [
+      "いた.す"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Mole",
+      "Winter"
+    ],
+    "examples": [
+      "致す(いたす)"
+    ]
+  },
+  {
+    "kanji": "遅",
+    "meaning": "late",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ち"
+    ],
+    "kun": [
+      "おく.れる",
+      "おく.らす",
+      "おそ.い"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N3",
+    "radicals": [
+      "Scooter",
+      "Flag",
+      "Sheep"
+    ],
+    "examples": [
+      "混同: 退",
+      "遅は羊、退は艮"
+    ],
+    "confusedWith": [
+      "退"
+    ]
+  },
+  {
+    "kanji": "衷",
+    "meaning": "innermost",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "ちゅう"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [],
+    "examples": [
+      "衷心(ちゅうしん)"
+    ]
+  },
+  {
+    "kanji": "著",
+    "meaning": "author, remarkable",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "gakken.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ちょ",
+      "ちゃく"
+    ],
+    "kun": [
+      "あらわ.す",
+      "いちじる.しい"
+    ],
+    "grade": 6,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Flowers",
+      "Someone"
+    ],
+    "examples": [
+      "著しい(いちじるしい)",
+      "著す(あらわす)",
+      "混同: 薯",
+      "著は者、薯は諸が下"
+    ],
+    "confusedWith": [
+      "薯"
+    ]
+  },
+  {
+    "kanji": "頂",
+    "meaning": "receive, top",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "surala.jp"
+    ],
+    "on": [
+      "ちょう"
+    ],
+    "kun": [
+      "いただ.く",
+      "いただき"
+    ],
+    "grade": 6,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Street",
+      "Geoduck"
+    ],
+    "examples": [
+      "頂く(いただく)"
+    ]
+  },
+  {
+    "kanji": "墜",
+    "meaning": "fall, crash",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "つい"
+    ],
+    "kun": [
+      "お.ちる",
+      "お.つ"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Building",
+      "Horns",
+      "Pig",
+      "Dirt"
+    ]
+  },
+  {
+    "kanji": "低",
+    "meaning": "low",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "てい"
+    ],
+    "kun": [
+      "ひく.い",
+      "ひく.める",
+      "ひく.まる"
+    ],
+    "grade": 4,
+    "strokes": 7,
+    "jlpt": "N2",
+    "radicals": [
+      "Leader",
+      "Clan",
+      "Ground"
+    ],
+    "examples": [
+      "低下(ていか)"
+    ]
+  },
+  {
+    "kanji": "定",
+    "meaning": "fix, settle",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "てい",
+      "じょう"
+    ],
+    "kun": [
+      "さだ.める",
+      "さだ.まる",
+      "さだ.か"
+    ],
+    "grade": 3,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Roof",
+      "Correct"
+    ],
+    "examples": [
+      "定める(さだめる)"
+    ]
+  },
+  {
+    "kanji": "底",
+    "meaning": "bottom",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "てい"
+    ],
+    "kun": [
+      "そこ"
+    ],
+    "grade": 4,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Canopy",
+      "Clan",
+      "Ground"
+    ],
+    "examples": [
+      "底辺(ていへん)"
+    ]
+  },
+  {
+    "kanji": "抵",
+    "meaning": "resist",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "てい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Clan",
+      "Ground"
+    ],
+    "examples": [
+      "抵触(ていしょく)"
+    ]
+  },
+  {
+    "kanji": "邸",
+    "meaning": "mansion",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "てい"
+    ],
+    "kun": [
+      "やしき"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Clan",
+      "Ground",
+      "Building"
+    ],
+    "examples": [
+      "邸宅(ていたく)"
+    ]
+  },
+  {
+    "kanji": "敵",
+    "meaning": "enemy",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "てき"
+    ],
+    "kun": [
+      "かたき",
+      "あだ",
+      "かな.う"
+    ],
+    "grade": 5,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Mohawk",
+      "Winter"
+    ],
+    "examples": [
+      "混同: 適",
+      "適は啇、敵は攵"
+    ],
+    "confusedWith": [
+      "適"
+    ]
+  },
+  {
+    "kanji": "適",
+    "meaning": "suitable",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "てき"
+    ],
+    "kun": [
+      "かな.う"
+    ],
+    "grade": 5,
+    "strokes": 14,
+    "jlpt": "N3",
+    "radicals": [
+      "Scooter",
+      "Mohawk"
+    ],
+    "examples": [
+      "混同: 敵",
+      "適は啇、敵は攵"
+    ],
+    "confusedWith": [
+      "敵"
+    ]
+  },
+  {
+    "kanji": "努",
+    "meaning": "effort",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "ど"
+    ],
+    "kun": [
+      "つと.める"
+    ],
+    "grade": 4,
+    "strokes": 7,
+    "jlpt": "N3",
+    "radicals": [
+      "Woman",
+      "Stool",
+      "Power"
+    ],
+    "examples": [
+      "努める(つとめる)"
+    ]
+  },
+  {
+    "kanji": "土",
+    "meaning": "earth",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ど",
+      "と"
+    ],
+    "kun": [
+      "つち"
+    ],
+    "grade": 1,
+    "strokes": 3,
+    "jlpt": "N5",
+    "radicals": [
+      "Dirt"
+    ],
+    "examples": [
+      "混同: 士",
+      "土は上が長い、士は下が長い"
+    ],
+    "confusedWith": [
+      "士"
+    ]
+  },
+  {
+    "kanji": "党",
+    "meaning": "party",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "とう"
+    ],
+    "kun": [
+      "なかま",
+      "むら"
+    ],
+    "grade": 6,
+    "strokes": 10,
+    "jlpt": "N2",
+    "radicals": [
+      "Viking",
+      "Older Brother"
+    ],
+    "examples": [
+      "混同: 堂",
+      "堂は土、党はつの字が下"
+    ],
+    "confusedWith": [
+      "堂"
+    ]
+  },
+  {
+    "kanji": "堂",
+    "meaning": "hall",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "どう"
+    ],
+    "kun": [],
+    "grade": 4,
+    "strokes": 11,
+    "jlpt": "N4",
+    "radicals": [
+      "Viking",
+      "Mouth",
+      "Dirt"
+    ],
+    "examples": [
+      "混同: 党",
+      "堂は土、党はつの字が下"
+    ],
+    "confusedWith": [
+      "党"
+    ]
+  },
+  {
+    "kanji": "熱",
+    "meaning": "heat, fever",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "ねつ"
+    ],
+    "kun": [
+      "あつ.い"
+    ],
+    "grade": 4,
+    "strokes": 15,
+    "jlpt": "N3",
+    "radicals": [
+      "Womb",
+      "Circle",
+      "Boil"
+    ],
+    "examples": [
+      "熱い(あつい)"
+    ]
+  },
+  {
+    "kanji": "納",
+    "meaning": "deliver, pay",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "のう",
+      "なっ",
+      "な",
+      "なん",
+      "とう"
+    ],
+    "kun": [
+      "おさ.める",
+      "-おさ.める",
+      "おさ.まる"
+    ],
+    "grade": 6,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Inside"
+    ],
+    "examples": [
+      "納める(おさめる)"
+    ]
+  },
+  {
+    "kanji": "俳",
+    "meaning": "haiku",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [],
+    "grade": 6,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Criminal"
+    ],
+    "examples": [
+      "混同: 徘",
+      "俳はにんべん、徘はぎょうにんべん"
+    ],
+    "confusedWith": [
+      "徘"
+    ]
+  },
+  {
+    "kanji": "廃",
+    "meaning": "abolish",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "すた.れる",
+      "すた.る"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Canopy",
+      "Departure"
+    ],
+    "examples": [
+      "混同: 発",
+      "廃はまだれ",
+      "混同: 肺",
+      "肺はにくづき、廃はまだれ"
+    ],
+    "confusedWith": [
+      "発"
+    ]
+  },
+  {
+    "kanji": "拝",
+    "meaning": "worship",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "おが.む",
+      "おろが.む"
+    ],
+    "grade": 6,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Fingers",
+      "Dry"
+    ],
+    "examples": [
+      "拝見(はいけん)",
+      "混同: 排",
+      "排はてへん、拝も同様"
+    ],
+    "confusedWith": [
+      "排"
+    ]
+  },
+  {
+    "kanji": "排",
+    "meaning": "exclude",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "Criminal"
+    ],
+    "examples": [
+      "混同: 拝",
+      "排はてへん、拝も同様"
+    ],
+    "confusedWith": [
+      "拝"
+    ]
+  },
+  {
+    "kanji": "敗",
+    "meaning": "defeat",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "やぶ.れる"
+    ],
+    "grade": 4,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Shellfish",
+      "Winter"
+    ],
+    "examples": [
+      "混同: 販",
+      "敗はぼくづくり、販はかいへん"
+    ],
+    "confusedWith": [
+      "販"
+    ]
+  },
+  {
+    "kanji": "杯",
+    "meaning": "cup",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "さかずき"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Tree",
+      "Not"
+    ],
+    "examples": [
+      "混同: 坏",
+      "杯はきへん、坏はつちへん"
+    ],
+    "confusedWith": [
+      "坏"
+    ]
+  },
+  {
+    "kanji": "背",
+    "meaning": "back",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "せ",
+      "せい",
+      "そむ.く",
+      "そむ.ける"
+    ],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "North",
+      "Moon"
+    ],
+    "examples": [
+      "混同: 輩",
+      "輩はくるまへん、背はにくづき"
+    ],
+    "confusedWith": [
+      "輩"
+    ]
+  },
+  {
+    "kanji": "肺",
+    "meaning": "lungs",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [],
+    "grade": 6,
+    "strokes": 9,
+    "jlpt": "N1",
+    "radicals": [
+      "Moon",
+      "City"
+    ],
+    "examples": [
+      "混同: 廃",
+      "肺はにくづき、廃はまだれ"
+    ],
+    "confusedWith": [
+      "廃"
+    ]
+  },
+  {
+    "kanji": "輩",
+    "meaning": "fellows",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "-ばら",
+      "やから",
+      "やかい",
+      "ともがら"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Criminal",
+      "Car"
+    ],
+    "examples": [
+      "混同: 背",
+      "輩はくるまへん、背はにくづき"
+    ],
+    "confusedWith": [
+      "背"
+    ]
+  },
+  {
+    "kanji": "配",
+    "meaning": "distribute",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はい"
+    ],
+    "kun": [
+      "くば.る"
+    ],
+    "grade": 3,
+    "strokes": 10,
+    "jlpt": "N3",
+    "radicals": [
+      "Alcohol",
+      "Oneself"
+    ],
+    "examples": [
+      "混同: 酒",
+      "配は己、酒は酉"
+    ],
+    "confusedWith": [
+      "酒"
+    ]
+  },
+  {
+    "kanji": "倍",
+    "meaning": "double",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [],
+    "grade": 3,
+    "strokes": 10,
+    "jlpt": "N2",
+    "radicals": [
+      "Leader",
+      "Clown"
+    ],
+    "examples": [
+      "混同: 賠",
+      "賠はかいへん、倍はにんべん"
+    ],
+    "confusedWith": [
+      "賠"
+    ]
+  },
+  {
+    "kanji": "培",
+    "meaning": "cultivate",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [
+      "つちか.う"
+    ],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Dirt",
+      "Clown"
+    ],
+    "examples": [
+      "混同: 陪",
+      "陪はこざとへん、培はつちへん"
+    ],
+    "confusedWith": [
+      "陪"
+    ]
+  },
+  {
+    "kanji": "媒",
+    "meaning": "medium",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [
+      "なこうど"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Woman",
+      "Sweet",
+      "Tree"
+    ],
+    "examples": [
+      "混同: 煤",
+      "媒はおんなへん、煤はひへん"
+    ],
+    "confusedWith": [
+      "煤"
+    ]
+  },
+  {
+    "kanji": "梅",
+    "meaning": "plum",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [
+      "うめ"
+    ],
+    "grade": 4,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Tree",
+      "Gun",
+      "Window"
+    ],
+    "examples": [
+      "混同: 悔",
+      "梅はきへん、悔はりっしんべん"
+    ],
+    "confusedWith": [
+      "悔"
+    ]
+  },
+  {
+    "kanji": "煤",
+    "meaning": "soot",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 媒",
+      "媒はおんなへん、煤はひへん"
+    ],
+    "confusedWith": [
+      "媒"
+    ]
+  },
+  {
+    "kanji": "賠",
+    "meaning": "compensate",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Shellfish",
+      "Clown"
+    ],
+    "examples": [
+      "混同: 倍",
+      "賠はかいへん、倍はにんべん"
+    ],
+    "confusedWith": [
+      "倍"
+    ]
+  },
+  {
+    "kanji": "陪",
+    "meaning": "accompany",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ばい"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N1",
+    "radicals": [
+      "Building",
+      "Clown"
+    ],
+    "examples": [
+      "混同: 部",
+      "部は口、陪は立を含む",
+      "混同: 培",
+      "陪はこざとへん、培はつちへん"
+    ],
+    "confusedWith": [
+      "部"
+    ]
+  },
+  {
+    "kanji": "伯",
+    "meaning": "count",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はく"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 7,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "White"
+    ],
+    "examples": [
+      "混同: 泊",
+      "泊はさんずい、伯はにんべん"
+    ],
+    "confusedWith": [
+      "泊"
+    ]
+  },
+  {
+    "kanji": "博",
+    "meaning": "wide, extensive",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "manabitimes.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はく",
+      "ばく"
+    ],
+    "kun": [],
+    "grade": 4,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Cross",
+      "Specialty"
+    ],
+    "examples": [
+      "博士(12画)",
+      "混同: 専",
+      "専は点がない、博は点がある"
+    ],
+    "confusedWith": [
+      "専"
+    ]
+  },
+  {
+    "kanji": "拍",
+    "meaning": "clap",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はく",
+      "ひょう"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Fingers",
+      "White"
+    ],
+    "examples": [
+      "混同: 柏",
+      "拍はてへん、柏はきへん"
+    ],
+    "confusedWith": [
+      "柏"
+    ]
+  },
+  {
+    "kanji": "柏",
+    "meaning": "oak",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "examples": [
+      "混同: 拍",
+      "拍はてへん、柏はきへん"
+    ],
+    "confusedWith": [
+      "拍"
+    ]
+  },
+  {
+    "kanji": "泊",
+    "meaning": "stay",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はく"
+    ],
+    "kun": [
+      "と.まる",
+      "と.める"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Tsunami",
+      "White"
+    ],
+    "examples": [
+      "混同: 伯",
+      "泊はさんずい、伯はにんべん"
+    ],
+    "confusedWith": [
+      "伯"
+    ]
+  },
+  {
+    "kanji": "発",
+    "meaning": "emit, depart",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "manabitimes.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はつ",
+      "ほつ"
+    ],
+    "kun": [
+      "た.つ",
+      "あば.く",
+      "おこ.る",
+      "つか.わす",
+      "はな.つ"
+    ],
+    "grade": 3,
+    "strokes": 9,
+    "jlpt": "N4",
+    "radicals": [
+      "Tent",
+      "Lantern"
+    ],
+    "examples": [
+      "発展(9画)",
+      "混同: 廃",
+      "廃はまだれ"
+    ],
+    "confusedWith": [
+      "廃"
+    ]
+  },
+  {
+    "kanji": "伐",
+    "meaning": "cut down",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ばつ",
+      "はつ",
+      "か",
+      "ぼち"
+    ],
+    "kun": [
+      "き.る",
+      "そむ.く",
+      "う.つ"
+    ],
+    "grade": 8,
+    "strokes": 6,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Drunkard"
+    ],
+    "examples": [
+      "混同: 代",
+      "伐は戈"
+    ],
+    "confusedWith": [
+      "代"
+    ]
+  },
+  {
+    "kanji": "帆",
+    "meaning": "sail",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "はん"
+    ],
+    "kun": [
+      "ほ"
+    ],
+    "grade": 8,
+    "strokes": 6,
+    "jlpt": "N1",
+    "radicals": [
+      "Towel",
+      "Table",
+      "Drop"
+    ],
+    "examples": [
+      "帆船(はんせん/ほせん)"
+    ]
+  },
+  {
+    "kanji": "氾",
+    "meaning": "overflow",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "bunka.go.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "はん"
+    ],
+    "kun": [
+      "ひろ.がる"
+    ],
+    "grade": 8,
+    "strokes": 5,
+    "jlpt": null,
+    "radicals": [],
+    "examples": [
+      "氾濫(はんらん)",
+      "混同: 犯",
+      "犯はけものへん、氾はさんずい"
+    ],
+    "confusedWith": [
+      "犯"
+    ]
+  },
+  {
+    "kanji": "汎",
+    "meaning": "general, pan-",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "はん",
+      "ぶ",
+      "ふう",
+      "ほう",
+      "ほん"
+    ],
+    "kun": [
+      "ただよ.う",
+      "ひろ.い"
+    ],
+    "grade": 8,
+    "strokes": 6,
+    "jlpt": null,
+    "radicals": [],
+    "examples": [
+      "汎用(はんよう)"
+    ]
+  },
+  {
+    "kanji": "犯",
+    "meaning": "crime",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "はん",
+      "ぼん"
+    ],
+    "kun": [
+      "おか.す"
+    ],
+    "grade": 5,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Animal",
+      "Snake"
+    ],
+    "examples": [
+      "混同: 氾",
+      "犯はけものへん、氾はさんずい"
+    ],
+    "confusedWith": [
+      "氾"
+    ]
+  },
+  {
+    "kanji": "販",
+    "meaning": "sell",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "はん"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 11,
+    "jlpt": "N2",
+    "radicals": [
+      "Shellfish",
+      "Anti"
+    ],
+    "examples": [
+      "混同: 敗",
+      "敗はぼくづくり、販はかいへん"
+    ],
+    "confusedWith": [
+      "敗"
+    ]
+  },
+  {
+    "kanji": "煩",
+    "meaning": "troublesome",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "はん",
+      "ぼん"
+    ],
+    "kun": [
+      "わずら.う",
+      "わずら.わす",
+      "うるさ.がる",
+      "うるさ.い"
+    ],
+    "grade": 8,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Fire",
+      "Geoduck"
+    ],
+    "examples": [
+      "煩雑(はんざつ)"
+    ]
+  },
+  {
+    "kanji": "費",
+    "meaning": "expense",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ひ"
+    ],
+    "kun": [
+      "つい.やす",
+      "つい.える"
+    ],
+    "grade": 4,
+    "strokes": 12,
+    "jlpt": "N3",
+    "radicals": [
+      "Dollar",
+      "Shellfish"
+    ],
+    "examples": [
+      "混同: 賞",
+      "費は弗、賞は尚が上"
+    ],
+    "confusedWith": [
+      "賞"
+    ]
+  },
+  {
+    "kanji": "飛",
+    "meaning": "fly",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "ひ"
+    ],
+    "kun": [
+      "と.ぶ",
+      "と.ばす",
+      "-と.ばす"
+    ],
+    "grade": 4,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Fly"
+    ],
+    "examples": [
+      "飛ぶ(9画)"
+    ]
+  },
+  {
+    "kanji": "必",
+    "meaning": "necessary",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "manabitimes.jp"
+    ],
+    "on": [
+      "ひつ"
+    ],
+    "kun": [
+      "かなら.ず"
+    ],
+    "grade": 4,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Heart",
+      "Slide"
+    ],
+    "examples": [
+      "必ず(5画)"
+    ]
+  },
+  {
+    "kanji": "表",
+    "meaning": "express",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "ひょう"
+    ],
+    "kun": [
+      "おもて",
+      "-おもて",
+      "あらわ.す",
+      "あらわ.れる",
+      "あら.わす"
+    ],
+    "grade": 3,
+    "strokes": 8,
+    "jlpt": "N3",
+    "radicals": [
+      "Life",
+      "Kick"
+    ],
+    "examples": [
+      "表す/表わす"
+    ]
+  },
+  {
+    "kanji": "布",
+    "meaning": "cloth",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "ふ"
+    ],
+    "kun": [
+      "ぬの"
+    ],
+    "grade": 5,
+    "strokes": 5,
+    "jlpt": "N2",
+    "radicals": [
+      "Narwhal",
+      "Towel"
+    ],
+    "examples": [
+      "布(ぬの)"
+    ]
+  },
+  {
+    "kanji": "侮",
+    "meaning": "despise",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ぶ"
+    ],
+    "kun": [
+      "あなど.る",
+      "あなず.る"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N1",
+    "radicals": [
+      "Leader",
+      "Every"
+    ],
+    "examples": [
+      "混同: 悔",
+      "侮はにんべん、悔はりっしんべん"
+    ],
+    "confusedWith": [
+      "悔"
+    ]
+  },
+  {
+    "kanji": "部",
+    "meaning": "section",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "ぶ"
+    ],
+    "kun": [
+      "-べ"
+    ],
+    "grade": 3,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Clown",
+      "Building"
+    ],
+    "examples": [
+      "混同: 陪",
+      "部は口、陪は立を含む"
+    ],
+    "confusedWith": [
+      "陪"
+    ]
+  },
+  {
+    "kanji": "幅",
+    "meaning": "width",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふく"
+    ],
+    "kun": [
+      "はば"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Towel",
+      "Scarecrow"
+    ]
+  },
+  {
+    "kanji": "腹",
+    "meaning": "belly, abdomen",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふく"
+    ],
+    "kun": [
+      "はら"
+    ],
+    "grade": 6,
+    "strokes": 13,
+    "jlpt": "N3",
+    "radicals": [
+      "Moon",
+      "Black Hole"
+    ]
+  },
+  {
+    "kanji": "複",
+    "meaning": "duplicate, complex",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふく"
+    ],
+    "kun": [],
+    "grade": 5,
+    "strokes": 14,
+    "jlpt": "N2",
+    "radicals": [
+      "Spirit",
+      "Black Hole"
+    ]
+  },
+  {
+    "kanji": "覆",
+    "meaning": "overturn, cover",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふく"
+    ],
+    "kun": [
+      "おお.う",
+      "くつがえ.す",
+      "くつがえ.る"
+    ],
+    "grade": 8,
+    "strokes": 18,
+    "jlpt": "N1",
+    "radicals": [
+      "Helicopter",
+      "Loiter",
+      "Black Hole"
+    ]
+  },
+  {
+    "kanji": "払",
+    "meaning": "pay, sweep away",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふつ",
+      "ひつ",
+      "ほつ"
+    ],
+    "kun": [
+      "はら.う",
+      "-はら.い",
+      "-ばら.い"
+    ],
+    "grade": 8,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Fingers",
+      "Private"
+    ]
+  },
+  {
+    "kanji": "沸",
+    "meaning": "boil",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふつ"
+    ],
+    "kun": [
+      "わ.く",
+      "わ.かす"
+    ],
+    "grade": 8,
+    "strokes": 8,
+    "jlpt": "N2",
+    "radicals": [
+      "Tsunami",
+      "Dollar"
+    ]
+  },
+  {
+    "kanji": "分",
+    "meaning": "part, understand",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "ぶん",
+      "ふん",
+      "ぶ"
+    ],
+    "kun": [
+      "わ.ける",
+      "わ.け",
+      "わ.かれる",
+      "わ.かる",
+      "わ.かつ"
+    ],
+    "grade": 2,
+    "strokes": 4,
+    "jlpt": null,
+    "radicals": [
+      "Fins",
+      "Sword"
+    ],
+    "examples": [
+      "分(ぶん/ふん/ぶ/わ)"
+    ]
+  },
+  {
+    "kanji": "噴",
+    "meaning": "spout, erupt",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふん"
+    ],
+    "kun": [
+      "ふ.く"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Mouth",
+      "Cross",
+      "Flowers",
+      "Shellfish"
+    ]
+  },
+  {
+    "kanji": "墳",
+    "meaning": "tomb, mound",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふん"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Dirt",
+      "Cross",
+      "Flowers",
+      "Shellfish"
+    ]
+  },
+  {
+    "kanji": "憤",
+    "meaning": "anger, resent",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふん"
+    ],
+    "kun": [
+      "いきどお.る"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Soul",
+      "Cross",
+      "Flowers",
+      "Shellfish"
+    ]
+  },
+  {
+    "kanji": "紛",
+    "meaning": "confused, tangled",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "ふん"
+    ],
+    "kun": [
+      "まぎ.れる",
+      "-まぎ.れ",
+      "まぎ.らす",
+      "まぎ.らわす",
+      "まぎ.らわしい"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Thread",
+      "Part"
+    ]
+  },
+  {
+    "kanji": "変",
+    "meaning": "change",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "へん"
+    ],
+    "kun": [
+      "か.わる",
+      "か.わり",
+      "か.える"
+    ],
+    "grade": 4,
+    "strokes": 9,
+    "jlpt": "N3",
+    "radicals": [
+      "Red",
+      "Winter"
+    ],
+    "examples": [
+      "変える(かえる)"
+    ]
+  },
+  {
+    "kanji": "辺",
+    "meaning": "vicinity",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "へん"
+    ],
+    "kun": [
+      "あた.り",
+      "ほと.り",
+      "-べ"
+    ],
+    "grade": 4,
+    "strokes": 5,
+    "jlpt": "N2",
+    "radicals": [
+      "Scooter",
+      "Sword"
+    ],
+    "examples": [
+      "混同: 返",
+      "辺はしんにょう、返も同様"
+    ],
+    "confusedWith": [
+      "返"
+    ]
+  },
+  {
+    "kanji": "返",
+    "meaning": "return",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "education.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "へん"
+    ],
+    "kun": [
+      "かえ.す",
+      "-かえ.す",
+      "かえ.る",
+      "-かえ.る"
+    ],
+    "grade": 3,
+    "strokes": 7,
+    "jlpt": "N3",
+    "radicals": [
+      "Scooter",
+      "Anti"
+    ],
+    "examples": [
+      "返す(かえす)",
+      "混同: 辺",
+      "辺はしんにょう、返も同様"
+    ],
+    "confusedWith": [
+      "辺"
+    ]
+  },
+  {
+    "kanji": "募",
+    "meaning": "recruit",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ぼ"
+    ],
+    "kun": [
+      "つの.る"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Greenhouse",
+      "Power"
+    ],
+    "examples": [
+      "混同: 慕",
+      "慕は心、募は力が下"
+    ],
+    "confusedWith": [
+      "慕"
+    ]
+  },
+  {
+    "kanji": "墓",
+    "meaning": "grave",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ぼ"
+    ],
+    "kun": [
+      "はか"
+    ],
+    "grade": 5,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Dirt",
+      "Greenhouse"
+    ],
+    "examples": [
+      "混同: 幕",
+      "墓は土、幕は巾が下"
+    ],
+    "confusedWith": [
+      "幕"
+    ]
+  },
+  {
+    "kanji": "慕",
+    "meaning": "yearn",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ぼ"
+    ],
+    "kun": [
+      "した.う"
+    ],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Greenhouse",
+      "Small",
+      "Drop"
+    ],
+    "examples": [
+      "混同: 募",
+      "慕は心、募は力が下"
+    ],
+    "confusedWith": [
+      "募"
+    ]
+  },
+  {
+    "kanji": "暮",
+    "meaning": "evening",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "ぼ"
+    ],
+    "kun": [
+      "く.れる",
+      "く.らす"
+    ],
+    "grade": 6,
+    "strokes": 14,
+    "jlpt": "N3",
+    "radicals": [
+      "Greenhouse",
+      "Sun"
+    ],
+    "examples": [
+      "混同: 幕",
+      "暮は日が下、幕は巾が下"
+    ],
+    "confusedWith": [
+      "幕"
+    ]
+  },
+  {
+    "kanji": "本",
+    "meaning": "book, origin",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "ほん"
+    ],
+    "kun": [
+      "もと"
+    ],
+    "grade": 1,
+    "strokes": 5,
+    "jlpt": "N5",
+    "radicals": [
+      "Book"
+    ],
+    "examples": [
+      "本(もと)/本来(ほんらい)"
+    ]
+  },
+  {
+    "kanji": "凡",
+    "meaning": "ordinary",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "ぼん",
+      "はん"
+    ],
+    "kun": [
+      "およ.そ",
+      "おうよ.そ",
+      "すべ.て"
+    ],
+    "grade": 8,
+    "strokes": 3,
+    "jlpt": "N1",
+    "radicals": [
+      "Table",
+      "Drop"
+    ],
+    "examples": [
+      "凡例(はんれい)"
+    ]
+  },
+  {
+    "kanji": "埋",
+    "meaning": "bury",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "まい"
+    ],
+    "kun": [
+      "う.める",
+      "う.まる",
+      "う.もれる",
+      "うず.める",
+      "うず.まる",
+      "い.ける"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N2",
+    "radicals": [
+      "Dirt",
+      "Village"
+    ],
+    "examples": [
+      "混同: 理",
+      "理はたまへん、埋はつちへん"
+    ],
+    "confusedWith": [
+      "理"
+    ]
+  },
+  {
+    "kanji": "毎",
+    "meaning": "every",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "まい"
+    ],
+    "kun": [
+      "ごと",
+      "-ごと.に"
+    ],
+    "grade": 2,
+    "strokes": 6,
+    "jlpt": "N5",
+    "radicals": [
+      "Gun",
+      "Window"
+    ],
+    "examples": [
+      "混同: 海",
+      "海はさんずい付き"
+    ],
+    "confusedWith": [
+      "海"
+    ]
+  },
+  {
+    "kanji": "幕",
+    "meaning": "curtain",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "まく",
+      "ばく"
+    ],
+    "kun": [
+      "とばり"
+    ],
+    "grade": 6,
+    "strokes": 13,
+    "jlpt": "N1",
+    "radicals": [
+      "Greenhouse",
+      "Towel"
+    ],
+    "examples": [
+      "混同: 暮",
+      "暮は日が下、幕は巾が下",
+      "混同: 墓",
+      "墓は土、幕は巾が下"
+    ],
+    "confusedWith": [
+      "暮"
+    ]
+  },
+  {
+    "kanji": "末",
+    "meaning": "end",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "まつ",
+      "ばつ"
+    ],
+    "kun": [
+      "すえ"
+    ],
+    "grade": 4,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Jet"
+    ],
+    "examples": [
+      "末期(まっき)",
+      "混同: 未",
+      "末は上が長い、未は上が短い"
+    ],
+    "confusedWith": [
+      "未"
+    ]
+  },
+  {
+    "kanji": "未",
+    "meaning": "not yet",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "み",
+      "び"
+    ],
+    "kun": [
+      "いま.だ",
+      "ま.だ",
+      "ひつじ"
+    ],
+    "grade": 4,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Jet"
+    ],
+    "examples": [
+      "未来(みらい)",
+      "混同: 末",
+      "末は上が長い、未は上が短い"
+    ],
+    "confusedWith": [
+      "末"
+    ]
+  },
+  {
+    "kanji": "巳",
+    "meaning": "snake (zodiac)",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "巳年(みどし)",
+      "混同: 已",
+      "巳は口が閉じる",
+      "混同: 己",
+      "己は開く、巳は閉じる"
+    ],
+    "confusedWith": [
+      "已"
+    ]
+  },
+  {
+    "kanji": "務",
+    "meaning": "duty",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "benesse.jp"
+    ],
+    "on": [
+      "む"
+    ],
+    "kun": [
+      "つと.める"
+    ],
+    "grade": 5,
+    "strokes": 11,
+    "jlpt": "N3",
+    "radicals": [
+      "Spear",
+      "Winter",
+      "Power"
+    ],
+    "examples": [
+      "務める(つとめる)"
+    ]
+  },
+  {
+    "kanji": "明",
+    "meaning": "bright, clear",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "gakken.jp"
+    ],
+    "on": [
+      "めい",
+      "みょう",
+      "みん"
+    ],
+    "kun": [
+      "あ.かり",
+      "あか.るい",
+      "あか.るむ",
+      "あか.らむ",
+      "あき.らか",
+      "あ.ける",
+      "-あ.け",
+      "あ.く",
+      "あ.くる",
+      "あ.かす"
+    ],
+    "grade": 2,
+    "strokes": 8,
+    "jlpt": "N4",
+    "radicals": [
+      "Sun",
+      "Moon"
+    ],
+    "examples": [
+      "明(めい/みょう/あ/あか)"
+    ]
+  },
+  {
+    "kanji": "戻",
+    "meaning": "return",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい"
+    ],
+    "kun": [
+      "もど.す",
+      "もど.る"
+    ],
+    "grade": 8,
+    "strokes": 7,
+    "jlpt": "N3",
+    "radicals": [
+      "Door",
+      "Big"
+    ]
+  },
+  {
+    "kanji": "有",
+    "meaning": "have, exist",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "bunka.go.jp"
+    ],
+    "on": [
+      "ゆう",
+      "う"
+    ],
+    "kun": [
+      "あ.る"
+    ],
+    "grade": 3,
+    "strokes": 6,
+    "jlpt": "N4",
+    "radicals": [
+      "Narwhal",
+      "Moon"
+    ],
+    "examples": [
+      "有る(ある)"
+    ]
+  },
+  {
+    "kanji": "理",
+    "meaning": "reason",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "り"
+    ],
+    "kun": [
+      "ことわり"
+    ],
+    "grade": 2,
+    "strokes": 11,
+    "jlpt": "N4",
+    "radicals": [
+      "King",
+      "Village"
+    ],
+    "examples": [
+      "混同: 埋",
+      "理はたまへん、埋はつちへん"
+    ],
+    "confusedWith": [
+      "埋"
+    ]
+  },
+  {
+    "kanji": "璃",
+    "meaning": "glass",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "り"
+    ],
+    "kun": [],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "King",
+      "Rocket"
+    ],
+    "examples": [
+      "混同: 離",
+      "離はふるとり、璃はたまへん"
+    ],
+    "confusedWith": [
+      "離"
+    ]
+  },
+  {
+    "kanji": "裏",
+    "meaning": "back, reverse",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "education.jp",
+      "weblio.jp"
+    ],
+    "on": [
+      "り"
+    ],
+    "kun": [
+      "うら"
+    ],
+    "grade": 6,
+    "strokes": 13,
+    "jlpt": "N2",
+    "radicals": [
+      "Lid",
+      "Village",
+      "Kick"
+    ],
+    "examples": [
+      "裏(うら)",
+      "混同: 裹",
+      "裏は里、裹は果"
+    ],
+    "confusedWith": [
+      "裹"
+    ]
+  },
+  {
+    "kanji": "離",
+    "meaning": "separate",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "on": [
+      "り"
+    ],
+    "kun": [
+      "はな.れる",
+      "はな.す"
+    ],
+    "grade": 8,
+    "strokes": 19,
+    "jlpt": "N1",
+    "radicals": [
+      "Rocket",
+      "Turkey"
+    ],
+    "examples": [
+      "混同: 璃",
+      "離はふるとり、璃はたまへん"
+    ],
+    "confusedWith": [
+      "璃"
+    ]
+  },
+  {
+    "kanji": "量",
+    "meaning": "quantity",
+    "category": [
+      "mistake"
+    ],
+    "sources": [
+      "education.jp"
+    ],
+    "on": [
+      "りょう"
+    ],
+    "kun": [
+      "はか.る"
+    ],
+    "grade": 4,
+    "strokes": 12,
+    "jlpt": "N2",
+    "radicals": [
+      "Dawn",
+      "Village"
+    ],
+    "examples": [
+      "量る(重さ)"
+    ]
+  },
+  {
+    "kanji": "励",
+    "meaning": "encourage",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい"
+    ],
+    "kun": [
+      "はげ.む",
+      "はげ.ます"
+    ],
+    "grade": 8,
+    "strokes": 7,
+    "jlpt": "N1",
+    "radicals": [
+      "Cliff",
+      "Ten Thousand",
+      "Power"
+    ]
+  },
+  {
+    "kanji": "礼",
+    "meaning": "courtesy",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "on": [
+      "れい",
+      "らい"
+    ],
+    "kun": [],
+    "grade": 3,
+    "strokes": 5,
+    "jlpt": "N3",
+    "radicals": [
+      "Spirit",
+      "Umbrella"
+    ],
+    "examples": [
+      "混同: 体",
+      "体は骨、礼は乙"
+    ],
+    "confusedWith": [
+      "体"
+    ]
+  },
+  {
+    "kanji": "隷",
+    "meaning": "slave, servant",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい"
+    ],
+    "kun": [
+      "したが.う",
+      "しもべ"
+    ],
+    "grade": 8,
+    "strokes": 16,
+    "jlpt": "N1",
+    "radicals": [
+      "Samurai",
+      "Jackhammer",
+      "Brush",
+      "Water"
+    ]
+  },
+  {
+    "kanji": "霊",
+    "meaning": "spirit, soul",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい",
+      "りょう"
+    ],
+    "kun": [
+      "たま"
+    ],
+    "grade": 8,
+    "strokes": 15,
+    "jlpt": "N1",
+    "radicals": [
+      "Rain",
+      "Two",
+      "Spikes"
+    ]
+  },
+  {
+    "kanji": "麗",
+    "meaning": "beautiful",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい"
+    ],
+    "kun": [
+      "うるわ.しい",
+      "うら.らか"
+    ],
+    "grade": 8,
+    "strokes": 19,
+    "jlpt": "N1",
+    "radicals": [
+      "Lovely"
+    ]
+  },
+  {
+    "kanji": "齢",
+    "meaning": "age",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れい"
+    ],
+    "kun": [
+      "よわい",
+      "とし"
+    ],
+    "grade": 8,
+    "strokes": 17,
+    "jlpt": "N2",
+    "radicals": [
+      "Tooth",
+      "Orders"
+    ]
+  },
+  {
+    "kanji": "暦",
+    "meaning": "calendar",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れき",
+      "りゃく"
+    ],
+    "kun": [
+      "こよみ"
+    ],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": "N1",
+    "radicals": [
+      "Cliff",
+      "Tree",
+      "Sun"
+    ]
+  },
+  {
+    "kanji": "歴",
+    "meaning": "history",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "studyplus.jp"
+    ],
+    "on": [
+      "れき",
+      "れっき"
+    ],
+    "kun": [],
+    "grade": 4,
+    "strokes": 14,
+    "jlpt": "N2",
+    "radicals": [
+      "Cliff",
+      "Tree",
+      "Stop"
+    ]
+  },
+  {
+    "kanji": "烈",
+    "meaning": "fierce, violent",
+    "category": [
+      "exam",
+      "confused"
+    ],
+    "sources": [
+      "studyplus.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "れつ"
+    ],
+    "kun": [
+      "はげ.しい"
+    ],
+    "grade": 8,
+    "strokes": 10,
+    "jlpt": "N1",
+    "radicals": [
+      "Yakuza",
+      "Knife",
+      "Boil"
+    ],
+    "examples": [
+      "混同: 裂",
+      "裂はころもへん、烈はれっか"
+    ],
+    "confusedWith": [
+      "裂"
+    ]
+  },
+  {
+    "kanji": "裂",
+    "meaning": "tear, split",
+    "category": [
+      "exam",
+      "confused"
+    ],
+    "sources": [
+      "studyplus.jp",
+      "goo.ne.jp"
+    ],
+    "on": [
+      "れつ"
+    ],
+    "kun": [
+      "さ.く",
+      "さ.ける",
+      "-ぎ.れ"
+    ],
+    "grade": 8,
+    "strokes": 12,
+    "jlpt": "N1",
+    "radicals": [
+      "Yakuza",
+      "Knife",
+      "Clothes"
+    ],
+    "examples": [
+      "混同: 烈",
+      "裂はころもへん、烈はれっか"
+    ],
+    "confusedWith": [
+      "烈"
+    ]
+  },
+  {
+    "kanji": "坏",
+    "meaning": "unglazed",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 杯",
+      "杯はきへん、坏はつちへん"
+    ],
+    "confusedWith": [
+      "杯"
+    ]
+  },
+  {
+    "kanji": "已",
+    "meaning": "already",
+    "category": [
+      "mistake",
+      "confused"
+    ],
+    "sources": [
+      "surala.jp",
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "已む(やむ)",
+      "混同: 己",
+      "己は口が開く、已は中間",
+      "混同: 巳",
+      "巳は口が閉じる"
+    ],
+    "confusedWith": [
+      "己"
+    ]
+  },
+  {
+    "kanji": "徘",
+    "meaning": "wander",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "examples": [
+      "混同: 俳",
+      "俳はにんべん、徘はぎょうにんべん"
+    ],
+    "confusedWith": [
+      "俳"
+    ]
+  },
+  {
+    "kanji": "沛",
+    "meaning": "torrential",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 市",
+      "沛はさんずい付き"
+    ],
+    "confusedWith": [
+      "市"
+    ]
+  },
+  {
+    "kanji": "珀",
+    "meaning": "amber",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 狛",
+      "狛はけものへん、珀はたまへん"
+    ],
+    "confusedWith": [
+      "狛"
+    ]
+  },
+  {
+    "kanji": "箋",
+    "meaning": "slip, note",
+    "category": [
+      "exam"
+    ],
+    "sources": [
+      "yotsuya-otsuka.jp"
+    ],
+    "on": [
+      "せん"
+    ],
+    "kun": [
+      "ふだ"
+    ],
+    "grade": 8,
+    "strokes": 14,
+    "jlpt": null,
+    "radicals": []
+  },
+  {
+    "kanji": "胚",
+    "meaning": "embryo",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 呸",
+      "胚はにくづき、呸はくちへん"
+    ],
+    "confusedWith": [
+      "呸"
+    ]
+  },
+  {
+    "kanji": "裹",
+    "meaning": "wrap",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "weblio.jp"
+    ],
+    "examples": [
+      "混同: 裏",
+      "裏は里、裹は果"
+    ],
+    "confusedWith": [
+      "裏"
+    ]
+  },
+  {
+    "kanji": "遐",
+    "meaning": "far",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 暇",
+      "暇はひへん、遐はしんにょう"
+    ],
+    "confusedWith": [
+      "暇"
+    ]
+  },
+  {
+    "kanji": "呸",
+    "meaning": "bah",
+    "category": [
+      "confused"
+    ],
+    "sources": [
+      "goo.ne.jp"
+    ],
+    "examples": [
+      "混同: 胚",
+      "胚はにくづき、呸はくちへん"
+    ],
+    "confusedWith": [
+      "胚"
+    ]
+  }
+]
