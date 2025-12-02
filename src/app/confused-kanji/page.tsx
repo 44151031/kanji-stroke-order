@@ -1,44 +1,184 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import KanjiFeatureList from "@/components/kanji/KanjiFeatureList";
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
-interface ConfusedKanjiItem {
-  kanji: string;
-  meaning: string;
-  source: string;
-  category: string;
-  examples?: string[];
+interface ConfusedPair {
+  kanjiA: string;
+  kanjiB: string;
+  reason: string;
+  note: string;
 }
 
-function loadConfusedKanji(): ConfusedKanjiItem[] {
-  const filePath = path.join(process.cwd(), "data", "kanji_confused.json");
+function loadConfusedPairs(): ConfusedPair[] {
+  const filePath = path.join(process.cwd(), "data", "confused_kanji_pairs.json");
   if (!fs.existsSync(filePath)) return [];
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
 export const metadata: Metadata = {
-  title: "似ている漢字一覧 | 漢字書き順",
-  description: "形が似ていて混同しやすい漢字を一覧で紹介。違いと見分け方を学習できます。「土」と「士」など、間違えやすい漢字の比較に。",
-  keywords: ["似ている漢字", "混同しやすい漢字", "漢字の違い", "見分け方", "形が似た漢字"],
+  title: "似ている漢字一覧 | 形が似て混同しやすい漢字ペア",
+  description: "形が似ていて混同しやすい漢字をペアで紹介。「土」と「士」、「未」と「末」など、間違えやすい漢字の違いと見分け方を一覧で確認できます。",
+  keywords: ["似ている漢字", "混同しやすい漢字", "漢字の違い", "見分け方", "形が似た漢字", "漢字ペア"],
   openGraph: {
-    title: "似ている漢字一覧 | 漢字書き順",
-    description: "形が似ていて混同しやすい漢字を一覧で紹介。",
+    title: "似ている漢字一覧 | 形が似て混同しやすい漢字ペア",
+    description: "形が似ていて混同しやすい漢字をペアで紹介。違いと見分け方を学習できます。",
     type: "website",
   },
 };
 
 export default function ConfusedKanjiPage() {
-  const data = loadConfusedKanji();
+  const pairs = loadConfusedPairs();
+
+  // 理由別にグループ化
+  const groupedByReason = pairs.reduce((acc, pair) => {
+    const key = pair.reason;
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(pair);
+    return acc;
+  }, {} as Record<string, ConfusedPair[]>);
 
   return (
-    <KanjiFeatureList
-      data={data}
-      title="似ている漢字一覧"
-      description="形が似ていて混同しやすい漢字を一覧で紹介。違いと見分け方を学習できます。"
-      emoji="🔄"
-      colorTheme="purple"
-    />
+    <div className="flex flex-col items-center gap-8">
+      {/* パンくず */}
+      <nav className="w-full text-sm text-muted-foreground">
+        <ol className="flex items-center gap-2">
+          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
+          <li>/</li>
+          <li className="text-foreground">似ている漢字</li>
+        </ol>
+      </nav>
+
+      <header className="text-center">
+        <div className="text-5xl mb-4">🔄</div>
+        <h1 className="text-4xl font-bold mb-2">似ている漢字一覧</h1>
+        <p className="text-muted-foreground max-w-xl">
+          形が似ていて混同しやすい漢字をペアで紹介。違いと見分け方を確認できます。
+        </p>
+        <p className="text-sm text-muted-foreground mt-2">
+          全{pairs.length}ペア収録
+        </p>
+      </header>
+
+      {/* テーブル表示 */}
+      <Card className="w-full max-w-5xl rounded-2xl shadow-sm">
+        <CardHeader>
+          <CardTitle className="text-lg">漢字ペア一覧</CardTitle>
+        </CardHeader>
+        <CardContent className="overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="bg-muted/50">
+                <th className="border border-border p-3 text-center w-20">漢字A</th>
+                <th className="border border-border p-3 text-center w-20">漢字B</th>
+                <th className="border border-border p-3 text-center w-32">混同の理由</th>
+                <th className="border border-border p-3 text-left">見分け方・備考</th>
+                <th className="border border-border p-3 text-center w-32">詳細</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pairs.map((pair, i) => (
+                <tr key={i} className="hover:bg-muted/30 transition-colors">
+                  <td className="border border-border p-3 text-center">
+                    <Link 
+                      href={getKanjiLink(pair.kanjiA)}
+                      className="text-3xl hover:text-primary transition-colors"
+                    >
+                      {pair.kanjiA}
+                    </Link>
+                  </td>
+                  <td className="border border-border p-3 text-center">
+                    <Link 
+                      href={getKanjiLink(pair.kanjiB)}
+                      className="text-3xl hover:text-primary transition-colors"
+                    >
+                      {pair.kanjiB}
+                    </Link>
+                  </td>
+                  <td className="border border-border p-3 text-center">
+                    <span className="inline-block px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+                      {pair.reason}
+                    </span>
+                  </td>
+                  <td className="border border-border p-3 text-muted-foreground">
+                    {pair.note}
+                  </td>
+                  <td className="border border-border p-3 text-center">
+                    <div className="flex items-center justify-center gap-1">
+                      <Link 
+                        href={getKanjiLink(pair.kanjiA)}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {pair.kanjiA}
+                      </Link>
+                      <span className="text-muted-foreground">↔</span>
+                      <Link 
+                        href={getKanjiLink(pair.kanjiB)}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {pair.kanjiB}
+                      </Link>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </CardContent>
+      </Card>
+
+      {/* 理由別グループ表示 */}
+      <section className="w-full max-w-5xl">
+        <h2 className="text-xl font-bold mb-4 text-center">混同理由別</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {Object.entries(groupedByReason).map(([reason, pairList]) => (
+            <Card key={reason} className="rounded-xl">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm flex items-center gap-2">
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+                    {reason}
+                  </span>
+                  <span className="text-muted-foreground">({pairList.length}組)</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {pairList.map((pair, i) => (
+                    <div key={i} className="flex items-center gap-1 text-lg">
+                      <Link 
+                        href={getKanjiLink(pair.kanjiA)}
+                        className="hover:text-primary"
+                      >
+                        {pair.kanjiA}
+                      </Link>
+                      <span className="text-muted-foreground text-sm">↔</span>
+                      <Link 
+                        href={getKanjiLink(pair.kanjiB)}
+                        className="hover:text-primary"
+                      >
+                        {pair.kanjiB}
+                      </Link>
+                      {i < pairList.length - 1 && <span className="text-muted-foreground mx-1">|</span>}
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* 関連リンク */}
+      <div className="flex gap-4 text-sm">
+        <Link href="/mistake-kanji" className="text-muted-foreground hover:text-foreground">
+          間違えやすい漢字（同音異義語） →
+        </Link>
+        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
+          学年別一覧 →
+        </Link>
+      </div>
+    </div>
   );
 }
-
