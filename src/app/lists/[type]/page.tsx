@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 interface MasterKanji {
   kanji: string;
@@ -135,7 +136,7 @@ export default async function ListPage({ params }: Props) {
             {filteredKanji.map((k) => (
               <Link
                 key={k.kanji}
-                href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                href={getKanjiLink(k.kanji)}
                 className="flex flex-col items-center p-3 border border-border rounded-xl hover:bg-secondary hover:shadow-md transition-all group"
               >
                 <span className="text-3xl font-bold group-hover:scale-110 transition-transform">
@@ -172,7 +173,7 @@ export default async function ListPage({ params }: Props) {
                     className="flex items-center gap-3 p-3 border border-border rounded-lg"
                   >
                     <Link
-                      href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                      href={getKanjiLink(k.kanji)}
                       className="text-2xl font-bold hover:text-primary"
                     >
                       {k.kanji}
@@ -181,7 +182,7 @@ export default async function ListPage({ params }: Props) {
                     {k.confusedWith?.map((c) => (
                       <Link
                         key={c}
-                        href={`/kanji/${encodeURIComponent(c)}`}
+                        href={getKanjiLink(c)}
                         className="text-2xl font-bold hover:text-primary"
                       >
                         {c}

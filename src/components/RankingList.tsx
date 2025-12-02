@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabaseClient";
 import { Button } from "@/components/ui/button";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 interface RankingEntry {
   kanji: string;
@@ -80,7 +81,7 @@ export default function RankingList() {
         {displayedRanking.map((entry, index) => (
           <Link
             key={entry.kanji}
-            href={`/kanji/${encodeURIComponent(entry.kanji)}`}
+            href={getKanjiLink(entry.kanji)}
             className="flex items-center gap-4 p-3 rounded-lg border border-border hover:bg-secondary transition-colors"
           >
             {/* 順位 */}

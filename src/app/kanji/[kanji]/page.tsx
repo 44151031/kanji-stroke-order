@@ -9,6 +9,7 @@ import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
 import KanjiBadges from "@/components/KanjiBadges";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 // データ型定義
 interface KanjiJoyo {
@@ -444,7 +445,7 @@ export default async function KanjiPage({ params }: Props) {
                 {confusedWith.map((k) => (
                   <Link
                     key={k}
-                    href={`/kanji/${encodeURIComponent(k)}`}
+                    href={getKanjiLink(k)}
                     className="w-14 h-14 flex items-center justify-center text-3xl border-2 border-purple-300 rounded-lg hover:bg-purple-100 transition-colors"
                   >
                     {k}
@@ -479,7 +480,7 @@ export default async function KanjiPage({ params }: Props) {
                 {relatedKanji.map((k) => (
                   <Link
                     key={k.kanji}
-                    href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                    href={getKanjiLink(k.kanji)}
                     className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
                     title={`${k.kanji} - ${k.on[0] || k.kun[0] || ""}`}
                   >

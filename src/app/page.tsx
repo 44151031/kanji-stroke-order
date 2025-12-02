@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SvgAnimator from "@/components/SvgAnimator";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 // 人気の漢字
 const POPULAR_KANJI = ["山", "川", "日", "月", "火", "水", "木", "金", "土", "人", "大", "小"];
@@ -48,7 +49,7 @@ export default function Home() {
 
   const navigateToDetail = () => {
     if (previewChar) {
-      router.push(`/kanji/${encodeURIComponent(previewChar)}`);
+      router.push(getKanjiLink(previewChar));
     }
   };
 
@@ -125,7 +126,7 @@ export default function Home() {
           {POPULAR_KANJI.map((char) => (
             <Link
               key={char}
-              href={`/kanji/${encodeURIComponent(char)}`}
+              href={getKanjiLink(char)}
               className="char-button w-14 h-14 flex items-center justify-center text-2xl font-medium border border-border rounded-xl bg-card hover:bg-secondary transition-colors"
             >
               {char}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 interface KanjiCandidate {
   kanji: string;
@@ -69,7 +70,7 @@ export default function NextKanjiSection({
           {nextKanji.map((k) => (
             <Link
               key={k.kanji}
-              href={`/kanji/${encodeURIComponent(k.kanji)}`}
+              href={getKanjiLink(k.kanji)}
               className="w-14 h-14 flex items-center justify-center text-2xl border border-border rounded-xl hover:bg-secondary hover:border-primary/30 transition-all"
               title={`${k.kanji} - ${k.on?.[0] || k.kun?.[0] || ""}`}
             >

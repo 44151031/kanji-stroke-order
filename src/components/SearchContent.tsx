@@ -6,6 +6,7 @@ import Link from "next/link";
 import Fuse from "fuse.js";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 interface KanjiEntry {
   kanji: string;
@@ -104,7 +105,7 @@ export default function SearchContent() {
               {results.map((k) => (
                 <Link
                   key={k.kanji}
-                  href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                  href={getKanjiLink(k.kanji)}
                   className="flex items-center gap-3 p-3 border border-border rounded-lg hover:bg-secondary transition-colors"
                 >
                   <span className="text-3xl">{k.kanji}</span>

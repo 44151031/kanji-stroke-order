@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 export const metadata: Metadata = {
   title: "カタカナ書き順一覧 | 漢字書き順",
@@ -61,7 +62,7 @@ export default function KatakanaPage() {
                   {group.chars.map((char) => (
                     <Link
                       key={char}
-                      href={`/kanji/${encodeURIComponent(char)}`}
+                      href={getKanjiLink(char)}
                       className="char-button w-12 h-12 flex items-center justify-center text-2xl font-medium border border-border rounded-xl bg-card hover:bg-secondary transition-colors"
                     >
                       {char}
@@ -88,7 +89,7 @@ export default function KatakanaPage() {
                   {group.chars.map((char) => (
                     <Link
                       key={char}
-                      href={`/kanji/${encodeURIComponent(char)}`}
+                      href={getKanjiLink(char)}
                       className="char-button w-12 h-12 flex items-center justify-center text-2xl font-medium border border-border rounded-xl bg-card hover:bg-secondary transition-colors"
                     >
                       {char}

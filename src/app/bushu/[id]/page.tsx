@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getKanjiLink } from "@/lib/linkUtils";
 
 interface KanjiDetail {
   kanji: string;
@@ -165,7 +166,7 @@ export default async function BushuPage({ params }: Props) {
             {byGrade.map((k) => (
               <Link
                 key={k.kanji}
-                href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                href={getKanjiLink(k.kanji)}
                 className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
                 title={`${k.kanji} (${k.strokes}画) - ${k.on[0] || k.kun[0] || ""}`}
               >
@@ -187,7 +188,7 @@ export default async function BushuPage({ params }: Props) {
               {byStrokes.map((k) => (
                 <Link
                   key={k.kanji}
-                  href={`/kanji/${encodeURIComponent(k.kanji)}`}
+                  href={getKanjiLink(k.kanji)}
                   className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
                   title={`${k.kanji} (${k.strokes}画)`}
                 >
