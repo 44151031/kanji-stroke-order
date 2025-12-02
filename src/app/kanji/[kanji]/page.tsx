@@ -8,6 +8,7 @@ import KanjiSvgViewer from "@/components/KanjiSvgViewer";
 import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
+import KanjiBadges from "@/components/KanjiBadges";
 
 // データ型定義
 interface KanjiJoyo {
@@ -34,6 +35,12 @@ interface WordEntry {
   word: string;
   reading: string;
   meaning: string;
+}
+
+interface MasterKanji {
+  kanji: string;
+  category: string[];
+  confusedWith?: string[];
 }
 
 // データ読み込みヘルパー
@@ -64,6 +71,13 @@ function loadWordsByKanji(): Record<string, WordEntry[]> {
   const wordsPath = path.join(process.cwd(), "data", "words-by-kanji.json");
   if (!fs.existsSync(wordsPath)) return {};
   return JSON.parse(fs.readFileSync(wordsPath, "utf-8"));
+}
+
+function loadKanjiMaster(): Map<string, MasterKanji> {
+  const masterPath = path.join(process.cwd(), "data", "kanji_master.json");
+  if (!fs.existsSync(masterPath)) return new Map();
+  const data: MasterKanji[] = JSON.parse(fs.readFileSync(masterPath, "utf-8"));
+  return new Map(data.map((k) => [k.kanji, k]));
 }
 
 // SSG: 静的パラメータ生成（kanji-joyo.jsonから読み込み）
@@ -252,6 +266,12 @@ export default async function KanjiPage({ params }: Props) {
 
   const relatedKanji = getRelatedKanji(detail, dictionary);
   const jsonLd = generateJsonLd(detail, words);
+  
+  // マスターデータからカテゴリ情報を取得
+  const kanjiMaster = loadKanjiMaster();
+  const masterEntry = kanjiMaster.get(decodedKanji);
+  const categories = masterEntry?.category || [];
+  const confusedWith = masterEntry?.confusedWith || [];
 
   const gradeLabel = detail.grade <= 6 
     ? `小学${detail.grade}年生` 
@@ -294,6 +314,12 @@ export default async function KanjiPage({ params }: Props) {
               </span>
             )}
           </div>
+          {/* カテゴリバッジ */}
+          {categories.length > 0 && (
+            <div className="mt-3 flex justify-center">
+              <KanjiBadges categories={categories} />
+            </div>
+          )}
         </header>
 
         {/* 書き順SVG（LCP重視：直読み） */}
@@ -355,6 +381,33 @@ export default async function KanjiPage({ params }: Props) {
           </Card>
         )}
 
+        {/* 混同しやすい漢字 */}
+        {confusedWith.length > 0 && (
+          <Card className="w-full max-w-lg rounded-2xl shadow-sm border border-purple-200 bg-purple-50/50">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-lg text-purple-700">🔄 混同しやすい漢字</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-3 justify-center">
+                {confusedWith.map((k) => (
+                  <Link
+                    key={k}
+                    href={`/kanji/${encodeURIComponent(k)}`}
+                    className="w-14 h-14 flex items-center justify-center text-3xl border-2 border-purple-300 rounded-lg hover:bg-purple-100 transition-colors"
+                  >
+                    {k}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-center text-sm text-muted-foreground mt-3">
+                <Link href="/lists/confused" className="hover:text-foreground">
+                  混同しやすい漢字一覧を見る →
+                </Link>
+              </p>
+            </CardContent>
+          </Card>
+        )}
+
         {/* 次に見る漢字（部首または画数±1からランダム選択） */}
         <NextKanjiSection
           currentKanji={decodedKanji}
@@ -394,6 +447,12 @@ export default async function KanjiPage({ params }: Props) {
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {detail.strokes}画の漢字 →
+                </Link>
+                <Link 
+                  href="/lists/exam"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  📚 入試頻出漢字 →
                 </Link>
               </div>
             </CardContent>

@@ -19,7 +19,8 @@
     "scrape:confused": "tsx scripts/scrape_kanji_sources/scrape_confused_kanji.ts",
     "scrape:normalize": "tsx scripts/scrape_kanji_sources/normalize_kanji_data.ts",
     "scrape:merge": "tsx scripts/scrape_kanji_sources/merge_kanji_lists.ts",
-    "scrape:all": "tsx scripts/scrape_kanji_sources/index.ts"
+    "scrape:all": "tsx scripts/scrape_kanji_sources/index.ts",
+    "scrape:qa": "tsx scripts/scrape_kanji_sources/qa.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
