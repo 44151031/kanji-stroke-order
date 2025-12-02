@@ -351,3 +351,4 @@ export function SingleCharAnimation({
 
 export default SingleCharAnimation;
 
+

@@ -2,26 +2,35 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { supabase } from "@/lib/supabaseClient";
+import { supabase, isSupabaseConfigured } from "@/lib/supabaseClient";
 import { Button } from "@/components/ui/button";
 import { getKanjiLink } from "@/lib/linkUtils";
+import fallbackRanking from "@/data/fallbackRanking.json";
 
 interface RankingEntry {
   kanji: string;
   views: number;
-  updated_at: string;
+  updated_at?: string;
 }
 
 export default function RankingList() {
   const [ranking, setRanking] = useState<RankingEntry[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [isFallback, setIsFallback] = useState(false);
   const [limit, setLimit] = useState(20);
 
   useEffect(() => {
     const fetchRanking = async () => {
       try {
         setLoading(true);
+        
+        // Supabaseが設定されていない場合はフォールバックを使用
+        if (!isSupabaseConfigured) {
+          console.log("📦 Supabase未設定のためフォールバックデータを使用");
+          setRanking(fallbackRanking);
+          setIsFallback(true);
+          return;
+        }
         
         const { data, error: fetchError } = await supabase
           .from("kanji_views")
@@ -33,11 +42,21 @@ export default function RankingList() {
           throw fetchError;
         }
 
-        setRanking(data || []);
-        setError(null);
+        // データが空の場合もフォールバックを使用
+        if (!data || data.length === 0) {
+          console.log("📦 Supabaseにデータがないためフォールバックデータを使用");
+          setRanking(fallbackRanking);
+          setIsFallback(true);
+        } else {
+          setRanking(data);
+          setIsFallback(false);
+        }
       } catch (err) {
-        console.error("Ranking fetch error:", err);
-        setError("ランキングデータを取得できませんでした");
+        console.error("❌ Ranking fetch error:", err);
+        // エラー時はフォールバックデータを使用
+        console.log("📦 Supabase接続エラーのためフォールバックデータを使用");
+        setRanking(fallbackRanking);
+        setIsFallback(true);
       } finally {
         setLoading(false);
       }
@@ -50,15 +69,6 @@ export default function RankingList() {
     return (
       <div className="flex justify-center py-12">
         <div className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="text-center py-12 text-muted-foreground">
-        <p>{error}</p>
-        <p className="text-sm mt-2">Supabaseの設定を確認してください</p>
       </div>
     );
   }
@@ -124,6 +134,13 @@ export default function RankingList() {
       {limit >= ranking.length && ranking.length > 20 && (
         <p className="text-center text-sm text-muted-foreground pt-2">
           全{ranking.length}件を表示中
+        </p>
+      )}
+
+      {/* フォールバック表示中の注意 */}
+      {isFallback && (
+        <p className="text-center text-xs text-amber-600 pt-4">
+          ※ おすすめ漢字を表示しています（実際の閲覧数ではありません）
         </p>
       )}
     </div>

@@ -1,15 +1,22 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
+// 環境変数が設定されていない場合は警告を出す（エラーは投げない）
 if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error(
-    "Supabase URL または Anon Key が設定されていません。.env.local を確認してください。"
-  );
+  console.warn("⚠️ Supabase 環境変数が設定されていません。フォールバックデータを使用します。");
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Supabase クライアントを作成（環境変数がなくてもnullにならないようダミーURLで初期化）
+export const supabase: SupabaseClient = createClient(
+  supabaseUrl || "https://placeholder.supabase.co",
+  supabaseAnonKey || "placeholder-key"
+);
+
+// Supabaseが利用可能かどうかをチェック
+export const isSupabaseConfigured = !!(supabaseUrl && supabaseAnonKey);
+
 
 
 

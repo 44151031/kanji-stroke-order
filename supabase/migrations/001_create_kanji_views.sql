@@ -56,3 +56,4 @@ COMMENT ON COLUMN kanji_views.updated_at IS '最終更新日時';
 COMMENT ON FUNCTION increment_kanji_views IS '指定した漢字の閲覧数を+1する関数';
 
 
+

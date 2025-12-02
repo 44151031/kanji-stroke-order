@@ -50,3 +50,4 @@ export interface KanjiJoyo {
   strokes: number;
 }
 
+

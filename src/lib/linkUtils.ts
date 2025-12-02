@@ -67,3 +67,4 @@ export function resolveKanji(param: string): string {
   return decodeURIComponent(param);
 }
 
+

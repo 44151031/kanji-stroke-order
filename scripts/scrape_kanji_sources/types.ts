@@ -29,3 +29,4 @@ export interface ScrapedData {
   scrapedAt: string;
 }
 
+
