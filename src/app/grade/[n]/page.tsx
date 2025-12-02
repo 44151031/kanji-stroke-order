@@ -94,6 +94,29 @@ export default async function GradePage({ params }: Props) {
         </ol>
       </nav>
 
+      {/* 学年クイックナビ */}
+      <div className="w-full flex flex-wrap justify-center gap-2">
+        {Object.entries(GRADE_INFO).map(([g, { label }]) => {
+          const gradeNum = parseInt(g);
+          const isActive = gradeNum === grade;
+          // 短縮ラベル
+          const shortLabel = gradeNum === 8 ? "中学" : `${gradeNum}年`;
+          return (
+            <Link
+              key={g}
+              href={`/grade/${g}`}
+              className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
+                isActive
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-white hover:bg-secondary border-border"
+              }`}
+            >
+              {shortLabel}
+            </Link>
+          );
+        })}
+      </div>
+
       <header className="text-center">
         <h1 className="text-4xl font-bold mb-2">{info.label}で習う漢字</h1>
         <p className="text-muted-foreground">{gradeKanji.length}字</p>
