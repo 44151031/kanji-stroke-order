@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { capitalize } from "@/lib/radicalList";
+import { 
+  formatRadicalName,
+  buildSlugIndex,
+  getUniqueSlug,
+  radicalList,
+  RADICAL_POSITION_TYPES,
+} from "@/lib/radicalList";
 
 interface RadicalBilingual {
   id: number;
@@ -29,16 +35,13 @@ const POSITION_ORDER = [
 ];
 
 /**
- * 英語名から表示用名称を抽出
- * 例: "Speech" (既に大文字の場合) or capitalize処理
+ * 英語名から表示用名称を抽出（大文字始まり）
  */
 function getDisplayEnglish(enName: string): string {
-  // 既に大文字始まりならそのまま使用
   if (enName.charAt(0) === enName.charAt(0).toUpperCase()) {
     return enName;
   }
-  // 小文字スラッグの場合は先頭を大文字に
-  return capitalize(enName);
+  return enName.charAt(0).toUpperCase() + enName.slice(1);
 }
 
 export default function RadicalByPositionSection({ radicals, radicalCounts }: Props) {

@@ -1,278 +1,151 @@
-import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import fs from "fs";
-import path from "path";
+import { Metadata } from "next";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getKanjiLink } from "@/lib/linkUtils";
-import { 
-  getEnglishSlug, 
-  getPositionAnchor, 
-  capitalize,
+import radicalList, {
+  buildSlugIndex,
+  getUniqueSlug,
+  findRadicalBySlug,
+  formatRadicalName,
   getEnglishDisplayName,
-  formatRadicalName 
 } from "@/lib/radicalList";
 
-interface KanjiDetail {
-  kanji: string;
-  on: string[];
-  kun: string[];
-  meaning: string[];
-  jlpt: string | null;
-  strokes: number;
-  grade: number;
-  ucsHex: string;
-  freq?: number;
-  radicals: string[];
-}
+// 配置タイプのラベル定義
+const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
+  "left-radical": { label: "偏（へん）", labelEn: "Left" },
+  "right-radical": { label: "旁（つくり）", labelEn: "Right" },
+  "top-radical": { label: "冠（かんむり）", labelEn: "Top" },
+  "bottom-radical": { label: "脚（あし）", labelEn: "Bottom" },
+  "hanging-radical": { label: "垂（たれ）", labelEn: "Hanging" },
+  "enclosing-radical": { label: "構（かまえ）", labelEn: "Enclosing" },
+  "wrapping-radical": { label: "繞（にょう）", labelEn: "Wrapping" },
+  "independent-radical": { label: "その他", labelEn: "Independent" },
+};
 
-interface RadicalBilingual {
-  id: number;
-  root: string;
-  radical_name_en: string;
-  radical_name_ja: string;
-  description_en: string;
-  description_ja: string;
-  position?: string;
-}
-
-function loadKanjiDictionary(): KanjiDetail[] {
-  const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
-  if (!fs.existsSync(dictPath)) return [];
-  return JSON.parse(fs.readFileSync(dictPath, "utf-8"));
-}
-
-function loadRadicalsBilingual(): RadicalBilingual[] {
-  const radPath = path.join(process.cwd(), "data", "radicals_bilingual.json");
-  if (!fs.existsSync(radPath)) return [];
-  return JSON.parse(fs.readFileSync(radPath, "utf-8"));
-}
-
-function getRadicalInfo(radicalEn: string, radicals: RadicalBilingual[]): RadicalBilingual | null {
-  return radicals.find((r) => r.radical_name_en === radicalEn) || null;
-}
-
-/**
- * 英語名から表示用名称を抽出（大文字始まり）
- */
-function getDisplayEnglish(enName: string): string {
-  // 既に大文字始まりならそのまま使用
-  if (enName.charAt(0) === enName.charAt(0).toUpperCase()) {
-    return enName;
-  }
-  // 小文字スラッグの場合はgetEnglishDisplayNameを使用
-  return getEnglishDisplayName(enName);
-}
-
-// 存在する部首のみ生成
+// 静的パラメータ生成
 export async function generateStaticParams() {
-  const dictionary = loadKanjiDictionary();
-  const radicals = new Set<string>();
-  dictionary.forEach((k) => k.radicals.forEach((r) => radicals.add(r)));
-  return Array.from(radicals).map((slug) => ({ slug }));
+  const counts = buildSlugIndex(radicalList);
+  return radicalList.map((r) => ({
+    slug: getUniqueSlug(r, counts),
+  }));
 }
 
 type Props = { params: Promise<{ slug: string }> };
 
+// メタデータ生成
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const radical = decodeURIComponent(slug);
-  const radicals = loadRadicalsBilingual();
-  const info = getRadicalInfo(radical, radicals);
+  const r = findRadicalBySlug(slug, radicalList);
   
-  const jaName = info?.radical_name_ja || radical;
-  const englishDisplay = getDisplayEnglish(radical);
-  // タイトル形式: 日本語名（English）
-  const title = `${jaName}（${englishDisplay}）の漢字一覧 | Kanji Stroke Order`;
-  const description = info 
-    ? `${info.description_en}. ${info.description_ja}。部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`
-    : `Browse kanji with the ${radical} radical. 部首「${radical}」を含む漢字の書き順をアニメーションで学習できます。`;
-
+  if (!r) {
+    return { title: "部首が見つかりません" };
+  }
+  
+  const displayName = formatRadicalName(r.jp, r.en);
+  const englishName = getEnglishDisplayName(r.en);
+  
   return {
-    title,
-    description,
-    openGraph: { title, description },
+    title: `${displayName}の漢字一覧 | Kanji Stroke Order`,
+    description: `部首「${r.jp}」（${englishName}）を含む漢字の書き順をアニメーションで学習できます。`,
   };
 }
 
-export default async function RadicalPage({ params }: Props) {
+export default async function RadicalDetailPage({ params }: Props) {
   const { slug } = await params;
-  const radical = decodeURIComponent(slug);
+  const r = findRadicalBySlug(slug, radicalList);
   
-  const dictionary = loadKanjiDictionary();
-  const radicals = loadRadicalsBilingual();
-  const radicalInfo = getRadicalInfo(radical, radicals);
-  const radicalKanji = dictionary.filter((k) => k.radicals.includes(radical));
-  
-  if (radicalKanji.length === 0) {
-    notFound();
-  }
+  if (!r) return notFound();
 
-  // 配置タイプの英語名を取得
-  const positionEn = radicalInfo?.position ? getPositionAnchor(radicalInfo.position) : "independent-radical";
-  
-  // 表示用の英語名（大文字始まり）
-  const englishDisplay = getDisplayEnglish(radical);
-  
-  // 日本語名
-  const jaName = radicalInfo?.radical_name_ja || radical;
+  const counts = buildSlugIndex(radicalList);
+  const uniqueSlug = getUniqueSlug(r, counts);
+  const displayName = formatRadicalName(r.jp, r.en);
+  const posInfo = POSITION_LABELS[r.type] || { label: "その他", labelEn: "Other" };
 
-  // 学年順にソート
-  const byGrade = [...radicalKanji].sort((a, b) => {
-    if (a.grade !== b.grade) return a.grade - b.grade;
-    return a.strokes - b.strokes;
-  });
-
-  // 画数順
-  const byStrokes = [...radicalKanji].sort((a, b) => a.strokes - b.strokes);
-
-  // 関連部首（同じ漢字に含まれる他の部首）
-  const relatedRadicals = new Map<string, number>();
-  radicalKanji.forEach((k) => {
-    k.radicals.forEach((r) => {
-      if (r !== radical) {
-        relatedRadicals.set(r, (relatedRadicals.get(r) || 0) + 1);
-      }
-    });
-  });
-  const topRelated = Array.from(relatedRadicals.entries())
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10);
+  // 同じ配置タイプの他の部首
+  const relatedRadicals = radicalList
+    .filter((rad) => rad.type === r.type && rad.en !== r.en)
+    .slice(0, 6);
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="max-w-[900px] mx-auto px-4 py-10">
       {/* パンくず */}
-      <nav className="w-full text-sm text-muted-foreground">
+      <nav className="text-sm text-gray-500 mb-6">
         <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
+          <li><Link href="/" className="hover:text-gray-900">トップ</Link></li>
           <li>/</li>
-          <li><Link href="/radical" className="hover:text-foreground">Radicals</Link></li>
+          <li><Link href="/radical" className="hover:text-gray-900">Radicals</Link></li>
           <li>/</li>
-          <li className="text-foreground">{jaName}（{englishDisplay}）</li>
+          <li className="text-gray-900">{displayName}</li>
         </ol>
       </nav>
 
-      {/* ヘッダー（バイリンガル表示） */}
-      <header className="text-center">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          {radicalInfo && (
-            <span className="text-6xl">{radicalInfo.root}</span>
-          )}
-        </div>
-        {/* タイトル形式: 日本語名（English） */}
-        <h1 className="text-4xl font-bold mb-2">
-          {jaName}（{englishDisplay}）
-        </h1>
-        {radicalInfo && (
-          <div className="text-muted-foreground space-y-1">
-            <p>Root: {radicalInfo.root} / 部首番号: {radicalInfo.id}</p>
-            <p className="text-sm">
-              Position: <span className="capitalize">{positionEn.replace("-radical", "")}</span>
-              {radicalInfo.position && ` / ${radicalInfo.position}`}
-            </p>
-          </div>
+      {/* ヘッダー */}
+      <header className="text-center mb-10">
+        {r.root && (
+          <div className="text-6xl mb-4">{r.root}</div>
         )}
-        <p className="text-lg mt-2">{radicalKanji.length} kanji / {radicalKanji.length}字</p>
+        <h1 className="text-3xl font-bold mb-2">{displayName}</h1>
+        <p className="text-gray-600">
+          Position: {posInfo.labelEn} / {posInfo.label}
+        </p>
+        <p className="text-sm text-gray-500 mt-2">
+          URL: /radical/{uniqueSlug}
+        </p>
       </header>
 
-      {/* 説明（日英両方） */}
-      {radicalInfo && (
-        <Card className="w-full max-w-2xl rounded-2xl shadow-sm bg-secondary/30">
-          <CardContent className="pt-6">
-            <div className="space-y-2 text-center">
-              <p className="text-base">{radicalInfo.description_en}</p>
-              <p className="text-sm text-muted-foreground">{radicalInfo.description_ja}</p>
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* 漢字一覧（学年順） */}
-      <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
-        <CardHeader>
-          <CardTitle className="text-lg">Kanji List (by Grade) / 漢字一覧（学年順）</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-wrap gap-2 justify-center">
-            {byGrade.map((k) => (
-              <Link
-                key={k.kanji}
-                href={getKanjiLink(k.kanji)}
-                className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
-                title={`${k.kanji} (${k.strokes} strokes) - ${k.on[0] || k.kun[0] || ""}`}
-              >
-                {k.kanji}
-              </Link>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* 画数順 */}
-      {radicalKanji.length > 20 && (
-        <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
-          <CardHeader>
-            <CardTitle className="text-lg">By Stroke Count / 画数順</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap gap-2 justify-center">
-              {byStrokes.map((k) => (
-                <Link
-                  key={k.kanji}
-                  href={getKanjiLink(k.kanji)}
-                  className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
-                  title={`${k.kanji} (${k.strokes} strokes)`}
-                >
-                  {k.kanji}
-                </Link>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
+      {/* 説明セクション */}
+      <section className="bg-gray-50 rounded-2xl p-6 mb-8">
+        <h2 className="text-lg font-bold mb-3">About this Radical</h2>
+        <p className="text-gray-700">
+          「{r.jp}」は漢字の{posInfo.label}に位置する部首です。
+          {r.root && `部首の字形は「${r.root}」です。`}
+        </p>
+        <p className="text-sm text-gray-500 mt-2">
+          部首型アンカー: <a className="underline text-blue-600" href={`/${r.anchor}`}>{r.anchor}</a>
+        </p>
+      </section>
 
       {/* 関連する部首 */}
-      {topRelated.length > 0 && (
-        <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
-          <CardHeader>
-            <CardTitle className="text-lg">Related Radicals / 関連する部首</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap gap-2 justify-center">
-              {topRelated.map(([r, count]) => {
-                const relInfo = getRadicalInfo(r, radicals);
-                const relJaName = relInfo?.radical_name_ja || r;
-                const relEnDisplay = getDisplayEnglish(r);
-                return (
-                  <Link
-                    key={r}
-                    href={`/radical/${encodeURIComponent(r)}`}
-                    className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
-                    title={relInfo?.description_en || r}
-                  >
-                    {relInfo?.root && <span className="mr-1">{relInfo.root}</span>}
-                    {relJaName}（{relEnDisplay}）
-                    <span className="text-muted-foreground ml-1">×{count}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </CardContent>
-        </Card>
+      {relatedRadicals.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-lg font-bold mb-4">
+            Related Radicals / 同じ型の部首
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {relatedRadicals.map((rad) => {
+              const radSlug = getUniqueSlug(rad, counts);
+              return (
+                <Link
+                  key={rad.en}
+                  href={`/radical/${radSlug}`}
+                  className="flex items-center gap-3 p-3 border rounded-xl hover:bg-gray-50 transition-colors"
+                >
+                  {rad.root && (
+                    <span className="text-2xl w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg">
+                      {rad.root}
+                    </span>
+                  )}
+                  <span className="font-medium text-sm">
+                    {formatRadicalName(rad.jp, rad.en)}
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
       )}
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center">
-        <Link href="/radical" className="text-muted-foreground hover:text-foreground">
+      <div className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t">
+        <Link href="/radical" className="text-gray-500 hover:text-gray-900">
           ← All Radicals / 部首一覧に戻る
         </Link>
-        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
+        <Link href="/grade/1" className="text-gray-500 hover:text-gray-900">
           By Grade →
         </Link>
-        <Link href="/strokes/1" className="text-muted-foreground hover:text-foreground">
+        <Link href="/strokes/1" className="text-gray-500 hover:text-gray-900">
           By Strokes →
         </Link>
       </div>
-    </div>
+    </main>
   );
 }
