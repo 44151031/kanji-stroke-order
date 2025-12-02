@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SvgAnimator from "@/components/SvgAnimator";
 import { getKanjiLink } from "@/lib/linkUtils";
+import ViewRankingButton from "@/components/common/ViewRankingButton";
 
 // 人気の漢字
 const POPULAR_KANJI = ["山", "川", "日", "月", "火", "水", "木", "金", "土", "人", "大", "小"];
@@ -126,15 +127,7 @@ export default function Home() {
 
       {/* 人気の漢字（直接リンク） */}
       <section className="w-full max-w-3xl">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <h2 className="text-xl font-medium">🏆 人気の漢字</h2>
-          <Link
-            href="/ranking"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ランキングを見る →
-          </Link>
-        </div>
+        <h2 className="text-xl font-medium mb-4 text-center">🏆 人気の漢字</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {POPULAR_KANJI.map((char) => (
             <Link
@@ -145,6 +138,11 @@ export default function Home() {
               {char}
             </Link>
           ))}
+        </div>
+        
+        {/* 視線誘導型CTAボタン */}
+        <div className="flex justify-center mt-6">
+          <ViewRankingButton />
         </div>
       </section>
 

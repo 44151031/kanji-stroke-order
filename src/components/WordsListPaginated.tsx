@@ -84,3 +84,4 @@ export default function WordsListPaginated({ words, kanji }: Props) {
 
 
 
+
