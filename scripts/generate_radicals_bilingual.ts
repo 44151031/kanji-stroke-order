@@ -21,6 +21,7 @@ interface RadicalBilingual {
 }
 
 // 英語→日本語部首名マッピング（主要な部首）
+// ※重複キーを統合済み
 const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: string; desc_en: string }> = {
   // 基本的な部首
   "Water": { ja: "さんずい", root: "水", desc_ja: "水に関連する漢字の部首", desc_en: "Radical for water-related kanji" },
@@ -43,7 +44,8 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Road": { ja: "しんにょう", root: "辶", desc_ja: "道に関連する漢字の部首", desc_en: "Radical for road-related kanji" },
   "Mountain": { ja: "やまへん", root: "山", desc_ja: "山に関連する漢字の部首", desc_en: "Radical for mountain-related kanji" },
   "River": { ja: "さんずい", root: "川", desc_ja: "川に関連する漢字の部首", desc_en: "Radical for river-related kanji" },
-  "Rain": { ja: "あめかんむり", root: "雨", desc_ja: "天気や雨に関連する漢字の部首", desc_en: "Radical for rain/weather-related kanji" },
+  // Rain - 統合済み（重複削除）
+  "Rain": { ja: "あめかんむり", root: "雨", desc_ja: "雨や天気に関連する漢字の部首", desc_en: "Radical for rain/weather-related kanji" },
   "Grass": { ja: "くさかんむり", root: "艹", desc_ja: "植物に関連する漢字の部首", desc_en: "Radical for grass/plant-related kanji" },
   "Flower": { ja: "くさかんむり", root: "艹", desc_ja: "花や植物に関連する漢字の部首", desc_en: "Radical for flower/plant-related kanji" },
   "Rice": { ja: "こめへん", root: "米", desc_ja: "米に関連する漢字の部首", desc_en: "Radical for rice-related kanji" },
@@ -52,6 +54,7 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Silk": { ja: "いとへん", root: "糸", desc_ja: "糸や絹に関連する漢字の部首", desc_en: "Radical for silk-related kanji" },
   "Clothes": { ja: "ころもへん", root: "衣", desc_ja: "衣服に関連する漢字の部首", desc_en: "Radical for clothes-related kanji" },
   "Food": { ja: "しょくへん", root: "食", desc_ja: "食べ物に関連する漢字の部首", desc_en: "Radical for food-related kanji" },
+  // Eat - 統合済み（重複削除）
   "Eat": { ja: "しょくへん", root: "食", desc_ja: "食べることに関連する漢字の部首", desc_en: "Radical for eating-related kanji" },
   "Horse": { ja: "うまへん", root: "馬", desc_ja: "馬に関連する漢字の部首", desc_en: "Radical for horse-related kanji" },
   "Fish": { ja: "うおへん", root: "魚", desc_ja: "魚に関連する漢字の部首", desc_en: "Radical for fish-related kanji" },
@@ -67,6 +70,7 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Gate": { ja: "もんがまえ", root: "門", desc_ja: "門に関連する漢字の部首", desc_en: "Radical for gate-related kanji" },
   "Woman": { ja: "おんなへん", root: "女", desc_ja: "女性に関連する漢字の部首", desc_en: "Radical for woman-related kanji" },
   "Child": { ja: "こへん", root: "子", desc_ja: "子供に関連する漢字の部首", desc_en: "Radical for child-related kanji" },
+  // King - 統合済み（重複削除）
   "King": { ja: "おうへん・たまへん", root: "王", desc_ja: "王や玉に関連する漢字の部首", desc_en: "Radical for king/jewel-related kanji" },
   "Jewel": { ja: "たまへん", root: "玉", desc_ja: "宝石に関連する漢字の部首", desc_en: "Radical for jewel-related kanji" },
   "Sword": { ja: "りっとう", root: "刂", desc_ja: "刀に関連する漢字の部首", desc_en: "Radical for sword-related kanji" },
@@ -74,6 +78,7 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Power": { ja: "ちからへん", root: "力", desc_ja: "力に関連する漢字の部首", desc_en: "Radical for power-related kanji" },
   "Strength": { ja: "ちからへん", root: "力", desc_ja: "力に関連する漢字の部首", desc_en: "Radical for strength-related kanji" },
   "Field": { ja: "たへん", root: "田", desc_ja: "田んぼに関連する漢字の部首", desc_en: "Radical for field-related kanji" },
+  // Net - 統合済み（重複削除）
   "Net": { ja: "あみがしら", root: "网", desc_ja: "網に関連する漢字の部首", desc_en: "Radical for net-related kanji" },
   "Bamboo": { ja: "たけかんむり", root: "竹", desc_ja: "竹に関連する漢字の部首", desc_en: "Radical for bamboo-related kanji" },
   "Alcohol": { ja: "さけへん", root: "酉", desc_ja: "酒に関連する漢字の部首", desc_en: "Radical for alcohol-related kanji" },
@@ -87,12 +92,14 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Bone": { ja: "ほねへん", root: "骨", desc_ja: "骨に関連する漢字の部首", desc_en: "Radical for bone-related kanji" },
   "Flesh": { ja: "にくづき", root: "月", desc_ja: "体や肉に関連する漢字の部首", desc_en: "Radical for flesh/body-related kanji" },
   "Body": { ja: "にくづき", root: "月", desc_ja: "体に関連する漢字の部首", desc_en: "Radical for body-related kanji" },
-  "Spirit": { ja: "しめすへん", root: "示", desc_ja: "神や祭りに関連する漢字の部首", desc_en: "Radical for spirit/ritual-related kanji" },
-  "Altar": { ja: "しめすへん", root: "示", desc_ja: "祭壇に関連する漢字の部首", desc_en: "Radical for altar-related kanji" },
-  "Rain": { ja: "あめかんむり", root: "雨", desc_ja: "雨や天気に関連する漢字の部首", desc_en: "Radical for rain-related kanji" },
+  // Spirit と Altar を統合
+  "Spirit": { ja: "しめすへん", root: "示", desc_ja: "神や祭り・祭壇に関連する漢字の部首", desc_en: "Radical for spirit, ritual, and altar-related kanji" },
+  "Altar": { ja: "しめすへん", root: "示", desc_ja: "神や祭り・祭壇に関連する漢字の部首", desc_en: "Radical for spirit, ritual, and altar-related kanji" },
+  // Wind
   "Wind": { ja: "かぜへん", root: "風", desc_ja: "風に関連する漢字の部首", desc_en: "Radical for wind-related kanji" },
-  "Sound": { ja: "おとへん", root: "音", desc_ja: "音に関連する漢字の部首", desc_en: "Radical for sound-related kanji" },
-  "Music": { ja: "おとへん", root: "音", desc_ja: "音楽に関連する漢字の部首", desc_en: "Radical for music-related kanji" },
+  // Sound と Music を統合
+  "Sound": { ja: "おとへん", root: "音", desc_ja: "音や音楽に関連する漢字の部首", desc_en: "Radical for sound-related kanji, including music" },
+  "Music": { ja: "おとへん", root: "音", desc_ja: "音や音楽に関連する漢字の部首", desc_en: "Radical for sound-related kanji, including music" },
   "Color": { ja: "いろへん", root: "色", desc_ja: "色に関連する漢字の部首", desc_en: "Radical for color-related kanji" },
   "White": { ja: "しろ", root: "白", desc_ja: "白に関連する漢字の部首", desc_en: "Radical for white-related kanji" },
   "Black": { ja: "くろ", root: "黒", desc_ja: "黒に関連する漢字の部首", desc_en: "Radical for black-related kanji" },
@@ -242,7 +249,6 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "God": { ja: "かみ", root: "神", desc_ja: "神に関連する漢字の部首", desc_en: "Radical for god-related kanji" },
   "Heaven": { ja: "てん", root: "天", desc_ja: "天に関連する漢字の部首", desc_en: "Radical for heaven-related kanji" },
   "Hell": { ja: "じごく", root: "獄", desc_ja: "地獄に関連する漢字の部首", desc_en: "Radical for hell-related kanji" },
-  "King": { ja: "おう", root: "王", desc_ja: "王に関連する漢字の部首", desc_en: "Radical for king-related kanji" },
   "Queen": { ja: "じょおう", root: "后", desc_ja: "女王に関連する漢字の部首", desc_en: "Radical for queen-related kanji" },
   "Country": { ja: "くに", root: "国", desc_ja: "国に関連する漢字の部首", desc_en: "Radical for country-related kanji" },
   "City": { ja: "まち", root: "市", desc_ja: "市に関連する漢字の部首", desc_en: "Radical for city-related kanji" },
@@ -286,7 +292,6 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Pregnant": { ja: "にんしん", root: "妊", desc_ja: "妊娠に関連する漢字の部首", desc_en: "Radical for pregnant-related kanji" },
   "Grow": { ja: "そだつ", root: "育", desc_ja: "成長に関連する漢字の部首", desc_en: "Radical for grow-related kanji" },
   "Age": { ja: "としをとる", root: "老", desc_ja: "年齢に関連する漢字の部首", desc_en: "Radical for age-related kanji" },
-  "Eat": { ja: "たべる", root: "食", desc_ja: "食べることに関連する漢字の部首", desc_en: "Radical for eat-related kanji" },
   "Drink": { ja: "のむ", root: "飲", desc_ja: "飲むことに関連する漢字の部首", desc_en: "Radical for drink-related kanji" },
   "Sleep": { ja: "ねる", root: "眠", desc_ja: "眠ることに関連する漢字の部首", desc_en: "Radical for sleep-related kanji" },
   "Wake": { ja: "おきる", root: "覚", desc_ja: "起きることに関連する漢字の部首", desc_en: "Radical for wake-related kanji" },
@@ -344,7 +349,6 @@ const RADICAL_NAME_MAP: Record<string, { ja: string; root: string; desc_ja: stri
   "Lock": { ja: "じょう", root: "錠", desc_ja: "錠前に関連する漢字の部首", desc_en: "Radical for lock-related kanji" },
   "Chain": { ja: "くさり", root: "鎖", desc_ja: "鎖に関連する漢字の部首", desc_en: "Radical for chain-related kanji" },
   "Rope": { ja: "なわ", root: "縄", desc_ja: "縄に関連する漢字の部首", desc_en: "Radical for rope-related kanji" },
-  "Net": { ja: "あみ", root: "網", desc_ja: "網に関連する漢字の部首", desc_en: "Radical for net-related kanji" },
   "Tent": { ja: "テント", root: "幕", desc_ja: "テントに関連する漢字の部首", desc_en: "Radical for tent-related kanji" },
   "Umbrella": { ja: "かさ", root: "傘", desc_ja: "傘に関連する漢字の部首", desc_en: "Radical for umbrella-related kanji" },
   "Shoe": { ja: "くつ", root: "靴", desc_ja: "靴に関連する漢字の部首", desc_en: "Radical for shoe-related kanji" },
@@ -446,5 +450,3 @@ async function main() {
 }
 
 main().catch(console.error);
-
-
