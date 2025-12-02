@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import BushuByPositionSection from "@/components/sections/BushuByPositionSection";
+import RadicalByPositionSection from "@/components/sections/RadicalByPositionSection";
 
 interface KanjiDetail {
   kanji: string;
@@ -33,11 +33,11 @@ function loadRadicalsBilingual(): RadicalBilingual[] {
 }
 
 export const metadata: Metadata = {
-  title: "部首別漢字一覧｜書き順・筆順",
-  description: "部首別に漢字を探せます。各部首の漢字の書き順をアニメーションで学習できます。偏・旁・冠・脚・垂・構・繞の配置別に分類。",
+  title: "部首別漢字一覧 | Kanji by Radical",
+  description: "部首別に漢字を探せます。各部首の漢字の書き順をアニメーションで学習できます。偏・旁・冠・脚・垂・構・繞の配置別に分類。Browse kanji by radical position: left, right, top, bottom, enclosing, hanging, and wrapping radicals.",
 };
 
-export default function BushuIndexPage() {
+export default function RadicalIndexPage() {
   const dictionary = loadKanjiDictionary();
   const radicalsBilingual = loadRadicalsBilingual();
   
@@ -72,30 +72,34 @@ export default function BushuIndexPage() {
         <ol className="flex items-center gap-2">
           <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
           <li>/</li>
-          <li className="text-foreground">部首別一覧</li>
+          <li className="text-foreground">Radicals / 部首別一覧</li>
         </ol>
       </nav>
 
       <header className="text-center">
-        <h1 className="text-4xl font-bold mb-2">部首別漢字一覧</h1>
-        <p className="text-muted-foreground">{sortedRadicals.length}種類の部首 / {sortedRadicals.length} Radicals</p>
+        <h1 className="text-4xl font-bold mb-2">Kanji by Radical</h1>
+        <p className="text-xl text-muted-foreground mb-1">部首別漢字一覧</p>
+        <p className="text-muted-foreground">{sortedRadicals.length} Radicals / {sortedRadicals.length}種類の部首</p>
         <p className="text-sm text-muted-foreground mt-2">
           偏・旁・冠・脚・垂・構・繞の配置別に分類
         </p>
       </header>
 
       {/* 配置別部首一覧（メインセクション） */}
-      <BushuByPositionSection 
+      <RadicalByPositionSection 
         radicals={radicalsBilingual} 
         radicalCounts={radicalCounts} 
       />
 
       {/* その他の部首 */}
       {otherRadicals.length > 0 && (
-        <Card className="w-full max-w-4xl rounded-2xl shadow-sm">
+        <Card id="independent-radical" className="w-full max-w-4xl rounded-2xl shadow-sm scroll-mt-8">
           <CardHeader>
-            <CardTitle className="text-lg">その他の部首 / Other Radicals</CardTitle>
-            <p className="text-sm text-muted-foreground">配置が分類されていない部首</p>
+            <CardTitle className="text-lg flex items-center gap-2">
+              <span>📝</span>
+              <span>Independent Radicals / その他の部首</span>
+            </CardTitle>
+            <p className="text-sm text-muted-foreground">Radicals without specific position / 配置が分類されていない部首</p>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
@@ -105,7 +109,7 @@ export default function BushuIndexPage() {
                 return (
                   <Link
                     key={radical}
-                    href={`/bushu/${encodeURIComponent(radical)}`}
+                    href={`/radical/${encodeURIComponent(radical)}`}
                     className="px-3 py-2 border border-border rounded-full hover:bg-secondary transition-colors text-sm"
                     title={info ? `${info.root} - ${info.description_ja}` : radical}
                   >
@@ -135,3 +139,4 @@ export default function BushuIndexPage() {
     </div>
   );
 }
+

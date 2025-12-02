@@ -215,8 +215,8 @@ export default async function ListPage({ params }: Props) {
         <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
           学年別一覧 →
         </Link>
-        <Link href="/bushu" className="text-muted-foreground hover:text-foreground">
-          部首別一覧 →
+        <Link href="/radical" className="text-muted-foreground hover:text-foreground">
+          Radicals →
         </Link>
       </div>
 

@@ -76,7 +76,7 @@ async function main() {
     { path: "/katakana", priority: 0.8, freq: "monthly" },
     { path: "/search", priority: 0.7, freq: "weekly" },
     { path: "/ranking", priority: 0.8, freq: "daily" },
-    { path: "/bushu", priority: 0.8, freq: "monthly" },
+    { path: "/radical", priority: 0.8, freq: "monthly" },
     { path: "/lists/exam", priority: 0.8, freq: "weekly" },
     { path: "/lists/mistake", priority: 0.8, freq: "weekly" },
     { path: "/lists/confused", priority: 0.8, freq: "weekly" },
@@ -125,7 +125,7 @@ async function main() {
   radicals.forEach((r) => {
     urls.push(`
   <url>
-    <loc>${BASE_URL}/bushu/${encodeURIComponent(r)}</loc>
+    <loc>${BASE_URL}/radical/${encodeURIComponent(r)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

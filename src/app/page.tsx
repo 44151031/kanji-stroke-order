@@ -27,15 +27,15 @@ const GRADE_LINKS = [
 // 主な画数
 const STROKE_LINKS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-// 部首の配置カテゴリー（7種類）
-const BUSHU_POSITION_LINKS = [
-  { key: "へん", label: "偏（へん）", icon: "⬅️", desc: "左側" },
-  { key: "つくり", label: "旁（つくり）", icon: "➡️", desc: "右側" },
-  { key: "かんむり", label: "冠（かんむり）", icon: "⬆️", desc: "上部" },
-  { key: "あし", label: "脚（あし）", icon: "⬇️", desc: "下部" },
-  { key: "たれ", label: "垂（たれ）", icon: "↙️", desc: "上から左" },
-  { key: "かまえ", label: "構（かまえ）", icon: "⬜", desc: "囲む" },
-  { key: "にょう", label: "繞（にょう）", icon: "↪️", desc: "左から下" },
+// 部首の配置カテゴリー（7種類）- 国際対応URL
+const RADICAL_POSITION_LINKS = [
+  { anchor: "left-radical", label: "偏（へん）", labelEn: "Left", icon: "⬅️", desc: "左側" },
+  { anchor: "right-radical", label: "旁（つくり）", labelEn: "Right", icon: "➡️", desc: "右側" },
+  { anchor: "top-radical", label: "冠（かんむり）", labelEn: "Top", icon: "⬆️", desc: "上部" },
+  { anchor: "bottom-radical", label: "脚（あし）", labelEn: "Bottom", icon: "⬇️", desc: "下部" },
+  { anchor: "hanging-radical", label: "垂（たれ）", labelEn: "Hanging", icon: "↙️", desc: "上から左" },
+  { anchor: "enclosing-radical", label: "構（かまえ）", labelEn: "Enclosing", icon: "⬜", desc: "囲む" },
+  { anchor: "wrapping-radical", label: "繞（にょう）", labelEn: "Wrapping", icon: "↪️", desc: "左から下" },
 ];
 
 export default function Home() {
@@ -182,26 +182,26 @@ export default function Home() {
 
       {/* 部首別リンク */}
       <section className="w-full max-w-3xl">
-        <h2 className="text-xl font-medium mb-4 text-center">📘 部首別で探す</h2>
+        <h2 className="text-xl font-medium mb-4 text-center">📘 偏（へん）や旁（つくり）の型から探す</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {BUSHU_POSITION_LINKS.map((pos, index) => (
+          {RADICAL_POSITION_LINKS.map((pos, index) => (
             <Link
-              key={pos.key}
-              href={index === 0 ? "/bushu" : `/bushu#${pos.key}`}
+              key={pos.anchor}
+              href={index === 0 ? "/radical" : `/radical#${pos.anchor}`}
               className="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors"
             >
               <span className="text-2xl">{pos.icon}</span>
               <div className="flex flex-col">
                 <span className="font-medium text-sm">{pos.label}</span>
-                <span className="text-xs text-muted-foreground">{pos.desc}</span>
+                <span className="text-xs text-muted-foreground">{pos.labelEn}</span>
               </div>
             </Link>
           ))}
           <Link
-            href="/bushu"
+            href="/radical"
             className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-muted-foreground"
           >
-            すべての部首 →
+            All Radicals →
           </Link>
         </div>
       </section>
@@ -245,8 +245,8 @@ export default function Home() {
         <Link href="/grade/1" className="text-muted-foreground hover:text-foreground transition-colors">
           学年別一覧
         </Link>
-        <Link href="/bushu" className="text-muted-foreground hover:text-foreground transition-colors">
-          部首別一覧
+        <Link href="/radical" className="text-muted-foreground hover:text-foreground transition-colors">
+          Radicals / 部首別
         </Link>
       </nav>
 

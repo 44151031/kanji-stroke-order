@@ -58,7 +58,7 @@ export default function RankingPage() {
           画数別一覧 →
         </Link>
         <Link
-          href="/bushu"
+          href="/radical"
           className="text-muted-foreground hover:text-foreground"
         >
           部首別一覧 →

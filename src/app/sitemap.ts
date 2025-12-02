@@ -61,7 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // 部首一覧トップ
     {
-      url: `${baseUrl}/bushu`,
+      url: `${baseUrl}/radical`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -109,12 +109,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
   
-  // 部首別ページ（/bushu/[id]）
+  // 部首別ページ（/radical/[slug]）
   const radicals = new Set<string>();
   dictionary.forEach((k) => k.radicals?.forEach((r) => radicals.add(r)));
   radicals.forEach((r) => {
     sitemap.push({
-      url: `${baseUrl}/bushu/${encodeURIComponent(r)}`,
+      url: `${baseUrl}/radical/${encodeURIComponent(r)}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,

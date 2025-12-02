@@ -16,18 +16,18 @@ interface Props {
   radicalCounts: Record<string, number>;
 }
 
-// 配置の順序と説明
+// 配置の順序と説明（日英対応 + アンカーID）
 const POSITION_ORDER = [
-  { key: "へん", label: "偏（へん）", desc: "漢字の左側に位置する部首", desc_en: "Left side of kanji", icon: "⬅️" },
-  { key: "つくり", label: "旁（つくり）", desc: "漢字の右側に位置する部首", desc_en: "Right side of kanji", icon: "➡️" },
-  { key: "かんむり", label: "冠（かんむり）", desc: "漢字の上部に位置する部首", desc_en: "Top of kanji", icon: "⬆️" },
-  { key: "あし", label: "脚（あし）", desc: "漢字の下部に位置する部首", desc_en: "Bottom of kanji", icon: "⬇️" },
-  { key: "たれ", label: "垂（たれ）", desc: "上から左へ垂れる部首", desc_en: "Hanging from top-left", icon: "↙️" },
-  { key: "かまえ", label: "構（かまえ）", desc: "漢字を囲む部首", desc_en: "Enclosing radical", icon: "⬜" },
-  { key: "にょう", label: "繞（にょう）", desc: "左から下へ回り込む部首", desc_en: "Wrapping from left to bottom", icon: "↪️" },
+  { key: "へん", id: "left-radical", label: "偏（へん）", labelEn: "Left Radical", desc: "漢字の左側に位置する部首", desc_en: "Left side of kanji", icon: "⬅️" },
+  { key: "つくり", id: "right-radical", label: "旁（つくり）", labelEn: "Right Radical", desc: "漢字の右側に位置する部首", desc_en: "Right side of kanji", icon: "➡️" },
+  { key: "かんむり", id: "top-radical", label: "冠（かんむり）", labelEn: "Top Radical", desc: "漢字の上部に位置する部首", desc_en: "Top of kanji", icon: "⬆️" },
+  { key: "あし", id: "bottom-radical", label: "脚（あし）", labelEn: "Bottom Radical", desc: "漢字の下部に位置する部首", desc_en: "Bottom of kanji", icon: "⬇️" },
+  { key: "たれ", id: "hanging-radical", label: "垂（たれ）", labelEn: "Hanging Radical", desc: "上から左へ垂れる部首", desc_en: "Hanging from top-left", icon: "↙️" },
+  { key: "かまえ", id: "enclosing-radical", label: "構（かまえ）", labelEn: "Enclosing Radical", desc: "漢字を囲む部首", desc_en: "Enclosing radical", icon: "⬜" },
+  { key: "にょう", id: "wrapping-radical", label: "繞（にょう）", labelEn: "Wrapping Radical", desc: "左から下へ回り込む部首", desc_en: "Wrapping from left to bottom", icon: "↪️" },
 ];
 
-export default function BushuByPositionSection({ radicals, radicalCounts }: Props) {
+export default function RadicalByPositionSection({ radicals, radicalCounts }: Props) {
   // 配置ごとにグループ化
   const groupedRadicals: Record<string, RadicalBilingual[]> = {};
   
@@ -53,21 +53,21 @@ export default function BushuByPositionSection({ radicals, radicalCounts }: Prop
 
   return (
     <div className="w-full max-w-4xl space-y-6">
-      {POSITION_ORDER.map(({ key, label, desc, desc_en, icon }) => {
+      {POSITION_ORDER.map(({ key, id, label, labelEn, desc, desc_en, icon }) => {
         const items = groupedRadicals[key];
         if (!items || items.length === 0) return null;
         
         return (
-          <Card key={key} id={key} className="rounded-2xl shadow-sm scroll-mt-8">
+          <Card key={key} id={id} className="rounded-2xl shadow-sm scroll-mt-8">
             <CardHeader className="pb-3">
               <CardTitle className="text-lg flex items-center gap-2">
                 <span>{icon}</span>
-                <span>{label}</span>
+                <span>{labelEn} / {label}</span>
                 <span className="text-sm font-normal text-muted-foreground ml-2">
-                  {items.length}種類
+                  {items.length} types / {items.length}種類
                 </span>
               </CardTitle>
-              <p className="text-sm text-muted-foreground">{desc} / {desc_en}</p>
+              <p className="text-sm text-muted-foreground">{desc_en} / {desc}</p>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -80,9 +80,9 @@ export default function BushuByPositionSection({ radicals, radicalCounts }: Prop
                   return (
                     <Link
                       key={r.radical_name_en}
-                      href={`/bushu/${encodeURIComponent(r.radical_name_en)}`}
+                      href={`/radical/${encodeURIComponent(r.radical_name_en)}`}
                       className="flex items-center gap-3 p-3 border border-border rounded-xl hover:bg-secondary hover:shadow-md transition-all"
-                      title={r.description_ja}
+                      title={r.description_en}
                     >
                       <span className="text-2xl w-10 h-10 flex items-center justify-center bg-secondary rounded-lg">
                         {r.root}
@@ -90,7 +90,7 @@ export default function BushuByPositionSection({ radicals, radicalCounts }: Prop
                       <div className="flex-1 min-w-0">
                         <span className="font-medium block truncate text-sm">{displayName}</span>
                       </div>
-                      <span className="text-sm text-muted-foreground whitespace-nowrap">{count}字</span>
+                      <span className="text-sm text-muted-foreground whitespace-nowrap">{count}</span>
                     </Link>
                   );
                 })}
@@ -102,3 +102,4 @@ export default function BushuByPositionSection({ radicals, radicalCounts }: Prop
     </div>
   );
 }
+
