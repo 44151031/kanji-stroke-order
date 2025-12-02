@@ -247,12 +247,6 @@ export default function Home() {
 
       {/* クイックリンク */}
       <nav className="flex gap-6 flex-wrap justify-center text-sm">
-        <Link href="/hiragana" className="text-muted-foreground hover:text-foreground transition-colors">
-          ひらがな一覧
-        </Link>
-        <Link href="/katakana" className="text-muted-foreground hover:text-foreground transition-colors">
-          カタカナ一覧
-        </Link>
         <Link href="/search" className="text-muted-foreground hover:text-foreground transition-colors">
           漢字検索
         </Link>
