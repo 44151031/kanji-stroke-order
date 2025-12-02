@@ -26,8 +26,21 @@ const GRADE_LINKS = [
 // 主な画数
 const STROKE_LINKS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-// 人気の部首
-const BUSHU_LINKS = ["Water", "Person", "Tree", "Hand", "Heart", "Sun", "Mouth", "Earth", "Fire", "Gold"];
+// 人気の部首（日本語名 + 英語名 + 絵文字）
+const BUSHU_LINKS = [
+  { jp: "水部", en: "Water", emoji: "💧", root: "氵" },
+  { jp: "人部", en: "Person", emoji: "👤", root: "亻" },
+  { jp: "木部", en: "Tree", emoji: "🌳", root: "木" },
+  { jp: "手部", en: "Hand", emoji: "✋", root: "扌" },
+  { jp: "心部", en: "Heart", emoji: "❤️", root: "忄" },
+  { jp: "日部", en: "Sun", emoji: "☀️", root: "日" },
+  { jp: "口部", en: "Mouth", emoji: "👄", root: "口" },
+  { jp: "土部", en: "Earth", emoji: "🌏", root: "土" },
+  { jp: "火部", en: "Fire", emoji: "🔥", root: "火" },
+  { jp: "金部", en: "Gold", emoji: "💰", root: "金" },
+  { jp: "言部", en: "Speech", emoji: "💬", root: "言" },
+  { jp: "糸部", en: "Thread", emoji: "🧵", root: "糸" },
+];
 
 export default function Home() {
   const [searchText, setSearchText] = useState("");
@@ -160,14 +173,14 @@ export default function Home() {
             <Link
               key={n}
               href={`/strokes/${n}`}
-              className="w-10 h-10 flex items-center justify-center border border-border rounded-lg hover:bg-secondary transition-colors font-medium"
+              className="w-11 h-11 flex items-center justify-center bg-white border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all font-medium shadow-sm"
             >
               {n}
             </Link>
           ))}
           <Link
             href="/strokes/16"
-            className="px-3 h-10 flex items-center justify-center border border-border rounded-lg hover:bg-secondary transition-colors text-sm"
+            className="px-4 h-11 flex items-center justify-center bg-white border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all text-sm shadow-sm"
           >
             16画以上 →
           </Link>
@@ -176,20 +189,25 @@ export default function Home() {
 
       {/* 部首別リンク */}
       <section className="w-full max-w-3xl">
-        <h2 className="text-xl font-medium mb-4 text-center">🔤 部首別で探す</h2>
-        <div className="flex flex-wrap justify-center gap-2">
+        <h2 className="text-xl font-medium mb-4 text-center">📘 部首別で探す</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {BUSHU_LINKS.map((bushu) => (
             <Link
-              key={bushu}
-              href={`/bushu/${encodeURIComponent(bushu)}`}
-              className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors"
+              key={bushu.en}
+              href={`/bushu/${encodeURIComponent(bushu.en)}`}
+              className="flex items-center gap-2 px-4 py-3 bg-white border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-sm group"
+              title={bushu.en}
             >
-              {bushu}
+              <span className="text-xl group-hover:scale-110 transition-transform">{bushu.emoji}</span>
+              <div className="flex flex-col">
+                <span className="font-medium text-foreground">{bushu.jp}</span>
+                <span className="text-xs text-muted-foreground">{bushu.root}</span>
+              </div>
             </Link>
           ))}
           <Link
             href="/bushu"
-            className="px-4 py-2 border border-border rounded-lg hover:bg-secondary transition-colors text-muted-foreground"
+            className="flex items-center justify-center px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-sm text-muted-foreground"
           >
             すべての部首 →
           </Link>
