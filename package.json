@@ -22,7 +22,9 @@
     "scrape:all": "tsx scripts/scrape_kanji_sources/index.ts",
     "scrape:qa": "tsx scripts/scrape_kanji_sources/qa.ts",
     "sitemap": "tsx scripts/generate-sitemap.ts",
-    "add:kanji-ids": "tsx scripts/add_kanji_ids.ts"
+    "add:kanji-ids": "tsx scripts/add_kanji_ids.ts",
+    "fetch:kana-svg": "tsx scripts/fetch_animCJK_svg.ts",
+    "add:stroke-numbers": "tsx scripts/add_stroke_numbers.ts"
   },
   "dependencies": {
     "@radix-ui/react-slider": "^1.3.6",

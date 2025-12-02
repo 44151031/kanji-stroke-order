@@ -118,6 +118,28 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
     return () => { cancelled = true; };
   }, [id, size]);
 
+  // 筆順番号をハイライト
+  const highlightNumber = useCallback((idx: number, active: boolean) => {
+    if (!containerRef.current) return;
+    const numbers = containerRef.current.querySelectorAll('.stroke-number');
+    numbers.forEach((num, i) => {
+      const el = num as SVGTextElement;
+      if (i === idx && active) {
+        el.style.fill = "#e11d48";
+        el.style.fontSize = "12px";
+        el.style.fontWeight = "bold";
+      } else if (i < idx) {
+        el.style.fill = "#1a1a1a";
+        el.style.fontSize = "8px";
+        el.style.fontWeight = "normal";
+      } else {
+        el.style.fill = "#999";
+        el.style.fontSize = "8px";
+        el.style.fontWeight = "normal";
+      }
+    });
+  }, []);
+
   // 指定インデックスまでのパスを描画（即座に）
   const paintUntil = useCallback((uptoExclusive: number) => {
     const paths = pathsRef.current;
@@ -127,7 +149,9 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
       p.style.strokeDashoffset = i < uptoExclusive ? "0" : `${len}`;
       p.style.stroke = i < uptoExclusive ? "#1a1a1a" : "#e5e5e5";
     });
-  }, []);
+    // 筆順番号も更新
+    highlightNumber(uptoExclusive - 1, false);
+  }, [highlightNumber]);
 
   // 1画をアニメーション描画
   const playOneStroke = useCallback(async (idx: number): Promise<boolean> => {
@@ -136,6 +160,9 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
     
     // 現在のインデックスまで即座に描画
     paintUntil(idx);
+    
+    // 筆順番号をハイライト
+    highlightNumber(idx, true);
     
     // 現在描画中の画を赤色に
     p.style.stroke = "#e11d48";
@@ -158,8 +185,11 @@ export function StrokeAnimation({ id, kanji, size = 300 }: StrokeAnimationProps)
     p.style.stroke = "#1a1a1a";
     p.style.strokeWidth = "4";
     
+    // 筆順番号を通常状態に
+    highlightNumber(idx, false);
+    
     return true;
-  }, [speed, paintUntil]);
+  }, [speed, paintUntil, highlightNumber]);
 
   // 連続再生
   useEffect(() => {
