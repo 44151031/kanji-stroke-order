@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
+import { siteMeta } from "@/lib/metadata";
 
 interface KanjiEntry {
   kanji: string;
@@ -18,7 +19,7 @@ interface KanjiDetail {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://kanji-stroke-order.com";
+  const baseUrl = siteMeta.url;
   
   // 漢字データを読み込み
   let joyoList: KanjiEntry[] = [];
@@ -82,6 +83,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/lists/confused`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/lists/misorder`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
