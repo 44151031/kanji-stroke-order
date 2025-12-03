@@ -93,7 +93,7 @@ export default async function RadicalDetailPage({ params }: Props) {
         <ol className="flex items-center gap-2">
           <li><Link href="/" className="hover:text-gray-900">トップ</Link></li>
           <li>/</li>
-          <li><Link href="/radical" className="hover:text-gray-900">Radicals</Link></li>
+          <li><Link href="/radical" className="hover:text-gray-900">部首一覧</Link></li>
           <li>/</li>
           <li className="text-gray-900">{displayName}</li>
         </ol>
@@ -106,7 +106,7 @@ export default async function RadicalDetailPage({ params }: Props) {
         )}
         <h1 className="text-3xl font-bold mb-2">{displayName}</h1>
         <p className="text-gray-600">
-          Position: {posInfo.labelEn} / {posInfo.label}
+          配置: {posInfo.label}
         </p>
         <p className="text-lg text-gray-700 mt-2">
           {kanjiList.length > 0 ? `${kanjiList.length}字の常用漢字` : "漢字データなし"}
@@ -117,7 +117,7 @@ export default async function RadicalDetailPage({ params }: Props) {
       {kanjiList.length > 0 && (
         <section className="mb-10">
           <h2 className="text-lg font-bold mb-4">
-            Kanji List / 漢字一覧（{kanjiList.length}字）
+            漢字一覧（{kanjiList.length}字）
           </h2>
           <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 gap-2">
             {kanjiList.map((kanji) => (
@@ -133,7 +133,7 @@ export default async function RadicalDetailPage({ params }: Props) {
 
       {/* 説明セクション */}
       <section className="bg-gray-50 rounded-2xl p-6 mb-8">
-        <h2 className="text-lg font-bold mb-3">About this Radical</h2>
+        <h2 className="text-lg font-bold mb-3">この部首について</h2>
         <p className="text-gray-700">
           「{r.jp}」は漢字の{posInfo.label}に位置する部首です。
           {r.root && `部首の字形は「${r.root}」です。`}
@@ -145,7 +145,7 @@ export default async function RadicalDetailPage({ params }: Props) {
       {relatedRadicals.length > 0 && (
         <section className="mb-8">
           <h2 className="text-lg font-bold mb-4">
-            Related Radicals / 同じ型の部首
+            同じ型の部首
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
             {relatedRadicals.map((rad) => {
@@ -174,13 +174,13 @@ export default async function RadicalDetailPage({ params }: Props) {
       {/* 関連リンク */}
       <div className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t">
         <Link href="/radical" className="text-gray-500 hover:text-gray-900">
-          ← All Radicals / 部首一覧に戻る
+          ← 部首一覧に戻る
         </Link>
         <Link href="/grade/1" className="text-gray-500 hover:text-gray-900">
-          By Grade →
+          学年別一覧 →
         </Link>
         <Link href="/strokes/1" className="text-gray-500 hover:text-gray-900">
-          By Strokes →
+          画数別一覧 →
         </Link>
       </div>
     </main>

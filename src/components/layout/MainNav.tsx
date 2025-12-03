@@ -11,7 +11,7 @@ const navItems = [
   { href: "/mistake-kanji", label: "間違えやすい", emoji: "⚠️" },
   { href: "/confused-kanji", label: "似ている漢字", emoji: "🔄" },
   { href: "/grade/1", label: "学年別", emoji: "📚" },
-  { href: "/radical", label: "Radicals", emoji: "📘" },
+  { href: "/radical", label: "部首", emoji: "📘" },
   { href: "/ranking", label: "ランキング", emoji: "📊" },
   { href: "/search", label: "検索", emoji: "🔍" },
 ];

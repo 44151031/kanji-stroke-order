@@ -201,7 +201,7 @@ export default function Home() {
             href="/radical"
             className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-muted-foreground"
           >
-            All Radicals →
+            部首一覧 →
           </Link>
         </div>
       </section>
@@ -254,7 +254,7 @@ export default function Home() {
           学年別一覧
         </Link>
         <Link href="/radical" className="text-muted-foreground hover:text-foreground transition-colors">
-          Radicals / 部首別
+          部首別一覧
         </Link>
       </nav>
 

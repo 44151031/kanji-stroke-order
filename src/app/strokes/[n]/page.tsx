@@ -165,7 +165,7 @@ export default async function StrokesPage({ params }: Props) {
           学年別一覧 →
         </Link>
         <Link href="/radical" className="text-muted-foreground hover:text-foreground">
-          Radicals →
+          部首別一覧 →
         </Link>
       </div>
     </div>

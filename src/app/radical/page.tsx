@@ -36,14 +36,14 @@ export default function RadicalIndexPage() {
         <ol className="flex items-center gap-2">
           <li><Link href="/" className="hover:text-gray-900">トップ</Link></li>
           <li>/</li>
-          <li className="text-gray-900">Radicals / 部首一覧</li>
+          <li className="text-gray-900">部首一覧</li>
         </ol>
       </nav>
 
       <header className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-2">Kanji by Radical</h1>
-        <p className="text-lg text-gray-600 mb-1">部首別漢字一覧</p>
-        <p className="text-gray-500">{radicalList.length} Radicals / {radicalList.length}種類の部首</p>
+        <h1 className="text-3xl font-bold mb-2">部首別漢字一覧</h1>
+        <p className="text-lg text-gray-600 mb-1">部首から漢字を探す</p>
+        <p className="text-gray-500">{radicalList.length}種類の部首</p>
       </header>
 
       {/* 配置タイプごとのセクション */}
