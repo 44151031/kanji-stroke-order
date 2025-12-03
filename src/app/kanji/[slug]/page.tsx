@@ -12,6 +12,15 @@ import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 
+// 書き順を間違えやすい漢字リスト
+import misorderList from "@/data/misorder-kanji.json";
+
+// 型定義
+interface MisorderKanjiList {
+  common_misorder_kanji: string[];
+}
+const typedMisorderList = misorderList as MisorderKanjiList;
+
 // データ型定義
 interface KanjiJoyo {
   kanji: string;
@@ -361,6 +370,13 @@ export default async function KanjiPage({ params }: Props) {
             <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-white">
               <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={kanji} />
             </div>
+            {/* 書き順を間違えやすい漢字の警告表示 */}
+            {typedMisorderList.common_misorder_kanji.includes(kanji) && (
+              <p className="text-red-500 text-sm mt-3 flex items-center gap-1">
+                <span>⚠</span>
+                <span>この漢字は書き順を間違えやすい漢字としてよく出題されます。</span>
+              </p>
+            )}
           </CardContent>
         </Card>
 
