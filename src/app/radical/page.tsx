@@ -79,7 +79,7 @@ export default function RadicalIndexPage() {
                           className="flex items-center gap-3 p-3 border rounded-xl hover:bg-gray-50 transition-colors"
                         >
                           {r.root && (
-                            <span className="text-2xl w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg">
+                            <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
                               {r.root}
                             </span>
                           )}

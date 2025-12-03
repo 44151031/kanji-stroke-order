@@ -124,7 +124,7 @@ export default async function RadicalDetailPage({ params }: Props) {
               <KanjiLink
                 key={kanji}
                 kanji={kanji}
-                className="aspect-square flex items-center justify-center text-2xl border rounded-lg hover:bg-gray-100 hover:border-gray-400 transition-colors"
+                className="aspect-square flex items-center justify-center text-2xl bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-colors shadow-sm"
               />
             ))}
           </div>
@@ -157,7 +157,7 @@ export default async function RadicalDetailPage({ params }: Props) {
                   className="flex items-center gap-3 p-3 border rounded-xl hover:bg-gray-50 transition-colors"
                 >
                   {rad.root && (
-                    <span className="text-2xl w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg">
+                    <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
                       {rad.root}
                     </span>
                   )}

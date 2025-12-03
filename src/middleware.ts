@@ -30,10 +30,24 @@ function toUnicodeSlug(kanji: string): string {
 }
 
 /**
- * Unicode スラッグ形式かどうかを判定
+ * Unicode スラッグ形式かどうかを判定（大文字・小文字両方）
  */
 function isUnicodeSlug(slug: string): boolean {
   return /^u[0-9A-Fa-f]{4,5}$/.test(slug);
+}
+
+/**
+ * 正規化された大文字Unicode形式かどうかを判定
+ */
+function isNormalizedUnicodeSlug(slug: string): boolean {
+  return /^u[0-9A-F]{4,5}$/.test(slug);
+}
+
+/**
+ * Unicodeスラッグを正規化（大文字に統一）
+ */
+function normalizeUnicodeSlug(slug: string): string {
+  return `u${slug.slice(1).toUpperCase()}`;
 }
 
 export function middleware(request: NextRequest) {
@@ -45,9 +59,19 @@ export function middleware(request: NextRequest) {
   if (kanjiMatch) {
     const slug = kanjiMatch[1];
     
-    // 既にUnicode形式ならスキップ
-    if (isUnicodeSlug(slug)) {
+    // 既に正規化されたUnicode形式（大文字）ならスキップ
+    if (isNormalizedUnicodeSlug(slug)) {
       return NextResponse.next();
+    }
+    
+    // 小文字のUnicode形式なら大文字にリダイレクト
+    if (isUnicodeSlug(slug)) {
+      const normalizedSlug = normalizeUnicodeSlug(slug);
+      const url = request.nextUrl.clone();
+      url.pathname = `/kanji/${normalizedSlug}`;
+      
+      // 301 永続的リダイレクト
+      return NextResponse.redirect(url, { status: 301 });
     }
     
     // URLデコードして漢字を取得
