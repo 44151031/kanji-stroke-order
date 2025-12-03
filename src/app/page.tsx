@@ -209,7 +209,7 @@ export default function Home() {
       {/* 特集ページ */}
       <section className="w-full max-w-3xl">
         <h2 className="text-xl font-medium mb-4 text-center">📚 特集で探す</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             href="/exam-kanji"
             className="flex flex-col items-center p-5 bg-blue-50 border border-blue-200 rounded-xl hover:bg-blue-100 hover:border-blue-400 transition-all group"
@@ -233,6 +233,14 @@ export default function Home() {
             <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">🔄</span>
             <span className="font-medium text-purple-700">似ている漢字</span>
             <span className="text-xs text-purple-600/70 mt-1">形の違いを比較</span>
+          </Link>
+          <Link
+            href="/lists/misorder"
+            className="flex flex-col items-center p-5 bg-red-50 border border-red-200 rounded-xl hover:bg-red-100 hover:border-red-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">✍️</span>
+            <span className="font-medium text-red-700">書き順クイズ</span>
+            <span className="text-xs text-red-600/70 mt-1">間違えやすい書き順</span>
           </Link>
         </div>
       </section>
