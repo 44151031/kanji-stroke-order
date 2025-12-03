@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
 import radicalList, {
   buildSlugIndex,
   getUniqueSlug,
@@ -20,6 +22,20 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
   "wrapping-radical": { label: "繞（にょう）", labelEn: "Wrapping" },
   "independent-radical": { label: "その他", labelEn: "Independent" },
 };
+
+// JSONファイルから漢字リストを読み込み
+function loadKanjiList(slug: string): string[] {
+  const filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+  try {
+    const content = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(content);
+  } catch {
+    return [];
+  }
+}
 
 // 静的パラメータ生成
 export async function generateStaticParams() {
@@ -42,10 +58,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const displayName = formatRadicalName(r.jp, r.en);
   const englishName = getEnglishDisplayName(r.en);
+  const kanjiList = loadKanjiList(slug);
   
   return {
-    title: `${displayName}の漢字一覧 | Kanji Stroke Order`,
-    description: `部首「${r.jp}」（${englishName}）を含む漢字の書き順をアニメーションで学習できます。`,
+    title: `${displayName}の漢字一覧（${kanjiList.length}字）| Kanji Stroke Order`,
+    description: `部首「${r.jp}」（${englishName}）を含む常用漢字${kanjiList.length}字の書き順をアニメーションで学習できます。`,
   };
 }
 
@@ -59,6 +76,9 @@ export default async function RadicalDetailPage({ params }: Props) {
   const uniqueSlug = getUniqueSlug(r, counts);
   const displayName = formatRadicalName(r.jp, r.en);
   const posInfo = POSITION_LABELS[r.type] || { label: "その他", labelEn: "Other" };
+  
+  // 漢字リストを読み込み
+  const kanjiList = loadKanjiList(slug);
 
   // 同じ配置タイプの他の部首
   const relatedRadicals = radicalList
@@ -87,10 +107,31 @@ export default async function RadicalDetailPage({ params }: Props) {
         <p className="text-gray-600">
           Position: {posInfo.labelEn} / {posInfo.label}
         </p>
-        <p className="text-sm text-gray-500 mt-2">
-          URL: /radical/{uniqueSlug}
+        <p className="text-lg text-gray-700 mt-2">
+          {kanjiList.length > 0 ? `${kanjiList.length}字の常用漢字` : "漢字データなし"}
         </p>
       </header>
+
+      {/* 漢字一覧 */}
+      {kanjiList.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-lg font-bold mb-4">
+            Kanji List / 漢字一覧（{kanjiList.length}字）
+          </h2>
+          <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 gap-2">
+            {kanjiList.map((kanji) => (
+              <Link
+                key={kanji}
+                href={`/kanji/${encodeURIComponent(kanji)}`}
+                className="aspect-square flex items-center justify-center text-2xl border rounded-lg hover:bg-gray-100 hover:border-gray-400 transition-colors"
+                title={kanji}
+              >
+                {kanji}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 説明セクション */}
       <section className="bg-gray-50 rounded-2xl p-6 mb-8">
@@ -98,9 +139,7 @@ export default async function RadicalDetailPage({ params }: Props) {
         <p className="text-gray-700">
           「{r.jp}」は漢字の{posInfo.label}に位置する部首です。
           {r.root && `部首の字形は「${r.root}」です。`}
-        </p>
-        <p className="text-sm text-gray-500 mt-2">
-          部首型アンカー: <a className="underline text-blue-600" href={`/${r.anchor}`}>{r.anchor}</a>
+          {kanjiList.length > 0 && `この部首を持つ常用漢字は${kanjiList.length}字あります。`}
         </p>
       </section>
 
