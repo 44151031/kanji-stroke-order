@@ -154,7 +154,7 @@ export default async function RadicalDetailPage({ params }: Props) {
                 <Link
                   key={rad.en}
                   href={`/radical/${radSlug}`}
-                  className="flex items-center gap-3 p-3 border rounded-xl hover:bg-gray-50 transition-colors"
+                  className="flex items-center gap-3 p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
                 >
                   {rad.root && (
                     <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
