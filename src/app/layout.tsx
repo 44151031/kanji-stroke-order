@@ -54,6 +54,7 @@ export const metadata: Metadata = {
     title: siteMeta.title,
     description: siteMeta.description,
     images: [siteMeta.image],
+    creator: siteMeta.twitterCreator,
   },
   alternates: {
     canonical: siteMeta.url,
@@ -77,7 +78,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" dir="ltr" prefix="og: https://ogp.me/ns#">
       <head>
         {/* 構造化データ */}
         <script
@@ -94,7 +95,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${GA_MEASUREMENT_ID}', { anonymize_ip: true });
           `}
         </Script>
       </head>

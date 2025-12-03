@@ -16,6 +16,7 @@ export const siteMeta = {
   imageWidth: 1200,
   imageHeight: 630,
   twitterCard: "summary_large_image" as const,
+  twitterCreator: "@kanji_stroke_order", // Twitterアカウント（未登録の場合は空文字可）
   logo: "/ogp.png",
 };
 
@@ -27,14 +28,25 @@ export function toKanjiHex(kanji: string): string {
 }
 
 // ============================================
+// 📋 メタデータ共通部
+// ============================================
+export const baseMeta = {
+  authors: [{ name: siteMeta.author, url: siteMeta.url }],
+  creator: siteMeta.author,
+  publisher: siteMeta.publisher,
+  robots: { index: true, follow: true },
+};
+
+// ============================================
 // 🏠 トップページ用メタデータ＆構造化データ
 // ============================================
 export function generateTopPageMetadata(): Metadata {
-  const { title, description, url, image, siteName, locale, twitterCard } = siteMeta;
+  const { title, description, url, image, siteName, locale, twitterCard, twitterCreator } = siteMeta;
 
   return {
     title,
     description,
+    ...baseMeta,
     openGraph: {
       title,
       description,
@@ -49,9 +61,9 @@ export function generateTopPageMetadata(): Metadata {
       title,
       description,
       images: [image],
+      creator: twitterCreator,
     },
     alternates: { canonical: url },
-    robots: { index: true, follow: true },
   };
 }
 
@@ -94,7 +106,7 @@ export function getTopPageJsonLd() {
         },
       },
       {
-        "@type": "WebPage",
+        "@type": ["WebPage", "CollectionPage"],
         "@id": `${url}/#webpage`,
         url,
         name: siteName,
@@ -148,9 +160,7 @@ export function generateKanjiMetadata(
       ...onYomi,
       ...kunYomi,
     ],
-    authors: [{ name: siteMeta.author, url: siteMeta.url }],
-    creator: siteMeta.author,
-    publisher: siteMeta.publisher,
+    ...baseMeta,
     openGraph: {
       title,
       description,
@@ -165,9 +175,9 @@ export function generateKanjiMetadata(
       title,
       description,
       images: [ogImageUrl],
+      creator: siteMeta.twitterCreator,
     },
     alternates: { canonical: canonicalUrl },
-    robots: { index: true, follow: true },
   };
 }
 
@@ -176,7 +186,7 @@ export function generateKanjiMetadata(
  */
 export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) {
   const hex = toKanjiHex(kanji);
-  const { url } = siteMeta;
+  const { url, siteName } = siteMeta;
 
   return {
     "@context": "https://schema.org",
@@ -190,6 +200,17 @@ export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) 
     additionalType: "https://schema.org/EducationalOccupationalCredential",
     contentRating: "G",
     usageInfo: `${strokes}画`,
+    license: "https://creativecommons.org/licenses/by-sa/3.0/",
+    copyrightHolder: {
+      "@type": "Organization",
+      name: siteName,
+      url: url,
+    },
+    about: [
+      { "@type": "Thing", name: "漢字" },
+      { "@type": "Thing", name: "書き順" },
+      { "@type": "Thing", name: "筆順" },
+    ],
   };
 }
 
@@ -215,9 +236,7 @@ export function generatePageMetadata(options: {
   return {
     title: `${title} | ${siteMeta.siteName}`,
     description,
-    authors: [{ name: siteMeta.author, url: siteMeta.url }],
-    creator: siteMeta.author,
-    publisher: siteMeta.publisher,
+    ...baseMeta,
     openGraph: {
       title: `${title} | ${siteMeta.siteName}`,
       description,
@@ -239,13 +258,10 @@ export function generatePageMetadata(options: {
       title: `${title} | ${siteMeta.siteName}`,
       description,
       images: [image.startsWith("http") ? image : `${siteMeta.url}${image}`],
+      creator: siteMeta.twitterCreator,
     },
     alternates: {
       canonical: canonicalUrl,
-    },
-    robots: {
-      index: true,
-      follow: true,
     },
   };
 }
@@ -285,4 +301,27 @@ export function generateRadicalMetadata(
     description: `部首「${radicalJp}」を持つ漢字の一覧。書き順・読み方・意味を解説。部首から漢字を検索できます。`,
     path: `/radical/${radicalEn}`,
   });
+}
+
+// ============================================
+// 🔄 JSON-LD一括返却ユーティリティ
+// ============================================
+/**
+ * 漢字ページ用メタデータとJSON-LD構造化データを一括生成
+ */
+export function generateKanjiMetaWithJsonLd(
+  kanji: string,
+  meaning: string,
+  options?: {
+    strokes?: number;
+    grade?: number;
+    onYomi?: string[];
+    kunYomi?: string[];
+    jlpt?: string | null;
+  }
+) {
+  return {
+    metadata: generateKanjiMetadata(kanji, meaning, options),
+    jsonLd: getKanjiJsonLd(kanji, meaning, options?.strokes || 0),
+  };
 }
