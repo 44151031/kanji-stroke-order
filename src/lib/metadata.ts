@@ -1,11 +1,8 @@
-/**
- * SEOメタデータ管理ヘルパー
- * 全ページで統一されたメタデータ生成を行う
- */
-
+// ============================================
+// 🧭 共通サイトメタ情報
+// ============================================
 import { Metadata } from "next";
 
-// サイト共通メタ情報
 export const siteMeta = {
   title: "漢字書き順ナビ",
   description:
@@ -15,23 +12,103 @@ export const siteMeta = {
   author: "漢字書き順ナビ",
   publisher: "漢字書き順ナビ",
   locale: "ja_JP",
-  language: "ja",
   image: "/ogp.png",
   imageWidth: 1200,
   imageHeight: 630,
   twitterCard: "summary_large_image" as const,
+  logo: "/ogp.png",
 };
 
-/**
- * 漢字Unicodeスラッグを生成
- */
+// ============================================
+// ⚙️ ユーティリティ
+// ============================================
 export function toKanjiHex(kanji: string): string {
   return kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "";
 }
 
+// ============================================
+// 🏠 トップページ用メタデータ＆構造化データ
+// ============================================
+export function generateTopPageMetadata(): Metadata {
+  const { title, description, url, image, siteName, locale, twitterCard } = siteMeta;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName,
+      locale,
+      type: "website",
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: twitterCard,
+      title,
+      description,
+      images: [image],
+    },
+    alternates: { canonical: url },
+    robots: { index: true, follow: true },
+  };
+}
+
 /**
- * 漢字ページ用メタデータ生成
+ * トップページ構造化データ
+ * （WebSite / Organization / WebPage）
  */
+export function getTopPageJsonLd() {
+  const { url, siteName, description, logo } = siteMeta;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${url}/#website`,
+        url,
+        name: siteName,
+        description,
+        inLanguage: "ja-JP",
+        publisher: { "@id": `${url}/#organization` },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${url}/search?q={search_term_string}`,
+          },
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${url}/#organization`,
+        name: siteName,
+        url,
+        logo: {
+          "@type": "ImageObject",
+          url: `${url}${logo}`,
+          width: 1200,
+          height: 630,
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${url}/#webpage`,
+        url,
+        name: siteName,
+        isPartOf: { "@id": `${url}/#website` },
+        description,
+        inLanguage: "ja-JP",
+      },
+    ],
+  };
+}
+
+// ============================================
+// 🈶 漢字ページメタデータ＆構造化データ
+// ============================================
 export function generateKanjiMetadata(
   kanji: string,
   meaning: string,
@@ -46,20 +123,15 @@ export function generateKanjiMetadata(
   const hex = toKanjiHex(kanji);
   const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
 
-  // SEO最適化されたタイトル
   const title = `${kanji}の書き順（筆順）｜読み方・意味・部首・画数 | ${siteMeta.siteName}`;
-
-  // 詳細なdescription
   const descParts = [`${kanji}（${meaning}）の正しい書き順・筆順をアニメで解説`];
   if (onYomi.length > 0) descParts.push(`音読み：${onYomi.slice(0, 3).join("、")}`);
   if (kunYomi.length > 0) descParts.push(`訓読み：${kunYomi.slice(0, 3).join("、")}`);
   if (strokes) descParts.push(`${strokes}画`);
-  if (grade) {
-    descParts.push(grade <= 6 ? `小学${grade}年` : "中学");
-  }
+  if (grade) descParts.push(grade <= 6 ? `小学${grade}年` : "中学");
   if (jlpt) descParts.push(`JLPT ${jlpt}`);
-
   const description = descParts.join("。") + "。";
+
   const canonicalUrl = `${siteMeta.url}/kanji/u${hex}`;
   const ogImageUrl = `${siteMeta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`;
 
@@ -86,14 +158,7 @@ export function generateKanjiMetadata(
       url: canonicalUrl,
       siteName: siteMeta.siteName,
       locale: siteMeta.locale,
-      images: [
-        {
-          url: ogImageUrl,
-          width: siteMeta.imageWidth,
-          height: siteMeta.imageHeight,
-          alt: `${kanji}の書き順`,
-        },
-      ],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: `${kanji}の書き順` }],
     },
     twitter: {
       card: siteMeta.twitterCard,
@@ -101,19 +166,36 @@ export function generateKanjiMetadata(
       description,
       images: [ogImageUrl],
     },
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
+    alternates: { canonical: canonicalUrl },
+    robots: { index: true, follow: true },
   };
 }
 
 /**
- * 汎用ページ用メタデータ生成
+ * 漢字ページ構造化データ（JSON-LD）
  */
+export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) {
+  const hex = toKanjiHex(kanji);
+  const { url } = siteMeta;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: `${kanji} の書き順`,
+    alternateName: "漢字書き順ナビ",
+    description: `${kanji}（${meaning}）の正しい書き順・画数・部首・読み方を解説します。`,
+    inLanguage: "ja",
+    url: `${url}/kanji/u${hex}`,
+    keywords: "書き順,漢字,筆順,部首,画数",
+    additionalType: "https://schema.org/EducationalOccupationalCredential",
+    contentRating: "G",
+    usageInfo: `${strokes}画`,
+  };
+}
+
+// ============================================
+// 📄 汎用ページ用メタデータ生成
+// ============================================
 export function generatePageMetadata(options: {
   title: string;
   description: string;
@@ -168,9 +250,9 @@ export function generatePageMetadata(options: {
   };
 }
 
-/**
- * 学年ページ用メタデータ生成
- */
+// ============================================
+// 📚 学年ページ用メタデータ生成
+// ============================================
 export function generateGradeMetadata(grade: number): Metadata {
   const gradeLabel = grade <= 6 ? `小学${grade}年生` : "中学校";
   return generatePageMetadata({
@@ -180,9 +262,9 @@ export function generateGradeMetadata(grade: number): Metadata {
   });
 }
 
-/**
- * 画数ページ用メタデータ生成
- */
+// ============================================
+// ✏️ 画数ページ用メタデータ生成
+// ============================================
 export function generateStrokesMetadata(strokes: number): Metadata {
   return generatePageMetadata({
     title: `${strokes}画の漢字一覧`,
@@ -191,9 +273,9 @@ export function generateStrokesMetadata(strokes: number): Metadata {
   });
 }
 
-/**
- * 部首ページ用メタデータ生成
- */
+// ============================================
+// 🔤 部首ページ用メタデータ生成
+// ============================================
 export function generateRadicalMetadata(
   radicalJp: string,
   radicalEn: string
@@ -204,4 +286,3 @@ export function generateRadicalMetadata(
     path: `/radical/${radicalEn}`,
   });
 }
-
