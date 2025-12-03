@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
+import SvgAnimator from "@/components/SvgAnimator";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -37,6 +38,7 @@ export default function MisorderKanjiPage() {
   const [shuffledList, setShuffledList] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
+  const [showAnswer, setShowAnswer] = useState(false);
 
   // クライアントサイドでのみシャッフル（SSR対策）
   useEffect(() => {
@@ -49,6 +51,7 @@ export default function MisorderKanjiPage() {
 
   // 次の漢字へ
   const nextKanji = () => {
+    setShowAnswer(false); // 答えを隠す
     const next = (currentIndex + 1) % shuffledList.length;
     // 一周したら再シャッフル
     if (next === 0) {
@@ -57,9 +60,9 @@ export default function MisorderKanjiPage() {
     setCurrentIndex(next);
   };
 
-  // 正しい書き順を見る
-  const showAnswer = () => {
-    window.location.href = `/kanji/${toUnicodeSlug(currentKanji)}`;
+  // 正しい書き順を表示
+  const toggleAnswer = () => {
+    setShowAnswer(!showAnswer);
   };
 
   return (
@@ -91,40 +94,58 @@ export default function MisorderKanjiPage() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-col items-center space-y-6 py-4">
-            {/* 漢字表示 */}
-            <div className="text-8xl md:text-9xl font-bold select-none">
-              {isClient ? currentKanji : "？"}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 py-4">
+            {/* 左側: 漢字表示 */}
+            <div className="flex flex-col items-center space-y-4">
+              <div className="text-8xl md:text-9xl font-bold select-none">
+                {isClient ? currentKanji : "？"}
+              </div>
+              
+              {/* 進捗表示 */}
+              <p className="text-sm text-muted-foreground">
+                {isClient ? `${currentIndex + 1} / ${shuffledList.length}` : "読み込み中..."}
+              </p>
             </div>
-            
-            {/* 進捗表示 */}
-            <p className="text-sm text-muted-foreground">
-              {isClient ? `${currentIndex + 1} / ${shuffledList.length}` : "読み込み中..."}
-            </p>
-            
-            {/* ボタン */}
-            <div className="flex gap-4 flex-wrap justify-center">
-              <Button 
-                onClick={showAnswer} 
-                variant="default"
-                className="px-6 py-2"
-              >
-                正しい書き順を見る
-              </Button>
-              <Button 
-                onClick={nextKanji} 
-                variant="outline"
-                className="px-6 py-2"
-              >
-                次へ →
-              </Button>
-            </div>
-            
-            {/* ヒント */}
-            <p className="text-xs text-muted-foreground text-center">
-              「次へ」をクリックするとランダムに次の漢字が出題されます
-            </p>
+
+            {/* 右側: 書き順アニメーション（答え） */}
+            {showAnswer && isClient && (
+              <div className="flex flex-col items-center space-y-3 animate-in fade-in slide-in-from-right-4 duration-300">
+                <p className="text-sm font-medium text-green-600">✓ 正しい書き順</p>
+                <div className="w-64 h-64 md:w-72 md:h-72 border-2 border-green-300 rounded-xl flex items-center justify-center bg-white shadow-inner">
+                  <SvgAnimator character={currentKanji} size={220} />
+                </div>
+                <Link
+                  href={`/kanji/${toUnicodeSlug(currentKanji)}`}
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  詳細ページを見る →
+                </Link>
+              </div>
+            )}
           </div>
+
+          {/* ボタン */}
+          <div className="flex gap-4 flex-wrap justify-center mt-6">
+            <Button 
+              onClick={toggleAnswer} 
+              variant={showAnswer ? "outline" : "default"}
+              className="px-6 py-2"
+            >
+              {showAnswer ? "答えを隠す" : "正しい書き順を見る"}
+            </Button>
+            <Button 
+              onClick={nextKanji} 
+              variant="outline"
+              className="px-6 py-2"
+            >
+              次へ →
+            </Button>
+          </div>
+          
+          {/* ヒント */}
+          <p className="text-xs text-muted-foreground text-center mt-4">
+            「次へ」をクリックするとランダムに次の漢字が出題されます
+          </p>
         </CardContent>
       </Card>
 
@@ -163,4 +184,3 @@ export default function MisorderKanjiPage() {
     </main>
   );
 }
-
