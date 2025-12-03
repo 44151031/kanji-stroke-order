@@ -76,7 +76,7 @@ export default function RadicalIndexPage() {
                         <Link
                           key={`${r.en}-${r.type}`}
                           href={`/radical/${uniqueSlug}`}
-                          className="flex items-center gap-3 p-3 border rounded-xl hover:bg-gray-50 transition-colors"
+                          className="flex items-center gap-3 p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
                         >
                           {r.root && (
                             <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
