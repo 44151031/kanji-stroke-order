@@ -21,7 +21,7 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
   "hanging-radical": { label: "垂（たれ）", labelEn: "Hanging" },
   "enclosing-radical": { label: "構（かまえ）", labelEn: "Enclosing" },
   "wrapping-radical": { label: "繞（にょう）", labelEn: "Wrapping" },
-  "independent-radical": { label: "その他", labelEn: "Independent" },
+  "independent-radical": { label: "その他", labelEn: "Other / Independent" },
 };
 
 // JSONファイルから漢字リストを読み込み

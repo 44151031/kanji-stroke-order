@@ -17,7 +17,7 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string; icon: st
   "hanging-radical": { label: "垂（たれ）", labelEn: "Hanging Radical", icon: "↙️", desc: "上から左へ垂れる部首" },
   "enclosing-radical": { label: "構（かまえ）", labelEn: "Enclosing Radical", icon: "⬜", desc: "漢字を囲む部首" },
   "wrapping-radical": { label: "繞（にょう）", labelEn: "Wrapping Radical", icon: "↪️", desc: "左から下へ回り込む部首" },
-  "independent-radical": { label: "その他", labelEn: "Independent", icon: "📝", desc: "独立した部首" },
+  "independent-radical": { label: "その他", labelEn: "Other / Independent", icon: "📝", desc: "上記に分類されない部首（複数位置に出現、または独立して使われる）" },
 };
 
 export default function RadicalIndexPage() {

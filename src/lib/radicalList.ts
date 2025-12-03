@@ -149,6 +149,28 @@ export const radicalList: Radical[] = [
   { jp: "くにがまえ", en: "country-radical", root: "囗", type: "enclosing-radical", typeJa: "構", anchor: "radical#enclosing-radical" },
   { jp: "はこがまえ", en: "box-radical", root: "匚", type: "enclosing-radical", typeJa: "構", anchor: "radical#enclosing-radical" },
   { jp: "つつみがまえ", en: "wrap-radical", root: "勹", type: "enclosing-radical", typeJa: "構", anchor: "radical#enclosing-radical" },
+
+  // その他 - Independent Radicals (複数位置に出現、または独立して使われる部首)
+  { jp: "ひと", en: "hito-radical", root: "人", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "だい", en: "dai-radical", root: "大", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "ちから", en: "chikara-radical", root: "力", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "こころ", en: "kokoro-radical", root: "心", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "た", en: "ta-radical", root: "田", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "おんな", en: "onna-radical", root: "女", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "こ", en: "ko-radical", root: "子", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "やま", en: "yama-radical", root: "山", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "かわ", en: "kawa-radical", root: "川", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "つき", en: "tsuki-radical", root: "月", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "ひ", en: "hi-radical", root: "日", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "みず", en: "mizu-radical", root: "水", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "ひ", en: "fire-standalone-radical", root: "火", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "いち", en: "ichi-radical", root: "一", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "に", en: "ni-radical", root: "二", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "じゅう", en: "juu-radical", root: "十", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "はね", en: "hane-radical", root: "羽", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "みみ", en: "mimi-radical", root: "耳", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "くち", en: "kuchi-radical", root: "口", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "め", en: "me-radical", root: "目", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
 ];
 
 export default radicalList;
