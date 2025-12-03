@@ -199,7 +199,7 @@ export default function Home() {
           ))}
           <Link
             href="/radical"
-            className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 border border-gray-200 rounded-xl hover:bg-gray-200 transition-colors text-muted-foreground"
+            className="flex items-center justify-center gap-2 px-4 py-3 bg-amber-500 hover:bg-amber-600 rounded-xl transition-colors text-white font-medium"
           >
             部首一覧 →
           </Link>
