@@ -9,7 +9,8 @@ import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
 import KanjiBadges from "@/components/KanjiBadges";
-import { getKanjiLink } from "@/lib/linkUtils";
+import KanjiLink from "@/components/common/KanjiLink";
+import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 
 // データ型定義
 interface KanjiJoyo {
@@ -90,60 +91,29 @@ function loadKanjiMaster(): Map<string, MasterKanji> {
   return new Map(data.map((k) => [k.kanji, k]));
 }
 
-// uXXXX形式のIDから漢字を解決
-function resolveKanjiFromId(idOrKanji: string): string {
-  // uXXXX形式かチェック
-  if (idOrKanji.match(/^u[0-9a-f]{4,5}$/i)) {
-    const codePoint = parseInt(idOrKanji.slice(1), 16);
-    return String.fromCodePoint(codePoint);
-  }
-  return idOrKanji;
-}
-
-// 漢字からuXXXX形式のIDを生成
-function kanjiToId(kanji: string): string {
-  const codePoint = kanji.codePointAt(0);
-  if (!codePoint) return "";
-  return `u${codePoint.toString(16).toLowerCase().padStart(4, "0")}`;
-}
-
-// SSG: 静的パラメータ生成（kanji-joyo.json + kanji_master.json）
+// SSG: 静的パラメータ生成（uXXXX形式のみ）
 export async function generateStaticParams() {
   const joyoList = loadKanjiJoyo();
-  const masterData = loadKanjiMasterArray();
   
-  // 常用漢字の文字ベースのパス
-  const kanjiParams = joyoList.map((k) => ({ kanji: k.kanji }));
-  
-  // マスターデータのuXXXX形式のID
-  const idParams = masterData
-    .filter((k) => k.id)
-    .map((k) => ({ kanji: k.id! }));
-  
-  // 重複を除去して結合
-  const allParams = [...kanjiParams, ...idParams];
-  const seen = new Set<string>();
-  return allParams.filter((p) => {
-    if (seen.has(p.kanji)) return false;
-    seen.add(p.kanji);
-    return true;
-  });
-}
-
-function loadKanjiMasterArray(): MasterKanji[] {
-  const masterPath = path.join(process.cwd(), "data", "kanji_master.json");
-  if (!fs.existsSync(masterPath)) return [];
-  return JSON.parse(fs.readFileSync(masterPath, "utf-8"));
+  // 全漢字を uXXXX 形式で生成
+  return joyoList.map((k) => ({
+    slug: toUnicodeSlug(k.kanji),
+  }));
 }
 
 // メタデータ生成（SEO最適化）
-type Props = { params: Promise<{ kanji: string }> };
+type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { kanji } = await params;
-  const decodedParam = decodeURIComponent(kanji);
-  const decodedKanji = resolveKanjiFromId(decodedParam);
-  const detail = loadKanjiDetail(decodedKanji);
+  const { slug } = await params;
+  
+  // uXXXX形式から漢字を取得
+  const kanji = fromUnicodeSlug(slug);
+  if (!kanji) {
+    return { title: "漢字が見つかりません" };
+  }
+  
+  const detail = loadKanjiDetail(kanji);
 
   const onYomi = detail?.on?.slice(0, 3).join("、") || "";
   const kunYomi = detail?.kun?.slice(0, 3).join("、") || "";
@@ -155,11 +125,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const strokesLabel = detail?.strokes ? `${detail.strokes}画` : "";
 
   // SEO最適化されたタイトル
-  const title = `${decodedKanji}の書き順（筆順）｜読み方・意味・部首・画数`;
+  const title = `${kanji}の書き順（筆順）｜読み方・意味・部首・画数`;
   
   // 詳細なdescription
   const descParts = [
-    `${decodedKanji}の書き順（筆順）をSVGアニメで解説`,
+    `${kanji}の書き順（筆順）をSVGアニメで解説`,
   ];
   if (onYomi) descParts.push(`音読み：${onYomi}`);
   if (kunYomi) descParts.push(`訓読み：${kunYomi}`);
@@ -171,17 +141,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = descParts.join("。") + "。";
 
   const siteUrl = "https://kanji-stroke-order.com";
+  const canonicalSlug = toUnicodeSlug(kanji);
 
   return {
     title,
     description,
     keywords: [
-      decodedKanji,
-      `${decodedKanji} 書き順`,
-      `${decodedKanji} 筆順`,
-      `${decodedKanji} 読み方`,
-      `${decodedKanji} 意味`,
-      `${decodedKanji} 画数`,
+      kanji,
+      `${kanji} 書き順`,
+      `${kanji} 筆順`,
+      `${kanji} 読み方`,
+      `${kanji} 意味`,
+      `${kanji} 画数`,
       ...(detail?.on || []),
       ...(detail?.kun || []),
     ],
@@ -189,22 +160,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title, 
       description,
       type: "article",
-      url: `${siteUrl}/kanji/${encodeURIComponent(decodedKanji)}`,
+      url: `${siteUrl}/kanji/${canonicalSlug}`,
       images: [{
-        url: `${siteUrl}/api/og-kanji?k=${encodeURIComponent(decodedKanji)}`,
+        url: `${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
         width: 1200,
         height: 630,
-        alt: `${decodedKanji}の書き順`,
+        alt: `${kanji}の書き順`,
       }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [`${siteUrl}/api/og-kanji?k=${encodeURIComponent(decodedKanji)}`],
+      images: [`${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`],
     },
     alternates: {
-      canonical: `${siteUrl}/kanji/${encodeURIComponent(decodedKanji)}`,
+      canonical: `${siteUrl}/kanji/${canonicalSlug}`,
     },
   };
 }
@@ -213,14 +184,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function generateJsonLd(detail: KanjiDetail, words: WordEntry[]) {
   const siteUrl = "https://kanji-stroke-order.com";
   const gradeLabel = detail.grade <= 6 ? `小学${detail.grade}年生` : "中学校";
+  const canonicalSlug = toUnicodeSlug(detail.kanji);
   
   return {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
-    "@id": `${siteUrl}/kanji/${encodeURIComponent(detail.kanji)}`,
+    "@id": `${siteUrl}/kanji/${canonicalSlug}`,
     name: detail.kanji,
     description: `${detail.kanji}の書き順・読み方・意味`,
-    inDefinedTermSet: `${siteUrl}/kanji/${encodeURIComponent(detail.kanji)}`,
+    inDefinedTermSet: `${siteUrl}/kanji/${canonicalSlug}`,
     termCode: `ucs:${detail.ucsHex}`,
     alternateName: [...detail.on, ...detail.kun],
     additionalProperty: [
@@ -287,13 +259,18 @@ function getRelatedKanji(detail: KanjiDetail, dictionary: KanjiDetail[]): KanjiD
 }
 
 export default async function KanjiPage({ params }: Props) {
-  const { kanji } = await params;
-  const decodedParam = decodeURIComponent(kanji);
-  const decodedKanji = resolveKanjiFromId(decodedParam);
-  const kanjiId = kanjiToId(decodedKanji);
+  const { slug } = await params;
+  
+  // uXXXX形式から漢字を取得
+  const kanji = fromUnicodeSlug(slug);
+  
+  // 無効なスラッグの場合は404
+  if (!kanji) {
+    notFound();
+  }
   
   // 漢字詳細を取得
-  const detail = loadKanjiDetail(decodedKanji);
+  const detail = loadKanjiDetail(kanji);
   
   // 詳細が見つからない場合は404
   if (!detail) {
@@ -312,7 +289,7 @@ export default async function KanjiPage({ params }: Props) {
   
   try {
     const wordsByKanji = loadWordsByKanji();
-    words = wordsByKanji[decodedKanji] || [];
+    words = wordsByKanji[kanji] || [];
   } catch {
     // 単語リスト読み込み失敗時は空配列
   }
@@ -322,7 +299,7 @@ export default async function KanjiPage({ params }: Props) {
   
   // マスターデータからカテゴリ情報を取得
   const kanjiMaster = loadKanjiMaster();
-  const masterEntry = kanjiMaster.get(decodedKanji);
+  const masterEntry = kanjiMaster.get(kanji);
   const categories = masterEntry?.category || [];
   const confusedWith = masterEntry?.confusedWith || [];
 
@@ -333,7 +310,7 @@ export default async function KanjiPage({ params }: Props) {
   return (
     <>
       {/* アクセス記録（Supabase） */}
-      <KanjiViewTracker kanji={decodedKanji} />
+      <KanjiViewTracker kanji={kanji} />
       
       {/* 構造化データ（JSON-LD） */}
       <script
@@ -351,13 +328,13 @@ export default async function KanjiPage({ params }: Props) {
             <li aria-hidden="true">/</li>
             <li><Link href={`/strokes/${detail.strokes}`} className="hover:text-foreground">{detail.strokes}画</Link></li>
             <li aria-hidden="true">/</li>
-            <li className="text-foreground font-medium" aria-current="page">{decodedKanji}</li>
+            <li className="text-foreground font-medium" aria-current="page">{kanji}</li>
           </ol>
         </nav>
 
         {/* ヘッダー（LCP最適化：h1は大きく） */}
         <header className="text-center">
-          <h1 className="text-8xl md:text-9xl font-bold mb-4 leading-none">{decodedKanji}</h1>
+          <h1 className="text-8xl md:text-9xl font-bold mb-4 leading-none">{kanji}</h1>
           <div className="flex items-center justify-center gap-3 text-sm flex-wrap">
             <span className="px-3 py-1 bg-secondary rounded-full">{gradeLabel}</span>
             <span className="px-3 py-1 bg-secondary rounded-full">{detail.strokes}画</span>
@@ -382,7 +359,7 @@ export default async function KanjiPage({ params }: Props) {
           </CardHeader>
           <CardContent className="flex flex-col items-center">
             <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-white">
-              <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={decodedKanji} />
+              <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={kanji} />
             </div>
           </CardContent>
         </Card>
@@ -426,10 +403,10 @@ export default async function KanjiPage({ params }: Props) {
         {words.length > 0 && (
           <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
             <CardHeader className="pb-2">
-              <CardTitle className="text-lg">「{decodedKanji}」を含む言葉</CardTitle>
+              <CardTitle className="text-lg">「{kanji}」を含む言葉</CardTitle>
             </CardHeader>
             <CardContent>
-              <KanjiWordList words={words} kanji={decodedKanji} />
+              <KanjiWordList words={words} kanji={kanji} />
             </CardContent>
           </Card>
         )}
@@ -443,13 +420,11 @@ export default async function KanjiPage({ params }: Props) {
             <CardContent>
               <div className="flex flex-wrap gap-3 justify-center">
                 {confusedWith.map((k) => (
-                  <Link
+                  <KanjiLink
                     key={k}
-                    href={getKanjiLink(k)}
+                    kanji={k}
                     className="w-14 h-14 flex items-center justify-center text-3xl border-2 border-purple-300 rounded-lg hover:bg-purple-100 transition-colors"
-                  >
-                    {k}
-                  </Link>
+                  />
                 ))}
               </div>
               <p className="text-center text-sm text-muted-foreground mt-3">
@@ -463,7 +438,7 @@ export default async function KanjiPage({ params }: Props) {
 
         {/* 次に見る漢字（部首または画数±1からランダム選択） */}
         <NextKanjiSection
-          currentKanji={decodedKanji}
+          currentKanji={kanji}
           strokes={detail.strokes}
           radicals={detail.radicals || []}
           allKanji={dictionary}
@@ -478,14 +453,12 @@ export default async function KanjiPage({ params }: Props) {
             <CardContent>
               <div className="flex flex-wrap gap-2 justify-center">
                 {relatedKanji.map((k) => (
-                  <Link
+                  <KanjiLink
                     key={k.kanji}
-                    href={getKanjiLink(k.kanji)}
+                    kanji={k.kanji}
                     className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
                     title={`${k.kanji} - ${k.on[0] || k.kun[0] || ""}`}
-                  >
-                    {k.kanji}
-                  </Link>
+                  />
                 ))}
               </div>
               <div className="flex justify-center gap-4 mt-4 text-sm flex-wrap">
@@ -521,3 +494,4 @@ export default async function KanjiPage({ params }: Props) {
     </>
   );
 }
+

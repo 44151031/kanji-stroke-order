@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import KanjiLink from "@/components/common/KanjiLink";
 import radicalList, {
   buildSlugIndex,
   getUniqueSlug,
@@ -120,14 +121,11 @@ export default async function RadicalDetailPage({ params }: Props) {
           </h2>
           <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 gap-2">
             {kanjiList.map((kanji) => (
-              <Link
+              <KanjiLink
                 key={kanji}
-                href={`/kanji/${encodeURIComponent(kanji)}`}
+                kanji={kanji}
                 className="aspect-square flex items-center justify-center text-2xl border rounded-lg hover:bg-gray-100 hover:border-gray-400 transition-colors"
-                title={kanji}
-              >
-                {kanji}
-              </Link>
+              />
             ))}
           </div>
         </section>

@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { toUnicodeSlug } from "@/lib/slugHelpers";
 
 interface KanjiEntry {
   kanji: string;
@@ -121,10 +122,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
   
-  // 個別漢字ページ（/kanji/[kanji]）- 2136字
+  // 個別漢字ページ（/kanji/uXXXX）- 2136字
   joyoList.forEach((k) => {
     sitemap.push({
-      url: `${baseUrl}/kanji/${encodeURIComponent(k.kanji)}`,
+      url: `${baseUrl}/kanji/${toUnicodeSlug(k.kanji)}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
