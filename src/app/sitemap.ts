@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 import { siteMeta } from "@/lib/metadata";
+import radicalList, { buildSlugIndex, getUniqueSlug } from "@/lib/radicalList";
 
 interface KanjiEntry {
   kanji: string;
@@ -93,6 +94,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    // 独立したリストページ
+    {
+      url: `${baseUrl}/exam-kanji`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/mistake-kanji`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/confused-kanji`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    // 運営管理
+    {
+      url: `${baseUrl}/operation`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    // 利用規約
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    // 記事ページ
+    {
+      url: `${baseUrl}/articles/common-misorder-kanji`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
   
   // 学年別ページ（/grade/1 〜 /grade/8）
@@ -118,11 +159,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
   
   // 部首別ページ（/radical/[slug]）
-  const radicals = new Set<string>();
-  dictionary.forEach((k) => k.radicals?.forEach((r) => radicals.add(r)));
-  radicals.forEach((r) => {
+  // radicalList.ts から正確なslugを生成
+  const slugIndex = buildSlugIndex(radicalList);
+  radicalList.forEach((r) => {
+    const uniqueSlug = getUniqueSlug(r, slugIndex);
     sitemap.push({
-      url: `${baseUrl}/radical/${encodeURIComponent(r)}`,
+      url: `${baseUrl}/radical/${uniqueSlug}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,

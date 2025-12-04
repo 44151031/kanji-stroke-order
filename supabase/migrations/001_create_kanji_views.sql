@@ -60,3 +60,5 @@ COMMENT ON FUNCTION increment_kanji_views IS '指定した漢字の閲覧数を+
 
 
 
+
+
