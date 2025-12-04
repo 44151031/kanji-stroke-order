@@ -206,6 +206,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 最新の記事 */}
+      <section className="w-full max-w-3xl mt-12 bg-white rounded-2xl shadow-sm p-6">
+        <h2 className="text-xl font-bold mb-4">📰 最新の記事</h2>
+        <div className="space-y-3">
+          <Link
+            href="/articles/common-misorder-kanji"
+            className="block border border-border/40 rounded-lg p-4 hover:bg-muted/50 transition"
+          >
+            <h3 className="font-semibold text-lg">書き順を間違えやすい漢字TOP20</h3>
+            <p className="text-sm text-muted-foreground mt-1">
+              多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きで紹介。
+            </p>
+          </Link>
+        </div>
+      </section>
+
       {/* 特集ページ */}
       <section className="w-full max-w-3xl">
         <h2 className="text-xl font-medium mb-4 text-center">📚 特集で探す</h2>

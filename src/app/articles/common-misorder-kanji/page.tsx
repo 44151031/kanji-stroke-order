@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/metadata";
+import Script from "next/script";
+import { generatePageMetadata, siteMeta } from "@/lib/metadata";
 import Link from "next/link";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 
@@ -34,9 +35,69 @@ const misorderKanjiList = [
 ];
 
 export default function CommonMisorderKanjiPage() {
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": ["Article", "HowTo"],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${siteMeta.url}/articles/common-misorder-kanji`,
+    },
+    "headline": "書き順を間違えやすい漢字TOP20",
+    "description": "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
+    "image": `${siteMeta.url}/ogp.png`,
+    "author": {
+      "@type": "Organization",
+      "name": "漢字書き順ナビ運営事務局",
+      "url": siteMeta.url,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": siteMeta.siteName,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteMeta.url}${siteMeta.logo}`,
+        "width": 512,
+        "height": 512,
+      },
+    },
+    "datePublished": "2025-12-03",
+    "dateModified": "2025-12-03",
+    "inLanguage": "ja",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "about": [
+      { "@type": "Thing", "name": "漢字" },
+      { "@type": "Thing", "name": "書き順" },
+      { "@type": "Thing", "name": "筆順" },
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "間違えやすい漢字を確認する",
+        "text": "九・左・右・区・成・武・非・飛 など、多くの人が誤って覚えている書き順を確認しましょう。",
+      },
+      {
+        "@type": "HowToStep",
+        "name": "正しい書き順を学ぶ",
+        "text": "各漢字のページ（例：/kanji/u53f3）で、正しい筆順アニメーションを確認できます。",
+      },
+      {
+        "@type": "HowToStep",
+        "name": "練習・復習",
+        "text": "音読み・訓読み・画数を併せて覚えると記憶が定着します。",
+      },
+    ],
+  };
+
   return (
-    <div className="max-w-[800px] mx-auto">
-      <article className="prose prose-neutral max-w-none">
+    <>
+      <Script
+        id="article-structured-data"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <div className="max-w-[800px] mx-auto">
+        <article className="prose prose-neutral max-w-none">
         <h1 className="text-2xl font-bold mb-6">📰 書き順を間違えやすい漢字TOP20</h1>
 
         <div className="text-muted-foreground leading-relaxed mb-8">
@@ -106,6 +167,8 @@ export default function CommonMisorderKanjiPage() {
         </div>
       </article>
     </div>
+    </>
   );
 }
+
 
