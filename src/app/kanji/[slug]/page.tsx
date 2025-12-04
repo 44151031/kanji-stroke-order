@@ -10,6 +10,7 @@ import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
 import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
+import { XShareButton } from "@/components/common/XShareButton";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 
 // 書き順を間違えやすい漢字リスト
@@ -500,6 +501,11 @@ export default async function KanjiPage({ params }: Props) {
             </CardContent>
           </Card>
         )}
+
+        {/* Xでポストボタン */}
+        <div className="mt-8 flex justify-center">
+          <XShareButton kanji={detail.kanji} />
+        </div>
 
         {/* フッター */}
         <footer className="text-center text-xs text-muted-foreground pt-8 space-y-1">
