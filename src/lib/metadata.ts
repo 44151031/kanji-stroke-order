@@ -9,6 +9,10 @@ export const siteMeta = {
     "正しい漢字の書き順・画数・部首・読み方をわかりやすく解説。入試・学習・教育現場で役立つ漢字辞典サイト。",
   url: "https://kanji-stroke-order.com",
   siteName: "漢字書き順ナビ",
+  siteNameEn: "Kanji Stroke Order Navi",
+  descriptionEn:
+    "Learn correct Japanese kanji stroke order, meanings, and radicals with step-by-step animations.",
+  alternateNames: ["Kanji Stroke Order", "Kanji Stroke Order Navi"],
   author: "漢字書き順ナビ",
   publisher: "漢字書き順ナビ",
   locale: "ja_JP",
@@ -41,15 +45,15 @@ export const baseMeta = {
 // 🏠 トップページ用メタデータ＆構造化データ
 // ============================================
 export function generateTopPageMetadata(): Metadata {
-  const { title, description, url, image, siteName, locale, twitterCard, twitterCreator } = siteMeta;
+  const { title, description, descriptionEn, siteNameEn, url, image, siteName, locale, twitterCard, twitterCreator } = siteMeta;
 
   return {
     title,
     description,
     ...baseMeta,
     openGraph: {
-      title,
-      description,
+      title: `${title} | ${siteNameEn}`,
+      description: `${description} ${descriptionEn}`,
       url,
       siteName,
       locale,
@@ -58,8 +62,8 @@ export function generateTopPageMetadata(): Metadata {
     },
     twitter: {
       card: twitterCard,
-      title,
-      description,
+      title: `${title} | ${siteNameEn}`,
+      description: descriptionEn,
       images: [image],
       creator: twitterCreator,
     },
@@ -72,7 +76,7 @@ export function generateTopPageMetadata(): Metadata {
  * （WebSite / Organization / WebPage）
  */
 export function getTopPageJsonLd() {
-  const { url, siteName, description, logo } = siteMeta;
+  const { url, siteName, description, logo, alternateNames } = siteMeta;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -81,6 +85,7 @@ export function getTopPageJsonLd() {
         "@id": `${url}/#website`,
         url,
         name: siteName,
+        alternateName: alternateNames,
         description,
         inLanguage: "ja-JP",
         publisher: { "@id": `${url}/#organization` },
@@ -92,11 +97,13 @@ export function getTopPageJsonLd() {
           },
           "query-input": "required name=search_term_string",
         },
+        sameAs: ["https://x.com/kanji_stroke_order"],
       },
       {
         "@type": "Organization",
         "@id": `${url}/#organization`,
         name: siteName,
+        alternateName: alternateNames,
         url,
         logo: {
           "@type": "ImageObject",
@@ -104,12 +111,14 @@ export function getTopPageJsonLd() {
           width: 1200,
           height: 630,
         },
+        sameAs: ["https://x.com/kanji_stroke_order"],
       },
       {
         "@type": ["WebPage", "CollectionPage"],
         "@id": `${url}/#webpage`,
         url,
         name: siteName,
+        alternateName: alternateNames,
         isPartOf: { "@id": `${url}/#website` },
         description,
         inLanguage: "ja-JP",

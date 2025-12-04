@@ -12,10 +12,10 @@ const jsonLd = getTopPageJsonLd();
 export const metadata: Metadata = {
   metadataBase: new URL(siteMeta.url),
   title: {
-    default: siteMeta.title,
-    template: `%s | ${siteMeta.siteName}`,
+    default: `${siteMeta.title}｜${siteMeta.siteNameEn}`,
+    template: `%s | ${siteMeta.siteNameEn}`,
   },
-  description: siteMeta.description,
+  description: `${siteMeta.description} ${siteMeta.descriptionEn}`,
   keywords: ["漢字", "書き順", "筆順", "日本語学習", "stroke order", "kanji", "漢字練習", "書き方"],
   authors: [{ name: siteMeta.author, url: siteMeta.url }],
   creator: siteMeta.author,
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     google: "NC8DjqOLbBXSoyi9iUj2-pzDWqdmEGvoNxoRzehSVBM",
   },
   openGraph: {
-    title: siteMeta.title,
-    description: siteMeta.description,
+    title: `${siteMeta.title} | ${siteMeta.siteNameEn}`,
+    description: `${siteMeta.description} ${siteMeta.descriptionEn}`,
     url: siteMeta.url,
     siteName: siteMeta.siteName,
     locale: siteMeta.locale,
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: siteMeta.twitterCard,
-    title: siteMeta.title,
-    description: siteMeta.description,
+    title: `${siteMeta.title} | ${siteMeta.siteNameEn}`,
+    description: siteMeta.descriptionEn,
     images: [siteMeta.image],
     creator: siteMeta.twitterCreator,
   },
