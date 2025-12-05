@@ -12,6 +12,8 @@ import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
 import { XShareButton } from "@/components/common/XShareButton";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
+import { getRankingPositionSync } from "@/lib/rankingUtils";
+import { getKanjiItemJsonLd } from "@/lib/metadata";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -307,6 +309,15 @@ export default async function KanjiPage({ params }: Props) {
   const relatedKanji = getRelatedKanji(detail, dictionary);
   const jsonLd = generateJsonLd(detail, words);
   
+  // ランキング位置を取得（同期版を使用）
+  const rankingPosition = getRankingPositionSync(kanji);
+  
+  // ランキング連携構造化データを生成
+  const meaningText = Array.isArray(detail.meaning) 
+    ? detail.meaning[0] || detail.meaning.join(", ")
+    : detail.meaning?.join(", ") || "";
+  const itemJsonLd = getKanjiItemJsonLd(kanji, meaningText, detail.strokes, rankingPosition);
+  
   // マスターデータからカテゴリ情報を取得
   const kanjiMaster = loadKanjiMaster();
   const masterEntry = kanjiMaster.get(kanji);
@@ -322,10 +333,16 @@ export default async function KanjiPage({ params }: Props) {
       {/* アクセス記録（Supabase） */}
       <KanjiViewTracker kanji={kanji} />
       
-      {/* 構造化データ（JSON-LD） */}
+      {/* 構造化データ（JSON-LD） - DefinedTerm */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      {/* 構造化データ（JSON-LD） - CreativeWork + ItemList（ランキング連携） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemJsonLd) }}
       />
       
       <div className="flex flex-col items-center gap-8">

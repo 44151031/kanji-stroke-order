@@ -118,15 +118,15 @@ export default function RankingList() {
         ))}
       </div>
 
-      {/* もっと見るボタン */}
+      {/* 次の20件を見るボタン */}
       {ranking.length > limit && (
         <div className="text-center pt-4">
-          <Button
-            variant="outline"
+          <button
             onClick={() => setLimit((prev) => Math.min(prev + 20, 100))}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-medium transition-colors"
           >
-            もっと見る（残り{Math.min(ranking.length - limit, 20)}件）
-          </Button>
+            次の20件を見る
+          </button>
         </div>
       )}
 

@@ -348,3 +348,167 @@ export function generateKanjiMetaWithJsonLd(
     jsonLd: getKanjiJsonLd(kanji, meaning, options?.strokes || 0),
   };
 }
+
+// ============================================
+// 📊 ランキングページ用構造化データ
+// ============================================
+/**
+ * ランキングエントリの型定義
+ */
+export interface RankingEntry {
+  kanji: string;
+  views: number;
+  hex?: string;
+}
+
+/**
+ * ランキングページ用構造化データ（ItemList）
+ */
+export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = "") {
+  const { url, siteName } = siteMeta;
+  
+  // hexがない場合は生成
+  const rankingWithHex = ranking.map((item) => ({
+    ...item,
+    hex: item.hex || toKanjiHex(item.kanji),
+  }));
+
+  const name = periodLabel
+    ? `人気の漢字ランキング（${periodLabel}）`
+    : "人気の漢字ランキング";
+  
+  const description = periodLabel
+    ? `${siteName}内で最も閲覧された人気の漢字ランキング。${periodLabel}のトップ${ranking.length}漢字を掲載。`
+    : `${siteName}内で最も閲覧された人気の漢字ランキング。トップ${ranking.length}漢字を掲載。`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url: `${url}/ranking`,
+    numberOfItems: ranking.length,
+    itemListElement: rankingWithHex.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.kanji,
+      url: `${url}/kanji/u${item.hex}`,
+    })),
+    isPartOf: {
+      "@type": "CreativeWorkSeries",
+      name: "人気の漢字ランキング",
+      url: `${url}/ranking`,
+    },
+    inLanguage: "ja",
+  };
+}
+
+/**
+ * ランキングシリーズ用構造化データ（CreativeWorkSeries）
+ */
+export function getRankingSeriesJsonLd() {
+  const { url, siteName } = siteMeta;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    name: "人気の漢字ランキングシリーズ",
+    description:
+      "閲覧数・検索数を基にした人気漢字ランキングシリーズ（週・月・半年）。",
+    url: `${url}/ranking`,
+    creator: {
+      "@type": "Organization",
+      name: siteName,
+      url,
+    },
+    inLanguage: "ja",
+  };
+}
+
+// ============================================
+// 🈶 漢字ページ用構造化データ（ランキング連携版）
+// ============================================
+/**
+ * ランキング位置情報の型定義
+ */
+export interface RankingPosition {
+  position: number;
+  period?: string;
+  views?: number;
+}
+
+/**
+ * 漢字ページ構造化データ（Item + ItemList参照）
+ * ランキング情報と連携して、各漢字をランキング構造の一部として認識させる
+ */
+export function getKanjiItemJsonLd(
+  kanji: string,
+  meaning: string,
+  strokes: number,
+  rankingData: RankingPosition | null = null
+) {
+  const { url, siteName } = siteMeta;
+  const hex = toKanjiHex(kanji);
+  const kanjiUrl = `${url}/kanji/u${hex}`;
+  
+  // 意味は配列の場合は最初の要素を取得
+  const meaningText = Array.isArray(meaning) ? meaning[0] || meaning.join(", ") : meaning;
+
+  // ランキング情報があれば構造化データに含める
+  const itemListElement =
+    rankingData?.position != null
+      ? {
+          "@type": "ListItem",
+          position: rankingData.position,
+          name: kanji,
+          url: kanjiUrl,
+        }
+      : null;
+
+  const jsonLd: any = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": `${kanjiUrl}#item`,
+        name: kanji,
+        alternateName: meaningText,
+        description: `${kanji}（${meaningText}）の正しい書き順・画数・部首・読み方を解説します。`,
+        inLanguage: "ja",
+        url: kanjiUrl,
+        mainEntityOfPage: kanjiUrl,
+        publisher: {
+          "@type": "Organization",
+          name: siteName,
+          url,
+        },
+        educationalLevel: "Beginner",
+        genre: "Kanji Stroke Order",
+        keywords: ["漢字", "書き順", "筆順", "stroke order", kanji, meaningText],
+        isPartOf: {
+          "@type": "CreativeWorkSeries",
+          name: "人気の漢字ランキングシリーズ",
+          url: `${url}/ranking`,
+        },
+      },
+    ],
+  };
+
+  // ランキング情報がある場合は、ItemListとしても認識させる
+  if (itemListElement) {
+    jsonLd["@graph"][0].itemListElement = itemListElement;
+    jsonLd["@graph"][0].isPartOf = [
+      {
+        "@type": "CreativeWorkSeries",
+        name: "人気の漢字ランキングシリーズ",
+        url: `${url}/ranking`,
+      },
+      {
+        "@type": "ItemList",
+        name: "人気の漢字ランキング",
+        url: `${url}/ranking`,
+      },
+    ];
+  }
+
+  return jsonLd;
+}
