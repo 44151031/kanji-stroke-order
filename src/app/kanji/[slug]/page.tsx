@@ -313,9 +313,11 @@ export default async function KanjiPage({ params }: Props) {
   const rankingPosition = getRankingPositionSync(kanji);
   
   // ランキング連携構造化データを生成
-  const meaningText = Array.isArray(detail.meaning) 
-    ? detail.meaning[0] || detail.meaning.join(", ")
-    : detail.meaning?.join(", ") || "";
+  const meaningText = Array.isArray(detail.meaning)
+    ? detail.meaning.filter(Boolean).join(", ")
+    : typeof detail.meaning === "string"
+    ? detail.meaning
+    : "";
   const itemJsonLd = getKanjiItemJsonLd(kanji, meaningText, detail.strokes, rankingPosition);
   
   // マスターデータからカテゴリ情報を取得

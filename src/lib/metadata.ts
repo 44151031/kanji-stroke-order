@@ -450,8 +450,12 @@ export function getKanjiItemJsonLd(
   const hex = toKanjiHex(kanji);
   const kanjiUrl = `${url}/kanji/u${hex}`;
   
-  // 意味は配列の場合は最初の要素を取得
-  const meaningText = Array.isArray(meaning) ? meaning[0] || meaning.join(", ") : meaning;
+  // 意味は配列の場合は結合、文字列の場合はそのまま使用
+  const meaningText = Array.isArray(meaning)
+    ? meaning.filter(Boolean).join(", ")
+    : typeof meaning === "string"
+    ? meaning
+    : "";
 
   // ランキング情報があれば構造化データに含める
   const itemListElement =
