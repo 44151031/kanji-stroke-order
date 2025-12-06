@@ -11,6 +11,7 @@ import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
 import { XShareButton } from "@/components/common/XShareButton";
 import KanjiModeToggle from "@/components/common/KanjiModeToggle";
+import StrokePracticeCanvas from "@/components/kanji/StrokePracticeCanvas";
 import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd } from "@/lib/metadata";
@@ -346,22 +347,19 @@ export default async function PracticePage({ params }: Props) {
         </header>
 
         {/* 書き取りテストカード（辞書ページの「書き順（筆順）」カードを置き換え） */}
-        <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
+        <Card className="w-full max-w-4xl rounded-2xl shadow-sm border">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg">✍ 書き取りテスト</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-col items-center">
-            <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-gray-50">
-              {/* StrokePracticeCanvasコンポーネントは後で実装 */}
-              <div className="text-center text-muted-foreground">
-                <p className="mb-2">書き取り練習機能は準備中です。</p>
-                <p className="text-sm">ストローク数：{detail.strokes}画</p>
-                {/* TODO: <StrokePracticeCanvas kanji={kanji} kanjiCode={`u${detail.ucsHex}`} /> */}
-              </div>
-            </div>
+          <CardContent>
+            <StrokePracticeCanvas
+              kanjiCode={`u${detail.ucsHex}`}
+              kanji={kanji}
+              ucsHex={detail.ucsHex}
+            />
             {/* 書き順を間違えやすい漢字の警告表示 */}
             {typedMisorderList.common_misorder_kanji.includes(kanji) && (
-              <p className="text-red-500 text-sm mt-3 flex items-center gap-1">
+              <p className="text-red-500 text-sm mt-4 flex items-center gap-1 justify-center">
                 <span>⚠</span>
                 <span>この漢字は書き順を間違えやすい漢字としてよく出題されます。</span>
               </p>
