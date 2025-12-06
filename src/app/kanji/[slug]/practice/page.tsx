@@ -4,7 +4,6 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import KanjiSvgViewer from "@/components/KanjiSvgViewer";
 import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
@@ -12,7 +11,7 @@ import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
 import { XShareButton } from "@/components/common/XShareButton";
 import KanjiModeToggle from "@/components/common/KanjiModeToggle";
-import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
+import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd } from "@/lib/metadata";
 
@@ -123,72 +122,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // uXXXX形式から漢字を取得
   const kanji = fromUnicodeSlug(slug);
   if (!kanji) {
-    return { title: "漢字が見つかりません" };
+    return { title: "書き取りテスト - 漢字書き順ナビ" };
   }
   
   const detail = loadKanjiDetail(kanji);
+  if (!detail) {
+    return { title: "書き取りテスト - 漢字書き順ナビ" };
+  }
 
-  const onYomi = detail?.on?.slice(0, 3).join("、") || "";
-  const kunYomi = detail?.kun?.slice(0, 3).join("、") || "";
-  const meanings = detail?.meaning?.slice(0, 3).join(", ") || "";
-  const jlptLabel = detail?.jlpt || "";
-  const gradeLabel = detail?.grade 
-    ? (detail.grade <= 6 ? `小学${detail.grade}年` : "中学")
-    : "";
-  const strokesLabel = detail?.strokes ? `${detail.strokes}画` : "";
-
-  // SEO最適化されたタイトル
-  const title = `${kanji}の書き順（筆順）｜読み方・意味・部首・画数`;
-  
-  // 詳細なdescription
-  const descParts = [
-    `${kanji}の書き順（筆順）をSVGアニメで解説`,
-  ];
-  if (onYomi) descParts.push(`音読み：${onYomi}`);
-  if (kunYomi) descParts.push(`訓読み：${kunYomi}`);
-  if (meanings) descParts.push(`意味：${meanings}`);
-  if (strokesLabel) descParts.push(strokesLabel);
-  if (gradeLabel) descParts.push(gradeLabel);
-  if (jlptLabel) descParts.push(`JLPT ${jlptLabel}`);
-  
-  const description = descParts.join("。") + "。";
-
+  const title = `${kanji} の書き取りテスト - 漢字書き順ナビ`;
+  const description = `${kanji} の正しい書き順を練習しましょう。指やマウスで書き順をテストできます。`;
   const siteUrl = "https://kanji-stroke-order.com";
   const canonicalSlug = toUnicodeSlug(kanji);
 
   return {
     title,
     description,
-    keywords: [
-      kanji,
-      `${kanji} 書き順`,
-      `${kanji} 筆順`,
-      `${kanji} 読み方`,
-      `${kanji} 意味`,
-      `${kanji} 画数`,
-      ...(detail?.on || []),
-      ...(detail?.kun || []),
-    ],
-    openGraph: { 
-      title, 
-      description,
-      type: "article",
-      url: `${siteUrl}/kanji/${canonicalSlug}`,
-      images: [{
-        url: `${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
-        width: 1200,
-        height: 630,
-        alt: `${kanji}の書き順`,
-      }],
-    },
-    twitter: {
-      card: "summary_large_image",
+    keywords: [kanji, `${kanji} 書き順`, `${kanji} 筆順`, `${kanji} 書き取り`, `${kanji} 練習`],
+    openGraph: {
       title,
       description,
-      images: [`${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`],
+      type: "article",
+      url: `${siteUrl}/kanji/${canonicalSlug}/practice`,
     },
     alternates: {
-      canonical: `${siteUrl}/kanji/${canonicalSlug}`,
+      canonical: `${siteUrl}/kanji/${canonicalSlug}/practice`,
     },
   };
 }
@@ -271,7 +229,7 @@ function getRelatedKanji(detail: KanjiDetail, dictionary: KanjiDetail[]): KanjiD
   return combined.slice(0, 10);
 }
 
-export default async function KanjiPage({ params }: Props) {
+export default async function PracticePage({ params }: Props) {
   const { slug } = await params;
   
   // uXXXX形式から漢字を取得
@@ -361,7 +319,9 @@ export default async function KanjiPage({ params }: Props) {
             <li aria-hidden="true">/</li>
             <li><Link href={`/strokes/${detail.strokes}`} className="hover:text-foreground">{detail.strokes}画</Link></li>
             <li aria-hidden="true">/</li>
-            <li className="text-foreground font-medium" aria-current="page">{kanji}</li>
+            <li><Link href={`/kanji/${slug}`} className="hover:text-foreground">{kanji}の詳細</Link></li>
+            <li aria-hidden="true">/</li>
+            <li className="text-foreground font-medium" aria-current="page">書き取り練習</li>
           </ol>
         </nav>
 
@@ -385,14 +345,19 @@ export default async function KanjiPage({ params }: Props) {
           )}
         </header>
 
-        {/* 書き順SVG（LCP重視：直読み） */}
+        {/* 書き取りテストカード（辞書ページの「書き順（筆順）」カードを置き換え） */}
         <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
           <CardHeader className="pb-2">
-            <CardTitle className="text-lg">書き順（筆順）</CardTitle>
+            <CardTitle className="text-lg">✍ 書き取りテスト</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col items-center">
-            <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-white">
-              <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={kanji} />
+            <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-gray-50">
+              {/* StrokePracticeCanvasコンポーネントは後で実装 */}
+              <div className="text-center text-muted-foreground">
+                <p className="mb-2">書き取り練習機能は準備中です。</p>
+                <p className="text-sm">ストローク数：{detail.strokes}画</p>
+                {/* TODO: <StrokePracticeCanvas kanji={kanji} kanjiCode={`u${detail.ucsHex}`} /> */}
+              </div>
             </div>
             {/* 書き順を間違えやすい漢字の警告表示 */}
             {typedMisorderList.common_misorder_kanji.includes(kanji) && (
@@ -539,4 +504,3 @@ export default async function KanjiPage({ params }: Props) {
     </>
   );
 }
-
