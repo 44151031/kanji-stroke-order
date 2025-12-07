@@ -15,6 +15,7 @@ import KanjiModeToggle from "@/components/common/KanjiModeToggle";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd, getKanjiDefinedTermJsonLd } from "@/lib/structuredData";
+import { generateKanjiMetadata } from "@/lib/metadata";
 import Breadcrumb from "@/components/common/Breadcrumb";
 
 // 書き順を間違えやすい漢字リスト
@@ -128,70 +129,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   
   const detail = loadKanjiDetail(kanji);
+  if (!detail) {
+    return { title: "漢字が見つかりません" };
+  }
 
-  const onYomi = detail?.on?.slice(0, 3).join("、") || "";
-  const kunYomi = detail?.kun?.slice(0, 3).join("、") || "";
-  const meanings = detail?.meaning?.slice(0, 3).join(", ") || "";
-  const jlptLabel = detail?.jlpt || "";
-  const gradeLabel = detail?.grade 
-    ? (detail.grade <= 6 ? `小学${detail.grade}年` : "中学")
-    : "";
-  const strokesLabel = detail?.strokes ? `${detail.strokes}画` : "";
-
-  // SEO最適化されたタイトル
-  const title = `${kanji}の書き順（筆順）｜読み方・意味・部首・画数`;
-  
-  // 詳細なdescription
-  const descParts = [
-    `${kanji}の書き順（筆順）をSVGアニメで解説`,
-  ];
-  if (onYomi) descParts.push(`音読み：${onYomi}`);
-  if (kunYomi) descParts.push(`訓読み：${kunYomi}`);
-  if (meanings) descParts.push(`意味：${meanings}`);
-  if (strokesLabel) descParts.push(strokesLabel);
-  if (gradeLabel) descParts.push(gradeLabel);
-  if (jlptLabel) descParts.push(`JLPT ${jlptLabel}`);
-  
-  const description = descParts.join("。") + "。";
-
-  const siteUrl = "https://kanji-stroke-order.com";
-  const canonicalSlug = toUnicodeSlug(kanji);
-
-  return {
-    title,
-    description,
-    keywords: [
-      kanji,
-      `${kanji} 書き順`,
-      `${kanji} 筆順`,
-      `${kanji} 読み方`,
-      `${kanji} 意味`,
-      `${kanji} 画数`,
-      ...(detail?.on || []),
-      ...(detail?.kun || []),
-    ],
-    openGraph: { 
-      title, 
-      description,
-      type: "article",
-      url: `${siteUrl}/kanji/${canonicalSlug}`,
-      images: [{
-        url: `${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
-        width: 1200,
-        height: 630,
-        alt: `${kanji}の書き順`,
-      }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [`${siteUrl}/api/og-kanji?k=${encodeURIComponent(kanji)}`],
-    },
-    alternates: {
-      canonical: `${siteUrl}/kanji/${canonicalSlug}`,
-    },
-  };
+  // generateKanjiMetadata()を使用してメタデータを生成
+  return generateKanjiMetadata(kanji, detail.meaning?.slice(0, 3).join(", ") || "", {
+    strokes: detail.strokes,
+    grade: detail.grade,
+    onYomi: detail.on,
+    kunYomi: detail.kun,
+    jlpt: detail.jlpt,
+  });
 }
 
 
