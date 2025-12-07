@@ -5,107 +5,109 @@ import { usePathname, useRouter } from "next/navigation";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface Props {
-  kanji: string;
-}
-
 /**
- * 漢字モード切り替えトグル
- * 辞書モード ↔ 書き順テストモードを切り替え
+ * 🟧 Kanjiモード切り替えバー（横並び・省スペース版）
+ * - 高さを出さずにタブ＋モード表示を横並びで表示
+ * - 書き順テストモードをオレンジで強調
+ * - ヘッダー直下に密着配置
  */
-export default function KanjiModeToggle({ kanji }: Props) {
+export default function KanjiModeToggle({ kanji }: { kanji: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const [mode, setMode] = useState<"dictionary" | "practice">("dictionary");
 
-  // 現在のパスからモードを判定
+  // 現在のURLからモードを判定
   useEffect(() => {
-    const isPracticePage = pathname?.includes("/practice");
-    setMode(isPracticePage ? "practice" : "dictionary");
+    setMode(pathname?.includes("/practice") ? "practice" : "dictionary");
   }, [pathname]);
 
-  // 初回ロード時に localStorage から復元
+  // localStorage 復元
   useEffect(() => {
     const savedMode = localStorage.getItem("kanjiMode") as
       | "dictionary"
       | "practice"
       | null;
-    
     if (savedMode && savedMode !== mode) {
-      setMode(savedMode);
       const slug = toUnicodeSlug(kanji);
-      
-      if (savedMode === "practice" && !pathname?.includes("/practice")) {
-        router.push(`/kanji/${slug}/practice`);
-      } else if (savedMode === "dictionary" && pathname?.includes("/practice")) {
-        router.push(`/kanji/${slug}`);
-      }
+      setMode(savedMode);
+      router.push(
+        savedMode === "practice" ? `/kanji/${slug}/practice` : `/kanji/${slug}`
+      );
     }
   }, [kanji, router, pathname, mode]);
 
-  // モード切り替え
-  const handleToggle = (checked: boolean) => {
-    const newMode = checked ? "practice" : "dictionary";
+  // モード切り替え処理
+  const handleSwitch = (newMode: "dictionary" | "practice") => {
+    if (newMode === mode) return;
     setMode(newMode);
     localStorage.setItem("kanjiMode", newMode);
-
     const slug = toUnicodeSlug(kanji);
-
-    if (newMode === "practice") {
-      router.push(`/kanji/${slug}/practice`);
-    } else {
-      router.push(`/kanji/${slug}`);
-    }
+    router.push(
+      newMode === "practice" ? `/kanji/${slug}/practice` : `/kanji/${slug}`
+    );
   };
 
   return (
-    <div className="flex flex-col items-center gap-2 mb-6">
-      {/* トグルスイッチ */}
-      <div className="flex justify-center items-center gap-3">
-        <span
-          className={`text-sm font-medium transition-colors ${
-            mode === "dictionary" ? "text-primary" : "text-muted-foreground"
-          }`}
+    <div
+      className="
+        sticky top-[56px] z-30
+        w-full border-b border-border/40
+        bg-background/80 backdrop-blur-md
+        shadow-sm
+      "
+    >
+      <div className="flex items-center justify-center gap-4 py-2 max-w-4xl mx-auto">
+        {/* === タブ切り替え部分 === */}
+        <div
+          className="
+            inline-flex rounded-full border border-border bg-white
+            overflow-hidden shadow-sm
+          "
         >
-          辞書モード
-        </span>
+          <button
+            onClick={() => handleSwitch("dictionary")}
+            className={`px-5 py-1.5 text-sm font-medium transition-all duration-200 ${
+              mode === "dictionary"
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-500 hover:text-gray-800"
+            }`}
+          >
+            📘 辞書モード
+          </button>
 
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            className="sr-only peer"
-            checked={mode === "practice"}
-            onChange={(e) => handleToggle(e.target.checked)}
-          />
-          <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
-        </label>
+          <button
+            onClick={() => handleSwitch("practice")}
+            className={`px-5 py-1.5 text-sm font-medium transition-all duration-200 ${
+              mode === "practice"
+                ? "bg-amber-500 text-white shadow-inner"
+                : "text-gray-500 hover:text-gray-800"
+            }`}
+          >
+            ✍ 書き順テスト
+          </button>
+        </div>
 
-        <span
-          className={`text-sm font-medium transition-colors ${
-            mode === "practice" ? "text-primary" : "text-muted-foreground"
-          }`}
-        >
-          書き順テスト
-        </span>
+        {/* === モードバッジ（横並び） === */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={mode}
+            initial={{ opacity: 0, y: 2 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -2 }}
+            transition={{ duration: 0.25 }}
+            className={`text-xs rounded-full px-3 py-0.5
+              ${
+                mode === "dictionary"
+                  ? "bg-blue-50 text-blue-700 border border-blue-100"
+                  : "bg-amber-50 text-amber-700 border border-amber-100"
+              }`}
+          >
+            {mode === "dictionary"
+              ? "📘 辞書モードで表示中"
+              : "✍ 書き順テストモードで練習中"}
+          </motion.div>
+        </AnimatePresence>
       </div>
-
-      {/* 現在モード表示 */}
-      <AnimatePresence mode="wait">
-        <motion.p
-          key={mode}
-          initial={{ opacity: 0, y: 3 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -3 }}
-          transition={{ duration: 0.25 }}
-          className="text-xs text-muted-foreground"
-        >
-          {mode === "dictionary"
-            ? "📘 現在：辞書モードで表示中"
-            : "✍ 現在：書き順テストモードで表示中"}
-        </motion.p>
-      </AnimatePresence>
     </div>
   );
 }
-
-

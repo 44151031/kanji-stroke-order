@@ -272,10 +272,6 @@ export default async function KanjiPage({ params }: Props) {
         />
   
       <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
-        {/* モード切り替えトグル */}
-        <KanjiModeToggle kanji={kanji} />
-
-
 
         {/* ヘッダー（LCP最適化：h1は大きく） */}
         <header className="text-center">
@@ -296,7 +292,8 @@ export default async function KanjiPage({ params }: Props) {
             </div>
           )}
         </header>
-
+        {/* モード切り替えトグル */}
+        <KanjiModeToggle kanji={kanji} />
         {/* 書き順SVG（LCP重視：直読み） */}
         <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
           <CardHeader className="pb-2">

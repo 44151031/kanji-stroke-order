@@ -73,7 +73,7 @@ export function KanjiFeatureList({
         <h1 className="text-4xl font-bold mb-2">
           {emoji} {title}
         </h1>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        <p className="text-muted-foreground max-w-2xl mx-auto">
           {description}
         </p>
         <p className="mt-2 text-sm text-muted-foreground">
@@ -82,12 +82,12 @@ export function KanjiFeatureList({
       </header>
 
       {/* 漢字グリッド */}
-      <Card className={`w-full max-w-5xl rounded-2xl shadow-sm ${colors.card}`}>
+      <Card className={`bg-card text-card-foreground flex flex-col gap-1 border py-6 w-full max-w-5xl rounded-2xl shadow-sm`}>
         <CardHeader className="pb-4">
-          <CardTitle className={`text-lg ${colors.header}`}>漢字一覧</CardTitle>
+          <CardTitle className={`font-semibold text-lg`}>漢字一覧</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-3">
+          <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-8 gap-3">
             {data.map((item, index) => (
               <Link
                 key={`${item.kanji}-${index}`}

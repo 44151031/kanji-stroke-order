@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getKanjiLink } from "@/lib/linkUtils";
+import KanjiLink from "@/components/common/KanjiLink";
 
 interface KanjiCandidate {
   kanji: string;
@@ -16,6 +15,7 @@ type Props = {
   strokes: number;
   radicals: string[];
   allKanji: KanjiCandidate[];
+  mode?: "dictionary" | "practice";
 };
 
 // Fisher-Yates シャッフル
@@ -32,7 +32,8 @@ export default function NextKanjiSection({
   currentKanji, 
   strokes, 
   radicals, 
-  allKanji 
+  allKanji,
+  mode = "dictionary"
 }: Props) {
   const [nextKanji, setNextKanji] = useState<KanjiCandidate[]>([]);
 
@@ -68,14 +69,15 @@ export default function NextKanjiSection({
       <CardContent>
         <div className="flex flex-wrap gap-3 justify-center">
           {nextKanji.map((k) => (
-            <Link
+            <KanjiLink
               key={k.kanji}
-              href={getKanjiLink(k.kanji)}
+              kanji={k.kanji}
+              mode={mode}
               className="w-14 h-14 flex items-center justify-center text-2xl border border-border rounded-xl hover:bg-secondary hover:border-primary/30 transition-all"
               title={`${k.kanji} - ${k.on?.[0] || k.kun?.[0] || ""}`}
             >
               {k.kanji}
-            </Link>
+            </KanjiLink>
           ))}
         </div>
       </CardContent>

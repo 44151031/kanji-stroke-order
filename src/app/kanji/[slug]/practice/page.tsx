@@ -197,8 +197,7 @@ export default async function PracticePage({ params }: Props) {
             { label: "トップ", href: "/" },
             { label: gradeLabel, href: `/grade/${detail.grade}` },
             { label: `${detail.strokes}画`, href: `/strokes/${detail.strokes}` },
-            { label: `${kanji}の詳細`, href: `/kanji/${slug}` },
-            { label: "書き取り練習" },
+            { label: `「${kanji}」の書き取り練習` },
           ]}
           ariaLabel="パンくずリスト"
           flexWrap={true}
@@ -208,9 +207,6 @@ export default async function PracticePage({ params }: Props) {
         />
 
       <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
-        <KanjiModeToggle kanji={kanji} />
-
-
 
         {/* 見出し */}
         <header className="text-center">
@@ -230,7 +226,7 @@ export default async function PracticePage({ params }: Props) {
             </div>
           )}
         </header>
-
+        <KanjiModeToggle kanji={kanji} />
         {/* 書き取りテスト本体 */}
         <Card className="w-full max-w-4xl rounded-2xl shadow-sm border">
           <CardHeader className="pb-2">
@@ -313,6 +309,7 @@ export default async function PracticePage({ params }: Props) {
           strokes={detail.strokes}
           radicals={detail.radicals || []}
           allKanji={dictionary}
+          mode="practice"
         />
 
         {relatedKanji.length > 0 && (
