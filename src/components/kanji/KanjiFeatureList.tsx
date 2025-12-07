@@ -69,8 +69,8 @@ export function KanjiFeatureList({
       />
 
       {/* ヘッダー */}
-      <header className="text-center w-full pt-8">
-        <h1 className="text-4xl md:text-5xl font-bold mt-6 mb-3">
+      <header className="text-center w-full">
+        <h1 className="text-4xl font-bold mb-2">
           {emoji} {title}
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

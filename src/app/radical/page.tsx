@@ -42,7 +42,7 @@ export default function RadicalIndexPage() {
       />
 
       <header className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-2">部首別漢字一覧</h1>
+        <h1 className="text-4xl font-bold mb-2">部首別漢字一覧</h1>
         <p className="text-lg text-gray-600 mb-1">部首から漢字を探す</p>
         <p className="text-gray-500">{radicalList.length}種類の部首</p>
       </header>

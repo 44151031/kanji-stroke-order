@@ -47,8 +47,7 @@ export default function ConfusedKanjiPage() {
       />
 
       <header className="text-center">
-        <div className="text-5xl mb-4">🔄</div>
-        <h1 className="text-4xl font-bold mb-2">似ている漢字一覧</h1>
+        <h1 className="text-4xl font-bold mb-2">🔄 似ている漢字一覧</h1>
         <p className="text-muted-foreground max-w-xl">
           形が似ていて混同しやすい漢字をペアで紹介。違いと見分け方を確認できます。
         </p>

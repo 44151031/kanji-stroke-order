@@ -49,8 +49,7 @@ export default function MistakeKanjiPage() {
       />
 
       <header className="text-center">
-        <div className="text-5xl mb-4">⚠️</div>
-        <h1 className="text-4xl font-bold mb-2">間違えやすい漢字一覧</h1>
+        <h1 className="text-4xl font-bold mb-2">⚠️ 間違えやすい漢字一覧</h1>
         <p className="text-muted-foreground max-w-xl">
           同音異義語で間違えやすい漢字をペアで紹介。正しい使い分けを確認できます。
         </p>

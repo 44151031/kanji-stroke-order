@@ -89,8 +89,11 @@ export default async function GradePage({ params }: Props) {
         ]}
       />
 
+      <header className="text-center">
+        <h1 className="text-4xl font-bold mb-2">{info.label}で習う漢字</h1>
+        <p className="text-muted-foreground">{gradeKanji.length}字</p>
       {/* 学年クイックナビ */}
-      <div className="w-full flex flex-wrap justify-center gap-2">
+      <div className="w-full flex flex-wrap justify-center gap-2 pt-4">
         {Object.entries(GRADE_INFO).map(([g, { label }]) => {
           const gradeNum = parseInt(g);
           const isActive = gradeNum === grade;
@@ -111,10 +114,6 @@ export default async function GradePage({ params }: Props) {
           );
         })}
       </div>
-
-      <header className="text-center">
-        <h1 className="text-4xl font-bold mb-2">{info.label}で習う漢字</h1>
-        <p className="text-muted-foreground">{gradeKanji.length}字</p>
       </header>
 
       {/* 漢字一覧（画数順） */}
