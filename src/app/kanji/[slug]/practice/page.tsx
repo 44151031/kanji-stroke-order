@@ -16,6 +16,7 @@ import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { generateKanjiPracticeMetadata } from "@/lib/metadata";
 import { getKanjiItemJsonLd, getKanjiPracticeJsonLd } from "@/lib/structuredData";
+import Breadcrumb from "@/components/common/Breadcrumb";
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
 
@@ -191,24 +192,26 @@ export default async function PracticePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
+        {/* パンくず */}
+        <Breadcrumb
+          items={[
+            { label: "トップ", href: "/" },
+            { label: gradeLabel, href: `/grade/${detail.grade}` },
+            { label: `${detail.strokes}画`, href: `/strokes/${detail.strokes}` },
+            { label: `${kanji}の詳細`, href: `/kanji/${slug}` },
+            { label: "書き取り練習" },
+          ]}
+          ariaLabel="パンくずリスト"
+          flexWrap={true}
+          separatorAriaHidden={true}
+          currentAriaCurrent={true}
+          currentFontMedium={true}
+        />
+        
       <div className="flex flex-col items-center gap-8">
         <KanjiModeToggle kanji={kanji} />
 
-        {/* パンくず */}
-        <nav className="w-full text-sm text-muted-foreground" aria-label="パンくずリスト">
-          <ol className="flex items-center gap-2 flex-wrap">
-            <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
-            <li aria-hidden="true">/</li>
-            <li><Link href={`/grade/${detail.grade}`} className="hover:text-foreground">{gradeLabel}</Link></li>
-            <li aria-hidden="true">/</li>
-            <li><Link href={`/strokes/${detail.strokes}`} className="hover:text-foreground">{detail.strokes}画</Link></li>
-            <li aria-hidden="true">/</li>
-            <li><Link href={`/kanji/${slug}`} className="hover:text-foreground">{kanji}の詳細</Link></li>
-            <li aria-hidden="true">/</li>
-            <li className="text-foreground font-medium" aria-current="page">書き取り練習</li>
-          </ol>
-        </nav>
+
 
         {/* 見出し */}
         <header className="text-center">

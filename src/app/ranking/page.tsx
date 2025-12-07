@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import RankingWithTabs from "@/components/ranking/RankingWithTabs";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getRankingJsonLd, getRankingSeriesJsonLd } from "@/lib/structuredData";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 import fallbackRanking from "@/data/fallbackRanking.json";
 
 // キャッシュ設定：1日1回更新
@@ -52,17 +54,12 @@ export default function RankingPage() {
       
       <div className="flex flex-col items-center gap-8">
         {/* パンくず */}
-        <nav className="w-full text-sm text-muted-foreground">
-          <ol className="flex items-center gap-2">
-            <li>
-              <Link href="/" className="hover:text-foreground">
-                トップ
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-foreground">人気ランキング</li>
-          </ol>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: "トップ", href: "/" },
+            { label: "人気ランキング" },
+          ]}
+        />
 
         <header className="text-center">
           <h1 className="text-4xl font-bold mb-2">🏆 人気の漢字ランキング</h1>
@@ -80,26 +77,13 @@ export default function RankingPage() {
         </Card>
 
         {/* 関連リンク */}
-        <div className="flex gap-4 text-sm flex-wrap justify-center">
-          <Link
-            href="/grade/1"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            学年別一覧 →
-          </Link>
-          <Link
-            href="/strokes/1"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            画数別一覧 →
-          </Link>
-          <Link
-            href="/radical"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            部首別一覧 →
-          </Link>
-        </div>
+        <RelatedLinks
+          links={[
+            { label: "学年別一覧 →", href: "/grade/1" },
+            { label: "画数別一覧 →", href: "/strokes/1" },
+            { label: "部首別一覧 →", href: "/radical" },
+          ]}
+        />
       </div>
     </>
   );

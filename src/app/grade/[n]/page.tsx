@@ -5,6 +5,8 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 interface KanjiDetail {
   kanji: string;
@@ -86,13 +88,12 @@ export default async function GradePage({ params }: Props) {
   return (
     <div className="flex flex-col items-center gap-8">
       {/* パンくず */}
-      <nav className="w-full text-sm text-muted-foreground">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
-          <li>/</li>
-          <li className="text-foreground">{info.label}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: info.label },
+        ]}
+      />
 
       {/* 学年クイックナビ */}
       <div className="w-full flex flex-wrap justify-center gap-2">
@@ -198,14 +199,13 @@ export default async function GradePage({ params }: Props) {
       </Card>
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm">
-        <Link href="/strokes/1" className="text-muted-foreground hover:text-foreground">
-          画数別一覧 →
-        </Link>
-        <Link href="/radical" className="text-muted-foreground hover:text-foreground">
-          部首別一覧 →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "画数別一覧 →", href: "/strokes/1" },
+          { label: "部首別一覧 →", href: "/radical" },
+        ]}
+        className="flex gap-4 text-sm"
+      />
     </div>
   );
 }

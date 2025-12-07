@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 interface KanjiItem {
   kanji: string;
@@ -136,32 +137,15 @@ export function KanjiFeatureList({
       )}
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center pb-8">
-        <Link
-          href="/exam-kanji"
-          className="text-muted-foreground hover:text-foreground transition-colors"
-        >
-          🎓 入試頻出漢字
-        </Link>
-        <Link
-          href="/mistake-kanji"
-          className="text-muted-foreground hover:text-foreground transition-colors"
-        >
-          ⚠️ 間違えやすい漢字
-        </Link>
-        <Link
-          href="/confused-kanji"
-          className="text-muted-foreground hover:text-foreground transition-colors"
-        >
-          🔄 似ている漢字
-        </Link>
-        <Link
-          href="/ranking"
-          className="text-muted-foreground hover:text-foreground transition-colors"
-        >
-          📊 人気ランキング
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "入試頻出漢字", href: "/exam-kanji", emoji: "🎓" },
+          { label: "間違えやすい漢字", href: "/mistake-kanji", emoji: "⚠️" },
+          { label: "似ている漢字", href: "/confused-kanji", emoji: "🔄" },
+          { label: "人気ランキング", href: "/ranking", emoji: "📊" },
+        ]}
+        className="flex gap-3 md:gap-4 flex-wrap justify-center pb-8"
+      />
     </div>
   );
 }

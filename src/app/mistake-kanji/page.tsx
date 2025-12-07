@@ -4,6 +4,8 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 interface MistakePair {
   kanjiA: string;
@@ -45,13 +47,12 @@ export default function MistakeKanjiPage() {
   return (
     <div className="flex flex-col items-center gap-8">
       {/* パンくず */}
-      <nav className="w-full text-sm text-muted-foreground">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
-          <li>/</li>
-          <li className="text-foreground">間違えやすい漢字</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: "間違えやすい漢字" },
+        ]}
+      />
 
       <header className="text-center">
         <div className="text-5xl mb-4">⚠️</div>
@@ -174,14 +175,13 @@ export default function MistakeKanjiPage() {
       </section>
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm">
-        <Link href="/confused-kanji" className="text-muted-foreground hover:text-foreground">
-          似ている漢字（形が似ている） →
-        </Link>
-        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
-          学年別一覧 →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "似ている漢字（形が似ている） →", href: "/confused-kanji" },
+          { label: "学年別一覧 →", href: "/grade/1" },
+        ]}
+        className="flex gap-4 text-sm"
+      />
     </div>
   );
 }

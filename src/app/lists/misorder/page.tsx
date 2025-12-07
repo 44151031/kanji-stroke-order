@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 import SvgAnimator from "@/components/SvgAnimator";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -68,13 +70,13 @@ export default function MisorderKanjiPage() {
   return (
     <main className="max-w-[900px] mx-auto px-4 py-10 space-y-10">
       {/* パンくず */}
-      <nav className="text-sm text-muted-foreground">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
-          <li>/</li>
-          <li className="text-foreground">書き順を間違えやすい漢字</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: "書き順を間違えやすい漢字" },
+        ]}
+        navClassName="text-sm text-muted-foreground"
+      />
 
       {/* ヘッダー */}
       <header className="text-center">
@@ -170,17 +172,14 @@ export default function MisorderKanjiPage() {
       </section>
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t">
-        <Link href="/lists/exam" className="text-muted-foreground hover:text-foreground">
-          📚 入試頻出漢字 →
-        </Link>
-        <Link href="/lists/confused" className="text-muted-foreground hover:text-foreground">
-          🔄 混同しやすい漢字 →
-        </Link>
-        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
-          学年別一覧 →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "📚 入試頻出漢字 →", href: "/lists/exam" },
+          { label: "🔄 混同しやすい漢字 →", href: "/lists/confused" },
+          { label: "学年別一覧 →", href: "/grade/1" },
+        ]}
+        className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t"
+      />
     </main>
   );
 }

@@ -7,6 +7,8 @@ import radicalList, {
   formatRadicalName,
   RADICAL_POSITION_TYPES,
 } from "@/lib/radicalList";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 // 配置タイプのラベル定義
 const POSITION_LABELS: Record<string, { label: string; labelEn: string; icon: string; desc: string }> = {
@@ -30,15 +32,17 @@ export default function RadicalIndexPage() {
   }, {} as Record<string, typeof radicalList>);
 
   return (
-    <main className="max-w-[900px] mx-auto px-4 py-10">
+    <main className="max-w-[900px] mx-auto">
       {/* パンくず */}
-      <nav className="text-sm text-gray-500 mb-6">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-gray-900">トップ</Link></li>
-          <li>/</li>
-          <li className="text-gray-900">部首一覧</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: "部首一覧" },
+        ]}
+        navClassName="text-sm text-gray-500 mb-6"
+        linkClassName="hover:text-gray-900"
+        currentClassName="text-gray-900"
+      />
 
       <header className="text-center mb-10">
         <h1 className="text-3xl font-bold mb-2">部首別漢字一覧</h1>
@@ -100,17 +104,15 @@ export default function RadicalIndexPage() {
       </div>
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center mt-10 pt-6 border-t">
-        <Link href="/grade/1" className="text-gray-500 hover:text-gray-900">
-          学年別一覧 →
-        </Link>
-        <Link href="/strokes/1" className="text-gray-500 hover:text-gray-900">
-          画数別一覧 →
-        </Link>
-        <Link href="/ranking" className="text-gray-500 hover:text-gray-900">
-          人気ランキング →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "学年別一覧 →", href: "/grade/1" },
+          { label: "画数別一覧 →", href: "/strokes/1" },
+          { label: "人気ランキング →", href: "/ranking" },
+        ]}
+        className="flex gap-4 text-sm flex-wrap justify-center mt-10 pt-6 border-t"
+        linkClassName="text-gray-500 hover:text-gray-900"
+      />
     </main>
   );
 }

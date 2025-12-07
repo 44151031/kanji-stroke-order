@@ -5,6 +5,8 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 
 interface MasterKanji {
   kanji: string;
@@ -110,13 +112,12 @@ export default async function ListPage({ params }: Props) {
   return (
     <div className="flex flex-col items-center gap-8">
       {/* パンくず */}
-      <nav className="w-full text-sm text-muted-foreground">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-foreground">トップ</Link></li>
-          <li>/</li>
-          <li className="text-foreground">{config.title}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: config.title },
+        ]}
+      />
 
       <header className="text-center">
         <h1 className="text-4xl font-bold mb-2">
@@ -196,29 +197,15 @@ export default async function ListPage({ params }: Props) {
       )}
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center">
-        {type !== "exam" && (
-          <Link href="/lists/exam" className="text-muted-foreground hover:text-foreground">
-            📚 入試頻出漢字 →
-          </Link>
-        )}
-        {type !== "mistake" && (
-          <Link href="/lists/mistake" className="text-muted-foreground hover:text-foreground">
-            ⚠️ 間違えやすい漢字 →
-          </Link>
-        )}
-        {type !== "confused" && (
-          <Link href="/lists/confused" className="text-muted-foreground hover:text-foreground">
-            🔄 混同しやすい漢字 →
-          </Link>
-        )}
-        <Link href="/grade/1" className="text-muted-foreground hover:text-foreground">
-          学年別一覧 →
-        </Link>
-        <Link href="/radical" className="text-muted-foreground hover:text-foreground">
-          部首別一覧 →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "📚 入試頻出漢字 →", href: "/lists/exam", show: type !== "exam" },
+          { label: "⚠️ 間違えやすい漢字 →", href: "/lists/mistake", show: type !== "mistake" },
+          { label: "🔄 混同しやすい漢字 →", href: "/lists/confused", show: type !== "confused" },
+          { label: "学年別一覧 →", href: "/grade/1" },
+          { label: "部首別一覧 →", href: "/radical" },
+        ]}
+      />
     </div>
   );
 }

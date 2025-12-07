@@ -4,6 +4,8 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import KanjiLink from "@/components/common/KanjiLink";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import RelatedLinks from "@/components/common/RelatedLinks";
 import radicalList, {
   buildSlugIndex,
   getUniqueSlug,
@@ -87,17 +89,18 @@ export default async function RadicalDetailPage({ params }: Props) {
     .slice(0, 6);
 
   return (
-    <main className="max-w-[900px] mx-auto px-4 py-10">
+    <main className="max-w-[900px] mx-auto">
       {/* パンくず */}
-      <nav className="text-sm text-gray-500 mb-6">
-        <ol className="flex items-center gap-2">
-          <li><Link href="/" className="hover:text-gray-900">トップ</Link></li>
-          <li>/</li>
-          <li><Link href="/radical" className="hover:text-gray-900">部首一覧</Link></li>
-          <li>/</li>
-          <li className="text-gray-900">{displayName}</li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: "部首一覧", href: "/radical" },
+          { label: displayName },
+        ]}
+        navClassName="text-sm text-gray-500 mb-6"
+        linkClassName="hover:text-gray-900"
+        currentClassName="text-gray-900"
+      />
 
       {/* ヘッダー */}
       <header className="text-center mb-10">
@@ -172,17 +175,15 @@ export default async function RadicalDetailPage({ params }: Props) {
       )}
 
       {/* 関連リンク */}
-      <div className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t">
-        <Link href="/radical" className="text-gray-500 hover:text-gray-900">
-          ← 部首一覧に戻る
-        </Link>
-        <Link href="/grade/1" className="text-gray-500 hover:text-gray-900">
-          学年別一覧 →
-        </Link>
-        <Link href="/strokes/1" className="text-gray-500 hover:text-gray-900">
-          画数別一覧 →
-        </Link>
-      </div>
+      <RelatedLinks
+        links={[
+          { label: "← 部首一覧に戻る", href: "/radical" },
+          { label: "学年別一覧 →", href: "/grade/1" },
+          { label: "画数別一覧 →", href: "/strokes/1" },
+        ]}
+        className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t"
+        linkClassName="text-gray-500 hover:text-gray-900"
+      />
     </main>
   );
 }
