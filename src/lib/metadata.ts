@@ -144,8 +144,8 @@ export function generateKanjiMetadata(
   const hex = toKanjiHex(kanji);
   const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
 
-  const title = `${kanji}の書き順（筆順）｜読み方・意味・部首・画数 | ${siteMeta.siteName}`;
-  const descParts = [`${kanji}（${meaning}）の正しい書き順・筆順をアニメで解説`];
+  const title = `${kanji}の書き順（筆順アニメ付）正しい書き方と訓読み・音読み・部首 | ${siteMeta.siteName}`;
+  const descParts = [`${kanji}（${meaning}）の正しい書き順をアニメで解説。音読み・訓読み・意味・部首・JLPT級も確認できます。【漢字書き順ナビ】`];
   if (onYomi.length > 0) descParts.push(`音読み：${onYomi.slice(0, 3).join("、")}`);
   if (kunYomi.length > 0) descParts.push(`訓読み：${kunYomi.slice(0, 3).join("、")}`);
   if (strokes) descParts.push(`${strokes}画`);
@@ -177,7 +177,7 @@ export function generateKanjiMetadata(
       url: canonicalUrl,
       siteName: siteMeta.siteName,
       locale: siteMeta.locale,
-      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: `${kanji}の書き順` }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: `${kanji}の書き順（筆順アニメ付）正しい書き方と訓読み・音読み・部首` }],
     },
     twitter: {
       card: siteMeta.twitterCard,
@@ -222,6 +222,73 @@ export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) 
     ],
   };
 }
+
+// ============================================
+// ✍️ 書き取りテストモード メタデータ
+// ============================================
+
+import type { Metadata } from "next";
+import { toKanjiHex } from "@/lib/kanjiUtils";
+import { siteMeta, baseMeta } from "@/lib/siteMeta";
+
+/**
+ * 漢字書き取りテストモード用のメタデータ
+ */
+export function generateKanjiPracticeMetadata(
+  kanji: string,
+  meaning: string,
+  strokes: number
+): Metadata {
+  const hex = toKanjiHex(kanji);
+  const practiceUrl = `${siteMeta.url}/kanji/u${hex}/practice`;
+  const ogImageUrl = `${siteMeta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`;
+
+  const title = `${kanji}の書き取りテスト（筆順練習モード）｜${meaning}・${strokes}画 | ${siteMeta.siteName}`;
+  const description = `${kanji}（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら書き取りスコアを記録できます。`;
+
+  return {
+    ...baseMeta,
+    title,
+    description,
+    keywords: [
+      kanji,
+      `${kanji} 書き取り`,
+      `${kanji} 練習`,
+      `${kanji} 筆順テスト`,
+      `${kanji} 書き方`,
+      "書き取り練習",
+      "漢字",
+      "筆順",
+      "書き順",
+      "漢字学習",
+    ],
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: practiceUrl,
+      siteName: siteMeta.siteName,
+      locale: siteMeta.locale,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${kanji}の書き取りテスト（筆順練習モード）`,
+        },
+      ],
+    },
+    twitter: {
+      card: siteMeta.twitterCard,
+      title,
+      description,
+      images: [ogImageUrl],
+      creator: siteMeta.twitterCreator,
+    },
+    alternates: { canonical: practiceUrl },
+  };
+}
+
 // ============================================
 // 🧩 書き取りテストモード用構造化データ（新規追加）
 // ============================================
