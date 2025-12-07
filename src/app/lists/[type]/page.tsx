@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generateListMetadata } from "@/lib/metadata";
 
 interface MasterKanji {
   kanji: string;
@@ -66,21 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "漢字一覧" };
   }
 
-  const siteUrl = "https://kanji-stroke-order.com";
-
-  return {
-    title: `${config.title}｜漢字書き順`,
-    description: config.description,
-    openGraph: {
-      title: `${config.title}｜漢字書き順`,
-      description: config.description,
-      type: "website",
-      url: `${siteUrl}/lists/${type}`,
-    },
-    alternates: {
-      canonical: `${siteUrl}/lists/${type}`,
-    },
-  };
+  return generateListMetadata(type, config.title, config.description);
 }
 
 export default async function ListPage({ params }: Props) {

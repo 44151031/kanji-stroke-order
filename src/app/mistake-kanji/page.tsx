@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface MistakePair {
   kanjiA: string;
@@ -20,16 +21,9 @@ function loadMistakePairs(): MistakePair[] {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
-export const metadata: Metadata = {
-  title: "間違えやすい漢字一覧 | 同音異義語の使い分け",
-  description: "同音異義語で間違えやすい漢字をペアで紹介。「異常」と「以上」、「会う」と「合う」など、読みが同じで意味が違う漢字の使い分けを一覧で確認できます。",
-  keywords: ["間違えやすい漢字", "同音異義語", "漢字の使い分け", "書き間違い", "読み間違い", "漢字ペア"],
-  openGraph: {
-    title: "間違えやすい漢字一覧 | 同音異義語の使い分け",
-    description: "同音異義語で間違えやすい漢字をペアで紹介。使い分けを確認できます。",
-    type: "website",
-  },
-};
+export const metadata: Metadata = generatePageMetadata({
+  path: "/mistake-kanji",
+});
 
 export default function MistakeKanjiPage() {
   const pairs = loadMistakePairs();

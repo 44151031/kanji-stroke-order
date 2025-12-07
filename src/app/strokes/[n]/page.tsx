@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generateStrokesMetadata } from "@/lib/metadata";
 
 interface KanjiDetail {
   kanji: string;
@@ -38,15 +39,9 @@ type Props = { params: Promise<{ n: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { n } = await params;
+  const strokes = parseInt(n, 10);
   
-  const title = `${n}画の漢字一覧｜書き順・筆順`;
-  const description = `${n}画の漢字の書き順をアニメーションで学習できます。`;
-
-  return {
-    title,
-    description,
-    openGraph: { title, description },
-  };
+  return generateStrokesMetadata(strokes);
 }
 
 export default async function StrokesPage({ params }: Props) {

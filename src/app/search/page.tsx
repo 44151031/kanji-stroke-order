@@ -2,11 +2,11 @@ import { Suspense } from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import SearchContent from "@/components/SearchContent";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "漢字検索｜漢字書き順",
-  description: "漢字・読み・意味で検索。常用漢字2136字の書き順をアニメーションで学べます。",
-};
+export const metadata: Metadata = generatePageMetadata({
+  path: "/search",
+});
 
 function SearchLoading() {
   return (

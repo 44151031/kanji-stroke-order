@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface ConfusedPair {
   kanjiA: string;
@@ -20,16 +21,9 @@ function loadConfusedPairs(): ConfusedPair[] {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
-export const metadata: Metadata = {
-  title: "似ている漢字一覧 | 形が似て混同しやすい漢字ペア",
-  description: "形が似ていて混同しやすい漢字をペアで紹介。「土」と「士」、「未」と「末」など、間違えやすい漢字の違いと見分け方を一覧で確認できます。",
-  keywords: ["似ている漢字", "混同しやすい漢字", "漢字の違い", "見分け方", "形が似た漢字", "漢字ペア"],
-  openGraph: {
-    title: "似ている漢字一覧 | 形が似て混同しやすい漢字ペア",
-    description: "形が似ていて混同しやすい漢字をペアで紹介。違いと見分け方を学習できます。",
-    type: "website",
-  },
-};
+export const metadata: Metadata = generatePageMetadata({
+  path: "/confused-kanji",
+});
 
 export default function ConfusedKanjiPage() {
   const pairs = loadConfusedPairs();

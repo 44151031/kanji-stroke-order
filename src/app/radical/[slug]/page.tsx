@@ -6,6 +6,7 @@ import path from "path";
 import KanjiLink from "@/components/common/KanjiLink";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generateRadicalMetadata } from "@/lib/metadata";
 import radicalList, {
   buildSlugIndex,
   getUniqueSlug,
@@ -61,12 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const displayName = formatRadicalName(r.jp, r.en);
   const englishName = getEnglishDisplayName(r.en);
-  const kanjiList = loadKanjiList(slug);
   
-  return {
-    title: `${displayName}の漢字一覧（${kanjiList.length}字）| Kanji Stroke Order`,
-    description: `部首「${r.jp}」（${englishName}）を含む常用漢字${kanjiList.length}字の書き順をアニメーションで学習できます。`,
-  };
+  return generateRadicalMetadata(displayName, englishName);
 }
 
 export default async function RadicalDetailPage({ params }: Props) {

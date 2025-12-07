@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import { generateGradeMetadata } from "@/lib/metadata";
 
 interface KanjiDetail {
   kanji: string;
@@ -55,14 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "学年別漢字一覧" };
   }
 
-  const title = `${info.label}で習う漢字一覧｜書き順・筆順`;
-  const description = `${info.description}の書き順をアニメーションで学習できます。`;
-
-  return {
-    title,
-    description,
-    openGraph: { title, description },
-  };
+  return generateGradeMetadata(grade);
 }
 
 export default async function GradePage({ params }: Props) {

@@ -26,6 +26,48 @@ export const baseMeta = {
 };
 
 // ============================================
+// 🗺️ ページ別メタデータマッピング
+// ============================================
+/**
+ * 各ページのタイトル・説明を一元管理するマッピング
+ * pathをキーとして、titleとdescriptionを定義
+ */
+const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
+  "/exam-kanji": {
+    title: "入試頻出漢字一覧",
+    description: "高校入試・大学入試で頻出する重要漢字を一覧で紹介。書き順・読み方・意味を学習できます。受験対策に最適な漢字リストです。",
+  },
+  "/mistake-kanji": {
+    title: "間違えやすい漢字一覧 | 同音異義語の使い分け",
+    description: "同音異義語で間違えやすい漢字をペアで紹介。「異常」と「以上」、「会う」と「合う」など、読みが同じで意味が違う漢字の使い分けを一覧で確認できます。",
+  },
+  "/confused-kanji": {
+    title: "似ている漢字一覧 | 形が似て混同しやすい漢字ペア",
+    description: "形が似ていて混同しやすい漢字をペアで紹介。「土」と「士」、「未」と「末」など、間違えやすい漢字の違いと見分け方を一覧で確認できます。",
+  },
+  "/search": {
+    title: "漢字検索",
+    description: "漢字・読み・意味で検索。常用漢字2136字の書き順をアニメーションで学べます。",
+  },
+  "/ranking": {
+    title: "人気の漢字ランキング",
+    description: "よく検索・閲覧されている人気の漢字をランキング形式で紹介。週・月・半年ごとの人気傾向を確認できます。",
+  },
+  "/terms": {
+    title: "利用規約・免責事項",
+    description: "漢字書き順ナビの利用規約および免責事項ページ。著作権・引用・データ利用方針を明示しています。",
+  },
+  "/operation": {
+    title: "運営管理",
+    description: "漢字書き順ナビの運営主体・管理情報ページ。管理者・連絡先・データライセンス情報を掲載しています。",
+  },
+  "/articles/common-misorder-kanji": {
+    title: "書き順を間違えやすい漢字TOP20",
+    description: "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
+  },
+};
+
+// ============================================
 // 🏠 トップページ用メタデータ＆構造化データ
 // ============================================
 export function generateTopPageMetadata(): Metadata {
@@ -202,19 +244,31 @@ export function generateKanjiPracticeMetadata(
 // 📄 汎用ページ用メタデータ生成
 // ============================================
 export function generatePageMetadata(options: {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   path?: string;
   image?: string;
   type?: "website" | "article";
 }): Metadata {
   const {
-    title,
-    description,
+    title: titleOption,
+    description: descriptionOption,
     path = "",
     image = siteMeta.image,
     type = "website",
   } = options;
+
+  // pathが指定され、かつPAGE_META_MAPに存在する場合はマッピングから取得
+  const metaFromMap = path ? PAGE_META_MAP[path] : undefined;
+  const title = titleOption || (metaFromMap ? metaFromMap.title : "") || "";
+  const description = descriptionOption || (metaFromMap ? metaFromMap.description : "") || "";
+
+  if (!title || !description) {
+    throw new Error(
+      `generatePageMetadata: title and description are required. Either provide them in options or ensure path "${path}" exists in PAGE_META_MAP.`
+    );
+  }
+
   const canonicalUrl = `${siteMeta.url}${path}`;
 
   return {
@@ -298,6 +352,24 @@ export function generateRadicalMetadata(
     title: `${radicalJp}（${radicalEn}）の漢字一覧`,
     description: `部首「${radicalJp}」を持つ漢字の一覧。書き順・読み方・意味を解説。部首から漢字を検索できます。`,
     path: `/radical/${radicalEn}`,
+  });
+}
+
+// ============================================
+// 📚 リストページ用メタデータ生成
+// ============================================
+/**
+ * リストページ（/lists/[type]）用メタデータ生成
+ */
+export function generateListMetadata(
+  type: string,
+  title: string,
+  description: string
+): Metadata {
+  return generatePageMetadata({
+    title,
+    description,
+    path: `/lists/${type}`,
   });
 }
 
