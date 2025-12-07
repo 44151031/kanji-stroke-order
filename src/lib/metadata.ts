@@ -65,6 +65,10 @@ const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
     title: "書き順を間違えやすい漢字TOP20",
     description: "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
   },
+  "/lists/misorder": {
+    title: "書き順を間違えやすい漢字クイズ | 練習・学習",
+    description: "書き順を間違えやすい漢字をクイズ形式で学習。テストや入試でよく出題される重要漢字の正しい書き順を、アニメーション付きで確認できます。",
+  },
 };
 
 // ============================================
@@ -133,7 +137,7 @@ export function generateKanjiMetadata(
   const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
 
   // 現在のX（Twitter）OGP表示と完全に同一のタイトル
-  const title = `${kanji}の書き順（筆順アニメ付）｜読み方・意味・部首・画数`;
+  const title = `${kanji}の書き順（筆順アニメ付）｜読み方・部首・訓読み・音読み`;
   
   // description: SVGアニメで書き順を解説 + 音読み／訓読み／画数／学年／JLPT情報を自動生成
   const descParts = [
