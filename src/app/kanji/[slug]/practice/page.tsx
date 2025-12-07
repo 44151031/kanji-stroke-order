@@ -14,9 +14,7 @@ import KanjiModeToggle from "@/components/common/KanjiModeToggle";
 import StrokePracticeCanvas from "@/components/kanji/StrokePracticeCanvas";
 import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
-import { getKanjiItemJsonLd } from "@/lib/metadata";
-import { getKanjiPracticeJsonLd } from "@/lib/metadata";
-import { generateKanjiPracticeMetadata } from "@/lib/metadata";
+import { getKanjiItemJsonLd, getKanjiPracticeJsonLd, generateKanjiPracticeMetadata } from "@/lib/metadata";
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
 
