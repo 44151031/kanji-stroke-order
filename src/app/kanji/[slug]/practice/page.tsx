@@ -435,6 +435,7 @@ export default async function PracticePage({ params }: Props) {
                   <KanjiLink
                     key={k}
                     kanji={k}
+                    mode="practice"
                     className="w-14 h-14 flex items-center justify-center text-3xl border-2 border-purple-300 rounded-lg hover:bg-purple-100 transition-colors"
                   />
                 ))}
@@ -468,6 +469,7 @@ export default async function PracticePage({ params }: Props) {
                   <KanjiLink
                     key={k.kanji}
                     kanji={k.kanji}
+                    mode="practice"
                     className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
                     title={`${k.kanji} - ${k.on[0] || k.kun[0] || ""}`}
                   />
