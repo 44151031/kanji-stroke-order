@@ -86,7 +86,7 @@ export default async function RadicalDetailPage({ params }: Props) {
     .slice(0, 6);
 
   return (
-    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
+    <main className="flex flex-col items-center gap-3 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
@@ -94,9 +94,6 @@ export default async function RadicalDetailPage({ params }: Props) {
           { label: "部首一覧", href: "/radical" },
           { label: displayName },
         ]}
-        navClassName="text-sm text-gray-500 mb-6"
-        linkClassName="hover:text-gray-900"
-        currentClassName="text-gray-900"
       />
 
       {/* ヘッダー */}
@@ -113,6 +110,16 @@ export default async function RadicalDetailPage({ params }: Props) {
         </p>
       </header>
 
+      {/* 説明セクション */}
+      <section className="bg-gray-50 rounded-2xl p-6 mb-4 bg-white">
+        <h2 className="text-lg font-bold mb-3">この部首について</h2>
+        <p className="text-gray-700">
+          「{r.jp}」は漢字の{posInfo.label}に位置する部首です。
+          {r.root && `部首の字形は「${r.root}」です。`}
+          {kanjiList.length > 0 && `この部首を持つ常用漢字は${kanjiList.length}字あります。`}
+        </p>
+      </section>
+
       {/* 漢字一覧 */}
       {kanjiList.length > 0 && (
         <section className="mb-10">
@@ -124,22 +131,14 @@ export default async function RadicalDetailPage({ params }: Props) {
               <KanjiLink
                 key={kanji}
                 kanji={kanji}
-                className="aspect-square flex items-center justify-center text-2xl bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-colors shadow-sm"
+                className="bg-white w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
               />
             ))}
           </div>
         </section>
       )}
 
-      {/* 説明セクション */}
-      <section className="bg-gray-50 rounded-2xl p-6 mb-8">
-        <h2 className="text-lg font-bold mb-3">この部首について</h2>
-        <p className="text-gray-700">
-          「{r.jp}」は漢字の{posInfo.label}に位置する部首です。
-          {r.root && `部首の字形は「${r.root}」です。`}
-          {kanjiList.length > 0 && `この部首を持つ常用漢字は${kanjiList.length}字あります。`}
-        </p>
-      </section>
+
 
       {/* 関連する部首 */}
       {relatedRadicals.length > 0 && (
@@ -178,8 +177,7 @@ export default async function RadicalDetailPage({ params }: Props) {
           { label: "学年別一覧 →", href: "/grade/1" },
           { label: "画数別一覧 →", href: "/strokes/1" },
         ]}
-        className="flex gap-4 text-sm flex-wrap justify-center pt-6 border-t"
-        linkClassName="text-gray-500 hover:text-gray-900"
+        className="flex gap-4 text-sm"
       />
     </main>
   );

@@ -58,3 +58,5 @@ export function KanjiGridLink({
     </KanjiLink>
   );
 }
+
+

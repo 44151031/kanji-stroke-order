@@ -111,3 +111,5 @@ export default function KanjiModeToggle({ kanji }: { kanji: string }) {
     </div>
   );
 }
+
+

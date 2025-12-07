@@ -360,7 +360,7 @@ export function generateRadicalMetadata(
   radicalEn: string
 ): Metadata {
   return generatePageMetadata({
-    title: `${radicalJp}（${radicalEn}）の漢字一覧`,
+    title: `${radicalJp}の部首の漢字一覧`,
     description: `部首「${radicalJp}」を持つ漢字の一覧。書き順・読み方・意味を解説。部首から漢字を検索できます。`,
     path: `/radical/${radicalEn}`,
   });

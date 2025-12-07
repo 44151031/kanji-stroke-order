@@ -149,3 +149,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 **状態**: ✅ 指定ページのメタデータを`PAGE_META_MAP`経由で統一化完了  
 **検証結果**: ✅ `npm run verify:metadata` すべて通過
 
+
+

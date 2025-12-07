@@ -46,3 +46,5 @@ export async function fetchKanjiSvg(character: string): Promise<string | null> {
 
 
 
+
+

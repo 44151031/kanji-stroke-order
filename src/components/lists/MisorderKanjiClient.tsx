@@ -175,7 +175,7 @@ export default function MisorderKanjiClient() {
             <Link
               key={kanji}
               href={`/kanji/${toUnicodeSlug(kanji)}`}
-              className="aspect-square flex items-center justify-center text-2xl bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-colors shadow-sm"
+              className="w-12 h-12 flex items-center justify-center text-2xl border border-border rounded-lg hover:bg-secondary transition-colors"
               title={kanji}
             >
               {kanji}
@@ -196,4 +196,6 @@ export default function MisorderKanjiClient() {
     </>
   );
 }
+
+
 

@@ -125,3 +125,5 @@ npm run test:ui
 - [Next.js Metadata API](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
 - [Schema.org JSON-LD](https://schema.org/docs/gs.html)
 
+
+
