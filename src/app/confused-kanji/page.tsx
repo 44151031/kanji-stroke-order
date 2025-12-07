@@ -37,7 +37,7 @@ export default function ConfusedKanjiPage() {
   }, {} as Record<string, ConfusedPair[]>);
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
@@ -173,6 +173,6 @@ export default function ConfusedKanjiPage() {
         ]}
         className="flex gap-4 text-sm"
       />
-    </div>
+    </main>
   );
 }

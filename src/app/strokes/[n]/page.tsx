@@ -68,7 +68,7 @@ export default async function StrokesPage({ params }: Props) {
   const allStrokes = [...new Set(dictionary.map((k) => k.strokes))].sort((a, b) => a - b);
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
@@ -163,6 +163,6 @@ export default async function StrokesPage({ params }: Props) {
         ]}
         className="flex gap-4 text-sm"
       />
-    </div>
+    </main>
   );
 }

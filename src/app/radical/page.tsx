@@ -32,16 +32,13 @@ export default function RadicalIndexPage() {
   }, {} as Record<string, typeof radicalList>);
 
   return (
-    <main className="max-w-[900px] mx-auto">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
           { label: "トップ", href: "/" },
           { label: "部首一覧" },
         ]}
-        navClassName="text-sm text-gray-500 mb-6"
-        linkClassName="hover:text-gray-900"
-        currentClassName="text-gray-900"
       />
 
       <header className="text-center mb-10">

@@ -33,7 +33,6 @@ interface KanjiJoyo {
   grade: number;
   strokes: number;
 }
-
 interface KanjiDetail {
   kanji: string;
   on: string[];
@@ -207,8 +206,8 @@ export default async function PracticePage({ params }: Props) {
           currentAriaCurrent={true}
           currentFontMedium={true}
         />
-        
-      <div className="flex flex-col items-center gap-8">
+
+      <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
         <KanjiModeToggle kanji={kanji} />
 
 
@@ -340,7 +339,7 @@ export default async function PracticePage({ params }: Props) {
         <div className="mt-8 flex justify-center">
           <XShareButton kanji={detail.kanji} />
         </div>
-      </div>
+      </main>
     </>
   );
 }

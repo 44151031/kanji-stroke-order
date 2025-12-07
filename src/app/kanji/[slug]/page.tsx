@@ -271,7 +271,7 @@ export default async function KanjiPage({ params }: Props) {
           currentFontMedium={true}
         />
   
-      <div className="flex flex-col items-center gap-8">
+      <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
         {/* モード切り替えトグル */}
         <KanjiModeToggle kanji={kanji} />
 
@@ -441,7 +441,7 @@ export default async function KanjiPage({ params }: Props) {
         <div className="mt-8 flex justify-center">
           <XShareButton kanji={detail.kanji} />
         </div>
-      </div>
+      </main>
     </>
   );
 }

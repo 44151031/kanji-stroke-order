@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import RelatedLinks from "@/components/common/RelatedLinks";
+import Breadcrumb from "@/components/common/Breadcrumb";
 
 interface KanjiItem {
   kanji: string;
@@ -25,7 +26,7 @@ const colorClasses = {
   blue: {
     card: "border-blue-200 bg-blue-50/30",
     header: "text-blue-700",
-    item: "border-blue-200 hover:bg-blue-100 hover:border-blue-400",
+    item: "bg-white border-blue-200 hover:bg-blue-100 hover:border-blue-400",
     badge: "bg-blue-100 text-blue-700",
   },
   amber: {
@@ -58,15 +59,17 @@ export function KanjiFeatureList({
   const colors = colorClasses[colorTheme];
 
   return (
-    <div className="flex flex-col items-center gap-8 w-full">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
+      {/* パンくず */}
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: title },
+        ]}
+      />
+
       {/* ヘッダー */}
       <header className="text-center w-full pt-8">
-        <Link 
-          href="/" 
-          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          ← トップに戻る
-        </Link>
         <h1 className="text-4xl md:text-5xl font-bold mt-6 mb-3">
           {emoji} {title}
         </h1>
@@ -146,7 +149,7 @@ export function KanjiFeatureList({
         ]}
         className="flex gap-3 md:gap-4 flex-wrap justify-center pb-8"
       />
-    </div>
+    </main>
   );
 }
 

@@ -97,7 +97,7 @@ export default async function ListPage({ params }: Props) {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
@@ -193,7 +193,7 @@ export default async function ListPage({ params }: Props) {
           { label: "部首別一覧 →", href: "/radical" },
         ]}
       />
-    </div>
+    </main>
   );
 }
 

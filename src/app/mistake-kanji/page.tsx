@@ -39,7 +39,7 @@ export default function MistakeKanjiPage() {
   }, {} as Record<string, MistakePair[]>);
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[
@@ -176,6 +176,6 @@ export default function MistakeKanjiPage() {
         ]}
         className="flex gap-4 text-sm"
       />
-    </div>
+    </main>
   );
 }

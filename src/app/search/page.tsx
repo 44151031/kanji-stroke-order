@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
-import Link from "next/link";
 import SearchContent from "@/components/SearchContent";
 import { generatePageMetadata } from "@/lib/metadata";
+import Breadcrumb from "@/components/common/Breadcrumb";
 
 export const metadata: Metadata = generatePageMetadata({
   path: "/search",
@@ -18,11 +18,16 @@ function SearchLoading() {
 
 export default function SearchPage() {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
+      {/* パンくず */}
+      <Breadcrumb
+        items={[
+          { label: "トップ", href: "/" },
+          { label: "漢字検索" },
+        ]}
+      />
+
       <header className="text-center w-full">
-        <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-          ← トップに戻る
-        </Link>
         <h1 className="text-4xl font-bold mt-4 mb-2">漢字検索</h1>
         <p className="text-muted-foreground">漢字・読み・意味で検索</p>
       </header>
@@ -30,6 +35,6 @@ export default function SearchPage() {
       <Suspense fallback={<SearchLoading />}>
         <SearchContent />
       </Suspense>
-    </div>
+    </main>
   );
 }

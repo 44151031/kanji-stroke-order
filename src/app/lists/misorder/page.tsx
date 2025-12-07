@@ -68,7 +68,7 @@ export default function MisorderKanjiPage() {
   };
 
   return (
-    <main className="max-w-[900px] mx-auto px-4 py-10 space-y-10">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[

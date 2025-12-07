@@ -86,7 +86,7 @@ export default async function RadicalDetailPage({ params }: Props) {
     .slice(0, 6);
 
   return (
-    <main className="max-w-[900px] mx-auto">
+    <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       {/* パンくず */}
       <Breadcrumb
         items={[

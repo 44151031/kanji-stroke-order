@@ -52,7 +52,7 @@ export default function RankingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(seriesJsonLd) }}
       />
       
-      <div className="flex flex-col items-center gap-8">
+      <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
         {/* パンくず */}
         <Breadcrumb
           items={[
@@ -84,7 +84,7 @@ export default function RankingPage() {
             { label: "部首別一覧 →", href: "/radical" },
           ]}
         />
-      </div>
+      </main>
     </>
   );
 }
