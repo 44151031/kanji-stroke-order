@@ -26,6 +26,11 @@
     "fetch:kana-svg": "tsx scripts/fetch_animCJK_svg.ts",
     "add:stroke-numbers": "tsx scripts/add_stroke_numbers.ts",
     "verify:metadata": "tsx scripts/verify-metadata-imports.ts",
+    "radical:import": "tsx scripts/import_radicals_from_excel.ts",
+    "radical:check": "tsx scripts/checkJoyoCoverage.ts",
+    "radical:report": "tsx scripts/radicalMissingReport.ts",
+    "radical:fix": "tsx scripts/radicalAutoFix.ts",
+    "radical:pipeline": "tsx scripts/runRadicalPipeline.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui"

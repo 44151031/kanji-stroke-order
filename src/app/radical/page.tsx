@@ -1,11 +1,13 @@
-"use client";
-
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
 import radicalList, {
   buildSlugIndex,
   getUniqueSlug,
   formatRadicalName,
+  getEnglishDisplayName,
   RADICAL_POSITION_TYPES,
+  type Radical,
 } from "@/lib/radicalList";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
@@ -22,14 +24,63 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string; icon: st
   "independent-radical": { label: "その他", labelEn: "Other / Independent", icon: "📝", desc: "上記に分類されない部首（複数位置に出現、または独立して使われる）" },
 };
 
+// 漢字マスターデータを読み込み
+function loadKanjiMaster(): any[] {
+  const kanjiPath = path.join(process.cwd(), "data", "kanji_master.json");
+  try {
+    const content = fs.readFileSync(kanjiPath, "utf8");
+    return JSON.parse(content);
+  } catch {
+    return [];
+  }
+}
+
+// 部首ごとのJSONファイルから漢字リストを読み込み
+function loadRadicalKanjiList(slug: string): string[] {
+  const filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+  try {
+    const content = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(content);
+  } catch {
+    return [];
+  }
+}
+
 export default function RadicalIndexPage() {
   const counts = buildSlugIndex(radicalList);
+  const kanjiList = loadKanjiMaster();
+
+  // 各部首ごとの漢字件数を計算
+  const radicalsWithCount: (Radical & { count: number })[] = radicalList.map((r) => {
+    const englishName = getEnglishDisplayName(r.en);
+    const uniqueSlug = getUniqueSlug(r, counts);
+    
+    // data/radicals/{slug}.json からカウント（優先）
+    const radicalKanjiList = loadRadicalKanjiList(uniqueSlug);
+    let count = radicalKanjiList.length;
+    
+    // data/radicals/{slug}.json にデータがない場合のみ kanji_master.json からカウント
+    if (count === 0) {
+      count = kanjiList.filter((k: any) => {
+        // radical.name が一致するか
+        if (k.radical?.name === englishName) return true;
+        // radicals 配列に含まれているか
+        if (Array.isArray(k.radicals) && k.radicals.includes(englishName)) return true;
+        return false;
+      }).length;
+    }
+    
+    return { ...r, count };
+  });
 
   // 配置タイプごとにグループ化
   const groupedRadicals = RADICAL_POSITION_TYPES.reduce((acc, type) => {
-    acc[type] = radicalList.filter((r) => r.type === type);
+    acc[type] = radicalsWithCount.filter((r) => r.type === type);
     return acc;
-  }, {} as Record<string, typeof radicalList>);
+  }, {} as Record<string, typeof radicalsWithCount>);
 
   return (
     <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
@@ -85,8 +136,11 @@ export default function RadicalIndexPage() {
                             </span>
                           )}
                           <div className="flex-1 min-w-0">
-                            <span className="font-medium block truncate text-sm">
+                            <span className="font-medium block truncate">
                               {formatRadicalName(r.jp, r.en)}
+                            </span>
+                            <span className="text-xs text-muted-foreground block">
+                              登録数：{r.count}
                             </span>
                           </div>
                         </Link>
