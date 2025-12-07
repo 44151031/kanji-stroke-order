@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import RankingWithTabs from "@/components/ranking/RankingWithTabs";
-import { generatePageMetadata, getRankingJsonLd, getRankingSeriesJsonLd } from "@/lib/metadata";
+import { generatePageMetadata } from "@/lib/metadata";
+import { getRankingJsonLd, getRankingSeriesJsonLd } from "@/lib/structuredData";
 import fallbackRanking from "@/data/fallbackRanking.json";
 
 // キャッシュ設定：1日1回更新

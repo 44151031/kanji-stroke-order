@@ -181,11 +181,6 @@ export default function Home() {
           部首別一覧
         </Link>
       </nav>
-
-      {/* フッター */}
-      <footer className="text-center text-sm text-muted-foreground pt-8 pb-8">
-        <p>常用漢字2136字の書き順データ：KanjiVG (CC BY-SA 3.0)</p>
-      </footer>
     </div>
   );
 }

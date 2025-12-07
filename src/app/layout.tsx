@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import MainNav from "@/components/layout/MainNav";
-import { siteMeta, getTopPageJsonLd } from "@/lib/metadata";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { siteMeta } from "@/lib/metadata";
+import { getTopPageJsonLd } from "@/lib/structuredData";
 
 const GA_MEASUREMENT_ID = "G-H99ZWGWW4E";
 
@@ -100,23 +102,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="min-h-screen antialiased bg-[#f8f7f2]">
-        <MainNav />
+        <Header />
         <main className="mx-auto max-w-[1200px] px-6 py-8">
           {children}
         </main>
-        {/* フッター */}
-        <footer className="text-center text-xs text-muted-foreground py-8 border-t border-border/50 mt-12">
-          <p className="mb-1">書き順データ：KanjiVG (CC BY-SA 3.0) | 意味データ：KANJIDIC2 (© EDRDG) | 語彙辞書：UniDic (MIT License)</p>
-          <p>© 2024 {siteMeta.siteName}</p>
-          <p className="mt-4 space-x-4">
-            <a href="/operation" className="underline text-muted-foreground hover:text-foreground">
-              運営管理
-            </a>
-            <a href="/terms" className="underline text-muted-foreground hover:text-foreground">
-              利用規約
-            </a>
-          </p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

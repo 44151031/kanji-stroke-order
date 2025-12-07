@@ -219,12 +219,6 @@ export default async function ListPage({ params }: Props) {
           部首別一覧 →
         </Link>
       </div>
-
-      {/* フッター */}
-      <footer className="text-center text-xs text-muted-foreground pt-8 space-y-1">
-        <p>書き順データ：KanjiVG (CC BY-SA 3.0)</p>
-        <p>読み・意味データ：KANJIDIC2 (© EDRDG)</p>
-      </footer>
     </div>
   );
 }

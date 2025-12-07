@@ -14,7 +14,7 @@ import { XShareButton } from "@/components/common/XShareButton";
 import KanjiModeToggle from "@/components/common/KanjiModeToggle";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
-import { getKanjiItemJsonLd } from "@/lib/metadata";
+import { getKanjiItemJsonLd, getKanjiDefinedTermJsonLd } from "@/lib/structuredData";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -193,61 +193,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// JSON-LD 構造化データ（schema.org/DefinedTerm）
-function generateJsonLd(detail: KanjiDetail, words: WordEntry[]) {
-  const siteUrl = "https://kanji-stroke-order.com";
-  const gradeLabel = detail.grade <= 6 ? `小学${detail.grade}年生` : "中学校";
-  const canonicalSlug = toUnicodeSlug(detail.kanji);
-  
-  return {
-    "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    "@id": `${siteUrl}/kanji/${canonicalSlug}`,
-    name: detail.kanji,
-    description: `${detail.kanji}の書き順・読み方・意味`,
-    inDefinedTermSet: `${siteUrl}/kanji/${canonicalSlug}`,
-    termCode: `ucs:${detail.ucsHex}`,
-    alternateName: [...detail.on, ...detail.kun],
-    additionalProperty: [
-      {
-        "@type": "PropertyValue",
-        name: "strokes",
-        value: detail.strokes,
-      },
-      {
-        "@type": "PropertyValue",
-        name: "grade",
-        value: detail.grade,
-      },
-      ...(detail.jlpt ? [{
-        "@type": "PropertyValue",
-        name: "jlpt",
-        value: detail.jlpt,
-      }] : []),
-      {
-        "@type": "PropertyValue",
-        name: "音読み",
-        value: detail.on.join("、"),
-      },
-      {
-        "@type": "PropertyValue",
-        name: "訓読み",
-        value: detail.kun.join("、"),
-      },
-      {
-        "@type": "PropertyValue",
-        name: "学年",
-        value: gradeLabel,
-      },
-    ],
-    hasPart: words.slice(0, 10).map((w) => ({
-      "@type": "DefinedTerm",
-      name: w.word,
-      alternateName: w.reading,
-      description: w.meaning,
-    })),
-  };
-}
 
 // 関連漢字を取得（同一学年・同一画数から決定論的に選択）
 function getRelatedKanji(detail: KanjiDetail, dictionary: KanjiDetail[]): KanjiDetail[] {
@@ -308,7 +253,21 @@ export default async function KanjiPage({ params }: Props) {
   }
 
   const relatedKanji = getRelatedKanji(detail, dictionary);
-  const jsonLd = generateJsonLd(detail, words);
+  const jsonLd = getKanjiDefinedTermJsonLd({
+    kanji: detail.kanji,
+    ucsHex: detail.ucsHex,
+    on: detail.on,
+    kun: detail.kun,
+    strokes: detail.strokes,
+    grade: detail.grade,
+    jlpt: detail.jlpt,
+    words: words.map((w) => ({
+      word: w.word,
+      reading: w.reading,
+      meaning: w.meaning,
+    })),
+    canonicalSlug: toUnicodeSlug(detail.kanji),
+  });
   
   // ランキング位置を取得（同期版を使用）
   const rankingPosition = getRankingPositionSync(kanji);
@@ -529,12 +488,6 @@ export default async function KanjiPage({ params }: Props) {
         <div className="mt-8 flex justify-center">
           <XShareButton kanji={detail.kanji} />
         </div>
-
-        {/* フッター */}
-        <footer className="text-center text-xs text-muted-foreground pt-8 space-y-1">
-          <p>書き順データ：KanjiVG (CC BY-SA 3.0)</p>
-          <p>読み・意味データ：KANJIDIC2 (© EDRDG)</p>
-        </footer>
       </div>
     </>
   );

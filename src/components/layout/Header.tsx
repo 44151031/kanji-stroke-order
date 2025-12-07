@@ -1,12 +1,3 @@
-/**
- * ⚠️ このファイルは Header.tsx に移行済みです。
- * 
- * 新規実装では /components/layout/Header.tsx を使用してください。
- * このファイルは後方互換性のため残していますが、削除予定です。
- * 
- * @deprecated Header.tsx を使用してください
- */
-
 "use client";
 
 import Link from "next/link";
@@ -25,7 +16,7 @@ const navItems = [
   { href: "/search", label: "検索", emoji: "🔍" },
 ];
 
-export default function MainNav() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();

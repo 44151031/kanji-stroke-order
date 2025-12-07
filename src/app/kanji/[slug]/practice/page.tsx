@@ -14,7 +14,8 @@ import KanjiModeToggle from "@/components/common/KanjiModeToggle";
 import StrokePracticeCanvas from "@/components/kanji/StrokePracticeCanvas";
 import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
-import { getKanjiItemJsonLd, getKanjiPracticeJsonLd, generateKanjiPracticeMetadata } from "@/lib/metadata";
+import { generateKanjiPracticeMetadata } from "@/lib/metadata";
+import { getKanjiItemJsonLd, getKanjiPracticeJsonLd } from "@/lib/structuredData";
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
 
@@ -336,11 +337,6 @@ export default async function PracticePage({ params }: Props) {
         <div className="mt-8 flex justify-center">
           <XShareButton kanji={detail.kanji} />
         </div>
-
-        <footer className="text-center text-xs text-muted-foreground pt-8 space-y-1">
-          <p>書き順データ：KanjiVG (CC BY-SA 3.0)</p>
-          <p>読み・意味データ：KANJIDIC2 (© EDRDG)</p>
-        </footer>
       </div>
     </>
   );

@@ -2,27 +2,11 @@
 // 🧭 共通サイトメタ情報
 // ============================================
 import { Metadata } from "next";
+import { siteMeta } from "@/lib/siteMeta";
+import { getKanjiJsonLd } from "@/lib/structuredData";
 
-export const siteMeta = {
-  title: "漢字書き順ナビ",
-  description:
-    "正しい漢字の書き順・画数・部首・読み方をわかりやすく解説。入試・学習・教育現場で役立つ漢字辞典サイト。",
-  url: "https://kanji-stroke-order.com",
-  siteName: "漢字書き順ナビ",
-  siteNameEn: "Kanji Stroke Order Navi",
-  descriptionEn:
-    "Learn correct Japanese kanji stroke order, meanings, and radicals with step-by-step animations.",
-  alternateNames: ["Kanji Stroke Order", "Kanji Stroke Order Navi"],
-  author: "漢字書き順ナビ",
-  publisher: "漢字書き順ナビ",
-  locale: "ja_JP",
-  image: "/ogp.png",
-  imageWidth: 1200,
-  imageHeight: 630,
-  twitterCard: "summary_large_image" as const,
-  twitterCreator: "@kanji_stroke_order", // Twitterアカウント（未登録の場合は空文字可）
-  logo: "/ogp.png",
-};
+// siteMeta を re-export（後方互換性のため）
+export { siteMeta };
 
 // ============================================
 // ⚙️ ユーティリティ
@@ -71,61 +55,23 @@ export function generateTopPageMetadata(): Metadata {
   };
 }
 
-/**
- * トップページ構造化データ
- * （WebSite / Organization / WebPage）
- */
-export function getTopPageJsonLd() {
-  const { url, siteName, description, logo, alternateNames } = siteMeta;
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${url}/#website`,
-        url,
-        name: siteName,
-        alternateName: alternateNames,
-        description,
-        inLanguage: "ja-JP",
-        publisher: { "@id": `${url}/#organization` },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${url}/search?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
-        sameAs: ["https://x.com/kanji_stroke_order"],
-      },
-      {
-        "@type": "Organization",
-        "@id": `${url}/#organization`,
-        name: siteName,
-        alternateName: alternateNames,
-        url,
-        logo: {
-          "@type": "ImageObject",
-          url: `${url}${logo}`,
-          width: 1200,
-          height: 630,
-        },
-        sameAs: ["https://x.com/kanji_stroke_order"],
-      },
-      {
-        "@type": ["WebPage", "CollectionPage"],
-        "@id": `${url}/#webpage`,
-        url,
-        name: siteName,
-        alternateName: alternateNames,
-        isPartOf: { "@id": `${url}/#website` },
-        description,
-        inLanguage: "ja-JP",
-      },
-    ],
-  };
-}
+// ============================================
+// 📊 構造化データ（JSON-LD）の re-export
+// ============================================
+// 構造化データ関数は @/lib/structuredData に集約されています
+// 後方互換性のため、ここから re-export します
+export {
+  getTopPageJsonLd,
+  getKanjiJsonLd,
+  getKanjiPracticeJsonLd,
+  getRankingJsonLd,
+  getRankingSeriesJsonLd,
+  getKanjiItemJsonLd,
+  getArticleJsonLd,
+  getKanjiDefinedTermJsonLd,
+  type RankingEntry,
+  type RankingPosition,
+} from "@/lib/structuredData";
 
 // ============================================
 // 🈶 漢字ページメタデータ＆構造化データ
@@ -190,38 +136,6 @@ export function generateKanjiMetadata(
   };
 }
 
-/**
- * 漢字ページ構造化データ（JSON-LD）
- */
-export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) {
-  const hex = toKanjiHex(kanji);
-  const { url, siteName } = siteMeta;
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: `${kanji} の書き順`,
-    alternateName: "漢字書き順ナビ",
-    description: `${kanji}（${meaning}）の正しい書き順・画数・部首・読み方を解説します。`,
-    inLanguage: "ja",
-    url: `${url}/kanji/u${hex}`,
-    keywords: "書き順,漢字,筆順,部首,画数",
-    additionalType: "https://schema.org/EducationalOccupationalCredential",
-    contentRating: "G",
-    usageInfo: `${strokes}画`,
-    license: "https://creativecommons.org/licenses/by-sa/3.0/",
-    copyrightHolder: {
-      "@type": "Organization",
-      name: siteName,
-      url: url,
-    },
-    about: [
-      { "@type": "Thing", name: "漢字" },
-      { "@type": "Thing", name: "書き順" },
-      { "@type": "Thing", name: "筆順" },
-    ],
-  };
-}
 
 // ============================================
 // ✍️ 書き取りテストモード メタデータ
@@ -284,79 +198,6 @@ export function generateKanjiPracticeMetadata(
   };
 }
 
-// ============================================
-// 🧩 書き取りテストモード用構造化データ（新規追加）
-// ============================================
-/**
- * 書き取りテストモード専用のJSON-LD構造化データ
- * schema.org: ExercisePlan を利用し、学習・トレーニング系ページとして認識させる
- */
-export function getKanjiPracticeJsonLd(
-  kanji: string,
-  meaning: string,
-  strokes: number
-) {
-  const hex = toKanjiHex(kanji);
-  // 🩵 ここを修正：siteMetaを別名で扱う
-  const meta = siteMeta;
-
-  const practiceUrl = `${meta.url}/kanji/u${hex}/practice`;
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "ExercisePlan",
-    name: `${kanji} の書き取り練習`,
-    alternateName: `${kanji} の筆順テスト`,
-    description: `${kanji}（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら学習できます。`,
-    url: practiceUrl,
-    inLanguage: "ja",
-    audience: {
-      "@type": "EducationalAudience",
-      educationalRole: ["student", "teacher", "selfLearner"],
-    },
-    exerciseType: "handwriting",
-    activityDuration: "PT5M",
-    intensity: "Low",
-    mainEntityOfPage: practiceUrl,
-    image: `${meta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
-    isPartOf: {
-      "@type": "CreativeWorkSeries",
-      name: "漢字書き順ナビ 書き取り練習シリーズ",
-      url: `${meta.url}/practice`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: meta.siteName,
-      url: meta.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${meta.url}${meta.logo}`,
-        width: meta.imageWidth,
-        height: meta.imageHeight,
-      },
-    },
-    potentialAction: {
-      "@type": "ExerciseAction",
-      name: "漢字書き取りテストを開始する",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${practiceUrl}?start=true`,
-      },
-      result: {
-        "@type": "Rating",
-        bestRating: 100,
-        worstRating: 0,
-        ratingValue: "ユーザーの書き取りスコア（Supabaseで管理）",
-      },
-    },
-    about: [
-      { "@type": "Thing", name: "漢字" },
-      { "@type": "Thing", name: "書き順" },
-      { "@type": "Thing", name: "練習" },
-      { "@type": "Thing", name: "筆順テスト" },
-    ],
-  };
-}
 // ============================================
 // 📄 汎用ページ用メタデータ生成
 // ============================================
@@ -483,170 +324,3 @@ export function generateKanjiMetaWithJsonLd(
   };
 }
 
-// ============================================
-// 📊 ランキングページ用構造化データ
-// ============================================
-/**
- * ランキングエントリの型定義
- */
-export interface RankingEntry {
-  kanji: string;
-  views: number;
-  hex?: string;
-}
-
-/**
- * ランキングページ用構造化データ（ItemList）
- */
-export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = "") {
-  const { url, siteName } = siteMeta;
-  
-  // hexがない場合は生成
-  const rankingWithHex = ranking.map((item) => ({
-    ...item,
-    hex: item.hex || toKanjiHex(item.kanji),
-  }));
-
-  const name = periodLabel
-    ? `人気の漢字ランキング（${periodLabel}）`
-    : "人気の漢字ランキング";
-  
-  const description = periodLabel
-    ? `${siteName}内で最も閲覧された人気の漢字ランキング。${periodLabel}のトップ${ranking.length}漢字を掲載。`
-    : `${siteName}内で最も閲覧された人気の漢字ランキング。トップ${ranking.length}漢字を掲載。`;
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name,
-    description,
-    url: `${url}/ranking`,
-    numberOfItems: ranking.length,
-    itemListElement: rankingWithHex.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.kanji,
-      url: `${url}/kanji/u${item.hex}`,
-    })),
-    isPartOf: {
-      "@type": "CreativeWorkSeries",
-      name: "人気の漢字ランキング",
-      url: `${url}/ranking`,
-    },
-    inLanguage: "ja",
-  };
-}
-
-/**
- * ランキングシリーズ用構造化データ（CreativeWorkSeries）
- */
-export function getRankingSeriesJsonLd() {
-  const { url, siteName } = siteMeta;
-  return {
-    "@context": "https://schema.org",
-    "@type": "CreativeWorkSeries",
-    name: "人気の漢字ランキングシリーズ",
-    description:
-      "閲覧数・検索数を基にした人気漢字ランキングシリーズ（週・月・半年）。",
-    url: `${url}/ranking`,
-    creator: {
-      "@type": "Organization",
-      name: siteName,
-      url,
-    },
-    inLanguage: "ja",
-  };
-}
-
-// ============================================
-// 🈶 漢字ページ用構造化データ（ランキング連携版）
-// ============================================
-/**
- * ランキング位置情報の型定義
- */
-export interface RankingPosition {
-  position: number;
-  period?: string;
-  views?: number;
-}
-
-/**
- * 漢字ページ構造化データ（Item + ItemList参照）
- * ランキング情報と連携して、各漢字をランキング構造の一部として認識させる
- */
-export function getKanjiItemJsonLd(
-  kanji: string,
-  meaning: string,
-  strokes: number,
-  rankingData: RankingPosition | null = null
-) {
-  const { url, siteName } = siteMeta;
-  const hex = toKanjiHex(kanji);
-  const kanjiUrl = `${url}/kanji/u${hex}`;
-  
-  // 意味は配列の場合は結合、文字列の場合はそのまま使用
-  const meaningText = Array.isArray(meaning)
-    ? meaning.filter(Boolean).join(", ")
-    : typeof meaning === "string"
-    ? meaning
-    : "";
-
-  // ランキング情報があれば構造化データに含める
-  const itemListElement =
-    rankingData?.position != null
-      ? {
-          "@type": "ListItem",
-          position: rankingData.position,
-          name: kanji,
-          url: kanjiUrl,
-        }
-      : null;
-
-  const jsonLd: any = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "CreativeWork",
-        "@id": `${kanjiUrl}#item`,
-        name: kanji,
-        alternateName: meaningText,
-        description: `${kanji}（${meaningText}）の正しい書き順・画数・部首・読み方を解説します。`,
-        inLanguage: "ja",
-        url: kanjiUrl,
-        mainEntityOfPage: kanjiUrl,
-        publisher: {
-          "@type": "Organization",
-          name: siteName,
-          url,
-        },
-        educationalLevel: "Beginner",
-        genre: "Kanji Stroke Order",
-        keywords: ["漢字", "書き順", "筆順", "stroke order", kanji, meaningText],
-        isPartOf: {
-          "@type": "CreativeWorkSeries",
-          name: "人気の漢字ランキングシリーズ",
-          url: `${url}/ranking`,
-        },
-      },
-    ],
-  };
-
-  // ランキング情報がある場合は、ItemListとしても認識させる
-  if (itemListElement) {
-    jsonLd["@graph"][0].itemListElement = itemListElement;
-    jsonLd["@graph"][0].isPartOf = [
-      {
-        "@type": "CreativeWorkSeries",
-        name: "人気の漢字ランキングシリーズ",
-        url: `${url}/ranking`,
-      },
-      {
-        "@type": "ItemList",
-        name: "人気の漢字ランキング",
-        url: `${url}/ranking`,
-      },
-    ];
-  }
-
-  return jsonLd;
-}
