@@ -226,11 +226,6 @@ export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) 
 // ============================================
 // ✍️ 書き取りテストモード メタデータ
 // ============================================
-
-import type { Metadata } from "next";
-import { toKanjiHex } from "@/lib/kanjiUtils";
-import { siteMeta, baseMeta } from "@/lib/siteMeta";
-
 /**
  * 漢字書き取りテストモード用のメタデータ
  */
@@ -302,9 +297,10 @@ export function getKanjiPracticeJsonLd(
   strokes: number
 ) {
   const hex = toKanjiHex(kanji);
-  const { url, siteName } = siteMeta;
+  // 🩵 ここを修正：siteMetaを別名で扱う
+  const meta = siteMeta;
 
-  const practiceUrl = `${url}/kanji/u${hex}/practice`;
+  const practiceUrl = `${meta.url}/kanji/u${hex}/practice`;
 
   return {
     "@context": "https://schema.org",
@@ -322,21 +318,21 @@ export function getKanjiPracticeJsonLd(
     activityDuration: "PT5M",
     intensity: "Low",
     mainEntityOfPage: practiceUrl,
-    image: `${url}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
+    image: `${meta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
     isPartOf: {
       "@type": "CreativeWorkSeries",
       name: "漢字書き順ナビ 書き取り練習シリーズ",
-      url: `${url}/practice`,
+      url: `${meta.url}/practice`,
     },
     publisher: {
       "@type": "Organization",
-      name: siteName,
-      url,
+      name: meta.siteName,
+      url: meta.url,
       logo: {
         "@type": "ImageObject",
-        url: `${url}${siteMeta.logo}`,
-        width: siteMeta.imageWidth,
-        height: siteMeta.imageHeight,
+        url: `${meta.url}${meta.logo}`,
+        width: meta.imageWidth,
+        height: meta.imageHeight,
       },
     },
     potentialAction: {
