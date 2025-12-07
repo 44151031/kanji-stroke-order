@@ -15,6 +15,7 @@ import StrokePracticeCanvas from "@/components/kanji/StrokePracticeCanvas";
 import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd } from "@/lib/metadata";
+import { getKanjiPracticeJsonLd } from "@/lib/metadata";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -107,7 +108,7 @@ function loadKanjiMaster(): Map<string, MasterKanji> {
 // SSG: 静的パラメータ生成（uXXXX形式のみ）
 export async function generateStaticParams() {
   const joyoList = loadKanjiJoyo();
-  
+
   // 全漢字を uXXXX 形式で生成
   return joyoList.map((k) => ({
     slug: toUnicodeSlug(k.kanji),
@@ -119,13 +120,13 @@ type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  
+
   // uXXXX形式から漢字を取得
   const kanji = fromUnicodeSlug(slug);
   if (!kanji) {
     return { title: "書き取りテスト - 漢字書き順ナビ" };
   }
-  
+
   const detail = loadKanjiDetail(kanji);
   if (!detail) {
     return { title: "書き取りテスト - 漢字書き順ナビ" };
@@ -157,7 +158,7 @@ function generateJsonLd(detail: KanjiDetail, words: WordEntry[]) {
   const siteUrl = "https://kanji-stroke-order.com";
   const gradeLabel = detail.grade <= 6 ? `小学${detail.grade}年生` : "中学校";
   const canonicalSlug = toUnicodeSlug(detail.kanji);
-  
+
   return {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
@@ -214,36 +215,36 @@ function getRelatedKanji(detail: KanjiDetail, dictionary: KanjiDetail[]): KanjiD
   const sameGrade = dictionary.filter(
     (k) => k.grade === detail.grade && k.kanji !== detail.kanji
   );
-  
+
   // 同一画数の漢字
   const sameStrokes = dictionary.filter(
     (k) => k.strokes === detail.strokes && k.kanji !== detail.kanji
   );
-  
+
   // 重複を除去してマージ
   const combined = [...sameGrade, ...sameStrokes]
     .filter((k, i, arr) => arr.findIndex((x) => x.kanji === k.kanji) === i);
-  
+
   // 頻度順にソート（決定論的）
   combined.sort((a, b) => (a.freq || 9999) - (b.freq || 9999));
-  
+
   return combined.slice(0, 10);
 }
 
 export default async function PracticePage({ params }: Props) {
   const { slug } = await params;
-  
+
   // uXXXX形式から漢字を取得
   const kanji = fromUnicodeSlug(slug);
-  
+
   // 無効なスラッグの場合は404
   if (!kanji) {
     notFound();
   }
-  
+
   // 漢字詳細を取得
   const detail = loadKanjiDetail(kanji);
-  
+
   // 詳細が見つからない場合は404
   if (!detail) {
     notFound();
@@ -252,13 +253,13 @@ export default async function PracticePage({ params }: Props) {
   // 辞書と単語リストを読み込み（エラーハンドリング付き）
   let dictionary: KanjiDetail[] = [];
   let words: WordEntry[] = [];
-  
+
   try {
     dictionary = loadKanjiDictionary();
   } catch {
     // 辞書読み込み失敗時は空配列
   }
-  
+
   try {
     const wordsByKanji = loadWordsByKanji();
     words = wordsByKanji[kanji] || [];
@@ -268,45 +269,53 @@ export default async function PracticePage({ params }: Props) {
 
   const relatedKanji = getRelatedKanji(detail, dictionary);
   const jsonLd = generateJsonLd(detail, words);
-  
+
   // ランキング位置を取得（同期版を使用）
   const rankingPosition = getRankingPositionSync(kanji);
-  
+
   // ランキング連携構造化データを生成
   const meaningText = Array.isArray(detail.meaning)
     ? detail.meaning.filter(Boolean).join(", ")
     : typeof detail.meaning === "string"
-    ? detail.meaning
-    : "";
+      ? detail.meaning
+      : "";
   const itemJsonLd = getKanjiItemJsonLd(kanji, meaningText, detail.strokes, rankingPosition);
-  
+
   // マスターデータからカテゴリ情報を取得
   const kanjiMaster = loadKanjiMaster();
   const masterEntry = kanjiMaster.get(kanji);
   const categories = masterEntry?.category || [];
   const confusedWith = masterEntry?.confusedWith || [];
 
-  const gradeLabel = detail.grade <= 6 
-    ? `小学${detail.grade}年生` 
+  const gradeLabel = detail.grade <= 6
+    ? `小学${detail.grade}年生`
     : "中学校";
 
   return (
     <>
       {/* アクセス記録（Supabase） */}
       <KanjiViewTracker kanji={kanji} />
-      
+
       {/* 構造化データ（JSON-LD） - DefinedTerm */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
+
       {/* 構造化データ（JSON-LD） - CreativeWork + ItemList（ランキング連携） */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemJsonLd) }}
       />
-      
+
+      {/* 構造化データ（JSON-LD） - ExercisePlan（書き取り練習専用） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getKanjiPracticeJsonLd(kanji, meaningText, detail.strokes)),
+        }}
+      />
+
       <div className="flex flex-col items-center gap-8">
         {/* モード切り替えトグル */}
         <KanjiModeToggle kanji={kanji} />
@@ -465,19 +474,19 @@ export default async function PracticePage({ params }: Props) {
                 ))}
               </div>
               <div className="flex justify-center gap-4 mt-4 text-sm flex-wrap">
-                <Link 
+                <Link
                   href={`/grade/${detail.grade}`}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {gradeLabel}の漢字 →
                 </Link>
-                <Link 
+                <Link
                   href={`/strokes/${detail.strokes}`}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {detail.strokes}画の漢字 →
                 </Link>
-                <Link 
+                <Link
                   href="/lists/exam"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >

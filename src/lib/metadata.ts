@@ -222,7 +222,78 @@ export function getKanjiJsonLd(kanji: string, meaning: string, strokes: number) 
     ],
   };
 }
+// ============================================
+// 🧩 書き取りテストモード用構造化データ（新規追加）
+// ============================================
+/**
+ * 書き取りテストモード専用のJSON-LD構造化データ
+ * schema.org: ExercisePlan を利用し、学習・トレーニング系ページとして認識させる
+ */
+export function getKanjiPracticeJsonLd(
+  kanji: string,
+  meaning: string,
+  strokes: number
+) {
+  const hex = toKanjiHex(kanji);
+  const { url, siteName } = siteMeta;
 
+  const practiceUrl = `${url}/kanji/u${hex}/practice`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ExercisePlan",
+    name: `${kanji} の書き取り練習`,
+    alternateName: `${kanji} の筆順テスト`,
+    description: `${kanji}（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら学習できます。`,
+    url: practiceUrl,
+    inLanguage: "ja",
+    audience: {
+      "@type": "EducationalAudience",
+      educationalRole: ["student", "teacher", "selfLearner"],
+    },
+    exerciseType: "handwriting",
+    activityDuration: "PT5M",
+    intensity: "Low",
+    mainEntityOfPage: practiceUrl,
+    image: `${url}/api/og-kanji?k=${encodeURIComponent(kanji)}`,
+    isPartOf: {
+      "@type": "CreativeWorkSeries",
+      name: "漢字書き順ナビ 書き取り練習シリーズ",
+      url: `${url}/practice`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${url}${siteMeta.logo}`,
+        width: siteMeta.imageWidth,
+        height: siteMeta.imageHeight,
+      },
+    },
+    potentialAction: {
+      "@type": "ExerciseAction",
+      name: "漢字書き取りテストを開始する",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${practiceUrl}?start=true`,
+      },
+      result: {
+        "@type": "Rating",
+        bestRating: 100,
+        worstRating: 0,
+        ratingValue: "ユーザーの書き取りスコア（Supabaseで管理）",
+      },
+    },
+    about: [
+      { "@type": "Thing", name: "漢字" },
+      { "@type": "Thing", name: "書き順" },
+      { "@type": "Thing", name: "練習" },
+      { "@type": "Thing", name: "筆順テスト" },
+    ],
+  };
+}
 // ============================================
 // 📄 汎用ページ用メタデータ生成
 // ============================================
