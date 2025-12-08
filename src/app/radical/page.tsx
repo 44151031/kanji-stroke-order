@@ -36,17 +36,49 @@ function loadKanjiMaster(): any[] {
 }
 
 // 部首ごとのJSONファイルから漢字リストを読み込み
-function loadRadicalKanjiList(slug: string): string[] {
-  const filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
-  if (!fs.existsSync(filePath)) {
-    return [];
+// 「・」を「-」に変換したスラッグと、元の「・」を含むファイル名の両方を試す
+function loadRadicalKanjiList(slug: string, originalEn?: string, type?: string): string[] {
+  // 1. まず生成されたスラッグで試す
+  let filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
+  if (fs.existsSync(filePath)) {
+    try {
+      const content = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(content);
+    } catch {
+      // JSON解析エラーは無視して次へ
+    }
   }
-  try {
-    const content = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(content);
-  } catch {
-    return [];
+  
+  // 2. 元の「・」を含むファイル名で試す（後方互換性のため）
+  if (originalEn) {
+    // 2-1. 元のenそのまま
+    if (originalEn.includes("・")) {
+      filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}.json`);
+      if (fs.existsSync(filePath)) {
+        try {
+          const content = fs.readFileSync(filePath, "utf8");
+          return JSON.parse(content);
+        } catch {
+          // JSON解析エラーは無視
+        }
+      }
+    }
+    
+    // 2-2. 元のen + type（{en}-{type}.json形式）
+    if (type && originalEn.includes("・")) {
+      filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}-${type}.json`);
+      if (fs.existsSync(filePath)) {
+        try {
+          const content = fs.readFileSync(filePath, "utf8");
+          return JSON.parse(content);
+        } catch {
+          // JSON解析エラーは無視
+        }
+      }
+    }
   }
+  
+  return [];
 }
 
 export default function RadicalIndexPage() {
@@ -59,7 +91,8 @@ export default function RadicalIndexPage() {
     const uniqueSlug = getUniqueSlug(r, counts);
     
     // data/radicals/{slug}.json からカウント（優先）
-    const radicalKanjiList = loadRadicalKanjiList(uniqueSlug);
+    // 元の「・」を含むファイル名も試す
+    const radicalKanjiList = loadRadicalKanjiList(uniqueSlug, r.en, r.type);
     let count = radicalKanjiList.length;
     
     // data/radicals/{slug}.json にデータがない場合のみ kanji_master.json からカウント
@@ -95,7 +128,27 @@ export default function RadicalIndexPage() {
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold mb-2">部首別漢字一覧</h1>
         <p className="text-lg text-gray-600 mb-1">部首から漢字を探す</p>
-        <p className="text-gray-500">{radicalList.length}種類の部首</p>
+        <p className="text-gray-500 mb-6">{radicalList.length}種類の部首</p>
+        
+        {/* 配置タイプ別のページ内リンク */}
+        <nav className="flex flex-wrap justify-center gap-3 mt-6">
+          {RADICAL_POSITION_TYPES.map((type) => {
+            const items = groupedRadicals[type];
+            if (!items || items.length === 0) return null;
+            const posInfo = POSITION_LABELS[type];
+            return (
+              <a
+                key={type}
+                href={`#${type}`}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition-colors text-sm font-medium shadow-sm"
+              >
+                <span>{posInfo.icon}</span>
+                <span>{posInfo.label}</span>
+                <span className="text-xs text-gray-500">({items.length})</span>
+              </a>
+            );
+          })}
+        </nav>
       </header>
 
       {/* 配置タイプごとのセクション */}
@@ -136,7 +189,7 @@ export default function RadicalIndexPage() {
                             </span>
                           )}
                           <div className="flex-1 min-w-0">
-                            <span className="font-medium block truncate">
+                            <span className="font-medium text-sm block truncate">
                               {formatRadicalName(r.jp, r.en)}
                             </span>
                             <span className="text-xs text-muted-foreground block">

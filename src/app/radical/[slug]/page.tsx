@@ -28,17 +28,49 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
 };
 
 // JSONファイルから漢字リストを読み込み
-function loadKanjiList(slug: string): string[] {
-  const filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
-  if (!fs.existsSync(filePath)) {
-    return [];
+// 「・」を「-」に変換したスラッグと、元の「・」を含むファイル名の両方を試す
+function loadKanjiList(slug: string, originalEn?: string, type?: string): string[] {
+  // 1. まず生成されたスラッグで試す
+  let filePath = path.join(process.cwd(), "data", "radicals", `${slug}.json`);
+  if (fs.existsSync(filePath)) {
+    try {
+      const content = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(content);
+    } catch {
+      // JSON解析エラーは無視して次へ
+    }
   }
-  try {
-    const content = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(content);
-  } catch {
-    return [];
+  
+  // 2. 元の「・」を含むファイル名で試す（後方互換性のため）
+  if (originalEn) {
+    // 2-1. 元のenそのまま
+    if (originalEn.includes("・")) {
+      filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}.json`);
+      if (fs.existsSync(filePath)) {
+        try {
+          const content = fs.readFileSync(filePath, "utf8");
+          return JSON.parse(content);
+        } catch {
+          // JSON解析エラーは無視
+        }
+      }
+    }
+    
+    // 2-2. 元のen + type（{en}-{type}.json形式）
+    if (type && originalEn.includes("・")) {
+      filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}-${type}.json`);
+      if (fs.existsSync(filePath)) {
+        try {
+          const content = fs.readFileSync(filePath, "utf8");
+          return JSON.parse(content);
+        } catch {
+          // JSON解析エラーは無視
+        }
+      }
+    }
   }
+  
+  return [];
 }
 
 // 静的パラメータ生成
@@ -77,8 +109,8 @@ export default async function RadicalDetailPage({ params }: Props) {
   const displayName = formatRadicalName(r.jp, r.en);
   const posInfo = POSITION_LABELS[r.type] || { label: "その他", labelEn: "Other" };
   
-  // 漢字リストを読み込み
-  const kanjiList = loadKanjiList(slug);
+  // 漢字リストを読み込み（元の「・」を含むファイル名も試す）
+  const kanjiList = loadKanjiList(slug, r.en, r.type);
 
   // 同じ配置タイプの他の部首
   const relatedRadicals = radicalList

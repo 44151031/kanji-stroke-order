@@ -51,38 +51,64 @@ export const buildSlugIndex = (list: Radical[]) => {
   return counts;
 };
 
+/**
+ * URL用スラッグに変換: 「・」を「-」に変換
+ */
+const slugify = (str: string): string => {
+  return str.replace(/・/g, "-");
+};
+
 export const getUniqueSlug = (r: Radical, counts: Map<string, number>) => {
+  const enSlug = slugify(r.en);
   const duplicated = (counts.get(r.en) ?? 0) > 1;
-  return duplicated ? `${r.en}-${r.type}` : r.en;
+  return duplicated ? `${enSlug}-${r.type}` : enSlug;
 };
 
 /**
  * URL から検索するための正規化:
  *  - 末尾に "-{type}" が付いていても取り外して一致判定できるようにする
+ *  - 「・」を「-」に変換（URL互換性のため）
  */
 export const normalizeSlug = (slug: string) => {
-  const pos = RADICAL_POSITION_TYPES.find((t) => slug.endsWith(`-${t}`));
-  return pos ? slug.slice(0, -1 * (`-${pos}`).length) : slug;
+  // まず「・」を「-」に変換
+  const normalized = slugify(slug);
+  const pos = RADICAL_POSITION_TYPES.find((t) => normalized.endsWith(`-${t}`));
+  return pos ? normalized.slice(0, -1 * (`-${pos}`).length) : normalized;
 };
 
 export const findRadicalBySlug = (slug: string, list: Radical[]) => {
+  const counts = buildSlugIndex(list);
+  // スラッグの「・」を「-」に変換（URL互換性のため）
+  const normalizedSlug = slugify(slug);
+  
   // 1. まず完全一致で検索（新しいURL形式: daigashi-top-radical）
   let found = list.find((r) => {
-    const uniqueSlug = getUniqueSlug(r, buildSlugIndex(list));
+    const uniqueSlug = getUniqueSlug(r, counts);
+    return uniqueSlug === normalizedSlug;
+  });
+  if (found) return found;
+  
+  // 2. 元のスラッグ（「・」を含む可能性）で検索（後方互換性のため）
+  found = list.find((r) => {
+    const uniqueSlug = getUniqueSlug(r, counts);
     return uniqueSlug === slug;
   });
   if (found) return found;
   
-  // 2. en フィールドと完全一致するか確認
-  found = list.find((r) => r.en === slug);
+  // 3. en フィールドと完全一致するか確認（「・」を含む場合も）
+  found = list.find((r) => r.en === slug || slugify(r.en) === normalizedSlug);
   if (found) return found;
   
-  // 3. 正規化して検索（既存URL形式: speech-radical → speech）
-  const base = normalizeSlug(slug);
-  found = list.find((r) => r.en === base);
+  // 4. 正規化して検索（既存URL形式: speech-radical → speech）
+  const base = normalizeSlug(normalizedSlug);
+  found = list.find((r) => {
+    const normalizedEn = slugify(r.en);
+    return normalizedEn === base;
+  });
   if (found) return found;
   
-  // 4. en フィールドを正規化して比較（互換性のため）
+  // 5. en フィールドを正規化して比較（互換性のため）
+  // 既存URL: /radical/speech のような場合、en フィールドが speech-radical のものを探す
   found = list.find((r) => {
     const normalizedEn = normalizeSlug(r.en);
     return normalizedEn === base;
