@@ -160,7 +160,7 @@ export default function RadicalIndexPage() {
           const posInfo = POSITION_LABELS[type];
           
           return (
-            <section key={type} id={type} className="scroll-mt-8">
+            <section key={type} id={type} className="scroll-mt-20">
               <div className="border rounded-2xl overflow-hidden">
                 <header className="bg-gray-50 px-4 py-3 border-b">
                   <h2 className="text-lg font-bold flex items-center gap-2">
