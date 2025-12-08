@@ -14,6 +14,7 @@ import radicalList, {
   formatRadicalName,
   getEnglishDisplayName,
 } from "@/lib/radicalList";
+import { getRadicalGlyphBySlug } from "@/data/radicals/radicalGlyphMap";
 
 // 配置タイプのラベル定義
 const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
@@ -112,9 +113,14 @@ export default async function RadicalDetailPage({ params }: Props) {
   // 漢字リストを読み込み（元の「・」を含むファイル名も試す）
   const kanjiList = loadKanjiList(slug, r.en, r.type);
 
-  // 同じ配置タイプの他の部首
+  // 同じ配置タイプの他の部首（カウント付き）
   const relatedRadicals = radicalList
     .filter((rad) => rad.type === r.type && rad.en !== r.en)
+    .map((rad) => {
+      const radSlug = getUniqueSlug(rad, counts);
+      const radKanjiList = loadKanjiList(radSlug, rad.en, rad.type);
+      return { ...rad, count: radKanjiList.length };
+    })
     .slice(0, 6);
 
   return (
@@ -181,20 +187,24 @@ export default async function RadicalDetailPage({ params }: Props) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
             {relatedRadicals.map((rad) => {
               const radSlug = getUniqueSlug(rad, counts);
+              const glyph = getRadicalGlyphBySlug(rad.en, rad.root);
               return (
                 <Link
                   key={rad.en}
                   href={`/radical/${radSlug}`}
-                  className="flex items-center gap-3 p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
+                  className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
                 >
-                  {rad.root && (
-                    <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
-                      {rad.root}
-                    </span>
-                  )}
-                  <span className="font-medium text-sm">
-                    {formatRadicalName(rad.jp, rad.en)}
+                  <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
+                    {glyph}
                   </span>
+                  <div className="flex-1 min-w-0">
+                    <span className="font-medium text-sm block truncate">
+                      {formatRadicalName(rad.jp, rad.en)}
+                    </span>
+                    <span className="text-xs text-muted-foreground block">
+                      登録数：{rad.count}
+                    </span>
+                  </div>
                 </Link>
               );
             })}

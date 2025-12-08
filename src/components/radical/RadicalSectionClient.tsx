@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Radical, getUniqueSlug, formatRadicalName, buildSlugIndex } from "@/lib/radicalList";
+import { getRadicalGlyphBySlug } from "@/data/radicals/radicalGlyphMap";
 
 type RadicalWithCount = Radical & { count: number };
 
@@ -29,17 +30,16 @@ export default function RadicalSectionClient({ items, counts }: Props) {
         <div className="hidden md:contents">
           {items.map((r) => {
             const uniqueSlug = getUniqueSlug(r, counts);
+            const glyph = getRadicalGlyphBySlug(r.en, r.root);
             return (
               <Link
                 key={`${r.en}-${r.type}`}
                 href={`/radical/${uniqueSlug}`}
                 className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
               >
-                {r.root && (
-                  <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
-                    {r.root}
-                  </span>
-                )}
+                <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
+                  {glyph}
+                </span>
                 <div className="flex-1 min-w-0">
                   <span className="font-medium text-sm block truncate">
                     {formatRadicalName(r.jp, r.en)}
@@ -57,17 +57,16 @@ export default function RadicalSectionClient({ items, counts }: Props) {
         <div className="md:hidden contents">
           {visibleItems.map((r) => {
             const uniqueSlug = getUniqueSlug(r, counts);
+            const glyph = getRadicalGlyphBySlug(r.en, r.root);
             return (
               <Link
                 key={`${r.en}-${r.type}`}
                 href={`/radical/${uniqueSlug}`}
                 className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
               >
-                {r.root && (
-                  <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
-                    {r.root}
-                  </span>
-                )}
+                <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
+                  {glyph}
+                </span>
                 <div className="flex-1 min-w-0">
                   <span className="font-medium text-sm block truncate">
                     {formatRadicalName(r.jp, r.en)}

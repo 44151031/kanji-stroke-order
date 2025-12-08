@@ -6,6 +6,124 @@
 import * as fs from "fs";
 import * as path from "path";
 
+// スクリプト実行時は相対パスでimport
+const toRadicalSlug = (enName: string): string => {
+  const EN_TO_SLUG: Record<string, string> = {
+    Water: "water-radical",
+    Person: "person-radical",
+    Hand: "hand-radical",
+    Word: "word-radical",
+    Speech: "speech-radical",
+    Say: "word-radical",
+    Heart: "heart-radical",
+    Fire: "fire-radical",
+    Grass: "grass-radical",
+    Knife: "knife-radical",
+    Sword: "knife-radical",
+    Dog: "dog-radical",
+    Walk: "movement-radical",
+    Road: "movement-radical",
+    Movement: "movement-radical",
+    Roof: "roof-radical",
+    Enclosure: "enclosure-radical",
+    Cliff: "cliff-radical",
+    Hill: "hill-radical",
+    Metal: "metal-radical",
+    Gold: "metal-radical",
+    Jade: "jade-radical",
+    Earth: "earth-radical",
+    Sun: "sun-radical",
+    Moon: "moon-radical",
+    Rain: "rain-radical",
+    Tree: "tree-radical",
+    Thread: "thread-radical",
+    Silk: "thread-radical",
+    Eye: "eye-radical",
+    Foot: "foot-radical",
+    Mountain: "mountain-radical",
+    Mouth: "mouth-radical",
+    Stone: "stone-radical",
+    Shell: "shell-radical",
+    Bird: "bird-radical",
+    Horse: "horse-radical",
+    Fish: "fish-radical",
+    Cow: "cow-radical",
+    Sheep: "sheep-radical",
+    Woman: "woman-radical",
+    Child: "child-radical",
+    Rice: "rice-radical",
+    Clothes: "clothes-radical",
+    Food: "food-radical",
+    Eat: "food-radical",
+    Bow: "bow-radical",
+    Car: "car-radical",
+    Cart: "car-radical",
+    Boat: "boat-radical",
+    Ship: "boat-radical",
+    Bone: "bone-radical",
+    Spirit: "spirit-radical",
+    Altar: "spirit-radical",
+    Wind: "wind-radical",
+    Sound: "sound-radical",
+    Music: "sound-radical",
+    Color: "color-radical",
+  };
+  return EN_TO_SLUG[enName] ?? `${enName}`.trim().toLowerCase().replace(/\s+/g, "-");
+};
+
+const getRadicalGlyphBySlug = (slug: string, fallback?: string): string => {
+  const radicalGlyphMap: Record<string, string> = {
+    "water-radical": "氵",
+    "hand-radical": "扌",
+    "person-radical": "亻",
+    "word-radical": "訁",
+    "speech-radical": "訁",
+    "heart-radical": "忄",
+    "fire-radical": "灬",
+    "grass-radical": "艹",
+    "knife-radical": "刂",
+    "dog-radical": "犭",
+    "movement-radical": "辶",
+    "roof-radical": "宀",
+    "enclosure-radical": "囗",
+    "cliff-radical": "厂",
+    "hill-radical": "阝",
+    "metal-radical": "釒",
+    "jade-radical": "玉",
+    "earth-radical": "土",
+    "sun-radical": "日",
+    "moon-radical": "月",
+    "rain-radical": "⻗",
+    "tree-radical": "木",
+    "thread-radical": "糸",
+    "eye-radical": "目",
+    "foot-radical": "足",
+    "mountain-radical": "山",
+    "mouth-radical": "口",
+    "stone-radical": "石",
+    "shell-radical": "貝",
+    "bird-radical": "鳥",
+    "horse-radical": "馬",
+    "fish-radical": "魚",
+    "cow-radical": "牛",
+    "sheep-radical": "羊",
+    "woman-radical": "女",
+    "child-radical": "子",
+    "rice-radical": "米",
+    "clothes-radical": "衣",
+    "food-radical": "食",
+    "bow-radical": "弓",
+    "car-radical": "車",
+    "boat-radical": "舟",
+    "bone-radical": "骨",
+    "spirit-radical": "示",
+    "wind-radical": "風",
+    "sound-radical": "音",
+    "color-radical": "色",
+  };
+  return radicalGlyphMap[slug] ?? fallback ?? "?";
+};
+
 interface KanjiDetail {
   kanji: string;
   radicals?: string[];
@@ -18,6 +136,9 @@ interface RadicalBilingual {
   radical_name_ja: string;
   description_en: string;
   description_ja: string;
+  slug: string;     // /radical/[slug] と一致
+  glyph: string;    // 部首字形（氵・扌・宀…）
+  count: number;    // その部首を含む漢字数
 }
 
 // 英語→日本語部首名マッピング（主要な部首）
@@ -416,11 +537,23 @@ async function main() {
   
   console.log(`[*] Found ${allRadicals.length} unique radicals`);
   
+  // ▼ 追加：radical → count を先に集計
+  const radicalCountMap = new Map<string, number>();
+  for (const r of allRadicals) radicalCountMap.set(r, 0);
+  dictionary.forEach((k) => {
+    (k.radicals ?? []).forEach((r) => {
+      radicalCountMap.set(r, (radicalCountMap.get(r) ?? 0) + 1);
+    });
+  });
+  
   // バイリンガルデータを生成
   const bilingualData: RadicalBilingual[] = allRadicals.map((radical, index) => {
     const mapping = RADICAL_NAME_MAP[radical];
+    const slug = toRadicalSlug(radical); // 英語名から既定のスラッグへ
+    const count = radicalCountMap.get(radical) ?? 0;
     
     if (mapping) {
+      const glyph = getRadicalGlyphBySlug(slug, mapping.root?.[0] ?? radical.charAt(0));
       return {
         id: index + 1,
         root: mapping.root,
@@ -428,9 +561,12 @@ async function main() {
         radical_name_ja: mapping.ja,
         description_en: mapping.desc_en,
         description_ja: mapping.desc_ja,
+        slug,
+        glyph,
+        count,
       };
     } else {
-      // マッピングがない場合はデフォルト値を使用
+      const glyph = getRadicalGlyphBySlug(slug, radical.charAt(0));
       return {
         id: index + 1,
         root: radical.charAt(0),
@@ -438,6 +574,9 @@ async function main() {
         radical_name_ja: radical,
         description_en: `Radical related to ${radical.toLowerCase()} kanji`,
         description_ja: `${radical}に関連する漢字の部首`,
+        slug,
+        glyph,
+        count,
       };
     }
   });
