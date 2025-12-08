@@ -56,70 +56,94 @@ export default function ConfusedKanjiPage() {
         </p>
       </header>
 
-      {/* テーブル表示 */}
+      {/* テーブル表示（PC）・カード表示（スマホ） */}
       <Card className="w-full max-w-5xl rounded-2xl shadow-sm">
         <CardHeader>
           <CardTitle className="text-lg">漢字ペア一覧</CardTitle>
         </CardHeader>
-        <CardContent className="overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="bg-muted/50">
-                <th className="border border-border p-3 text-center w-20">漢字A</th>
-                <th className="border border-border p-3 text-center w-20">漢字B</th>
-                <th className="border border-border p-3 text-center w-32">混同の理由</th>
-                <th className="border border-border p-3 text-left">見分け方・備考</th>
-                <th className="border border-border p-3 text-center w-32">詳細</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pairs.map((pair, i) => (
-                <tr key={i} className="hover:bg-muted/30 transition-colors">
-                  <td className="border border-border p-3 text-center">
-                    <Link 
-                      href={getKanjiLink(pair.kanjiA)}
-                      className="text-3xl hover:text-primary transition-colors"
-                    >
-                      {pair.kanjiA}
-                    </Link>
-                  </td>
-                  <td className="border border-border p-3 text-center">
-                    <Link 
-                      href={getKanjiLink(pair.kanjiB)}
-                      className="text-3xl hover:text-primary transition-colors"
-                    >
-                      {pair.kanjiB}
-                    </Link>
-                  </td>
-                  <td className="border border-border p-3 text-center">
-                    <span className="inline-block px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
-                      {pair.reason}
-                    </span>
-                  </td>
-                  <td className="border border-border p-3 text-muted-foreground">
-                    {pair.note}
-                  </td>
-                  <td className="border border-border p-3 text-center">
-                    <div className="flex items-center justify-center gap-1">
+        <CardContent>
+          {/* PC表示: テーブル */}
+          <div className="hidden md:block overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-muted/50">
+                  <th className="border border-border p-3 text-center w-20">漢字A</th>
+                  <th className="border border-border p-3 text-center w-20">漢字B</th>
+                  <th className="border border-border p-3 text-center w-32">混同の理由</th>
+                  <th className="border border-border p-3 text-left">見分け方・備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pairs.map((pair, i) => (
+                  <tr key={i} className="hover:bg-muted/30 transition-colors">
+                    <td className="border border-border p-3 text-center">
                       <Link 
                         href={getKanjiLink(pair.kanjiA)}
-                        className="text-blue-600 hover:underline"
+                        className="text-3xl hover:text-primary transition-colors"
                       >
                         {pair.kanjiA}
                       </Link>
-                      <span className="text-muted-foreground">↔</span>
+                    </td>
+                    <td className="border border-border p-3 text-center">
                       <Link 
                         href={getKanjiLink(pair.kanjiB)}
-                        className="text-blue-600 hover:underline"
+                        className="text-3xl hover:text-primary transition-colors"
                       >
                         {pair.kanjiB}
                       </Link>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                    </td>
+                    <td className="border border-border p-3 text-center">
+                      <span className="inline-block px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+                        {pair.reason}
+                      </span>
+                    </td>
+                    <td className="border border-border p-3 text-muted-foreground">
+                      {pair.note}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* スマホ表示: カード */}
+          <div className="md:hidden space-y-4">
+            {pairs.map((pair, i) => (
+              <div
+                key={i}
+                className="border border-border rounded-lg p-4 bg-white hover:bg-muted/30 transition-colors"
+              >
+                {/* 漢字ペア */}
+                <div className="flex items-center justify-center gap-4 mb-3">
+                  <Link 
+                    href={getKanjiLink(pair.kanjiA)}
+                    className="text-4xl font-bold hover:text-primary transition-colors"
+                  >
+                    {pair.kanjiA}
+                  </Link>
+                  <span className="text-2xl text-muted-foreground">↔</span>
+                  <Link 
+                    href={getKanjiLink(pair.kanjiB)}
+                    className="text-4xl font-bold hover:text-primary transition-colors"
+                  >
+                    {pair.kanjiB}
+                  </Link>
+                </div>
+
+                {/* 混同の理由 */}
+                <div className="text-center mb-3">
+                  <span className="inline-block px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+                    {pair.reason}
+                  </span>
+                </div>
+
+                {/* 見分け方・備考 */}
+                <div className="text-sm text-muted-foreground leading-relaxed text-center">
+                  {pair.note}
+                </div>
+              </div>
+            ))}
+          </div>
         </CardContent>
       </Card>
 

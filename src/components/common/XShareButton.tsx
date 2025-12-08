@@ -28,3 +28,4 @@ export function XShareButton({ kanji }: { kanji: string }) {
 
 
 
+
