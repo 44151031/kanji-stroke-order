@@ -56,7 +56,7 @@ export default function KanjiModeToggle({ kanji }: { kanji: string }) {
         shadow-sm
       "
     >
-      <div className="flex items-center justify-center gap-4 py-2 max-w-4xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 py-2 max-w-4xl mx-auto px-4">
         {/* === タブ切り替え部分 === */}
         <div
           className="
@@ -68,7 +68,7 @@ export default function KanjiModeToggle({ kanji }: { kanji: string }) {
             onClick={() => handleSwitch("dictionary")}
             className={`px-5 py-1.5 text-sm font-medium transition-all duration-200 ${
               mode === "dictionary"
-                ? "bg-gray-100 text-gray-900"
+                ? "bg-blue-500 text-white shadow-inner"
                 : "text-gray-500 hover:text-gray-800"
             }`}
           >
@@ -87,7 +87,7 @@ export default function KanjiModeToggle({ kanji }: { kanji: string }) {
           </button>
         </div>
 
-        {/* === モードバッジ（横並び） === */}
+        {/* === モードバッジ（PC: 横並び、スマホ: 下に表示） === */}
         <AnimatePresence mode="wait">
           <motion.div
             key={mode}
@@ -104,7 +104,7 @@ export default function KanjiModeToggle({ kanji }: { kanji: string }) {
           >
             {mode === "dictionary"
               ? "📘 辞書モードで表示中"
-              : "✍ 書き順テストモードで練習中"}
+              : "✍ 書き順テストモードで表示中"}
           </motion.div>
         </AnimatePresence>
       </div>

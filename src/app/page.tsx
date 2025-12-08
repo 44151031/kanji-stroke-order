@@ -32,13 +32,13 @@ const RADICAL_POSITION_LINKS = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-4 sm:gap-6 md:gap-8">
       {/* ヘッダー */}
-      <header className="text-center pt-12 pb-4">
-        <h1 className="text-5xl font-bold tracking-tight mb-3">
+      <header className="text-center pt-4 sm:pt-6 md:pt-8 pb-2 sm:pb-3 px-4">
+        <h1 className="text-4xl font-bold tracking-tight mb-1 sm:mb-2">
           漢字書き順
         </h1>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted-foreground text-base sm:text-lg">
           常用漢字2136字の書き順をアニメーションで学ぼう
         </p>
       </header>
