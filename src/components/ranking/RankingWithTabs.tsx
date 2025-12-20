@@ -63,7 +63,7 @@ export default function RankingWithTabs() {
       if (error) {
         console.log(`⚠️ rank_${period}カラムが見つからないため、kanji_viewsから取得を試行`);
         
-        // フォールバック: kanji_viewsから取得
+        // kanji_viewsから実際の閲覧数データを取得
         const { data: viewsData, error: viewsError } = await supabase
           .from("kanji_views")
           .select("kanji, views")
@@ -84,7 +84,7 @@ export default function RankingWithTabs() {
         }));
 
         setData(mappedData);
-        setIsFallback(true);
+        setIsFallback(false); // 実際の閲覧数データなのでfalse
       } else if (rankingData && rankingData.length > 0) {
         const mappedData = rankingData.map((item: any) => ({
           kanji: item.kanji,
