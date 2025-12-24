@@ -35,6 +35,12 @@ export interface KanjiDetail {
   ucsHex: string;
   freq?: number;
   radicals?: string[];
+  // 表外漢字フラグ
+  isExtra?: boolean;
+  isRare?: boolean;
+  isName?: boolean;
+  isClassical?: boolean;
+  hasStrokeData?: boolean;
 }
 
 export interface WordEntry {
@@ -49,6 +55,8 @@ export interface KanjiJoyo {
   grade: number;
   strokes: number;
 }
+
+
 
 
 

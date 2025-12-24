@@ -166,6 +166,38 @@ export default function Home() {
             <span className="font-medium text-red-700">書き順クイズ</span>
             <span className="text-xs text-red-600/70 mt-1">間違えやすい書き順</span>
           </Link>
+          <Link
+            href="/kanji/extra"
+            className="flex flex-col items-center p-5 bg-amber-50 border border-amber-200 rounded-xl hover:bg-amber-100 hover:border-amber-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">📚</span>
+            <span className="font-medium text-amber-700">表外漢字一覧</span>
+            <span className="text-xs text-amber-600/70 mt-1">常用漢字外の漢字</span>
+          </Link>
+          <Link
+            href="/kanji/rare"
+            className="flex flex-col items-center p-5 bg-blue-50 border border-blue-200 rounded-xl hover:bg-blue-100 hover:border-blue-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">🔍</span>
+            <span className="font-medium text-blue-700">難読・稀少漢字</span>
+            <span className="text-xs text-blue-600/70 mt-1">読みにくい漢字</span>
+          </Link>
+          <Link
+            href="/kanji/name"
+            className="flex flex-col items-center p-5 bg-purple-50 border border-purple-200 rounded-xl hover:bg-purple-100 hover:border-purple-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">👤</span>
+            <span className="font-medium text-purple-700">人名漢字</span>
+            <span className="text-xs text-purple-600/70 mt-1">人名用漢字</span>
+          </Link>
+          <Link
+            href="/kanji/classical"
+            className="flex flex-col items-center p-5 bg-amber-50 border border-amber-200 rounded-xl hover:bg-amber-100 hover:border-amber-400 transition-all group"
+          >
+            <span className="text-3xl mb-2 group-hover:scale-110 transition-transform">📜</span>
+            <span className="font-medium text-amber-700">古典・文語漢字</span>
+            <span className="text-xs text-amber-600/70 mt-1">古文・漢文の漢字</span>
+          </Link>
         </div>
       </section>
 

@@ -5,6 +5,7 @@ import path from "path";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import KanjiSvgViewer from "@/components/KanjiSvgViewer";
+import KanjiFallbackViewer from "@/components/KanjiFallbackViewer";
 import KanjiWordList from "@/components/KanjiWordList";
 import NextKanjiSection from "@/components/NextKanjiSection";
 import KanjiViewTracker from "@/components/KanjiViewTracker";
@@ -46,6 +47,12 @@ interface KanjiDetail {
   ucsHex: string;
   freq?: number;
   radicals?: string[];
+  // 表外漢字フラグ
+  isExtra?: boolean;
+  isRare?: boolean;
+  isName?: boolean;
+  isClassical?: boolean;
+  hasStrokeData?: boolean;
 }
 
 interface WordEntry {
@@ -104,6 +111,12 @@ function loadKanjiMaster(): Map<string, MasterKanji> {
   if (!fs.existsSync(masterPath)) return new Map();
   const data: MasterKanji[] = JSON.parse(fs.readFileSync(masterPath, "utf-8"));
   return new Map(data.map((k) => [k.kanji, k]));
+}
+
+// SVGファイルの存在確認
+function hasSvgFile(ucsHex: string): boolean {
+  const svgPath = path.join(process.cwd(), "public", "kanjivg", `${ucsHex}.svg`);
+  return fs.existsSync(svgPath);
 }
 
 // SSG: 静的パラメータ生成（uXXXX形式のみ）
@@ -236,9 +249,20 @@ export default async function KanjiPage({ params }: Props) {
   const categories = masterEntry?.category || [];
   const confusedWith = masterEntry?.confusedWith || [];
 
-  const gradeLabel = detail.grade <= 6 
+  const gradeLabel = detail.grade > 0 && detail.grade <= 6 
     ? `小学${detail.grade}年生` 
-    : "中学校";
+    : detail.grade > 6 
+    ? "中学校"
+    : "";
+
+  // 表外漢字フラグの判定
+  const isExtra = detail.isExtra === true;
+  const isRare = detail.isRare === true;
+  const isName = detail.isName === true;
+  const isClassical = detail.isClassical === true;
+
+  // SVGの存在確認（hasStrokeDataフラグまたはファイル存在確認）
+  const hasStrokeData = detail.hasStrokeData !== false && hasSvgFile(detail.ucsHex);
 
   return (
     <>
@@ -260,7 +284,7 @@ export default async function KanjiPage({ params }: Props) {
           <Breadcrumb
           items={[
             { label: "トップ", href: "/" },
-            { label: gradeLabel, href: `/grade/${detail.grade}` },
+            ...(gradeLabel ? [{ label: gradeLabel, href: `/grade/${detail.grade}` }] : []),
             { label: `${detail.strokes}画`, href: `/strokes/${detail.strokes}` },
             { label: kanji },
           ]}
@@ -277,11 +301,34 @@ export default async function KanjiPage({ params }: Props) {
         <header className="text-center">
           <h1 className="text-8xl md:text-9xl font-bold mb-4 leading-none">{kanji}</h1>
           <div className="flex items-center justify-center gap-3 text-sm flex-wrap">
-            <span className="px-3 py-1 bg-secondary rounded-full">{gradeLabel}</span>
+            {detail.grade > 0 && (
+              <span className="px-3 py-1 bg-secondary rounded-full">{gradeLabel}</span>
+            )}
             <span className="px-3 py-1 bg-secondary rounded-full">{detail.strokes}画</span>
             {detail.jlpt && (
               <span className="px-3 py-1 bg-primary text-primary-foreground rounded-full font-medium">
                 {detail.jlpt}
+              </span>
+            )}
+            {/* 表外漢字フラグ */}
+            {isExtra && (
+              <span className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs">
+                表外漢字
+              </span>
+            )}
+            {isRare && (
+              <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">
+                難読
+              </span>
+            )}
+            {isName && (
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">
+                人名
+              </span>
+            )}
+            {isClassical && (
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs">
+                古典
               </span>
             )}
           </div>
@@ -291,24 +338,40 @@ export default async function KanjiPage({ params }: Props) {
               <KanjiBadges categories={categories} />
             </div>
           )}
+          {/* 表外漢字の注記 */}
+          {isExtra && (
+            <p className="mt-3 text-sm text-muted-foreground">
+              ※ 表外漢字（常用漢字外）
+            </p>
+          )}
         </header>
-        {/* モード切り替えトグル */}
-        <KanjiModeToggle kanji={kanji} />
+        {/* モード切り替えトグル（SVGがある場合のみ） */}
+        {hasStrokeData && <KanjiModeToggle kanji={kanji} />}
         {/* 書き順SVG（LCP重視：直読み） */}
         <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg">書き順（筆順）</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col items-center">
-            <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-white">
-              <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={kanji} />
-            </div>
-            {/* 書き順を間違えやすい漢字の警告表示 */}
-            {typedMisorderList.common_misorder_kanji.includes(kanji) && (
-              <p className="text-red-500 text-sm mt-3 flex items-center gap-1">
-                <span>⚠</span>
-                <span>この漢字は書き順を間違えやすい漢字としてよく出題されます。</span>
-              </p>
+            {hasStrokeData ? (
+              <>
+                <div className="w-72 h-72 md:w-80 md:h-80 border border-border rounded-xl flex items-center justify-center bg-white">
+                  <KanjiSvgViewer ucsHex={detail.ucsHex} kanji={kanji} />
+                </div>
+                {/* 書き順を間違えやすい漢字の警告表示 */}
+                {typedMisorderList.common_misorder_kanji.includes(kanji) && (
+                  <p className="text-red-500 text-sm mt-3 flex items-center gap-1">
+                    <span>⚠</span>
+                    <span>この漢字は書き順を間違えやすい漢字としてよく出題されます。</span>
+                  </p>
+                )}
+              </>
+            ) : (
+              <KanjiFallbackViewer
+                kanji={kanji}
+                strokes={detail.strokes}
+                radicals={detail.radicals}
+              />
             )}
           </CardContent>
         </Card>
@@ -335,15 +398,17 @@ export default async function KanjiPage({ params }: Props) {
                 <p className="text-base md:text-lg">{detail.meaning.join(", ")}</p>
               </div>
             )}
-            <div className="grid grid-cols-2 gap-4 pt-2 border-t border-border/50">
+            <div className={`grid ${gradeLabel ? 'grid-cols-2' : 'grid-cols-1'} gap-4 pt-2 border-t border-border/50`}>
               <div>
                 <p className="font-medium text-muted-foreground text-sm mb-1">画数</p>
                 <p className="text-base md:text-lg">{detail.strokes}画</p>
               </div>
-              <div>
-                <p className="font-medium text-muted-foreground text-sm mb-1">学年</p>
-                <p className="text-base md:text-lg">{gradeLabel}</p>
-              </div>
+              {gradeLabel && (
+                <div>
+                  <p className="font-medium text-muted-foreground text-sm mb-1">学年</p>
+                  <p className="text-base md:text-lg">{gradeLabel}</p>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
@@ -411,12 +476,14 @@ export default async function KanjiPage({ params }: Props) {
                 ))}
               </div>
               <div className="flex justify-center gap-4 mt-4 text-sm flex-wrap">
-                <Link 
-                  href={`/grade/${detail.grade}`}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {gradeLabel}の漢字 →
-                </Link>
+                {detail.grade > 0 && (
+                  <Link 
+                    href={`/grade/${detail.grade}`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {gradeLabel}の漢字 →
+                  </Link>
+                )}
                 <Link 
                   href={`/strokes/${detail.strokes}`}
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -429,6 +496,47 @@ export default async function KanjiPage({ params }: Props) {
                 >
                   📚 入試頻出漢字 →
                 </Link>
+                {/* 表外漢字関連リンク */}
+                {isExtra && (
+                  <>
+                    <Link 
+                      href="/kanji/extra"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      表外漢字一覧へ →
+                    </Link>
+                    <Link 
+                      href="/kanji/extra/ranking"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      表外漢字ランキングを見る →
+                    </Link>
+                  </>
+                )}
+                {isRare && (
+                  <Link 
+                    href="/kanji/rare"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    難読漢字一覧へ →
+                  </Link>
+                )}
+                {isName && (
+                  <Link 
+                    href="/kanji/name"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    人名漢字一覧へ →
+                  </Link>
+                )}
+                {isClassical && (
+                  <Link 
+                    href="/kanji/classical"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    古典・文語漢字一覧へ →
+                  </Link>
+                )}
               </div>
             </CardContent>
           </Card>

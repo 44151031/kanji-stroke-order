@@ -95,3 +95,5 @@ export function getRankingPositionSync(kanji: string): RankingPosition | null {
 
 
 
+
+

@@ -18,6 +18,17 @@ export async function GET(request: NextRequest) {
       case "words":
         filePath = path.join(process.cwd(), "data", "words-by-kanji.json");
         break;
+      case "extra":
+        // 表外漢字のリストを返す
+        const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
+        if (!fs.existsSync(dictPath)) {
+          return NextResponse.json([], { status: 200 });
+        }
+        const dictionary = JSON.parse(fs.readFileSync(dictPath, "utf-8"));
+        const extraKanjiList = dictionary
+          .filter((k: any) => k.isExtra === true)
+          .map((k: any) => k.kanji);
+        return NextResponse.json(extraKanjiList);
       default:
         return NextResponse.json({ error: "Invalid type" }, { status: 400 });
     }
@@ -33,6 +44,8 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Failed to load data" }, { status: 500 });
   }
 }
+
+
 
 
 
