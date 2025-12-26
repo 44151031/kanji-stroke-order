@@ -39,14 +39,11 @@ function labelForPeriod(period: string = ""): string {
 // 表外漢字のみをフィルタリング
 function filterExtraKanji(ranking: typeof fallbackRanking) {
   try {
-    const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
-    if (!fs.existsSync(dictPath)) return [];
+    // getExtraKanjiを使用して書き順SVGが存在する表外漢字を取得
+    const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
+    const extraKanji = getExtraKanji();
     
-    const dictionary = JSON.parse(fs.readFileSync(dictPath, "utf-8"));
-    const extraKanjiSet = new Set(
-      dictionary.filter((k: any) => k.isExtra === true).map((k: any) => k.kanji)
-    );
-    
+    const extraKanjiSet = new Set(extraKanji.map((k) => k.kanji));
     return ranking.filter((item) => extraKanjiSet.has(item.kanji));
   } catch {
     return [];

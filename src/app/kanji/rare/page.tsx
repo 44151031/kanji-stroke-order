@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
-import fs from "fs";
-import path from "path";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
+import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "難読・稀少漢字一覧",
@@ -13,40 +13,22 @@ export const metadata: Metadata = generatePageMetadata({
   path: "/kanji/rare",
 });
 
-interface KanjiDetail {
-  kanji: string;
-  on: string[];
-  kun: string[];
-  meaning: string[];
-  strokes: number;
-  ucsHex: string;
-  isRare?: boolean;
-  hasStrokeData?: boolean;
-}
-
-function loadKanjiDictionary(): KanjiDetail[] {
-  const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
-  if (!fs.existsSync(dictPath)) return [];
-  return JSON.parse(fs.readFileSync(dictPath, "utf-8"));
-}
-
-function loadExtraKanji(): KanjiDetail[] {
-  // 仮のデータ（実際のデータ構造に合わせて調整が必要）
-  // ここでは isRare フラグを持つ漢字をフィルタ
-  const dictionary = loadKanjiDictionary();
-  return dictionary.filter((k) => (k as any).isRare === true);
-}
-
 export default async function RareKanjiPage() {
-  const rareKanji = loadExtraKanji();
+  // 書き順SVGが存在する表外漢字のみを取得
+  const allExtraKanji = getExtraKanji();
+  
+  // 難読・稀少漢字をフィルタ（rarityScore >= 70）
+  const rareKanji = filterKanjiByCategory(allExtraKanji, {
+    minRarityScore: 70,
+  });
 
-  // 画数順にソート
-  rareKanji.sort((a, b) => a.strokes - b.strokes);
-
-  const gradeLabel = (kanji: KanjiDetail) => {
-    // 表外漢字は学年がない場合が多い
-    return "";
-  };
+  // rarityScore降順、その後画数順にソート
+  rareKanji.sort((a, b) => {
+    if ((b.rarityScore || 0) !== (a.rarityScore || 0)) {
+      return (b.rarityScore || 0) - (a.rarityScore || 0);
+    }
+    return a.strokes - b.strokes;
+  });
 
   return (
     <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
@@ -89,9 +71,16 @@ export default async function RareKanjiPage() {
                   </span>
                   <div className="mt-1 text-xs text-muted-foreground text-center space-y-0.5">
                     <span className="block">{k.strokes}画</span>
-                    <span className="block px-1 py-0.5 bg-blue-100 text-blue-700 rounded text-[10px]">
-                      難読
-                    </span>
+                    <div className="flex gap-1 justify-center flex-wrap">
+                      <span className="block px-1 py-0.5 bg-blue-100 text-blue-700 rounded text-[10px]">
+                        難読
+                      </span>
+                      {k.rarityScore && k.rarityScore >= 90 && (
+                        <span className="block px-1 py-0.5 bg-red-100 text-red-700 rounded text-[10px]">
+                          極稀
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </Link>
               ))}

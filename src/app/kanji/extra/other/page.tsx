@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
-import fs from "fs";
-import path from "path";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
+import { type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "その他表外漢字一覧",
@@ -13,41 +13,14 @@ export const metadata: Metadata = generatePageMetadata({
   path: "/kanji/extra/other",
 });
 
-interface KanjiDetail {
-  kanji: string;
-  on: string[];
-  kun: string[];
-  meaning: string[];
-  strokes: number;
-  ucsHex: string;
-  isExtra?: boolean;
-  isRare?: boolean;
-  isName?: boolean;
-  isClassical?: boolean;
-  hasStrokeData?: boolean;
-}
-
-function loadKanjiDictionary(): KanjiDetail[] {
-  const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
-  if (!fs.existsSync(dictPath)) return [];
-  return JSON.parse(fs.readFileSync(dictPath, "utf-8"));
-}
-
-function loadOtherExtraKanji(): KanjiDetail[] {
-  // 仮のデータ（実際のデータ構造に合わせて調整が必要）
-  // ここでは isExtra が true で、isRare, isName, isClassical が false または未定義の漢字をフィルタ
-  const dictionary = loadKanjiDictionary();
-  return dictionary.filter((k) => {
-    const kanji = k as any;
-    return kanji.isExtra === true && 
-           kanji.isRare !== true && 
-           kanji.isName !== true && 
-           kanji.isClassical !== true;
-  });
-}
-
 export default async function OtherExtraKanjiPage() {
-  const otherKanji = loadOtherExtraKanji();
+  // 書き順SVGが存在する表外漢字のみを取得
+  const allExtraKanji = getExtraKanji();
+  
+  // その他表外漢字をフィルタ（難読・稀少、人名、古典・文語以外）
+  const otherKanji = allExtraKanji.filter((k) => {
+    return !k.isRare && !k.isName && !k.isClassical;
+  });
 
   // 画数順にソート
   otherKanji.sort((a, b) => a.strokes - b.strokes);

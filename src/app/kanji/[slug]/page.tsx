@@ -90,12 +90,22 @@ function loadKanjiDictionary(): KanjiDetail[] {
 }
 
 function loadKanjiDetail(kanji: string): KanjiDetail | null {
-  // まずkanji-details/[漢字].jsonを試す
+  // getKanjiWithMetaを使用してメタデータも含めて取得
+  const { getKanjiWithMeta } = require("@/lib/getKanjiWithMeta");
+  const allKanji = getKanjiWithMeta();
+  const found = allKanji.find((k: KanjiDetail) => k.kanji === kanji);
+  
+  if (found) {
+    return found;
+  }
+  
+  // フォールバック: kanji-details/[漢字].jsonを試す
   const detailPath = path.join(process.cwd(), "data", "kanji-details", `${kanji}.json`);
   if (fs.existsSync(detailPath)) {
     return JSON.parse(fs.readFileSync(detailPath, "utf-8"));
   }
-  // フォールバック: kanji-dictionary.jsonから検索
+  
+  // 最後のフォールバック: kanji-dictionary.jsonから検索
   const dictionary = loadKanjiDictionary();
   return dictionary.find((k) => k.kanji === kanji) || null;
 }

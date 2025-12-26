@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
-import fs from "fs";
-import path from "path";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
+import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "人名漢字一覧",
@@ -13,32 +13,14 @@ export const metadata: Metadata = generatePageMetadata({
   path: "/kanji/name",
 });
 
-interface KanjiDetail {
-  kanji: string;
-  on: string[];
-  kun: string[];
-  meaning: string[];
-  strokes: number;
-  ucsHex: string;
-  isName?: boolean;
-  hasStrokeData?: boolean;
-}
-
-function loadKanjiDictionary(): KanjiDetail[] {
-  const dictPath = path.join(process.cwd(), "data", "kanji-dictionary.json");
-  if (!fs.existsSync(dictPath)) return [];
-  return JSON.parse(fs.readFileSync(dictPath, "utf-8"));
-}
-
-function loadNameKanji(): KanjiDetail[] {
-  // 仮のデータ（実際のデータ構造に合わせて調整が必要）
-  // ここでは isName フラグを持つ漢字をフィルタ
-  const dictionary = loadKanjiDictionary();
-  return dictionary.filter((k) => (k as any).isName === true);
-}
-
 export default async function NameKanjiPage() {
-  const nameKanji = loadNameKanji();
+  // 書き順SVGが存在する表外漢字のみを取得
+  const allExtraKanji = getExtraKanji();
+  
+  // 人名漢字をフィルタ（isName === true）
+  const nameKanji = filterKanjiByCategory(allExtraKanji, {
+    isName: true,
+  });
 
   // 画数順にソート
   nameKanji.sort((a, b) => a.strokes - b.strokes);
