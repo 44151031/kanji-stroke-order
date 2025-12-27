@@ -133,9 +133,22 @@ function hasSvgFile(ucsHex: string): boolean {
 export async function generateStaticParams() {
   const joyoList = loadKanjiJoyo();
   
+  // 表外漢字も含める
+  const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
+  const extraKanji = getExtraKanji() as KanjiDetail[];
+  
+  // 常用漢字 + 表外漢字を結合
+  const allKanji = [
+    ...joyoList.map((k: KanjiJoyo) => k.kanji),
+    ...extraKanji.map((k: KanjiDetail) => k.kanji),
+  ];
+  
+  // 重複を除去
+  const uniqueKanji = [...new Set(allKanji)];
+  
   // 全漢字を uXXXX 形式で生成
-  return joyoList.map((k) => ({
-    slug: toUnicodeSlug(k.kanji),
+  return uniqueKanji.map((kanji) => ({
+    slug: toUnicodeSlug(kanji),
   }));
 }
 

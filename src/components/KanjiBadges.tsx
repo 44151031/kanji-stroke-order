@@ -66,3 +66,4 @@ export default function KanjiBadges({ categories, size = "md" }: KanjiBadgesProp
 
 
 
+

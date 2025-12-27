@@ -78,7 +78,7 @@ export function getKanjiWithMeta(): KanjiDetail[] {
   });
 
   // 既存データにメタデータをマージ
-  const merged = dictionary.map((kanji) => {
+  const merged: KanjiDetail[] = dictionary.map((kanji) => {
     // ucsHexを正規化してメタデータと照合
     const normalizedUcsHex = normalizeUcsHex(kanji.ucsHex);
     const meta = metaMap.get(normalizedUcsHex);
@@ -141,11 +141,11 @@ export function getKanjiWithMeta(): KanjiDetail[] {
           ucsHex: meta.unicode.slice(1).toUpperCase().padStart(5, "0"), // 5桁形式に
           freq: detailData.freq,
           radicals: detailData.radicals || [],
-          isExtra: meta.isExtra,
-          isName: meta.isName,
-          isClassical: meta.isClassical,
+          isExtra: meta.isExtra ?? true,
+          isName: meta.isName ?? false,
+          isClassical: meta.isClassical ?? false,
           rarityScore: meta.rarityScore || 0,
-          isRare: meta.isExtra && (meta.rarityScore || 0) >= 70,
+          isRare: (meta.isExtra ?? true) && (meta.rarityScore || 0) >= 70,
         };
 
         merged.push(newEntry);

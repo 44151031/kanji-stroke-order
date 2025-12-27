@@ -41,7 +41,7 @@ function filterExtraKanji(ranking: typeof fallbackRanking) {
   try {
     // getExtraKanjiを使用して書き順SVGが存在する表外漢字を取得
     const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
-    const extraKanji = getExtraKanji();
+    const extraKanji = getExtraKanji() as Array<{ kanji: string }>;
     
     const extraKanjiSet = new Set(extraKanji.map((k) => k.kanji));
     return ranking.filter((item) => extraKanjiSet.has(item.kanji));

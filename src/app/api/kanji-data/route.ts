@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
         // 表外漢字のリストを返す
         const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
         const extraKanji = getExtraKanji();
-        const extraKanjiList = extraKanji.map((k) => k.kanji);
+        const extraKanjiList = extraKanji.map((k: { kanji: string }) => k.kanji);
         return NextResponse.json(extraKanjiList);
       default:
         return NextResponse.json({ error: "Invalid type" }, { status: 400 });
