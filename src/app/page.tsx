@@ -2,8 +2,8 @@ import Link from "next/link";
 import SearchSection from "@/components/home/SearchSection";
 import PopularKanjiSection from "@/components/home/PopularKanjiSection";
 
-// キャッシュ設定：1日1回更新
-export const revalidate = 86400;
+// キャッシュ設定：1週間に1回更新
+export const revalidate = 604800;
 
 // 学年別リンク
 const GRADE_LINKS = [

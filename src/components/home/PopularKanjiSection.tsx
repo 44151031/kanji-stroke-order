@@ -7,15 +7,15 @@ import fallbackRanking from "@/data/fallbackRanking.json";
 interface RankingItem {
   kanji: string;
   hex: string;
-  rank_day?: number;
+  rank: number;
 }
 
 /**
- * ISR: 1日1回だけSupabaseから再取得（他はキャッシュ）
+ * ISR: 1週間に1回だけSupabaseから再取得（他はキャッシュ）
  */
-export const revalidate = 86400; // ← 24時間（1日）に1回だけ再生成
+export const revalidate = 604800; // ← 7日間（1週間）に1回だけ再生成
 
-async function getDailyRanking(): Promise<RankingItem[]> {
+async function getPopularRanking(): Promise<RankingItem[]> {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
@@ -24,54 +24,56 @@ async function getDailyRanking(): Promise<RankingItem[]> {
     return fallbackRanking.slice(3, 11).map((item, index) => ({
       kanji: item.kanji,
       hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-      rank_day: index + 4,
+      rank: index + 4,
     }));
   }
 
   try {
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-    // rank_dayが存在する前提で取得
+    // kanji_viewsテーブルから閲覧数順で取得（/rankingページと同じデータソース）
+    // 4位〜11位を表示するため、11件取得して最初の3件をスキップ
     const { data, error } = await supabase
-      .from("kanji_ranking")
-      .select("kanji, rank_day")
-      .gte("rank_day", 4)
-      .lte("rank_day", 11)
-      .order("rank_day", { ascending: true })
-      .limit(8);
+      .from("kanji_views")
+      .select("kanji, views")
+      .order("views", { ascending: false })
+      .limit(11);
 
     if (error || !data || data.length === 0) {
-      console.warn("⚠️ kanji_ranking取得失敗 → fallbackデータ使用");
+      console.warn("⚠️ kanji_views取得失敗 → fallbackデータ使用:", error?.message);
       return fallbackRanking.slice(3, 11).map((item, index) => ({
         kanji: item.kanji,
         hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-        rank_day: index + 4,
+        rank: index + 4,
       }));
     }
 
-    return data.map((item, index) => ({
+    // 4位〜11位（index 3〜10）を取得
+    const rankedData = data.slice(3, 11);
+
+    return rankedData.map((item, index) => ({
       kanji: item.kanji,
       hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-      rank_day: item.rank_day || index + 4,
+      rank: index + 4, // 4位から開始
     }));
   } catch (err) {
     console.error("❌ Error loading ranking:", err);
     return fallbackRanking.slice(3, 11).map((item, index) => ({
       kanji: item.kanji,
       hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-      rank_day: index + 4,
+      rank: index + 4,
     }));
   }
 }
 
 export default async function PopularKanjiSection() {
-  const ranking = await getDailyRanking();
+  const ranking = await getPopularRanking();
 
   return (
     <section className="w-full max-w-3xl">
-      <h2 className="text-xl font-medium mb-4 text-center">🏆 人気の漢字</h2>
+      <h2 className="text-xl font-medium mb-4 text-center">🏆 漢字書き順ナビで人気の漢字</h2>
       <p className="text-sm text-muted-foreground mb-6 text-center">
-        多くの人が検索している人気の漢字を紹介しています。
+        多くの人が書き順が気になっている、人気の漢字を紹介しています。
         <br />
         1〜3位の漢字は別ページでランキング形式で紹介しています。
       </p>
@@ -87,7 +89,7 @@ export default async function PopularKanjiSection() {
                 {item.kanji}
               </Link>
               <span className="text-xs text-foreground font-medium">
-                {item.rank_day}位
+                {item.rank}位
               </span>
             </div>
           ))}
