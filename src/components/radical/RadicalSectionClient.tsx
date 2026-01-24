@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Radical, getUniqueSlug, formatRadicalName, buildSlugIndex } from "@/lib/radicalList";
+import { Radical, getUniqueSlug, getEnglishDisplayName } from "@/lib/radicalList";
 import { getRadicalGlyphBySlug } from "@/data/radicals/radicalGlyphMap";
 
 type RadicalWithCount = Radical & { count: number };
@@ -25,24 +25,25 @@ export default function RadicalSectionClient({ items, counts }: Props) {
 
   return (
     <>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
         {/* PC表示: 全件表示 */}
-        <div className="hidden md:contents">
+        <div className="hidden sm:contents">
           {items.map((r) => {
             const uniqueSlug = getUniqueSlug(r, counts);
             const glyph = getRadicalGlyphBySlug(r.en, r.root);
+            const englishName = getEnglishDisplayName(r.en);
             return (
               <Link
                 key={`${r.en}-${r.type}`}
                 href={`/radical/${uniqueSlug}`}
-                className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
+                className="flex items-center gap-3 p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
               >
-                <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
+                <span className="text-2xl w-10 h-10 flex-shrink-0 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
                   {glyph}
                 </span>
                 <div className="flex-1 min-w-0">
                   <span className="font-medium text-sm block truncate">
-                    {formatRadicalName(r.jp, r.en)}
+                    {r.jp}（{englishName}）
                   </span>
                   <span className="text-xs text-muted-foreground block">
                     登録数：{r.count}
@@ -53,25 +54,27 @@ export default function RadicalSectionClient({ items, counts }: Props) {
           })}
         </div>
         
-        {/* スマホ表示: 5件まで（展開時は全件） */}
-        <div className="md:hidden contents">
+        {/* スマホ表示: 5件まで（展開時は全件）- コンパクトレイアウト */}
+        <div className="sm:hidden contents">
           {visibleItems.map((r) => {
             const uniqueSlug = getUniqueSlug(r, counts);
             const glyph = getRadicalGlyphBySlug(r.en, r.root);
+            const englishName = getEnglishDisplayName(r.en);
             return (
               <Link
                 key={`${r.en}-${r.type}`}
                 href={`/radical/${uniqueSlug}`}
-                className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
+                className="flex items-center gap-3 px-3 py-2.5 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-colors shadow-sm"
               >
-                <span className="text-2xl w-10 h-10 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
+                <span className="text-xl w-8 h-8 flex-shrink-0 flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-sm">
                   {glyph}
                 </span>
-                <div className="flex-1 min-w-0">
-                  <span className="font-medium text-sm block truncate">
-                    {formatRadicalName(r.jp, r.en)}
-                  </span>
-                  <span className="text-xs text-muted-foreground block">
+                <div className="flex-1 overflow-hidden">
+                  <div className="flex items-baseline gap-1.5 flex-wrap">
+                    <span className="font-medium text-sm">{r.jp}</span>
+                    <span className="text-xs text-gray-500">({englishName})</span>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
                     登録数：{r.count}
                   </span>
                 </div>
@@ -83,7 +86,7 @@ export default function RadicalSectionClient({ items, counts }: Props) {
       
       {/* アコーディオンボタン（スマホのみ表示、5個以上の場合のみ） */}
       {hasMore && (
-        <div className="md:hidden flex justify-center mt-4">
+        <div className="sm:hidden flex justify-center mt-4">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className={`w-full max-w-xs px-5 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center justify-center gap-2 ${
@@ -133,4 +136,3 @@ export default function RadicalSectionClient({ items, counts }: Props) {
     </>
   );
 }
-

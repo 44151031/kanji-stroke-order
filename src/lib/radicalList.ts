@@ -199,7 +199,7 @@ export const radicalList: Radical[] = [
   { jp: "はへん", en: "hahen-left-radical", root: "齒", type: "left-radical", typeJa: "偏", anchor: "radical#left-radical" },
 
   // つくり（右側）- Right Radicals
-  { jp: "りっとう", en: "riっtou-right-radical", root: "刀", type: "right-radical", typeJa: "旁", anchor: "radical#right-radical" },
+  { jp: "りっとう", en: "rittou-right-radical", root: "刀", type: "right-radical", typeJa: "旁", anchor: "radical#right-radical" },
   { jp: "おおがい・いちのかい", en: "oogai-right-radical", root: "頁", type: "right-radical", typeJa: "旁", anchor: "radical#right-radical" },
   { jp: "ぼくづくり・のぶん・しぶん・とまた", en: "bokuzuku-right-radical", root: "攴", type: "right-radical", typeJa: "旁", anchor: "radical#right-radical" },
   { jp: "ちから", en: "chikara-radical", root: "力", type: "right-radical", typeJa: "旁", anchor: "radical#right-radical" },
@@ -555,7 +555,7 @@ export const radicalList: Radical[] = [
   { jp: "つづみ", en: "tsuzumi-independent-radical", root: "鼓", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
   { jp: "はな", en: "hana-independent-radical", root: "鼻", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
   { jp: "は", en: "ha-independent-radical", root: "齒", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
-  { jp: "りゅう", en: "riゅu-independent-radical", root: "龍", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
+  { jp: "りゅう", en: "ryuu-independent-radical", root: "龍", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
   { jp: "かめ", en: "kame-independent-radical", root: "龜", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
   { jp: "はね", en: "hane-radical", root: "羽", type: "independent-radical", typeJa: "他", anchor: "radical#independent-radical" },
 
