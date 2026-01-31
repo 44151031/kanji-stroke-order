@@ -12,6 +12,7 @@ import KanjiViewTracker from "@/components/KanjiViewTracker";
 import KanjiBadges from "@/components/KanjiBadges";
 import KanjiLink from "@/components/common/KanjiLink";
 import { XShareButton } from "@/components/common/XShareButton";
+import { XQuizShareButton } from "@/components/common/XQuizShareButton";
 import KanjiModeToggle from "@/components/common/KanjiModeToggle";
 import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
@@ -398,6 +399,11 @@ export default async function KanjiPage({ params }: Props) {
             )}
           </CardContent>
         </Card>
+
+        {/* 書き順クイズをXでシェア */}
+        <div className="flex justify-center">
+          <XQuizShareButton kanji={kanji} />
+        </div>
 
         {/* 読み方・意味 */}
         <Card className="w-full max-w-lg rounded-2xl shadow-sm border">
