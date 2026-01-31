@@ -137,7 +137,7 @@ export function generateKanjiMetadata(
   const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
 
   // 現在のX（Twitter）OGP表示と完全に同一のタイトル
-  const title = `${kanji}の書き順（筆順アニメ付）｜読み方・部首・訓読み・音読み`;
+  const title = `「${kanji}」の書き順（筆順アニメ付）｜読み方・部首・訓読み・音読み`;
   
   // description: SVGアニメで書き順を解説 + 音読み／訓読み／画数／学年／JLPT情報を自動生成
   const descParts = [
