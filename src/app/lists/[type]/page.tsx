@@ -9,6 +9,9 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
 import { generateListMetadata } from "@/lib/metadata";
 
+// ISR設定：7日間キャッシュ（特集リストは静的）
+export const revalidate = 604800; // 7日
+
 interface MasterKanji {
   kanji: string;
   meaning: string;

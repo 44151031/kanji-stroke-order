@@ -7,6 +7,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
+// ISR設定：7日間キャッシュ（古典・文語漢字は静的）
+export const revalidate = 604800; // 7日
+
 export const metadata: Metadata = generatePageMetadata({
   title: "古典・文語漢字一覧",
   description: "古文・漢文で使われる古典・文語漢字の一覧。表外漢字の中でも古典文学で見かける漢字の書き順・読み方・意味を学習できます。",

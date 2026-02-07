@@ -16,6 +16,9 @@ import radicalList, {
 } from "@/lib/radicalList";
 import { getRadicalGlyphBySlug } from "@/data/radicals/radicalGlyphMap";
 
+// ISR設定：14日間キャッシュ（部首別リストは静的）
+export const revalidate = 1209600; // 14日
+
 // 配置タイプのラベル定義
 const POSITION_LABELS: Record<string, { label: string; labelEn: string }> = {
   "left-radical": { label: "偏（へん）", labelEn: "Left" },

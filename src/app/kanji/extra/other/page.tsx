@@ -7,6 +7,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
+// ISR設定：7日間キャッシュ（その他表外漢字は静的）
+export const revalidate = 604800; // 7日
+
 export const metadata: Metadata = generatePageMetadata({
   title: "その他表外漢字一覧",
   description: "その他の常用漢字外の表外漢字一覧。難読・稀少、人名、古典・文語以外の表外漢字の書き順・読み方・意味を学習できます。",

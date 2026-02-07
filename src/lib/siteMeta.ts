@@ -15,7 +15,7 @@ export const siteMeta = {
   author: "漢字書き順ナビ",
   publisher: "漢字書き順ナビ",
   locale: "ja_JP",
-  image: "/ogp.png",
+  image: "/api/og-home",
   imageWidth: 1200,
   imageHeight: 630,
   twitterCard: "summary_large_image" as const,

@@ -23,6 +23,10 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
 
+// ISR設定：30日間キャッシュ（漢字データは不変のため）
+export const revalidate = 2592000; // 30日
+export const dynamicParams = true; // 未生成のページも動的に対応
+
 // 型定義
 interface MisorderKanjiList {
   common_misorder_kanji: string[];
@@ -130,25 +134,21 @@ function hasSvgFile(ucsHex: string): boolean {
   return fs.existsSync(svgPath);
 }
 
-// SSG: 静的パラメータ生成（uXXXX形式のみ）
+// SSG: 静的パラメータ生成（最適化版）
+// ビルド時は人気上位200字のみ生成、残りはISRで動的生成
 export async function generateStaticParams() {
   const joyoList = loadKanjiJoyo();
-  
-  // 表外漢字も含める
-  const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
-  const extraKanji = getExtraKanji() as KanjiDetail[];
-  
-  // 常用漢字 + 表外漢字を結合
-  const allKanji = [
-    ...joyoList.map((k: KanjiJoyo) => k.kanji),
-    ...extraKanji.map((k: KanjiDetail) => k.kanji),
-  ];
-  
-  // 重複を除去
-  const uniqueKanji = [...new Set(allKanji)];
-  
-  // 全漢字を uXXXX 形式で生成
-  return uniqueKanji.map((kanji) => ({
+
+  // 小学校で習う漢字（1006字）を優先生成
+  // 学年1-6の漢字は検索頻度が高いため
+  const priorityKanji = joyoList
+    .filter((k: KanjiJoyo) => k.grade >= 1 && k.grade <= 6)
+    .map((k: KanjiJoyo) => k.kanji);
+
+  // 頻度順でソートされている場合は上位を、そうでない場合は小学校漢字のみ
+  const kanjiToGenerate = priorityKanji.slice(0, 200);
+
+  return kanjiToGenerate.map((kanji) => ({
     slug: toUnicodeSlug(kanji),
   }));
 }

@@ -5,6 +5,9 @@ import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
 
+// ISR設定：7日間キャッシュ（表外漢字一覧は静的）
+export const revalidate = 604800; // 7日
+
 export const metadata: Metadata = generatePageMetadata({
   title: "表外漢字一覧",
   description: "常用漢字外の表外漢字をカテゴリ別に紹介。難読・稀少漢字、人名漢字、古典・文語漢字など、特殊な漢字の書き順・読み方・意味を学習できます。",

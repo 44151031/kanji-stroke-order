@@ -1,8 +1,7 @@
 import { MetadataRoute } from "next";
+import { siteMeta } from "@/lib/siteMeta";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://kanji-stroke-order.com";
-  
   return {
     rules: [
       {
@@ -10,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${siteMeta.url}/sitemap.xml`,
   };
 }

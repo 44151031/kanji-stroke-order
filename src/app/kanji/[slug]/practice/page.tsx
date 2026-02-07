@@ -20,6 +20,10 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
 
+// ISR設定：30日間キャッシュ（練習ページも漢字データは不変）
+export const revalidate = 2592000; // 30日
+export const dynamicParams = true; // 未生成のページも動的に対応
+
 // 型定義
 interface MisorderKanjiList {
   common_misorder_kanji: string[];

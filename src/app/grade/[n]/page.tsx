@@ -9,6 +9,9 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
 import { generateGradeMetadata } from "@/lib/metadata";
 
+// ISR設定：7日間キャッシュ（学年別リストは静的）
+export const revalidate = 604800; // 7日
+
 interface KanjiDetail {
   kanji: string;
   on: string[];

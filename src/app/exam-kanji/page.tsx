@@ -4,6 +4,9 @@ import path from "path";
 import KanjiFeatureList from "@/components/kanji/KanjiFeatureList";
 import { generatePageMetadata } from "@/lib/metadata";
 
+// ISR設定：7日間キャッシュ（入試頻出リストは半静的）
+export const revalidate = 604800; // 7日
+
 interface ExamKanjiItem {
   kanji: string;
   meaning: string;

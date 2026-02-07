@@ -4,6 +4,9 @@ import SearchContent from "@/components/SearchContent";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumb from "@/components/common/Breadcrumb";
 
+// ISR設定：1日間キャッシュ（検索ページは半動的）
+export const revalidate = 86400; // 1日
+
 export const metadata: Metadata = generatePageMetadata({
   path: "/search",
 });

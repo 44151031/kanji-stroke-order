@@ -11,6 +11,9 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
 import RadicalSectionClient from "@/components/radical/RadicalSectionClient";
 
+// ISR設定：14日間キャッシュ（部首一覧は静的）
+export const revalidate = 1209600; // 14日
+
 // 配置タイプのラベル定義
 const POSITION_LABELS: Record<string, { label: string; labelEn: string; icon: string; desc: string }> = {
   "left-radical": { label: "偏（へん）", labelEn: "Left Radical", icon: "⬅️", desc: "漢字の左側に位置する部首" },

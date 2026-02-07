@@ -7,6 +7,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
+// ISR設定：7日間キャッシュ（人名漢字は静的）
+export const revalidate = 604800; // 7日
+
 export const metadata: Metadata = generatePageMetadata({
   title: "人名漢字一覧",
   description: "人名用漢字（姓・名で使われやすい）の一覧。表外漢字の中でも人名に使われる漢字の書き順・読み方・意味を学習できます。",

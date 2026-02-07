@@ -8,6 +8,9 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
 import { generatePageMetadata } from "@/lib/metadata";
 
+// ISR設定：7日間キャッシュ（似ている漢字リストは静的）
+export const revalidate = 604800; // 7日
+
 interface ConfusedPair {
   kanjiA: string;
   kanjiB: string;

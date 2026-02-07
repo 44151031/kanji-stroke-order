@@ -205,8 +205,8 @@ export function generateKanjiPracticeMetadata(
   const practiceUrl = `${siteMeta.url}/kanji/u${hex}/practice`;
   const ogImageUrl = `${siteMeta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`;
 
-  const title = `${kanji}の書き取りテスト（筆順練習モード）｜${meaning}・${strokes}画 | ${siteMeta.siteName}`;
-  const description = `${kanji}（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら書き取りスコアを記録できます。`;
+  const title = `「${kanji}」の書き取りテスト（筆順練習モード）｜${meaning}・${strokes}画 | ${siteMeta.siteName}`;
+  const description = `「${kanji}」（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら書き取りスコアを記録できます。`;
 
   return {
     ...baseMeta,
@@ -236,7 +236,7 @@ export function generateKanjiPracticeMetadata(
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: `${kanji}の書き取りテスト（筆順練習モード）`,
+          alt: `「${kanji}」の書き取りテスト（筆順練習モード）`,
         },
       ],
     },

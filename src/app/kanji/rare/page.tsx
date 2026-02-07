@@ -7,6 +7,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
 
+// ISR設定：7日間キャッシュ（難読・稀少漢字は静的）
+export const revalidate = 604800; // 7日
+
 export const metadata: Metadata = generatePageMetadata({
   title: "難読・稀少漢字一覧",
   description: "読みにくい、使用頻度が低い難読・稀少漢字の一覧。表外漢字の中でも特に特殊な漢字の書き順・読み方・意味を学習できます。",
