@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false }, // 検索エンジンに非表示
 };
 
-// リアルタイムデータ取得のため、キャッシュなし
-export const revalidate = 0;
+// リアルタイムデータ取得のため、短いキャッシュ（60秒）
+export const revalidate = 60; // 1分ごとに更新
 
 async function getAnalyticsData() {
   try {
