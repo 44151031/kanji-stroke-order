@@ -17,28 +17,34 @@ export default function KanjiViewTracker({ kanji }: Props) {
 
     const trackView = async () => {
       try {
-        // RPC関数を呼び出してviews+1
-        const { error } = await supabase.rpc("increment_kanji_views", {
+        // 新しいログ関数を呼び出し（期間別ランキング対応）
+        const { error } = await supabase.rpc("log_kanji_view", {
           target_kanji: kanji,
         });
 
         if (error) {
-          // RPC関数がない場合はupsertでフォールバック
+          // 新関数がない場合は旧関数にフォールバック
           if (error.code === "42883") {
-            // Function does not exist
-            await supabase
-              .from("kanji_views")
-              .upsert(
-                { 
-                  kanji, 
-                  views: 1,
-                  updated_at: new Date().toISOString()
-                },
-                { 
-                  onConflict: "kanji",
-                  ignoreDuplicates: false 
-                }
-              );
+            const { error: fallbackError } = await supabase.rpc("increment_kanji_views", {
+              target_kanji: kanji,
+            });
+            
+            // 旧関数もない場合はupsertでフォールバック
+            if (fallbackError?.code === "42883") {
+              await supabase
+                .from("kanji_views")
+                .upsert(
+                  { 
+                    kanji, 
+                    views: 1,
+                    updated_at: new Date().toISOString()
+                  },
+                  { 
+                    onConflict: "kanji",
+                    ignoreDuplicates: false 
+                  }
+                );
+            }
           } else {
             console.error("View tracking error:", error.message);
           }

@@ -9,13 +9,18 @@ import fallbackRanking from "@/data/fallbackRanking.json";
 interface RankingItem {
   kanji: string;
   hex?: string;
-  rank_week?: number;
-  rank_month?: number;
-  rank_half?: number;
-  views?: number;
+  rank: number;
+  view_count?: number;
 }
 
 type PeriodType = "week" | "month" | "half";
+
+// 期間を日数に変換
+const PERIOD_DAYS: Record<PeriodType, number> = {
+  week: 7,
+  month: 30,
+  half: 180,
+};
 
 // クライアント側で表外漢字をフィルタリング
 async function filterExtraKanji(rankingData: RankingItem[]): Promise<RankingItem[]> {
@@ -58,10 +63,8 @@ export default function ExtraRankingWithTabs() {
         const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
           kanji: item.kanji,
           hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank_week: index + 1,
-          rank_month: index + 1,
-          rank_half: index + 1,
-          views: item.views,
+          rank: index + 1,
+          view_count: item.views,
         }));
         // 表外漢字のみフィルタリング
         const filteredData = await filterExtraKanji(fallbackData);
@@ -71,52 +74,92 @@ export default function ExtraRankingWithTabs() {
         return;
       }
 
-      // kanji_viewsから実際の閲覧数データを取得
-      const { data: viewsData, error: viewsError } = await supabase
-        .from("kanji_views")
-        .select("kanji, views")
-        .order("views", { ascending: false })
-        .limit(1000); // 多めに取得してからフィルタリング
-
-      if (viewsError || !viewsData || viewsData.length === 0) {
-        throw new Error("データ取得に失敗しました");
-      }
-
-      // 表外漢字のみフィルタリング
-      const filteredData = await filterExtraKanji(
-        viewsData.map((item, index) => ({
-          kanji: item.kanji,
-          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank_week: index + 1,
-          rank_month: index + 1,
-          rank_half: index + 1,
-          views: item.views,
-        }))
+      // 期間別ランキング取得関数を呼び出し
+      const periodDays = PERIOD_DAYS[period];
+      const { data: rankingData, error } = await supabase.rpc(
+        "get_kanji_ranking_by_period",
+        { period_days: periodDays }
       );
 
-      // フィルタリング後に再度ランクを振り直し
-      const rankedData = filteredData
-        .sort((a, b) => (b.views || 0) - (a.views || 0))
-        .slice(0, 100)
-        .map((item, index) => ({
-          ...item,
-          rank_week: index + 1,
-          rank_month: index + 1,
-          rank_half: index + 1,
+      if (error) {
+        console.log(`⚠️ 期間別ランキング関数エラー: ${error.message}`);
+        console.log("→ kanji_viewsからフォールバック取得を試行");
+        
+        // フォールバック: kanji_viewsから累積データを取得
+        const { data: viewsData, error: viewsError } = await supabase
+          .from("kanji_views")
+          .select("kanji, views")
+          .order("views", { ascending: false })
+          .limit(1000); // 多めに取得してからフィルタリング
+
+        if (viewsError || !viewsData || viewsData.length === 0) {
+          throw new Error("データ取得に失敗しました");
+        }
+
+        const mappedData = viewsData.map((item, index) => ({
+          kanji: item.kanji,
+          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
+          rank: index + 1,
+          view_count: item.views,
         }));
 
-      setData(rankedData);
-      setIsFallback(false);
+        // 表外漢字のみフィルタリング
+        const filteredData = await filterExtraKanji(mappedData);
+        
+        // フィルタリング後に再度ランクを振り直し
+        const rankedData = filteredData
+          .sort((a, b) => (b.view_count || 0) - (a.view_count || 0))
+          .slice(0, 100)
+          .map((item, index) => ({
+            ...item,
+            rank: index + 1,
+          }));
+
+        setData(rankedData);
+        setIsFallback(true); // 累積データなのでフォールバック扱い
+      } else if (rankingData && rankingData.length > 0) {
+        // 期間別ランキングデータを使用
+        const mappedData = rankingData.map((item: { kanji: string; view_count: number; rank: number }) => ({
+          kanji: item.kanji,
+          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
+          rank: Number(item.rank),
+          view_count: Number(item.view_count),
+        }));
+        
+        // 表外漢字のみフィルタリング
+        const filteredData = await filterExtraKanji(mappedData);
+        
+        // フィルタリング後に再度ランクを振り直し
+        const rankedData = filteredData
+          .sort((a, b) => (b.view_count || 0) - (a.view_count || 0))
+          .slice(0, 100)
+          .map((item, index) => ({
+            ...item,
+            rank: index + 1,
+          }));
+        
+        setData(rankedData);
+        setIsFallback(false);
+      } else {
+        // データが空の場合はフォールバックを使用
+        const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
+          kanji: item.kanji,
+          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
+          rank: index + 1,
+          view_count: item.views,
+        }));
+        const filteredData = await filterExtraKanji(fallbackData);
+        setData(filteredData);
+        setIsFallback(true);
+      }
     } catch (err) {
       console.error("❌ Error loading ranking:", err);
       // エラー時はフォールバックデータを使用
       const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
         kanji: item.kanji,
         hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-        rank_week: index + 1,
-        rank_month: index + 1,
-        rank_half: index + 1,
-        views: item.views,
+        rank: index + 1,
+        view_count: item.views,
       }));
       const filteredData = await filterExtraKanji(fallbackData);
       setData(filteredData);
@@ -157,7 +200,6 @@ export default function ExtraRankingWithTabs() {
   }
 
   const displayedRanking = data.slice(0, limit);
-  const currentRank = activeTab === "week" ? "rank_week" : activeTab === "month" ? "rank_month" : "rank_half";
 
   return (
     <div className="space-y-4">
@@ -181,9 +223,6 @@ export default function ExtraRankingWithTabs() {
       {/* ランキングリスト */}
       <div className="space-y-2">
         {displayedRanking.map((item) => {
-          const rank = item[currentRank] || 0;
-          const hex = item.hex || item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "";
-          
           return (
             <Link
               key={`${item.kanji}-${activeTab}`}
@@ -192,12 +231,12 @@ export default function ExtraRankingWithTabs() {
             >
               {/* 順位 */}
               <div className={`w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg ${
-                rank === 1 ? "bg-yellow-400 text-yellow-900" :
-                rank === 2 ? "bg-gray-300 text-gray-700" :
-                rank === 3 ? "bg-amber-600 text-amber-100" :
+                item.rank === 1 ? "bg-yellow-400 text-yellow-900" :
+                item.rank === 2 ? "bg-gray-300 text-gray-700" :
+                item.rank === 3 ? "bg-amber-600 text-amber-100" :
                 "bg-secondary text-muted-foreground"
               }`}>
-                {rank}
+                {item.rank}
               </div>
 
               {/* 漢字 */}
@@ -206,9 +245,9 @@ export default function ExtraRankingWithTabs() {
               </div>
 
               {/* 閲覧数（表示可能な場合） */}
-              {item.views !== undefined && (
+              {item.view_count !== undefined && (
                 <div className="flex-1 text-right">
-                  <span className="text-lg font-medium">{item.views.toLocaleString()}</span>
+                  <span className="text-lg font-medium">{item.view_count.toLocaleString()}</span>
                   <span className="text-sm text-muted-foreground ml-1">回</span>
                 </div>
               )}
@@ -239,15 +278,14 @@ export default function ExtraRankingWithTabs() {
       {/* フォールバック表示中の注意 */}
       {isFallback && (
         <p className="text-center text-xs text-amber-600 pt-4">
-          ※ おすすめ漢字を表示しています（実際の閲覧数ではありません）
+          ※ 累積データまたはおすすめ漢字を表示しています
         </p>
       )}
 
       {/* 補足 */}
       <p className="text-xs text-center text-muted-foreground mt-8">
-        ※ ランキングは1日1回更新されます。
+        ※ ランキングは閲覧数に基づいてリアルタイムで更新されます。
       </p>
     </div>
   );
 }
-
