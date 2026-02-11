@@ -426,6 +426,53 @@ export function getArticleJsonLd(options: {
  * 漢字ページ構造化データ（DefinedTerm）
  * ページ内で個別定義されていた関数を共通化
  */
+// ============================================
+// ❓ クイズページ FAQ構造化データ
+// ============================================
+/**
+ * クイズページ用FAQPage構造化データ（JSON-LD）
+ */
+export function getQuizFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "書き順クイズとは？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "漢字の正しい書き順（筆順）を当てるクイズです。漢字が表示され、「正しい書き順を見る」ボタンを押すとSVGアニメーションで正解の筆順を確認できます。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "何文字の漢字が出題されますか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "常用漢字2136字すべてから出題されます。学年別フィルターで小学1年〜中学校まで絞り込むこともできます。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "学年別に出題できますか？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "はい。「全学年」「小学1年」〜「小学6年」「中学校」のボタンで学年を選んで出題範囲を絞り込めます。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "書き順を間違えやすい漢字は？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "「右」「左」「飛」「必」「成」「発」「馬」など、多くの人が書き順を間違えやすい漢字があります。詳しくは「書き順を間違えやすい漢字クイズ」ページをご覧ください。",
+        },
+      },
+    ],
+  };
+}
+
 export function getKanjiDefinedTermJsonLd(options: {
   kanji: string;
   ucsHex: string;

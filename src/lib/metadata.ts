@@ -69,6 +69,10 @@ const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
     title: "書き順を間違えやすい漢字クイズ | 練習・学習",
     description: "書き順を間違えやすい漢字をクイズ形式で学習。テストや入試でよく出題される重要漢字の正しい書き順を、アニメーション付きで確認できます。",
   },
+  "/quiz": {
+    title: "書き順クイズ｜漢字の正しい筆順をアニメで学習",
+    description: "漢字の書き順クイズに挑戦！常用漢字2136字から学年別に出題。正しい筆順をSVGアニメーションで確認できます。書き順を間違えやすい漢字も収録。",
+  },
 };
 
 // ============================================
@@ -115,6 +119,7 @@ export {
   getKanjiItemJsonLd,
   getArticleJsonLd,
   getKanjiDefinedTermJsonLd,
+  getQuizFaqJsonLd,
   type RankingEntry,
   type RankingPosition,
 } from "@/lib/structuredData";
@@ -136,8 +141,13 @@ export function generateKanjiMetadata(
   const hex = toKanjiHex(kanji);
   const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
 
-  // 現在のX（Twitter）OGP表示と完全に同一のタイトル
-  const title = `「${kanji}」の書き順（筆順アニメ付）｜読み方・部首・訓読み・音読み`;
+  // タイトルに音読み・訓読みの実際の値を含める（CTR改善）
+  const titleReadingParts: string[] = [];
+  if (onYomi.length > 0) titleReadingParts.push(`音読み(${onYomi[0]})`);
+  if (kunYomi.length > 0) titleReadingParts.push(`訓読み(${kunYomi[0]})`);
+  const title = titleReadingParts.length > 0
+    ? `「${kanji}」の書き順｜${titleReadingParts.join("・")}【筆順アニメ付】`
+    : `「${kanji}」の書き順【筆順アニメ付】`;
   
   // description: SVGアニメで書き順を解説 + 音読み／訓読み／画数／学年／JLPT情報を自動生成
   const descParts = [
@@ -163,6 +173,8 @@ export function generateKanjiMetadata(
       `${kanji} 書き順`,
       `${kanji} 筆順`,
       `${kanji} 読み方`,
+      `${kanji} 音読み`,
+      `${kanji} 訓読み`,
       `${kanji} 意味`,
       `${kanji} 画数`,
       ...onYomi,
