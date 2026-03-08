@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteMeta.url),
   title: {
     default: `${siteMeta.title}｜${siteMeta.siteNameEn}`,
-    template: `%s | ${siteMeta.siteNameEn}`,
+    template: `%s | ${siteMeta.siteName}`,
   },
   description: `${siteMeta.description} ${siteMeta.descriptionEn}`,
   keywords: ["漢字", "書き順", "筆順", "日本語学習", "stroke order", "kanji", "漢字練習", "書き方"],

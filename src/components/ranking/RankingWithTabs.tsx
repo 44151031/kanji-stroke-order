@@ -1,137 +1,86 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { supabase, isSupabaseConfigured } from "@/lib/supabaseClient";
 import { getKanjiLink } from "@/lib/linkUtils";
-import fallbackRanking from "@/data/fallbackRanking.json";
+
+/**
+ * 期間別ランキング コンポーネント
+ *
+ * - /api/ranking?period=xxx からデータ取得（サーバーサイドで期間フィルタ処理済み）
+ * - タブ切り替え時は router.push で URL を変更（SEO対応）
+ * - initialPeriod で初期表示の期間を受け取る
+ */
 
 interface RankingItem {
   kanji: string;
-  hex?: string;
   rank: number;
-  view_count?: number;
+  view_count: number;
 }
 
-type PeriodType = "week" | "month" | "half";
+// URL スラッグと表示ラベルのマッピング
+const PERIOD_OPTIONS = [
+  { slug: "week", label: "週間" },
+  { slug: "month", label: "月間" },
+  { slug: "half-year", label: "半年" },
+] as const;
 
-// 期間を日数に変換
-const PERIOD_DAYS: Record<PeriodType, number> = {
-  week: 7,
-  month: 30,
-  half: 180,
-};
+type PeriodSlug = (typeof PERIOD_OPTIONS)[number]["slug"];
 
-export default function RankingWithTabs() {
-  const [activeTab, setActiveTab] = useState<PeriodType>("week");
+interface Props {
+  initialPeriod?: string;
+}
+
+export default function RankingWithTabs({ initialPeriod = "week" }: Props) {
+  const router = useRouter();
+  const [activePeriod, setActivePeriod] = useState<PeriodSlug>(
+    isValidPeriod(initialPeriod) ? initialPeriod : "week"
+  );
   const [data, setData] = useState<RankingItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [isFallback, setIsFallback] = useState(false);
+  const [source, setSource] = useState<string>("");
   const [limit, setLimit] = useState(20);
 
-  const periodLabels = {
-    week: "1週間",
-    month: "1ヶ月",
-    half: "半年",
-  };
-
-  const fetchRanking = async (period: PeriodType) => {
+  const fetchRanking = useCallback(async (period: PeriodSlug) => {
     setLoading(true);
-    
     try {
-      // Supabaseが設定されていない場合はフォールバックを使用
-      if (!isSupabaseConfigured) {
-        console.log("📦 Supabase未設定のためフォールバックデータを使用");
-        const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
-          kanji: item.kanji,
-          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank: index + 1,
-          view_count: item.views,
-        }));
-        setData(fallbackData);
-        setIsFallback(true);
-        setLoading(false);
-        return;
+      const res = await fetch(`/api/ranking?period=${period}`);
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status}`);
       }
-
-      // 期間別ランキング取得関数を呼び出し
-      const periodDays = PERIOD_DAYS[period];
-      const { data: rankingData, error } = await supabase.rpc(
-        "get_kanji_ranking_by_period",
-        { period_days: periodDays }
-      );
-
-      if (error) {
-        console.log(`⚠️ 期間別ランキング関数エラー: ${error.message}`);
-        console.log("→ kanji_viewsからフォールバック取得を試行");
-        
-        // フォールバック: kanji_viewsから累積データを取得
-        const { data: viewsData, error: viewsError } = await supabase
-          .from("kanji_views")
-          .select("kanji, views")
-          .order("views", { ascending: false })
-          .limit(100);
-
-        if (viewsError || !viewsData || viewsData.length === 0) {
-          throw new Error("データ取得に失敗しました");
-        }
-
-        const mappedData = viewsData.map((item, index) => ({
-          kanji: item.kanji,
-          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank: index + 1,
-          view_count: item.views,
-        }));
-
-        setData(mappedData);
-        setIsFallback(true); // 累積データなのでフォールバック扱い
-      } else if (rankingData && rankingData.length > 0) {
-        // 期間別ランキングデータを使用
-        const mappedData = rankingData.map((item: { kanji: string; view_count: number; rank: number }) => ({
-          kanji: item.kanji,
-          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank: Number(item.rank),
-          view_count: Number(item.view_count),
-        }));
-        setData(mappedData);
-        setIsFallback(false);
-      } else {
-        // データが空の場合はフォールバックを使用
-        const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
-          kanji: item.kanji,
-          hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-          rank: index + 1,
-          view_count: item.views,
-        }));
-        setData(fallbackData);
-        setIsFallback(true);
-      }
+      const json = await res.json();
+      setData(json.data ?? []);
+      setSource(json.source ?? "");
     } catch (err) {
-      console.error("❌ Error loading ranking:", err);
-      // エラー時はフォールバックデータを使用
-      const fallbackData = fallbackRanking.slice(0, 100).map((item, index) => ({
-        kanji: item.kanji,
-        hex: item.kanji.codePointAt(0)?.toString(16).toUpperCase().padStart(4, "0") || "",
-        rank: index + 1,
-        view_count: item.views,
-      }));
-      setData(fallbackData);
-      setIsFallback(true);
+      console.error("ランキング取得エラー:", err);
+      setData([]);
+      setSource("error");
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
-  // 初回読み込み
+  // 初回・期間変更時にデータ取得
   useEffect(() => {
-    fetchRanking(activeTab);
-  }, [activeTab]);
+    fetchRanking(activePeriod);
+  }, [activePeriod, fetchRanking]);
 
-  // タブ切り替え時にデータを再取得
-  const handleTabChange = (period: PeriodType) => {
-    setActiveTab(period);
-    setLimit(20); // タブ切り替え時に表示件数をリセット
-    fetchRanking(period);
+  // initialPeriod が外から変わった場合（ルート遷移時）に同期
+  useEffect(() => {
+    if (isValidPeriod(initialPeriod) && initialPeriod !== activePeriod) {
+      setActivePeriod(initialPeriod);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialPeriod]);
+
+  // タブ切り替え
+  const handleTabChange = (period: PeriodSlug) => {
+    if (period === activePeriod) return;
+    setActivePeriod(period);
+    setLimit(20);
+    // URL を期間別ページに変更（shallow: ページ全体の再レンダリングを避ける）
+    router.push(`/ranking/${period}`, { scroll: false });
   };
 
   if (loading) {
@@ -144,9 +93,17 @@ export default function RankingWithTabs() {
 
   if (data.length === 0) {
     return (
-      <div className="text-center py-12 text-muted-foreground">
-        <p>まだランキングデータがありません</p>
-        <p className="text-sm mt-2">漢字ページを閲覧するとランキングに反映されます</p>
+      <div className="space-y-4">
+        <PeriodTabs
+          activePeriod={activePeriod}
+          onTabChange={handleTabChange}
+        />
+        <div className="text-center py-12 text-muted-foreground">
+          <p>この期間のランキングデータがありません</p>
+          <p className="text-sm mt-2">
+            漢字ページを閲覧するとランキングに反映されます
+          </p>
+        </div>
       </div>
     );
   }
@@ -156,56 +113,45 @@ export default function RankingWithTabs() {
   return (
     <div className="space-y-4">
       {/* タブメニュー */}
-      <div className="flex justify-center gap-4 mb-6">
-        {(["week", "month", "half"] as PeriodType[]).map((period) => (
-          <button
-            key={period}
-            onClick={() => handleTabChange(period)}
-            className={`px-6 py-2 rounded-full border text-sm font-medium transition ${
-              activeTab === period
-                ? "bg-amber-500 text-white border-amber-500"
-                : "bg-white text-gray-600 border-gray-300 hover:bg-gray-50"
-            }`}
-          >
-            {periodLabels[period]}
-          </button>
-        ))}
-      </div>
+      <PeriodTabs activePeriod={activePeriod} onTabChange={handleTabChange} />
 
       {/* ランキングリスト */}
       <div className="space-y-2">
-        {displayedRanking.map((item) => {
-          return (
-            <Link
-              key={`${item.kanji}-${activeTab}`}
-              href={getKanjiLink(item.kanji)}
-              className="flex items-center gap-4 p-3 rounded-lg border border-border hover:bg-secondary transition-colors"
+        {displayedRanking.map((item) => (
+          <Link
+            key={`${item.kanji}-${activePeriod}`}
+            href={getKanjiLink(item.kanji)}
+            className="flex items-center gap-4 p-3 rounded-lg border border-border hover:bg-secondary transition-colors"
+          >
+            {/* 順位バッジ */}
+            <div
+              className={`w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg ${
+                item.rank === 1
+                  ? "bg-yellow-400 text-yellow-900"
+                  : item.rank === 2
+                    ? "bg-gray-300 text-gray-700"
+                    : item.rank === 3
+                      ? "bg-amber-600 text-amber-100"
+                      : "bg-secondary text-muted-foreground"
+              }`}
             >
-              {/* 順位 */}
-              <div className={`w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg ${
-                item.rank === 1 ? "bg-yellow-400 text-yellow-900" :
-                item.rank === 2 ? "bg-gray-300 text-gray-700" :
-                item.rank === 3 ? "bg-amber-600 text-amber-100" :
-                "bg-secondary text-muted-foreground"
-              }`}>
-                {item.rank}
-              </div>
+              {item.rank}
+            </div>
 
-              {/* 漢字 */}
-              <div className="text-4xl font-bold w-16 text-center">
-                {item.kanji}
-              </div>
+            {/* 漢字 */}
+            <div className="text-4xl font-bold w-16 text-center">
+              {item.kanji}
+            </div>
 
-              {/* 閲覧数（表示可能な場合） */}
-              {item.view_count !== undefined && (
-                <div className="flex-1 text-right">
-                  <span className="text-lg font-medium">{item.view_count.toLocaleString()}</span>
-                  <span className="text-sm text-muted-foreground ml-1">回</span>
-                </div>
-              )}
-            </Link>
-          );
-        })}
+            {/* 閲覧数 */}
+            <div className="flex-1 text-right">
+              <span className="text-lg font-medium">
+                {item.view_count.toLocaleString()}
+              </span>
+              <span className="text-sm text-muted-foreground ml-1">回</span>
+            </div>
+          </Link>
+        ))}
       </div>
 
       {/* 次の20件を見るボタン */}
@@ -227,17 +173,49 @@ export default function RankingWithTabs() {
         </p>
       )}
 
-      {/* フォールバック表示中の注意 */}
-      {isFallback && (
+      {/* データソース表示（フォールバック時） */}
+      {source === "fallback" && (
         <p className="text-center text-xs text-amber-600 pt-4">
-          ※ 累積データまたはおすすめ漢字を表示しています
+          ※ おすすめ漢字データを表示しています
         </p>
       )}
 
       {/* 補足 */}
       <p className="text-xs text-center text-muted-foreground mt-8">
-        ※ ランキングは閲覧数に基づいてリアルタイムで更新されます。
+        ※ ランキングは閲覧数に基づいて定期的に更新されます。
       </p>
     </div>
   );
+}
+
+// ---- サブコンポーネント ----
+
+function PeriodTabs({
+  activePeriod,
+  onTabChange,
+}: {
+  activePeriod: PeriodSlug;
+  onTabChange: (period: PeriodSlug) => void;
+}) {
+  return (
+    <div className="flex justify-center gap-4 mb-6">
+      {PERIOD_OPTIONS.map(({ slug, label }) => (
+        <button
+          key={slug}
+          onClick={() => onTabChange(slug)}
+          className={`px-6 py-2 rounded-full border text-sm font-medium transition ${
+            activePeriod === slug
+              ? "bg-amber-500 text-white border-amber-500"
+              : "bg-white text-gray-600 border-gray-300 hover:bg-gray-50"
+          }`}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function isValidPeriod(period: string): period is PeriodSlug {
+  return PERIOD_OPTIONS.some((opt) => opt.slug === period);
 }

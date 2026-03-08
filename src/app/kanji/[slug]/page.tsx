@@ -18,6 +18,7 @@ import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd, getKanjiDefinedTermJsonLd } from "@/lib/structuredData";
 import { generateKanjiMetadata } from "@/lib/metadata";
+import { normalizeReading } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
 
 // 書き順を間違えやすい漢字リスト
@@ -323,7 +324,20 @@ export default async function KanjiPage({ params }: Props) {
 
         {/* ヘッダー（LCP最適化：h1は大きく） */}
         <header className="text-center">
-          <h1 className="text-8xl md:text-9xl font-bold mb-4 leading-none">{kanji}</h1>
+          <h1 className="mb-4">
+            <span className="text-8xl md:text-9xl font-bold leading-none block">{kanji}</span>
+            <span className="text-base font-normal text-muted-foreground mt-1 block">の読み方（音/訓）と書き順</span>
+          </h1>
+          {/* answerLine: 読み方を即座に提示 */}
+          {(detail.kun.length > 0 || detail.on.length > 0) && (
+            <p className="text-sm text-muted-foreground mb-3">
+              {detail.kun.length > 0 && detail.on.length > 0
+                ? `訓読み：${detail.kun.map(normalizeReading).join("、")} ／ 音読み：${detail.on.map(normalizeReading).join("、")}`
+                : detail.kun.length > 0
+                  ? `訓読み：${detail.kun.map(normalizeReading).join("、")}`
+                  : `音読み：${detail.on.map(normalizeReading).join("、")}`}
+            </p>
+          )}
           <div className="flex items-center justify-center gap-3 text-sm flex-wrap">
             {detail.grade > 0 && (
               <span className="px-3 py-1 bg-secondary rounded-full">{gradeLabel}</span>

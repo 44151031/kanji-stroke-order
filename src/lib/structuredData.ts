@@ -290,9 +290,9 @@ export function getKanjiPracticeJsonLd(
 /**
  * ランキングページ用構造化データ（ItemList）
  */
-export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = "") {
+export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = "", periodSlug: string = "") {
   const { url, siteName } = siteMeta;
-  
+
   // hexがない場合は生成
   const rankingWithHex = ranking.map((item) => ({
     ...item,
@@ -302,17 +302,20 @@ export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = 
   const name = periodLabel
     ? `人気の漢字ランキング（${periodLabel}）`
     : "人気の漢字ランキング";
-  
+
   const description = periodLabel
     ? `${siteName}内で最も閲覧された人気の漢字ランキング。${periodLabel}のトップ${ranking.length}漢字を掲載。`
     : `${siteName}内で最も閲覧された人気の漢字ランキング。トップ${ranking.length}漢字を掲載。`;
+
+  // 期間スラッグがあれば期間別URLを使用
+  const rankingUrl = periodSlug ? `${url}/ranking/${periodSlug}` : `${url}/ranking`;
 
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name,
     description,
-    url: `${url}/ranking`,
+    url: rankingUrl,
     numberOfItems: ranking.length,
     itemListElement: rankingWithHex.map((item, index) => ({
       "@type": "ListItem",
@@ -323,7 +326,7 @@ export function getRankingJsonLd(ranking: RankingEntry[], periodLabel: string = 
     isPartOf: {
       "@type": "CreativeWorkSeries",
       name: "人気の漢字ランキング",
-      url: `${url}/ranking`,
+      url: `${url}/ranking/week`,
     },
     inLanguage: "ja",
   };
@@ -339,8 +342,13 @@ export function getRankingSeriesJsonLd() {
     "@type": "CreativeWorkSeries",
     name: "人気の漢字ランキングシリーズ",
     description:
-      "閲覧数・検索数を基にした人気漢字ランキングシリーズ（週・月・半年）。",
-    url: `${url}/ranking`,
+      "閲覧数・検索数を基にした人気漢字ランキングシリーズ（週間・月間・半年間）。",
+    url: `${url}/ranking/week`,
+    hasPart: [
+      { "@type": "ItemList", name: "週間ランキング", url: `${url}/ranking/week` },
+      { "@type": "ItemList", name: "月間ランキング", url: `${url}/ranking/month` },
+      { "@type": "ItemList", name: "半年間ランキング", url: `${url}/ranking/half-year` },
+    ],
     creator: {
       "@type": "Organization",
       name: siteName,

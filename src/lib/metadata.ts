@@ -4,6 +4,7 @@
 import { Metadata } from "next";
 import { siteMeta } from "@/lib/siteMeta";
 import { getKanjiJsonLd } from "@/lib/structuredData";
+import { buildKanjiTitle, buildKanjiDescription } from "@/lib/seo";
 
 // siteMeta を re-export（後方互換性のため）
 export { siteMeta };
@@ -52,6 +53,18 @@ const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
   "/ranking": {
     title: "人気の漢字ランキング",
     description: "よく検索・閲覧されている人気の漢字をランキング形式で紹介。週・月・半年ごとの人気傾向を確認できます。",
+  },
+  "/ranking/week": {
+    title: "人気の漢字ランキング（週間）",
+    description: "過去7日間でよく閲覧されている人気の漢字をランキング形式で紹介。週間の漢字トレンドを確認できます。",
+  },
+  "/ranking/month": {
+    title: "人気の漢字ランキング（月間）",
+    description: "過去30日間でよく閲覧されている人気の漢字をランキング形式で紹介。月間の漢字トレンドを確認できます。",
+  },
+  "/ranking/half-year": {
+    title: "人気の漢字ランキング（半年間）",
+    description: "過去180日間でよく閲覧されている人気の漢字をランキング形式で紹介。半年間の漢字トレンドを確認できます。",
   },
   "/terms": {
     title: "利用規約・免責事項",
@@ -139,40 +152,29 @@ export function generateKanjiMetadata(
   }
 ): Metadata {
   const hex = toKanjiHex(kanji);
-  const { strokes, grade, onYomi = [], kunYomi = [], jlpt } = options || {};
+  const { strokes = 0, grade = 0, onYomi = [], kunYomi = [] } = options || {};
 
-  // タイトルに音読み・訓読みの実際の値を含める（CTR改善）
-  const titleReadingParts: string[] = [];
-  if (onYomi.length > 0) titleReadingParts.push(`音読み(${onYomi[0]})`);
-  if (kunYomi.length > 0) titleReadingParts.push(`訓読み(${kunYomi[0]})`);
-  const title = titleReadingParts.length > 0
-    ? `「${kanji}」の書き順｜${titleReadingParts.join("・")}【筆順アニメ付】`
-    : `「${kanji}」の書き順【筆順アニメ付】`;
-  
-  // description: SVGアニメで書き順を解説 + 音読み／訓読み／画数／学年／JLPT情報を自動生成
-  const descParts = [
-    `${kanji}の書き順（筆順）をSVGアニメで解説`,
-  ];
-  if (onYomi.length > 0) descParts.push(`音読み：${onYomi.slice(0, 3).join("、")}`);
-  if (kunYomi.length > 0) descParts.push(`訓読み：${kunYomi.slice(0, 3).join("、")}`);
-  if (meaning) descParts.push(`意味：${meaning}`);
-  if (strokes) descParts.push(`${strokes}画`);
-  if (grade) descParts.push(grade <= 6 ? `小学${grade}年` : "中学");
-  if (jlpt) descParts.push(`JLPT ${jlpt}`);
-  const description = descParts.join("。") + "。";
+  // SEOユーティリティでタイトル・descriptionを生成
+  const title = buildKanjiTitle({ kanji, on: onYomi, kun: kunYomi });
+  const description = buildKanjiDescription({
+    kanji,
+    on: onYomi,
+    kun: kunYomi,
+    strokes,
+    grade,
+  });
 
   const canonicalUrl = `${siteMeta.url}/kanji/u${hex}`;
-  // OGP画像URL（X（Twitter）で現在表示されている画像と同一）
   const ogImageUrl = `${siteMeta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: [
+      `${kanji} 読み方`,
       kanji,
       `${kanji} 書き順`,
       `${kanji} 筆順`,
-      `${kanji} 読み方`,
       `${kanji} 音読み`,
       `${kanji} 訓読み`,
       `${kanji} 意味`,
@@ -191,7 +193,7 @@ export function generateKanjiMetadata(
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: `${kanji}の書き順` }],
     },
     twitter: {
-      card: "summary_large_image", // X（Twitter）カードは summary_large_image
+      card: "summary_large_image",
       title,
       description,
       images: [ogImageUrl],
@@ -217,7 +219,8 @@ export function generateKanjiPracticeMetadata(
   const practiceUrl = `${siteMeta.url}/kanji/u${hex}/practice`;
   const ogImageUrl = `${siteMeta.url}/api/og-kanji?k=${encodeURIComponent(kanji)}`;
 
-  const title = `「${kanji}」の書き取りテスト（筆順練習モード）｜${meaning}・${strokes}画 | ${siteMeta.siteName}`;
+  // テンプレートで「| 漢字書き順ナビ」が付くため、サイト名を含めない
+  const title = `「${kanji}」の書き取り練習（${meaning}・${strokes}画）`;
   const description = `「${kanji}」（${meaning}）の正しい書き順を練習するための書き取りテストモード。${strokes}画の筆順を確認しながら書き取りスコアを記録できます。`;
 
   return {
@@ -294,12 +297,16 @@ export function generatePageMetadata(options: {
 
   const canonicalUrl = `${siteMeta.url}${path}`;
 
+  // titleはテンプレート（%s | 漢字書き順ナビ）で自動付与されるため、
+  // ページ側ではサイト名を含めない（二重サイト名の防止）
+  const ogTitle = `${title} | ${siteMeta.siteName}`;
+
   return {
-    title: `${title} | ${siteMeta.siteName}`,
+    title,
     description,
     ...baseMeta,
     openGraph: {
-      title: `${title} | ${siteMeta.siteName}`,
+      title: ogTitle,
       description,
       url: canonicalUrl,
       siteName: siteMeta.siteName,
@@ -316,7 +323,7 @@ export function generatePageMetadata(options: {
     },
     twitter: {
       card: siteMeta.twitterCard,
-      title: `${title} | ${siteMeta.siteName}`,
+      title: ogTitle,
       description,
       images: [image.startsWith("http") ? image : `${siteMeta.url}${image}`],
       creator: siteMeta.twitterCreator,

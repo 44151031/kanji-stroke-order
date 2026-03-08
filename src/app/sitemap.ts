@@ -55,12 +55,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    // ランキング
+    // ランキング（期間別）
     {
-      url: `${baseUrl}/ranking`,
+      url: `${baseUrl}/ranking/week`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ranking/month`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ranking/half-year`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
     // 部首一覧トップ
     {

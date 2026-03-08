@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 10 npm run dev:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(time npm run build)",
+      "Bash(tee:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(xargs kill:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(cat:*)",
+      "Bash(wc:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run build:*)",
+      "Bash(sort:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(git status:*)",
+      "Bash(npx vitest:*)",
+      "Bash(git diff:*)"
+    ]
+  }
+}
