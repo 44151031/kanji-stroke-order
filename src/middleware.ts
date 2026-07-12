@@ -7,6 +7,19 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+const LEGACY_RADICAL_SLUGS: Record<string, string> = {
+  hand: "hand-radical",
+  horse: "horse-radical",
+  tree: "tree-radical",
+  animal: "animal-radical",
+  mountain: "mountain-radical",
+  "yumi-independent": "yumi-independent-radical",
+  "tamahen-left": "tamahen-left-radical",
+  "komanuki-bottom": "komanuki-bottom-radical",
+  "sei-independent": "sei-independent-radical",
+  "ishi-independent": "ishi-independent-radical",
+};
+
 /**
  * 漢字かどうかを判定（CJK統合漢字の範囲）
  */
@@ -52,6 +65,18 @@ function normalizeUnicodeSlug(slug: string): string {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const radicalMatch = pathname.match(/^\/radical\/([^/]+)$/i);
+  if (radicalMatch) {
+    const legacySlug = decodeURIComponent(radicalMatch[1]).toLowerCase();
+    const canonicalSlug = LEGACY_RADICAL_SLUGS[legacySlug];
+
+    if (canonicalSlug && radicalMatch[1] !== canonicalSlug) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/radical/${canonicalSlug}`;
+      return NextResponse.redirect(url, { status: 301 });
+    }
+  }
   
   // /kanji/[slug] パターンをチェック
   const kanjiMatch = pathname.match(/^\/kanji\/([^/]+)$/);
@@ -99,6 +124,6 @@ export const config = {
   matcher: [
     // /kanji/[slug] にのみ適用
     "/kanji/:slug*",
+    "/radical/:slug*",
   ],
 };
-

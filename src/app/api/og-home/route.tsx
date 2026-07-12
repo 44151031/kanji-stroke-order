@@ -3,7 +3,7 @@ import { ImageResponse } from "@vercel/og";
 export const runtime = "edge";
 
 export async function GET() {
-  return new ImageResponse(
+  const response = new ImageResponse(
     (
       <div
         style={{
@@ -115,4 +115,8 @@ export async function GET() {
       height: 630,
     }
   );
+
+  // OGP images are assets, not standalone search result pages.
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return response;
 }

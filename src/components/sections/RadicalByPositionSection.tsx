@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
-  formatRadicalName,
   buildSlugIndex,
   getUniqueSlug,
   radicalList,
-  RADICAL_POSITION_TYPES,
 } from "@/lib/radicalList";
 
 interface RadicalBilingual {
@@ -45,6 +43,7 @@ function getDisplayEnglish(enName: string): string {
 }
 
 export default function RadicalByPositionSection({ radicals, radicalCounts }: Props) {
+  const slugIndex = buildSlugIndex(radicalList);
   // 配置ごとにグループ化
   const groupedRadicals: Record<string, RadicalBilingual[]> = {};
   
@@ -91,6 +90,12 @@ export default function RadicalByPositionSection({ radicals, radicalCounts }: Pr
                 {items.map((r) => {
                   const count = radicalCounts[r.radical_name_en] || 0;
                   const englishDisplay = getDisplayEnglish(r.radical_name_en);
+                  const matchedRadical = radicalList.find(
+                    (item) => item.en === r.radical_name_en
+                  );
+                  const canonicalSlug = matchedRadical
+                    ? getUniqueSlug(matchedRadical, slugIndex)
+                    : r.radical_name_en;
                   // 表示形式: 日本語名（English）
                   const displayName = r.radical_name_ja !== r.radical_name_en
                     ? `${r.radical_name_ja}（${englishDisplay}）`
@@ -99,7 +104,7 @@ export default function RadicalByPositionSection({ radicals, radicalCounts }: Pr
                   return (
                     <Link
                       key={r.radical_name_en}
-                      href={`/radical/${encodeURIComponent(r.radical_name_en)}`}
+                      href={`/radical/${encodeURIComponent(canonicalSlug)}`}
                       className="flex items-center gap-3 p-3 border border-border rounded-xl hover:bg-secondary hover:shadow-md transition-all"
                       title={r.description_en}
                     >

@@ -7,7 +7,7 @@ export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const kanji = searchParams.get("k") || "漢";
 
-  return new ImageResponse(
+  const response = new ImageResponse(
     (
       <div
         style={{
@@ -100,6 +100,10 @@ export async function GET(request: NextRequest) {
       height: 630,
     }
   );
+
+  // OGP images are assets, not standalone search result pages.
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return response;
 }
 
 
