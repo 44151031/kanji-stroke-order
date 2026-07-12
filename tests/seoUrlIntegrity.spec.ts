@@ -33,6 +33,14 @@ describe("SEO URL integrity", () => {
     }
   });
 
+  test("radical route slugs contain ASCII characters only", () => {
+    const counts = buildSlugIndex(radicalList);
+
+    for (const radical of radicalList) {
+      expect(getUniqueSlug(radical, counts)).toMatch(/^[a-z0-9-]+$/i);
+    }
+  });
+
   test("radical metadata can use the canonical route slug", () => {
     const metadata = generateRadicalMetadata(
       "てへん（Hand）",

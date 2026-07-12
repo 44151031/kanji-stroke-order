@@ -55,7 +55,10 @@ export const buildSlugIndex = (list: Radical[]) => {
  * URL用スラッグに変換: 「・」を「-」に変換
  */
 const slugify = (str: string): string => {
-  return str.replace(/・/g, "-");
+  return str
+    .replace(/・/g, "-")
+    .replace(/\u3087/g, "yo")
+    .replace(/\u3085/g, "yu");
 };
 
 export const getUniqueSlug = (r: Radical, counts: Map<string, number>) => {

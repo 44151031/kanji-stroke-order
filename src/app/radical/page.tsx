@@ -27,11 +27,16 @@ const POSITION_LABELS: Record<string, { label: string; labelEn: string; icon: st
 };
 
 // 漢字マスターデータを読み込み
-function loadKanjiMaster(): any[] {
+interface KanjiMasterEntry {
+  radical?: { name?: string };
+  radicals?: string[];
+}
+
+function loadKanjiMaster(): KanjiMasterEntry[] {
   const kanjiPath = path.join(process.cwd(), "data", "kanji_master.json");
   try {
     const content = fs.readFileSync(kanjiPath, "utf8");
-    return JSON.parse(content);
+    return JSON.parse(content) as KanjiMasterEntry[];
   } catch {
     return [];
   }
@@ -54,7 +59,7 @@ function loadRadicalKanjiList(slug: string, originalEn?: string, type?: string):
   // 2. 元の「・」を含むファイル名で試す（後方互換性のため）
   if (originalEn) {
     // 2-1. 元のenそのまま
-    if (originalEn.includes("・")) {
+    {
       filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}.json`);
       if (fs.existsSync(filePath)) {
         try {
@@ -67,7 +72,7 @@ function loadRadicalKanjiList(slug: string, originalEn?: string, type?: string):
     }
     
     // 2-2. 元のen + type（{en}-{type}.json形式）
-    if (type && originalEn.includes("・")) {
+    if (type) {
       filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}-${type}.json`);
       if (fs.existsSync(filePath)) {
         try {
@@ -99,7 +104,7 @@ export default function RadicalIndexPage() {
     
     // data/radicals/{slug}.json にデータがない場合のみ kanji_master.json からカウント
     if (count === 0) {
-      count = kanjiList.filter((k: any) => {
+      count = kanjiList.filter((k) => {
         // radical.name が一致するか
         if (k.radical?.name === englishName) return true;
         // radicals 配列に含まれているか

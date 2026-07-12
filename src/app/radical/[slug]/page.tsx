@@ -48,7 +48,7 @@ function loadKanjiList(slug: string, originalEn?: string, type?: string): string
   // 2. 元の「・」を含むファイル名で試す（後方互換性のため）
   if (originalEn) {
     // 2-1. 元のenそのまま
-    if (originalEn.includes("・")) {
+    {
       filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}.json`);
       if (fs.existsSync(filePath)) {
         try {
@@ -61,7 +61,7 @@ function loadKanjiList(slug: string, originalEn?: string, type?: string): string
     }
     
     // 2-2. 元のen + type（{en}-{type}.json形式）
-    if (type && originalEn.includes("・")) {
+    if (type) {
       filePath = path.join(process.cwd(), "data", "radicals", `${originalEn}-${type}.json`);
       if (fs.existsSync(filePath)) {
         try {

@@ -40,6 +40,7 @@ async function main() {
 
   if (baseUrl) {
     const concurrency = 12;
+    const requestTimeoutMs = 15_000;
     let cursor = 0;
 
     const worker = async () => {
@@ -47,13 +48,19 @@ async function main() {
         const index = cursor++;
         const pathname = new URL(urls[index]).pathname;
         const target = `${baseUrl}${pathname}`;
-        const response = await fetch(target, {
-          method: "HEAD",
-          redirect: "manual",
-        });
+        try {
+          const response = await fetch(target, {
+            method: "HEAD",
+            redirect: "manual",
+            signal: AbortSignal.timeout(requestTimeoutMs),
+          });
 
-        if (response.status !== 200) {
-          errors.push(`${response.status} ${target}`);
+          if (response.status !== 200) {
+            errors.push(`${response.status} ${target}`);
+          }
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error);
+          errors.push(`NETWORK_ERROR ${target} (${message})`);
         }
       }
     };
