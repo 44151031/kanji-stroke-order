@@ -32,6 +32,7 @@
     "radical:report": "tsx scripts/radicalMissingReport.ts",
     "radical:fix": "tsx scripts/radicalAutoFix.ts",
     "radical:pipeline": "tsx scripts/runRadicalPipeline.ts",
+    "seo:audit": "tsx scripts/audit-seo-routes.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui"

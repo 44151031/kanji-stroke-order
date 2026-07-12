@@ -1,0 +1,115 @@
+
+> kanji-stroke-order@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.7 (Turbopack)
+   - Environments: .env.local
+
+ ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ✓ Compiled successfully in 5.9s
+   Running TypeScript ...
+   Collecting page data using 15 workers ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages using 15 workers (0/2815) ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   Generating static pages using 15 workers (703/2815) 
+   Generating static pages using 15 workers (1407/2815) 
+   Generating static pages using 15 workers (2111/2815) 
+ ✓ Generating static pages using 15 workers (2815/2815) in 92s
+   Finalizing page optimization ...
+
+Route (app)                          Revalidate  Expire
+┌ ○ /                                        1w      1y
+├ ○ /_not-found
+├ ƒ /api/generate-svg
+├ ƒ /api/kanji-data
+├ ƒ /api/og-home
+├ ƒ /api/og-kanji
+├ ƒ /api/test-supabase
+├ ○ /articles/common-misorder-kanji
+├ ○ /confused-kanji                          1w      1y
+├ ○ /exam-kanji                              1w      1y
+├ ● /grade/[n]                               1w      1y
+│ ├ /grade/1                                 1w      1y
+│ ├ /grade/2                                 1w      1y
+│ ├ /grade/3                                 1w      1y
+│ └ [+4 more paths]
+├ ● /kanji/[slug]                           30d      1y
+│ ├ /kanji/u4E00                            30d      1y
+│ ├ /kanji/u4E5D                            30d      1y
+│ ├ /kanji/u4E03                            30d      1y
+│ └ [+197 more paths]
+├ ● /kanji/[slug]/practice                  30d      1y
+│ ├ /kanji/u4E00/practice                   30d      1y
+│ ├ /kanji/u4E5D/practice                   30d      1y
+│ ├ /kanji/u4E03/practice                   30d      1y
+│ └ [+2133 more paths]
+├ ○ /kanji/classical                         1w      1y
+├ ○ /kanji/extra                             1w      1y
+├ ○ /kanji/extra/other                       1w      1y
+├ ○ /kanji/extra/ranking                     1d      1y
+├ ○ /kanji/name                              1w      1y
+├ ○ /kanji/rare                              1w      1y
+├ ● /lists/[type]                            1w      1y
+│ ├ /lists/exam                              1w      1y
+│ ├ /lists/mistake                           1w      1y
+│ └ /lists/confused                          1w      1y
+├ ○ /lists/misorder
+├ ○ /mistake-kanji                           1w      1y
+├ ○ /operation
+├ ○ /radical                                 2w      1y
+├ ● /radical/[slug]                          2w      1y
+│ ├ /radical/water-radical                   2w      1y
+│ ├ /radical/person-radical                  2w      1y
+│ ├ /radical/hand-radical                    2w      1y
+│ └ [+418 more paths]
+├ ○ /ranking                                 1d      1y
+├ ○ /robots.txt
+├ ○ /search                                  1d      1y
+├ ○ /sitemap.xml
+├ ● /strokes/[n]                             1w      1y
+│ ├ /strokes/4                               1w      1y
+│ ├ /strokes/1                               1w      1y
+│ ├ /strokes/2                               1w      1y
+│ └ [+21 more paths]
+└ ○ /terms
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

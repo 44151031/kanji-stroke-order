@@ -376,12 +376,13 @@ export function generateRadicalIndexMetadata(): Metadata {
  */
 export function generateRadicalMetadata(
   radicalJp: string,
-  radicalEn: string
+  radicalEn: string,
+  canonicalSlug = radicalEn
 ): Metadata {
   return generatePageMetadata({
     title: `${radicalJp}の部首の漢字一覧`,
     description: `部首「${radicalJp}」を持つ漢字の一覧。書き順・読み方・意味を解説。部首から漢字を検索できます。`,
-    path: `/radical/${radicalEn}`,
+    path: `/radical/${canonicalSlug}`,
   });
 }
 
@@ -425,4 +426,3 @@ export function generateKanjiMetaWithJsonLd(
     jsonLd: getKanjiJsonLd(kanji, meaning, options?.strokes || 0),
   };
 }
-

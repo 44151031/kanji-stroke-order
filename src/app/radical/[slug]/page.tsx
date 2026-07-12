@@ -98,8 +98,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const displayName = formatRadicalName(r.jp, r.en);
   const englishName = getEnglishDisplayName(r.en);
+  const counts = buildSlugIndex(radicalList);
+  const canonicalSlug = getUniqueSlug(r, counts);
   
-  return generateRadicalMetadata(displayName, englishName);
+  return generateRadicalMetadata(displayName, englishName, canonicalSlug);
 }
 
 export default async function RadicalDetailPage({ params }: Props) {
@@ -109,7 +111,6 @@ export default async function RadicalDetailPage({ params }: Props) {
   if (!r) return notFound();
 
   const counts = buildSlugIndex(radicalList);
-  const uniqueSlug = getUniqueSlug(r, counts);
   const displayName = formatRadicalName(r.jp, r.en);
   const posInfo = POSITION_LABELS[r.type] || { label: "その他", labelEn: "Other" };
   

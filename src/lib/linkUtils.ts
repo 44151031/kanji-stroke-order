@@ -11,7 +11,7 @@ import type { KanjiItem } from "@/types/kanji";
 export function kanjiToId(kanji: string): string {
   const codePoint = kanji.codePointAt(0);
   if (!codePoint) return "";
-  return `u${codePoint.toString(16).toLowerCase().padStart(4, "0")}`;
+  return `u${codePoint.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
 /**
