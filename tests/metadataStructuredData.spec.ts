@@ -45,13 +45,18 @@ describe("Metadata Generation Functions", () => {
     });
 
     expect(meta).toBeDefined();
-    expect(meta.title).toContain("水");
-    expect(meta.title).toContain("書き順");
+    // 現仕様: タイトルは { absolute } 形式（layoutの「%s | サイト名」テンプレートを回避）で
+    // 「{漢字}の読み方（音/訓）｜{訓}・{音}｜漢字書き順ナビ」形式（読み方主語タイトル）
+    const kanjiTitle = (meta.title as { absolute: string }).absolute;
+    expect(kanjiTitle).toContain("水");
+    expect(kanjiTitle).toContain("読み方");
+    // 現仕様: description は「読み方」「画数・学年」「書き順解説」の3文構成（英語の意味は含まない）
     expect(meta.description).toContain("水");
-    expect(meta.description).toContain("water");
+    expect(meta.description).toContain("4画");
+    expect(meta.description).toContain("書き順");
     expect(meta.openGraph).toBeDefined();
     expect(meta.openGraph?.url).toContain("/kanji/");
-    expect(meta.openGraph?.type).toBe("article");
+    expect((meta.openGraph as { type?: string })?.type).toBe("article");
     expect(meta.keywords).toContain("水");
   });
 
@@ -59,11 +64,12 @@ describe("Metadata Generation Functions", () => {
     const meta = generateKanjiPracticeMetadata("日", "sun", 4);
 
     expect(meta).toBeDefined();
+    // 現仕様: タイトルは「「{漢字}」の書き取り練習（{意味}・{画数}画）」
     expect(meta.title).toContain("日");
-    expect(meta.title).toContain("書き取りテスト");
+    expect(meta.title).toContain("書き取り練習");
     expect(meta.description).toContain("日");
     expect(meta.openGraph).toBeDefined();
-    expect(meta.openGraph?.type).toBe("article");
+    expect((meta.openGraph as { type?: string })?.type).toBe("article");
     expect(meta.openGraph?.url).toContain("/practice");
     expect(meta.keywords).toContain("書き取り練習");
   });
@@ -136,7 +142,7 @@ describe("Structured Data (JSON-LD) Functions", () => {
     expect(jsonLd["@graph"].length).toBeGreaterThan(0);
 
     // WebSite タイプが含まれているか
-    const website = jsonLd["@graph"].find((item: any) => item["@type"] === "WebSite");
+    const website = jsonLd["@graph"].find((item) => item["@type"] === "WebSite");
     expect(website).toBeDefined();
     expect(website?.url).toBeDefined();
   });
@@ -276,13 +282,13 @@ describe("Structured Data (JSON-LD) Functions", () => {
     expect(jsonLd.additionalProperty).toBeDefined();
     expect(Array.isArray(jsonLd.additionalProperty)).toBe(true);
     
-    const strokesProp = jsonLd.additionalProperty.find((prop: any) => prop.name === "strokes");
+    const strokesProp = jsonLd.additionalProperty.find((prop) => prop.name === "strokes");
     expect(strokesProp).toBeDefined();
     expect(strokesProp?.value).toBe(4);
     
     expect(jsonLd.hasPart).toBeDefined();
     expect(Array.isArray(jsonLd.hasPart)).toBe(true);
-    expect(jsonLd.hasPart.length).toBe(2);
+    expect(jsonLd.hasPart?.length).toBe(2);
   });
 });
 
@@ -309,8 +315,8 @@ describe("Metadata & StructuredData Integration", () => {
     expect(metaUrl).toContain("/kanji/");
     expect(jsonLdUrl).toContain("/kanji/");
     
-    // タイトルと名前の整合性
-    expect(meta.title).toContain("水");
+    // タイトルと名前の整合性（タイトルは { absolute } 形式）
+    expect((meta.title as { absolute: string }).absolute).toContain("水");
     expect(jsonLd.name).toContain("水");
   });
 

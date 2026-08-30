@@ -20,6 +20,8 @@ import { getKanjiItemJsonLd, getKanjiDefinedTermJsonLd } from "@/lib/structuredD
 import { generateKanjiMetadata } from "@/lib/metadata";
 import { normalizeReading } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import KanjiEditorialSection from "@/components/kanji/KanjiEditorialSection";
+import { loadKanjiEditorial } from "@/lib/kanjiEditorial";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -289,6 +291,9 @@ export default async function KanjiPage({ params }: Props) {
   // SVGの存在確認（hasStrokeDataフラグまたはファイル存在確認）
   const hasStrokeData = detail.hasStrokeData !== false && hasSvgFile(detail.ucsHex);
 
+  // 編集コンテンツ（data/kanji-editorial/ に存在する漢字のみ）
+  const editorial = loadKanjiEditorial(detail.ucsHex);
+
   return (
     <>
       {/* アクセス記録（Supabase） */}
@@ -418,6 +423,9 @@ export default async function KanjiPage({ params }: Props) {
         <div className="flex justify-center">
           <XQuizShareButton kanji={kanji} />
         </div>
+
+        {/* 編集コンテンツ（書き方のポイント・例文・見分け方・FAQ・関連記事） */}
+        {editorial && <KanjiEditorialSection editorial={editorial} />}
 
         {/* 読み方・意味 */}
         <Card className="w-full max-w-lg rounded-2xl shadow-sm border">

@@ -71,8 +71,12 @@ const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
     description: "漢字書き順ナビの利用規約および免責事項ページ。著作権・引用・データ利用方針を明示しています。",
   },
   "/operation": {
-    title: "運営管理",
-    description: "漢字書き順ナビの運営主体・管理情報ページ。管理者・連絡先・データライセンス情報を掲載しています。",
+    title: "運営者情報・編集方針",
+    description: "漢字書き順ナビの運営者情報・サイトの目的・編集方針のページ。書き順データや読み・意味データの出典、情報の確認方法、更新方針、お問い合わせ先を掲載しています。",
+  },
+  "/privacy": {
+    title: "プライバシーポリシー",
+    description: "漢字書き順ナビのプライバシーポリシー。個人情報の取り扱い、Cookie、Google Analytics・Google AdSenseなど第三者配信サービスの利用について説明しています。",
   },
   "/articles/common-misorder-kanji": {
     title: "書き順を間違えやすい漢字TOP20",
@@ -391,17 +395,36 @@ export function generateRadicalMetadata(
 // ============================================
 /**
  * リストページ（/lists/[type]）用メタデータ生成
+ *
+ * /lists/exam・/lists/mistake・/lists/confused は /exam-kanji・/mistake-kanji・/confused-kanji と
+ * 同一トピックの重複ページのため、canonical を /*-kanji 側（正規URL）に向けて統合する。
+ * ページ自体は残し、リダイレクトは行わない。
  */
+const LIST_CANONICAL_MAP: Record<string, string> = {
+  exam: "/exam-kanji",
+  mistake: "/mistake-kanji",
+  confused: "/confused-kanji",
+};
+
 export function generateListMetadata(
   type: string,
   title: string,
   description: string
 ): Metadata {
-  return generatePageMetadata({
+  const meta = generatePageMetadata({
     title,
     description,
     path: `/lists/${type}`,
   });
+
+  const canonicalPath = LIST_CANONICAL_MAP[type];
+  if (canonicalPath) {
+    return {
+      ...meta,
+      alternates: { canonical: `${siteMeta.url}${canonicalPath}` },
+    };
+  }
+  return meta;
 }
 
 // ============================================

@@ -45,9 +45,63 @@ export default function TermsPage() {
               本サイトで使用している漢字データは以下のオープンデータを活用しています。
             </p>
             <ul className="list-disc list-inside text-sm leading-relaxed text-muted-foreground space-y-2 ml-4">
-              <li>KanjiVG（CC BY-SA 3.0）</li>
-              <li>KANJIDIC2（© EDRDG）</li>
-              <li>UniDic（MIT License）</li>
+              <li>
+                書き順（筆順）データ：
+                <a
+                  href="https://kanjivg.tagaini.net/"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  KanjiVG
+                </a>
+                （© Ulrich Apel、
+                <a
+                  href="https://creativecommons.org/licenses/by-sa/3.0/deed.ja"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CC BY-SA 3.0
+                </a>
+                ）
+              </li>
+              <li>
+                読み・意味データ：
+                <a
+                  href="https://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  KANJIDIC2
+                </a>
+                （© Electronic Dictionary Research and Development Group（EDRDG）、
+                <a
+                  href="https://www.edrdg.org/edrdg/licence.html"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CC BY-SA 4.0
+                </a>
+                ）
+              </li>
+              <li>
+                ひらがな・カタカナの筆順データ：
+                <a
+                  href="https://github.com/parsimonhi/animCJK"
+                  className="text-blue-600 hover:text-blue-800 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  animCJK
+                </a>
+                （かなのSVGファイルは GNU Lesser General Public License で配布されています）
+              </li>
+              <li>
+                語彙辞書：UniDic（© 国立国語研究所 / The UniDic Consortium、BSD License）
+              </li>
             </ul>
             <p className="text-sm leading-relaxed text-muted-foreground mt-3">
               コンテンツの引用・転載を行う場合は、出典を明記のうえ非営利目的に限りご利用ください。

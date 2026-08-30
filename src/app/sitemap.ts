@@ -4,6 +4,7 @@ import path from "path";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 import { siteMeta } from "@/lib/metadata";
 import radicalList, { buildSlugIndex, getUniqueSlug } from "@/lib/radicalList";
+import { articles } from "@/lib/articles";
 
 interface KanjiEntry {
   kanji: string;
@@ -48,13 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 1,
     },
-    // 検索
-    {
-      url: `${baseUrl}/search`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
+    // ※ /search はサイト内検索結果ページのため sitemap 非掲載（noindex,follow 運用）
     // ランキング（期間別）
     {
       url: `${baseUrl}/ranking/week`,
@@ -82,31 +77,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     // 漢字リストページ
-    {
-      url: `${baseUrl}/lists/exam`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/lists/mistake`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/lists/confused`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    // ※ /lists/exam・/lists/mistake・/lists/confused は /exam-kanji 等と内容が重複するため
+    //    canonical を /*-kanji 側に向け、sitemap には正規URL（/*-kanji）のみ掲載する
     {
       url: `${baseUrl}/lists/misorder`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    // 独立したリストページ
+    // 独立したリストページ（正規URL）
     {
       url: `${baseUrl}/exam-kanji`,
       lastModified: new Date(),
@@ -139,6 +118,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    // プライバシーポリシー
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     // クイズ
     {
       url: `${baseUrl}/quiz`,
@@ -146,14 +132,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    // 記事ページ
+    // 記事一覧ページ
     {
-      url: `${baseUrl}/articles/common-misorder-kanji`,
+      url: `${baseUrl}/articles`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
   ];
+
+  // 記事ページ（レジストリから自動生成）
+  articles.forEach((a) => {
+    sitemap.push({
+      url: `${baseUrl}/articles/${a.slug}`,
+      lastModified: new Date(a.dateModified),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
+  });
   
   // 学年別ページ（/grade/1 〜 /grade/8）
   const grades = [...new Set(joyoList.map((k) => k.grade))].sort((a, b) => a - b);

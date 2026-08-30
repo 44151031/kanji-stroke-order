@@ -21,7 +21,7 @@ interface ConfusedPair {
 
 const CONFUSED_PAIRS: ConfusedPair[] = [
   // 一画の違い
-  { kanji1: "土", kanji2: "士", meaning1: "earth", meaning2: "samurai", hint: "土は上が長い、士は下が長い", source: "weblio.jp" },
+  { kanji1: "土", kanji2: "士", meaning1: "earth", meaning2: "samurai", hint: "土は下が長い、士は上が長い", source: "weblio.jp" },
   { kanji1: "末", kanji2: "未", meaning1: "end", meaning2: "not yet", hint: "末は上が長い、未は上が短い", source: "weblio.jp" },
   { kanji1: "犬", kanji2: "太", meaning1: "dog", meaning2: "fat", hint: "犬は点が右上、太は点が真ん中", source: "weblio.jp" },
   { kanji1: "牛", kanji2: "午", meaning1: "cow", meaning2: "noon", hint: "牛は縦線が突き抜ける", source: "weblio.jp" },

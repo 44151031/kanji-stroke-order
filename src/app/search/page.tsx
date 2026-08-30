@@ -7,9 +7,14 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 // ISR設定：1日間キャッシュ（検索ページは半動的）
 export const revalidate = 86400; // 1日
 
-export const metadata: Metadata = generatePageMetadata({
-  path: "/search",
-});
+// サイト内検索結果ページは低価値インデックスを防ぐため noindex,follow とする。
+// robots.txt ではブロックせず、Googlebot が noindex を確認できる状態を維持する。
+export const metadata: Metadata = {
+  ...generatePageMetadata({
+    path: "/search",
+  }),
+  robots: { index: false, follow: true },
+};
 
 function SearchLoading() {
   return (
