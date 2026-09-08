@@ -1,7 +1,8 @@
+import { notFound } from "next/navigation";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
 
@@ -46,6 +47,7 @@ const categories = [
 ];
 
 export default function ExtraKanjiPage() {
+  if (getExtraKanji().length === 0) notFound();
   return (
     <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">
       <Breadcrumb

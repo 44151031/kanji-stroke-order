@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,6 +28,8 @@ export default async function OtherExtraKanjiPage() {
 
   // 画数順にソート
   otherKanji.sort((a, b) => a.strokes - b.strokes);
+
+  if (otherKanji.length === 0) notFound();
 
   return (
     <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">

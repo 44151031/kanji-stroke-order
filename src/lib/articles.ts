@@ -133,13 +133,13 @@ export const articles: ArticleEntry[] = [
   },
   {
     slug: "common-misorder-kanji",
-    title: "書き順を間違えやすい漢字TOP20",
+    title: "書き順を間違えやすい漢字20選",
     description:
-      "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
+      "九・左・右・武・録など20字の筆順の注意点を解説。各漢字の書き順アニメーションで確認できます。",
     datePublished: "2025-12-03",
-    dateModified: "2025-12-03",
+    dateModified: "2026-09-08",
     category: "書き順",
-    kanji: ["九", "左", "右", "成", "区", "武", "飛"],
+    kanji: [..."九左右成区武飛非然録券並斜祭料点焼働続感"],
     related: ["migi-hidari-stroke-order", "hitsu-stroke-order", "tobu-stroke-order"],
   },
 ];

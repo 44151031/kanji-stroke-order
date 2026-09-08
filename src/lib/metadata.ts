@@ -79,8 +79,8 @@ const PAGE_META_MAP: Record<string, { title: string; description: string }> = {
     description: "漢字書き順ナビのプライバシーポリシー。個人情報の取り扱い、Cookie、Google Analytics・Google AdSenseなど第三者配信サービスの利用について説明しています。",
   },
   "/articles/common-misorder-kanji": {
-    title: "書き順を間違えやすい漢字TOP20",
-    description: "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
+    title: "書き順を間違えやすい漢字20選",
+    description: "九・左・右・武・録など20字の筆順の注意点を解説。各漢字の書き順アニメーションで確認できます。",
   },
   "/lists/misorder": {
     title: "書き順を間違えやすい漢字クイズ | 練習・学習",

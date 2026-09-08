@@ -14,7 +14,7 @@ import KanjiLink from "@/components/common/KanjiLink";
 import { XShareButton } from "@/components/common/XShareButton";
 import { XQuizShareButton } from "@/components/common/XQuizShareButton";
 import KanjiModeToggle from "@/components/common/KanjiModeToggle";
-import { toUnicodeSlug, fromUnicodeSlug, getKanjiUrl } from "@/lib/slugHelpers";
+import { toUnicodeSlug, fromUnicodeSlug } from "@/lib/slugHelpers";
 import { getRankingPositionSync } from "@/lib/rankingUtils";
 import { getKanjiItemJsonLd, getKanjiDefinedTermJsonLd } from "@/lib/structuredData";
 import { generateKanjiMetadata } from "@/lib/metadata";
@@ -22,6 +22,8 @@ import { normalizeReading } from "@/lib/seo";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import KanjiEditorialSection from "@/components/kanji/KanjiEditorialSection";
 import { loadKanjiEditorial } from "@/lib/kanjiEditorial";
+import { getKanjiWithMeta } from "@/lib/getKanjiWithMeta";
+import { isKanjiPublishable } from "@/lib/kanji/publication";
 
 // 書き順を間違えやすい漢字リスト
 import misorderList from "@/data/misorder-kanji.json";
@@ -99,7 +101,6 @@ function loadKanjiDictionary(): KanjiDetail[] {
 
 function loadKanjiDetail(kanji: string): KanjiDetail | null {
   // getKanjiWithMetaを使用してメタデータも含めて取得
-  const { getKanjiWithMeta } = require("@/lib/getKanjiWithMeta");
   const allKanji = getKanjiWithMeta();
   const found = allKanji.find((k: KanjiDetail) => k.kanji === kanji);
   
@@ -169,8 +170,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   
   const detail = loadKanjiDetail(kanji);
-  if (!detail) {
-    return { title: "漢字が見つかりません" };
+  if (!detail || !isKanjiPublishable(detail)) {
+    notFound();
   }
 
   // generateKanjiMetadata()を使用してメタデータを生成
@@ -221,7 +222,7 @@ export default async function KanjiPage({ params }: Props) {
   const detail = loadKanjiDetail(kanji);
   
   // 詳細が見つからない場合は404
-  if (!detail) {
+  if (!detail || !isKanjiPublishable(detail)) {
     notFound();
   }
 
@@ -601,4 +602,3 @@ export default async function KanjiPage({ params }: Props) {
     </>
   );
 }
-

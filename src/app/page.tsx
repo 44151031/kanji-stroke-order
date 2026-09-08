@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import SearchSection from "@/components/home/SearchSection";
 import PopularKanjiSection from "@/components/home/PopularKanjiSection";
 
@@ -31,6 +32,7 @@ const RADICAL_POSITION_LINKS = [
 ];
 
 export default function Home() {
+  const hasExtraKanji = getExtraKanji().length > 0;
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-6 md:gap-8">
       {/* ヘッダー */}
@@ -122,9 +124,9 @@ export default function Home() {
             href="/articles/common-misorder-kanji"
             className="block border border-border/40 rounded-lg p-4 hover:bg-muted/50 transition"
           >
-            <h3 className="font-semibold text-lg">書き順を間違えやすい漢字TOP20</h3>
+            <h3 className="font-semibold text-lg">書き順を間違えやすい漢字20選</h3>
             <p className="text-sm text-muted-foreground mt-1">
-              多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きで紹介。
+              20字の筆順の注意点を紹介。各漢字のアニメーションで確かめられます。
             </p>
           </Link>
         </div>
@@ -166,6 +168,7 @@ export default function Home() {
             <span className="font-medium text-red-700">書き順クイズ</span>
             <span className="text-xs text-red-600/70 mt-1">常用漢字2136字から出題</span>
           </Link>
+          {hasExtraKanji && <>
           <Link
             href="/kanji/extra"
             className="flex flex-col items-center p-5 bg-amber-50 border border-amber-200 rounded-xl hover:bg-amber-100 hover:border-amber-400 transition-all group"
@@ -198,6 +201,7 @@ export default function Home() {
             <span className="font-medium text-amber-700">古典・文語漢字</span>
             <span className="text-xs text-amber-600/70 mt-1">古文・漢文の漢字</span>
           </Link>
+          </>}
         </div>
       </section>
 

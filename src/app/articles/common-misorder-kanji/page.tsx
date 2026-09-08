@@ -1,144 +1,57 @@
-import { Metadata } from "next";
-import Script from "next/script";
-import { generatePageMetadata, siteMeta } from "@/lib/metadata";
-import { getArticleJsonLd } from "@/lib/structuredData";
 import Link from "next/link";
+import ArticleLayout from "@/components/articles/ArticleLayout";
+import { generatePageMetadata } from "@/lib/metadata";
+import { getArticle } from "@/lib/articles";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 
-export const metadata: Metadata = generatePageMetadata({
-  title: "書き順を間違えやすい漢字TOP20",
-  description: "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
+const slug = "common-misorder-kanji";
+const article = getArticle(slug)!;
+export const metadata = generatePageMetadata({
+  title: article.title,
+  description: article.description,
   path: "/articles/common-misorder-kanji",
   type: "article",
 });
 
-const misorderKanjiList = [
-  { kanji: "九", description: "「一」を先に書きがちだが、縦→横が正" },
-  { kanji: "左", description: "「𠂇」を後に書くのが正" },
-  { kanji: "右", description: "「𠂇」を先に書くのが正" },
-  { kanji: "成", description: "横棒よりも縦が先" },
-  { kanji: "区", description: "「㇆」のタイミングを誤りやすい" },
-  { kanji: "武", description: "「一」は最後" },
-  { kanji: "飛", description: "左右対称に見えるが、左翼から書く" },
-  { kanji: "非", description: "2画目が内側に入る" },
-  { kanji: "然", description: "「火」の部分は下から" },
-  { kanji: "録", description: "「金」へんの1画目は縦から" },
-  { kanji: "券", description: "「刀」の部分の書き順に注意" },
-  { kanji: "並", description: "縦線の順序を誤りやすい" },
-  { kanji: "斜", description: "「余」の部分の書き順" },
-  { kanji: "祭", description: "「示」の部分の書き順" },
-  { kanji: "料", description: "「米」と「斗」の順序" },
-  { kanji: "点", description: "「占」の部分の書き順" },
-  { kanji: "焼", description: "「火」へんの書き順" },
-  { kanji: "働", description: "「動」の部分の書き順" },
-  { kanji: "続", description: "「糸」へんの書き順" },
-  { kanji: "感", description: "「心」の部分の書き順" },
+// 2026-09-08: 全20字のKanjiVG SVGの画種・順序と照合。
+const examples = [
+  ["九", "左払いが先", "1画目は左払い、2画目は横から折れて曲がり、はねる一筆です。「力」とは始め方が逆なので、2字を並べて確認しましょう。"],
+  ["左", "横画から始める", "横→左払いの順で上の部分を書きます。そのあと「工」を横→縦→横と書きます。「右」と最初の2画を比べてみましょう。"],
+  ["右", "左払いから始める", "左払い→横の順です。続く「口」は縦→横折れ→下の横と書きます。「左」と同じ順で書き始めないことが確認のポイントです。"],
+  ["成", "横より払いが先", "1画目は左払い、2画目は上の横です。中の折れる画を書き、4画目に大きくそってはねる画、短い払い、右上の点と続けます。"],
+  ["区", "囲みの左下は最後", "上の横→中の左払い→中の右への画→囲みの左下、の4画です。最後は縦に下りて右へ折れる一筆で、囲みを先に完成させません。"],
+  ["武", "横2本から始め、点で終える", "短い横→長い横と書き、「止」の部分を仕上げてから、7画目にそってはねる画、8画目に右上の点を書きます。横画を最後に回す順ではありません。"],
+  ["飛", "右上の曲がる画から", "右上の折れて曲がり、はねる画が1画目です。短い払いと点のあと、4画目に中央の縦を書きます。左側の払い2本を経て、7画目から再び曲がる画・払い・点と続けます。"],
+  ["非", "左半分を先に仕上げる", "左の縦から始め、左側の横3本を書きます。それから右の縦、右側の横3本です。縦2本を続けて書くのではなく、左と右のまとまりで確認しましょう。"],
+  ["然", "下の4点は最後", "左上の4画、右上の「犬」の4画を先に書きます。下の「灬」は9～12画目で、左から順に打ちます。上の部分と下の点を分けて練習すると順序を追いやすくなります。"],
+  ["録", "かねへんは左払いから", "1画目は縦ではなく左払いです。かねへん8画のあとに右側を書き、12画目に下部の中央の縦を書きます。その後は左側の2画、右側の2画の順です。"],
+  ["券", "下の刀は折れる画から", "上の点と払い、横2本、左右への払いを先に書きます。下の「刀」は7画目の横折れとはね、8画目の左払いの順です。上の部分を6画で終えているか確認しましょう。"],
+  ["並", "縦2本は途中で書く", "点→払い→横のあと、4・5画目に縦を左から2本書きます。下の点と払いを加え、8画目に一番下の横を書きます。底の横で全体を受け止める形です。"],
+  ["斜", "斗の縦は最後", "左の「余」を7画で書いてから右の「斗」へ進みます。「斗」は点→点→横→縦です。最後の縦が横を貫くことを、アニメーションで確認しましょう。"],
+  ["祭", "示は横2本を先に", "上の部分6画を終えてから、下の「示」を書きます。短い横→長い横→縦→左払い→右の点の順です。中央の縦は9画目になります。"],
+  ["料", "米を仕上げてから斗へ", "左の「米」は点→払い→横→縦→左払い→右への画です。そのあと右の「斗」を点→点→横→縦と書き、10画目の縦で終えます。"],
+  ["点", "上の縦から始める", "縦→短い横で上の部分を書き、3～5画目に「口」を書きます。下の4点は最後に左から順に打ちます。「然」と同じく、下の点を先に書かない流れです。"],
+  ["焼", "火へんの長い払いは3画目", "火へんは左の点、右上の短い払い、中央の長い払い、右への画の順です。右側は上から書き進め、最後の2画で下の「儿」を仕上げます。"],
+  ["働", "重の中央の縦は途中で通す", "にんべんのあと、「重」の上の払いと横、続いて「曰」の形を書きます。9画目に中央の縦を通し、横2本のあと、右の「力」を書いて終えます。"],
+  ["続", "糸へんの縦は4画目", "折れる画2つと点のあと、縦を書いてから左右の短い画を加えます。右側は「士」→「冖」→「儿」の順に、上からまとまりごとに書きます。"],
+  ["感", "上の部分を終えてから心", "1画目は左払い、2画目は上の横です。中の横と「口」を書いてから、そってはねる画・払い・点と続け、最後に下の「心」4画を書きます。"],
 ];
 
 export default function CommonMisorderKanjiPage() {
-  const articleJsonLd = getArticleJsonLd({
-    headline: "書き順を間違えやすい漢字TOP20",
-    description: "多くの人が誤って覚えている漢字の正しい書き順を、アニメ付きでわかりやすく解説します。",
-    url: `${siteMeta.url}/articles/common-misorder-kanji`,
-    datePublished: "2025-12-03",
-    dateModified: "2025-12-03",
-    steps: [
-      {
-        name: "間違えやすい漢字を確認する",
-        text: "九・左・右・区・成・武・非・飛 など、多くの人が誤って覚えている書き順を確認しましょう。",
-      },
-      {
-        name: "正しい書き順を学ぶ",
-        text: "各漢字のページ（例：/kanji/u53f3）で、正しい筆順アニメーションを確認できます。",
-      },
-      {
-        name: "練習・復習",
-        text: "音読み・訓読み・画数を併せて覚えると記憶が定着します。",
-      },
-    ],
-  });
-
   return (
-    <>
-      <Script
-        id="article-structured-data"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <div className="max-w-[800px] mx-auto">
-        <article className="prose prose-neutral max-w-none">
-        <h1 className="text-2xl font-bold mb-6">📰 書き順を間違えやすい漢字TOP20</h1>
-
-        <div className="text-muted-foreground leading-relaxed mb-8">
-          <p>
-            多くの人が間違えて覚えている漢字の書き順を、正しい筆順アニメーション付きで紹介します。
-            漢字検定・入試・教育現場でも頻出の項目です。
-          </p>
-        </div>
-
-        <div className="space-y-6 mb-8">
-          {misorderKanjiList.map((item, index) => (
-            <div key={item.kanji} className="border-b border-gray-200 pb-4 last:border-b-0">
-              <h2 className="text-lg font-semibold mb-2">
-                {index + 1}. {item.kanji}
-              </h2>
-              <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
-              <Link
-                href={`/kanji/${toUnicodeSlug(item.kanji)}`}
-                className="inline-block text-sm text-blue-600 hover:text-blue-800 underline"
-              >
-                → {item.kanji}の書き順を見る
-              </Link>
-            </div>
-          ))}
-        </div>
-
-        <div className="bg-gray-50 rounded-lg p-6 mb-8">
-          <h2 className="text-lg font-semibold mb-4">それぞれの正しい書き順は以下から確認できます：</h2>
-          <div className="space-y-2">
-            <p>
-              <Link
-                href="/kanji/u53f3"
-                className="text-blue-600 hover:text-blue-800 underline"
-              >
-                👉 右の書き順を見る
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/kanji/u5de6"
-                className="text-blue-600 hover:text-blue-800 underline"
-              >
-                👉 左の書き順を見る
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/kanji/u6210"
-                className="text-blue-600 hover:text-blue-800 underline"
-              >
-                👉 成の書き順を見る
-              </Link>
-            </p>
-          </div>
-        </div>
-
-        <div className="text-sm text-muted-foreground leading-relaxed mb-8">
-          <p>教育目的・筆順理解の参考としてご利用ください。</p>
-        </div>
-
-        {/* 関連記事セクション（将来の拡張用） */}
-        <div className="border-t border-gray-200 pt-8 mt-8">
-          <h2 className="text-lg font-semibold mb-4">関連記事</h2>
-          <div className="text-sm text-muted-foreground">
-            {/* 将来の記事リンクをここに追加 */}
-          </div>
-        </div>
-      </article>
-    </div>
-    </>
+    <ArticleLayout slug={slug} sources={[
+      { name: "KanjiVG", url: "https://kanjivg.tagaini.net/", note: "各字のSVGに記録された筆順と照合しています。リンク先の漢字ページも同じデータで描画します。" },
+    ]}>
+      <p>「右と左はどちらを先に書く？」「囲みはいつ閉じる？」など、筆順を確認したい20字を選びました。番号は紹介順で、誤答率や出題頻度のランキングではありません。</p>
+      <p>ここでは当サイトのアニメーションが示す筆順を説明します。筆順には複数の書き方がある字もあり、ここにない順を一律に誤りとするものではありません。学校の課題では教科書や先生の指導も確認してください。</p>
+      <p>まず紙に1回書き、各項目のリンクからアニメーションと比べてみましょう。順が違った部分だけをゆっくり確認して、もう一度書くと、どの画で迷ったかが分かります。</p>
+      {examples.map(([kanji, point, explanation], index) => (
+        <section key={kanji} className="border-b border-border py-4">
+          <h2 className="text-lg font-bold mb-2">{index + 1}. {kanji}：{point}</h2>
+          <p>{explanation}</p>
+          <Link href={"/kanji/" + toUnicodeSlug(kanji)} className="inline-block mt-3 text-blue-600 underline">{kanji}の書き順をアニメーションで確認する →</Link>
+        </section>
+      ))}
+    </ArticleLayout>
   );
 }
-
-

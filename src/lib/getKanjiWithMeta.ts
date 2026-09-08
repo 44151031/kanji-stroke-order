@@ -4,6 +4,7 @@
 
 import fs from "fs";
 import path from "path";
+import { isKanjiPublishable } from "@/lib/kanji/publication";
 import { extraKanjiMeta, type KanjiExtraMeta } from "../../data/kanjiExtra";
 
 export interface KanjiDetail {
@@ -153,7 +154,7 @@ export function getKanjiWithMeta(): KanjiDetail[] {
     }
   });
 
-  return merged;
+  return merged.filter(isKanjiPublishable);
 }
 
 /**

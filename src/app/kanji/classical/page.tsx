@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { getKanjiLink } from "@/lib/linkUtils";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import { generatePageMetadata } from "@/lib/metadata";
 import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
-import { filterKanjiByCategory, type KanjiDetail } from "@/lib/getKanjiWithMeta";
+import { filterKanjiByCategory } from "@/lib/getKanjiWithMeta";
 
 // ISR設定：7日間キャッシュ（古典・文語漢字は静的）
 export const revalidate = 604800; // 7日
@@ -27,6 +28,8 @@ export default async function ClassicalKanjiPage() {
 
   // 画数順にソート
   classicalKanji.sort((a, b) => a.strokes - b.strokes);
+
+  if (classicalKanji.length === 0) notFound();
 
   return (
     <main className="flex flex-col items-center gap-8 w-full max-w-4xl mx-auto">

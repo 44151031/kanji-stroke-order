@@ -1,5 +1,6 @@
+import { notFound } from "next/navigation";
+import { getExtraKanji } from "@/lib/kanji/getExtraKanji";
 import { Metadata } from "next";
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ExtraRankingWithTabs from "@/components/ranking/ExtraRankingWithTabs";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -7,8 +8,6 @@ import { getRankingJsonLd, getRankingSeriesJsonLd } from "@/lib/structuredData";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RelatedLinks from "@/components/common/RelatedLinks";
 import fallbackRanking from "@/data/fallbackRanking.json";
-import fs from "fs";
-import path from "path";
 
 // キャッシュ設定：1日1回更新
 export const revalidate = 86400;
@@ -40,7 +39,7 @@ function labelForPeriod(period: string = ""): string {
 function filterExtraKanji(ranking: typeof fallbackRanking) {
   try {
     // getExtraKanjiを使用して書き順SVGが存在する表外漢字を取得
-    const { getExtraKanji } = require("@/lib/kanji/getExtraKanji");
+
     const extraKanji = getExtraKanji() as Array<{ kanji: string }>;
     
     const extraKanjiSet = new Set(extraKanji.map((k) => k.kanji));
@@ -51,6 +50,7 @@ function filterExtraKanji(ranking: typeof fallbackRanking) {
 }
 
 export default function ExtraRankingPage() {
+  if (getExtraKanji().length === 0) notFound();
   // 構造化データ生成（表外漢字のみをフィルタリング）
   const allRanking = filterExtraKanji(fallbackRanking);
   const ranking = allRanking.slice(0, 50); // トップ50を構造化データに含める
