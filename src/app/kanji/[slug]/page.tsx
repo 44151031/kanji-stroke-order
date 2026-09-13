@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import DisplayAd from "@/components/ads/DisplayAd";
 import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
@@ -464,6 +465,8 @@ export default async function KanjiPage({ params }: Props) {
             </div>
           </CardContent>
         </Card>
+
+        <DisplayAd key={kanji} placement="kanji" />
 
         {/* この漢字を含む言葉（ページネーション対応） */}
         {words.length > 0 && (

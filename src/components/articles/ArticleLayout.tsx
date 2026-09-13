@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DisplayAd from "@/components/ads/DisplayAd";
 import { siteMeta } from "@/lib/metadata";
 import { getArticle, getRelatedArticles, ArticleEntry } from "@/lib/articles";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
@@ -90,6 +91,8 @@ export default function ArticleLayout({ slug, children, sources }: ArticleLayout
           <div className="article-body text-[15px] leading-relaxed text-foreground/90 space-y-4">
             {children}
           </div>
+
+          <DisplayAd key={slug} placement="article" />
 
           {sources && sources.length > 0 && (
             <section className="mt-10 border-t border-gray-200 pt-6">
