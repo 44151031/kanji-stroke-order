@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { toUnicodeSlug } from "@/lib/slugHelpers";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,32 +13,17 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function KanjiModeToggle({ kanji }: { kanji: string }) {
   const router = useRouter();
   const pathname = usePathname();
-  const [mode, setMode] = useState<"dictionary" | "practice">("dictionary");
 
-  // 現在のURLからモードを判定
-  useEffect(() => {
-    setMode(pathname?.includes("/practice") ? "practice" : "dictionary");
-  }, [pathname]);
+  // モードは常に現在のURLから判定する（開いたURLを最優先）。
+  // localStorage の保存値による自動遷移は、直接アクセスや戻る/進む操作を
+  // 上書きしてしまうため行わない。
+  const mode: "dictionary" | "practice" = pathname?.includes("/practice")
+    ? "practice"
+    : "dictionary";
 
-  // localStorage 復元
-  useEffect(() => {
-    const savedMode = localStorage.getItem("kanjiMode") as
-      | "dictionary"
-      | "practice"
-      | null;
-    if (savedMode && savedMode !== mode) {
-      const slug = toUnicodeSlug(kanji);
-      setMode(savedMode);
-      router.push(
-        savedMode === "practice" ? `/kanji/${slug}/practice` : `/kanji/${slug}`
-      );
-    }
-  }, [kanji, router, pathname, mode]);
-
-  // モード切り替え処理
+  // モード切り替え処理（ボタン操作時のみ遷移）
   const handleSwitch = (newMode: "dictionary" | "practice") => {
     if (newMode === mode) return;
-    setMode(newMode);
     localStorage.setItem("kanjiMode", newMode);
     const slug = toUnicodeSlug(kanji);
     router.push(

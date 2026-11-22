@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SvgAnimator from "@/components/SvgAnimator";
 import { getKanjiLink } from "@/lib/linkUtils";
+import { resolveSearchKanjiPath } from "@/lib/kanjiModePreference";
 
 export default function SearchSection() {
   const [searchText, setSearchText] = useState("");
@@ -27,9 +28,10 @@ export default function SearchSection() {
     }
   };
 
-  const navigateToDetail = () => {
+  const navigateToDetail = async () => {
     if (previewChar) {
-      router.push(getKanjiLink(previewChar));
+      // 保存モードを反映（練習ページがない漢字は辞書）
+      router.push(await resolveSearchKanjiPath(getKanjiLink(previewChar), window.location.pathname));
     }
   };
 
