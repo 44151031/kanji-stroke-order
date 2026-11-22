@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { getKanjiLink } from "@/lib/linkUtils";
+import { resolveSearchKanjiPath } from "@/lib/kanjiModePreference";
 
 const navItems = [
   { href: "/", label: "ホーム", emoji: "🏠" },
@@ -22,12 +23,13 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
     const char = searchQuery.trim()[0];
-    router.push(getKanjiLink(char));
     setSearchQuery("");
+    // 漢字ページ上では現在のモード、それ以外では保存モードを反映（練習ページがない漢字は辞書）
+    router.push(await resolveSearchKanjiPath(getKanjiLink(char), pathname));
   };
 
   const isActive = (href: string) => {

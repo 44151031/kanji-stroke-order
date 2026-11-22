@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import KanjiModeLinkHandler from "@/components/common/KanjiModeLinkHandler";
 import { siteMeta } from "@/lib/metadata";
 import { getTopPageJsonLd } from "@/lib/structuredData";
 
@@ -107,6 +108,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <KanjiModeLinkHandler />
       </body>
     </html>
   );
